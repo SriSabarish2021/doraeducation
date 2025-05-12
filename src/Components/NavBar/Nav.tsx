@@ -13,7 +13,7 @@ const Nav = () => {
           <p className='mail-in-nav'><IoIosMail className='icon-in-nav'/>srisabarish003@gmail.com</p>
         </div>
         <div className='location-div-in-nav'>
-           <p className='location-in-nav'><ImLocation className='icon-in-nav'/>Erode, Tamil Nadu, India</p>
+           <p className='location-in-nav'><ImLocation className='icon-in-nav-loc'/>Erode, Tamil Nadu, India</p>
         </div>
       </div>
       <div className="nav-bar-items-container"></div>
