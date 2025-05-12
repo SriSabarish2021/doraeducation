@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 .nav-bar-container {
   height: auto;
   width: 100%;
@@ -12,7 +19,7 @@
 .contact-in-nav-bar {
   width: 100%;
   height: 40px;
-  background-color: rgb(255, 68, 68);
+  background-color: rgb(255, 68, 81);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -72,19 +79,174 @@
   align-items: center;
   gap: 5px;
   color: white;
-  font-size: 15px;
-  font-family: "Comic Relief";
+  font-size: 14px;
+  font-family: "Cagliostro";
+  letter-spacing: 1px;
 }
 .contact-in-nav-bar .location-div-in-nav .icon-in-nav-loc {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .nav-bar-items-container {
   width: 100%;
   height: 90px;
   background-color: rgb(255, 243, 243);
-  padding-left: 30px;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-items-container .logo-div-nav {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 40px;
+  align-items: center;
+  gap: 10px;
+}
+.nav-bar-items-container .logo-image {
+  height: 50px;
+  width: 50px;
+  background-image: url("./Site-Logo/edu-logo-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-bar-items-container .title-logo {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+}
+.nav-bar-items-container .title-logo .title-main-name {
+  font-size: 16px;
+  font-family: "Nova Flat";
+  font-weight: 600;
+  color: rgb(30, 15, 53);
+}
+.nav-bar-items-container .title-logo .title-sub-main-name {
+  font-size: 14px;
+  font-family: "Nova Flat";
+  font-weight: 600;
+  color: rgb(30, 15, 53);
+}
+.nav-bar-items-container .nav-items {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.nav-bar-items-container .nav-items .nav-item-insider {
+  height: 100%;
+  width: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav-bar-items-container .nav-items .nav-item-insider .p-for-nav-item {
+  font-size: 15px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  color: rgb(58, 58, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .nav-items .nav-item-insider .p-for-nav-item .arrow-icon-in-nav {
+  font-size: 14px;
+  color: rgb(83, 83, 83);
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .nav-items .nav-item-insider .active-in-nav {
+  color: rgb(255, 68, 81);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .nav-items .nav-item-insider .line-in-hover-nav {
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(255, 68, 81);
+  border-radius: 500px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .nav-items .nav-item-insider .active-line-in-nav {
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  background-color: rgb(255, 68, 81);
+  border-radius: 500px;
+  opacity: 1;
+}
+.nav-bar-items-container .nav-items .nav-item-insider:hover .p-for-nav-item {
+  color: rgb(255, 68, 81);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .nav-items .nav-item-insider:hover .arrow-icon-in-nav {
+  color: rgb(255, 68, 81);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transform: rotate(90deg);
+}
+.nav-bar-items-container .nav-items .nav-item-insider:hover .line-in-hover-nav {
+  opacity: 1;
+  right: auto;
+  left: 0px;
+  width: 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .side-bar-in-nav {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  color: black;
+  padding-right: 50px;
+}
+.nav-bar-items-container .side-bar-in-nav .icon-in-last-bar-nav {
+  font-size: 20px;
+  color: rgb(30, 0, 12);
+  cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.nav-bar-items-container .side-bar-in-nav .offer-bar {
+  font-size: 28px;
+}
+.nav-bar-items-container .side-bar-in-nav .icon-in-last-bar-nav:hover {
+  color: rgb(255, 68, 81);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 /*# sourceMappingURL=Nav.css.map */

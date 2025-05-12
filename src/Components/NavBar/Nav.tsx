@@ -3,6 +3,11 @@ import '/src/Styles/NavBarCss/Nav.css'
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import { ImLocation } from "react-icons/im";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoPersonOutline } from "react-icons/io5";
+import { IoSearchOutline } from "react-icons/io5";
+import { IoCartOutline } from "react-icons/io5";
+import { BiMenuAltLeft } from "react-icons/bi";
 
 const Nav = () => {
   return (
@@ -16,7 +21,44 @@ const Nav = () => {
            <p className='location-in-nav'><ImLocation className='icon-in-nav-loc'/>Erode, Tamil Nadu, India</p>
         </div>
       </div>
-      <div className="nav-bar-items-container"></div>
+      <div className="nav-bar-items-container">
+        <div className='logo-div-nav'>  
+          <div className='logo-image'></div>
+          <div className='title-logo'>
+            <p className='title-main-name'>Mindspire</p>
+            <p  className='title-sub-main-name'>Institute</p>
+          </div>
+        </div>
+        <div className='nav-items'>
+          <div className='nav-item-insider'>
+            <p className='p-for-nav-item active-in-nav'>Home</p>
+            <p className='line-in-hover-nav active-line-in-nav'></p>
+          </div>
+          <div className='nav-item-insider'>
+            <p className='p-for-nav-item'>About</p>
+            <p className='line-in-hover-nav'></p>
+          </div>
+          <div className='nav-item-insider'>
+            <p className='p-for-nav-item'>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
+            <p className='line-in-hover-nav'> </p>
+          </div>
+          <div className='nav-item-insider'>
+            <p className='p-for-nav-item'>Contact</p>
+            <p className='line-in-hover-nav'></p>
+          </div>
+          <div className='nav-item-insider'>
+            <p className='p-for-nav-item'>Review</p>
+            <p className='line-in-hover-nav'></p>
+          </div>
+          
+        </div>
+        <div className='side-bar-in-nav'>
+          <p className='icon-in-last-bar-nav'><IoPersonOutline/></p>
+          <p className='icon-in-last-bar-nav'><IoSearchOutline/></p>
+          <p className='icon-in-last-bar-nav'><IoCartOutline/></p>
+          <p className='icon-in-last-bar-nav offer-bar'><BiMenuAltLeft/></p>
+        </div>
+      </div>
     </div>
   )
 }
