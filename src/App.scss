@@ -1,12 +1,9 @@
-$app-font:green;
 
-.app{
-    color: $app-font;
-    &__h1{
-        color: $app-font;
-    }
-    &__h2{
-        color:blue;
-    }
+
+.edu-main-page{
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  user-select: none;  
 }
-

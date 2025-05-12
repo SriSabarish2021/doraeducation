@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@mixin center-auto-container{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar-container{
+    @include center-auto-container;
+   
+    
+}
+
+.contact-in-nav-bar{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 68, 68);
+     @include center-flex-row;
+ padding-left: 30px;
+    padding-right: 30px;
+
+    .phone-div-in-nav{
+        height: 100%;
+        width: 100%;
+        flex: 1 1 calc(50%);
+        @include center-flex-row;
+        justify-content: flex-start;
+        gap: 60px;
+       
+        .call-in-nav{
+            @include center-flex-row;
+            gap:5px;
+            color: white;
+            font-size: 15px;
+             font-family: 'Roboto'; 
+        }
+        .mail-in-nav{
+
+              @include center-flex-row;
+               gap:5px;
+            color: white ;
+             font-size: 15px;
+            font-family: 'Roboto';  
+        }
+        .icon-in-nav{
+            font-size: 19px;
+        }
+    }
+    .location-div-in-nav{
+        height: 100%;
+        width: 100%;
+        flex: 1 1 calc(50%);
+        background-color: aqua;
+        @include center-flex-row;
+        justify-content: flex-end;
+        .location-in-nav{
+
+        }
+    }
+
+}
+
+
+
+.nav-bar-items-container{
+    width: 100%;
+    height: 90px;
+       background-color: rgb(255, 243, 243);
+        padding-left: 30px;
+    padding-right: 30px;
+}
