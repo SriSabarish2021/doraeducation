@@ -1,5 +1,5 @@
 
-import '/src/Styles/NavBarCss/Nav.css'
+import '/src/Styles/Nav.css'
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import { ImLocation } from "react-icons/im";
