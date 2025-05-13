@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 .home-main-container {
   height: auto;
@@ -74,12 +75,24 @@
   height: 360px;
   width: 750px;
   background: #ffffff;
-  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 246, 246) 100%);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 244, 250) 100%);
   z-index: -4;
   border-radius: 250px 310px 340px 120px;
   top: 250px;
   right: 100px;
   rotate: -10deg;
+}
+.home-main-for-intro .light-design-five {
+  position: absolute;
+  height: 210px;
+  width: 450px;
+  background: #fcfcfc;
+  background: linear-gradient(0deg, rgb(252, 252, 252) 0%, rgb(255, 244, 248) 100%);
+  z-index: -1;
+  border-radius: 250px 310px 340px 120px;
+  top: 100px;
+  right: -40px;
+  rotate: -20deg;
 }
 .home-main-for-intro .man-img-for-home {
   height: 100%;
@@ -94,6 +107,180 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.home-main-for-intro .man-img-for-home .smalldesign-two-home {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  background-image: url("./HomeImg/Untitled (5).png");
+  top: 80px;
+  right: 60px;
+  rotate: 0deg;
+}
+.home-main-for-intro .man-img-for-home .smalldesign-four-home {
+  position: absolute;
+  height: 220px;
+  width: 220px;
+  background-image: url("./HomeImg/dots (1).png");
+  top: 120px;
+  left: 20px;
+  rotate: 0deg;
+  z-index: -1;
+  animation: zoomer 10s linear infinite;
+}
+@keyframes zoomer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.home-main-for-intro .man-img-for-home .smalldesign-five-home {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url("./HomeImg/insidecircle.png");
+  bottom: 220px;
+  left: 20px;
+  rotate: 0deg;
+  z-index: 1;
+  animation: rotater 6s linear infinite;
+}
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home {
+  position: absolute;
+  height: 180px;
+  width: 140px;
+  border: 2px solid rgb(255, 68, 81);
+  background-color: white;
+  border-radius: 15px;
+  top: 120px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transform: translateX(-120px);
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home .smallcontent-img {
+  height: 70px;
+  width: 70px;
+  background-color: rgb(255, 41, 56);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home .smallcontent-img .img-for-small-cont {
+  height: 45px;
+  width: 45px;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home .smallcontent-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0px;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home .p-one-small-cont {
+  font-family: "Balsamiq Sans";
+  font-size: 26px;
+  font-weight: 900;
+  color: rgb(47, 47, 47);
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home .p-two-small-cont {
+  font-family: "Balsamiq Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+}
+.home-main-for-intro .man-img-for-home .smallcontent-one-home-move {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home {
+  position: absolute;
+  padding: 10px 0px;
+  height: auto;
+  width: 220px;
+  border: 2px solid rgb(255, 68, 81);
+  background-color: white;
+  border-radius: 15px;
+  bottom: 80px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transform: translateX(120px);
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home .smallcontent-img {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(255, 41, 56);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home .smallcontent-img .img-for-small-cont {
+  height: 35px;
+  width: 35px;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home .smallcontent-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home .p-one-small-cont {
+  font-family: "Balsamiq Sans";
+  font-size: 22px;
+  font-weight: 900;
+  color: rgb(47, 47, 47);
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home .p-two-small-cont {
+  font-family: "Balsamiq Sans";
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+}
+.home-main-for-intro .man-img-for-home .smallcontent-two-home-move {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
 }
 .home-main-for-intro .man-img-for-home .rouonded-bg-home {
   height: 75%;
@@ -125,6 +312,25 @@
   gap: 30px;
   padding-left: 30px;
   padding-bottom: 20px;
+  position: relative;
+}
+.home-main-for-intro .home-content-div .smalldesign-one-home {
+  position: absolute;
+  height: 107px;
+  width: 100px;
+  background-image: url("./HomeImg/Untitled (4).png");
+  top: 60px;
+  right: 80px;
+  rotate: -20deg;
+}
+.home-main-for-intro .home-content-div .smalldesign-three-home {
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  background-image: url("./HomeImg/round (2).png");
+  bottom: 160px;
+  right: 60px;
+  rotate: 0deg;
 }
 .home-main-for-intro .home-content-div .tit-for-home-content {
   height: auto;
