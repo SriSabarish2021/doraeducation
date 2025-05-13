@@ -1,3 +1,8 @@
+
+@use '../main-color';
+@use '../Column-center';
+@use '../Row-center';
+
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cagliostro&display=swap');
@@ -8,20 +13,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
 @mixin center-auto-container{
     height:auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include Column-center.column-center;
 }
-@mixin center-flex-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .nav-bar-container{
     @include center-auto-container;
@@ -32,8 +30,8 @@
 .contact-in-nav-bar{
     width: 100%;
     height: 40px;
-    background-color: rgb(255, 68, 81);
-     @include center-flex-row;
+    background-color: main-color.$main-color-for-app;
+    @include Row-center.row-center;
  padding-left: 30px;
     padding-right: 30px;
 
@@ -41,12 +39,12 @@
         height: 100%;
         width: 100%;
         flex: 1 1 calc(50%);
-        @include center-flex-row;
+        @include Row-center.row-center;
         justify-content: flex-start;
         gap: 60px;
        
         .call-in-nav{
-            @include center-flex-row;
+            @include Row-center.row-center;
             gap:5px;
             color: white;
             font-size: 15px;
@@ -54,7 +52,7 @@
         }
         .mail-in-nav{
 
-              @include center-flex-row;
+              @include Row-center.row-center;
                gap:5px;
             color: white ;
              font-size: 15px;
@@ -68,12 +66,12 @@
         height: 100%;
         width: 100%;
         flex: 1 1 calc(50%);
-        @include center-flex-row;
+       @include Row-center.row-center;
         justify-content: flex-end;
 
         .location-in-nav{
             padding-right: 60px;
-            @include center-flex-row;
+            @include Row-center.row-center;
             gap:5px;
             color: white ;
              font-size: 14px;
@@ -125,9 +123,7 @@
     .title-logo{
         height: auto;
         width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include Column-center.column-center;
         align-items: flex-start;
         gap: 3px;
 
@@ -160,10 +156,8 @@
             width: auto;
             padding-left: 25px;
             padding-right: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+                   @include Column-center.column-center;
+
             position: relative;
             
             .p-for-nav-item{
@@ -171,9 +165,7 @@
                   font-family: 'Ubuntu';
                   font-weight: 400;
                   color: rgb(58, 58, 58);
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
+                 @include Row-center.row-center;
                   gap: 5px;
                   cursor: pointer;
                     transition-duration: 0.2s;
@@ -191,7 +183,7 @@
             }
     
             .active-in-nav{
-                    color: rgb(255, 68, 81);
+                    color: main-color.$main-color-for-app;
                       transition-duration: 0.2s;
                   transition-timing-function: linear;
             }
@@ -199,7 +191,7 @@
                 position: absolute;
                 height: 3px;
                 width: 0%;
-                background-color: rgb(255, 68, 81);
+                background-color: main-color.$main-color-for-app;
                 border-radius:500px;
                 bottom: 0px;
                  right: 0px;
@@ -211,7 +203,7 @@
                 width: 100%;
                     position: absolute;
                 height: 3px;
-                background-color: rgb(255, 68, 81);
+                background-color: main-color.$main-color-for-app;
                 border-radius:500px;
                 opacity: 1;
              }
@@ -221,12 +213,12 @@
             
         }
         .nav-item-insider:hover .p-for-nav-item{
-                  color: rgb(255, 68, 81);
+                  color: main-color.$main-color-for-app;
                   transition-duration: 0.2s;
                   transition-timing-function: linear;
              }
               .nav-item-insider:hover .arrow-icon-in-nav{
-                    color: rgb(255, 68, 81);
+                    color: main-color.$main-color-for-app;
                   transition-duration: 0.2s;
                   transition-timing-function: linear;
                     transform: rotate(90deg);
@@ -268,7 +260,7 @@
         }
 
           .icon-in-last-bar-nav:hover{
-                  color: rgb(255, 68, 81);
+                  color: main-color.$main-color-for-app;
                   transition-duration: 0.2s;
                   transition-timing-function: linear;
              }

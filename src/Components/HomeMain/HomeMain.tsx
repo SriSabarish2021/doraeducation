@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '/src/Styles/HomeMain.css'
 import { IoIosStar } from "react-icons/io";
 
@@ -8,11 +8,10 @@ const HomeMain = () => {
   useEffect(() => {
     
 
-    let getelementone=document.querySelector('.home-main-for-intro')
-    let getanimateelementone=document.querySelector('.smallcontent-one-home')
+    let getelementone=document.querySelector('.home-main-for-intro') as HTMLElement
+    let getanimateelementone=document.querySelector('.smallcontent-one-home') as HTMLElement
     let observer=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
-        console.log('heloo');
         if (getanimateelementone) {
                   getanimateelementone?.classList.add('smallcontent-one-home-move')
 
@@ -28,11 +27,10 @@ const HomeMain = () => {
 
 
 
-    let getelementtwo=document.querySelector('.home-main-for-intro')
-    let getanimateelementtwo=document.querySelector('.smallcontent-two-home')
+    let getelementtwo=document.querySelector('.home-main-for-intro') as HTMLElement
+    let getanimateelementtwo=document.querySelector('.smallcontent-two-home') as HTMLElement
     let observertwo=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
-        console.log('heloo');
         if (getanimateelementtwo) {
                   getanimateelementtwo?.classList.add('smallcontent-two-home-move')
 
@@ -55,7 +53,26 @@ const HomeMain = () => {
   }
     
     
-  })
+  },[])
+  
+  const [getoffsetX,setoffsetX]=useState(0)
+  const [getoffsetY,setoffsetY]=useState(0)
+
+   const MouseMoveEvent=(event:unknown)=>{
+    console.log(event);
+    
+    const elementtargeting=event.currentTarget
+    const viewelement=elementtargeting.getBoundingClientRect()
+
+    const totwidht:number=event.clientX-viewelement.left
+    const totheight:number=event.clientY-viewelement.top
+
+    const offsetX:number=(totwidht/viewelement.width)*100
+    const offsetY:number=(totheight/viewelement.height)*100
+    setoffsetX(-offsetX/10)
+    setoffsetY(-offsetY/10)
+
+  }
   
 
 
@@ -64,18 +81,18 @@ const HomeMain = () => {
 
   return (
     <div className='home-main-container'>
-        <div className='home-main-for-intro'>
+        <div className='home-main-for-intro' onMouseMove={(e)=>MouseMoveEvent(e)}>
           <div className='man-img-for-home'>
             <div className='rouonded-bg-home'>
               
             </div>
             <div className='man-image-in-home'></div>
 
-            <div className='smalldesign-two-home'></div>
-            <div className='smalldesign-four-home'></div>
-            <div className='smalldesign-five-home'></div>
+            <div className='smalldesign-two-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.3s'}}></div>
+            <div className='smalldesign-four-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}></div>
+            <div className='smalldesign-five-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}></div>
 
-            <div className='smallcontent-one-home'>
+            <div className='smallcontent-one-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}>
               <div className='smallcontent-img'>
                 <img className='img-for-small-cont' src="./HomeImg/read.png" alt="" />
               </div>
@@ -85,7 +102,7 @@ const HomeMain = () => {
               </div>
               
             </div>
-            <div className='smallcontent-two-home'>
+            <div className='smallcontent-two-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}>
               <div className='smallcontent-img'>
                 <img className='img-for-small-cont' src="./HomeImg/online-learning.png" alt="" />
               </div>
@@ -119,8 +136,8 @@ const HomeMain = () => {
               </div>
             </div>
 
-            <div className='smalldesign-one-home'></div>
-            <div className='smalldesign-three-home'></div>
+            <div className='smalldesign-one-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.2s'}}></div>
+            <div className='smalldesign-three-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.5s'}}></div>
           </div>
           <p className='learn-p-in-bottom'>LEARN FUNDAMENTALS</p>
           <div className='light-design-one'></div>

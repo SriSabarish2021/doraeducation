@@ -1,3 +1,7 @@
+
+@use '../Column-center';
+@use '../Row-center';
+@use '../main-color';
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
@@ -7,27 +11,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
-@mixin column-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 .home-main-container{
     height: auto;
     width: 100%;
-    @include column-center;
+    @include Column-center.column-center;
 }
 .home-main-for-intro{
     height: 120vh;
     width: 100%;
     background-color: rgb(248, 248, 248);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include Row-center.row-center;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -113,12 +109,9 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
         height: 100%;
         width: 100%;
         flex: 1 1 calc(50%);
-        @include column-center;
+      
          position: relative;
-             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+             @include Row-center.row-center;
 
 
         .smalldesign-two-home{
@@ -186,15 +179,12 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
             position: absolute;
             height: 180px;
             width: 140px;
-            border: 2px solid rgb(255, 68, 81);
+            border: 2px solid main-color.$main-color-for-app;
             background-color: white;
             border-radius: 15px;
             top: 120px;
             left: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include Column-center.column-center;
             gap:15px;
             transform: translateX(-120px) ;
             opacity: 0;
@@ -204,12 +194,9 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
             .smallcontent-img{
                 height:70px;
                 width: 70px;
-                background-color: rgb(255, 41, 56);
+                background-color: main-color.$main-color-for-app-more-darker;
                 border-radius: 100%;
-                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include Column-center.column-center;
                 .img-for-small-cont{
                     height: 45px;
                     width: 45px;
@@ -218,10 +205,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
 
             .smallcontent-content{
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include Column-center.column-center;
                 text-align: center;
                 gap: 0px;
                 
@@ -251,15 +235,12 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
             padding: 10px 0px;
             height: auto;
             width: 220px;
-            border: 2px solid rgb(255, 68, 81);
+            border: 2px solid main-color.$main-color-for-app;
             background-color: white;
             border-radius: 15px;
             bottom: 80px;
             right: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include Column-center.column-center;
             gap:5px;
              transform: translateX(120px) ;
             opacity: 0;
@@ -269,12 +250,9 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
             .smallcontent-img{
                 height:60px;
                 width: 60px;
-                background-color: rgb(255, 41, 56);
+                background-color: main-color.$main-color-for-app-more-darker;
                 border-radius: 100%;
-                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                 @include Column-center.column-center;
                 .img-for-small-cont{
                     height: 35px;
                     width: 35px;
@@ -283,10 +261,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
 
             .smallcontent-content{
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include Column-center.column-center;
                 text-align: center;
                 gap: 5px;
                 
@@ -335,10 +310,8 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
         height: 100%;
         width: 100%;
         flex: 1 1 calc(50%);
-        @include column-center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include Column-center.column-center;
+        
         align-items: flex-start;
         gap:30px;
         padding-left: 30px;
@@ -367,9 +340,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
         .tit-for-home-content{
             height: auto;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+           @include Column-center.column-center;
             align-items: flex-start;
             gap: 20px;
 
@@ -383,9 +354,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
             .main-cont-home{
                 height: auto;
                 width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+               @include Column-center.column-center;
                 align-items: flex-start;
                 gap: 10px;
 
@@ -410,9 +379,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
         .subtit-for-home-content{
             height: auto;
             width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items:center;
+            @include Row-center.row-center;
          .para-for-sub-cont{
             font-size: 12px;
             color: rgb(97, 97, 97);
@@ -424,19 +391,14 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
         .search-for-home-content{
             height: auto;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include Column-center.column-center;
             align-items: flex-start;
             gap: 20px;
 
             .inpt-box-home{
                 height: 50px;
                 width: 80%;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                 @include Row-center.row-center;
                 border-radius: 10px;
                 .inp-bar-home{
                     height: 100%;
@@ -466,7 +428,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
                 .inp-bar-home:focus{
                     transition-duration: 0.3s;
                     outline: none;
-                    border: 2px solid rgb(255, 68, 81);
+                    border: 2px solid main-color.$main-color-for-app;
                 
                     border-right: none;
                    
@@ -487,9 +449,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
                     letter-spacing: 1px;
                     cursor: pointer;
                     position: relative;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include Row-center.row-center;
                     z-index: 1;
                           transition-duration: 0.4s;
                     transition-timing-function: linear;
@@ -498,7 +458,7 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
                 .hover-btn-design{
                     height: 100%;
                     width: 0%;
-                    background-color: rgb(255, 68, 81);
+                    background-color: main-color.$main-color-for-app;
                      left: 0px;
                     position: absolute;
                     z-index: -1;
@@ -517,25 +477,16 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
             .search-below{
                 height: auto;
                 width: 90%;
-                display: flex;
-                flex-direction: row;
+                 @include Row-center.row-center;
                 justify-content: flex-start;
-                align-items: center;
-               
                 .home-qual-para{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content:center;
-                    align-items: center;
+                    @include Row-center.row-center;
                     font-size: 15px;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     color: rgb(100, 100, 100);
                     gap: 10px;
                     .star-span{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content:center;
-                        align-items: center;
+                       @include Row-center.row-center;
                         gap: 2px;
                         font-size: 16px;
                         color: rgb(255, 189, 21);
@@ -551,11 +502,8 @@ background: linear-gradient(0deg, rgba(252, 252, 252, 1) 0%, rgb(255, 244, 248) 
 .home-main-for-design{
     height: 40vh;
     width: 100%;
-    background-color: rgb(255, 89, 100);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: main-color.$main-color-for-app-little-lighter;
+    @include Column-center.column-center;
     position: relative;
 
     .div-for-bottom-image-clody{
