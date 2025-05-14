@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+.top-courses-container {
+  height: auto;
+  width: 100%;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.top-courses-container .top-course-header {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.top-courses-container .top-course-header .top-courses-title-main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.top-courses-container .top-course-header .top-courses-title-main .top-course-title-para {
+  font-size: 35px;
+  font-family: "DynaPuff";
+  color: rgb(52, 52, 52);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-courses-container .top-course-header .top-courses-title-main .top-course-underline {
+  height: 23px;
+  width: 120px;
+  background-image: url("./underline1.png");
+  animation: undelinemove 4s linear forwards infinite;
+  position: absolute;
+  left: 30%;
+  top: 100%;
+}
+@keyframes undelinemove {
+  0% {
+    width: 0px;
+  }
+  20% {
+    width: 40px;
+  }
+  40% {
+    width: 120px;
+  }
+  50% {
+    width: 120px;
+  }
+  60% {
+    width: 120px;
+  }
+  80% {
+    width: 40px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.top-courses-container .top-course-header .top-courses-title-sub {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Bellota";
+  color: rgb(85, 85, 85);
+}
+.top-courses-container .top-course-course-list {
+  height: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+.top-courses-container .top-course-course-list .course-box {
+  height: 80px;
+  width: 360px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+.top-courses-container .top-course-course-list .course-box .course-box-icon {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+.top-courses-container .top-course-course-list .course-box .course-box-cont {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-one {
+  color: rgb(0, 208, 132);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-two {
+  color: rgb(255, 28, 168);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-three {
+  color: rgb(255, 28, 58);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-four {
+  color: rgb(62, 28, 255);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-five {
+  color: rgb(255, 130, 28);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-six {
+  color: rgb(28, 221, 255);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-seven {
+  color: rgb(236, 28, 255);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-eight {
+  color: rgb(255, 197, 38);
+}
+.top-courses-container .top-course-course-list .course-box .icon-course-nine {
+  color: rgb(255, 28, 104);
+}
+.top-courses-container .top-course-course-list .course-box:hover .course-box-cont {
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  color: white;
+}
+.top-courses-container .top-course-course-list .course-box:hover .course-box-icon {
+  color: white;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+.top-courses-container .top-course-course-list .course-box-one {
+  background-color: rgba(0, 208, 132, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-one:hover {
+  background-color: rgb(0, 208, 132);
+}
+.top-courses-container .top-course-course-list .course-box-two {
+  background-color: rgba(255, 28, 168, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-two:hover {
+  background-color: rgb(255, 99, 195);
+}
+.top-courses-container .top-course-course-list .course-box-three {
+  background-color: rgba(255, 28, 58, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-three:hover {
+  background-color: rgb(255, 101, 122);
+}
+.top-courses-container .top-course-course-list .course-box-four {
+  background-color: rgba(62, 28, 255, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-four:hover {
+  background-color: rgb(125, 103, 255);
+}
+.top-courses-container .top-course-course-list .course-box-five {
+  background-color: rgba(255, 130, 28, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-five:hover {
+  background-color: rgb(255, 160, 83);
+}
+.top-courses-container .top-course-course-list .course-box-six {
+  background-color: rgba(28, 221, 255, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-six:hover {
+  background-color: rgb(67, 227, 255);
+}
+.top-courses-container .top-course-course-list .course-box-seven {
+  background-color: rgba(236, 28, 255, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-seven:hover {
+  background-color: rgb(242, 98, 255);
+}
+.top-courses-container .top-course-course-list .course-box-eight {
+  background-color: rgba(255, 208, 77, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-eight:hover {
+  background-color: rgb(255, 211, 88);
+}
+.top-courses-container .top-course-course-list .course-box-nine {
+  background-color: rgba(255, 28, 104, 0.07);
+}
+.top-courses-container .top-course-course-list .course-box-nine:hover {
+  background-color: rgb(255, 88, 144);
+}
+
+/*# sourceMappingURL=TopCourses.css.map */
