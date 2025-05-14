@@ -1,7 +1,27 @@
+import { useState } from 'react'
 import '/src/Styles/StaffPage.css'
 const StaffPage = () => {
+  
+  const [getoffsetXstaff,setoffsetXstaff]=useState(0)
+  const [getoffsetYstaff,setoffsetYstaff]=useState(0)
+   const MouseMoveEvent=(event:unknown)=>{
+    
+    
+    const elementtargeting=event.currentTarget
+    const viewelement=elementtargeting.getBoundingClientRect()
+
+    const totwidht:number=event.clientX-viewelement.left
+    const totheight:number=event.clientY-viewelement.top
+
+    const offsetX:number=(totwidht/viewelement.width)*100
+    const offsetY:number=(totheight/viewelement.height)*100
+    setoffsetXstaff(-offsetX/10)
+    setoffsetYstaff(-offsetY/10)
+
+   }
+   
   return (
-    <div className='staff-page-container'>
+    <div className='staff-page-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
       <div className='staff-page-image-container'>
         <div className='staff-page-image-box-one'>
           <div className='image-box-one-image'></div>
@@ -46,8 +66,8 @@ const StaffPage = () => {
         
         <div className='tutor-title-content'>
             <div className='heading-tutor'>
-              <p className='heading-tutor-p-one'>Expertise Across <span className='span-in-analysis'>All</span> </p>
-              <p className='heading-tutor-p-two'>Disciplines</p>
+              <p className='heading-tutor-p-one'>Expertise Across <span   className='span-in-analysis' >All</span> </p>
+              <p className='heading-tutor-p-two'  style={{transform:`translateX(${getoffsetXstaff}px) translateY(${getoffsetYstaff}px)`,transitionDuration:'0.2s'}} >Disciplines</p>
             </div>
             <div className='sub-heading-tutor'>
                 <p className='sub-heading-tutor-p-one'> Metus dictum at tempor commodo ullamcorper a lacus vestibulum. In hendrerit gravida rutrum quisque non tellus. Egestas sed sed risus pretium quam vulputate.</p>
@@ -100,7 +120,11 @@ const StaffPage = () => {
             </div>
           </div>
         </div>
-        <button className='btn-in-tutor-analysis'>Lear More</button>
+        <button className='btn-in-tutor-analysis'>Lear More
+          <div className='btn-animation-in-staff-page'>
+
+          </div>
+        </button>
       </div>
     </div>
   )

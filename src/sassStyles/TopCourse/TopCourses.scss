@@ -11,18 +11,97 @@
     padding: 70px 20px;
     @include Column-center.column-center;
     gap: 50px;
+    position: relative;
+    .line-move-animation-main{
+        height: 70%;
+        width: 160px;
+        position: absolute;
+        right: 0px;
+        @include Column-center.column-center;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 60px;
+        .line-div{
+              
+                height: 20px;
+                width: 80px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url('./dot-teching 1.png');
+                transform: translateX(90px);
+                opacity: 0;
+                animation: arrowmove 3s infinite linear forwards;
+        }
 
+        .line-arrow-one{
+            animation-delay: 0s;
+        }
+        .line-arrow-two{
+            animation-delay: 0.4s;
+        }
+        .line-arrow-three{
+            animation-delay: 0.8s;
+        }
+        .line-arrow-four{
+            animation-delay: 1.2s;
+        }
+        .line-arrow-five{
+            animation-delay: 1.5s;
+        }
+        @keyframes arrowmove {
+            0%{
+                transform: translateX(90px);
+                opacity: 0;
+            }
+            20%{
+                transform: translateX(40px);
+                opacity: 0.5;
+            }
+            40%{
+                 transform: translateX(0px);
+                opacity: 1;
+            }
+            70%{
+                 transform: translateX(0px);
+                opacity: 1;
+            }
+            80%{
+               transform: translateX(40px);
+                opacity: 0.5; 
+            }100%{
+               transform: translateX(80px);
+                opacity: 0; 
+            }
+        }
+    }
     .top-course-header{
         height: auto;
         width: 100%;
         @include Column-center.column-center;
         gap:55px;
+        z-index: 1;
+        
 
         .top-courses-title-main{
             height: auto;
             width: 100%;
             @include Column-center.column-center;
             gap: 10px;
+            position: relative;
+            .arrow-teaching-design{
+                height: 107px;
+                width: 100px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-image: url('./HomeImg/Untitled (4).png');
+                left: 20px;
+                top: 30px;
+                transform: rotateY(200deg) rotate(-30deg);
+                
+            }
 
             .top-course-title-para{
                 font-size: 35px;
@@ -76,6 +155,7 @@
         }
     }
     .top-course-course-list{
+         z-index: 1;
         height: auto;
         width: 80%;
         display: grid;
@@ -88,6 +168,26 @@
         column-gap: 20px;
         row-gap: 50px;
         flex-wrap: wrap;
+        @keyframes closer-animation {
+            0%{
+                width: 0%;
+            }
+            30%{
+                width: 40%;
+            }
+            40%{
+                width: 60%;
+            }
+            50%{
+                width: 80%;
+            }
+            90%{
+                width: 80%;
+            }
+            100%{
+                width: 0%;
+            }
+        }
         .course-box{
             height: 80px;
             width: 360px;
@@ -98,6 +198,26 @@
             transition-timing-function: linear;
             transition-duration: 0.3s;
 
+        @keyframes closer-animation-two {
+            0%{
+                width: 100px;
+            }
+            30%{
+                 width: 150px;
+            }
+            40%{
+                 width: 250px;
+            }
+            50%{
+                width: 360px;
+            }
+            90%{
+                width: 150px;
+            }
+            100%{
+                width: 100px;
+            }
+        }
             .course-box-icon{
                 height: 100%;
                 width: 100%;
@@ -112,8 +232,9 @@
                 flex: 1 1 calc(70%);
                  @include Row-center.row-center;
                  justify-content: flex-start;
-                 padding-left: 10px;
+                 padding-left: 5px;
                  font-size: 16px;
+                 color: rgb(41, 41, 41);
                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;transition-timing-function: linear;
             transition-duration: 0.3s;
             }
@@ -216,4 +337,7 @@
                 background-color: rgb(255, 88, 144);
             }
     }
+
+
 }
+

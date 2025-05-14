@@ -10,11 +10,26 @@ import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { FaPhotoFilm } from "react-icons/fa6";
 
 const Topcourses = () => {
+
+    
+
+  
   return (
     <div className='top-courses-container'>
+        <div className='line-move-animation-main'>
+            <div className='line-div line-arrow-one'></div>
+            <div  className='line-div line-arrow-two'></div>
+            <div  className='line-div line-arrow-three'></div>
+            <div  className='line-div line-arrow-four'></div>
+            <div className='line-div line-arrow-five' ></div>
+        </div>
         <div className='top-course-header'>
+           
             <div className='top-courses-title-main'>
-                <p className='top-course-title-para'>Top Cathegory
+                 <div className='arrow-teaching-design'>
+
+                </div>
+                <p className='top-course-title-para'>Top Category
                     <div className='top-course-underline'></div>
                 </p>
                 
@@ -36,7 +51,7 @@ const Topcourses = () => {
                     <GiPencilBrush/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Art & Design</p>
                 </div>
                 
             </div>
@@ -45,7 +60,7 @@ const Topcourses = () => {
                     <LuListTodo/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Personal Development</p>
                 </div>
             </div>
             <div className='course-box course-box-four'>
@@ -53,7 +68,7 @@ const Topcourses = () => {
                     <GiMedicines/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Health & Fitness</p>
                 </div>
             </div>
            
@@ -62,7 +77,7 @@ const Topcourses = () => {
                     <RiDatabaseLine/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Data Science</p>
                 </div>
             </div>
             
@@ -71,7 +86,7 @@ const Topcourses = () => {
                     <AiTwotoneSound/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Marketing</p>
                 </div>
             </div>
             <div className='course-box course-box-seven'>
@@ -79,7 +94,7 @@ const Topcourses = () => {
                     <FaRegHandshake/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Business & Finance</p>
                 </div>
             </div>
 
@@ -88,7 +103,7 @@ const Topcourses = () => {
                     <HiMiniComputerDesktop/>
                 </div>
                 <div  className='course-box-cont'>
-                     <p>Business Management</p>
+                     <p>Computer Science</p>
                 </div>
                
             </div>
@@ -98,10 +113,11 @@ const Topcourses = () => {
                     <FaPhotoFilm/>
                 </div>
                 <div  className='course-box-cont'>
-                    <p>Business Management</p>
+                    <p>Videos & Photography</p>
                 </div>
             </div>
         </div>
+        
     </div>
   )
 }
