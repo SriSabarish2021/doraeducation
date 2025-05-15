@@ -210,6 +210,7 @@
                         background-size: cover;
                         background-image: url('./StydentPage/stu-img-thre.webp');
                     }
+                    
                     .stud-enroll-image-bar-in-main-cont{
                          height: 100%;
                         width: 100%;
@@ -557,7 +558,15 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            transform: rotate(-10deg);
+            transform: rotate(-10deg) translateX(60px) translateY(-60px);
+            transition-duration: 2s;
         }
+       
+        .rocket-animation-show{
+            transform: rotate(-10deg) translateX(0px) translateY(0px);
+            transition-duration: 2s;
+           
+        }
+
     }
 }

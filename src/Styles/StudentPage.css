@@ -608,7 +608,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) translateX(60px) translateY(-60px);
+  transition-duration: 2s;
+}
+.student-page-container .student-page-inner-container .rocket-animation-show {
+  transform: rotate(-10deg) translateX(0px) translateY(0px);
+  transition-duration: 2s;
 }
 
 /*# sourceMappingURL=StudentPage.css.map */

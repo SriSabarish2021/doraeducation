@@ -10,7 +10,7 @@ const StudentPage = () => {
         const getelementoneinstud=document.querySelector('.student-page-container') as HTMLElement;
         const getanimateelementoneinstud=document.querySelector('.scale-img-one-stud') as HTMLElement;       const getanimateelementtwoinstud=document.querySelector('.scale-img-two-stud') as HTMLElement;
         const getanimateelementthreeinstud=document.querySelector('.scale-img-three-stud') as HTMLElement;
-
+        const rockwtimage=document.querySelector('.design-element-stud-page')
         const observerinstud=new IntersectionObserver(([entry])=>{
           if (entry.intersectionRatio>0.4) {
             if (getanimateelementoneinstud) {
@@ -21,6 +21,9 @@ const StudentPage = () => {
             }
             if (getanimateelementthreeinstud) {
                 getanimateelementthreeinstud.classList.add('noscale-img-stud')
+            }
+            if (rockwtimage) {
+                rockwtimage.classList.add('rocket-animation-show')
             }
             
           }
@@ -33,6 +36,9 @@ const StudentPage = () => {
             }
             if (getanimateelementthreeinstud) {
                 getanimateelementthreeinstud.classList.remove('noscale-img-stud')
+            }
+            if (rockwtimage) {
+                rockwtimage.classList.remove('rocket-animation-show')
             }
           }
         
@@ -70,7 +76,9 @@ const StudentPage = () => {
                 </div>
                 <div className='student-page-main-content'>
                     <div className='image-bar-in-main-content'>
-                        <div className='content-image-bar-in-main-cont scale-img-three-stud'></div>
+                        <div className='content-image-bar-in-main-cont scale-img-three-stud'>
+                            
+                        </div>
                         <div className='stud-enroll-image-bar-in-main-cont'>
                             <div className='stu-enroll-image'>
                                 <div className='stu-img stu-img-one'></div>
