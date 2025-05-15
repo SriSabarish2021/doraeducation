@@ -3,6 +3,7 @@ import './App.css'
 import HomeMain from './Components/HomeMain/HomeMain'
 import Nav from './Components/NavBar/Nav'
 import StaffPage from './Components/StaffPage/StaffPage'
+import StudentPage from './Components/StudentPage/StudentPage'
 import Topcourses from './Components/TopCourses/Topcourses'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <HomeMain/>
     <StaffPage/>
     <Topcourses/>
+    <StudentPage/>
    </div>
   )
 }

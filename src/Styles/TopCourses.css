@@ -23,6 +23,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   gap: 60px;
+  overflow: hidden;
 }
 .top-courses-container .line-move-animation-main .line-div {
   height: 20px;

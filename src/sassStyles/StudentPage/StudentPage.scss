@@ -1,0 +1,363 @@
+
+@use '../main-color';
+@use '../Column-center';
+@use '../Row-center';
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+
+.student-page-container{
+    height: 120dvh;
+    width: 100%;
+    @include Row-center.row-center;
+    padding: 30px 110px;
+    .student-page-inner-container{
+        height: 100%;
+        width: 100%;
+        @include Row-center.row-center;
+        gap: 30px;
+
+        .student-page-image-container{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(29%);
+            @include Column-center.column-center;
+            gap: 30px;
+            .student-page-image-one{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(50%);
+                border-radius: 20px;       
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .student-page-image-two{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(50%);
+                border-radius: 20px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+        }
+        .student-page-content-container{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(71%);
+            padding: 30px 0px;
+            @include Column-center.column-center;
+            gap: 40px;
+
+            .student-page-title-bar{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(20%);
+                @include Column-center.column-center;
+                gap: 10px;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                .student-page-top-tit{
+                    font-size: 26px;
+                    font-family: 'WindSong';
+                    font-weight: 600;
+                    color: main-color.$main-color-for-app-little-lighter;
+                    .stud-main-cont-top-tit-span{
+                        text-decoration: underline;
+                        text-underline-offset: 8px;
+                    }
+
+                }
+                .student-page-title{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    align-items: flex-start;
+                    
+
+                    .main-tit-one-stud-page{
+                        font-size: 55px;
+                        font-family: 'Original Surfer';
+                        font-weight: 800;
+                        color: main-color.$font-main-color;
+                         
+                    }
+                    .main-tit-two-stud-page{
+                       font-size: 50px;
+                       font-family: 'Baumans';
+                        @include main-color.letter-color-main;
+                            -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        font-weight: 800;
+                       
+                    }
+                }
+
+            }
+            .student-page-main-content{
+                 height: 100%;
+                width: 100%;
+                flex: 1 1 calc(80%);
+                @include Row-center.row-center;
+                gap: 30px;
+                
+                .image-bar-in-main-content{
+                    height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(40%);
+                    @include Column-center.column-center;
+                    gap: 30px;
+                    .content-image-bar-in-main-cont{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(80%);
+                        border-radius: 20px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url('./StydentPage/stu-img-thre.webp');
+                    }
+                    .stud-enroll-image-bar-in-main-cont{
+                         height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                         @include Row-center.row-center;
+                         border: 1px solid main-color.$border-light-color;
+                         border-radius: 10px;
+                        .stu-enroll-image{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(40%);
+                             @include Row-center.row-center;
+                             position: relative;
+                             .stu-img {
+                                position: absolute;
+                                height: 38px;
+                                width: 38px;
+                                border: 5px solid white;
+                                background-color: black;
+                                border-radius: 100%;
+                             }
+                             .stu-img-one{
+                                left: 20%;
+                                z-index: 1;
+                                background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst3.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                             }
+                             .stu-img-two{
+                          
+                                 z-index: 2;
+                                background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst2.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                             }
+                             .stu-img-three{
+                                right: 20%;
+                                 z-index: 3;background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst1.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+
+                             }
+
+                        }
+                        .stu-enroll-num{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(60%);
+                             @include Column-center.column-center;
+                            gap: 2px;
+                            align-items: flex-start;
+                            .stu-enroll-para-one{
+                                font-size: 15px;
+                                font-family: 'Delius';
+                                font-weight: 600;
+                                color: rgb(48, 48, 48);
+                                @include Row-center.row-center;
+                                gap: 8px;
+                                .span-in-stud-num{
+                                    font-size: 18px;
+                                    color: black;
+
+                                }
+                            }
+                            .stu-enroll-para-two{
+                                font-size: 14px;
+                                font-family: 'Sour Gummy';
+                                color: rgb(100, 100, 100);
+                            }
+                        }
+                    }
+                }
+                .content-bar-in-main-content{
+                      height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(60%);
+                      @include Column-center.column-center;
+                    gap: 25px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 15px 0px;
+                    .stud-content-main-para{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                        .conatent-bar-main-para{
+                        width: 100%;
+                        font-size: 16px;
+                        line-height: 30px;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                        font-family: 'Delius Swash Caps';
+                        color: rgb(47, 47, 47);
+                    }
+                    }
+                    
+                    .analysis-student-container{
+                         height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(60%);
+                        @include Row-center.row-center;
+                        gap: 20px;
+                        .tot-stu-analysis{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(40%);
+                            @include Column-center.column-center;
+                            gap: 10px;
+                            
+                            .tot-stu-analysis-image{
+                            height: 90px;
+                            width: 90px;
+                           background-color: rgb(0, 207, 138);
+                            
+                            @include Column-center.column-center;   
+                            border-radius: 100%;
+                                .img-for-main-analysis-one{
+                                     height: 60px;
+                                     width: 60px;
+                                      background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+
+                                }
+
+                            }
+                            .tot-stu-analysis-content{
+                                height: auto;
+                                width: 100%;
+                                @include Column-center.column-center;
+                                gap: 5px;
+                                .tot-stu-analysis-para-one{
+                                    font-size: 26px;
+                                     font-family: 'Sour Gummy';
+                                    font-weight: 600;
+                                    color: rgb(41, 41, 41);
+                                }
+                                .tot-stu-analysis-para-two{
+                                    font-size: 16px;
+                                    font-family: 'Delius';
+                                    font-weight: 600;
+                                     color: rgb(63, 63, 63);
+                                }
+
+                            }
+                        }
+                        .stu-thinking-analysis{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(60%);
+                            @include Column-center.column-center;
+                            gap: 10px;
+
+                            .stu-thinking-one{
+                                height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(50%);
+                                @include Row-center.row-center;
+                                gap: 10px;
+                                border-bottom: 1px solid rgb(220, 220, 220);
+                            }
+                            .stu-thinking-two{
+                                 height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(50%);
+                                @include Row-center.row-center;
+                                gap: 10px;
+                                border-bottom: 1px solid rgb(220, 220, 220);
+
+                            }
+                            .stu-thinking-image{
+                                height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(30%);
+                                @include Row-center.row-center;
+                                .stu-thinking-img{
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius: 100%;
+                                    background-color: rgb(0, 207, 138);                                    
+                                    @include Row-center.row-center;
+                                    .img-for-main-analysis-two{
+                                        height: 40px;
+                                        width: 40px;
+                                    }
+                                }
+                            }
+                            .stu-thinking-content{
+                                 height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(70%);
+                                 @include Column-center.column-center;
+                                gap: 10px;
+                                align-items: flex-start;
+                                .stu-thinking-main-para{
+                                    font-size: 20px;
+                                    font-family: 'Sour Gummy';
+                                    font-weight: 600;
+                                    color: rgb(39, 39, 39);
+                                }
+                                .stu-thinking-sub-para{
+                                    font-size: 15px;
+                                    font-family: 'Delius';
+                                    font-weight: 400;
+                                    color: rgb(62, 62, 62);
+                                }
+                            }
+                        }
+                    }
+                    .stud-content-main-btn{
+                         height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                        @include Column-center.column-center;
+                        align-items: flex-start;
+                        .stud-analysis-btn{
+                            border: none;
+                            height: 55px;
+                            width: 170px;
+                            border-radius: 30px;
+                            background-color: rgb(255, 85, 85);
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
