@@ -6,6 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 .student-page-container {
   height: 120dvh;
   width: 100%;
@@ -14,6 +17,85 @@
   justify-content: center;
   align-items: center;
   padding: 30px 110px;
+  position: relative;
+}
+.student-page-container .scale-img-one-stud {
+  transform: translateX(330px);
+  transition-duration: 0.6s;
+}
+.student-page-container .scale-img-two-stud {
+  transform: translateX(330px);
+  transition-duration: 0.6s;
+}
+.student-page-container .scale-img-three-stud {
+  transform: translateX(-330px);
+  transition-duration: 0.6s;
+}
+.student-page-container .noscale-img-stud {
+  transform: translateX(0px);
+  transition-duration: 1s;
+}
+.student-page-container .stud-design-main {
+  position: absolute;
+  height: 180px;
+  width: 80px;
+  left: 10px;
+  background-image: url("./StydentPage/sidename.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.student-page-container .stud-round-design-one {
+  position: absolute;
+  right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 80px;
+  height: 60px;
+  width: 60px;
+  background-image: url("./StydentPage/round-one.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: rotate-one-stud 5s linear forwards infinite;
+}
+.student-page-container .stud-round-design-one .stud-round-design-two {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-image: url("./StydentPage/round-one.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: rotate-two-stud 5s linear forwards infinite;
+}
+@keyframes rotate-two-stud {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-one-stud {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .student-page-container .student-page-inner-container {
   height: 100%;
@@ -23,8 +105,10 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  position: relative;
 }
 .student-page-container .student-page-inner-container .student-page-image-container {
+  overflow: hidden;
   height: 100%;
   width: 100%;
   flex: 1 1 29%;
@@ -124,6 +208,7 @@
   gap: 30px;
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+  overflow: hidden;
   height: 100%;
   width: 100%;
   flex: 1 1 40%;
@@ -246,12 +331,12 @@
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
   width: 100%;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 30px;
   letter-spacing: 1px;
-  font-weight: 500;
-  font-family: "Delius Swash Caps";
-  color: rgb(47, 47, 47);
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container {
   height: 100%;
@@ -276,12 +361,43 @@
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
   height: 90px;
   width: 90px;
-  background-color: rgb(0, 207, 138);
+  background: #ffec42;
+  background: linear-gradient(115deg, rgb(255, 236, 66) 10%, rgb(84, 255, 227) 90%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  animation: bounceanimation-stu-page 4s linear infinite forwards;
+}
+@keyframes bounceanimation-stu-page {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  55% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
   height: 60px;
@@ -320,6 +436,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one {
   height: 100%;
@@ -330,7 +448,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid rgb(232, 232, 232);
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two {
   height: 100%;
@@ -341,7 +459,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-bottom: 1px solid rgb(220, 220, 220);
+  border-bottom: 1px solid rgb(232, 232, 232);
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image {
   height: 100%;
@@ -356,7 +474,6 @@
   height: 60px;
   width: 60px;
   border-radius: 100%;
-  background-color: rgb(0, 207, 138);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -366,6 +483,18 @@
   height: 40px;
   width: 40px;
 }
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .img-one-stud-think {
+  background-color: rgb(231, 138, 0);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .img-two-stud-think {
+  background-color: rgb(0, 207, 173);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content {
   height: 100%;
   width: 100%;
@@ -374,20 +503,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   align-items: flex-start;
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
-  font-size: 20px;
-  font-family: "Sour Gummy";
+  font-size: 17px;
+  font-family: "Delius Swash Caps";
   font-weight: 600;
   color: rgb(39, 39, 39);
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
-  font-size: 15px;
-  font-family: "Delius";
+  font-size: 13px;
+  font-family: "Roboto";
+  letter-spacing: 1px;
   font-weight: 400;
-  color: rgb(62, 62, 62);
+  color: rgb(75, 75, 75);
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one:hover .img-one-stud-think {
+  transform: rotate3d(2, 1, 2, 360deg);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two:hover .img-two-stud-think {
+  transform: rotate3d(-2, 1, -2, 360deg);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
 }
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn {
   height: 100%;
@@ -402,12 +542,73 @@
 .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
   border: none;
   height: 55px;
-  width: 170px;
+  width: 190px;
   border-radius: 30px;
-  background-color: rgb(255, 85, 85);
-  font-size: 16px;
+  background-color: rgb(255, 56, 56);
+  font-size: 15px;
   font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Anta";
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 0.4s;
+  z-index: 1;
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .span-for-btn-stud-page {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: #fec300;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition-duration: 0.4s;
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .design-div-for-tud-btn {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  z-index: -1;
+  background-color: #fec300;
+  right: 25px;
+  transition-duration: 0.6s;
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn:hover .design-div-for-tud-btn {
+  height: 110px;
+  width: 220px;
+  transition-duration: 0.6s;
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn:hover {
+  color: black;
+  transition-duration: 0.4s;
+}
+.student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn:hover .span-for-btn-stud-page {
+  color: rgb(255, 56, 56);
+  transition-duration: 0.4s;
+}
+.student-page-container .student-page-inner-container .design-element-stud-page {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  top: 20px;
+  right: 30px;
+  background-image: url("./StydentPage/Screenshot_2025-05-15_142316-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(-10deg);
 }
 
 /*# sourceMappingURL=StudentPage.css.map */

@@ -228,6 +228,9 @@
   border-radius: 10px;
   background: #c757b6;
   background: linear-gradient(32deg, rgb(199, 87, 182) 14%, rgb(218, 87, 133) 53%, rgb(237, 86, 83) 91%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .staff-page-container .staff-page-content-container .short-title-staff-page .flexible-short-tit {
   font-size: 13px;
@@ -525,6 +528,9 @@
   height: 0%;
   background: #c757b6;
   background: linear-gradient(32deg, rgb(199, 87, 182) 14%, rgb(218, 87, 133) 53%, rgb(237, 86, 83) 91%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   z-index: -1;
   transition-duration: 0.3s;
 }
