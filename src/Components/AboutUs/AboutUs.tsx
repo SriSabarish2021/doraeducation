@@ -71,10 +71,10 @@ const AboutUs = () => {
               <p className='about-us-one-para-two'>Year of Excellence in Education</p>
             </div>
           </div>
-          <div className='about-us-image-one'></div>
+          <img src='./Aboutus/about-thumb-02.webp' alt='study-image' className='about-us-image-one'></img>
         </div>
         <div className='about-image-box-two'>
-           <div className=' about-us-image-two'></div>
+           <img src='./Aboutus/about-thumb-03.webp' alt='study-image' className=' about-us-image-two'></img>
           <div className='about-us-image-cont-two'>
             <div className='about-us-cont-inner-two'>
               <div className='alumini-img-and-cont'>
@@ -122,7 +122,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-      <div className='design-image-about'></div>
+        
+        <img src="./Aboutus/open-book.png" alt="Book-Image"  className='design-image-about' />
       </div>
             
 

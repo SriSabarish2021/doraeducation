@@ -73,16 +73,19 @@
 
             @keyframes ball-move-aniamtion {
                 0%{
-                    transform: translateX(0px);
+                    transform: translateX(0px) scaleX(1);
                 }25%{
                     transform: translateX(-11px);
 
                 }
                 50%{
-                      transform: translateX(-22px);
+                      transform: translateX(-22px) ;
                 }
                 75%{
-                      transform: translateX(-11px);
+                      transform: translateX(-11px ) scaleX(1) ; 
+                }
+                99%{
+                    transform: translateX(0px) scaleX(0.9);
                 }
                 100%{
                       transform: translateX(0px);
@@ -169,12 +172,8 @@
                 width: 100%;
                 flex: 1 1 calc(65%);
                 border-radius: 10px;
-                background-image: url('./Aboutus/about-thumb-02.webp');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    transform: translateY(300px);
-                    transition-duration: 0.6s;
+                transform: translateY(300px);
+                transition-duration: 0.6s;
             }
              .noscale-img-about-one{
             transform: translateY(0px);
@@ -192,10 +191,7 @@
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(45%);
-                background-image: url('./Aboutus/about-thumb-03.webp');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+
                 border-radius: 15px;
                 transform: translateY(-200px);
                  transition-duration: 0.6s;
@@ -350,7 +346,6 @@
                     left: 40%;
                     top: 90%;
                     background-image: url('./Aboutus/underline-two.png');
-                    
                     animation:underlinemove-about-us 6s linear infinite forwards ;
                 }
                 @keyframes underlinemove-about-us {
@@ -476,10 +471,8 @@
         position: absolute;
         height:100px;
         width:100px;
-        background-image: url('./Aboutus/open-book.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+       
+       
         transform: rotate(30deg);
         bottom: 30%;
         right: 25%;
