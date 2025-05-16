@@ -26,6 +26,35 @@
     padding: 40px 100px;
     gap: 35px;
     position: relative;
+    .bubble-boxer{
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+        left: 20px;
+        top: 50px;
+        background: #ffdaf4;
+        background: linear-gradient(121deg, rgb(235, 255, 236) 30%, rgb(238, 239, 255) 100%);
+        animation: blobanimate 5s infinite ease-in-out;
+} 
+@keyframes blobanimate {
+  0% {
+    border-radius: 45% 55% 50% 50% / 60% 50% 50% 40%;
+  }
+  25% {
+    border-radius: 60% 40% 55% 45% / 55% 60% 40% 45%;
+  }
+  50% {
+    border-radius: 50% 50% 40% 60% / 60% 45% 55% 40%;
+  }
+  75% {
+    border-radius: 65% 35% 50% 50% / 45% 55% 45% 55%;
+  }
+  100% {
+    border-radius: 45% 55% 50% 50% / 60% 50% 50% 40%;
+  }
+}
+
     .ball-move-animation-main{
         position: absolute;
         height: 80%;
@@ -445,16 +474,16 @@
 
     .design-image-about{
         position: absolute;
-        height:80px;
-        width: 80px;
+        height:100px;
+        width:100px;
         background-image: url('./Aboutus/open-book.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         transform: rotate(30deg);
         bottom: 30%;
-        right: 20%;
-        animation:bookmove-in-aboutus 10s linear infinite forwards ;
+        right: 25%;
+        animation:bookmove-in-aboutus 6s linear infinite forwards ;
         @keyframes bookmove-in-aboutus {
             0%{
                 transform:translateY(0px)  rotate(30deg); 
@@ -468,5 +497,6 @@
         }
     }
 
+    
     
 }

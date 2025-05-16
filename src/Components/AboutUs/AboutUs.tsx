@@ -55,6 +55,7 @@ const AboutUs = () => {
 
   return (
     <div className='about-us-container'>
+      <div className='bubble-boxer'></div>
         <div className='ball-move-animation-main'>
             <div className='ball-div ball-arrow-one'></div>
             <div  className='ball-div  ball-arrow-two'></div>
@@ -120,7 +121,6 @@ const AboutUs = () => {
 
           </div>
         </div>
-
 
       <div className='design-image-about'></div>
       </div>
