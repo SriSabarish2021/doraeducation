@@ -1,0 +1,294 @@
+
+
+
+@use '../main-color';
+@use '../Column-center';
+@use '../Row-center';
+
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+.about-us-container{
+    height: 90dvh;
+    width: 100%;
+    @include Row-center.row-center;
+    padding: 40px 100px;
+    gap: 35px;
+
+    .about-us-image-container{
+        height: 100%;
+        width: 100%;
+        flex: 1 1 calc(50%);
+        @include Row-center.row-center;
+        gap: 30px;
+
+        .about-image-box-one{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(55%);
+            
+            @include Column-center.column-center;
+            gap: 10px;
+
+            .about-us-image-cont-one{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(35%);
+                @include Column-center.column-center;
+                .about-us-content-one-inner{
+                    height:85%;
+                    width: 90%;
+                    background-color: main-color.$main-color-for-app-little-darker;
+                    border-radius: 20px;
+                     @include Column-center.column-center;
+                     gap: 10px;
+
+                     .about-us-one-para-one{
+                        font-size: 40px;
+                        font-family: 'Averia Sans Libre';
+                        color: white;
+                        font-weight: 600;
+                     }
+                    .about-us-one-para-two{
+                        font-size: 20px;
+                        font-family: 'Macondo Swash Caps';
+                        font-weight: 600;
+                        color: white;
+                     }
+                }
+            }
+            .about-us-image-one{
+                  height: 100%;
+                width: 100%;
+                flex: 1 1 calc(65%);
+                border-radius: 10px;
+                background-image: url('./Aboutus/about-thumb-02.webp');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+            }
+        }
+        .about-image-box-two{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(45%);
+            @include Column-center.column-center;
+                     gap: 15px;
+            .about-us-image-two{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(45%);
+                background-image: url('./Aboutus/about-thumb-03.webp');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 15px;
+
+            }
+           .about-us-image-cont-two{
+                  height: 100%;
+                width: 100%;
+                flex: 1 1 calc(55%);
+                @include Column-center.column-center;
+                justify-content: flex-start ;
+                padding-top: 30px;
+                .about-us-cont-inner-two{
+                    height: 55%;
+                    width: 90%;
+                    background-color: white;
+                    border: 1px solid main-color.$border-light-color;
+                    border-radius: 20px;
+                    @include Column-center.column-center;
+                   
+                    .alumini-img-and-cont{
+                        height: 50%;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        .alumini-images{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(45%);
+                             position: relative;
+                            @include Row-center.row-center;
+                          
+                            .alumini-img-show{
+                                height: 70%;
+                                width: 70%;
+                                   background-image: url('./Aboutus/user-01.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                            }
+                        }
+                        .alumini-cont{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(55%);
+                            @include Row-center.row-center;
+                            justify-content: flex-start;
+                            font-size: 30px;
+                            font-family: 'Macondo';
+                            font-weight: 600;
+                            color: rgb(43, 43, 43);
+
+
+                        }
+                    }
+
+                    .alumini-cont-two{
+                        font-size: 15px;
+                        font-family:  'Macondo';
+                        font-weight: 600;
+                        color: rgb(84, 84, 84);
+                    }
+                }
+            }
+        }
+    }
+    .about-us-content-container{
+             height: 100%;
+        width: 100%;
+        flex: 1 1 calc(50%);
+         @include Column-center.column-center;
+        gap: 20px;
+        .about-us-title-bar{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(20%);
+            @include Column-center.column-center;
+            gap: 10px;
+            align-items: flex-start;
+            .about-us-small{
+                font-size: 16px;
+                color: main-color.$main-color-for-app;
+                font-weight: 600;
+                font-family:  'Delius Unicase';
+            }
+
+            .about-us-main-tit-div{
+                height: auto;
+                width: 100%;
+                 @include Column-center.column-center;
+                align-items: flex-start;
+
+                .about-us-main-tit{
+                    font-size: 50px;
+                    font-family: 'Averia Libre';                    
+                    font-weight: 600;
+                    color:main-color.$font-main-color;
+                    
+                }
+                .about-us-main-tit-two{
+                      font-size: 50px;
+                    font-family: 'Averia Libre';
+                    font-weight: 600;
+                    color: rgb(49, 49, 49);
+
+                }
+            }
+        }
+         
+        .about-us-content-main{
+             height: 100%;
+            width: 100%;
+            flex: 1 1 calc(80%);
+            @include Column-center.column-center;
+            gap: 35px;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .para-in-about-us-main{
+                width: 90%;
+                font-size: 15px;
+                line-height: 30px;
+                letter-spacing: 1px;
+                    
+                font-weight: 400;
+                font-family: 'Roboto';
+                color: rgb(67, 67, 67);
+                
+            }
+
+            .order-list-of-about-us{
+                @include Column-center.column-center;
+                gap: 20px;
+                align-items: flex-start;
+               justify-content: flex-start;
+
+                .order-list-para{
+                       @include Row-center.row-center;
+                       gap: 20px;
+                       padding-left: 30px;
+                       font-size: 16px;
+                       font-family: 'Sour Gummy';
+                       color: rgb(95, 95, 95);
+                       
+                       .order-list-span{
+                        height:22px;
+                        width: 22px;
+                        border-radius:100%;
+                        background-color: rgb(255, 203, 207);
+                        @include Row-center.row-center;
+                        color: red;
+                        font-size: 14px;
+                       }
+                }
+            }
+            .about-us-btn-div{
+                height: auto;
+                width: 100%;
+                 @include Column-center.column-center;
+                 align-items: flex-start;
+                 .about-us-btn{
+                    height: 40px;
+                    width: 150px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    border: none;
+                    background-color: rgb(245, 84, 82);
+                    color: white;
+                    font-weight: 400;
+                    font-family: 'Anta';
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    @include Column-center.column-center;
+                    transition-duration: 0.5s;
+
+                 }
+                  .about-btn-animation{
+                        position: absolute;
+                        height: 100%;
+                        width: 0%;
+                        right: 0px;
+                        z-index: -1;
+                        background-color: rgb(255, 203, 30);
+                         transition-duration: 0.5s;
+                    }
+
+                    .about-us-btn:hover .about-btn-animation{
+                        right: auto;
+                        left: 0pc;
+                        width: 100%;
+                         transition-duration: 0.5s;
+                    }
+                    .about-us-btn:hover {
+                        
+                        color: rgb(52, 52, 52);
+                         transition-duration: 0.5s;
+
+                    }
+            }
+        }
+    }
+}

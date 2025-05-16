@@ -59,7 +59,7 @@ const HomeMain = () => {
   const [getoffsetY,setoffsetY]=useState(0)
 
    const MouseMoveEvent=(event:unknown)=>{
-    console.log(event);
+
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()

@@ -1,5 +1,6 @@
 
 import './App.css'
+import AboutUs from './Components/AboutUs/AboutUs'
 import HomeMain from './Components/HomeMain/HomeMain'
 import Nav from './Components/NavBar/Nav'
 import StaffPage from './Components/StaffPage/StaffPage'
@@ -16,6 +17,7 @@ function App() {
     <StaffPage/>
     <Topcourses/>
     <StudentPage/>
+    <AboutUs/>
    </div>
   )
 }
