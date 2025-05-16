@@ -36,7 +36,7 @@
             height: 100%;
             width: 100%;
             flex: 1 1 calc(55%);
-            
+            overflow: hidden;
             @include Column-center.column-center;
             gap: 10px;
 
@@ -76,12 +76,19 @@
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    transform: translateY(300px);
+                    transition-duration: 0.6s;
+            }
+             .noscale-img-about-one{
+            transform: translateY(0px);
+            transition-duration: 0.6s;
             }
         }
         .about-image-box-two{
             height: 100%;
             width: 100%;
             flex: 1 1 calc(45%);
+            overflow: hidden;
             @include Column-center.column-center;
                      gap: 15px;
             .about-us-image-two{
@@ -93,6 +100,8 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 border-radius: 15px;
+                transform: translateY(-200px);
+                 transition-duration: 0.6s;
 
             }
            .about-us-image-cont-two{
@@ -106,10 +115,35 @@
                     height: 55%;
                     width: 90%;
                     background-color: white;
-                    border: 1px solid main-color.$border-light-color;
+                   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                   position: relative;
                     border-radius: 20px;
                     @include Column-center.column-center;
-                   
+                   .ellipse-design{
+                    position: absolute;
+                    height:60px;
+                    width: 60px;
+                    background-image: url('./Aboutus/Ellipse 1.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    bottom: -30px;
+                    left: 0px;
+                    animation: rotate-in-aboutus 20s linear infinite forwards;
+
+                     @keyframes rotate-in-aboutus {
+                        0%{
+                            transform:rotate(0deg); 
+                        }
+                        50%{
+                            transform: rotate(180deg); 
+                        }
+                        100%{
+                            transform: rotate(360deg); 
+                        }
+                    }
+
+                }
                     .alumini-img-and-cont{
                         height: 50%;
                         width: 100%;
@@ -153,9 +187,17 @@
                     }
                 }
             }
+            .noscale-img-about-two{
+            transform: translateY(0px);
+            transition-duration: 0.6s;
+            }
         }
+
+       
+        
     }
     .about-us-content-container{
+        position: relative;
              height: 100%;
         width: 100%;
         flex: 1 1 calc(50%);
@@ -288,6 +330,32 @@
                          transition-duration: 0.5s;
 
                     }
+            }
+        }
+    }
+
+
+    .design-image-about{
+        position: absolute;
+        height:80px;
+        width: 80px;
+        background-image: url('./Aboutus/open-book.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(30deg);
+        bottom: 30%;
+        right: 20%;
+        animation:bookmove-in-aboutus 10s linear infinite forwards ;
+        @keyframes bookmove-in-aboutus {
+            0%{
+                transform:translateY(0px)  rotate(30deg); 
+            }
+            50%{
+                transform:translateY(10px )  rotate(30deg); 
+            }
+            100%{
+                transform:translateY(0px)  rotate(30deg); 
             }
         }
     }

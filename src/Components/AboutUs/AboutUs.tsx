@@ -1,7 +1,58 @@
+import { useEffect } from 'react';
 import '/src/Styles/AboutUs.css'
 import { MdDone } from "react-icons/md";
 
 const AboutUs = () => {
+
+ useEffect(() => {
+        
+    
+       const getelementoneinabout=document.querySelector('.about-us-container') as HTMLElement;
+          const getanimateelementoneinaboutud=document.querySelector('.about-us-image-one') as HTMLElement;       
+          
+          const getanimateelementtwoinaboutus=document.querySelector('.about-us-image-two') as HTMLElement;
+        
+        const observerinabout=new IntersectionObserver(([entry])=>{
+          if (entry.intersectionRatio>0.5) {
+           
+            if (getanimateelementoneinaboutud) {
+                getanimateelementoneinaboutud.classList.add('noscale-img-about-one')
+            }
+            if (getanimateelementtwoinaboutus) {
+                getanimateelementtwoinaboutus.classList.add('noscale-img-about-two')
+            }
+            
+          }
+          else{
+            
+            if (getanimateelementoneinaboutud) {
+                getanimateelementoneinaboutud.classList.remove('noscale-img-about-one')
+            }
+            if (getanimateelementtwoinaboutus) {
+                getanimateelementtwoinaboutus.classList.remove('noscale-img-about-two')
+            }
+          }
+        
+        },{threshold:0.5})
+    
+        if (getelementoneinabout) {
+              observerinabout.observe(getelementoneinabout)
+        }
+    
+    
+         return () => {
+          
+          if (getelementoneinabout) {
+                observerinabout.unobserve(getelementoneinabout)
+          }     
+      }
+        
+        
+      },[])
+
+
+   
+
   return (
     <div className='about-us-container'>
       <div className='about-us-image-container'>
@@ -27,6 +78,9 @@ const AboutUs = () => {
                 </div>
               </div>
               <p className='alumini-cont-two'>Hello Every one here</p>
+
+
+              <div className='ellipse-design'></div>
             </div>
           </div>
         </div>
@@ -56,6 +110,10 @@ const AboutUs = () => {
 
           </div>
         </div>
+
+
+      <div className='design-image-about'></div>
+
       </div>
     </div>
   )
