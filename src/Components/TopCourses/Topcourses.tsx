@@ -39,6 +39,7 @@ const Topcourses = () => {
         <div className='top-course-course-list'>
             
             <div className='course-box course-box-one'>
+                <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-one'>
                     <LuBriefcaseBusiness/>
                 </div>
@@ -47,6 +48,7 @@ const Topcourses = () => {
                 </div>
             </div>
             <div className='course-box course-box-two'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-two'>
                     <GiPencilBrush/>
                 </div>
@@ -56,6 +58,7 @@ const Topcourses = () => {
                 
             </div>
             <div className='course-box course-box-three'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-three'>
                     <LuListTodo/>
                 </div>
@@ -64,6 +67,7 @@ const Topcourses = () => {
                 </div>
             </div>
             <div className='course-box course-box-four'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-four'>
                     <GiMedicines/>
                 </div>
@@ -73,6 +77,7 @@ const Topcourses = () => {
             </div>
            
             <div className='course-box course-box-five'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-five'>
                     <RiDatabaseLine/>
                 </div>
@@ -82,6 +87,7 @@ const Topcourses = () => {
             </div>
             
             <div className='course-box course-box-six'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-six'>
                     <AiTwotoneSound/>
                 </div>
@@ -90,6 +96,7 @@ const Topcourses = () => {
                 </div>
             </div>
             <div className='course-box course-box-seven'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-seven'>
                     <FaRegHandshake/>
                 </div>
@@ -99,6 +106,7 @@ const Topcourses = () => {
             </div>
 
             <div className='course-box course-box-eight'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-eight'>
                     <HiMiniComputerDesktop/>
                 </div>
@@ -109,6 +117,7 @@ const Topcourses = () => {
             </div>
             
             <div className='course-box course-box-nine'>
+                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-nine'>
                     <FaPhotoFilm/>
                 </div>

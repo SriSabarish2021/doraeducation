@@ -17,6 +17,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&display=swap');
 
 .about-us-container{
     height: 90dvh;
@@ -24,13 +25,80 @@
     @include Row-center.row-center;
     padding: 40px 100px;
     gap: 35px;
+    position: relative;
+    .ball-move-animation-main{
+        position: absolute;
+        height: 80%;
+        width: 130px;
+        right: 0px;
+        @include Column-center.column-center;
+                gap: 40px;
+                align-items: flex-end;
+                padding-right: 20px;
+        .ball-div{
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            background-color: main-color.$main-color-for-app;
+            animation: ball-move-aniamtion 3s linear infinite forwards;
 
+            @keyframes ball-move-aniamtion {
+                0%{
+                    transform: translateX(0px);
+                }25%{
+                    transform: translateX(-11px);
+
+                }
+                50%{
+                      transform: translateX(-22px);
+                }
+                75%{
+                      transform: translateX(-11px);
+                }
+                100%{
+                      transform: translateX(0px);
+                }
+            }
+
+            
+        }
+        .ball-arrow-one{
+            animation-delay: 0.1s;
+            
+        }
+        .ball-arrow-two{
+            animation-delay: 0.2s;
+        }
+        .ball-arrow-three{
+            animation-delay: 0.4s;
+        }
+        .ball-arrow-four{
+            animation-delay: 0.6s;
+        }
+        .ball-arrow-five{
+            animation-delay: 0.8s;
+        }
+    }
     .about-us-image-container{
         height: 100%;
         width: 100%;
         flex: 1 1 calc(50%);
         @include Row-center.row-center;
         gap: 30px;
+        position: relative;
+        z-index: 1;
+        .circle-img-about{
+            position: absolute;
+            height: 420px;
+            width: 400px;
+            z-index: -1;
+            right: 20px;
+            bottom: 20px;
+             background-image: url('./Aboutus/circle.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
         .about-image-box-one{
             height: 100%;
@@ -237,6 +305,46 @@
                     color: rgb(49, 49, 49);
 
                 }
+                .span-tit-in-about-us{
+                    font-size: 45px;
+                    font-family:'Bonbon';
+                    color:main-color.$main-color-for-app-little-darker;
+                }
+                .about-us-underline-parent{
+                    position: relative;
+                      
+                }
+                .about-us-underline{
+                    position: absolute;
+                    height: 25px;
+                   width: 160px;
+                    left: 40%;
+                    top: 90%;
+                    background-image: url('./Aboutus/underline-two.png');
+                    
+                    animation:underlinemove-about-us 6s linear infinite forwards ;
+                }
+                @keyframes underlinemove-about-us {
+                    0%{
+                        width: 0px;
+                    }
+                    20%{
+                         width: 80px;
+                    }
+                    40%{
+                        width: 160px;
+                    }
+                    60%{
+                        width: 160px;
+                    }
+                    80%{
+                        width: 80px;
+                    }
+                    100%{
+                        width: 0px;
+                    }
+
+                }
             }
         }
          
@@ -359,4 +467,6 @@
             }
         }
     }
+
+    
 }

@@ -55,6 +55,13 @@ const AboutUs = () => {
 
   return (
     <div className='about-us-container'>
+        <div className='ball-move-animation-main'>
+            <div className='ball-div ball-arrow-one'></div>
+            <div  className='ball-div  ball-arrow-two'></div>
+            <div  className='ball-div  ball-arrow-three'></div>
+            <div  className='ball-div  ball-arrow-four'></div>
+            <div className='ball-div ball-arrow-five' ></div>
+        </div>
       <div className='about-us-image-container'>
         <div className='about-image-box-one'>
           <div className='about-us-image-cont-one'>
@@ -84,13 +91,16 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+
+        <div className='circle-img-about'></div>
       </div>
       <div className='about-us-content-container'>
         <div className='about-us-title-bar'>
           <p className='about-us-small'>About Us</p>
           <div className='about-us-main-tit-div'>
             <p className='about-us-main-tit'>Shaping Futures with</p>
-            <p className='about-us-main-tit-two'>Quality Education</p>
+            <p className='about-us-main-tit-two'><span className='span-tit-in-about-us'>Quality</span> <span className='about-us-underline-parent'>Education
+              <div className='about-us-underline'></div></span></p>
           </div>
           
         </div>
@@ -113,8 +123,9 @@ const AboutUs = () => {
 
 
       <div className='design-image-about'></div>
-
       </div>
+            
+
     </div>
   )
 }
