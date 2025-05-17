@@ -1,0 +1,185 @@
+@use '../main-color';
+@use '../Column-center';
+@use '../Row-center';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.side-by-elements-container{
+    height: 430px;
+    width: 100%;
+    padding: 80px 60px;
+    @include Row-center.row-center;
+
+    .side-by-inner-container{
+        height: 100%;
+        width: 100%;
+        @include Row-center.row-center;
+        gap: 60px;
+
+        .side-by-one{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(50%);
+            border-radius: 20px;
+            box-shadow: #11111a1a 0 0 16px;
+            @include Row-center.row-center;
+            gap: 20px;
+            padding: 40px 30px;
+
+            .side-by-one-img-tag{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(40%);
+                            @include Row-center.row-center;
+
+
+                .side-by-one-img{
+                    height:100%;
+                    width: 80%;
+                    border-radius: 100%;
+                background-image: url('https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/08/video_banner_02.png.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+            }
+            .side-by-one-cont-tag{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(60%);
+                @include Column-center.column-center;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap:25px;
+                .side-by-one-main-para{
+                    width: 100%;
+                    height: auto;
+                    @include Column-center.column-center;
+                    align-items: flex-start;
+                    gap: 5px;
+
+                    .side-by-p-one{
+                        width: 100%;
+                        font-size: 25px;
+                        color: #363636;
+                        font-family: "Exo 2";
+                        font-weight: 800;
+
+                    }
+                    
+                    .side-by-p-two{
+                        width: 100%;
+                        font-size: 25px;
+                        color: #363636;
+                        font-family: "Exo 2";
+                        font-weight: 800;
+                    }
+
+                }
+                .side-by-sub-para{
+                    width: 100%;
+                    @include Row-center.row-center;
+                    font-size: 14px;
+                    color: rgb(122, 122, 122);
+                    font-family: 'Roboto';
+                }
+
+                .btn-side-by{
+                    height: 45px;
+                    width: 120px;
+                    background-color: rgb(255, 74, 74);
+                    border: none;
+                    border-radius: 10px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #1f1f1f;
+                }
+            }
+
+        }
+        .side-by-two{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(50%);
+            border-radius: 20px;
+            box-shadow: #11111a1a 0 0 16px;
+            @include Row-center.row-center;
+            gap: 20px;
+            padding: 40px 30px;
+
+            .side-by-two-img-tag{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(40%);
+                @include Row-center.row-center;
+
+                .side-by-two-img{
+                height:100%;
+                    width: 80%;
+                border-radius: 100%;
+               object-fit: cover;
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+            }
+            .side-by-two-cont-tag{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(60%);
+                @include Column-center.column-center;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap:25px;
+
+                .side-by-two-main-para{
+                    width: 100%;
+                    height: auto;
+                    @include Column-center.column-center;
+                    align-items: flex-start;
+                    gap: 5px;
+                    .side-by-p-one{
+                        font-size: 25px;
+                        color: #363636;
+                        font-family: "Exo 2";
+                        font-weight: 800;
+                    }
+                    
+                    .side-by-p-two{
+                       font-size: 25px;
+                        color: #363636;
+                        font-family: "Exo 2";
+                        font-weight: 800;
+                    }
+                }
+
+                .side-by-sub-para{
+                width: 100%;
+                @include Row-center.row-center;
+               font-size: 14px;
+                    color: rgb(122, 122, 122);
+                    font-family: 'Roboto';
+                
+            }
+
+                .btn-side-by{
+                        height: 45px;
+                        width: 120px;
+                        background-color: rgb(255, 74, 74);
+                        border: none;
+                        border-radius: 10px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #1f1f1f;
+                    }
+                
+            }
+
+            
+
+
+        }
+    }
+}
