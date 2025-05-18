@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap");
 .why-choose-container {
   height: auto;
   width: 100%;
@@ -7,8 +9,9 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 40px 110px;
+  padding: 30px 110px;
   gap: 30px;
+  overflow: hidden;
 }
 .why-choose-container .why-choose-cont {
   height: 500px;
@@ -20,6 +23,19 @@
   align-items: center;
   align-items: flex-start;
   gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+.why-choose-container .why-choose-cont .rounded-desing {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  z-index: -1;
+  left: 10%;
+  background-image: url("./WhyChoose/circular (2).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .why-choose-container .why-choose-cont .why-choose-main-title {
   height: auto;
@@ -43,7 +59,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
   align-items: flex-start;
 }
 .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one {
@@ -51,6 +66,22 @@
   font-family: "Averia Libre";
   font-weight: 600;
   color: rgb(52, 52, 52);
+}
+.why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one .why-choose-tit-span {
+  font-family: "Style Script";
+  color: rgb(255, 68, 81);
+  position: relative;
+}
+.why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one .why-choose-tit-span .design-for-why-choose-tit-span {
+  position: absolute;
+  height: 20px;
+  width: 120px;
+  left: 40px;
+  bottom: 0px;
+  background-image: url("./WhyChoose/underline-why-choose.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
   font-size: 45px;
@@ -75,36 +106,67 @@
   row-gap: 25px;
 }
 .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
-  font-size: 14px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  font-family: "Delius Unicase";
   font-weight: 600;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: rgb(88, 88, 88);
   justify-content: flex-start;
-  gap: 10px;
+  gap: 15px;
 }
 .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol .why-choose-ol-span {
-  height: 25px;
-  width: 25px;
-  background-color: aqua;
+  height: 22px;
+  width: 22px;
   border-radius: 100%;
+  background-color: rgb(255, 203, 207);
+  color: red;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 .why-choose-container .why-choose-cont .why-choose-btn {
-  height: 45px;
-  width: 160px;
-  border-radius: 10px;
-  background-color: rgb(255, 90, 90);
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  border-radius: 5px;
+  font-size: 16px;
   border: none;
-  font-size: 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: aliceblue;
+  background-color: rgb(245, 84, 82);
+  color: white;
+  font-weight: 400;
+  font-family: "Anta";
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.why-choose-container .why-choose-cont .why-choose-btn .why-choose-btn-animation {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0px;
+  z-index: -1;
+  background-color: rgb(255, 203, 30);
+  transition-duration: 0.5s;
+}
+.why-choose-container .why-choose-cont .why-choose-btn:hover .why-choose-btn-animation {
+  bottom: auto;
+  top: 0px;
+  height: 100%;
+  transition-duration: 0.5s;
+}
+.why-choose-container .why-choose-cont .why-choose-btn:hover {
+  color: rgb(52, 52, 52);
+  transition-duration: 0.5s;
 }
 .why-choose-container .why-choose-img {
   height: 500px;
@@ -149,7 +211,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: blue;
   background-image: url("https://plus.unsplash.com/premium_photo-1681248156438-5c37ee8ed15e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI3fHx8ZW58MHx8fHx8");
   background-position: center;
   background-repeat: no-repeat;
@@ -157,6 +218,9 @@
   position: relative;
 }
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-one {
+  transform: translateX(60px);
+  opacity: 0;
+  transition-duration: 0.6s;
   position: absolute;
   height: 90px;
   width: 250px;
@@ -232,7 +296,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   font-weight: 500;
@@ -258,7 +322,15 @@
   font-family: "Roboto Flex";
   color: rgb(143, 143, 143);
 }
+.why-choose-container .why-choose-img .why-choose-img-div .nomove-img-about-one {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 0.6s;
+}
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-two {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition-duration: 0.6s;
   position: absolute;
   height: auto;
   padding: 15px 20px;
@@ -283,11 +355,14 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  font-weight: 400;
+  color: rgb(64, 64, 64);
+  font-size: 14px;
   justify-content: flex-start;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-two .success-rate .star-in-sucess-rate {
-  font-size: 24px;
+  font-size: 22px;
   color: rgb(255, 213, 0);
 }
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-one {
@@ -295,6 +370,27 @@
   width: 90%;
   background-color: rgb(214, 214, 214);
   border-radius: 20px;
+  position: relative;
+}
+.why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-one .line-year {
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+  color: rgb(65, 65, 65);
+  border-radius: 5px;
+  border: 1px solid rgb(218, 218, 218);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 100%;
+  right: 0px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition-duration: 0.6s;
 }
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-one .line-div-one-inner {
   height: 100%;
@@ -302,17 +398,53 @@
   background-color: rgb(0, 190, 158);
   border-radius: 20px;
 }
+.why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-one:hover .line-year {
+  transform: translateY(-5px);
+  opacity: 1;
+  transition-duration: 0.6s;
+}
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-two {
   height: 6px;
   width: 90%;
   background-color: rgb(214, 214, 214);
   border-radius: 20px;
+  position: relative;
+}
+.why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-two .line-year {
+  position: absolute;
+  height: 20px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+  border-radius: 5px;
+  color: rgb(65, 65, 65);
+  border: 1px solid rgb(218, 218, 218);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 100%;
+  right: 0px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition-duration: 0.6s;
 }
 .why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-two .line-div-two-inner {
   height: 100%;
-  width: 50%;
+  width: 70%;
   background-color: rgb(255, 95, 31);
   border-radius: 20px;
+}
+.why-choose-container .why-choose-img .why-choose-img-div .image-design-two .line-div-two:hover .line-year {
+  transform: translateY(-5px);
+  opacity: 1;
+  transition-duration: 0.6s;
+}
+.why-choose-container .why-choose-img .why-choose-img-div .nomove-img-about-two {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 0.6s;
 }
 
 /*# sourceMappingURL=WhyChoose.css.map */
