@@ -7,6 +7,7 @@ import SideBy from './Components/SideBy/SideBy'
 import StaffPage from './Components/StaffPage/StaffPage'
 import StudentPage from './Components/StudentPage/StudentPage'
 import Topcourses from './Components/TopCourses/Topcourses'
+import WhyChoose from './Components/WhyChoose/WhyChoose'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <StudentPage/>
     <AboutUs/>
     <SideBy/>
+    <WhyChoose/>
    </div>
   )
 }

@@ -427,7 +427,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  animation: rotate-half-circle 5s linear infinite forwards;
+  animation: rotate-half-circle 5s linear 3s infinite forwards;
 }
 @keyframes rotate-half-circle {
   0% {
@@ -459,7 +459,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  animation: rotate-half-circle 5s linear infinite forwards;
+  animation: rotate-half-circle 5s linear 3s infinite forwards;
 }
 @keyframes rotate-half-circle {
   0% {
