@@ -3,6 +3,8 @@ import './App.css'
 import AboutUs from './Components/AboutUs/AboutUs'
 import HomeMain from './Components/HomeMain/HomeMain'
 import Nav from './Components/NavBar/Nav'
+import ProgAdvantage from './Components/ProgAdvan/ProgAdvantage'
+import ProgramList from './Components/ProgramList/ProgramList'
 import SideBy from './Components/SideBy/SideBy'
 import StaffPage from './Components/StaffPage/StaffPage'
 import StudentPage from './Components/StudentPage/StudentPage'
@@ -22,6 +24,8 @@ function App() {
     <AboutUs/>
     <SideBy/>
     <WhyChoose/>
+    <ProgAdvantage/>
+    <ProgramList/>
    </div>
   )
 }

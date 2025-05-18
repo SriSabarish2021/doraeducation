@@ -1,0 +1,244 @@
+
+@use '../main-color';
+@use '../Column-center';
+@use '../Row-center';
+
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.prog-advantage-main-container{
+    height: auto;
+    width: 100%;
+    @include Row-center.row-center;
+    padding: 60px 60px;
+    gap: 40px;
+    overflow: hidden;
+    .prog-advantage-image-container{
+        height: 100%;
+        width: 100%;
+        flex: 1 1 calc(45%);
+        @include Row-center.row-center;
+        .image-tag-prog-advantage{
+            height:360px;
+            width: 400px;
+            border-radius: 15px;
+            position: relative;
+            background-image: url('https://livi.wpengine.com/wp-content/uploads/2024/10/service-filler-img-6.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+            .prog-advantage-image-one{
+                position: absolute;
+                height: 180px;
+                width: 180px;
+                 background-image: url('https://plus.unsplash.com/premium_photo-1681494780758-49d869689878?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnQlMjBsZWFybmluZ3xlbnwwfHwwfHx8MA%3D%3D');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                border-radius: 10px;
+                right: -40px;
+                top: -50px;
+            }
+            .prog-advantage-image-two{
+                position: absolute;
+                height: 220px;
+                width: 170px;
+                 background-image: url('https://images.unsplash.com/photo-1565598621680-94ac0c22b148?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0dWRlbnQlMjBsZWFybmluZ3xlbnwwfHwwfHx8MA%3D%3D');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                border-radius: 10px;
+                left: -120px;
+                bottom: 20px;
+            }
+            .prog-advantage-image-three{
+                position: absolute;
+                height:180px;
+                width: 240px;
+                 background-image: url('https://plus.unsplash.com/premium_photo-1682955295175-55055f5d3039?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHN0dWRlbnQlMjBsZWFybmluZ3xlbnwwfHwwfHx8MA%3D%3D');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+                border-radius: 10px;
+                right: -80px;
+                bottom: -80px;
+                z-index: -1;
+            }
+        }
+    }
+    .prog-advantage-content-container{
+        height: 100%;
+        width: 100%;
+        flex: 1 1 calc(55%);
+        @include Column-center.column-center;
+        gap: 25px;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .prog-advantage-title-bar{
+            height: auto;
+            width: 100%;
+            @include Column-center.column-center;
+             gap:15px;
+            align-items: flex-start;
+            .prog-advantage-tit-image{
+                height: 20px;
+                width: 100px;
+                background-image: url('./ProgAdvan/tit-line.png');
+                 background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .prog-advantage-tit-cont{
+                height: auto;
+                 width: 90%;
+                @include Column-center.column-center;
+                 gap: 10px;
+                align-items: flex-start;
+
+                .advan-tit-para-one{
+                    font-size: 45px;
+                    font-family: "Averia Libre";
+                    font-weight: 600;
+                    color: main-color.$font-main-color;
+
+                    .span-tit-in-prog-advantage{
+                        font-size: 45px;
+                        font-family: 'Rochester';
+                        @include main-color.letter-color-main;
+                    }
+                    
+                }
+                .advan-tit-para-two{
+                    width: 100%;
+                    font-size: 15px;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                    color: rgb(67, 67, 67);
+                }
+            }
+        }
+
+            .prog-advantage-progress-bar{
+                height: auto;
+                width: 100%;
+                @include Column-center.column-center;
+                gap: 30px;
+                align-items: flex-start;
+                .progress-one,.progress-two,.progress-three{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 15px;
+                    align-items: flex-start;
+                    
+                    .progress-para{
+                        height: auto;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        justify-content: space-between;
+                        font-size: 16px;
+                        font-family:'Open Sans';
+                        font-weight: 600;
+                        color: main-color.$font-main-color;
+
+                        .percentage-progress{
+                            font-size: 14px;
+                            font-family:'Open Sans';
+                            font-weight: 600;
+                            color: rgb(73, 73, 73);
+                        }
+
+                    }
+                    .progress-line{
+                        height: 8px;
+                        width: 100%;
+                        background-color: rgb(224, 224, 224);
+                        border-radius: 15px;
+                        overflow: hidden;
+                        .progress-inner-line{                 
+                            height: 100%;
+                            border-radius: 15px;
+                            width: 80%;
+                            background-color: rgb(255, 85, 85);
+                        }
+                    }
+                }
+            }
+    }
+
+                .prog-advantage-btn{
+                                height: 45px;
+                                width: 160px;
+                                cursor: pointer;
+                                @include Row-center.row-center;
+                                gap: 10px;
+                                background-color: rgb(255, 74, 74);
+                                border: none;
+                                border-radius: 20px;
+                                letter-spacing: 1px;
+                                font-family: 'Electrolize';
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #ffffff;
+                                position: relative;
+                                overflow: hidden;
+                                z-index: 1;
+                                transition-duration: 0.4s;
+                                margin-top: 30px;
+
+
+                                .btn-design-in-prog-advantage-by-one{
+                                    position: absolute;
+                                    height: 50%;
+                                    width:0%;
+                                    top: 0px;
+                                    left: 0px;
+                                    background-color: #fec300;
+                                    z-index: -1;
+                                    transition-duration: 0.5s;
+                                }
+                                .btn-design-in-prog-advantage-by-two{
+                                    position: absolute;
+                                    height: 50%;
+                                    width: 0%;
+                                    bottom:0px;
+                                    right: 0px;
+                                    background-color: #fec300;
+                                    z-index: -1;
+                                    transition-duration: 0.5s;
+                                }
+
+                                .arrow-btn-prog-advantage-by{
+                                    transform: translateX(0px) rotate(0deg);
+                                    transition-duration: 0.4s;
+                                }
+
+
+                            
+                            
+                }
+                .prog-advantage-btn:hover .btn-design-in-prog-advantage-by-one{
+                        width: 100%;
+                        transition-duration: 0.5s;
+                }
+                .prog-advantage-btn:hover .btn-design-in-prog-advantage-by-two{
+                        width: 100%;
+                        transition-duration: 0.5s;
+                }
+                .prog-advantage-btn:hover{
+                    color: rgb(43, 43, 43);
+                    transition-duration: 0.4s;
+                    font-weight:800;
+                }
+               .prog-advantage-btn:hover .arrow-btn-prog-advantage-by{
+                transform: translateX(10px) rotate(-10deg);
+                transition-duration: 0.4s;
+                }
+}
