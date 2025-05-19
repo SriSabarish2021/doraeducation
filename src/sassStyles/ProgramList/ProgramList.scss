@@ -10,11 +10,14 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
 .program-list-main-container{
     height: auto;
     width: 100%;
-    padding: 100px 80px;
+    padding: 80px 100px;
     @include Column-center.column-center;
     gap: 60px;
 
@@ -22,27 +25,29 @@
         height: auto;
         width: 100%;
         @include Column-center.column-center;
-        gap: 20px;
+        gap: 15px;
 
         .program-list-para-one{
-            font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            font-family: 'Delius';
             font-weight: 600;
-            color: rgb(103, 103, 103);
+            color: rgb(255, 127, 127);
         }
         .program-list-para-two{
             font-size: 45px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Sour Gummy';
             font-weight: 600;
             color: main-color.$font-main-color;
         }
         .program-list-para-three{
             width: 60%;
-            font-size: 18px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            font-family: 'Roboto';
             font-weight: 400;
             text-align: center;
-            color:rgb(255, 201, 201);
+            letter-spacing: 1px;
+            line-height: 30px;
+            color:rgb(126, 126, 126);
         }
 
     }
@@ -52,16 +57,10 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        column-gap: 40px;
-        row-gap: 40px;
+        column-gap: 60px;
+        row-gap: 80px;
 
 
-        .program-list-items{
-        height: auto;
-        width: 100%;
-        @include Row-center.row-center;
-        gap: 40px;
-        
 
         .program-item-one{
             height: 500px;
@@ -71,7 +70,23 @@
             border-radius: 10px;
             gap: 0px;
             @include Column-center.column-center;
+            transition-duration: 0.5s;
+            position: relative;
+            overflow: hidden;
 
+
+            .hovering-content-program-items{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background-color: rgb(255, 64, 64);
+                opacity: 0;
+                border-radius: 100%;
+                transform: scale(0.7);
+                transition-duration: 0.4s;
+                
+
+            }
 
             .program-image-bar{
                 height: 100%;
@@ -83,6 +98,8 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                            transition-duration: 0.5s;
+
                 
             }
             .program-content-bar{
@@ -101,7 +118,7 @@
                     width: 100%;
 
                     @include Row-center.row-center;
-                    gap:10px;
+                    gap:14px;
                      justify-content: flex-start;
 
                      .program-info-para-one{
@@ -111,10 +128,12 @@
                          font-family:'Overlock';
                          font-weight: 600;
                          color: rgb(46, 46, 46);
-                         padding-right: 10px;
+                         padding-right: 14px;
                          border-right: 1px solid rgb(192, 192, 192);
+                         transition-duration: 0.3s;
                          
                         }
+                        
                      .program-info-para-two{
                         @include Row-center.row-center;
                         gap:5px;
@@ -135,7 +154,7 @@
                          color: rgb(46, 46, 46);
                      }
                      .icon{
-                        font-size: 15px;
+                        font-size: 16px;
                         color: red;
                      }
                 }
@@ -144,7 +163,7 @@
                     height:auto;
                     width: auto;
                     padding: 6px 25px;
-                    background-color: rgb(255, 217, 217);
+                    background-color: rgb(255, 226, 226);
                     @include Column-center.column-center;
                     border-radius: 3px;
                     font-size: 13px;
@@ -162,7 +181,7 @@
                     gap: 6px;
                     .program-title{
                         width: 100%;
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 500;
                         font-family: 'Convergence';
                         color: main-color.$font-main-color;
@@ -176,12 +195,15 @@
                         letter-spacing: 1px;
                     }
                 }
+
+                
                 
 
                 
                 
             }
             .program-star-bar{
+                padding-right: 10px;
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(10%);
@@ -207,7 +229,7 @@
                   .star-span-para{
                         font-size: 14px;
                         font-family: 'Convergence';
-                        color: rgb(80, 80, 80);
+                        color: rgb(65, 65, 65);
                         letter-spacing: 2px;
                      }
 
@@ -215,15 +237,52 @@
 
                }
                .amt-para-in-prog-list{
-                        font-size: 20px;
+                        font-size: 22px;
                         font-weight: 400;
                         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                         color: main-color.$main-color-for-app-little-darker;
             }
             }
         }
+        .program-item-one:hover{
+            border: 1px solid rgb(255, 161, 161);
+            transform: scale(1.02);
+            box-shadow: rgb(252, 76, 76) 0px 15px 20px -10px;
+            transition-duration: 0.5s;
+        }
+        .program-item-one:hover .program-image-bar{
+            
+            transform: scale(1.6);
+            
+            transition-duration: 0.5s;
+        }
+         
 
+        .program-item-one:hover .hovering-content-program-items{
+            opacity: 1;   
+            transition: opacity 0.1s linear,transform 0.4s linear,border-radius  0.4s linear;
+            transform: scale(1);
+            border-radius: 0%;
+            transition-delay: 0.1s;
+        }
+
+
+
+        
+
+    
     }
+
+    .program-list-btn{
+        height: 45px;
+        width: 180px;
+        border-radius: 10px;
+        background-color: rgb(255, 70, 70);
+        border: none;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        margin-top: 30px;
     }
 
     

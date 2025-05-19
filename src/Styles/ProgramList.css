@@ -4,10 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
 .program-list-main-container {
   height: auto;
   width: 100%;
-  padding: 100px 80px;
+  padding: 80px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,46 +24,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .program-list-main-container .program-list-title-container .program-list-para-one {
-  font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-family: "Delius";
   font-weight: 600;
-  color: rgb(103, 103, 103);
+  color: rgb(255, 127, 127);
 }
 .program-list-main-container .program-list-title-container .program-list-para-two {
   font-size: 45px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Sour Gummy";
   font-weight: 600;
   color: rgb(52, 52, 52);
 }
 .program-list-main-container .program-list-title-container .program-list-para-three {
   width: 60%;
-  font-size: 18px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-family: "Roboto";
   font-weight: 400;
   text-align: center;
-  color: rgb(255, 201, 201);
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: rgb(126, 126, 126);
 }
 .program-list-main-container .program-list-items-container {
   height: auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
-  row-gap: 40px;
+  column-gap: 60px;
+  row-gap: 80px;
 }
-.program-list-main-container .program-list-items-container .program-list-items {
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one {
+.program-list-main-container .program-list-items-container .program-item-one {
   height: 500px;
   width: 400px;
   border: 1px solid rgb(205, 205, 205);
@@ -71,8 +67,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition-duration: 0.5s;
+  position: relative;
+  overflow: hidden;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-image-bar {
+.program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255, 64, 64);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(0.7);
+  transition-duration: 0.4s;
+}
+.program-list-main-container .program-list-items-container .program-item-one .program-image-bar {
   height: 100%;
   width: 100%;
   flex: 1 1 50%;
@@ -82,8 +91,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition-duration: 0.5s;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
   height: 100%;
   width: 100%;
   flex: 1 1 40%;
@@ -97,17 +107,17 @@
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .program-info {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   justify-content: flex-start;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .program-info .program-info-para-one {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -117,10 +127,11 @@
   font-family: "Overlock";
   font-weight: 600;
   color: rgb(46, 46, 46);
-  padding-right: 10px;
+  padding-right: 14px;
   border-right: 1px solid rgb(192, 192, 192);
+  transition-duration: 0.3s;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .program-info .program-info-para-two {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -133,7 +144,7 @@
   padding-right: 15px;
   border-right: 1px solid rgb(192, 192, 192);
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .program-info .program-info-para-three {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -144,15 +155,15 @@
   font-family: "Overlock";
   color: rgb(46, 46, 46);
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .program-info .icon {
-  font-size: 15px;
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .icon {
+  font-size: 16px;
   color: red;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .level-of-difficulty {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty {
   height: auto;
   width: auto;
   padding: 6px 25px;
-  background-color: rgb(255, 217, 217);
+  background-color: rgb(255, 226, 226);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +175,7 @@
   color: red;
   letter-spacing: 1px;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .prog-con-container {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container {
   height: auto;
   width: 100%;
   display: flex;
@@ -174,14 +185,14 @@
   justify-content: flex-start;
   gap: 6px;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .prog-con-container .program-title {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title {
   width: 100%;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Convergence";
   color: rgb(52, 52, 52);
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+.program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
   width: 100%;
   font-size: 14px;
   font-family: "Overlock";
@@ -189,7 +200,8 @@
   line-height: 25px;
   letter-spacing: 1px;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-star-bar {
+.program-list-main-container .program-list-items-container .program-item-one .program-star-bar {
+  padding-right: 10px;
   height: 100%;
   width: 100%;
   flex: 1 1 10%;
@@ -202,7 +214,7 @@
   padding-bottom: 10px;
   border-top: 1px solid rgb(222, 222, 222);
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-star-bar .star-div-for-program {
+.program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program {
   height: auto;
   width: auto;
   display: flex;
@@ -211,7 +223,7 @@
   align-items: center;
   gap: 10px;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+.program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -220,17 +232,45 @@
   gap: 5px;
   color: rgb(255, 200, 0);
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+.program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
   font-size: 14px;
   font-family: "Convergence";
-  color: rgb(80, 80, 80);
+  color: rgb(65, 65, 65);
   letter-spacing: 2px;
 }
-.program-list-main-container .program-list-items-container .program-list-items .program-item-one .program-star-bar .amt-para-in-prog-list {
-  font-size: 20px;
+.program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list {
+  font-size: 22px;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: rgb(255, 68, 81);
+}
+.program-list-main-container .program-list-items-container .program-item-one:hover {
+  border: 1px solid rgb(255, 161, 161);
+  transform: scale(1.02);
+  box-shadow: rgb(252, 76, 76) 0px 15px 20px -10px;
+  transition-duration: 0.5s;
+}
+.program-list-main-container .program-list-items-container .program-item-one:hover .program-image-bar {
+  transform: scale(1.6);
+  transition-duration: 0.5s;
+}
+.program-list-main-container .program-list-items-container .program-item-one:hover .hovering-content-program-items {
+  opacity: 1;
+  transition: opacity 0.1s linear, transform 0.4s linear, border-radius 0.4s linear;
+  transform: scale(1);
+  border-radius: 0%;
+  transition-delay: 0.1s;
+}
+.program-list-main-container .program-list-btn {
+  height: 45px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: rgb(255, 70, 70);
+  border: none;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=ProgramList.css.map */
