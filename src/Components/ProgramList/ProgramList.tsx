@@ -3,6 +3,7 @@ import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
 import { PiStudent } from "react-icons/pi";
 import { IoStar } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
 
 const ProgramList = () => {
   return (
@@ -38,7 +39,32 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-            <div className='hovering-content-program-items'></div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <button className='hover-enroll-btn'>
+                  Enroll Now
+                  <div className='prog-enroll-design-one'></div>
+                   <div className='prog-enroll-design-two'></div>
+                </button>
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
           </div>
          
        
@@ -66,7 +92,32 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-            <div className='hovering-content-program-items'></div>
+             <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <button className='hover-enroll-btn'>
+                  Enroll Now
+                  <div className='prog-enroll-design-one'></div>
+                   <div className='prog-enroll-design-two'></div>
+                </button>
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         
         
@@ -94,7 +145,32 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-            <div className='hovering-content-program-items'></div>
+             <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <button className='hover-enroll-btn'>
+                  Enroll Now
+                  <div className='prog-enroll-design-one'></div>
+                   <div className='prog-enroll-design-two'></div>
+                </button>
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         
        
@@ -122,7 +198,32 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-            <div className='hovering-content-program-items'></div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <button className='hover-enroll-btn'>
+                  Enroll Now
+                  <div className='prog-enroll-design-one'></div>
+                   <div className='prog-enroll-design-two'></div>
+                </button>
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
           </div>
        
        
@@ -150,7 +251,32 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-            <div className='hovering-content-program-items'></div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <button className='hover-enroll-btn'>
+                  Enroll Now
+                  <div className='prog-enroll-design-one'></div>
+                   <div className='prog-enroll-design-two'></div>
+                </button>
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
           </div>
       
         
@@ -178,10 +304,36 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-            <div className='hovering-content-program-items'></div>
+          <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <button className='hover-enroll-btn'>
+                  Enroll Now
+                  <div className='prog-enroll-design-one'></div>
+                   <div className='prog-enroll-design-two'></div>
+                </button>
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         
       </div>
+      
 
       <button className='program-list-btn'>See More</button>
      
