@@ -4,6 +4,17 @@ import { FaArrowRight } from "react-icons/fa6";
 const ProgAdvantage = () => {
   return (
     <div className='prog-advantage-main-container'>
+        <div className='line-animation-in-prog-list-left'>
+          <div className="line-div-for-prog-list line-one"></div>
+          <div className="line-div-for-prog-list line-two"></div>
+          <div className="line-div-for-prog-list line-three"></div>
+          <div className="line-div-for-prog-list line-four"></div>
+          <div className="line-div-for-prog-list line-five"></div>
+          <div className="line-div-for-prog-list line-six"></div>
+          <div className="line-div-for-prog-list line-seven"></div>
+          <div className="line-div-for-prog-list line-eight"></div>
+          
+     </div>
         <div className='prog-advantage-image-container'>
             <div className='image-tag-prog-advantage'>
                 <div className='prog-advantage-image-one'></div>

@@ -4,13 +4,15 @@ import { PiReadCvLogo } from "react-icons/pi";
 import { PiStudent } from "react-icons/pi";
 import { IoStar } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa6";
 
 const ProgramList = () => {
   return (
     <div className='program-list-main-container'>
+      <div className='program-list-deisgn-div'></div>
       <div className='program-list-title-container'>
         <p className='program-list-para-one'>Popular Courses</p>
-        <p className='program-list-para-two'>Our Programs & Accrediation</p>
+        <p className='program-list-para-two'>Our <span className='prog-list-underline-title'>Programs <span className='underline-for-prog-list-tit'></span></span> & <span className='span-for-title-in-program-list'>Accrediation</span></p>
         <p className='program-list-para-three'>Viverra maecenas tempus facilisi pulvinar sapien. Fermentum egestas tellus consequat nisl vel pretium Nunc eu hendrerit turpis. Fusce non lectus sem In pellentesque nunc.</p>
       </div>
       <div className='program-list-items-container'>
@@ -335,7 +337,10 @@ const ProgramList = () => {
       </div>
       
 
-      <button className='program-list-btn'>See More</button>
+      <button className='program-list-btn'>Expand Your Learning <FaArrowRight className='arrow-btn-prog-list-by'/>
+        <div className='btn-design-in-prog-list-by-one'></div>
+        <div className='btn-design-in-prog-list-by-two'></div> 
+      </button>
      
       
     </div>
