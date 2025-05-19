@@ -1,8 +1,182 @@
 import '/src/Styles/ProgramList.css'
+import { PiClock } from "react-icons/pi";
+import { PiReadCvLogo } from "react-icons/pi";
+import { PiStudent } from "react-icons/pi";
+import { IoStar } from "react-icons/io5";
 
 const ProgramList = () => {
   return (
-    <div>
+    <div className='program-list-main-container'>
+      <div className='program-list-title-container'>
+        <p className='program-list-para-one'>Popular Courses</p>
+        <p className='program-list-para-two'>Our Programs & Accrediation</p>
+        <p className='program-list-para-three'>Viverra maecenas tempus facilisi pulvinar sapien. Fermentum egestas tellus consequat nisl vel pretium Nunc eu hendrerit turpis. Fusce non lectus sem In pellentesque nunc.</p>
+      </div>
+      <div className='program-list-items-container'>
+        <div className='program-list-items'>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+          </div>
+        </div>  
+        <div className='program-list-items'>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+          </div>
+        </div> 
+        <div className='program-list-items'>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+          </div>
+        </div> 
+        <div className='program-list-items'>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+          </div>
+        </div> 
+        <div className='program-list-items'>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+          </div>
+        </div> 
+        <div className='program-list-items'>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+     
       
     </div>
   )
