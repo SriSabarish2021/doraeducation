@@ -13,78 +13,16 @@
   overflow: hidden;
   position: relative;
 }
-.prog-advantage-main-container .line-animation-in-prog-list-left {
-  height: auto;
-  width: auto;
+.prog-advantage-main-container .dotted-animation {
   position: absolute;
+  height: 400px;
+  width: 400px;
   left: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  overflow: hidden;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-div-for-prog-list {
-  height: 12px;
-  width: 120px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-image: url("./ProgAdvan/dot-advantage.png");
   background-position: center;
-  background-image: url("./ProgList/line-for-prog-list (1).png");
-  transform: translateX(-130px);
-  opacity: 0;
-  animation: arrowmove-advantage 4s infinite linear forwards;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-one {
-  animation-delay: 0s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-two {
-  animation-delay: 0.4s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-three {
-  animation-delay: 0.8s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-four {
-  animation-delay: 1.2s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-five {
-  animation-delay: 1.5s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-six {
-  animation-delay: 1.8s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-seven {
-  animation-delay: 2.1s;
-}
-.prog-advantage-main-container .line-animation-in-prog-list-left .line-eight {
-  animation-delay: 2.4s;
-}
-@keyframes arrowmove-advantage {
-  0% {
-    transform: translateX(-130px);
-    opacity: 0;
-  }
-  20% {
-    transform: translateX(-70px);
-    opacity: 0.5;
-  }
-  40% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  70% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  80% {
-    transform: translateX(-70px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(-130px);
-    opacity: 0;
-  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .prog-advantage-main-container .prog-advantage-image-container {
   height: 100%;

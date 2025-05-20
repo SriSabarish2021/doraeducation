@@ -193,6 +193,38 @@
   align-items: center;
   gap: 40px;
   align-items: flex-start;
+  position: relative;
+}
+.student-join-container .student-join-content-container .box-animation {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border: 4px solid rgb(255, 137, 137);
+  top: 20%;
+  right: 20%;
+  transform: rotate(-10deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.student-join-container .student-join-content-container .box-animation .inner-box-animation {
+  height: 80%;
+  width: 80%;
+  border-radius: 5px;
+  background-color: rgb(255, 61, 61);
+}
+.student-join-container .student-join-content-container .hand-shake-animation {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  right: 0%;
+  bottom: 10%;
+  background-image: url("./StudentJoin/hand.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .student-join-container .student-join-content-container .main-title-in-student-join {
   height: auto;
@@ -312,9 +344,43 @@
 }
 .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
   background-color: rgb(215, 147, 255);
+  position: relative;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .break-circle-two {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -25px;
+  right: -25px;
+  background-image: url("./StudentJoin/break-cirlce.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotatedesign-student-join 8s linear infinite;
 }
 .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one {
   background-color: rgb(255, 240, 108);
+  position: relative;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .break-circle-one {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -25px;
+  right: -25px;
+  background-image: url("./StudentJoin/break-cirlce.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: rotatedesign-student-join 8s linear infinite;
+}
+@keyframes rotatedesign-student-join {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .student-join-container .student-join-content-container .stud-join-main-btn {
   display: flex;

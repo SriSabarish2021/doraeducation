@@ -1,20 +1,29 @@
+import { useState } from 'react';
 import '/src/Styles/ProgAdvantage.css'
 import { FaArrowRight } from "react-icons/fa6";
 
 const ProgAdvantage = () => {
+    
+      const [AdvanX,setAdvanX]=useState(0)
+      const [AdvanY,setAdvanY]=useState(0)
+        const MouseMoveEvent=(event:unknown)=>{
+    
+        
+        const elementtargeting=event.currentTarget
+        const viewelement=elementtargeting.getBoundingClientRect()
+    
+        const totwidht:number=event.clientX-viewelement.left
+        const totheight:number=event.clientY-viewelement.top
+    
+        const offsetX:number=(totwidht/viewelement.width)*100
+        const offsetY:number=(totheight/viewelement.height)*100
+        setAdvanX(-offsetX/5)
+        setAdvanY(-offsetY/5)
+    
+      }
   return (
-    <div className='prog-advantage-main-container'>
-        <div className='line-animation-in-prog-list-left'>
-          <div className="line-div-for-prog-list line-one"></div>
-          <div className="line-div-for-prog-list line-two"></div>
-          <div className="line-div-for-prog-list line-three"></div>
-          <div className="line-div-for-prog-list line-four"></div>
-          <div className="line-div-for-prog-list line-five"></div>
-          <div className="line-div-for-prog-list line-six"></div>
-          <div className="line-div-for-prog-list line-seven"></div>
-          <div className="line-div-for-prog-list line-eight"></div>
-          
-     </div>
+    <div className='prog-advantage-main-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+        <div className='dotted-animation' style={{transform:`translateX(${AdvanX}px) translateY(${AdvanY}px)`,transitionDuration:'0.2s'}}></div>
         <div className='prog-advantage-image-container'>
             <div className='image-tag-prog-advantage'>
                 <div className='prog-advantage-image-one'></div>

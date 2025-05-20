@@ -10,6 +10,7 @@ import SideBy from './Components/SideBy/SideBy'
 import StaffPage from './Components/StaffPage/StaffPage'
 import StudentJoin from './Components/StudentJoin/StudentJoin'
 import StudentPage from './Components/StudentPage/StudentPage'
+import Testimonial from './Components/Testimonial/Testimonial'
 import Topcourses from './Components/TopCourses/Topcourses'
 import WhyChoose from './Components/WhyChoose/WhyChoose'
 
@@ -30,6 +31,7 @@ function App() {
     <ProgAdvantage/>
     <StudentJoin/>
     <Process/>
+    <Testimonial/>
    </div>
   )
 }

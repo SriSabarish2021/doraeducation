@@ -7,7 +7,11 @@ const Process = () => {
       <div className='process-inner-container'>
         <div className='process-head-title-container'>
             <p className='process-title'>Process</p>
-            <p className='process-main-title'>Follow Up Steps</p>
+            <div className='process-main-tit-div'>
+                <p className='process-main-title'>Follow Up Steps</p>
+                <p className='process-sub-main-title'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur odit, facilis non laboriosam unde labore dicta vel nam quod cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veritatis.</p>
+            </div>
+            
         </div>
         <div className='process-div-container'>
             <div className='process-inner-div process-one'>
@@ -34,6 +38,7 @@ const Process = () => {
                             <div className='div-for-step-two-round'></div>
                     </div>
                 </div>
+                <div className='search-book-image'></div>
                 
             </div>
             <div className='process-inner-div process-three'>
@@ -53,6 +58,7 @@ const Process = () => {
                             <div className='div-for-step-three-round'></div>
                     </div>
                 </div>
+                <div className="computer-image"></div>
             </div>
             <div className='process-inner-div process-four'>
                 <div className='step-four'>
@@ -70,6 +76,7 @@ const Process = () => {
                             <div className='div-for-step-four-round'></div>
                     </div>
                 </div>
+                <div className="test-image"></div>
             </div>
             <div className='process-inner-div process-five'>
                  <div className='step-five'>
@@ -89,6 +96,7 @@ const Process = () => {
                              <div className='div-for-step-five-round-two'></div>
                     </div>
                 </div>
+               <div className="enroll-image"></div>
             </div>
         </div>
       </div>

@@ -44,10 +44,29 @@
   font-weight: 600;
   font-family: "Delius Unicase";
 }
-.process-container .process-inner-container .process-head-title-container .process-main-title {
+.process-container .process-inner-container .process-head-title-container .process-main-tit-div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-main-title {
   font-size: 45px;
   font-family: "Averia Libre";
   font-weight: 600;
+  color: rgb(52, 52, 52);
+}
+.process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title {
+  width: 70%;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: "Roboto";
   color: rgb(52, 52, 52);
 }
 .process-container .process-inner-container .step-tit-para-one {
@@ -132,9 +151,7 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  animation: left-boxmove linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  position: relative;
 }
 .process-container .process-inner-container .process-div-container .process-two .step-two {
   height: auto;
@@ -147,6 +164,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
+  animation: left-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner {
   height: 100%;
@@ -203,6 +223,17 @@
   background-color: rgb(255, 255, 255);
   top: -15px;
 }
+.process-container .process-inner-container .process-div-container .process-two .search-book-image {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  left: 60%;
+  transform: rotate(-30deg);
+  background-image: url("./Process/dictionary (1).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .process-container .process-inner-container .process-div-container .process-three {
   width: 100%;
   height: auto;
@@ -211,9 +242,6 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-  animation: right-boxmove linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-three .step-three {
   height: auto;
@@ -226,6 +254,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
+  animation: right-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner {
   height: 100%;
@@ -282,6 +313,17 @@
   background-color: #ffffff;
   top: -15px;
 }
+.process-container .process-inner-container .process-div-container .process-three .computer-image {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  right: 60%;
+  transform: rotate(0deg);
+  background-image: url("./Process/online-test.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .process-container .process-inner-container .process-div-container .process-four {
   width: 100%;
   height: auto;
@@ -290,9 +332,6 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  animation: left-boxmove linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-four .step-four {
   height: auto;
@@ -305,6 +344,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
+  animation: left-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner {
   height: 100%;
@@ -361,6 +403,17 @@
   background-color: rgb(255, 255, 255);
   top: -15px;
 }
+.process-container .process-inner-container .process-div-container .process-four .test-image {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  left: 60%;
+  transform: rotate(-20deg);
+  background-image: url("./Process/search (1).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .process-container .process-inner-container .process-div-container .process-five {
   width: 100%;
   height: auto;
@@ -369,9 +422,6 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
-  animation: right-boxmove linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-five .step-five {
   height: auto;
@@ -384,6 +434,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
+  animation: right-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner {
   height: 100%;
@@ -448,6 +501,17 @@
   border: 6px solid rgb(255, 207, 201);
   background-color: rgb(255, 81, 81);
   bottom: -15px;
+}
+.process-container .process-inner-container .process-div-container .process-five .enroll-image {
+  position: absolute;
+  height: 110px;
+  width: 110px;
+  right: 60%;
+  transform: rotate(20deg);
+  background-image: url("./Process/enroll.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 @keyframes left-boxmove {
   0% {

@@ -40,12 +40,29 @@
                 font-weight: 600;
                 font-family: "Delius Unicase";
             }
-            .process-main-title{
-               font-size: 45px;
-                font-family: "Averia Libre";
-                font-weight: 600;
-                color: rgb(52, 52, 52);
+            .process-main-tit-div{
+                height: auto;
+                width: 100%;
+                 @include Column-center.column-center;
+                gap: 20px;
+                .process-main-title{
+                    font-size: 45px;
+                    font-family: "Averia Libre";
+                    font-weight: 600;
+                    color: rgb(52, 52, 52);
+                }
+                .process-sub-main-title{
+                    width: 70%;
+                    text-align: center;
+                    font-size: 15px;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                    color: rgb(52, 52, 52);
+                }
             }
+           
          }
 
             .step-tit-para-one{
@@ -126,10 +143,8 @@
                 
                 @include Row-center.row-center;
                 justify-content: flex-start;
+                position: relative;
                 
-                animation: left-boxmove linear ;
-                animation-timeline: view();
-                animation-range: entry 0% cover 40%;
                  .step-two{
                     height: auto;
                     width: 50%;
@@ -138,6 +153,9 @@
                     @include Row-center.row-center;
                     align-items: flex-start;
                     position: relative;
+                    animation: left-boxmove linear ;
+                    animation-timeline: view();
+                    animation-range: entry 0% cover 40%;
                     .step-two-inner{
                         height: 100%;
                         width: 100%;
@@ -187,16 +205,27 @@
                     }
                 }
                 }
+
+                .search-book-image{
+                    position: absolute;
+                    height: 110px;
+                    width: 110px;
+                    left: 60%;
+                    transform: rotate(-30deg);
+                    background-image: url('./Process/dictionary (1).png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                }
                 
-            }
+            } 
             .process-three{
                 width: 100%;
                 height: auto;
                 @include Row-center.row-center;
                 justify-content: flex-end;
-                animation: right-boxmove linear ;
-                animation-timeline: view();
-                animation-range: entry 0% cover 40%;
+                
                 .step-three{
                     height: auto;
                     width: 50%;
@@ -205,6 +234,9 @@
                     @include Row-center.row-center;
                     align-items: flex-start;
                     position: relative;
+                    animation: right-boxmove linear ;
+                    animation-timeline: view();
+                    animation-range: entry 0% cover 40%;
                 .step-three-inner{
                         height: 100%;
                         width: 100%;
@@ -253,6 +285,19 @@
                     }
                 }
                 }
+
+                .computer-image{
+                    position: absolute;
+                    height: 110px;
+                    width: 110px;
+                    right:60%;
+                    transform: rotate(-0deg);
+                    background-image: url('./Process/online-test.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                }
             }
             .process-four{
                 width: 100%;
@@ -260,9 +305,6 @@
                  @include Row-center.row-center;
                 justify-content: flex-start;
                
-                animation: left-boxmove linear ;
-                animation-timeline: view();
-                animation-range: entry 0% cover 40%;
                 .step-four{
                     height: auto;
                     width: 50%;
@@ -271,7 +313,9 @@
                     @include Row-center.row-center;
                     align-items: flex-start;
                     position: relative;
-
+                    animation: left-boxmove linear ;
+                    animation-timeline: view();
+                    animation-range: entry 0% cover 40%;
                     .step-four-inner{
                         height: 100%;
                         width: 100%;
@@ -322,15 +366,26 @@
                     }
                     }
                 }
+
+                .test-image{
+                    position: absolute;
+                    height: 110px;
+                    width: 110px;
+                    left:60%;
+                    transform: rotate(-20deg);
+                    background-image: url('./Process/search (1).png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                }
             }
             .process-five{
                 width: 100%;
                height: auto;
                 @include Row-center.row-center;
                 justify-content: flex-end;
-                  animation: right-boxmove linear ;
-                animation-timeline: view();
-                animation-range: entry 0% cover 40%;
+                 
                 
                 .step-five{
                     height: auto;
@@ -340,6 +395,9 @@
                     @include Row-center.row-center;
                     align-items: flex-start;
                     position: relative;
+                     animation: right-boxmove linear ;
+                    animation-timeline: view();
+                    animation-range: entry 0% cover 40%;
                 .step-five-inner{
                         height: 100%;
                         width: 100%;
@@ -398,6 +456,20 @@
 
                     }
                 }
+                }
+
+                
+                .enroll-image{
+                    position: absolute;
+                    height: 110px;
+                    width: 110px;
+                    right:60%;
+                    transform: rotate(20deg);
+                    background-image: url('./Process/enroll.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
                 }
             }
 

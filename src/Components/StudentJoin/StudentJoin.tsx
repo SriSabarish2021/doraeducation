@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '/src/Styles/StudentJoin.css'
 import { FaArrowRight } from "react-icons/fa6";
 import { IoStar } from "react-icons/io5";
@@ -51,11 +51,26 @@ const StudentJoin = () => {
     }
   }, [])
   
+  const [handX,setHandX]=useState(0)
+  const [handY,setHandY]=useState(0)
+    const MouseMoveEvent=(event:unknown)=>{
 
-  
+    
+    const elementtargeting=event.currentTarget
+    const viewelement=elementtargeting.getBoundingClientRect()
+
+    const totwidht:number=event.clientX-viewelement.left
+    const totheight:number=event.clientY-viewelement.top
+
+    const offsetX:number=(totwidht/viewelement.width)*100
+    const offsetY:number=(totheight/viewelement.height)*100
+    setHandX(-offsetX/5)
+    setHandY(-offsetY/5)
+
+  }
 
   return (
-    <div className='student-join-container'>
+    <div className='student-join-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
       <div className='student-join-image-container'>
         <div className='small-box-about-review-design'>
           
@@ -78,7 +93,13 @@ const StudentJoin = () => {
           <div className='student-join-image-two-insider-two'></div>
         </div>
       </div>
+      
       <div className='student-join-content-container'>
+        <div className="hand-shake-animation" style={{transform:`translateX(${handX}px) translateY(${handY}px)`,transitionDuration:'0.2s'}}></div>
+        <div className="box-animation" > 
+          <span className='inner-box-animation' style={{transform:`translateX(${-handX}px) translateY(${-handY}px)`,transitionDuration:'0.2s'}}></span>
+
+        </div>
         <div className='main-title-in-student-join'>
           <p className='small-tit-in-student-join'>Academic Excellence</p>
           <div className='main-title-div-for-head-stud-join'>
@@ -97,8 +118,10 @@ const StudentJoin = () => {
               <p  className='student-number-para-one'>Courses</p>
               <p  className='student-number-para-two'>+120</p>
             </div>
+            <div className="break-circle-one"></div>
           </div>
           <div className='information-box-two'>
+            <div className="break-circle-two"></div>
             <div className='mode-of-student-join-one mode-of-stud-two'>
               <p>Education</p>
             </div>
