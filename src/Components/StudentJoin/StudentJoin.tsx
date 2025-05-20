@@ -13,6 +13,7 @@ const StudentJoin = () => {
 
     const observeelementthree=document.querySelector('.student-join-image-two-insider-one')
     const observeelementfour=document.querySelector('.student-join-image-two-insider-two')
+    const observeelementfive=document.querySelector('.small-box-about-review-design')
 
     const observer=new IntersectionObserver(([entry])=>{
         if (entry.intersectionRatio>0.35) {
@@ -20,12 +21,14 @@ const StudentJoin = () => {
           observeelementtwo?.classList.add('student-join-image-one-insider-two-no-animation')
           observeelementthree?.classList.add('student-join-image-two-insider-one-no-animation')
           observeelementfour?.classList.add('student-join-image-two-insider-two-no-animation')
+          observeelementfive?.classList.add('design-no-scale')
         }
         else{
           observeelementone?.classList.remove('student-join-image-one-insider-one-no-animation')
           observeelementtwo?.classList.remove('student-join-image-one-insider-two-no-animation')
           observeelementthree?.classList.remove('student-join-image-two-insider-one-no-animation')
           observeelementfour?.classList.remove('student-join-image-two-insider-two-no-animation')
+          observeelementfive?.classList.remove('design-no-scale')
         }
       
       

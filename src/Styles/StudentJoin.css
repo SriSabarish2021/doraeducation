@@ -34,6 +34,9 @@
   gap: 15px;
   padding: 20px 20px;
   z-index: 1;
+  transform: scale(0);
+  transition-duration: 0.6s;
+  transition-delay: 0s;
 }
 .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews {
   height: 35px;
@@ -88,6 +91,11 @@
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(42, 42, 42);
+}
+.student-join-container .student-join-image-container .design-no-scale {
+  transform: scale(1);
+  transition-duration: 0.6s;
+  transition-delay: 0.6s;
 }
 .student-join-container .student-join-image-container .student-join-image-container-one {
   height: 100%;
