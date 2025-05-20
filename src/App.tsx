@@ -3,6 +3,7 @@ import './App.css'
 import AboutUs from './Components/AboutUs/AboutUs'
 import HomeMain from './Components/HomeMain/HomeMain'
 import Nav from './Components/NavBar/Nav'
+import Process from './Components/Process/Process'
 import ProgAdvantage from './Components/ProgAdvan/ProgAdvantage'
 import ProgramList from './Components/ProgramList/ProgramList'
 import SideBy from './Components/SideBy/SideBy'
@@ -28,6 +29,7 @@ function App() {
     <ProgramList/>
     <ProgAdvantage/>
     <StudentJoin/>
+    <Process/>
    </div>
   )
 }
