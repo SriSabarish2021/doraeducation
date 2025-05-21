@@ -1,6 +1,7 @@
 
 import './App.css'
 import AboutUs from './Components/AboutUs/AboutUs'
+import Footer from './Components/Footer/Footer'
 import HomeMain from './Components/HomeMain/HomeMain'
 import Nav from './Components/NavBar/Nav'
 import Process from './Components/Process/Process'
@@ -32,6 +33,7 @@ function App() {
     <StudentJoin/>
     <Process/>
     <Testimonial/>
+    <Footer/>
    </div>
   )
 }

@@ -1,4 +1,4 @@
-import { useState,useEffect,useRef } from 'react';
+import { useEffect,useRef } from 'react';
 import '/src/Styles/Testimonial.css'
 import { FaStar } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -54,6 +54,13 @@ const Testimonial = () => {
 
   return (
     <div className='testimonial-container'>
+    <div className='comment-image-design'></div>
+    <div className='side-image-design'></div>
+    <div className='book-image-testimonial'></div>
+    <div className='line-image-testimonial'></div>
+    <div className='dots-image-testimonial-one'></div>
+    <div className='dots-image-testimonial-two'></div>
+     <div className='dots-image-testimonial-three'></div>
       <div className='tesitimonial-top-design'>
         <div className='testimonial-triangle-design'></div>
         <div className='testimonial-wave-design'></div>
@@ -63,7 +70,7 @@ const Testimonial = () => {
         <div className='testimonial-title-bar'>
           <div className='testimonial-main-title'>
             <p className='tistimonail-title'>Tetimonail</p>
-            <p className='testimonial-main-title'>What Our Student's Think About</p>
+            <p className='testimonial-main-title-para'>What Our Student's <span className='stud-think'>Think About <span className='stud-think-design'></span></span></p>
           </div>
           <p className='quote-para-testimonial'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione magni quidem! Deleniti, voluptates repudiandae.</p>
         </div>
