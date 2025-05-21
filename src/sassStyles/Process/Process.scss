@@ -18,15 +18,15 @@
 .process-container{
     height: auto;
     width: 100%;
-    padding: 60px 140px;
-    padding-bottom: 180px;
+    padding: 100px 140px;
+   
     @include Column-center.column-center;
     .process-inner-container{
         height: 100%;
         width: 100%;
          @include Column-center.column-center;
          justify-content: flex-start;
-         gap: 80px;
+         gap: 70px;
           
 
          .process-head-title-container{
