@@ -1,6 +1,7 @@
 
 import './App.css'
 import AboutUs from './Components/AboutUs/AboutUs'
+import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer/Footer'
 import HomeMain from './Components/HomeMain/HomeMain'
 import Nav from './Components/NavBar/Nav'
@@ -34,6 +35,7 @@ function App() {
     <Process/>
     <Testimonial/>
     <Footer/>
+    <Blog/>
    </div>
   )
 }
