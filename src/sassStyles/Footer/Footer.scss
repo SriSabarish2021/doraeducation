@@ -14,47 +14,80 @@
 .footer-container{
     height: auto;
     width: 100%;
-    padding: 80px 120px;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding: 120px 120px;
+    
     @include Column-center.column-center;
-    background-color: rgb(255, 82, 82);
+    background-color: rgb(255, 93, 93);
     justify-content: flex-start;
     position: relative;
     margin-top: 80px;
+z-index: 0;
     overflow: hidden;
 
-    .footer-desing-container-bottom{
+    .footer-desing-container-top{
         position: absolute;
-        height: 100px;
+        height: 70px;
         width: 100%;
         background-image: url('./Footer/copy-right-shape-2.25d7d399.webp');
         background-repeat: repeat-x;
         background-position: center;
         background-size: cover;
-        bottom: -30px;
+        top: 0px;
+        transform: rotate(180deg);
+
+
+        
+    }
+    .footer-desing-container-bottom{
+        position: absolute;
+        height: 70px;
+        width: 100%;
+        background-image: url('./Footer/copy-right-shape-2.25d7d399.webp');
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: cover;
+        bottom: 0px;
          @include Column-center.column-center;
-         align-items: flex-start;
+         justify-content: flex-end;
          padding-left: 50px;
          padding-right: 50px;
          .copy-right-div{
+            height: 60%;
             width: 100%;
             font-size: 16px;
             font-weight: 400;
-            font-family: Arial, Helvetica, sans-serif;
             color: white;
              @include Row-center.row-center;
              justify-content: space-between;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Glory';
+             .copy-right-footer{
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Glory';
+                @include Row-center.row-center;
+                gap: 5px;
+                .page-name-in-copy-rights{
+                    color: rgb(255, 75, 75);
+                    font-weight: 600;
+                }
+             }
+             
          }
-        
     }
-    .footer-desing-container{
+     .footer-desing-container{
         position: absolute;
         height: 110px;
         width:6500px;
-        top: -0px;
-        background-color: white;
-        background-image: url('./Footer/image.png');
+        top: 0;
+        z-index: 1; 
+         margin: 0;
+  padding: 0;
+  line-height: 0;
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        background-image: url('./Footer/Untitled (8).png');
         background-repeat: repeat-x;
         background-position: center;
         background-size: contain;
@@ -70,7 +103,7 @@
              }
             
             }
-    }
+    } 
 
 
     .footer-top-container{

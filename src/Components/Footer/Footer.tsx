@@ -8,13 +8,14 @@ const Footer = () => {
   return (
     <div className='footer-container'>
       <div className='footer-desing-container'></div>
+   
       <div className='footer-desing-container-bottom'>
         <div className='copy-right-div'>
-          <p className='copy-right-footer'>Copyright &copy; 2024 by <span>MindSpire</span>. All Rights Reserved.</p>
+          <p className='copy-right-footer'>Copyright &copy; 2024 by <span className='page-name-in-copy-rights'>MindSpire</span>. </p>
           <p>
-            Terms & Condtion 
+            All Rights Reserved.
           </p>
-        </div>
+        </div> 
         
         
       </div>
