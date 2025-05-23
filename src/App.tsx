@@ -34,8 +34,9 @@ function App() {
     <StudentJoin/>
     <Process/>
     <Testimonial/>
-    <Footer/>
     <Blog/>
+    <Footer/>
+    
    </div>
   )
 }

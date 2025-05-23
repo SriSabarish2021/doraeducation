@@ -1,0 +1,84 @@
+@use '../main-color';
+@use '../Column-center';
+@use '../Row-center';
+@use '../Blog';
+
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+.blog-main-container{
+    height: auto;
+    width: 100%;
+    padding: 60px 120px;
+    @include Column-center.column-center;
+    gap:60px;
+
+    .blog-container-title-div{
+        height: auto;
+        width: 100%;
+        @include Column-center.column-center;
+        gap:10px;
+
+        .blog-site-name{
+            font-size: 30px;
+            font-family:'Twinkle Star';
+            color: main-color.$main-color-for-app;
+            font-weight: 800;
+        }
+        .blog-site-sub-name{
+             font-size: 50px;
+            font-family:'Sour Gummy';
+            color:  main-color.$font-main-color;
+            font-weight: 600;
+        }
+    }
+    .blog-container-main-content-div{
+        height: 300px;
+        width: 100%;
+        @include Row-center.row-center;
+        gap:35px;
+
+        .blog-news-one-div{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(50%);
+            @include Row-center.row-center;
+            background-color: rgb(255, 246, 246);
+            border-radius: 20px;
+            overflow: hidden;
+            .blog-image-container{
+                 @include Blog.Image-container-blog('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/blog-h-5.webp');
+            }
+            .blog-content-container{
+                
+                @include Blog.blog-content-container;
+               
+            }
+        }
+        .blog-news-two-div{
+              height: 100%;
+            width: 100%;
+            flex: 1 1 calc(50%);
+             @include Row-center.row-center;
+             gap: 10px;
+              border-radius: 20px;
+              overflow: hidden;
+              background-color: rgb(255, 246, 246);
+            .blog-image-container{
+                 @include Blog.Image-container-blog('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/blog-h5-2.webp');
+            }
+            .blog-content-container{
+                 @include Blog.blog-content-container;
+
+            }
+        }
+    }
+
+}

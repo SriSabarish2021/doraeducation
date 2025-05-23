@@ -1,3 +1,255 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+.blog-main-container {
+  height: auto;
+  width: 100%;
+  padding: 60px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.blog-main-container .blog-container-title-div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.blog-main-container .blog-container-title-div .blog-site-name {
+  font-size: 30px;
+  font-family: "Twinkle Star";
+  color: rgb(255, 68, 81);
+  font-weight: 800;
+}
+.blog-main-container .blog-container-title-div .blog-site-sub-name {
+  font-size: 50px;
+  font-family: "Sour Gummy";
+  color: rgb(52, 52, 52);
+  font-weight: 600;
+}
+.blog-main-container .blog-container-main-content-div {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 246, 246);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-image-container {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 45%;
+  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/blog-h-5.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  align-items: flex-start;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .blog-upload-date {
+  height: auto;
+  width: auto;
+  padding: 7px 20px;
+  background-color: rgb(255, 62, 62);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 12px;
+  font-family: "Roboto Flex";
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .blog-news-main-content {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .blog-news-main-content .blog-main-cont-para-one {
+  font-size: 25px;
+  font-family: "Roboto Flex";
+  font-weight: 600;
+  color: rgb(52, 52, 52);
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .blog-news-main-content .blog-main-cont-para-two {
+  font-size: 11px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: rgb(100, 100, 100);
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .read-news-btn {
+  height: auto;
+  width: auto;
+  font-size: 14px;
+  font-family: "Funnel Display";
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .read-news-btn .right-btn-icon {
+  font-size: 17px;
+  color: rgb(255, 55, 55);
+  transform: translateX(0px);
+  transition-duration: 0.5s;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-one-div .blog-content-container .read-news-btn:hover .right-btn-icon {
+  transform: translateX(5px);
+  transition-duration: 0.5s;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(255, 246, 246);
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-image-container {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 45%;
+  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/blog-h5-2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  align-items: flex-start;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .blog-upload-date {
+  height: auto;
+  width: auto;
+  padding: 7px 20px;
+  background-color: rgb(255, 62, 62);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 12px;
+  font-family: "Roboto Flex";
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 600;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .blog-news-main-content {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .blog-news-main-content .blog-main-cont-para-one {
+  font-size: 25px;
+  font-family: "Roboto Flex";
+  font-weight: 600;
+  color: rgb(52, 52, 52);
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .blog-news-main-content .blog-main-cont-para-two {
+  font-size: 11px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: rgb(100, 100, 100);
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .read-news-btn {
+  height: auto;
+  width: auto;
+  font-size: 14px;
+  font-family: "Funnel Display";
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .read-news-btn .right-btn-icon {
+  font-size: 17px;
+  color: rgb(255, 55, 55);
+  transform: translateX(0px);
+  transition-duration: 0.5s;
+}
+.blog-main-container .blog-container-main-content-div .blog-news-two-div .blog-content-container .read-news-btn:hover .right-btn-icon {
+  transform: translateX(5px);
+  transition-duration: 0.5s;
+}
 
 /*# sourceMappingURL=Blog.css.map */
