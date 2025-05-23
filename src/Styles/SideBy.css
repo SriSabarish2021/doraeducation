@@ -302,10 +302,8 @@
   height: 100%;
   width: 100%;
   border-radius: 100%;
-  background-image: url("https://www.radiustheme.com/demo/wordpress/themes/quiklearn/wp-content/uploads/2023/08/video_banner_02.png.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  object-position: top;
 }
 .side-by-elements-container .side-by-inner-container .side-by-two .side-by-two-cont-tag {
   height: 100%;

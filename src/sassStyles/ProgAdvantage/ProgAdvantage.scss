@@ -2,11 +2,17 @@
 @use '../main-color';
 @use '../Column-center';
 @use '../Row-center';
-
+@use '../WebSubContent';
 @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@mixin prog-advantage-img($imgurl){
+        background-image: url($imgurl);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
 .prog-advantage-main-container{
     height: auto;
     width: 100%;
@@ -19,13 +25,10 @@
     .dotted-animation{
         position: absolute;
         height: 400px;
-        width: 400px;
+        width: 400px; 
         left: 0px;
+        @include prog-advantage-img('./ProgAdvan/dot-advantage.png');
         
-        background-image: url('./ProgAdvan/dot-advantage.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         z-index: -1;
     }
 
@@ -40,20 +43,16 @@
             width: 400px;
             border-radius: 15px;
             position: relative;
-            background-image: url('https://livi.wpengine.com/wp-content/uploads/2024/10/service-filler-img-6.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include prog-advantage-img('./ProgAdvan/service-filler-img-6.jpg');
+            
             
 
             .prog-advantage-image-one{
                 position: absolute;
                 height: 180px;
                 width: 180px;
-                 background-image: url('https://plus.unsplash.com/premium_photo-1681494780758-49d869689878?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnQlMjBsZWFybmluZ3xlbnwwfHwwfHx8MA%3D%3D');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+                object-fit: cover;
+                object-position: center;
                 border-radius: 10px;
                 right: -40px;
                 top: -50px;
@@ -62,10 +61,8 @@
                 position: absolute;
                 height: 220px;
                 width: 170px;
-                 background-image: url('https://images.unsplash.com/photo-1565598621680-94ac0c22b148?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0dWRlbnQlMjBsZWFybmluZ3xlbnwwfHwwfHx8MA%3D%3D');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+                object-fit: cover;
+                object-position: center;
                 border-radius: 10px;
                 left: -120px;
                 bottom: 20px;
@@ -74,10 +71,8 @@
                 position: absolute;
                 height:180px;
                 width: 240px;
-                 background-image: url('https://plus.unsplash.com/premium_photo-1682955295175-55055f5d3039?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHN0dWRlbnQlMjBsZWFybmluZ3xlbnwwfHwwfHx8MA%3D%3D');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+                object-fit: cover;
+                object-position: center;
                 border-radius: 10px;
                 right: -80px;
                 bottom: -80px;
@@ -130,13 +125,8 @@
                     
                 }
                 .advan-tit-para-two{
-                    width: 100%;
-                    font-size: 15px;
-                    line-height: 30px;
-                    letter-spacing: 1px;
-                    font-weight: 400;
-                    font-family: "Roboto";
-                    color: rgb(67, 67, 67);
+                    
+                    @include WebSubContent.SubContent;
                 }
             }
         }
@@ -182,7 +172,7 @@
                             height: 100%;
                             border-radius: 15px;
                             width: 80%;
-                            background-color: rgb(255, 85, 85);
+                            background-color: main-color.$main-color-for-app;
                         }
                     }
                 }

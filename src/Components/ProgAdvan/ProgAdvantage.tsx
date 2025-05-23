@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '/src/Styles/ProgAdvantage.css'
 import { FaArrowRight } from "react-icons/fa6";
+import { Image } from '@imagekit/react';
 
 const ProgAdvantage = () => {
     
@@ -26,9 +27,24 @@ const ProgAdvantage = () => {
         <div className='dotted-animation' style={{transform:`translateX(${AdvanX}px) translateY(${AdvanY}px)`,transitionDuration:'0.2s'}}></div>
         <div className='prog-advantage-image-container'>
             <div className='image-tag-prog-advantage'>
-                <div className='prog-advantage-image-one'></div>
-                <div className='prog-advantage-image-two'></div>
-                <div className='prog-advantage-image-three'></div>
+                <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/side-img-one.avif"
+                    alt="Student Image"
+                    className='prog-advantage-image-one'
+                />
+                <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/side-img-two.avif"
+                    alt="Student Image"
+                    className='prog-advantage-image-two'       
+                />
+                <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/side-img-three.avif"   
+                    alt="Student Image"
+                    className='prog-advantage-image-three'  
+                />
             </div>
         </div>
         <div className='prog-advantage-content-container'>
@@ -36,7 +52,7 @@ const ProgAdvantage = () => {
                 <div className='prog-advantage-tit-image'></div>
                 <div className='prog-advantage-tit-cont'>
                     <p className='advan-tit-para-one'>Advantages Of <span className='span-tit-in-prog-advantage'>Our Program</span></p>
-                    <p className='advan-tit-para-two'>Etiam sodales fermentum vivamus etiam tempor orci. Sem et tortor consequat egestas tellus. Nunc eu hendrerit turpis. Fusce non lectus sem In pellentesque nunc.</p>
+                    <p className='advan-tit-para-two'>At Mindspire Institute, our courses blend expert instruction, real-world content, and hands-on learning. With flexible schedules and personalized support, we help students build the skills and confidence to achieve their goals.</p>
                 </div>
             </div>
             <div className='prog-advantage-progress-bar'>
@@ -47,13 +63,13 @@ const ProgAdvantage = () => {
                     </div>
                 </div>
                 <div className='progress-two'>
-                    <p className='progress-para'>Education : <span className='percentage-progress'>80%</span></p>
+                    <p className='progress-para'>Innovation : <span className='percentage-progress'>80%</span></p>
                     <div className='progress-line'>
                         <div className='progress-inner-line'></div>
                     </div>
                 </div>
                 <div className='progress-three'>
-                    <p className='progress-para'>Education : <span className='percentage-progress'>80%</span></p>
+                    <p className='progress-para'>Growth : <span className='percentage-progress'>80%</span></p>
                     <div className='progress-line'>
                         <div className='progress-inner-line'></div>
                     </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
@@ -67,14 +68,18 @@
   background-size: contain;
 }
 .program-list-main-container .program-list-title-container .program-list-para-three {
-  width: 60%;
+  width: 100%;
   font-size: 15px;
-  font-family: "Roboto";
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 1px;
   line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
+  width: 70%;
+  text-align: center;
   color: rgb(126, 126, 126);
+  margin-top: 15px;
 }
 .program-list-main-container .program-list-items-container {
   height: auto;

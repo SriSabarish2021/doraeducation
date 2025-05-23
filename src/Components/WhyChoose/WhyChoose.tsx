@@ -63,8 +63,8 @@ const WhyChoose = () => {
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setoffsetXwhy(-offsetX/10)
-    setoffsetYwhy(-offsetY/10)
+    setoffsetXwhy(-offsetX/5)
+    setoffsetYwhy(-offsetY/5)
 
    }
   return (
@@ -74,18 +74,18 @@ const WhyChoose = () => {
             <div className='why-choose-main-title'>
                 <p className='why-choose'>Why Mindspire ?</p>
                 <div className='Why-choose-title'>
-                    <p className='Why-choose-title-one'>Don’t Know <span className='why-choose-tit-span'>How To Start <div className='design-for-why-choose-tit-span'></div></span> With</p>
-                    <p className='Why-choose-title-two'>Quiklearn Courses</p>
+                    <p className='Why-choose-title-one'>Not sure <span className='why-choose-tit-span'>where to begin?<div className='design-for-why-choose-tit-span'></div></span> Start</p>
+                    <p className='Why-choose-title-two'> with Mindspire </p>
                 </div>
-                <p className='para-why-choose'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae saepe doloribus cum unde dolorem ipsa eligendi, illum aut officiis voluptatibus.</p>
+                <p className='para-why-choose'>Choose Mindspire — where expert guidance and personalized learning come together. We nurture your strengths and inspire growth at every step. Join us to unlock your potential and build a future full of opportunities.</p>
             </div>
             <div className='why-choose-order-list'>
-                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Special Lessons And Courses</p>
-                <p className='why-choose-ol'><span className='why-choose-ol-span'> <MdDone/></span>World Largest Language</p>
-                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>15 Language For Beginners</p> 
-                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Get Every General Answers</p>
-                <p  className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>A Residential Campus</p>
-                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>A Residential Campus</p>
+                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Innovative Teaching Methods</p>
+                <p className='why-choose-ol'><span className='why-choose-ol-span'> <MdDone/></span>Proven Track Record</p>
+                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Career-Focused Training</p> 
+                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Skill-Driven Education</p>
+                <p  className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Real-World Curriculum</p>
+                <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Personalized Learning</p>
             </div>
             <button className='why-choose-btn'>Lear More <div className='why-choose-btn-animation'></div></button>
         </div>
