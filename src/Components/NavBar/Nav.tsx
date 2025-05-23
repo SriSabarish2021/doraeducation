@@ -8,6 +8,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { BiMenuAltLeft } from "react-icons/bi";
+import { Image } from '@imagekit/react';
 
 const Nav = () => {
   return (
@@ -23,7 +24,15 @@ const Nav = () => {
       </div>
       <div className="nav-bar-items-container">
         <div className='logo-div-nav'>  
-          <div className='logo-image'></div>
+          <div></div>
+           
+           <Image
+              urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+              src="/edu-logo-removebg.png"
+              
+              alt="Website Logo"
+              className='logo-image'
+            />
           <div className='title-logo'>
             <p className='title-main-name'>Mindspire</p>
             <p  className='title-sub-main-name'>Institute</p>

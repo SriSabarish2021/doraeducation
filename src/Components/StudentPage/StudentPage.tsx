@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '/src/Styles/StudentPage.css'
 import { FaArrowRight } from "react-icons/fa6";
+import { Image } from '@imagekit/react';
 
 const StudentPage = () => {
 
@@ -63,8 +64,23 @@ const StudentPage = () => {
     <div className="student-page-container">
         <div className='student-page-inner-container'>
             <div className="student-page-image-container">
-                <img  className='student-page-image-one scale-img-one-stud ' src='./StydentPage/stupage-img-one.webp' alt="Student Image"/>
-                <img  className='student-page-image-two scale-img-two-stud' src='./StydentPage/stu-img-two.webp' alt="Student Image"/>
+                 <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="stupage-img-one.webp"
+                    
+                    alt="Student Image"
+                    className='student-page-image-one scale-img-one-stud ' 
+                    
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="stu-img-two.webp"
+                    
+                    alt="Student Image"
+                   className='student-page-image-two scale-img-two-stud' 
+                    
+                    />
+                
             </div>
             <div className="student-page-content-container">
                 <div className='student-page-title-bar'>
@@ -82,8 +98,8 @@ const StudentPage = () => {
                         <div className='stud-enroll-image-bar-in-main-cont'>
                             <div className='stu-enroll-image'>
                                 <div className='stu-img stu-img-one'></div>
-                                <div className=' stu-img  stu-img-two'></div>
-                                <div className='stu-img  stu-img-three'></div>
+                                <div className='  stu-img-two'></div>
+                                <div className=' stu-img-three'></div>
                             </div>
                             <div className='stu-enroll-num'>
                                 <p className='stu-enroll-para-one'>Joined <span className='span-in-stud-num'>120+</span></p>
@@ -93,13 +109,13 @@ const StudentPage = () => {
                     </div>
                     <div className='content-bar-in-main-content'>
                         <div  className='stud-content-main-para'>
-                            <p className='conatent-bar-main-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem dolorum a illum veritatis ut incidunt molestias provident, adipisci tempora.</p>
+                            <p className='conatent-bar-main-para'>At Mindspire, we don’t just teach — we ignite ambition. Step into a space where expert guidance and personalized support turn your potential into achievement.</p>
                         </div>
                         
                         <div className='analysis-student-container'>
                             <div className='tot-stu-analysis'>
                                 <div className='tot-stu-analysis-image'>
-                                    <img className='img-for-main-analysis-one' src="./StydentPage/group.png" alt="" />
+                                    <img className='img-for-main-analysis-one' src="./StydentPage/group.png" alt="stud-page-img" />
                                 </div>
                                 <div className='tot-stu-analysis-content'>
                                     <p  className='tot-stu-analysis-para-one'>20K</p>
@@ -110,23 +126,23 @@ const StudentPage = () => {
                                 <div className='stu-thinking-one'>
                                     <div className='stu-thinking-image'>
                                         <div className='stu-thinking-img img-one-stud-think'>
-                                            <img className='img-for-main-analysis-two' src="./StydentPage/light-bulb.png" alt="" />
+                                            <img className='img-for-main-analysis-two' src="./StydentPage/light-bulb.png" alt="stud-page-img" />
                                         </div>
                                     </div>
                                     <div className='stu-thinking-content'>
                                         <p className='stu-thinking-main-para'>Building Trust</p>
-                                        <p className='stu-thinking-sub-para'>Lorem ipsum dolor sit amet consectetur a</p>
+                                        <p className='stu-thinking-sub-para'>A safe space where students feel valued.</p>
                                     </div>
                                 </div>
                                 <div className='stu-thinking-two'>
                                     <div className='stu-thinking-image'>
                                         <div className='stu-thinking-img img-two-stud-think'>
-                                            <img className='img-for-main-analysis-two' src="./StydentPage/diploma.png" alt="" />
+                                            <img className='img-for-main-analysis-two' src="./StydentPage/diploma.png" alt="stud-page-img" />
                                         </div>
                                     </div>
                                     <div className='stu-thinking-content'>
-                                        <p className='stu-thinking-main-para'>Building Trust</p>
-                                        <p className='stu-thinking-sub-para'>Lorem ipsum dolor sit amet consectetur a</p>
+                                        <p className='stu-thinking-main-para'>Voices of Growth</p>
+                                        <p className='stu-thinking-sub-para'>Every story shows the power of learning and growth.</p>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '/src/Styles/HomeMain.css'
 import { IoIosStar } from "react-icons/io";
+import { Image } from '@imagekit/react';
 
 const HomeMain = () => {
 
@@ -8,9 +9,9 @@ const HomeMain = () => {
   useEffect(() => {
     
 
-    let getelementone=document.querySelector('.home-main-for-intro') as HTMLElement
-    let getanimateelementone=document.querySelector('.smallcontent-one-home') as HTMLElement
-    let observer=new IntersectionObserver(([entry])=>{
+    const getelementone=document.querySelector('.home-main-for-intro') as HTMLElement
+    const getanimateelementone=document.querySelector('.smallcontent-one-home') as HTMLElement
+    const observer=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
         if (getanimateelementone) {
                   getanimateelementone?.classList.add('smallcontent-one-home-move')
@@ -27,9 +28,9 @@ const HomeMain = () => {
 
 
 
-    let getelementtwo=document.querySelector('.home-main-for-intro') as HTMLElement
-    let getanimateelementtwo=document.querySelector('.smallcontent-two-home') as HTMLElement
-    let observertwo=new IntersectionObserver(([entry])=>{
+    const getelementtwo=document.querySelector('.home-main-for-intro') as HTMLElement
+    const getanimateelementtwo=document.querySelector('.smallcontent-two-home') as HTMLElement
+    const observertwo=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
         if (getanimateelementtwo) {
                   getanimateelementtwo?.classList.add('smallcontent-two-home-move')
@@ -86,13 +87,19 @@ const HomeMain = () => {
             <div className='rouonded-bg-home'>
               
             </div>
-            <div className='man-image-in-home'></div>
-
+            <Image
+              urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+              src="/man-image.png"
+              
+              alt="Student Image"
+              className='man-image-in-home-img'
+              
+            />
             <div className='smalldesign-two-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.3s'}}></div>
             <div className='smalldesign-four-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}></div>
             <div className='smalldesign-five-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}></div>
 
-            <div className='smallcontent-one-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}>
+            <div className='smallcontent-one-home' >
               <div className='smallcontent-img'>
                 <img className='img-for-small-cont' src="./HomeImg/read.png" alt="" />
               </div>
@@ -102,7 +109,7 @@ const HomeMain = () => {
               </div>
               
             </div>
-            <div className='smallcontent-two-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}>
+            <div className='smallcontent-two-home' >
               <div className='smallcontent-img'>
                 <img className='img-for-small-cont' src="./HomeImg/online-learning.png" alt="" />
               </div>

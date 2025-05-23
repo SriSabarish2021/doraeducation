@@ -2,6 +2,7 @@
 @use '../main-color';
 @use '../Column-center';
 @use '../Row-center';
+@use '../WebSubContent';
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
@@ -16,10 +17,10 @@
 
 
 .student-page-container{
-    height: 120dvh;
+    height: 130dvh;
     width: 100%;
     @include Row-center.row-center;
-    padding: 30px 110px;
+    padding: 60px 110px;
     position: relative;
     .scale-img-one-stud{
         transform:translateX(330px);
@@ -116,18 +117,16 @@
                 width: 100%;
                 flex: 1 1 calc(50%);
                 border-radius: 20px;       
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                 object-fit: cover;
+                object-position: center;
             }
             .student-page-image-two{
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(50%);
                 border-radius: 20px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                object-fit: cover;
+                object-position: center;
 
             }
         }
@@ -241,7 +240,7 @@
                                 background-size: cover;
                              }
                              .stu-img-two{
-                          
+                                @extend .stu-img;
                                  z-index: 2;
                                 background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst2.webp');
                                 background-position: center;
@@ -249,6 +248,7 @@
                                 background-size: cover;
                              }
                              .stu-img-three{
+                                @extend .stu-img;
                                 right: 20%;
                                  z-index: 3;background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst1.webp');
                                 background-position: center;
@@ -300,13 +300,7 @@
                         width: 100%;
                         flex: 1 1 calc(20%);
                         .conatent-bar-main-para{
-                        width: 100%;
-                        font-size: 15px;
-                        line-height: 30px;
-                        letter-spacing: 1px;
-                        font-weight: 400;
-                        font-family: 'Roboto';
-                        color: rgb(67, 67, 67);
+                        @include WebSubContent.SubContent;
                     }
                     }
                     
@@ -362,9 +356,8 @@
                                 .img-for-main-analysis-one{
                                      height: 60px;
                                      width: 60px;
-                                      background-position: center;
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
+                                      object-fit: cover;
+                                      object-position: center;
 
                                 }
 

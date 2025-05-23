@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import '/src/Styles/AboutUs.css'
 import { MdDone } from "react-icons/md";
+import { Image } from '@imagekit/react';
 
 const AboutUs = () => {
 
@@ -71,10 +72,24 @@ const AboutUs = () => {
               <p className='about-us-one-para-two'>Year of Excellence in Education</p>
             </div>
           </div>
-          <img src='./Aboutus/about-thumb-02.webp' alt='study-image' className='about-us-image-one'></img>
+           <Image
+            urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+            src="/about-thumb-02.webp"
+            
+            alt='study-image' 
+            className='about-us-image-one'
+            
+          />
         </div>
         <div className='about-image-box-two'>
-           <img src='./Aboutus/about-thumb-03.webp' alt='study-image' className=' about-us-image-two'></img>
+           <Image
+            urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+            src="/about-thumb-03.webp"
+            
+          alt='study-image' 
+          className=' about-us-image-two'
+            
+          />
           <div className='about-us-image-cont-two'>
             <div className='about-us-cont-inner-two'>
               <div className='alumini-img-and-cont'>
@@ -85,7 +100,7 @@ const AboutUs = () => {
                   <p>30K</p>
                 </div>
               </div>
-              <p className='alumini-cont-two'>Hello Every one here</p>
+              <p className='alumini-cont-two'>Alumni in top positions</p>
 
 
               <div className='ellipse-design'></div>
@@ -106,11 +121,11 @@ const AboutUs = () => {
           
         </div>
         <div className='about-us-content-main'>
-          <p className='para-in-about-us-main'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio maiores omnis perspiciatis, provident quis dicta asperiores rerum! Voluptatem, numquam commodi?</p>
+          <p className='para-in-about-us-main'>At Mindspire Education Institute, we shape futures with quality education that inspires and empowers. Our expert educators create a supportive space for students to unlock their potential and succeed.</p>
           <div className='order-list-of-about-us'>
             <p className='order-list-para'><span className='order-list-span'><MdDone/></span>Education Award Achived</p>
-            <p className='order-list-para'><span className='order-list-span'><MdDone/></span>Access Lifetime any Device</p>
-            <p className='order-list-para'><span className='order-list-span'><MdDone/></span>No Credit Card Required</p>
+            <p className='order-list-para'><span className='order-list-span'><MdDone/></span>Lifetime Access any Device</p>
+            <p className='order-list-para'><span className='order-list-span'><MdDone/></span>Flexible Learning Options</p>
             <p className='order-list-para'><span className='order-list-span'><MdDone/></span>24*7 Staff Support</p>
             
           </div>

@@ -284,14 +284,10 @@
   border-radius: 100%;
   background-color: rgb(255, 201, 204);
 }
-.home-main-for-intro .man-img-for-home .man-image-in-home {
+.home-main-for-intro .man-img-for-home .man-image-in-home-img {
   position: absolute;
   height: 830px;
-  width: 700px;
-  background-image: url("./HomeImg/man-image.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 730px;
 }
 .home-main-for-intro .home-content-div {
   height: 100%;
@@ -364,6 +360,9 @@
   font-weight: 600;
   background: #c757b6;
   background: linear-gradient(32deg, rgb(199, 87, 182) 14%, rgb(218, 87, 133) 53%, rgb(237, 86, 83) 91%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
