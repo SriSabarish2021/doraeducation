@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { Image } from '@imagekit/react';
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
    
       <div className='footer-desing-container-bottom'>
         <div className='copy-right-div'>
-          <p className='copy-right-footer'>Copyright &copy; 2024 by <span className='page-name-in-copy-rights'>MindSpire</span>. </p>
+          <p className='copy-right-footer'>Copyright &copy; 2025 by <span className='page-name-in-copy-rights'>MindSpire</span>. </p>
           <p>
             All Rights Reserved.
           </p>
@@ -22,13 +23,18 @@ const Footer = () => {
       <div className='footer-top-container'>
         <div className='footer-top-div-one'>
           <div className='footer-top-div-one-content-title'>
-            <div className='logo-footer'></div>
+             <Image
+              urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+              src="/logo.png"
+              alt="Logo Image"
+              className='logo-footer'
+            />
             <div className='logo-content'>
               <p>Mindspire</p>
               <p className='name-institute'>Institute</p>
             </div>
           </div>
-          <p className='sub-title-footer'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ipsam temporibus maxime numquam corporis cumque</p>
+          <p className='sub-title-footer'>Mindspire Institute empowers learners with quality education and expert support to shape a brighter future.</p>
         </div>
         <div className='footer-top-div-two'>
           <p className='email-inp-para'>Join With Us</p>
@@ -43,31 +49,31 @@ const Footer = () => {
           <div className='navigation-link'>
             <p className='navigation-title'>Navigation</p>
             <div className='navigation-list-item'>
-              <p>About Us</p>
-              <p>Courses</p>
-              <p>News</p>
-              <p>Know More</p>
-              <p>Contact</p>
+              <p className='list-item-footer'>About Us</p>
+              <p className='list-item-footer'>Courses</p>
+              <p className='list-item-footer'>News</p>
+              <p className='list-item-footer'>Know More</p>
+              <p className='list-item-footer'>Contact</p>
             </div>
           </div>
           <div className='quick-link'>
             <p className='quick-link-title'>Quick Links</p>
             <div className='quick-link-list-item'>
-              <p>Vision, Mision & Stragedy</p>
-              <p>Event</p>
-              <p>Purchase Guide</p>
-              <p>Webinar Details</p>
-              <p>Offering Courses</p>
+              <p className='list-item-footer'>Vision, Mision & Stragedy</p>
+              <p className='list-item-footer'>Event</p>
+              <p className='list-item-footer'>Purchase Guide</p>
+              <p className='list-item-footer'>Webinar Details</p>
+              <p className='list-item-footer'>Offering Courses</p>
             </div>
           </div>
           <div className='program-link'>
             <p  className='program-link-title'>Programs</p>
             <div className='program-list-item'>
-              <p>Play School</p>
-              <p>Nursery</p>
-              <p>Secondar</p>
-              <p>Primary</p>
-              <p>College</p>
+              <p className='list-item-footer'>Play School</p>
+              <p className='list-item-footer'>Nursery</p>
+              <p className='list-item-footer'>Secondar</p>
+              <p className='list-item-footer'>Primary</p>
+              <p className='list-item-footer'>College</p>
             </div>
           </div>  
         </div>

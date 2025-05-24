@@ -46,6 +46,7 @@ z-index: 0;
         background-repeat: repeat-x;
         background-position: center;
         background-size: cover;
+        
         bottom: 0px;
          @include Column-center.column-center;
          justify-content: flex-end;
@@ -120,6 +121,7 @@ z-index: 0;
             @include Column-center.column-center;
             gap: 25px;
             justify-content: flex-start;
+            align-items: flex-start;
             .footer-top-div-one-content-title{
                 width: 100%;
                 height: auto;
@@ -131,10 +133,8 @@ z-index: 0;
                     width: 50px;
                     border-radius: 100%;
                     background-color: white;
-                     background-image: url('./Footer/logo.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    object-fit: cover;
+                    object-position: center;
                 }
                 .logo-content{
                     
@@ -154,6 +154,7 @@ z-index: 0;
             }
 
             .sub-title-footer{
+                width: 80%;
                 font-size: 16px;
                 font-family: 'Glory';
                 font-weight: 400;
@@ -295,6 +296,14 @@ z-index: 0;
               
                
            }
+           .list-item-footer:hover{
+            transform: scale(1.1);
+            transition-duration: 0.4s;
+           }
+           .list-item-footer{
+            transform: scale(1);
+            transition-duration: 0.4s;
+           }
           
         }
          .address-bar-for-footer{
@@ -351,11 +360,15 @@ z-index: 0;
                     font-size: 18px;
                     color: white;
                     cursor: pointer;
-                    transition-duration: 0.5s;
+                    transition-duration: 0.4s;
+                     transition-timing-function: linear;
                 }
                 .app-link:hover{
                     transform: scale(1.05);
-                    transition-duration: 0.5s;
+                    transition-duration: 0.4s;
+                    background-color: rgb(255, 255, 255);
+                    color:rgb(255, 93, 93);
+                    transition-timing-function: linear;
                 }
             }
         }
