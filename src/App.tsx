@@ -1,42 +1,31 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import AboutUs from './Components/AboutUs/AboutUs'
-import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer/Footer'
-import HomeMain from './Components/HomeMain/HomeMain'
-import Process from './Components/Process/Process'
-import ProgAdvantage from './Components/ProgAdvan/ProgAdvantage'
-import ProgramList from './Components/ProgramList/ProgramList'
-import SideBy from './Components/SideBy/SideBy'
-import StaffPage from './Components/StaffPage/StaffPage'
-import StudentJoin from './Components/StudentJoin/StudentJoin'
-import StudentPage from './Components/StudentPage/StudentPage'
-import Testimonial from './Components/Testimonial/Testimonial'
-import Topcourses from './Components/TopCourses/Topcourses'
-import WhyChoose from './Components/WhyChoose/WhyChoose'
+import HomePage from './Components/WebsiteComponents/HomePage'
+import Nav from './Components/NavBar/Nav'
+import AboutPage from './Components/WebsiteComponents/AboutPage'
 
 function App() {
 
 
   return (
-   <div className='edu-main-page'>
     
-    <HomeMain/>
-    <StaffPage/>
-    <Topcourses/>
-    <StudentPage/>
-    <AboutUs/>
-    <SideBy/>
-    <WhyChoose/>
-    <ProgramList/>
-    <ProgAdvantage/>
-    <StudentJoin/>
-    <Process/>
-    <Testimonial/>
-    <Blog/>
-    <Footer/>
+    <div className='website-main-container'>
+      <Nav/>
+      <div className='edu-main-page'>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<HomePage/>}/>
+            <Route path='About-Mindspire-Institute' element={<AboutPage/>}/>
+          </Route>
+        </Routes>
+      </div>
+      <Footer/>
+    </div>
+   
     
-   </div>
+    
   )
 }
 

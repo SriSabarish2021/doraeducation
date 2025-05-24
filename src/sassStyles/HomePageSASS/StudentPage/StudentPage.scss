@@ -1,0 +1,566 @@
+
+@use '../../main-color';
+@use '../../Column-center';
+@use '../../Row-center';
+@use '../../WebSubContent';
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+.student-page-container{
+    height: 120dvh;
+    width: 100%;
+    @include Row-center.row-center;
+    padding: 60px 110px;
+    padding-top: 0px;
+    position: relative;
+    .scale-img-one-stud{
+        transform:translateX(330px);
+        transition-duration: 0.6s;
+    }
+    .scale-img-two-stud{
+        transform:translateX(330px);
+        transition-duration: 0.6s;
+    }
+    .scale-img-three-stud{
+        transform:translateX(-330px);
+        transition-duration: 0.6s;
+    }
+    .noscale-img-stud{
+        transform:translateX(0px);
+         transition-duration: 1s;
+    }
+    
+    .stud-design-main{
+        position: absolute;
+        height: 180px;
+        width: 80px;
+        left: 10px;
+        background-image: url('./StydentPage/sidename.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .stud-round-design-one{
+        position: absolute;
+        right: 150px;   
+        @include Row-center.row-center;
+        bottom: 80px;
+        height: 60px;
+        width: 60px;
+        background-image: url('./StydentPage/round-one.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation:  rotate-one-stud 5s linear forwards infinite;
+        .stud-round-design-two{
+        position: absolute;
+                @include Row-center.row-center;
+        height: 30px;
+        width: 30px;
+        background-image: url('./StydentPage/round-one.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation:  rotate-two-stud 5s linear forwards infinite;
+
+        @keyframes rotate-two-stud {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+             transform: rotate(180deg);
+        }
+         100%{
+             transform: rotate(360deg);
+        }
+    }
+    }
+
+    @keyframes rotate-one-stud {
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+             transform: rotate(180deg);
+        }
+         100%{
+             transform: rotate(360deg);
+        }
+    }
+    }
+    
+    .student-page-inner-container{
+        height: 100%;
+        width: 100%;
+        @include Row-center.row-center;
+        gap: 30px;
+        position: relative;
+
+        .student-page-image-container{
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(29%);
+            @include Column-center.column-center;
+            gap: 30px;
+            .student-page-image-one{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(50%);
+                border-radius: 20px;       
+                 object-fit: cover;
+                object-position: center;
+            }
+            .student-page-image-two{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(50%);
+                border-radius: 20px;
+                object-fit: cover;
+                object-position: center;
+
+            }
+        }
+        .student-page-content-container{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(71%);
+            padding: 30px 0px;
+            @include Column-center.column-center;
+            gap: 40px;
+
+            .student-page-title-bar{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(20%);
+                @include Column-center.column-center;
+                gap: 10px;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                .student-page-top-tit{
+                    font-size: 26px;
+                    font-family: 'WindSong';
+                    font-weight: 600;
+                    color: main-color.$main-color-for-app-little-lighter;
+                    .stud-main-cont-top-tit-span{
+                        text-decoration: underline;
+                        text-underline-offset: 8px;
+                    }
+
+                }
+                .student-page-title{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    align-items: flex-start;
+                    
+
+                    .main-tit-one-stud-page{
+                        font-size: 55px;
+                        font-family: 'Original Surfer';
+                        font-weight: 800;
+                        color: main-color.$font-main-color;
+                         
+                    }
+                    .main-tit-two-stud-page{
+                       font-size: 50px;
+                       font-family: 'Baumans';
+                        @include main-color.letter-color-main;
+                            -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        font-weight: 800;
+                       
+                    }
+                }
+
+            }
+            .student-page-main-content{
+                 height: 100%;
+                width: 100%;
+                flex: 1 1 calc(80%);
+                @include Row-center.row-center;
+                gap: 30px;
+                
+                .image-bar-in-main-content{
+                    overflow: hidden;
+                    height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(40%);
+                    @include Column-center.column-center;
+                    gap: 30px;
+                    .content-image-bar-in-main-cont{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(80%);
+                        border-radius: 20px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-image: url('./StydentPage/stu-img-thre.webp');
+                    }
+                    
+                    .stud-enroll-image-bar-in-main-cont{
+                         height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                         @include Row-center.row-center;
+                         border: 1px solid main-color.$border-light-color;
+                         border-radius: 10px;
+                        .stu-enroll-image{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(40%);
+                             @include Row-center.row-center;
+                             position: relative;
+                             .stu-img {
+                                position: absolute;
+                                height: 38px;
+                                width: 38px;
+                                border: 5px solid white;
+                                background-color: black;
+                                border-radius: 100%;
+                             }
+                             .stu-img-one{
+                                left: 20%;
+                                z-index: 1;
+                                background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst3.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                             }
+                             .stu-img-two{
+                                @extend .stu-img;
+                                 z-index: 2;
+                                background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst2.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                             }
+                             .stu-img-three{
+                                @extend .stu-img;
+                                right: 20%;
+                                 z-index: 3;background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/tst1.webp');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+
+                             }
+
+                        }
+                        .stu-enroll-num{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(60%);
+                             @include Column-center.column-center;
+                            gap: 2px;
+                            align-items: flex-start;
+                            .stu-enroll-para-one{
+                                font-size: 15px;
+                                font-family: 'Delius';
+                                font-weight: 600;
+                                color: rgb(48, 48, 48);
+                                @include Row-center.row-center;
+                                gap: 8px;
+                                .span-in-stud-num{
+                                    font-size: 18px;
+                                    color: black;
+
+                                }
+                            }
+                            .stu-enroll-para-two{
+                                font-size: 14px;
+                                font-family: 'Sour Gummy';
+                                color: rgb(100, 100, 100);
+                            }
+                        }
+                    }
+                }
+                .content-bar-in-main-content{
+                      height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(60%);
+                      @include Column-center.column-center;
+                    gap: 25px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 15px 0px;
+                    .stud-content-main-para{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                        .conatent-bar-main-para{
+                        @include WebSubContent.SubContent;
+                    }
+                    }
+                    
+                    .analysis-student-container{
+                         height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(60%);
+                        @include Row-center.row-center;
+                        gap: 20px;
+                        .tot-stu-analysis{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(40%);
+                            @include Column-center.column-center;
+                            gap: 10px;
+                            
+                            .tot-stu-analysis-image{
+                            height: 90px;
+                            width: 90px;
+                          background: #ffec42;
+                            background: linear-gradient(115deg, rgba(255, 236, 66, 1) 10%, rgba(84, 255, 227, 1) 90%);             
+                            @include Column-center.column-center;   
+                            border-radius: 100%;
+                            animation:bounceanimation-stu-page 4s linear infinite forwards ;
+                            @keyframes bounceanimation-stu-page {
+                                0%{
+                                    transform: translateY(0px);
+                                }
+                                 20%{
+                                    transform: translateY(-20px);
+                                }
+                                40%{
+                                    transform: translateY(0px);
+                                }
+                                45%{
+                                    transform: translateY(-15px);
+                                }50%{
+                                    transform: translateY(-0px);
+                                }
+                                55%{
+                                    transform: translateY(-15px);
+                                }
+                                60%{
+                                    transform: translateY(0px);
+                                }
+                                65%{
+                                     transform: translateY(-15px);
+                                }
+                                100%{
+                                    transform: translateY(0px);
+                                }
+                            }
+                                .img-for-main-analysis-one{
+                                     height: 60px;
+                                     width: 60px;
+                                      object-fit: cover;
+                                      object-position: center;
+
+                                }
+
+                            }
+                            .tot-stu-analysis-content{
+                                height: auto;
+                                width: 100%;
+                                @include Column-center.column-center;
+                                gap: 5px;
+                                .tot-stu-analysis-para-one{
+                                    font-size: 26px;
+                                     font-family: 'Sour Gummy';
+                                    font-weight: 600;
+                                    color: rgb(41, 41, 41);
+                                }
+                                .tot-stu-analysis-para-two{
+                                    font-size: 16px;
+                                    font-family: 'Delius';
+                                    font-weight: 600;
+                                     color: rgb(63, 63, 63);
+                                }
+
+                            }
+                        }
+                        .stu-thinking-analysis{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(60%);
+                            @include Column-center.column-center;
+                            gap: 10px;
+                            transition-duration: 0.5s;
+                                transition-timing-function: linear;
+
+                            .stu-thinking-one{
+                                height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(50%);
+                                @include Row-center.row-center;
+                                gap: 10px;
+                                border-bottom: 1px solid rgb(232, 232, 232);
+                            }
+                            .stu-thinking-two{
+                                 height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(50%);
+                                @include Row-center.row-center;
+                                gap: 10px;
+                                border-bottom: 1px solid rgb(232, 232, 232);
+
+                            }
+                            .stu-thinking-image{
+                                height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(30%);
+                                @include Row-center.row-center;
+                                .stu-thinking-img{
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius: 100%;
+                                                                       
+                                    @include Row-center.row-center;
+                                    .img-for-main-analysis-two{
+                                        height: 40px;
+                                        width: 40px;
+                                    }
+                                }
+                                .img-one-stud-think{
+                                    background-color: rgb(231, 138, 0);    
+                                    transition-duration: 0.5s;
+                                transition-timing-function: linear;  
+                                transform: rotate3d(0,0,0,0deg);                        
+                                    }
+                                .img-two-stud-think{
+                                    background-color: rgb(0, 207, 173);    
+                                    transition-duration: 0.5s;
+                                transition-timing-function: linear;     
+                                 transform: rotate3d(0,0,0,0deg);                       
+                                    }
+                            }
+                            .stu-thinking-content{
+                                 height: 100%;
+                                width: 100%;
+                                flex: 1 1 calc(70%);
+                                 @include Column-center.column-center;
+                                gap: 8px;
+                                align-items: flex-start;
+                                .stu-thinking-main-para{
+                                    font-size: 17px;
+                                    font-family: 'Delius Swash Caps';
+                                    font-weight: 600;
+                                    color: rgb(39, 39, 39);
+                                }
+                                .stu-thinking-sub-para{
+                                    font-size: 13px;
+                                    font-family: 'Roboto';
+                                    letter-spacing: 1px;
+                                    font-weight: 400;
+                                    color: rgb(75, 75, 75);
+                                }
+                            }
+
+
+                            .stu-thinking-one:hover .img-one-stud-think{
+                                transform: rotate3d(2,1,2,360deg);
+                                transition-duration: 0.5s;
+                                transition-timing-function: linear;
+                            }
+                            .stu-thinking-two:hover .img-two-stud-think{
+                                transform: rotate3d(-2,1,-2,360deg);
+                                transition-duration: 0.5s;
+                                transition-timing-function: linear;
+                            }
+                        }
+                    }
+                    .stud-content-main-btn{
+                         height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                        @include Column-center.column-center;
+                        align-items: flex-start;
+                        .stud-analysis-btn{
+                            border: none;
+                            height: 55px;
+                            width: 190px;
+                            border-radius: 30px;
+                            background-color:  main-color.$main-color-red-for-btn;
+                            font-size: 15px;
+                            font-weight: 500;
+                            font-family: 'Anta';
+                            color: white;
+                            font-weight: 500;
+                            @include Row-center.row-center;
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                            gap: 10px;
+                            overflow: hidden;
+                              position: relative;
+                               transition-duration: 0.4s;
+                                z-index: 1;
+                            .span-for-btn-stud-page{
+                                height: 25px;
+                                width: 25px;
+                                border-radius: 100%;
+                                background-color: #fec300;
+                                font-size: 14px;
+                                @include Row-center.row-center;
+                                 color: black;
+                                transition-duration: 0.4s;
+                           
+                            }
+                            .design-div-for-tud-btn{
+                                position: absolute;
+                                height: 0px;
+                                width: 0px;
+                                border-radius: 100%;
+                                z-index: -1;
+                                background-color: #fec300;
+                                right: 25px;
+                                 transition-duration: 0.6s;
+                            }
+
+                        }
+                        .stud-analysis-btn:hover  .design-div-for-tud-btn{
+                            height: 110px;
+                            width: 220px;
+                            transition-duration: 0.6s;
+
+                        }
+                        .stud-analysis-btn:hover{
+                            color: black;
+                            
+                            transition-duration: 0.4s;
+                        }
+                         .stud-analysis-btn:hover .span-for-btn-stud-page{
+                             color: rgb(255, 56, 56);
+                            transition-duration: 0.4s;
+                         }
+                    }
+                }
+            }
+        }
+
+
+        .design-element-stud-page{
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            top: 20px;
+            right: 30px;
+            background-image: url('./StydentPage/Screenshot_2025-05-15_142316-removebg-preview.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: rotate(-10deg) translateX(60px) translateY(-60px);
+            transition-duration: 2s;
+        }
+       
+        .rocket-animation-show{
+            transform: rotate(-10deg) translateX(0px) translateY(0px);
+            transition-duration: 2s;
+           
+        }
+
+    }
+}

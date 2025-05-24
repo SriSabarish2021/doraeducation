@@ -1,9 +1,16 @@
-.edu-main-page {
+.website-main-container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   user-select: none;
+}
+
+.edu-main-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   gap: 60px;
 }
 
