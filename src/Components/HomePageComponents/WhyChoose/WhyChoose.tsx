@@ -90,8 +90,7 @@ const WhyChoose = () => {
             <button className='why-choose-btn'>Why? Mindspire <div className='why-choose-btn-animation'></div></button>
         </div>
         <div className='why-choose-img'>
-            <div className='why-choose-img-div'>
-                <div className='image-design-one' >
+            <div className='image-design-one' >
 
                     <div className='image-box-one-totors'>
                         <div className='tutors-img-tag'>
@@ -124,6 +123,8 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+            <div className='why-choose-img-div'>
+                
             </div>
 
             <div className='why-choose-img-style' style={{transform:`translateX(${-getoffsetXwhy}px) translateY(${-getoffsetYwhy}px)`,transitionDuration:'0.2s'}}></div>  
