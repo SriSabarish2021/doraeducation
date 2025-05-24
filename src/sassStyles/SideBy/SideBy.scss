@@ -13,9 +13,10 @@
 
 
 .side-by-elements-container{
-    height: 470px;
+    height: 380px;
     width: 100%;
-    padding: 80px 60px;
+    padding: 0px 60px;
+    padding-bottom: 60px;
     @include Row-center.row-center;
 
     .side-by-inner-container{
@@ -210,7 +211,7 @@
                     cursor: pointer;
                       @include Row-center.row-center;
                       gap: 10px;
-                    background-color: rgb(255, 74, 74);
+                    background-color:  main-color.$main-color-red-for-btn;
                     border: none;
                     border-radius: 20px;
                     letter-spacing: 1px;
@@ -411,7 +412,7 @@
 
             .design-circle-two-box-one{
                 position: absolute;
-                height: 100px;
+                height:  100px;
                 width: 100px;
                 right:-40px;
                 bottom:-40px;

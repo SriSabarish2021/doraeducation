@@ -17,10 +17,11 @@
 
 
 .student-page-container{
-    height: 130dvh;
+    height: 120dvh;
     width: 100%;
     @include Row-center.row-center;
     padding: 60px 110px;
+    padding-top: 0px;
     position: relative;
     .scale-img-one-stud{
         transform:translateX(330px);
@@ -483,7 +484,7 @@
                             height: 55px;
                             width: 190px;
                             border-radius: 30px;
-                            background-color: rgb(255, 56, 56);
+                            background-color:  main-color.$main-color-red-for-btn;
                             font-size: 15px;
                             font-weight: 500;
                             font-family: 'Anta';

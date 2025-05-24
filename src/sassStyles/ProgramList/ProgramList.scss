@@ -17,7 +17,8 @@
 .program-list-main-container{
     height: auto;
     width: 100%;
-    padding: 80px 100px;
+    padding: 0px 100px;
+    padding-bottom: 60px;
     @include Column-center.column-center;
     gap: 60px;
     position: relative;
@@ -494,14 +495,13 @@ background: linear-gradient(90deg, rgba(255, 252, 230, 1) 0%, rgba(255, 255, 255
 
     
                     .program-list-btn{
-                                height: 50px;
+                                height: auto;
                                 width: auto;
-                                padding-left: 40px;
-                                padding-right: 40px;
+                                padding: 15px 40px;
                                 cursor: pointer;
                                 @include Row-center.row-center;
                                 gap: 10px;
-                                background-color: rgb(255, 74, 74);
+                                background-color:  main-color.$main-color-red-for-btn;
                                 border: none;
                                 border-radius: 10px;
                                 letter-spacing: 1px;

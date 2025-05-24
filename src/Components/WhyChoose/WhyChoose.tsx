@@ -87,7 +87,7 @@ const WhyChoose = () => {
                 <p  className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Real-World Curriculum</p>
                 <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Personalized Learning</p>
             </div>
-            <button className='why-choose-btn'>Lear More <div className='why-choose-btn-animation'></div></button>
+            <button className='why-choose-btn'>Why? Mindspire <div className='why-choose-btn-animation'></div></button>
         </div>
         <div className='why-choose-img'>
             <div className='why-choose-img-div'>

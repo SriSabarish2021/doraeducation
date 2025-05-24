@@ -132,7 +132,7 @@ const StaffPage = () => {
             </div>
           </div>
         </div>
-        <button className='btn-in-tutor-analysis'>Lear More
+        <button className='btn-in-tutor-analysis'>Learn More
           <div className='btn-animation-in-staff-page'>
 
           </div>

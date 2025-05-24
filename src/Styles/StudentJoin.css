@@ -4,7 +4,7 @@
 .student-join-container {
   height: 100dvh;
   width: 100%;
-  padding: 80px 60px;
+  padding: 60px 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -396,7 +396,7 @@
   height: 55px;
   width: 190px;
   border-radius: 30px;
-  background-color: rgb(255, 56, 56);
+  background-color: rgb(255, 74, 74);
   font-size: 15px;
   font-weight: 500;
   font-family: "Anta";

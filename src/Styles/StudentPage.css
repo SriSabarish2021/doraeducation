@@ -11,13 +11,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 .student-page-container {
-  height: 130dvh;
+  height: 120dvh;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 60px 110px;
+  padding-top: 0px;
   position: relative;
 }
 .student-page-container .scale-img-one-stud {
@@ -333,6 +334,7 @@
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 1px;
+  text-align: justify;
   font-weight: 400;
   font-family: "Roboto";
   color: rgb(67, 67, 67);
@@ -542,7 +544,7 @@
   height: 55px;
   width: 190px;
   border-radius: 30px;
-  background-color: rgb(255, 56, 56);
+  background-color: rgb(255, 74, 74);
   font-size: 15px;
   font-weight: 500;
   font-family: "Anta";

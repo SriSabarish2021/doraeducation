@@ -55,7 +55,7 @@ const SideBy = () => {
                         <p  className='side-by-p-two'>Recorded Session's</p>
                     </div>
                     <p className='side-by-sub-para'>All our sessions are recorded and available 24/7, so students can revisit lessons anytime at their own pace.</p>
-                    <button className='btn-side-by'>Click Me <FaArrowRight  className='arrow-btn-side-by'/>
+                    <button className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
                           <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
                     </button>

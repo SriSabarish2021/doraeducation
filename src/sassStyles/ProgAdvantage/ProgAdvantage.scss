@@ -17,7 +17,8 @@
     height: auto;
     width: 100%;
     @include Row-center.row-center;
-    padding: 60px 60px;
+    padding: 0px 60px;
+    padding-bottom: 60px;
     gap: 40px;
     overflow: hidden;
     position: relative;
@@ -180,12 +181,13 @@
     }
 
                 .prog-advantage-btn{
-                                height: 45px;
-                                width: 160px;
+                                height: auto;
+                                width: auto;
+                                padding: 14px 30px;
                                 cursor: pointer;
                                 @include Row-center.row-center;
                                 gap: 10px;
-                                background-color: rgb(255, 74, 74);
+                                background-color:  main-color.$main-color-red-for-btn;
                                 border: none;
                                 border-radius: 20px;
                                 letter-spacing: 1px;

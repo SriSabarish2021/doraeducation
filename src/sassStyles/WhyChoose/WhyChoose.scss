@@ -18,7 +18,8 @@
     height: auto;
     width: 100%;
     @include Row-center.row-center;
-    padding: 30px 110px;
+    padding: 0px 110px;
+    padding-bottom: 60px;
     gap: 30px;
     overflow: hidden;
    
@@ -132,12 +133,14 @@
      
         .why-choose-btn{
         cursor: pointer;
-        height: 40px;
-        width: 150px;
+        height: auto;
+        width: auto;
+        padding: 12px 30px;
+
         border-radius: 5px;
         font-size: 16px;
         border: none;
-        background-color: rgb(245, 84, 82);
+        background-color: main-color.$main-color-red-for-btn;
         color: white;
         font-weight: 400;
         font-family: 'Anta';

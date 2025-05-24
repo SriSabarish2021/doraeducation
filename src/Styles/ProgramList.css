@@ -11,7 +11,8 @@
 .program-list-main-container {
   height: auto;
   width: 100%;
-  padding: 80px 100px;
+  padding: 0px 100px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -506,10 +507,9 @@
   transition-delay: 0.3s;
 }
 .program-list-main-container .program-list-btn {
-  height: 50px;
+  height: auto;
   width: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 15px 40px;
   cursor: pointer;
   display: flex;
   flex-direction: row;

@@ -13,7 +13,7 @@
 .blog-main-container {
   height: auto;
   width: 100%;
-  padding: 60px 120px;
+  padding: 0px 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;

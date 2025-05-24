@@ -9,7 +9,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 60px 60px;
+  padding: 0px 60px;
+  padding-bottom: 60px;
   gap: 40px;
   overflow: hidden;
   position: relative;
@@ -193,8 +194,9 @@
   background-color: rgb(255, 68, 81);
 }
 .prog-advantage-main-container .prog-advantage-btn {
-  height: 45px;
-  width: 160px;
+  height: auto;
+  width: auto;
+  padding: 14px 30px;
   cursor: pointer;
   display: flex;
   flex-direction: row;

@@ -10,7 +10,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30px 110px;
+  padding: 0px 110px;
+  padding-bottom: 60px;
   gap: 30px;
   overflow: hidden;
 }
@@ -95,6 +96,7 @@
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 1px;
+  text-align: justify;
   font-weight: 400;
   font-family: "Roboto";
   color: rgb(67, 67, 67);
@@ -132,12 +134,13 @@
 }
 .why-choose-container .why-choose-cont .why-choose-btn {
   cursor: pointer;
-  height: 40px;
-  width: 150px;
+  height: auto;
+  width: auto;
+  padding: 12px 30px;
   border-radius: 5px;
   font-size: 16px;
   border: none;
-  background-color: rgb(245, 84, 82);
+  background-color: rgb(255, 74, 74);
   color: white;
   font-weight: 400;
   font-family: "Anta";

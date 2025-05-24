@@ -3,7 +3,8 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}/*# sourceMappingURL=App.css.map */
+  user-select: none;
+  gap: 60px;
+}
+
+/*# sourceMappingURL=App.css.map */

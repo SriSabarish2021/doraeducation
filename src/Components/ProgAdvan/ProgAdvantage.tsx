@@ -75,7 +75,7 @@ const ProgAdvantage = () => {
                     </div>
                 </div>
             </div>
-            <button className='prog-advantage-btn'>Learn More <FaArrowRight className='arrow-btn-prog-advantage-by'/>
+            <button className='prog-advantage-btn'>Learn More<FaArrowRight className='arrow-btn-prog-advantage-by'/>
                 <div className='btn-design-in-prog-advantage-by-one'></div>
                 <div className='btn-design-in-prog-advantage-by-two'></div> 
             </button>
