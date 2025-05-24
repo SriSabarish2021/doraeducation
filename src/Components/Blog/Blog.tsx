@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '/src/Styles/Blog.css'
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { Image } from '@imagekit/react';
 
 const Blog = () => {
 
@@ -31,27 +32,38 @@ const Blog = () => {
       </div>
       <div className='blog-container-main-content-div'>
         <div className='blog-news-one-div'>
-          <div className='blog-image-container'></div>
+          <Image
+              urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+              src="/blog-h-5.webp"
+              alt="Student Image"
+              className='blog-image-container'
+            />
           <div className='blog-content-container'>
             <div className='blog-upload-date'>
                <p>March 20 2023</p>
             </div>
             <div className='blog-news-main-content'>
-              <p className='blog-main-cont-para-one'>Lorem ipsum, dolor sit amet co</p>
-              <p className='blog-main-cont-para-two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, velit.</p>
+              <p className='blog-main-cont-para-one'>{`How to Choose the Right Tutoring Match`.slice(0,40)}</p>
+              <p className='blog-main-cont-para-two'>{`Learn about Mindspire's personalized tutor-matching process designed to pair students with the best coaches for their unique needs. `.slice(0,80)+'...'}</p>
             </div>
             <button className='read-news-btn'>Read News <FaCircleArrowRight className='right-btn-icon'/></button>
           </div>
         </div>
         <div className='blog-news-two-div'>
-          <div className='blog-image-container'></div>
+          <Image
+            urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+            src="/blog-h5-2.webp"
+            alt="Student Image"
+            className='blog-image-container'
+            
+          />
           <div className='blog-content-container'>
              <div className='blog-upload-date'>
                <p>March 20 2023</p>
             </div>
             <div className='blog-news-main-content'>
-              <p className='blog-main-cont-para-one'>Lorem ipsum, dolor sit amet co</p>
-              <p className='blog-main-cont-para-two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, velit.</p>
+              <p className='blog-main-cont-para-one'>{`What Students Should Know for 2025+`.slice(0,40)}</p>
+              <p className='blog-main-cont-para-two'>{`Explore the evolving landscape of college admissions, including policy changes, technological advancements, and the growing emphasis on student well-being.`.slice(0,80)+'...'}</p>
             </div>
             <button className='read-news-btn'>Read News <FaCircleArrowRight className='right-btn-icon'/></button>
           </div>

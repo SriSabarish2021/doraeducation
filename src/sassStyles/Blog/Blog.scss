@@ -54,7 +54,11 @@
             border-radius: 20px;
             overflow: hidden;
             .blog-image-container{
-                 @include Blog.Image-container-blog('https://themexriver.com/wp/edrio/wp-content/uploads/2025/03/blog-h-5.webp');
+                  height: 100%;
+                width: 100%;
+                flex: 1 1 calc(45%);
+                object-fit: cover;
+                object-position: center;
             }
             .blog-content-container{
                 
@@ -72,7 +76,11 @@
               overflow: hidden;
               background-color: rgb(255, 246, 246);
             .blog-image-container{
-                 @include Blog.Image-container-blog('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/blog-h5-2.webp');
+                 height: 100%;
+                width: 100%;
+                flex: 1 1 calc(45%);
+                object-fit: cover;
+                object-position: center;
             }
             .blog-content-container{
                  @include Blog.blog-content-container;

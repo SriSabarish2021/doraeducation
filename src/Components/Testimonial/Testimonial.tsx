@@ -69,10 +69,10 @@ const Testimonial = () => {
       <div className='testimonial-main-container'>
         <div className='testimonial-title-bar'>
           <div className='testimonial-main-title'>
-            <p className='tistimonail-title'>Tetimonail</p>
+            <p className='tistimonail-title'>Testimonial</p>
             <p className='testimonial-main-title-para'>What Our Student's <span className='stud-think'>Think About <span className='stud-think-design'></span></span></p>
           </div>
-          <p className='quote-para-testimonial'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ratione magni quidem! Deleniti, voluptates repudiandae.</p>
+          <p className='quote-para-testimonial'>Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures</p>
         </div>
         <div className='testimonial-content-bar'>
           <div className='testimonial-image-bar'>

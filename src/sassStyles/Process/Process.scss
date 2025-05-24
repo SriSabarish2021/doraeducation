@@ -2,7 +2,7 @@
 @use '../main-color';
 @use '../Column-center';
 @use '../Row-center';
-
+@use '../WebSubContent';
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aubrey&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
@@ -14,6 +14,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@mixin row-center-end-for-step{
+                width: 100%;
+               height: auto;
+                @include Row-center.row-center;
+                
+}
+
+
+@mixin steps-container{
+                    height: auto;
+                    width: 50%;
+                    padding-top: 0px;
+                    padding-bottom: 70px;
+                    @include Row-center.row-center;
+                    align-items: flex-start;
+                    position: relative;
+                
+}
+
+@mixin side-image-steps($imageurl){
+                    position: absolute;
+                    height: 110px;
+                    width: 110px;
+                    background-image: url($imageurl);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;        
+                
+}
+
+@mixin side-inner($VALUE){
+                        height: 100%;
+                        width: 100%;
+                        @if ($VALUE){
+                            padding-left: 30px;
+
+                        }@else{
+                            padding-right: 30px;
+
+                        }
+                        @include Column-center.column-center;
+                        justify-content: flex-start;       
+                
+}
+
+@mixin side-inner-title($VALUEtitle){
+                            height: auto;
+                            width: 100%;
+                            @include Column-center.column-center;
+                            gap: 10px;
+                            
+                            padding-bottom: 20px;
+                            border-bottom: 2px solid rgb(255, 238, 238);
+                            @if ($VALUEtitle){
+                                align-items: flex-start;
+
+                            }@else{
+                               align-items: flex-end;
+
+                            }     
+                
+}
+
+@mixin side-inner-cont($VALUEcont){
+                             height: auto;
+                            width: 100%;
+                            @include Row-center.row-center;
+                            gap: 15px;
+                            
+                            padding-top: 20px;
+                            
+                            @if ($VALUEcont){
+                                justify-content: flex-start;
+                                 text-align:start;
+
+                            }@else{
+                               justify-content: flex-end;
+                                 text-align:end;
+
+                            }     
+                
+}
+
+@mixin side-line-step($VALUEline){
+                            content: '';
+                            position: absolute;
+                            height: 100%;
+                            width: 10px;
+                            background-color: rgb(255, 207, 201);
+                           
+                            @include Row-center.row-center;
+                            
+                            @if ($VALUEline){
+                                right: 100%;
+                            }@else{
+                                right: 0px;
+
+                            }     
+                
+}
+
+@mixin side-line-round{
+                            position: absolute;
+                            height: 26px;
+                            width: 26px;
+                            border-radius: 100%;
+                            border: 6px solid rgb(255, 207, 201);
+                            background-color:rgb(255, 255, 255) ;
+                            top: -15px;    
+                
+}
 
 .process-container{
     height: auto;
@@ -52,14 +164,9 @@
                     color: rgb(52, 52, 52);
                 }
                 .process-sub-main-title{
+                   @include WebSubContent.SubContent;
                     width: 70%;
-                    text-align: center;
-                    font-size: 15px;
-                    line-height: 30px;
-                    letter-spacing: 1px;
-                    font-weight: 400;
-                    font-family: "Roboto";
-                    color: rgb(52, 52, 52);
+                    text-align: center;                   
                 }
             }
            
@@ -107,10 +214,9 @@
 
             
             .process-one{
-                height: auto;
-                width: 100%;
+                @include row-center-end-for-step;
                 height: 100px;
-                @include Row-center.row-center;
+                
                 justify-content: flex-start;
                 .step-one{
                     height: 100%;
@@ -138,311 +244,171 @@
                 }
             }
             .process-two{
-                width: 100%;
-                height: auto; 
-                
-                @include Row-center.row-center;
+                @include row-center-end-for-step;
                 justify-content: flex-start;
                 position: relative;
                 
                  .step-two{
-                    height: auto;
-                    width: 50%;
-                    padding-top: 0px;
-                    padding-bottom: 50px;
-                    @include Row-center.row-center;
-                    align-items: flex-start;
-                    position: relative;
+                   @include steps-container;
                     animation: left-boxmove linear ;
                     animation-timeline: view();
                     animation-range: entry 0% cover 40%;
                     .step-two-inner{
-                        height: 100%;
-                        width: 100%;
-                        padding-right: 30px;
-                        @include Column-center.column-center;
-                        justify-content: flex-start;
+                       
+                        @include side-inner(false);
 
                         .step-two-title{
-                            height: auto;
-                            width: 100%;
-                            @include Column-center.column-center;
-                            gap: 10px;
-                            align-items: flex-end;
-                            padding-bottom: 20px;
-                            border-bottom: 2px solid rgb(255, 238, 238);
+                            @include side-inner-title(false);
 
                            
                         }
                         .step-two-cont{
-                              height: auto;
-                            width: 100%;
-                            @include Row-center.row-center;
-                            gap: 15px;
-                            justify-content: flex-end;
-                            padding-top: 20px;
-                           text-align: end
+                            @include side-inner-cont(false);
                         }
                     }
                      .div-for-step-two-line{
-                    content: '';
-                    position: absolute;
-                    height: 100%;
-                    width: 10px;
-                    background-color: rgb(255, 207, 201);
-                    right: 0px;
-                      @include Row-center.row-center;
+                    
+                        @include side-line-step(false);
                     .div-for-step-two-round{
-                        position: absolute;
-                        
-                        height: 26px;
-                        width: 26px;
-                        border-radius: 100%;
-                        border: 6px solid rgb(255, 207, 201);
-                        background-color:rgb(255, 255, 255) ;
-                        top: -15px;
+                         @include side-line-round;
+
 
                     }
                 }
                 }
 
                 .search-book-image{
-                    position: absolute;
-                    height: 110px;
-                    width: 110px;
+                     @include side-image-steps('./Process/dictionary (1).png');
                     left: 60%;
                     transform: rotate(-30deg);
-                    background-image: url('./Process/dictionary (1).png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
+                    
 
                 }
                 
             } 
             .process-three{
-                width: 100%;
-                height: auto;
-                @include Row-center.row-center;
+                 @include row-center-end-for-step;
                 justify-content: flex-end;
                 
                 .step-three{
-                    height: auto;
-                    width: 50%;
-                    padding-top: 0px;
-                    padding-bottom: 50px;
-                    @include Row-center.row-center;
-                    align-items: flex-start;
-                    position: relative;
+                     @include steps-container;
+                    
                     animation: right-boxmove linear ;
                     animation-timeline: view();
                     animation-range: entry 0% cover 40%;
-                .step-three-inner{
-                        height: 100%;
-                        width: 100%;
-                        padding-left: 30px;
-                        @include Column-center.column-center;
-                        justify-content: flex-start;
+                    .step-three-inner{
+                            @include side-inner(true);
 
-                        .step-three-title{
-                            height: auto;
-                            width: 100%;
-                            @include Column-center.column-center;
-                            gap: 10px;
-                            align-items: flex-start;
-                            padding-bottom: 20px;
-                            border-bottom: 2px solid rgb(255, 238, 238);
 
-                           
+                            .step-three-title{
+                                @include side-inner-title(true);
+
+
+                            
+                            }
+                            .step-three-cont{
+                                @include side-inner-cont(true);
+                            }
                         }
-                        .step-three-cont{
-                              height: auto;
-                            width: 100%;
-                            @include Row-center.row-center;
-                            gap: 10px;
-                            justify-content: flex-start;
-                            padding-top: 20px;
-                            text-align: start;
+                    .div-for-step-three-line{
+                        @include side-line-step(true);
+                        .div-for-step-three-round{
+                            @include side-line-round;
+
+
                         }
                     }
-                         .div-for-step-three-line{
-                    content: '';
-                    position: absolute;
-                    height: 100%;
-                    width: 10px;
-                    background-color: rgb(255, 207, 201);
-                    right:100%;
-                      @include Row-center.row-center;
-                    .div-for-step-three-round{
-                        position: absolute;
-                        height: 26px;
-                        width: 26px;
-                        border-radius: 100%;
-                        border: 6px solid rgb(255, 207, 201);
-                        background-color:#ffffff ;
-                        top: -15px;
-
-                    }
                 }
-                }
-
-                .computer-image{
-                    position: absolute;
-                    height: 110px;
-                    width: 110px;
+                .test-image{
+                    @include side-image-steps('./Process/search (1).png');
                     right:60%;
-                    transform: rotate(-0deg);
-                    background-image: url('./Process/online-test.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
+                    transform: rotate(-20deg);
+
 
                 }
+
+                
             }
             .process-four{
-                width: 100%;
-                height: auto;
-                 @include Row-center.row-center;
+                 @include row-center-end-for-step;
                 justify-content: flex-start;
                
                 .step-four{
-                    height: auto;
-                    width: 50%;
-                    padding-top: 0px;
-                    padding-bottom: 50px;
-                    @include Row-center.row-center;
-                    align-items: flex-start;
-                    position: relative;
+                      @include steps-container;
+                    
                     animation: left-boxmove linear ;
                     animation-timeline: view();
                     animation-range: entry 0% cover 40%;
                     .step-four-inner{
-                        height: 100%;
-                        width: 100%;
-                        padding-right: 30px;
-                        @include Column-center.column-center;
-                        justify-content: flex-start;
+                        @include side-inner(false);
+
 
                         .step-four-title{
-                            height: auto;
-                            width: 100%;
-                            @include Column-center.column-center;
-                            gap: 10px;
-                            align-items: flex-end;
-                            padding-bottom: 20px;
-                            border-bottom:  2px solid rgb(255, 238, 238);
+                             @include side-inner-title(false);
 
+
+                            
                            
                         }
                         .step-four-cont{
-                              height: auto;
-                            width: 100%;
-                            @include Row-center.row-center;
-                            gap: 10px;
-                            justify-content: flex-end;
-                            padding-top: 20px;
-                             text-align: end;
+                              @include side-inner-cont(false);
                            
                         }
                     }
 
                      .div-for-step-four-line{
-                    content: '';
-                    position: absolute;
-                    height: 100%;
-                    width: 10px;
-                    background-color: rgb(255, 207, 201);
-                    right: 0px;
-                      @include Row-center.row-center;
+                            @include side-line-step(false);
                     .div-for-step-four-round{
-                        position: absolute;
-                         height: 26px;
-                        width: 26px;
-                        border-radius: 100%;
-                        border: 6px solid rgb(255, 207, 201);
-                        background-color:rgb(255, 255, 255) ;
-                        top: -15px;
+                        @include side-line-round;
 
+                        
                     }
                     }
                 }
 
-                .test-image{
-                    position: absolute;
-                    height: 110px;
-                    width: 110px;
+                
+                .enroll-image{
+                    @include side-image-steps('./Process/enroll.png');
                     left:60%;
-                    transform: rotate(-20deg);
-                    background-image: url('./Process/search (1).png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
+                    transform: rotate(20deg);
+                    
+
 
                 }
             }
             .process-five{
-                width: 100%;
-               height: auto;
-                @include Row-center.row-center;
+                @include row-center-end-for-step;
                 justify-content: flex-end;
                  
                 
                 .step-five{
-                    height: auto;
-                    width: 50%;
-                    padding-top: 0px;
-                    padding-bottom: 60px;
-                    @include Row-center.row-center;
-                    align-items: flex-start;
-                    position: relative;
+                    
+                      @include steps-container;
                      animation: right-boxmove linear ;
                     animation-timeline: view();
                     animation-range: entry 0% cover 40%;
                 .step-five-inner{
-                        height: 100%;
-                        width: 100%;
-                        padding-left: 30px;
-                        @include Column-center.column-center;
-                        justify-content: flex-start;
+                        @include side-inner(true);
+
 
                         .step-five-title{
-                            height: auto;
-                            width: 100%;
-                            @include Column-center.column-center;
-                            gap: 10px;
-                            align-items: flex-start;
-                            padding-bottom: 20px;
-                            border-bottom: 2px solid rgb(255, 238, 238);
+                             @include side-inner-title(true);
+
 
                            
                         }
                         .step-five-cont{
-                              height: auto;
-                            width: 100%;
-                            @include Row-center.row-center;
-                            gap: 10px;
-                            justify-content: flex-start;
-                            padding-top: 20px;
-                             text-align:start;
+                             @include side-inner-cont(true);
                            
                         }
                     }
                          .div-for-step-five-line{
-                    content: '';
-                    position: absolute;
-                    height: 100%;
-                    width: 10px;
-                    background-color: rgb(255, 207, 201);
-                    right:100%;
-                      @include Row-center.row-center;
+                            @include side-line-step(true);
+
+                      
                     .div-for-step-five-round{
-                        position: absolute;
-                        height: 26px;
-                        width: 26px;
-                        border-radius: 100%;
-                        border: 6px solid rgb(255, 207, 201);
-                        background-color:rgb(255, 255, 255) ;
-                        top: -15px;
+                        @include side-line-round;
+
 
                     }
                     .div-for-step-five-round-two{
@@ -459,18 +425,15 @@
                 }
 
                 
-                .enroll-image{
-                    position: absolute;
-                    height: 110px;
-                    width: 110px;
+                .computer-image{
+                    @include side-image-steps('./Process/online-test.png');
                     right:60%;
-                    transform: rotate(20deg);
-                    background-image: url('./Process/enroll.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
+                    transform: rotate(-0deg);
+
+
 
                 }
+                
             }
 
          }

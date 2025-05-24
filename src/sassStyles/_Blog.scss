@@ -7,13 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 
 @mixin Image-container-blog($imageurl){
-                height: 100%;
-                width: 100%;
-                flex: 1 1 calc(45%);
-                background-image: url($imageurl);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+               
 }
 
 @mixin blog-content-container{
