@@ -90,7 +90,8 @@ const StudentJoin = () => {
         </div>
         <div className='student-join-image-container-two'>
                <div className='student-join-image-two-insider-one'></div>
-          <div className='student-join-image-two-insider-two'></div>
+              <div className='student-join-image-two-insider-two'></div>
+            
         </div>
       </div>
       
@@ -104,10 +105,10 @@ const StudentJoin = () => {
           <p className='small-tit-in-student-join'>Academic Excellence</p>
           <div className='main-title-div-for-head-stud-join'>
             <p className='main-tit-one-stud-join'>Trusted by <span className='student-joinin-number'>25,000</span> happy</p>
-            <p className='main-tit-two-stud-join'>Students are Joining</p>
+            <p className='main-tit-two-stud-join'>Students and On the rise</p>
           </div>
           
-          <p className='sub-tit-in-stud-join'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit possimus nihil iusto aliquid eius quibusdam placeat explicabo similique asperiores.</p>
+          <p className='sub-tit-in-stud-join'>Over 25,000 students have chosen Mindspire for a flexible, expert-led learning journey. From live classes to on-demand sessions, our growing community trusts us to power their success.</p>
         </div>
         <div className='information-boxes-student-join'>
           <div className='information-box-one'>
@@ -116,7 +117,7 @@ const StudentJoin = () => {
             </div>
             <div className='number-of-student-join-one'>
               <p  className='student-number-para-one'>Courses</p>
-              <p  className='student-number-para-two'>+120</p>
+              <p  className='student-number-para-two'>+20</p>
             </div>
             <div className="break-circle-one"></div>
           </div>

@@ -2,7 +2,7 @@
 @use '../main-color';
 @use '../Column-center';
 @use '../Row-center';
-
+@use '../WebSubContent';
 @import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
@@ -185,8 +185,8 @@
             height: 50px;
             width: 50px;
             border: 4px solid rgb(255, 137, 137);
-            top: 20%;
-            right: 20%;
+            top: 15%;
+            right: 10%;
             transform: rotate(-10deg);
              @include Column-center.column-center;
             border-radius: 10px;
@@ -248,13 +248,7 @@
                 }
             }
             .sub-tit-in-stud-join{
-                    width: 100%;
-                    font-size: 15px;
-                    line-height: 30px;
-                    letter-spacing: 1px;
-                    font-weight: 400;
-                    font-family: "Roboto";
-                    color:main-color.$font-main-color;
+                    @include WebSubContent.SubContent;
             }
             
         }
