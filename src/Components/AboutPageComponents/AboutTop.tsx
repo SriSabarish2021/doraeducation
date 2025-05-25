@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../../Styles/AboutPageCSS/AboutTop.css'
 import { FaAnglesRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
@@ -56,6 +56,27 @@ const AboutTop = () => {
             }
         }
       }, [])
+
+
+       const [offsetforaboutX,setoffsetforaboutX]=useState(0)
+        const [offsetforaboutY,setoffsetforaboutY]=useState(0)
+      
+         const MouseMoveEvent=(event:unknown)=>{
+      
+          
+          const elementtargeting=event.currentTarget
+          const viewelement=elementtargeting.getBoundingClientRect()
+      
+          const totwidht:number=event.clientX-viewelement.left
+          const totheight:number=event.clientY-viewelement.top
+      
+          const offsetX:number=(totwidht/viewelement.width)*100
+          const offsetY:number=(totheight/viewelement.height)*100
+          setoffsetforaboutX(-offsetX/2)
+          setoffsetforaboutY(-offsetY/2)
+      
+        }
+        
       
 
   return (
@@ -111,11 +132,14 @@ const AboutTop = () => {
 
             </div>
         </div>
-        <div className='about-top-side-bar-container'>
+        <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+            <div className='about-special-design'></div>
+            <div className='about-special-design-one' style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
+            <div className='about-special-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
             <div className='about-side-bar about-side-by-one'>
                 <div className='about-side-bar-img'>
                     <div className='about-side-img about-side-img-one'>
-                        <img className='img-for-side-by-about' src='./AboutPageImage/ABOUT-TOP/ic42.svg' ></img>
+                        <img className='img-for-side-by-about img-about-side-one' src='./AboutPageImage/ABOUT-TOP/ic42.svg' ></img>
                     </div>
                     
                     <div className='about-side-img-design about-side-img-one-design-one'>
@@ -133,7 +157,7 @@ const AboutTop = () => {
             <div className='about-side-bar  about-side-by-two'>
                 <div className='about-side-bar-img '>
                     <div className='about-side-img  about-side-img-two'>
-                        <img className='img-for-side-by-about' src='./AboutPageImage/ABOUT-TOP/ic42.svg' ></img>
+                        <img className='img-for-side-by-about img-about-side-two' src='./AboutPageImage/ABOUT-TOP/ic41.svg' ></img>
                     </div>
                     <div className='about-side-img-design about-side-img-two-design-one'></div>
                     <div className='about-side-img-design-two about-side-img-two-design-two'></div>
@@ -146,7 +170,7 @@ const AboutTop = () => {
             <div className='about-side-bar about-side-by-three'>
                 <div className='about-side-bar-img'>
                     <div className='about-side-img  about-side-img-three'>
-                        <img className='img-for-side-by-about' src='./AboutPageImage/ABOUT-TOP/ic42.svg' ></img>
+                        <img className='img-for-side-by-about img-about-side-three' src='./AboutPageImage/ABOUT-TOP/ic40.svg' ></img>
                     </div>
                     <div className='about-side-img-design about-side-img-three-design-one'></div>
                     <div className='about-side-img-design-two about-side-img-three-design-two'></div>
@@ -157,15 +181,18 @@ const AboutTop = () => {
                 </div>
             </div>
         </div>
-        <div className='about-top-information-container'>
+        <div className='about-top-information-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+            <div className='about-top-information-design' ></div>
+            <div className='div-for-design'><div className='div-for-inner-design'  style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div></div>
+            <div className='about-top-information-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
             <div className='about-information-image-div'>
                 <div className='about-image-div'></div>
                 <div className='about-image-div-design'></div>
             </div>
             <div className='about-information-cont-div'>
                 <div className='about-information-top-div'>
-                    <p>Prestigious Institute with</p>
-                    <p><span className='about-infor-para-span'>Excellence</span> in Education.</p>
+                    <p>Prestigious <span className='insitute-tit-design'>Institute</span> with</p>
+                    <p><span className='about-infor-para-span'>Excellence</span> in <span className='education-underline-about-page'>Education <span className='education-underline-img'></span></span>.</p>
                 </div>
                 <div className='about-information-main-content'>
                     <div className='about-information-cont-div-one'>
@@ -207,7 +234,10 @@ const AboutTop = () => {
                             </div>
                         </div>
                     </div>
-                    <button className='about-information-btn'>Know About Us</button>
+                    <button className='about-information-btn'>Know About Us
+                        <div className='about-information-btn-design-one'></div>
+                        <div className='about-information-btn-design-two'></div>
+                    </button>
                    
                 </div>
             </div>
