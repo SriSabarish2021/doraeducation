@@ -1,9 +1,10 @@
+import AboutTop from "../AboutPageComponents/AboutTop"
 
 const AboutPage = () => {
   return (
-    <div>
-      <p>Helooo</p>
-    </div>
+    <>
+      <AboutTop/>
+    </>
   )
 }
 
