@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.tutor-about-page-container {
+  height: 130dvh;
+  width: 100%;
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tutor-about-page-container .tutor-elements {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  row-gap: 100px;
+}
+.tutor-about-page-container .tutor-elements .tutor-box-one, .tutor-about-page-container .tutor-elements .tutor-box-two, .tutor-about-page-container .tutor-elements .tutor-box-three, .tutor-about-page-container .tutor-elements .tutor-box-four, .tutor-about-page-container .tutor-elements .tutor-box-five {
+  border-bottom-right-radius: 100px;
+}
+.tutor-about-page-container .tutor-elements .tutor-box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.tutor-about-page-container .tutor-elements .tutor-box .tutor-img {
+  height: 160px;
+  width: 160px;
+  background-color: rgb(60, 0, 255);
+  border-radius: 100%;
+  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team10.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  border-radius: 100%;
+  background-color: black;
+  z-index: 1;
+  transform: translateX(5px) translateY(5px);
+}
+.tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box {
+  height: 130px;
+  width: 80%;
+  background-color: rgb(0, 255, 119);
+  border-radius: 100px;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  left: 0px;
+}
+.tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box {
+  height: 100%;
+  width: 130px;
+  background-color: rgb(149, 0, 255);
+  border-radius: 100px;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  right: 0px;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator {
+  height: 28px;
+  width: 130px;
+  background-color: rgb(208, 255, 163);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Sniglet";
+  font-weight: 600;
+  color: rgb(42, 42, 42);
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator .tutor-indicator-design-bar-one {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgb(255, 250, 250);
+  border: 1px solid rgb(255, 237, 237);
+  position: absolute;
+  left: -20px;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator .tutor-indicator-design-bar-two {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: rgb(255, 250, 250);
+  border: 1px solid rgb(255, 237, 237);
+  position: absolute;
+  right: -20px;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start;
+  font-size: 50px;
+  font-family: "Averia Libre";
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+  align-items: flex-start;
+  font-size: 45px;
+  font-weight: 600;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page {
+  height: 45px;
+  width: 200px;
+  border: none;
+  background-color: blue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=Tutro.css.map */
