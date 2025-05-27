@@ -4,9 +4,18 @@
 @use'../main-color';
 @use'../Main-Title';
 @use'../WebSubContent';
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@mixin BG-img-of-tutor($bgimgurl){
+                        background-image: url($bgimgurl);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+}
 .tutor-about-page-container{
-    height: 130dvh;
+    height: 120dvh;
     width: 100%;
     padding: 30px 80px;
     @include Column-center.column-center;
@@ -20,7 +29,7 @@
         row-gap: 100px;
 
         .tutor-box-one,.tutor-box-two,.tutor-box-three,.tutor-box-four,.tutor-box-five{
-            border-bottom-right-radius: 100px;
+            border-bottom-right-radius: 0px;
         }
         
         .tutor-box{
@@ -32,50 +41,187 @@
             overflow: hidden;
             
             .tutor-img{
-                height: 160px;
-                width: 160px;
-                background-color: rgb(60, 0, 255);
+                height: 170px;
+                width: 170px;
                 border-radius: 100%;
-                background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team10.webp');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                
                 z-index: 2;
                 
                 
             }
+            .tutor-img-one{
+               
+                @include BG-img-of-tutor('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team10.webp');
+            }
+            .tutor-img-two{
+                
+                 @include BG-img-of-tutor('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team11.webp');
+            }
+            .tutor-img-three{
+               
+                 @include BG-img-of-tutor('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team12.webp');
+            }
+            .tutor-img-four{
+                
+                 @include BG-img-of-tutor('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team13.webp');
+            }
+            .tutor-img-five{
+                
+                @include BG-img-of-tutor('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/team14.webp');
+            }
             .tutor-img-design{
                     position: absolute;
-                    height:160px;
-                    width: 160px;
+                    height:170px;
+                    width: 170px;
                     border-radius: 100%;
-                    background-color: black;
                     z-index: 1;
                     transform: translateX(5px) translateY(5px);
                 }
+                .tutor-img-design-five{
+                    background-color: rgb(106, 255, 106);
+
+                }
+                .tutor-img-design-four{
+                    background-color: rgb(255, 110, 248);
+
+                }
+                .tutor-img-design-three{
+                    background-color: rgb(123, 255, 224);
+
+                }
+                .tutor-img-design-two{
+                    background-color: rgb(255, 110, 146);
+
+                }
+                .tutor-img-design-one{
+                    background-color: rgb(255, 185, 92);
+
+                }
+                 
+           
+            
 
             .name-tutor-box{
-                height: 130px;
-                width: 80%;
-                background-color:rgb(0, 255, 119) ;
+                height: 120px;
+                width: 90%;
                 border-radius: 100px;
                 position: absolute;
                 bottom: 0px;
-                border-bottom-right-radius: 0px;
-                border-top-right-radius: 0px;
-                left: 0px
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 0px;
+                right: 0px;
+                padding-top: 20px;
+                padding-left: 60px;
+                .tutor-name{
+                    font-size: 22px;
+                    font-family: 'Sour Gummy';
+                    font-weight: 600;
+                    color: rgb(50, 50, 50);
+                    
+                }
+                .tutor-study-field{
+                    @include WebSubContent.SubContent;
+                    font-size: 13px;
+                    color: rgb(79, 79, 79);
+                }
 
              }
              .info-tutor-box{
-                height: 100%;
-                width:130px;
-                background-color:rgb(149, 0, 255) ;
+                height: 90%;
+                width:120px;
                 border-radius: 100px;
                 position: absolute;
                 bottom: 0px;
-                border-bottom-right-radius: 0px;
-                border-bottom-left-radius: 0px;
-                right: 0px
+                @include Column-center.column-center;
+                right: 0px;
+                overflow: hidden;
+                .div-for-tutor-btn{
+                    height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(70%);@include Column-center.column-center;
+                    justify-content: flex-start;
+                    gap: 15px;
+                    padding-top: 25px;
+                    overflow: hidden;
+
+                     .tutor-btn{
+                    height: 45px;
+                    width: 45px;
+                    cursor: pointer;
+                    background-color: white;
+                    border-radius: 100%;
+                  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+                    transform: translateX(-50px);
+                    opacity: 0;
+                    transition-duration: 0.5s;
+                    @include Column-center.column-center;
+                    font-size: 18px;
+                    color: rgb(50, 50, 50);
+                    .tutor-btn-icon{
+                        transform: scale(1.05);
+                        transition-duration: 0.3s;
+                    }
+                    .tutor-btn-icon:hover{
+                    transform: scale(1.2);
+                    transition-duration: 0.3s;
+                }
+                }
+                
+                .fb-tutor-btn{
+                    transition-delay: 0s;
+                }
+                .linkedin-tutor-btn{
+                    transition-delay: 0.1s;
+                }
+                .twitter-tutor-btn{
+                    transition-delay: 0.2s;
+                }
+                }
+               
+                .div-for-tutor-plus{
+                    height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(30%);
+                    @include Column-center.column-center;
+                    padding-bottom: 15px;
+                    .plus-for-tutor-show{
+                        height:70px;
+                        width:70px;
+                        border-radius: 100%;
+                        
+                              
+                        @include BG-img-of-tutor('./AboutPageImage/AboutPageCourse/plus (5).png');
+                        
+                        cursor: pointer;
+                    }
+                }
+                
+                
+             }
+             .info-tutor-box:hover .tutor-btn {
+                transform: translateX(0px);
+                opacity: 1;
+                }
+                      
+                       
+             
+              
+
+             .tutor-name-one,.tutor-info-one{
+                background-color: antiquewhite;
+             }
+             .tutor-name-two,.tutor-info-two{
+                background-color: rgb(250, 215, 218)
+             }
+              .tutor-name-three,.tutor-info-three{
+                background-color: rgb(215, 250, 242)
+             }
+              .tutor-name-four,.tutor-info-four{
+                background-color: rgb(250, 215, 248)
+             }
+              .tutor-name-five,.tutor-info-five{
+                background-color: rgb(215, 250, 215)
              }
            
           
@@ -95,6 +241,7 @@
                     height:28px;
                 width: 130px;
                 background-color: rgb(208, 255, 163);
+                border: 1px solid rgb(231, 231, 231);
                 @include Row-center.row-center;
                 border-radius: 5px;
                 font-size: 14px;
@@ -137,15 +284,21 @@
 
                 }
                 .btn-for-tutor-page{
-                    height: 45px;
-                    width: 200px;
+                    height: 40px;
+                    width: 150px;
                     border: none;
-                    background-color: blue;
+                    background-color:  main-color.$main-color-red-for-btn;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     font-size: 16px;
                     font-weight: 600;
                     color: white;
-                    border-radius: 10px;
+                    border-radius: 6px;
+                }
+                .tutor-title-span{
+                    color: main-color.$main-color-yellow-for-btn;
+                    font-weight: 600;
+                    font-size:55px;
+                    font-family: 'Fleur De Leah';
                 }
         }
         
