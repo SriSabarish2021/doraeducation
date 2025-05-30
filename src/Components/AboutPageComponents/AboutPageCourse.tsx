@@ -6,6 +6,8 @@ import { PiStudent } from "react-icons/pi";
 import { IoStar } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa"; 
 import { FaArrowRight } from "react-icons/fa6";
+import { Image } from '@imagekit/react';
+
 const AboutPageCourse = () => {
   
   useEffect(() => {
@@ -124,8 +126,13 @@ const AboutPageCourse = () => {
             <p className='about-analysis-sub-head-para'>Explore university’s 20+ courses across various specialisations that
               provoke intellectual and intuitive learning among students.</p>
           </div>
-          <div className='about-page-analysis-imgae-design'></div>
-          
+          <div ></div>
+           <Image
+            urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+            src="/cta6.webp"
+            alt="Student Image"
+            className='about-page-analysis-imgae-design'
+            />
         </div>
         <div className='analysis-design-one-about-page'>
           <p className='analysis-about-page-one-para-one'><span className='span-for-analysisi-one-para-one'>50</span>+</p>

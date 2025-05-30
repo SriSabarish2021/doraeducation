@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import '../../Styles/AboutPageCSS/AboutTop.css'
 import { FaAnglesRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { Image } from '@imagekit/react';
 
 const AboutTop = () => {
     const scrollRefAbout = useRef<HTMLDivElement>(null);
@@ -127,9 +128,19 @@ const AboutTop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='about-top-image-style'></div>
-                <div className='about-top-image-style-two'></div>
-
+                
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/hs6_1.webp"
+                    alt="Student Image"
+                    className='about-top-image-style'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/hero6_2.webp"
+                    alt="Student Image"
+                    className='about-top-image-style-two'
+                    />
             </div>
         </div>
         <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
@@ -186,8 +197,20 @@ const AboutTop = () => {
             <div className='div-for-design'><div className='div-for-inner-design'  style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div></div>
             <div className='about-top-information-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
             <div className='about-information-image-div'>
-                <div className='about-image-div'></div>
-                <div className='about-image-div-design'></div>
+                
+                  <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/ab13.webp"
+                    alt="Student Image"
+                    className='about-image-div'
+                    />
+                    <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/ab14.webp"
+                    alt="Student Image"
+                    className='about-image-div-design'
+                    />
+                
             </div>
             <div className='about-information-cont-div'>
                 <div className='about-information-top-div'>

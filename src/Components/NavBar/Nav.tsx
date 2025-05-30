@@ -53,7 +53,11 @@ const Nav = () => {
             <p className='line-in-hover-nav'></p>
           </div>
           <div className='nav-item-insider'>
-            <p className='p-for-nav-item'>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
+            
+           
+            <Link style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"}>
+               <p className='p-for-nav-item'>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
+            </Link>  
             <p className='line-in-hover-nav'> </p>
           </div>
           <div className='nav-item-insider'>

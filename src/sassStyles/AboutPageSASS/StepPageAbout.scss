@@ -3,6 +3,8 @@
 @use'../main-color';
 @use'../Main-Title';
 @use'../WebSubContent';
+@use'../bg-img-center';
+
 
 @import url('https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
@@ -49,11 +51,9 @@
                     width: 150px;
                     left: 0px;
                     top: 0px;
-                    background-image: url('./Aboutus/underline-two.png');
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
                     
+                    @include bg-img-center.bg-img-center('./Aboutus/underline-two.png');
+                     background-size: contain;
                 }
             }
             
@@ -83,11 +83,10 @@
         position: relative;
         .book-move-design-step-abt-page-two{
              position: absolute;
-        background-image: url('./AboutPageImage/milestones.png');
-        background-position: center;
+      
+         @include bg-img-center.bg-img-center('./AboutPageImage/milestones.png');
         opacity: 0.9;
-        background-repeat: no-repeat;
-        background-size: cover;
+      
         height: 150px;
         width: 150px;
         top: 5%;
@@ -112,10 +111,7 @@
 
     .book-move-design-step-abt-page{
         position: absolute;
-        background-image: url('./AboutPageImage/book (3).png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+                 @include bg-img-center.bg-img-center('./AboutPageImage/book (3).png');
         height: 150px;
         width: 150px;
         bottom: 15%;
@@ -161,10 +157,10 @@
                 border-radius: 5px;
                 border-bottom: none;
                 bottom:30%;
-                background-image: url('./AboutPageImage/border-line.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
+
+              
+                @include bg-img-center.bg-img-center('./AboutPageImage/border-line.png');
+                  background-size: contain;
             }
             .step-line-abt-page-bg{
                height: 100%;

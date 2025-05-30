@@ -1,0 +1,6 @@
+@mixin bg-img-center($imgurl){
+                        background-image: url($imgurl);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+}

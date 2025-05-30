@@ -421,6 +421,7 @@
   background-image: url("./WhyChoose/underline-why-choose.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-size: contain;
   bottom: -20px;
   left: 20px;
@@ -450,10 +451,8 @@
   width: 950px;
   position: absolute;
   bottom: 0px;
-  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/cta6.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  object-position: center;
   transform: translateY(400px);
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -557,6 +556,7 @@
   background-image: url("./AboutPageImage/ABOUT-TOP/Untitled (9).png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-size: contain;
   top: 5%;
   right: 200px;
@@ -655,7 +655,7 @@
   gap: 5px;
 }
 .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .about-why-image-two {
-  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/wc3.webp");
+  background-image: url("./AboutPageImage/ABT/wc3.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -673,7 +673,7 @@
   width: 360px;
   background-color: white;
   border-radius: 20px;
-  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/wc4.webp");
+  background-image: url("./AboutPageImage/ABT/wc4.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -761,6 +761,7 @@
   background-image: url("./AboutPageImage/ABOUT-TOP/Vector 11.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-size: contain;
   left: 15%;
   top: 45px;
