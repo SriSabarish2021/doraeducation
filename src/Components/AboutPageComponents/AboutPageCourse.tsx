@@ -43,7 +43,7 @@ const AboutPageCourse = () => {
       <div className='about-page-analysis-box'>
         
         <div className='about-page-analysis-content'>
-          <div className='about-bottom-white'></div>
+          
           <div className='about-page-analysis-content-showing'>
             <div className='about-page-analysis-head'>
               <p className='about-analysis-head-para-one'>University is the <span className='span-title-for-head-para'>Best Time</span></p>

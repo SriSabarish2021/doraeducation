@@ -1,5 +1,6 @@
 import AboutPageCourse from "../AboutPageComponents/AboutPageCourse"
 import AboutTop from "../AboutPageComponents/AboutTop"
+import StepPageAbout from "../AboutPageComponents/StepPageAbout"
 import Tutor from "../AboutPageComponents/Tutor"
 
 const AboutPage = () => {
@@ -8,6 +9,7 @@ const AboutPage = () => {
       <AboutTop/>
       <AboutPageCourse/>
       <Tutor/>
+      <StepPageAbout/>
     </div>
   )
 }
