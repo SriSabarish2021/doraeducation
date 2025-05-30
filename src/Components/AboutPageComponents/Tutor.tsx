@@ -14,7 +14,9 @@ const Tutor = () => {
                 <div className='tutor-indicator-design-bar-two'></div>
             </div>
             <p className='tutor-page-para'>Meet the Experts <span>Who Inspire and</span><span className='tutor-title-span'>Educate.</span></p>
-            <button className='btn-for-tutor-page'>View More</button>
+            <button className='btn-for-tutor-page'>View More
+              <div className='tutor-page-abt-btn-design'></div>
+            </button>
         </div>
         <div className='tutor-box  tutor-box-one'>
             <div className='tutor-img tutor-img-one'>

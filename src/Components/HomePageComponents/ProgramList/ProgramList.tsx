@@ -6,8 +6,10 @@ import { PiStudent } from "react-icons/pi";
 import { IoStar } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa"; 
 import { FaArrowRight } from "react-icons/fa6";
+import { useLocation } from 'react-router-dom';
 
 const ProgramList = () => {
+  let getlocation=useLocation()
   return (
     <div className='program-list-main-container'>
       <div className='program-list-deisgn-div'></div>

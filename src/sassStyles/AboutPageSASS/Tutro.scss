@@ -288,12 +288,35 @@
                     width: 150px;
                     border: none;
                     background-color:  main-color.$main-color-red-for-btn;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-family:'Exo 2';
                     font-size: 16px;
-                    font-weight: 600;
+                    font-weight: 500;
                     color: white;
                     border-radius: 6px;
+                    position: relative;
+                    transition-duration: 0.3s;
+                    z-index: 1;
+                    overflow: hidden;
+                    .tutor-page-abt-btn-design{
+                        position: absolute;
+                        height: 0%;
+                        width: 100%;
+                        bottom: 0px;
+                        background-color:  main-color.$main-color-yellow-for-btn;
+                        transition-duration: 0.3s;
+                        z-index: -1;
+                    }
                 }
+                 .btn-for-tutor-page:hover{
+                    color: black;
+                    font-weight: 600;
+                     .tutor-page-abt-btn-design{
+                        transition-duration: 0.3s;
+                        height: 100%;
+                       
+
+                    }
+                 }
                 .tutor-title-span{
                     color: main-color.$main-color-yellow-for-btn;
                     font-weight: 600;

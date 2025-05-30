@@ -7,11 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
 .about-page-course-container{
     height: auto;
     width: 100%;
@@ -22,11 +28,299 @@
 
 
      .about-page-course-box{
- height: 100dvh;
-    margin-top: -100px;
-    width: 100%;
-    background-color: #103B43;
-     clip-path: polygon(0% 1.112%, 0% 100%, 100% 100%, 100% 20.853%, 97.161% 23.031%, 97.161% 23.031%, 97.009% 22.842%, 96.82% 22.627%, 96.6% 22.393%, 96.354% 22.152%, 96.087% 21.913%, 95.803% 21.685%, 95.509% 21.479%, 95.208% 21.303%, 94.907% 21.169%, 94.609% 21.084%, 94.609% 21.084%, 94.555% 21.075%, 94.5% 21.065%, 94.445% 21.057%, 94.389% 21.048%, 94.332% 21.04%, 94.274% 21.033%, 94.216% 21.025%, 94.157% 21.018%, 94.098% 21.011%, 94.038% 21.003%, 94.038% 21.003%, 94.038% 21.003%, 93.674% 20.957%, 93.29% 20.894%, 92.886% 20.799%, 92.464% 20.657%, 92.024% 20.455%, 91.569% 20.178%, 91.098% 19.811%, 90.614% 19.34%, 90.117% 18.75%, 89.609% 18.026%, 89.609% 18.026%, 89.157% 17.325%, 88.76% 16.709%, 88.417% 16.175%, 88.124% 15.718%, 87.878% 15.334%, 87.677% 15.019%, 87.519% 14.768%, 87.399% 14.579%, 87.315% 14.446%, 87.266% 14.365%, 87.266% 14.365%, 87.134% 14.363%, 86.985% 14.378%, 86.824% 14.413%, 86.659% 14.471%, 86.496% 14.558%, 86.343% 14.675%, 86.206% 14.826%, 86.093% 15.016%, 86.009% 15.247%, 85.964% 15.524%, 85.964% 15.524%, 85.906% 15.803%, 85.791% 16.042%, 85.629% 16.242%, 85.431% 16.408%, 85.206% 16.542%, 84.966% 16.646%, 84.722% 16.723%, 84.482% 16.776%, 84.259% 16.808%, 84.063% 16.821%, 82.943% 14.365%, 81.328% 14.365%, 73.828% 16.821%, 72.891% 14.365%, 70.13% 14.365%, 68.073% 11.122%, 66.198% 11.122%, 62.344% 3.476%, 62.344% 3.476%, 61.817% 3.376%, 61.19% 3.279%, 60.485% 3.191%, 59.724% 3.122%, 58.93% 3.08%, 58.124% 3.074%, 57.329% 3.111%, 56.568% 3.2%, 55.862% 3.35%, 55.234% 3.568%, 55.234% 3.568%, 55.073% 3.64%, 54.906% 3.714%, 54.734% 3.791%, 54.557% 3.871%, 54.375% 3.953%, 54.189% 4.037%, 54% 4.124%, 53.806% 4.212%, 53.61% 4.301%, 53.41% 4.393%, 53.409% 4.393%, 53.409% 4.393%, 52.674% 4.728%, 51.917% 5.071%, 51.154% 5.412%, 50.399% 5.742%, 49.666% 6.052%, 48.968% 6.334%, 48.321% 6.578%, 47.739% 6.776%, 47.234% 6.919%, 46.823% 6.997%, 46.823% 6.997%, 46.45% 7.045%, 46.071% 7.097%, 45.694% 7.152%, 45.324% 7.21%, 44.969% 7.267%, 44.633% 7.324%, 44.324% 7.377%, 44.048% 7.427%, 43.811% 7.47%, 43.62% 7.507%, 40.781% 8.665%, 40.781% 8.665%, 40.408% 8.493%, 39.971% 8.308%, 39.488% 8.122%, 38.976% 7.946%, 38.452% 7.791%, 37.935% 7.669%, 37.442% 7.591%, 36.989% 7.57%, 36.595% 7.615%, 36.276% 7.739%, 36.276% 7.739%, 36.009% 7.898%, 35.758% 8.041%, 35.525% 8.169%, 35.31% 8.283%, 35.115% 8.382%, 34.941% 8.466%, 34.79% 8.536%, 34.661% 8.593%, 34.557% 8.636%, 34.479% 8.665%, 24.479% 2.178%, 23.568% 4.634%, 19.818% 3.197%, 19.818% 3.197%, 19.77% 3.061%, 19.706% 2.918%, 19.625% 2.777%, 19.529% 2.65%, 19.417% 2.544%, 19.291% 2.47%, 19.15% 2.438%, 18.995% 2.457%, 18.827% 2.537%, 18.646% 2.688%, 18.646% 2.688%, 18.353% 2.945%, 17.95% 3.233%, 17.442% 3.534%, 16.838% 3.833%, 16.146% 4.113%, 15.372% 4.356%, 14.525% 4.546%, 13.611% 4.667%, 12.638% 4.702%, 11.615% 4.634%, 11.615% 4.634%, 11.389% 4.567%, 11.124% 4.468%, 10.832% 4.335%, 10.522% 4.167%, 10.204% 3.963%, 9.891% 3.722%, 9.591% 3.443%, 9.316% 3.124%, 9.075% 2.765%, 8.88% 2.363%, 8.88% 2.363%, 8.881% 2.151%, 8.872% 1.912%, 8.852% 1.657%, 8.817% 1.398%, 8.767% 1.147%, 8.698% 0.915%, 8.61% 0.715%, 8.499% 0.557%, 8.364% 0.454%, 8.203% 0.417%, 8.203% 0.417%, 8.017% 0.414%, 7.813% 0.407%, 7.597% 0.396%, 7.374% 0.381%, 7.151% 0.365%, 6.933% 0.347%, 6.725% 0.328%, 6.534% 0.31%, 6.365% 0.293%, 6.224% 0.278%, 6.042% 0%, 4.531% 1.622%, 4.531% 1.622%, 4.159% 1.641%, 3.732% 1.66%, 3.27% 1.677%, 2.792% 1.691%, 2.316% 1.701%, 1.863% 1.704%, 1.45% 1.699%, 1.098% 1.685%, 0.825% 1.66%, 0.651% 1.622%, 0.651% 1.622%, 0.538% 1.574%, 0.436% 1.522%, 0.346% 1.467%, 0.266% 1.41%, 0.197% 1.352%, 0.138% 1.296%, 0.089% 1.242%, 0.05% 1.192%, 0.02% 1.149%, 0% 1.112%); 
+        height: 1300px;
+        margin-top: -120px;
+        width: 100%;
+        background-color: #103B43;
+        position: relative;
+        clip-path: polygon(0% 1.112%, 0% 100%, 100% 100%, 100% 20.853%, 97.161% 23.031%, 97.161% 23.031%, 97.009% 22.842%, 96.82% 22.627%, 96.6% 22.393%, 96.354% 22.152%, 96.087% 21.913%, 95.803% 21.685%, 95.509% 21.479%, 95.208% 21.303%, 94.907% 21.169%, 94.609% 21.084%, 94.609% 21.084%, 94.555% 21.075%, 94.5% 21.065%, 94.445% 21.057%, 94.389% 21.048%, 94.332% 21.04%, 94.274% 21.033%, 94.216% 21.025%, 94.157% 21.018%, 94.098% 21.011%, 94.038% 21.003%, 94.038% 21.003%, 94.038% 21.003%, 93.674% 20.957%, 93.29% 20.894%, 92.886% 20.799%, 92.464% 20.657%, 92.024% 20.455%, 91.569% 20.178%, 91.098% 19.811%, 90.614% 19.34%, 90.117% 18.75%, 89.609% 18.026%, 89.609% 18.026%, 89.157% 17.325%, 88.76% 16.709%, 88.417% 16.175%, 88.124% 15.718%, 87.878% 15.334%, 87.677% 15.019%, 87.519% 14.768%, 87.399% 14.579%, 87.315% 14.446%, 87.266% 14.365%, 87.266% 14.365%, 87.134% 14.363%, 86.985% 14.378%, 86.824% 14.413%, 86.659% 14.471%, 86.496% 14.558%, 86.343% 14.675%, 86.206% 14.826%, 86.093% 15.016%, 86.009% 15.247%, 85.964% 15.524%, 85.964% 15.524%, 85.906% 15.803%, 85.791% 16.042%, 85.629% 16.242%, 85.431% 16.408%, 85.206% 16.542%, 84.966% 16.646%, 84.722% 16.723%, 84.482% 16.776%, 84.259% 16.808%, 84.063% 16.821%, 82.943% 14.365%, 81.328% 14.365%, 73.828% 16.821%, 72.891% 14.365%, 70.13% 14.365%, 68.073% 11.122%, 66.198% 11.122%, 62.344% 3.476%, 62.344% 3.476%, 61.817% 3.376%, 61.19% 3.279%, 60.485% 3.191%, 59.724% 3.122%, 58.93% 3.08%, 58.124% 3.074%, 57.329% 3.111%, 56.568% 3.2%, 55.862% 3.35%, 55.234% 3.568%, 55.234% 3.568%, 55.073% 3.64%, 54.906% 3.714%, 54.734% 3.791%, 54.557% 3.871%, 54.375% 3.953%, 54.189% 4.037%, 54% 4.124%, 53.806% 4.212%, 53.61% 4.301%, 53.41% 4.393%, 53.409% 4.393%, 53.409% 4.393%, 52.674% 4.728%, 51.917% 5.071%, 51.154% 5.412%, 50.399% 5.742%, 49.666% 6.052%, 48.968% 6.334%, 48.321% 6.578%, 47.739% 6.776%, 47.234% 6.919%, 46.823% 6.997%, 46.823% 6.997%, 46.45% 7.045%, 46.071% 7.097%, 45.694% 7.152%, 45.324% 7.21%, 44.969% 7.267%, 44.633% 7.324%, 44.324% 7.377%, 44.048% 7.427%, 43.811% 7.47%, 43.62% 7.507%, 40.781% 8.665%, 40.781% 8.665%, 40.408% 8.493%, 39.971% 8.308%, 39.488% 8.122%, 38.976% 7.946%, 38.452% 7.791%, 37.935% 7.669%, 37.442% 7.591%, 36.989% 7.57%, 36.595% 7.615%, 36.276% 7.739%, 36.276% 7.739%, 36.009% 7.898%, 35.758% 8.041%, 35.525% 8.169%, 35.31% 8.283%, 35.115% 8.382%, 34.941% 8.466%, 34.79% 8.536%, 34.661% 8.593%, 34.557% 8.636%, 34.479% 8.665%, 24.479% 2.178%, 23.568% 4.634%, 19.818% 3.197%, 19.818% 3.197%, 19.77% 3.061%, 19.706% 2.918%, 19.625% 2.777%, 19.529% 2.65%, 19.417% 2.544%, 19.291% 2.47%, 19.15% 2.438%, 18.995% 2.457%, 18.827% 2.537%, 18.646% 2.688%, 18.646% 2.688%, 18.353% 2.945%, 17.95% 3.233%, 17.442% 3.534%, 16.838% 3.833%, 16.146% 4.113%, 15.372% 4.356%, 14.525% 4.546%, 13.611% 4.667%, 12.638% 4.702%, 11.615% 4.634%, 11.615% 4.634%, 11.389% 4.567%, 11.124% 4.468%, 10.832% 4.335%, 10.522% 4.167%, 10.204% 3.963%, 9.891% 3.722%, 9.591% 3.443%, 9.316% 3.124%, 9.075% 2.765%, 8.88% 2.363%, 8.88% 2.363%, 8.881% 2.151%, 8.872% 1.912%, 8.852% 1.657%, 8.817% 1.398%, 8.767% 1.147%, 8.698% 0.915%, 8.61% 0.715%, 8.499% 0.557%, 8.364% 0.454%, 8.203% 0.417%, 8.203% 0.417%, 8.017% 0.414%, 7.813% 0.407%, 7.597% 0.396%, 7.374% 0.381%, 7.151% 0.365%, 6.933% 0.347%, 6.725% 0.328%, 6.534% 0.31%, 6.365% 0.293%, 6.224% 0.278%, 6.042% 0%, 4.531% 1.622%, 4.531% 1.622%, 4.159% 1.641%, 3.732% 1.66%, 3.27% 1.677%, 2.792% 1.691%, 2.316% 1.701%, 1.863% 1.704%, 1.45% 1.699%, 1.098% 1.685%, 0.825% 1.66%, 0.651% 1.622%, 0.651% 1.622%, 0.538% 1.574%, 0.436% 1.522%, 0.346% 1.467%, 0.266% 1.41%, 0.197% 1.352%, 0.138% 1.296%, 0.089% 1.242%, 0.05% 1.192%, 0.02% 1.149%, 0% 1.112%); 
+        .abt-prog-list-tit-div{
+            height: auto;
+            width: 350px;
+            @include Column-center.column-center;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+                    .abt-page-course-box-para{
+                    
+                
+                    
+                    align-items: flex-start;
+                    @include Main-Title.MainTitleCont;
+                    color: white;
+                    font-size: 35px;
+                    gap: 0px;
+
+                    .span-in-prog-list-tit-abt-page{
+                        font-family: 'Imperial Script';
+                        font-size: 55px;
+                        color: main-color.$main-color-yellow-for-btn;
+                    }
+                    
+                }
+
+                    .span-prog-list-abt-tit{
+                       
+                        @include WebSubContent.SubContent;
+                        color: white;
+                        font-size: 13px;
+                    }
+                .abt-page-btn-prog-list{
+                    height: 45px;
+                    width: 200px;
+                    background-color: main-color.$main-color-red-for-btn;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    @include Row-center.row-center;
+                    font-family: 'Quicksand';
+                    gap: 10px;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition-duration: 0.3s;
+                    .abt-page-prog-list-btn-one-des{
+                        position: absolute;
+                        height: 0%;
+                        width: 50%;
+                        z-index: -1;
+                        right: 0px;
+                        background-color: main-color.$main-color-yellow-for-btn;
+                        top: 0px;
+                        transition-duration: 0.3s;
+                        transition-timing-function: linear;
+                    }
+                    .abt-page-prog-list-btn-two-des{
+                        position: absolute;
+                        height: 0%;
+                        width: 50%;
+                        z-index: -1;
+                        left: 0px;
+                         background-color: main-color.$main-color-yellow-for-btn;
+                        bottom: 0px;
+                        transition-duration: 0.3s;
+                        transition-timing-function: linear; 
+                    }
+                    .right-arrow-icon{
+                        height: 22px;
+                        width: 22px;
+                        padding:5px;
+                       
+                        color: white;
+                        background-color: main-color.$main-color-yellow-for-btn;
+                        border-radius: 100%;
+                        transition-duration: 0.3s;
+                        transition-timing-function: linear; 
+                    }
+                }
+
+                 .abt-page-btn-prog-list:hover{
+                    color: rgb(36, 36, 36);
+                    font-weight: 900;
+                    transition-duration: 0.3s;
+                    .abt-page-prog-list-btn-one-des{
+                         height: 100%;
+                        transition-duration: 0.3s;
+                        transition-timing-function: linear; 
+                    }
+                    .abt-page-prog-list-btn-two-des{
+                        height: 100%;
+                        transition-duration: 0.3s;
+                        transition-timing-function: linear;                            
+                    }
+                     .right-arrow-icon{
+                        
+                       
+                        color: white;
+                        background-color: main-color.$main-color-red-for-btn;
+                      
+                        transition-duration: 0.3s;
+                        transition-timing-function: linear; 
+                    }
+                 }
+                
+            
+        }     
+    .about-page-program-list{
+            height: auto;
+            width: 100%;
+            padding: 50px 60px;
+            margin-top: 250px;
+            @include Row-center.row-center;
+            gap: 30px;
+            position: sticky;
+            top: 0px;
+            .about-page-prog-one{
+                height: 450px;
+                width: 380px;
+                background-color: white;
+                border-radius: 10px;
+                overflow: hidden;
+                @include Column-center.column-center;
+
+                .about-page-prog-img{
+                    height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(45%);
+                    background-color: aqua;
+                    background-image: url('./AboutPageImage/Top-staff-Four.avif');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                 .about-page-prog-cont{
+                    height: 100%;
+                    width: 100%;
+                    flex: 1 1 calc(55%);
+                     @include Column-center.column-center;
+                    gap: 20px;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    padding: 10px 15px;
+                    .level-in-prog-ab-list{
+                        height: auto;
+                        width: auto;
+                        padding: 6px 20px;
+                        font-size: 11px;
+                        font-family: 'Roboto';
+                        font-weight: 600;
+                        color: rgb(255, 255, 255);
+                        letter-spacing: 1px;
+                        background-color: main-color.$main-color-for-app-little-lighter;
+                        @include Column-center.column-center;
+                        border-radius: 5px;
+                    }
+                    .prog-list-abt-page-cont-div{
+                        height: auto;
+                        width: 100%;
+                         @include Column-center.column-center;
+                         gap: 10px;
+                         align-items: flex-start;
+                         padding-bottom:15px;
+                        border-bottom: 1px solid rgb(194, 194, 194);
+                        .prog-abt-page-title{
+                        font-size: 20px;
+                        font-family: 'Saira';
+                        font-weight: 600;
+                        color: rgb(41, 41, 41);
+                        
+                        
+                        }
+                        .prog-abt-page-cont{
+                            @include WebSubContent.SubContent;
+                            line-height: 20px;
+                            font-size: 13px;
+                            color: rgb(26, 26, 26);
+                        }
+                    }
+                    
+                    .addi-info-prog-list-abt-page{
+                        height: auto;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        justify-content: space-between;
+                        padding-top: 0px;
+
+                        .addi-info-cont-one,.addi-info-cont-two{
+                            font-size: 13px;
+                            font-weight: 600;
+                            font-family: 'Open Sans';
+                            @include Row-center.row-center;
+                            gap: 5px;
+                            .icon-prog-list-abt-page{
+                                font-size:18px;
+                                color: #103B43;
+                            }
+                        }
+                        .addi-info-cont-btn{
+                            height: 40px;
+                            width: 110px;
+                            font-size: 14px;
+                            font-family:'Roboto';
+                            border-radius: 5px;
+                            background-color: main-color.$main-color-yellow-for-btn;
+                            border: none;
+                            color: rgb(49, 49, 49);
+                            font-weight: 500;
+                            @include Row-center.row-center;
+                            overflow: hidden;
+                            position: relative;
+                            z-index: 1;transition-duration: 0.3s;
+                            .abt-page-prog-list-btn-design{
+                                position: absolute;
+                                height: 100%;
+                                width: 0%;
+                                left: 0px;
+                                background-color: main-color.$main-color-red-for-btn;
+                                transition-duration: 0.3s;
+                                z-index: -1;
+                            }
+                        }
+                        
+                        .addi-info-cont-btn:hover{color: white;transition-duration: 0.3s;
+                            .abt-page-prog-list-btn-design{
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                left: 0px;
+                                background-color: main-color.$main-color-red-for-btn;
+                                 transition-duration: 0.3s;
+
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .prog-one-ani-abt-page{
+                z-index: -1;
+                animation:  list-move-one linear ;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            } 
+            .prog-two-ani-abt-page{
+                z-index: -1;
+                animation:list-move-two linear ;
+                animation-timeline: view();
+                animation-range: entry 0% cover 60%;
+            }
+
+              
+
+                @keyframes  list-move-one {
+                    0%{
+                        transform:  translateX(300px);
+                        opacity: 0;
+                
+                    }
+                    30%{
+                        opacity: 0;
+                    }
+                    100%{
+                        transform: translateX(0px) ;
+                        opacity: 1;
+                    }
+                }
+
+                 @keyframes  list-move-two {
+                    0%{
+                        transform:  translateX(-300px);
+                        opacity: 0;
+                
+                    }
+                    30%{
+                        opacity: 0;
+                    }
+                    100%{
+                        transform: translateX(0px) ;
+                        opacity: 1;
+                    }
+                }
+        }
      }
 
      .about-page-analysis-box{
@@ -35,7 +329,7 @@
         @include Column-center.column-center;
         overflow: hidden;
         position: sticky;
-        top: -350px;
+        top: -270px;
        
        
         .about-page-analysis-content{
@@ -77,6 +371,25 @@
                     .about-analysis-head-para-two{
                            @include Main-Title.MainTitleCont;
                         font-size: 45px; 
+                        .best-time-tit{
+                            font-family: 'DynaPuff';
+                            font-weight: 500;
+                             color:main-color.$main-color-red-for-btn;
+                             position: relative;
+
+                             .design-div-for-best-time-tit{
+                                position: absolute;
+                                height: 20px;
+                                width:160px;
+                                background-image: url('./WhyChoose/underline-why-choose.png');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                bottom: -20px;
+                                left: 20px
+                             }
+                            
+                        }
                     }
                 }
                 .about-analysis-sub-head-para{
@@ -99,7 +412,7 @@
                 height:800px;
                 width:950px;
                 position: absolute;
-                bottom: -40px;
+                bottom: 0px;
                 background-image: url('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/cta6.webp');
                 background-position: center;
                 background-repeat: no-repeat;

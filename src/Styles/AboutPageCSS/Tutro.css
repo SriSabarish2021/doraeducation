@@ -292,11 +292,32 @@
   width: 150px;
   border: none;
   background-color: rgb(255, 74, 74);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Exo 2";
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
   border-radius: 6px;
+  position: relative;
+  transition-duration: 0.3s;
+  z-index: 1;
+  overflow: hidden;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page .tutor-page-abt-btn-design {
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(255, 203, 30);
+  transition-duration: 0.3s;
+  z-index: -1;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page:hover {
+  color: black;
+  font-weight: 600;
+}
+.tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page:hover .tutor-page-abt-btn-design {
+  transition-duration: 0.3s;
+  height: 100%;
 }
 .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span {
   color: rgb(255, 203, 30);
