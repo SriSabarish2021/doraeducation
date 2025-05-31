@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+.top-short-course-page-container {
+  height: 350dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  position: relative;
+}
+.top-short-course-page-container .top-short-course-title-container {
+  height: 100dvh;
+  width: 100%;
+  flex: 1 1 50%;
+  position: sticky;
+  top: 0px;
+  padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+.top-short-course-page-container .top-short-course-title-container .course-page-top-course-title {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  font-size: 50px;
+  font-family: "Averia Libre";
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+  font-size: 65px;
+  font-weight: 900;
+}
+.top-short-course-page-container .top-short-course-title-container .para-in-course-page {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
+  width: 90%;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: rgb(255, 74, 74);
+  font-family: "Roboto";
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+.top-short-course-page-container .top-short-course-content-container {
+  height: 100dvh;
+  width: 100%;
+  flex: 1 1 50%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box {
+  height: 380px;
+  width: 380px;
+  background-color: antiquewhite;
+  border-radius: 25px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  padding-left: 20px;
+  gap: 20px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 50px;
+  font-family: "Tagesschrift";
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: rgb(40, 40, 40);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  color: white;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  color: white;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box {
+  height: 35px;
+  width: 130px;
+  background-color: rgb(255, 74, 74);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box-one, .top-short-course-page-container .top-short-course-content-container .course-box-two, .top-short-course-page-container .top-short-course-content-container .course-box-three, .top-short-course-page-container .top-short-course-content-container .course-box-four, .top-short-course-page-container .top-short-course-content-container .course-box-five {
+  position: absolute;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box-one {
+  background: rgb(247, 92, 208);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box-two {
+  background: rgb(186, 113, 245);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box-three {
+  background: rgb(221, 62, 88);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box-four {
+  background: rgb(64, 122, 255);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box-five {
+  background: rgb(255, 223, 64);
+}
+
+/*# sourceMappingURL=TopShortCourse.css.map */

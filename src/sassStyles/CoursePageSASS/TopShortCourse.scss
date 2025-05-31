@@ -1,0 +1,165 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+@use'../bg-img-center';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+.top-short-course-page-container{
+    height: 350dvh;
+    width: 100%;
+    @include Row-center.row-center;
+    align-items: flex-start;
+    position: relative;
+
+    .top-short-course-title-container{
+        height: 100dvh;
+        width: 100%;
+        flex: 1 1 calc(50%);
+        position: sticky;
+        top: 0px;padding: 20px 100px;
+        @include Column-center.column-center;
+        align-items: flex-start;
+        gap: 25px;
+        .course-page-top-course-title{
+            height: auto;
+            width: 100%;
+            @include Column-center.column-center;
+            align-items: flex-start;
+            @include Main-Title.MainTitleCont;
+            font-size: 65px;
+            font-weight: 900;
+            
+        }
+        .para-in-course-page{
+            
+            @include WebSubContent.SubContent;
+            width:90%;
+
+        }
+        .btn-in-course-page-title{
+            height: 40px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: main-color.$main-color-red-for-btn;
+            font-family:'Roboto';
+            font-weight: 600;
+            color: white;
+            border: none;
+        }
+    }
+    .top-short-course-content-container{
+        height: 100dvh;
+        width: 100%;
+        flex: 1 1 calc(50%);
+        position: sticky;
+        top: 0px;
+        @include Row-center.row-center;
+
+        .course-box{
+            height:380px;
+            width:380px;
+            background-color: antiquewhite;
+            border-radius:25px;
+            transition: 0.5s ease-in-out;
+            @include Column-center.column-center;
+            align-items: flex-start;
+           padding-left: 20px;
+           gap: 20px;
+           .course-box-head-div{
+             @include Column-center.column-center;
+            align-items: flex-start;
+            gap: 4px;
+            font-size: 50px;
+            font-family: 'Tagesschrift';
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: rgb(40, 40, 40);
+           }
+           .course-box-course-info-div{
+             @include Column-center.column-center;
+            align-items: flex-start;
+            gap: 8px;
+            
+            .para-in-box-time{
+                @include Row-center.row-center;
+                gap: 10px;
+                font-size: 16px;
+                font-family: 'Exo 2';
+                font-weight: 600;
+                color: white;
+                
+            }.para-in-box-lesson{
+                @include Row-center.row-center;
+                gap: 10px;
+                font-size: 16px;
+                font-family: 'Exo 2';
+                font-weight: 600;
+                color: white
+            }
+           }
+           .course-box-btn-div{
+              @include Row-center.row-center;
+            justify-content: flex-start;
+            gap: 40px;
+            font-size: 20px;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            .apply-btn-course-box{
+                height: 35px;
+                width: 130px;
+                background-color: main-color.$main-color-red-for-btn;
+                border: none;
+                color: white;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: 'Roboto';
+                
+
+            }
+            .like-btn-course-box{
+                height: 35px;
+                width: 35px;
+                background-color: white;
+                border-radius: 100%;
+                border: none;
+                
+              @include Row-center.row-center;
+              font-size: 14px;
+                
+
+            }
+           }
+        }
+        .course-box-one,.course-box-two,.course-box-three,.course-box-four,.course-box-five{
+            position: absolute;
+        }
+        .course-box-one{
+           
+            
+       background: rgb(247, 92, 208);
+        }
+        .course-box-two{
+           background: rgb(186, 113, 245);
+        }
+        .course-box-three{
+            
+          background: rgb(221, 62, 88);
+        }
+        .course-box-four{
+          
+               background: rgb(64, 122, 255);
+        }
+        .course-box-five{
+          
+               background: rgb(255, 223, 64);
+        }
+    }
+}

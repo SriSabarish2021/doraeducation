@@ -1,0 +1,12 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+
+
+.course-page-main-container{
+    height: auto;
+    width: 100%;
+     @include Column-center.column-center;
+}
