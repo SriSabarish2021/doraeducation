@@ -9,13 +9,14 @@ const TopShortCourse = () => {
 
 
 
-      const cards = document.querySelectorAll(".course-box") ;
+     /*  const cards = document.querySelectorAll(".course-box") ;
 
       const stackArea = document.querySelector(".top-short-course-page-container");
 
       function rotateCards() {
         let angle = 0;
-        cards.forEach((card, index) => {
+        if (cards) {
+          cards.forEach((card, index) => {
           if (card.classList.contains("away")) {
             card.style.transform = `translateY(-120vh) rotate(-48deg)`;
           } else {
@@ -24,17 +25,38 @@ const TopShortCourse = () => {
             card.style.zIndex = cards.length - index;
           }
         });
+        }
+        
       }
 
-      useEffect(() => {
-         rotateCards();
-      
-        
-      })
-      
      
 
-      window.addEventListener("scroll", () => {
+  
+
+        document.addEventListener("DOMContentLoaded", () => {
+        rotateCards();
+      }); */
+        useEffect(() => {
+    const cards = document.querySelectorAll(".course-box");
+    const stackArea = document.querySelector(".top-short-course-page-container");
+
+    function rotateCards() {
+      let angle = 0;
+      if (cards) {
+        cards.forEach((card, index) => {
+          if (card.classList.contains("away")) {
+            card.style.transform = `translateY(-120vh) rotate(-48deg)`;
+          } else {
+            card.style.transform = `rotate(${angle}deg)`;
+            angle = angle - 10;
+            card.style.zIndex = cards.length - index;
+          }
+        });
+      }
+    }
+
+
+    window.addEventListener("scroll", () => {
         const distance = window.innerHeight/2;
 
         if(stackArea){
@@ -42,9 +64,12 @@ const TopShortCourse = () => {
            let index = -1 * (topVal / distance + 1);
             index = Math.floor(index);
              for (let i = 0; i < cards.length; i++) {
-            if (i <= index) {
+            if (i == 4) {
+               cards[i].classList.remove("away");
+            }else if (i <= index) {
               cards[i].classList.add("away");
-            } else {
+             
+            }  else {
               cards[i].classList.remove("away");
             }
           }
@@ -52,6 +77,15 @@ const TopShortCourse = () => {
  
         rotateCards();
       });
+
+    rotateCards();
+  }, []);
+        
+      
+      
+     
+
+      
   return (
     <div className='top-short-course-page-container'>
       <div className='top-short-course-title-container'>

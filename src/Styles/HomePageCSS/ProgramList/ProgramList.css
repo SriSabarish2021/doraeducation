@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
 .program-list-main-container {
   height: auto;
   width: 100%;
@@ -34,6 +36,101 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  justify-content: flex-end;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: rgb(255, 89, 100);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Faculty Glyphic";
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-color: rgb(255, 89, 100);
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Signika Negative";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: rgb(105, 105, 105);
+  letter-spacing: 1px;
+  border-right: 1px solid rgb(174, 174, 174);
+  padding-right: 15px;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+  font-size: 14px;
+  font-family: "Convergence";
+  color: rgb(255, 76, 76);
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: rgb(255, 203, 30);
+  border: none;
+  border-radius: 5px;
+  font-size: 11px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(38, 38, 38);
 }
 .program-list-main-container .program-list-title-container .program-list-para-one {
   font-size: 16px;
@@ -489,7 +586,7 @@
   font-size: 22px;
   font-weight: 400;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(255, 68, 81);
+  color: rgb(255, 52, 66);
 }
 .program-list-main-container .program-list-items-container .program-item-one:hover {
   border: 1px solid rgb(255, 161, 161);
