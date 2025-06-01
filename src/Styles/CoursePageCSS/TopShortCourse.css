@@ -30,6 +30,31 @@
   align-items: flex-start;
   gap: 25px;
 }
+.top-short-course-page-container .top-short-course-title-container .top-short-title-design {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  right: 20%;
+  bottom: 10%;
+  background-image: url("./HomeImg/Untitled (5).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-short-course-page-container .top-short-course-title-container .top-short-title-design-two {
+  position: absolute;
+  height: 280px;
+  width: 280px;
+  border-radius: 100%;
+  top: 10%;
+  left: -10%;
+  opacity: 0.8;
+  background-image: url("./Testimonial/dot-testi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
 .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title {
   height: auto;
   width: 100%;
@@ -203,6 +228,58 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.top-short-course-page-container .top-short-course-content-container .top-short-cont-design {
+  position: absolute;
+  height: 520px;
+  width: 490px;
+  left: 0px;
+  opacity: 0.5;
+  background-image: url("./Aboutus/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-short-course-page-container .top-short-course-content-container .top-short-title-design-three {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background-image: url("./AboutPageImage/Ellipse 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: outer-rotate 4s linear infinite forwards;
+}
+.top-short-course-page-container .top-short-course-content-container .top-short-title-design-three .top-short-title-design-three-inner {
+  height: 30px;
+  width: 30px;
+  background-image: url("./AboutPageImage/Star 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: inner-rotate 4s linear infinite forwards;
+}
+@keyframes inner-rotate {
+  0% {
+    transform: rotate3d(0);
+  }
+  100% {
+    transform: rotate3d(2, -1, -1, 360deg);
+  }
+}
+@keyframes outer-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .top-short-course-page-container .top-short-course-content-container .course-box {
   height: 380px;

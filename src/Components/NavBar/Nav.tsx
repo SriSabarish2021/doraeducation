@@ -61,7 +61,10 @@ const Nav = () => {
             <p className='line-in-hover-nav'> </p>
           </div>
           <div className='nav-item-insider'>
-            <p className='p-for-nav-item'>Contact</p>
+            
+            <Link style={{textDecoration:'none'}} to={"Contact-with-Mindspire-Institute"}>
+                <p className='p-for-nav-item'>Contact</p>
+            </Link>  
             <p className='line-in-hover-nav'></p>
           </div>
           <div className='nav-item-insider'>

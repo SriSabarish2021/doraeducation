@@ -6,6 +6,7 @@ import HomePage from './Components/WebsiteComponents/HomePage'
 import Nav from './Components/NavBar/Nav'
 import AboutPage from './Components/WebsiteComponents/AboutPage'
 import CoursePage from './Components/WebsiteComponents/CoursePage'
+import ContactPage from './Components/WebsiteComponents/ContactPage'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route index element={<HomePage/>}/>
             <Route path='About-Mindspire-Institute' element={<AboutPage/>}/>
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage/>}/>
+             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
           </Route>
         </Routes>
       </div>

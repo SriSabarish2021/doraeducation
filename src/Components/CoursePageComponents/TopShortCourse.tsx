@@ -89,6 +89,9 @@ const TopShortCourse = () => {
   return (
     <div className='top-short-course-page-container'>
       <div className='top-short-course-title-container'>
+        <div className='top-short-title-design'></div>
+        <div className='top-short-title-design-two'></div>
+        
         <div className='course-page-top-course-title'>
             <p>The Courses <span className='course-page-title-span'>Everyone’s</span></p>
             <p><span className='course-page-title-span-two'>Talking</span> About</p>
@@ -104,6 +107,11 @@ const TopShortCourse = () => {
        
       </div>
       <div className='top-short-course-content-container'>
+        
+        <div className='top-short-cont-design'></div>
+        <div className='top-short-title-design-three'>
+          <div className='top-short-title-design-three-inner'></div>
+        </div>
         <div className='course-box course-box-one'>
           <div className='course-box-head-div'>
             <p>JavaScript</p>
