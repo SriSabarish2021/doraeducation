@@ -90,12 +90,17 @@ const TopShortCourse = () => {
     <div className='top-short-course-page-container'>
       <div className='top-short-course-title-container'>
         <div className='course-page-top-course-title'>
-            <p>Top Coruses that</p>
-            <p>Provided in</p>
-            <p>Mindspire</p>
+            <p>The Courses <span className='course-page-title-span'>Everyone’s</span></p>
+            <p><span className='course-page-title-span-two'>Talking</span> About</p>
+            <p><span className='course-page-title-line-span'>—</span> Only at <span className='course-page-title-span-name'>Mindspire <span className='course-page-title-design'></span></span></p>
         </div>
         <p className='para-in-course-page'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, ea tempora voluptatum nemo quod assumenda. Possimus nam distinctio sunt voluptates.</p>
-        <button className='btn-in-course-page-title'>View Course</button>
+        <button className='btn-in-course-page-title'>View Course
+          <div className='btn-in-course-page-design-one'></div>
+          <div className='btn-in-course-page-design-two'></div>
+          <div className='btn-in-course-page-design-three'></div>
+          <div className='btn-in-course-page-design-four'></div>
+        </button>
        
       </div>
       <div className='top-short-course-content-container'>
@@ -109,8 +114,15 @@ const TopShortCourse = () => {
             <p className='para-in-box-lesson'><PiReadCvLogo/>10 Lesson</p>
           </div>
           <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply</button>
-            <button className='like-btn-course-box'><FaRegHeart/></button>
+            <button className='apply-btn-course-box'>Apply
+              <div className='top-course-apply-btn-one'></div>
+              <div className='top-course-apply-btn-two'></div>
+              <div className='top-course-apply-btn-three'></div>
+              <div className='top-course-apply-btn-four'></div>
+            </button>
+            <button className='like-btn-course-box'><FaRegHeart/>
+            <div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div>
+            </button>
           </div>
         </div>
         <div className='course-box course-box-two'>
@@ -123,8 +135,13 @@ const TopShortCourse = () => {
             <p className='para-in-box-lesson'><PiReadCvLogo/>10 Lesson</p>
           </div>
           <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply</button>
-            <button className='like-btn-course-box'><FaRegHeart/></button>
+            <button className='apply-btn-course-box'>Apply
+              <div className='top-course-apply-btn-one'></div>
+              <div className='top-course-apply-btn-two'></div>
+              <div className='top-course-apply-btn-three'></div>
+              <div className='top-course-apply-btn-four'></div>
+            </button>
+            <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
           </div>
         </div>
         <div className='course-box course-box-three'>
@@ -137,8 +154,13 @@ const TopShortCourse = () => {
             <p className='para-in-box-lesson'><PiReadCvLogo/>10 Lesson</p>
           </div>
           <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply</button>
-            <button className='like-btn-course-box'><FaRegHeart/></button>
+            <button className='apply-btn-course-box'>Apply
+              <div className='top-course-apply-btn-one'></div>
+              <div className='top-course-apply-btn-two'></div>
+              <div className='top-course-apply-btn-three'></div>
+              <div className='top-course-apply-btn-four'></div>
+            </button>
+            <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
           </div>
         </div>
         <div className='course-box course-box-four'>
@@ -151,8 +173,13 @@ const TopShortCourse = () => {
             <p className='para-in-box-lesson'><PiReadCvLogo/>10 Lesson</p>
           </div>
           <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply</button>
-            <button className='like-btn-course-box'><FaRegHeart/></button>
+            <button className='apply-btn-course-box'>Apply
+              <div className='top-course-apply-btn-one'></div>
+              <div className='top-course-apply-btn-two'></div>
+              <div className='top-course-apply-btn-three'></div>
+              <div className='top-course-apply-btn-four'></div>
+            </button>
+            <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
           </div>
         </div>
         <div className='course-box course-box-five'>
@@ -165,8 +192,13 @@ const TopShortCourse = () => {
             <p className='para-in-box-lesson'><PiReadCvLogo/>10 Lesson</p>
           </div>
           <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply</button>
-            <button className='like-btn-course-box'><FaRegHeart/></button>
+            <button className='apply-btn-course-box'>Apply
+              <div className='top-course-apply-btn-one'></div>
+              <div className='top-course-apply-btn-two'></div>
+              <div className='top-course-apply-btn-three'></div>
+              <div className='top-course-apply-btn-four'></div>
+            </button>
+            <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap");
 .top-short-course-page-container {
   height: 350dvh;
   width: 100%;
@@ -20,7 +21,8 @@
   flex: 1 1 50%;
   position: sticky;
   top: 0px;
-  padding: 20px 100px;
+  padding: 20px 60px;
+  padding-left: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,8 +42,58 @@
   font-family: "Averia Libre";
   font-weight: 600;
   color: rgb(49, 49, 49);
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 900;
+  gap: 10px;
+}
+.top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span {
+  font-family: "Bonbon";
+  color: rgb(255, 68, 81);
+}
+.top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-line-span {
+  color: rgb(255, 203, 30);
+}
+.top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-two {
+  color: rgb(255, 203, 30);
+  font-family: "Lavishly Yours";
+  font-size: 50px;
+}
+.top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-name {
+  position: relative;
+}
+.top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-name .course-page-title-design {
+  position: absolute;
+  height: 32px;
+  width: 160px;
+  left: 0px;
+  bottom: -20px;
+  background-image: url("./underline.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  background-size: auto;
+  animation: underlinemove-about-us 6s linear infinite forwards;
+}
+@keyframes underlinemove-about-us {
+  0% {
+    width: 0px;
+  }
+  20% {
+    width: 80px;
+  }
+  40% {
+    width: 160px;
+  }
+  60% {
+    width: 160px;
+  }
+  80% {
+    width: 80px;
+  }
+  100% {
+    width: 0px;
+  }
 }
 .top-short-course-page-container .top-short-course-title-container .para-in-course-page {
   width: 100%;
@@ -63,6 +115,83 @@
   font-weight: 600;
   color: white;
   border: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title .btn-in-course-page-design-one {
+  position: absolute;
+  height: 0%;
+  width: 25%;
+  background-color: rgb(255, 203, 30);
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title .btn-in-course-page-design-two {
+  position: absolute;
+  height: 0%;
+  width: 25%;
+  background-color: rgb(255, 203, 30);
+  left: 25%;
+  bottom: 0px;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title .btn-in-course-page-design-three {
+  position: absolute;
+  height: 0%;
+  width: 25%;
+  right: 25%;
+  background-color: rgb(255, 203, 30);
+  top: 0px;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title .btn-in-course-page-design-four {
+  position: absolute;
+  height: 0%;
+  width: 25%;
+  right: 0%;
+  bottom: 0px;
+  background-color: rgb(255, 203, 30);
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title:hover {
+  color: black;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title:hover .btn-in-course-page-design-one {
+  transition-duration: 0.4s;
+  height: 100%;
+  top: auto;
+  bottom: 0px;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title:hover .btn-in-course-page-design-two {
+  height: 100%;
+  transition-duration: 0.4s;
+  bottom: auto;
+  top: 0px;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title:hover .btn-in-course-page-design-three {
+  height: 100%;
+  transition-duration: 0.4s;
+  top: auto;
+  bottom: 0px;
+}
+.top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title:hover .btn-in-course-page-design-four {
+  height: 100%;
+  transition-duration: 0.4s;
+  bottom: auto;
+  top: 0px;
 }
 .top-short-course-page-container .top-short-course-content-container {
   height: 100dvh;
@@ -100,7 +229,7 @@
   font-family: "Tagesschrift";
   letter-spacing: 1px;
   font-weight: 600;
-  color: rgb(40, 40, 40);
+  color: rgb(0, 42, 52);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div {
   display: flex;
@@ -108,7 +237,7 @@
   justify-content: center;
   align-items: center;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
 }
 .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time {
   display: flex;
@@ -116,10 +245,10 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Exo 2";
-  font-weight: 600;
-  color: white;
+  font-weight: 500;
+  color: rgb(225, 225, 225);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson {
   display: flex;
@@ -127,10 +256,10 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Exo 2";
-  font-weight: 600;
-  color: white;
+  font-weight: 500;
+  color: rgb(225, 225, 225);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div {
   display: flex;
@@ -138,7 +267,7 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 30px;
   font-size: 20px;
   margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -153,6 +282,75 @@
   border-radius: 5px;
   font-size: 16px;
   font-family: "Roboto";
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box .top-course-apply-btn-one {
+  position: absolute;
+  width: 0%;
+  height: 25%;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(169, 255, 169);
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box .top-course-apply-btn-two {
+  position: absolute;
+  width: 0%;
+  height: 25%;
+  right: 0px;
+  top: 25%;
+  background-color: rgb(169, 255, 169);
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box .top-course-apply-btn-three {
+  position: absolute;
+  width: 0%;
+  height: 25%;
+  left: 0px;
+  bottom: 25%;
+  background-color: rgb(169, 255, 169);
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box .top-course-apply-btn-four {
+  position: absolute;
+  width: 0%;
+  height: 25%;
+  right: 0px;
+  bottom: 0%;
+  background-color: rgb(169, 255, 169);
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box:hover {
+  color: black;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box:hover .top-course-apply-btn-one {
+  width: 100%;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box:hover .top-course-apply-btn-two {
+  width: 100%;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box:hover .top-course-apply-btn-three {
+  width: 100%;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box:hover .top-course-apply-btn-four {
+  width: 100%;
+  transition-duration: 0.4s;
 }
 .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box {
   height: 35px;
@@ -160,11 +358,51 @@
   background-color: white;
   border-radius: 100%;
   border: none;
+  transition-duration: 0.4s;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 14px;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box .like-btn-mess-course-page {
+  position: absolute;
+  top: -25px;
+  height: 20px;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  font-weight: 600;
+  font-family: "Exo 2";
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid rgb(218, 218, 218);
+  z-index: -1;
+  transform: translateY(20px) scale(0.2);
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box .like-btn-mess-course-page .arrow-desing-like-course-page {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 218, 218);
+  border-left: none;
+  border-top: none;
+  bottom: -4px;
+  rotate: 45deg;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box:hover .like-btn-mess-course-page {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+  transition-duration: 0.4s;
 }
 .top-short-course-page-container .top-short-course-content-container .course-box-one, .top-short-course-page-container .top-short-course-content-container .course-box-two, .top-short-course-page-container .top-short-course-content-container .course-box-three, .top-short-course-page-container .top-short-course-content-container .course-box-four, .top-short-course-page-container .top-short-course-content-container .course-box-five {
   position: absolute;
@@ -173,16 +411,16 @@
   background: rgb(247, 92, 208);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box-two {
-  background: rgb(186, 113, 245);
+  background: rgb(191, 139, 234);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box-three {
-  background: rgb(221, 62, 88);
+  background: rgb(104, 223, 149);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box-four {
-  background: rgb(64, 122, 255);
+  background: rgb(121, 153, 228);
 }
 .top-short-course-page-container .top-short-course-content-container .course-box-five {
-  background: rgb(255, 223, 64);
+  background: rgb(236, 211, 84);
 }
 
 /*# sourceMappingURL=TopShortCourse.css.map */

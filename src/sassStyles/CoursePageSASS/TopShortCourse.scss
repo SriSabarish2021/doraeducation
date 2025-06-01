@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
 
 .top-short-course-page-container{
     height: 350dvh;
@@ -23,7 +24,9 @@
         width: 100%;
         flex: 1 1 calc(50%);
         position: sticky;
-        top: 0px;padding: 20px 100px;
+        top: 0px;
+        padding: 20px 60px;
+        padding-left: 100px;
         @include Column-center.column-center;
         align-items: flex-start;
         gap: 25px;
@@ -33,9 +36,59 @@
             @include Column-center.column-center;
             align-items: flex-start;
             @include Main-Title.MainTitleCont;
-            font-size: 65px;
+            font-size: 55px;
             font-weight: 900;
-            
+            gap: 10px;
+
+            .course-page-title-span{
+               
+                font-family: "Bonbon";
+                color: main-color.$main-color-for-app;
+            }
+            .course-page-title-line-span{
+                color: main-color.$main-color-yellow-for-btn;
+            }
+            .course-page-title-span-two{
+                color: main-color.$main-color-yellow-for-btn; 
+                font-family: 'Lavishly Yours';
+                font-size: 50px
+            }
+            .course-page-title-span-name{
+                position: relative;
+                .course-page-title-design{
+                    position: absolute;
+                    height: 32px;
+                    width: 160px;
+                    left: 0px;
+                    bottom: -20px;
+                    @include bg-img-center.bg-img-center('./underline.png');
+                    background-position: 0%;
+                    background-size: auto;
+                    animation:underlinemove-about-us 6s linear infinite forwards ;
+                }
+                @keyframes underlinemove-about-us {
+                    0%{
+                        width: 0px;
+                    }
+                    20%{
+                         width: 80px;
+                    }
+                    40%{
+                        width: 160px;
+                    }
+                    60%{
+                        width: 160px;
+                    }
+                    80%{
+                        width: 80px;
+                    }
+                    100%{
+                        width: 0px;
+                    }
+
+                
+                }
+            }
         }
         .para-in-course-page{
             
@@ -52,7 +105,97 @@
             font-weight: 600;
             color: white;
             border: none;
+            position: relative;
+            @include Row-center.row-center;
+            overflow: hidden;
+            gap: 20px;
+            z-index: 1;
+            transition-duration: 0.4s;
+
+            .btn-in-course-page-design-one{
+                position: absolute;
+                height: 0%;
+                width: 25%;
+                background-color:  main-color.$main-color-yellow-for-btn;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                transition-duration: 0.4s;
+             
+
+            }
+            .btn-in-course-page-design-two{
+                position: absolute;
+                height:0%;
+                width: 25%;
+                background-color:  main-color.$main-color-yellow-for-btn;
+                left: 25%;
+                bottom: 0px;
+                z-index: -1;
+                transition-duration: 0.4s;
+
+            }
+            .btn-in-course-page-design-three{
+                position: absolute;
+                height: 0%;
+                width: 25%;
+                right: 25%;
+                background-color:  main-color.$main-color-yellow-for-btn;
+                top: 0px;
+                z-index: -1;
+                transition-duration: 0.4s;
+            }
+            .btn-in-course-page-design-four{
+                position: absolute;
+                height: 0%;
+                width: 25%;
+                right: 0%;
+                bottom: 0px;
+               background-color:  main-color.$main-color-yellow-for-btn;
+                z-index: -1;
+                transition-duration: 0.4s;
+            }
         }
+         .btn-in-course-page-title:hover{
+
+            color: black;
+            transition-duration: 0.4s;
+
+            .btn-in-course-page-design-one{
+                transition-duration: 0.4s;
+                height: 100%;
+                
+                top: auto;
+                bottom: 0px;
+                
+             
+
+            }
+            .btn-in-course-page-design-two{
+                height: 100%;
+                transition-duration: 0.4s;
+                bottom: auto;
+                top: 0px;
+               
+
+            }
+            .btn-in-course-page-design-three{
+                height: 100%;
+                transition-duration: 0.4s;
+                top: auto;
+                bottom: 0px;
+                
+
+            }
+            .btn-in-course-page-design-four{
+               
+                height: 100%;
+                transition-duration: 0.4s;
+                bottom: auto;
+                top: 0px;
+               
+            }
+         }
     }
     .top-short-course-content-container{
         height: 100dvh;
@@ -80,34 +223,34 @@
             font-family: 'Tagesschrift';
             letter-spacing: 1px;
             font-weight: 600;
-            color: rgb(40, 40, 40);
+            color: rgb(0, 42, 52);
            }
            .course-box-course-info-div{
              @include Column-center.column-center;
             align-items: flex-start;
-            gap: 8px;
+            gap: 10px;
             
             .para-in-box-time{
                 @include Row-center.row-center;
                 gap: 10px;
-                font-size: 16px;
+                font-size: 17px;
                 font-family: 'Exo 2';
-                font-weight: 600;
-                color: white;
+                font-weight: 500;
+                color: rgb(225, 225, 225);
                 
             }.para-in-box-lesson{
                 @include Row-center.row-center;
                 gap: 10px;
-                font-size: 16px;
+                font-size: 17px;
                 font-family: 'Exo 2';
-                font-weight: 600;
-                color: white
+                font-weight: 500;
+                color: rgb(225, 225, 225);
             }
            }
            .course-box-btn-div{
               @include Row-center.row-center;
             justify-content: flex-start;
-            gap: 40px;
+            gap: 30px;
             font-size: 20px;
             margin-top: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -121,8 +264,83 @@
                 border-radius: 5px;
                 font-size: 16px;
                 font-family: 'Roboto';
-                
+                position: relative;
+                @include Column-center.column-center;
+                z-index: 1;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                overflow: hidden;
+                .top-course-apply-btn-one{
+                    position: absolute;
+                    width: 0%;
+                    height: 25%;
+                    left: 0px;
+                    top: 0px;
+                    background-color: rgb(169, 255, 169);
+                    z-index: -1;
+                    transition-duration: 0.4s;
+                }
+                .top-course-apply-btn-two{
+                    position: absolute;
+                    width: 0%;
+                    height: 25%;
+                    right: 0px;
+                    top: 25%;
+                    background-color: rgb(169, 255, 169);
+                    z-index: -1;
+transition-duration: 0.4s;
+                }
+                .top-course-apply-btn-three{
+                    position: absolute;
+                    width: 0%;
+                    height: 25%;
+                    left: 0px;
+                    bottom: 25%;
+                    background-color: rgb(169, 255, 169);
+                    z-index: -1;
+                    transition-duration: 0.4s;
 
+                }
+                .top-course-apply-btn-four{
+                    position: absolute;
+                    width: 0%;
+                    height: 25%;
+                    right: 0px;
+                    bottom: 0%;
+                    background-color:rgb(169, 255, 169);
+                    z-index: -1;
+                    transition-duration: 0.4s;
+
+                }
+            }
+            .apply-btn-course-box:hover{
+                color: black;
+                transition-duration: 0.4s;
+                .top-course-apply-btn-one{
+                    width: 100%;
+                    
+                    transition-duration: 0.4s;
+                    
+                }
+                .top-course-apply-btn-two{
+                    width: 100%;
+                    
+                    transition-duration: 0.4s;
+                  
+                    
+
+                }
+                .top-course-apply-btn-three{
+                    width: 100%;                   
+                    
+                    transition-duration: 0.4s;
+                    
+                }
+                .top-course-apply-btn-four{
+                    width: 100%;
+                    
+                    transition-duration: 0.4s;
+                }
             }
             .like-btn-course-box{
                 height: 35px;
@@ -130,11 +348,51 @@
                 background-color: white;
                 border-radius: 100%;
                 border: none;
-                
+                transition-duration: 0.4s;
               @include Row-center.row-center;
               font-size: 14px;
-                
+                position: relative;
+                z-index: 1;
+                transition-duration: 0.4s;
+                .like-btn-mess-course-page{
+                    position: absolute;
+                    top: -25px;
+                    height: 20px;
+                    width: 80px;
+                     @include Row-center.row-center;
+                    font-size: 9px;
+                    font-weight: 600;
+                    font-family: 'Exo 2';
+                    border-radius: 3px;
+                    background-color: white;
+                    border: 1px solid main-color.$border-light-color;
+                    z-index: -1;
+                     transform:translateY(20px) scale(0.2);
+                     opacity: 0;
+                    transition-duration: 0.4s;
+                    .arrow-desing-like-course-page{
+                        position: absolute;
+                        height: 8px;
+                        width: 8px;
+                        background-color: rgb(255, 255, 255);
+                        border: 1px solid main-color.$border-light-color;
+                        border-left: none;
+                        border-top: none;
+                        bottom:-4px;
+                        rotate:45deg;
+                       
+                        
+                    }
 
+                }
+
+            }
+            .like-btn-course-box:hover{
+                 .like-btn-mess-course-page{
+                    transform: translateY(0px) scale(1);
+                    opacity: 1;
+                    transition-duration: 0.4s;
+                 }
             }
            }
         }
@@ -147,19 +405,19 @@
        background: rgb(247, 92, 208);
         }
         .course-box-two{
-           background: rgb(186, 113, 245);
+           background: rgb(191, 139, 234);
         }
         .course-box-three{
             
-          background: rgb(221, 62, 88);
+          background: rgb(104, 223, 149);
         }
         .course-box-four{
           
-               background: rgb(64, 122, 255);
+               background: rgb(121, 153, 228);
         }
         .course-box-five{
           
-               background: rgb(255, 223, 64);
+               background: rgb(236, 211, 84);
         }
     }
 }
