@@ -1,10 +1,25 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import '../../Styles/ContactPageCSS/ContactTouch.css'
 import { FaArrowRight } from "react-icons/fa6";
 
 const ContactTouch = () => {
-    
+      const [getoffsetXcontact,setoffsetXcontact]=useState(0)
+      const [getoffsetYcontact,setoffsetYcontact]=useState(0)
+const MouseMoveEvent=(event:unknown)=>{
 
+    
+    const elementtargeting=event.currentTarget
+    const viewelement=elementtargeting.getBoundingClientRect()
+
+    const totwidht:number=event.clientX-viewelement.left
+    const totheight:number=event.clientY-viewelement.top
+
+    const offsetX:number=(totwidht/viewelement.width)*100
+    const offsetY:number=(totheight/viewelement.height)*100
+    setoffsetXcontact(-offsetX/1)
+    setoffsetYcontact(-offsetY/1)
+
+  }
     useEffect(() => {
         const contactpagemain=document.querySelector('.contact-get-in-touch-img')
 
@@ -36,9 +51,12 @@ const ContactTouch = () => {
     }, [])
     
   return (
-    <div className='contact-touch-container'>
-        <div className='contact-get-in-touch-input'>
+    <div className='contact-touch-container' >
+        <div className='contact-get-in-touch-input'  onMouseMove={(e)=>MouseMoveEvent(e)}>
+           <div className='contact-page-circle-design'></div>
            
+           <div className='contact-page-circle-design-two'></div>
+            <div className='contact-page-circle-design-three' style={{transform:`translateX(${getoffsetXcontact}px) translateY(${getoffsetYcontact}px)`,transitionDuration:'0.3s'}}></div>
             <div className='contact-get-title-container'>
                 <div className='contact-get-in-touch-title'>
                     <p className='contact-get-para-one'>Apply For Admission</p>
@@ -71,7 +89,7 @@ const ContactTouch = () => {
                     </div>
                 </div>
                 <div className='proceed-main-btn'>
-                          <button className='proceed-btn'>View Programs <span className='span-for-btn-proceed'><FaArrowRight/> </span><div className='design-div-for-tud-btn-proceed'></div></button>
+                          <button className='proceed-btn'>Proceed <span className='span-for-btn-proceed'><FaArrowRight/> </span><div className='design-div-for-tud-btn-proceed'></div></button>
                         
                         </div>
             </div>

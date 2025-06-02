@@ -52,6 +52,9 @@
   align-items: center;
   border-bottom: 5px solid rgb(255, 98, 98);
   border-top: none;
+  transform: translateY(-100px);
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three {
   height: 60%;
@@ -66,15 +69,23 @@
   align-items: center;
   border-bottom: 5px solid rgb(255, 98, 98);
   border-top: none;
+  transform: translateY(-100px);
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.contact-side-bar-conatainer .contact-side-box .contact-logo-two {
+.contact-side-bar-conatainer .contact-side-box .contact-sider-logo .no-logo-contact-move {
+  transform: translateY(0px);
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-items: flex-end;
 }
-.contact-side-bar-conatainer .contact-side-box .contact-logo-two .contact-logo-two {
+.contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two {
   height: 60%;
   width: 60%;
   border: 1px solid rgb(255, 225, 225);
@@ -87,6 +98,14 @@
   justify-content: center;
   align-items: center;
   border-bottom: none;
+  transform: translateY(100px);
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .no-logo-contact-move {
+  transform: translateY(0px);
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .contact-side-bar-conatainer .contact-side-box .contact-sider-cont {
   height: 100%;
@@ -131,6 +150,21 @@
   color: rgb(67, 67, 67);
   line-height: normal;
   font-size: 13px;
+}
+.contact-side-bar-conatainer .contact-sider-box-one {
+  transform: translateX(200px);
+  z-index: -1;
+  transition-duration: 0.5s;
+}
+.contact-side-bar-conatainer .contact-sider-box-three {
+  transform: translateX(-200px);
+  z-index: -1;
+  transition-duration: 0.5s;
+}
+.contact-side-bar-conatainer .no-box-move-contact {
+  transform: translateX(0px);
+  z-index: auto;
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=ContactSider.css.map */

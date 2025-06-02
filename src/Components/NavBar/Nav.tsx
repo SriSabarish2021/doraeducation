@@ -67,8 +67,12 @@ const Nav = () => {
             </Link>  
             <p className='line-in-hover-nav'></p>
           </div>
+         
           <div className='nav-item-insider'>
-            <p className='p-for-nav-item'>Review</p>
+             <Link style={{textDecoration:'none'}} to={"Mindspire-Institute-Student-Review-Page"}>
+                <p className='p-for-nav-item'>Review</p>
+            </Link>  
+           
             <p className='line-in-hover-nav'></p>
           </div>
           

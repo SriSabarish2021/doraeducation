@@ -43,6 +43,10 @@
                 @include Row-center.row-center;
                 border-bottom: 5px solid rgb(255, 98, 98);
                 border-top: none;
+                transform: translateY(-100px);
+                transition-duration: 0.8s;
+                              transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
             }
             
              .contact-logo-three{
@@ -55,9 +59,19 @@
                 @include Row-center.row-center;
                 border-bottom: 5px solid rgb(255, 98, 98);
                 border-top: none;
+                transform: translateY(-100px);
+                transition-duration: 0.8s;
+                              transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
             }
+             .no-logo-contact-move{
+              transform: translateY(0px);
+              transition-duration: 0.8s;
+              transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+              
         }
-        .contact-logo-two{
+        }
+        .contact-inner-logo-two{
              @include Row-center.row-center;
              align-items: flex-end;
               .contact-logo-two{
@@ -70,8 +84,21 @@
                 border-top-right-radius: 50px;
                 @include Row-center.row-center;
                 border-bottom: none;
+                transform: translateY(100px);
+                transition-duration: 0.8s;
+                transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                
+
             }
+             .no-logo-contact-move{
+              transform: translateY(0px);
+              transition-duration: 0.8s;
+              transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+              
+            }
+            
         }
+       
         .contact-sider-cont{
             height: 100%;
             width: 100%;
@@ -106,5 +133,20 @@
             }
 
         }
+    }
+    .contact-sider-box-one{
+        transform: translateX(200px);
+        z-index: -1;
+        transition-duration: 0.5s;
+    }
+    .contact-sider-box-three{
+        transform: translateX(-200px);
+        z-index: -1;
+           transition-duration: 0.5s;
+    }
+    .no-box-move-contact{
+        transform: translateX(0px);
+        z-index: auto;
+           transition-duration: 0.5s;
     }
 }

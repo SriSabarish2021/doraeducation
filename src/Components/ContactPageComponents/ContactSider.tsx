@@ -1,6 +1,50 @@
+import { useEffect } from 'react'
 import '../../Styles/ContactPageCSS/ContactSider.css'
 
 const ContactSider = () => {
+ 
+  
+  useEffect(() => {
+
+    const mainelement=document.querySelector('.contact-side-bar-conatainer')
+
+    const itemone=document.querySelector('.contact-logo-one')
+    const itemtwo=document.querySelector('.contact-logo-two')
+    const itemthree=document.querySelector('.contact-logo-three')
+
+    const boxone=document.querySelector('.contact-sider-box-one')
+    const boxtwo=document.querySelector('.contact-sider-box-three')
+    const observer=new IntersectionObserver(([entry])=>{
+      if (entry.intersectionRatio>0.5) {
+          itemone?.classList.add('no-logo-contact-move')
+          itemtwo?.classList.add('no-logo-contact-move')
+          itemthree?.classList.add('no-logo-contact-move')
+          boxone?.classList.add('no-box-move-contact')
+          boxtwo?.classList.add('no-box-move-contact')
+      }
+      else{
+          itemone?.classList.remove('no-logo-contact-move')
+          itemtwo?.classList.remove('no-logo-contact-move')
+          itemthree?.classList.remove('no-logo-contact-move')
+          boxone?.classList.remove('no-box-move-contact')
+          boxtwo?.classList.remove('no-box-move-contact')
+      }
+    },{threshold:0.5})
+    
+    if (mainelement) {
+      observer.observe(mainelement)
+    }
+  
+    return () => {
+      if (mainelement) {
+      observer.unobserve(mainelement)
+    }
+    }
+  }, [])
+  
+
+  
+
   return (
     <div className="contact-side-bar-conatainer">
       <div className='contact-side-box contact-sider-box-one'>
@@ -21,7 +65,7 @@ const ContactSider = () => {
         </div>
       </div>
       <div className='contact-side-box contact-sider-box-two'>
-        <div className='contact-sider-logo contact-logo-two'>
+        <div className='contact-sider-logo contact-inner-logo-two'>
           <div className='contact-logo-two'>
             <img src="./ContactPageImage/call.png" alt="location-logo" className='contact-logo' />
           </div>

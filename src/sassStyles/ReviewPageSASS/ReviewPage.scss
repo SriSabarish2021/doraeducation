@@ -1,0 +1,17 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+@use'../bg-img-center';
+
+
+.review-page-main-container{
+    height: auto;
+    width: 100%;
+    @include Column-center.column-center;
+    gap: 40px;
+}
+.review-page-container{
+    margin-top: 30px;
+}
