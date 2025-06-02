@@ -1,9 +1,44 @@
+import { useEffect } from 'react'
 import '../../Styles/ContactPageCSS/ContactTouch.css'
+import { FaArrowRight } from "react-icons/fa6";
 
 const ContactTouch = () => {
+    
+
+    useEffect(() => {
+        const contactpagemain=document.querySelector('.contact-get-in-touch-img')
+
+        const contactimgone=document.querySelector('.contact-get-img-one')      
+        const contactimgtwo=document.querySelector('.contact-get-img-two')
+
+        const obsever=new IntersectionObserver(([entry])=>{
+            if (entry.intersectionRatio>0.5) {
+                contactimgone?.classList.add('contact-get-img-one-no-move')
+                contactimgtwo?.classList.add('contact-get-img-two-no-move')
+            }else{
+                contactimgone?.classList.remove('contact-get-img-one-no-move')
+                contactimgtwo?.classList.remove('contact-get-img-two-no-move')
+            }
+        },{threshold:0.5})
+
+        if (contactpagemain) {
+                    obsever.observe(contactpagemain)
+
+        }
+
+          
+      return () => {
+        if (contactpagemain) {
+                    obsever.unobserve(contactpagemain)
+
+        }
+      }
+    }, [])
+    
   return (
     <div className='contact-touch-container'>
         <div className='contact-get-in-touch-input'>
+           
             <div className='contact-get-title-container'>
                 <div className='contact-get-in-touch-title'>
                     <p className='contact-get-para-one'>Apply For Admission</p>
@@ -35,7 +70,10 @@ const ContactTouch = () => {
                         <textarea name="" id="" className='message-inp' placeholder='Enter Your Ideas....'></textarea>
                     </div>
                 </div>
-                <div className='contact-get-in-touch-btn'><button className='get-in-touch-btn'>Proceed</button></div>
+                <div className='proceed-main-btn'>
+                          <button className='proceed-btn'>View Programs <span className='span-for-btn-proceed'><FaArrowRight/> </span><div className='design-div-for-tud-btn-proceed'></div></button>
+                        
+                        </div>
             </div>
           
         </div>
