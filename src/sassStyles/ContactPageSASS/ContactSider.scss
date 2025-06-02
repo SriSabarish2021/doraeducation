@@ -1,0 +1,110 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+@use'../bg-img-center';
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+.contact-side-bar-conatainer{
+    height: auto;
+    width: 100%;
+    padding: 20px 60px;
+    @include Row-center.row-center;
+    gap: 60px;
+    .contact-side-box{
+        height: 200px;
+        width: 400px;
+        box-shadow: rgba(17, 17, 26, 0.171) 0px 0px 16px;
+        border-radius: 15px;
+          @include Row-center.row-center;
+          overflow: hidden;
+          background-color: rgb(255, 255, 255);
+        .contact-logo{
+                height: 50px;
+                width: 50px;
+                border-radius: 100%;
+             }
+        .contact-sider-logo{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(30%);
+             @include Row-center.row-center;
+             align-items: flex-start;
+             
+            .contact-logo-one{
+                height: 60%;
+                width: 60%;
+                border: 1px solid rgb(255, 225, 225);
+                background-color: white;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                @include Row-center.row-center;
+                border-bottom: 5px solid rgb(255, 98, 98);
+                border-top: none;
+            }
+            
+             .contact-logo-three{
+                height: 60%;
+                width: 60%;
+                border: 1px solid rgb(255, 225, 225);
+                border-bottom-left-radius: 50px;
+                 background-color: white;
+                border-bottom-right-radius: 50px;
+                @include Row-center.row-center;
+                border-bottom: 5px solid rgb(255, 98, 98);
+                border-top: none;
+            }
+        }
+        .contact-logo-two{
+             @include Row-center.row-center;
+             align-items: flex-end;
+              .contact-logo-two{
+                height: 60%;
+                width: 60%;
+                border: 1px solid rgb(255, 225, 225);
+                 background-color: white;
+                border-top: 5px solid rgb(255, 98, 98);
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                @include Row-center.row-center;
+                border-bottom: none;
+            }
+        }
+        .contact-sider-cont{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(70%);
+          
+            @include Column-center.column-center;
+            gap: 15px;
+            padding-left: 10px;
+
+            .contact-title{
+                height: auto;
+                width: 100%;
+                @include Row-center.row-center;
+                justify-content: flex-start;
+                font-size: 20px;
+                font-weight: 900;
+                color: rgb(5, 0, 28);
+                font-family: 'Delius';
+
+
+            }
+            .contact-content{
+                height: auto;
+                width: 100%;
+                @include Column-center.column-center;
+                gap:8px;
+                align-items: flex-start;
+                @include WebSubContent.SubContent;
+                line-height:normal;
+                font-size: 13px;
+
+            }
+
+        }
+    }
+}

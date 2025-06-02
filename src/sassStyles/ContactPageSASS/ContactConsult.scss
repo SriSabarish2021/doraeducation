@@ -1,0 +1,108 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+@use'../bg-img-center';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+.contact-consult-page{
+    height: auto;
+    width: 100%;
+    @include Column-center.column-center;
+    padding: 40px 130px;
+    .contact-page-consult-inner{
+        height:240px;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        @include Row-center.row-center;
+        background-color:main-color.$main-color-for-app-little-lighter;
+        @include bg-img-center.bg-img-center('./ContactPageImage/cta-bg-2.webp');
+        .contact-consult-cont{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(55%);
+            @include Column-center.column-center;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 0px 40px;
+            .contact-consult-para-one{
+                font-size: 20px;
+                font-family: 'Sour Gummy';
+                font-weight: 600;
+                color:yellow;
+            }
+            .contact-consult-para-two{
+               @include Main-Title.MainTitleCont;
+               font-size: 45px;
+               color: white;
+            }
+            .contact-consult-para-three{
+                @include WebSubContent.SubContent;
+                font-size: 13px;
+                color: white;
+            }
+        }
+        .contact-consult-number{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(45%);
+            @include Column-center.column-center;
+            gap: 30px;
+
+            .call-logo-consult{
+                height: auto;
+                width: auto;
+               
+                 @include Column-center.column-center;
+                  border-radius: 100%;
+
+                 .icon-call-consult{
+                    height: 65px;
+                    width: 65px;
+                    background-color: main-color.$main-color-yellow-for-btn;
+                    color: white;
+                    @include Column-center.column-center;
+                    border-radius: 100%;
+                    font-size: 25px;
+                   
+                 }
+                 position: relative;
+                 z-index: 1;
+                 .call-logo-consult-design{
+                    position: absolute;
+                    height: 130px;
+                    width: 130px;
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 100%;
+                    z-index: -1;
+                    animation:call-logo-animation 2s linear infinite forwards ;
+
+                    @keyframes call-logo-animation {
+                        0%{
+                            transform: scale(0);
+                            opacity: 0.8;
+
+                        }
+                         100%{
+                            transform: scale(1);
+                            opacity: 0;
+                            
+                        }
+                    }
+                 }
+            }
+            .call-consult-number{
+                font-size: 35px;
+                font-family:'Delius';
+                font-weight: 600;
+                color: white;
+            }
+
+        }
+    }
+}

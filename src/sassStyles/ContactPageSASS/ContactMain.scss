@@ -8,5 +8,6 @@
 .contact-page-main-container{
     height: auto;
     width: 100%;
-     @include Column-center.column-center;
+    @include Column-center.column-center;
+    gap: 40px;
 }

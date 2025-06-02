@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+.contact-consult-page {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 130px;
+}
+.contact-consult-page .contact-page-consult-inner {
+  height: 240px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 89, 100);
+  background-image: url("./ContactPageImage/cta-bg-2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-cont {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 0px 40px;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one {
+  font-size: 20px;
+  font-family: "Sour Gummy";
+  font-weight: 600;
+  color: yellow;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two {
+  font-size: 50px;
+  font-family: "Averia Libre";
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+  font-size: 45px;
+  color: white;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
+  font-size: 13px;
+  color: white;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-number {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult {
+  height: 65px;
+  width: 65px;
+  background-color: rgb(255, 203, 30);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 25px;
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  z-index: -1;
+  animation: call-logo-animation 2s linear infinite forwards;
+}
+@keyframes call-logo-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number {
+  font-size: 35px;
+  font-family: "Delius";
+  font-weight: 600;
+  color: white;
+}
+
+/*# sourceMappingURL=ContactConsult.css.map */
