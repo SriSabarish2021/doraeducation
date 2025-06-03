@@ -3,7 +3,7 @@ import Testimonial from '../HomePageComponents/Testimonial/Testimonial'
 const ReviewPage = () => {
   return (
     <div className='review-page-container'>
-      <Testimonial/>
+      <Testimonial/> 
     </div>
   )
 }
