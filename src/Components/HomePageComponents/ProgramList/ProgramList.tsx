@@ -6,7 +6,7 @@ import { PiStudent } from "react-icons/pi";
 import { IoStar } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa"; 
 import { FaArrowRight } from "react-icons/fa6";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const ProgramList = () => {
   let getlocation=useLocation()
@@ -560,11 +560,14 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                  <div className='hover-enroll-btn'>
+                    Enroll Now
+                    <div className='prog-enroll-design-one'></div>
+                    <div className='prog-enroll-design-two'></div>
+                  </div>
+                </Link>
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>

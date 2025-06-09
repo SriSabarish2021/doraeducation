@@ -8,6 +8,7 @@ import AboutPage from './Components/WebsiteComponents/AboutPage'
 import CoursePage from './Components/WebsiteComponents/CoursePage'
 import ContactPage from './Components/WebsiteComponents/ContactPage'
 import ReviewMainPage from './Components/WebsiteComponents/ReviewMainPage'
+import CourseOverview from './Components/CourseOverviewPage/CourseOverview'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage/>}/>
+            <Route path="mindspire-course" element={<CourseOverview/>}/>
           </Route>
         </Routes>
       </div>
