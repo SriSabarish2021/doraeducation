@@ -3,3 +3,243 @@
 @use'../main-color';
 @use'../Main-Title';
 @use'../WebSubContent';
+@use'../bg-img-center';
+
+.course-overview-main-conatainer{
+    height: auto;
+    width: 100%;
+    @include Column-center.column-center;
+    .course-overview-intro-div{
+        height: auto;
+        width: 100%;
+        background-color: rgb(255, 249, 247);
+        padding:90px;
+        @include Row-center.row-center;
+        gap: 80px;
+        .course-main-title-box{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(70%);
+            @include Column-center.column-center;
+            justify-content: flex-start;
+            gap:45px;
+            .course-title-main-container{
+                height: auto;
+                width: 100%;
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 20px;
+                .course-name-in-course-overview{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 55px;
+                    font-weight: 600;
+                    
+                }
+                .course-para-in-course-overview{
+                    @include WebSubContent.SubContent;
+                }
+            }
+            .course-main-titile-content-container{
+                height: auto;
+                width: 100%;
+                 @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 35px;
+                .course-tutor-side{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    gap: 25px;
+                    justify-content: flex-start;
+                    .tutor-img-for-course-overview{
+                        height: 50px;
+                        width: 50px;
+                        background-color: antiquewhite;
+                        border-radius: 100%;
+                        border: 3px solid white;
+                    }
+                     .tutor-name-for-course-overview,.total-enroll-for-course-overview,.cathegory-for-course-overview{
+                        height: auto;
+                        width: auto;
+                        @include Column-center.column-center;
+                        align-items: flex-start;
+                        gap: 10px;
+                        
+                    }
+                    .tutor-name-tit{
+                            font-size: 15px;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+                    .tutor-name{
+                            font-size: 15px;
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                   
+                    
+                }
+                .course-audio-review-info-side{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    gap: 25px;
+                    justify-content: flex-start;
+                    .course-review-bar{
+                        height: auto;
+                        width: auto;
+                        @include Row-center.row-center;
+                        gap: 15px;
+                        .star-for-course-review{
+                            height: auto;
+                            width: auto;
+                              @include Row-center.row-center;
+                              gap: 4px; 
+                        }
+                    }
+                    .course-audio-bar{
+                            height: auto;
+                            width: auto;
+                            @include Row-center.row-center;
+                            padding: 8px 16px;
+                            border-radius: 50px;
+                            background-color: antiquewhite;
+
+                        .course-audio-para{
+                            height: auto;
+                            width: auto;
+                            @include Row-center.row-center;
+                            gap: 8px;
+
+                            .audio-course-span-main{
+                                 @include Row-center.row-center;
+                                gap: 5px;
+                            }
+
+                        }
+                    }
+                    .course-language-bar{
+                        height: auto;
+                        width: auto;
+                        @include Row-center.row-center;
+                        padding: 8px 16px;
+                        border-radius: 50px;
+                        background-color: antiquewhite;
+                         .course-lang-para{
+                            height: auto;
+                            width: auto;
+                            @include Row-center.row-center;
+                            gap: 8px;
+
+                            .audio-course-span-main{
+                                 @include Row-center.row-center;
+                                gap: 5px;
+                            }
+
+                        }
+                    }
+                }
+                .course-calender-box{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    gap: 25px;
+                    justify-content: flex-start;
+                    .calender-icon{
+                        height: 30px;
+                        width: 30px;
+                        background-color: black;
+                        color: white;
+                        font-size: 14px;
+                        @include Row-center.row-center;
+                        border-radius: 100%;
+                    }
+                    .calender-course-cont{
+                        font-size: 14px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        @include Row-center.row-center;
+                        
+                    }
+                    .course-calender-one,.course-calender-two{
+                        height: auto;
+                        width: auto;
+                        @include Row-center.row-center;
+                        justify-content: flex-start;
+                        gap: 10px;
+                    }
+                }
+
+
+            }
+        }
+        .course-enroll-box{
+             height: 100%;
+            width: 100%;
+            flex: 1 1 calc(30%);
+            @include Column-center.column-center;
+            justify-content: flex-start;
+            gap: 30px;
+
+            .course-enroll-video-overview{
+                height: 200px;
+                width: 90%;
+                background-color: aliceblue;
+                border-radius: 10px;
+                @include bg-img-center.bg-img-center('https://plus.unsplash.com/premium_photo-1670071482073-fb719283af88?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            }
+            .course-enroll-amount-overview{
+                height: auto;
+                width: 90%;
+                @include Column-center.column-center;
+                gap: 10px;
+                align-items: flex-start;
+                .actual-course-cost{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    justify-content: space-between;
+                    .actual-course-para{
+                        height: auto;
+                        width: auto;
+                        @include Row-center.row-center;
+                        gap: 15px;
+                        font-size:23px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                    .actual-course-discount{
+                        height: 30px;
+                        width: 80px;
+                        background-color: antiquewhite;
+                        border-radius: 5px;
+                        @include Row-center.row-center;
+                        font-size: 16px;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                }
+                .time-left-offer{
+                    height: auto;
+                    width: 100%;
+                    font-size: 16px;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: red ;
+                }
+
+                .course-join-btns{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                     gap: 16px;
+                     margin-top: 15px;
+
+                     .course-btn{
+                        height: 35px;
+                        width: 100%;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: aqua;
+                     }
+                }
+            }
+
+        }
+
+    }
+}

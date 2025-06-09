@@ -560,13 +560,16 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
-                  <div className='hover-enroll-btn'>
-                    Enroll Now
-                    <div className='prog-enroll-design-one'></div>
-                    <div className='prog-enroll-design-two'></div>
-                  </div>
-                </Link>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
                 
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
