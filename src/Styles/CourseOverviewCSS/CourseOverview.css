@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 .course-overview-main-conatainer {
   height: auto;
   width: 100%;
@@ -41,9 +46,22 @@
   gap: 20px;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 55px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(159, 159, 159);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview .course-overview-title {
+  font-size: 50px;
+  font-family: "Averia Libre";
   font-weight: 600;
+  color: rgb(49, 49, 49);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-para-in-course-overview {
   width: 100%;
@@ -78,7 +96,10 @@
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-img-for-course-overview {
   height: 50px;
   width: 50px;
-  background-color: antiquewhite;
+  background-image: url("./StaffPage/Top-staff-Four.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 100%;
   border: 3px solid white;
 }
@@ -93,12 +114,17 @@
   gap: 10px;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name-tit {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-family: "Inter";
+  font-weight: 500;
+  color: rgb(115, 115, 115);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name {
   font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-family: "Commissioner";
+  letter-spacing: 0.5px;
+  color: rgb(28, 28, 28);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side {
   height: auto;
@@ -119,6 +145,19 @@
   align-items: center;
   gap: 15px;
 }
+.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-rating {
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  color: rgb(104, 104, 104);
+  font-weight: 500;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-total {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(104, 104, 104);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .star-for-course-review {
   height: auto;
   width: auto;
@@ -127,6 +166,7 @@
   justify-content: center;
   align-items: center;
   gap: 4px;
+  color: rgb(255, 213, 0);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar {
   height: auto;
@@ -137,7 +177,7 @@
   align-items: center;
   padding: 8px 16px;
   border-radius: 50px;
-  background-color: antiquewhite;
+  background-color: rgb(255, 228, 228);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para {
   height: auto;
@@ -147,6 +187,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  font-size: 16px;
+  color: rgb(59, 59, 59);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para .audio-course-span-main {
   display: flex;
@@ -154,6 +196,13 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  font-family: "Commissioner";
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(27, 27, 27);
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para .audio-course-span-main .audio-language {
+  color: rgb(69, 69, 69);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar {
   height: auto;
@@ -164,7 +213,7 @@
   align-items: center;
   padding: 8px 16px;
   border-radius: 50px;
-  background-color: antiquewhite;
+  background-color: rgb(250, 255, 209);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para {
   height: auto;
@@ -174,6 +223,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  font-size: 16px;
+  color: rgb(59, 59, 59);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para .audio-course-span-main {
   display: flex;
@@ -181,6 +232,13 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  font-family: "Commissioner";
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(27, 27, 27);
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para .audio-course-span-main .avail-language {
+  color: rgb(69, 69, 69);
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box {
   height: auto;
@@ -189,13 +247,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 35px;
   justify-content: flex-start;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-icon {
   height: 30px;
   width: 30px;
-  background-color: black;
+  background-color: rgb(255, 89, 100);
   color: white;
   font-size: 14px;
   display: flex;
@@ -211,6 +269,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  color: rgb(75, 75, 75);
+  letter-spacing: 0.5px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-course-cont .calender-cont {
+  font-size: 14px;
+  font-family: "Delius";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: rgb(36, 36, 36);
+  letter-spacing: normal;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .course-calender-one, .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .course-calender-two {
   height: auto;
@@ -236,12 +308,68 @@
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview {
   height: 200px;
   width: 90%;
-  background-color: aliceblue;
   border-radius: 10px;
+  padding: 15px;
+  border: 2px solid rgb(255, 89, 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image {
   background-image: url("https://plus.unsplash.com/premium_photo-1670071482073-fb719283af88?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .icon-play-vid {
+  height: 55px;
+  width: 55px;
+  background-color: rgb(255, 74, 74);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 18px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .vid-play-design {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  z-index: -1;
+  animation: call-logo-animation 2s linear infinite forwards;
+}
+@keyframes call-logo-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview {
   height: auto;
@@ -269,28 +397,50 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  font-size: 23px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  gap: 13px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-one {
+  font-size: 24px;
+  font-family: "Commissioner";
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-two {
+  font-size: 20px;
+  font-family: "Commissioner";
+  font-weight: 400;
+  color: rgb(130, 130, 130);
+  text-decoration: line-through;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-discount {
-  height: 30px;
-  width: 80px;
-  background-color: antiquewhite;
+  height: auto;
+  width: auto;
+  padding: 6px 12px;
+  background-color: #ff523b;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  font-family: "Exo 2";
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .time-left-offer {
   height: auto;
   width: 100%;
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
-  color: red;
+  font-size: 12px;
+  font-family: "Onest";
+  color: rgb(255, 68, 81);
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .time-left-offer .time-left-offer-para {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns {
   height: auto;
@@ -299,15 +449,175 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  margin-top: 15px;
+  gap: 20px;
+  margin-top: 20px;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn {
-  height: 35px;
+  height: 40px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
   border: none;
+  cursor: pointer;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one {
+  background-color: rgb(255, 74, 74);
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  gap: 5px;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .course-btn-design {
+  position: absolute;
+  height: 0%;
+  width: 25%;
+  transition-duration: 0.4s;
+  z-index: -1;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .course-btn-design-one {
+  left: 0px;
+  background-color: rgb(255, 203, 30);
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .course-btn-design-two {
+  right: 0px;
+  background-color: rgb(255, 203, 30);
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .course-btn-design-three {
+  left: 25%;
+  background-color: rgb(255, 203, 30);
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .course-btn-design-four {
+  right: 25%;
+  background-color: rgb(255, 203, 30);
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover {
+  transition-duration: 0.4s;
+  color: rgb(44, 44, 44);
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design {
+  height: 100%;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-one {
+  top: auto;
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-two {
+  bottom: auto;
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-three {
+  bottom: auto;
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-four {
+  top: auto;
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two {
+  border: 2px solid rgb(255, 203, 30);
+  font-size: 15px;
+  font-family: "Inter";
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(255, 74, 74);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow: hidden;
+  gap: 5px;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two .course-btn-design-two {
+  position: absolute;
+  height: 0%;
+  width: 25%;
+  transition-duration: 0.4s;
+  z-index: -1;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two .course-btn-design-two-one {
+  left: 0px;
+  background-color: rgb(255, 74, 74);
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two .course-btn-design-two-two {
+  right: 0px;
+  background-color: rgb(255, 74, 74);
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two .course-btn-design-two-three {
+  left: 25%;
+  background-color: rgb(255, 74, 74);
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two .course-btn-design-two-four {
+  right: 25%;
+  background-color: rgb(255, 74, 74);
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two:hover {
+  transition-duration: 0.4s;
+  color: white;
+  border: none;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two:hover .course-btn-design-two {
+  height: 100%;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two:hover .course-btn-design-two-one {
+  top: auto;
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two:hover .course-btn-design-two-two {
+  bottom: auto;
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two:hover .course-btn-design-two-three {
+  bottom: auto;
+  top: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two:hover .course-btn-design-two-four {
+  top: auto;
+  bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-content-div {
+  height: 150dvh;
+  width: 100%;
   background-color: aqua;
+  padding: 40px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 65%;
+  background-color: #ff523b;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 35%;
+  background-color: #4bff3b;
 }
 
 /*# sourceMappingURL=CourseOverview.css.map */
