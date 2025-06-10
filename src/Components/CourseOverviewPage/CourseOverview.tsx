@@ -5,7 +5,6 @@ import { PiSubtitles } from "react-icons/pi";
 import { SlCalender } from "react-icons/sl";
 import { GrUpdate } from "react-icons/gr";
 import { FaPlay } from "react-icons/fa";
-import { FaRegClock } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaChevronDown } from "react-icons/fa";
 import { useState } from 'react';
@@ -17,6 +16,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { IoIosFunnel } from "react-icons/io";
+import { HiComputerDesktop } from "react-icons/hi2";
+import { FaRegClock } from "react-icons/fa";
+import { FaListUl } from "react-icons/fa";
+import { IoEarthOutline } from "react-icons/io5";
+import { IoMdBowtie } from "react-icons/io";
+import { TbCertificate } from "react-icons/tb";
+import { IoDocumentText } from "react-icons/io5";
 
 const CourseOverview = () => {
 
@@ -359,7 +366,54 @@ const CourseOverview = () => {
           </div>
         </div>
       </div>
-      <div className='course-overview-content-sider'></div>
+      <div className='course-overview-content-sider'>
+        <p className='course-content-sider-title'>This Course Includes :</p>
+        <div className='course-includes-list'>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><IoIosFunnel/>Level</p>
+            <p>Beginner</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><HiComputerDesktop/>Lectures</p>
+            <p>8 Lectures</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><FaListUl/>Category</p>
+            <p>Data Science</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><IoEarthOutline/>Language</p>
+            <p>English</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><IoMdBowtie/>Access</p>
+            <p>Full Lifetime</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><TbCertificate/>Certificate</p>
+            <p>Yes</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><IoDocumentText/>Resource</p>
+            <p>5 Downloadable Files</p>
+          </div>
+          <div className='course-includes-list-items'>
+            <p className='corse-includes-list0para-one'><FaRegClock/>Duration</p>
+            <p>1h 30m 12s</p>
+          </div>
+        </div>
+        <div className='course-sharing-path'>
+          <p className='course-sharing-path-title'>Share Now :</p>
+          <div className='course-share-path-icon'>
+              <div className='share-media'><FaFacebookF/></div>
+              <div className='share-media'><FaXTwitter/></div>
+              <div className='share-media'><FaLinkedinIn/></div>
+              <div className='share-media'><FaInstagram/></div>
+
+          </div>
+        </div>
+        <button className='enroll-btn-sider-course'>Enroll Course</button>
+      </div>
      </div>
     </div>
   )
