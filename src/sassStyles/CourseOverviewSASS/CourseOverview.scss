@@ -519,7 +519,7 @@
     .course-overview-content-div{
         height:auto;
         width: 100%;
-        background-color: rgb(253, 253, 253);
+        background-color: rgb(254, 254, 254);
         padding: 40px 120px;
         @include Row-center.row-center;
        align-items: flex-start;
@@ -529,7 +529,7 @@
             height: 100%;
             width: 100%;
             flex: 1 1 calc(67%);
-            background-color: rgb(252, 252, 252);
+            background-color: rgb(254, 254, 254);
             @include Column-center.column-center;
             gap: 40px;
             justify-content: flex-start;
@@ -957,8 +957,10 @@
             height: auto;
             width: 100%;
             flex: 1 1 calc(33%);
-            background-color: #ffffff;
+            background-color: rgb(255, 255, 255);
             position: sticky;
+                            box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+
             @include Column-center.column-center;
             justify-content: flex-start;
             align-items: center;
