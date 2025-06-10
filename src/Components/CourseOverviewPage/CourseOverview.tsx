@@ -6,8 +6,22 @@ import { SlCalender } from "react-icons/sl";
 import { GrUpdate } from "react-icons/gr";
 import { FaPlay } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa";
+import { GoDotFill } from "react-icons/go";
+import { FaChevronDown } from "react-icons/fa";
+import { useState } from 'react';
+import { IoIosVideocam } from "react-icons/io";
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { FaPaintBrush } from "react-icons/fa";
+import { MdOutlinePersonOutline } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 const CourseOverview = () => {
+
+  const [showcont,setshowcont]=useState(false)
+
   return (
     <div className='course-overview-main-conatainer'>
      <div className='course-overview-intro-div'>
@@ -102,7 +116,249 @@ const CourseOverview = () => {
       </div>
      </div>
      <div className='course-overview-content-div'>
-      <div className='course-overview-content-main'></div>
+      <div className='course-overview-content-main'>
+        <div className='course-overview-nav-bar'>
+          <p>Summary</p>
+          <p>Content</p>
+          <p>Outline</p>
+          <p>Instructor</p>
+          <p>Review</p>
+        </div>
+        <div className='Course-detail-container'>
+          <div className='course-detail-title-bar'>
+            <p className='course-detail-title-para-one'>Course Detail</p>
+            <p className='course-detail-title-para-two'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quasi totam quia provident! Accusamus fugiat natus quam necessitatibus magni!</p>
+          </div>
+          <div className='course-detail-main-point-content'>
+            <p className='course-detail-points'><GoDotFill/>Introduction to Graphic Design</p>
+            <p className='course-detail-points'><GoDotFill/>Basics of Typography</p>
+            <p className='course-detail-points'><GoDotFill/>Color Theory and Applications</p>
+            <p className='course-detail-points'><GoDotFill/>Layout and Composition Techniques</p>
+            <p className='course-detail-points'><GoDotFill/>Branding and Visual Identity</p>
+            <p className='course-detail-points'><GoDotFill/>Real-World Design Projects</p>
+          </div>
+        </div>
+        <div className='course-content-container'>
+          <div className='course-content-title'>
+            <p>Course Content</p>
+          </div>
+          <div className='course-content-main-list'>
+            <div className='course-content-list'>
+              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+              </div>
+              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
+                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-time'>10:15</p>
+              </div>
+            </div>
+              <div className='course-content-list'>
+              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+              </div>
+              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
+                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-time'>10:15</p>
+              </div>
+            </div>
+              <div className='course-content-list'>
+              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+              </div>
+              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
+                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-time'>10:15</p>
+              </div>
+            </div>
+              <div className='course-content-list'>
+              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+              </div>
+              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
+                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-time'>10:15</p>
+              </div>
+            </div>
+              <div className='course-content-list'>
+              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+              </div>
+              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
+                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-time'>10:15</p>
+              </div>
+            </div>
+              <div className='course-content-list'>
+              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+              </div>
+              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
+                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-time'>10:15</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div className='what-learn-from-course-container'>
+          <p className='what-learn-title'>What you'll learn</p>
+          <div className='what-learn-content-holder'>
+            <div className='what-learn-content'>
+              <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
+              <p className='para-what-learn'>Master the principles of design: typography, layout, and color theory</p>
+            </div>
+            <div className='what-learn-content'>
+              <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
+              <p className='para-what-learn'>Master the principles of design: typography, layout, and color theory</p>
+            </div>
+            <div className='what-learn-content'>
+              <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
+              <p className='para-what-learn'>Master the principles of design: typography, layout, and color theory</p>
+            </div>
+            <div className='what-learn-content'>
+              <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
+              <p className='para-what-learn'>Master the principles of design: typography, layout, and color theory</p>
+            </div>
+            <div className='what-learn-content'>
+              <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
+              <p className='para-what-learn'>Master the principles of design: typography, layout, and color theory</p>
+            </div>
+            <div className='what-learn-content'>
+              <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
+              <p className='para-what-learn'>Master the principles of design: typography, layout, and color theory</p>
+            </div>
+          </div>
+        </div>
+        <div className='course-instructor-container'>
+          <p className='what-learn-title'>Course Instructor</p>
+          <div className='course-instructor-info'>
+            <div className='course-intructor-image'></div>
+            <div className='course-instructor-main-info'>
+              <div className='instructor-name'>
+                <p>Jhon Smith</p>
+                <p>Learned Graphic Designer, Chennai</p>
+              </div>
+              <div className='instructor-information'>
+                <p className='instructor-infor-para-one'><FaStar/>4.8<span>(250 reviews)</span></p>
+                <p  className='instructor-infor-para-two'><FaPaintBrush/>8 Courses</p>
+                <p className='instructor-infor-para-three'><MdOutlinePersonOutline/>50,000 Students</p>
+              </div>
+              <p className='instructor-para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta reiciendis consequatur, quia illum fugiat aut tempore nemo obcaecati illo omnis necessitatibus possimus iste, dolore eos laboriosam repudiandae rem fuga reprehenderit.</p>
+            </div>
+            <div className='course-instructor-social-media'>
+              <div className='instructor-media'><FaFacebookF/></div>
+              <div className='instructor-media'><FaXTwitter/></div>
+              <div className='instructor-media'><FaLinkedinIn/></div>
+              <div className='instructor-media'><FaInstagram/></div>
+            </div>
+          </div>
+
+        </div>
+        <div className='course-rating'>
+          <p className='what-learn-title'>Course Rating</p>
+          <div className='course-rating-container-main'>
+            <div className='total-rating-star-average'>
+              <p className='total-rating-para'>4.1</p>
+              <div className='total-rating-average-star'>
+                <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+                <p>(233 reviews)</p>
+              </div>
+            </div>
+            <div className='total-rating-star-lineup'>
+              <div className='total-rating-star-line'>
+                <p>5</p>
+                <div className='line-rating-bg'>
+                  <div className='line-rating-inner'></div>
+                </div>
+                <p>82%</p>
+                <p>122</p>
+              </div>
+              <div className='total-rating-star-line'>
+                <p>5</p>
+                <div className='line-rating-bg'>
+                  <div className='line-rating-inner'></div>
+                </div>
+                <p>82%</p>
+                <p>122</p>
+              </div>
+              <div className='total-rating-star-line'>
+                <p>5</p>
+                <div className='line-rating-bg'>
+                  <div className='line-rating-inner'></div>
+                </div>
+                <p>82%</p>
+                <p>122</p>
+              </div>
+              <div className='total-rating-star-line'>
+                <p>5</p>
+                <div className='line-rating-bg'>
+                  <div className='line-rating-inner'></div>
+                </div>
+                <p>82%</p>
+                <p>122</p>
+              </div>
+              <div className='total-rating-star-line'>
+                <p>5</p>
+                <div className='line-rating-bg'>
+                  <div className='line-rating-inner'></div>
+                </div>
+                <p>82%</p>
+                <p>122</p>
+              </div>
+              
+            </div>
+          </div>
+
+        </div>
+        <div className='course-review-container'>
+          <p className='what-learn-title'>Course Review</p>
+          <div className='review-of-the-course'>
+            <div className='review-of-the-course-reviewer-img'>
+              <div className='reviewer-image'></div>
+            </div>
+            <div className='review-of-the-course-cont'>
+              <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <div className='reviewer-content'>
+                <p className='reviewer-name-review'>Jame Bond</p>
+                <p className='reviewer-date-review'>July 20 2020</p>
+                <p className='reviewer-cont-review'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae quia facilis necessitatibus vel repellat nobis assumenda possimus illo debitis.</p>
+              </div>
+            </div>
+          </div>
+           <div className='review-of-the-course'>
+            <div className='review-of-the-course-reviewer-img'>
+              <div className='reviewer-image'></div>
+            </div>
+            <div className='review-of-the-course-cont'>
+              <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <div className='reviewer-content'>
+                <p className='reviewer-name-review'>Jame Bond</p>
+                <p className='reviewer-date-review'>July 20 2020</p>
+                <p className='reviewer-cont-review'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae quia facilis necessitatibus vel repellat nobis assumenda possimus illo debitis.</p>
+              </div>
+            </div>
+          </div>
+           <div className='review-of-the-course'>
+            <div className='review-of-the-course-reviewer-img'>
+              <div className='reviewer-image'></div>
+            </div>
+            <div className='review-of-the-course-cont'>
+              <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <div className='reviewer-content'>
+                <p className='reviewer-name-review'>Jame Bond</p>
+                <p className='reviewer-date-review'>July 20 2020</p>
+                <p className='reviewer-cont-review'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae quia facilis necessitatibus vel repellat nobis assumenda possimus illo debitis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className='course-overview-content-sider'></div>
      </div>
     </div>

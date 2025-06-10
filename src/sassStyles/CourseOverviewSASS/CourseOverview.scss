@@ -10,6 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 .course-overview-main-conatainer{
     height: auto;
@@ -516,21 +517,449 @@
     }
 
     .course-overview-content-div{
-        height: 150dvh;
+        height:auto;
         width: 100%;
         background-color: aqua;
         padding: 40px 100px;
         @include Row-center.row-center;
+       align-items: flex-start;
         gap: 40px;
 
         .course-overview-content-main{
             height: 100%;
             width: 100%;
             flex: 1 1 calc(65%);
-            background-color: #ff523b;
+            background-color: #ffffff;
+            @include Column-center.column-center;
+            gap: 40px;
+            justify-content: flex-start;
+            position: relative;
+
+            .course-overview-nav-bar{
+                height: auto;
+                width: 100%;
+                background-color: rgb(255, 255, 255);
+                position: sticky;
+                top: 20px;
+                @include Row-center.row-center;
+                gap: 60px;
+                justify-content: flex-start;
+                padding: 20px 0px;
+                padding-left: 20px;
+                font-size: 14px;
+                font-family:'Open Sans';
+                font-weight: 500;
+                color: rgb(63, 63, 63);
+                border: 1px solid main-color.$border-light-color;
+                border-radius:5px;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+            }
+
+            .Course-detail-container{
+                height: auto;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid main-color.$border-light-color;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+                @include Column-center.column-center;
+                gap: 20px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 40px;
+                
+
+                .course-detail-title-bar{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 20px;
+                    align-items: flex-start;
+
+                    .course-detail-title-para-one{
+                        font-size: 28px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-weight: 600;
+                    }
+                    .course-detail-title-para-two{
+                        @include WebSubContent.SubContent; 
+                        font-size: 13px;
+                        line-height: 23px;
+                    }
+                }
+                .course-detail-main-point-content{
+                    height: auto;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,1fr);
+                    padding-left: 30px;
+                    row-gap: 25px;
+                    .course-detail-points{
+                        @include Row-center.row-center;
+                        justify-content: flex-start;
+                        gap: 15px;
+                        
+                    }
+                }
+
+            }
+
+            .course-content-container{
+                 height: auto;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid main-color.$border-light-color;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+                @include Column-center.column-center;
+                gap: 40px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 40px;
+
+                .course-content-title{
+                    height: auto;
+                    width: 100%;
+                    font-size: 28px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-weight: 600;
+                }
+
+                .course-content-main-list{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 30px;
+
+                    .course-content-list{
+                        height: auto;
+                        width: 100%;
+                        @include Column-center.column-center;
+                        border-radius: 5px;
+                        border: 1px solid rgb(218, 218, 218);
+                        
+                        .course-content-list-title{
+                            height: auto;
+                            width: 100%;
+                            @include Row-center.row-center;
+                            justify-content:space-between;
+                            font-size: 16px;
+                            padding: 15px 15px;
+                            padding-right:30px;
+                            font-family: 'Lato';
+                            font-weight: 600;
+                            color: main-color.$main-color-for-app;
+                            cursor: pointer;
+
+                            .arrow-icon-for-course-cont{
+                                transition-duration: 0.3s;
+                            }
+
+
+
+                        }
+                        .course-content-list-cont{
+                            height: 0px;
+                            width: 100%;
+                            opacity: 0;
+                            padding: 0px 20px;
+                            padding-right: 25px;
+                            transition:padding 0.7s ease,height 0.7s ease,border-top 0.4s ease,opacity 0.3s ease;
+                            border-top: 1px solid rgba(255, 255, 255, 0);
+                             @include Row-center.row-center;
+                            justify-content:space-between;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        }
+                        .course-content-list-cont-show{
+                            height: 50px;
+                            width: 100%;
+                            opacity: 1;
+                            @include Row-center.row-center;
+                            justify-content:space-between;
+                            font-size: 16px;
+                            padding: 15px 20px;
+                            padding-right: 25px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            border-top: 1px solid rgb(230, 230, 230);
+                           transition:padding 0.7s ease, height 0.7s ease,border-top 0.5s ease,opacity 0.8s ease,;
+
+                        }
+                        .course-content-list-inner-para{
+                             @include Row-center.row-center;
+                             gap: 10px;
+                             
+                        }
+                    }
+                }
+            }
+
+            .what-learn-from-course-container{
+                height: auto;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid main-color.$border-light-color;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+                @include Column-center.column-center;
+                gap: 35px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 40px;
+                
+                .what-learn-content-holder{
+                    height: auto;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: repeat(3,1fr);
+                    padding-left: 30px;
+                    gap: 35px;
+                    row-gap: 35px;
+
+                }
+                .what-learn-content{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    align-items: flex-start;
+                    gap: 10px;
+                    .tick-what-learn{
+                      
+                        font-size: 23px;
+                    }
+                    .para-what-learn{
+                        @include WebSubContent.SubContent;
+                        line-height: 23px;
+                        font-size: 14px;
+
+                    }
+                }
+            }
+            .what-learn-title{
+                     font-size: 28px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        font-weight: 600;
+                }
+            .course-instructor-container{
+                height: auto;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid main-color.$border-light-color;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+                @include Column-center.column-center;
+                gap: 35px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 40px;
+
+                .course-instructor-info{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 25px;
+                    align-items: flex-start;
+                    .course-intructor-image{
+                        height: 220px;
+                        width: 220px;
+                        border-radius: 100%;
+                        background-color: #ff523b;
+                    }
+                    .course-instructor-main-info{
+                        height: auto;
+                        width: 100%;
+                        @include Column-center.column-center;
+                        gap: 20px;
+                        align-items: flex-start;
+                        .instructor-name{
+                            height: auto;
+                            width: 100%;
+                            @include Column-center.column-center;
+                            gap: 5px;
+                            align-items: flex-start;
+                            font-size: 15px;
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            
+                        }
+                        .instructor-information{
+                            height: auto;
+                            width: 100%;
+                            @include Row-center.row-center;
+                            justify-content: flex-start;
+                            gap: 20px;
+                            .instructor-infor-para-one,.instructor-infor-para-two,.instructor-infor-para-three{
+                              @include Row-center.row-center;
+                              gap:8px;
+                            }
+                        }
+                    }
+                    .course-instructor-social-media{
+                        height: auto;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        justify-content: flex-start;
+                        gap: 20px;
+
+                        .instructor-media{
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 100%;
+                            border: 1px solid main-color.$border-light-color;
+                            @include Row-center.row-center;
+                        }
+
+                    }
+                }
+            }
+            .course-rating{
+                height: auto;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid main-color.$border-light-color;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+                @include Column-center.column-center;
+                gap: 35px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 40px;
+
+                .course-rating-container-main{
+                    height: auto;
+                    width: 100%;
+                    border: 1px solid main-color.$border-light-color;
+                    border-radius: 8px;
+                    padding: 30px;
+                    gap: 15px;
+                    @include Row-center.row-center;
+                    .total-rating-star-average{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(25%);
+                    border: 1px solid main-color.$border-light-color;
+                        @include Column-center.column-center;
+                        gap: 6px;
+                        padding: 20px 0px;
+                        border-radius: 5px;
+                        .total-rating-para{
+                            font-size:70px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-weight: 600;
+                        }
+                        .total-rating-average-star{
+                            @include Column-center.column-center;
+                            gap: 3px;
+                        }
+                    }
+                    .total-rating-star-lineup{
+                          height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(75%);
+                        @include Column-center.column-center;
+                        align-items: flex-start;
+                        gap: 15px;
+                        padding: 10px;
+                        .total-rating-star-line{
+                            width: 100%;
+                            height: auto;
+                            @include Row-center.row-center;
+                            gap: 15px;
+                            .line-rating-bg{
+                                height: 12px;
+                                width: 80%;
+                                position: relative;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                background-color: rgb(232, 232, 232);
+                                .line-rating-inner{
+                                    position: absolute;
+                                    height: 100%;
+                                    width: 40%;
+                                    background-color: #ff523b;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .course-review-container{
+                height: auto;
+                width: 100%;
+                background-color: white;
+                border-radius: 5px;
+                border: 1px solid main-color.$border-light-color;
+                box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
+                @include Column-center.column-center;
+                gap: 35px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 30px 40px;
+
+                .review-of-the-course{
+                    height: 200px;
+                    width: 100%;
+                    background-color: #eaeaea;
+                    border-radius: 8px;
+                    @include Row-center.row-center;
+                    gap: 10px;
+                    overflow: hidden;
+                    padding: 20px;
+                    .review-of-the-course-reviewer-img{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(20%);
+                          @include Row-center.row-center;
+                          align-items: flex-start;
+                        .reviewer-image{
+                            height: 110px;
+                            width: 110px;
+                            border-radius: 100%;
+                            background-color: aqua;
+                        }
+                    }
+                    .review-of-the-course-cont{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(80%);
+                        @include Column-center.column-center;
+                        gap: 10px;
+                        padding-top: 10px;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        padding-right: 15px;
+
+                        .reviewer-content{
+                            height: auto;
+                            width: 100%;
+                            @include Column-center.column-center;
+                            gap: 12px;
+                            align-items: flex-start;
+
+                            .reviewer-name-review{
+                                font-size: 20px;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                font-weight: 600;
+
+                            }
+                             .reviewer-date-review{
+                                font-size: 13px;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                
+                            }
+                             .reviewer-cont-review{
+                                font-size: 12px;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                
+                            }
+
+                        }
+                    }
+                }
+            }
         }
         .course-overview-content-sider{
-            height: 100%;
+            height: 500px;
             width: 100%;
             flex: 1 1 calc(35%);
             background-color: #4bff3b;
