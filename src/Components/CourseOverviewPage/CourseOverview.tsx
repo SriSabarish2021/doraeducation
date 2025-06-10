@@ -24,6 +24,8 @@ import { IoEarthOutline } from "react-icons/io5";
 import { IoMdBowtie } from "react-icons/io";
 import { TbCertificate } from "react-icons/tb";
 import { IoDocumentText } from "react-icons/io5";
+import { MdOutlineDone } from "react-icons/md";
+import { FaMale } from "react-icons/fa";
 
 const CourseOverview = () => {
 
@@ -125,96 +127,87 @@ const CourseOverview = () => {
      <div className='course-overview-content-div'>
       <div className='course-overview-content-main'>
         <div className='course-overview-nav-bar'>
-          <p>Summary</p>
-          <p>Content</p>
-          <p>Outline</p>
-          <p>Instructor</p>
-          <p>Review</p>
+          <p className='course-overview-nav-bar-para'>Summary</p>
+          <p className='course-overview-nav-bar-para'>Content</p>
+          <p className='course-overview-nav-bar-para'>Outline</p>
+          <p className='course-overview-nav-bar-para'>Instructor</p>
+          <p className='course-overview-nav-bar-para'>Review</p>
         </div>
         <div className='Course-detail-container'>
           <div className='course-detail-title-bar'>
-            <p className='course-detail-title-para-one'>Course Detail</p>
-            <p className='course-detail-title-para-two'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quasi totam quia provident! Accusamus fugiat natus quam necessitatibus magni!</p>
+            <p className='all-box-overview-title'>Course Detail</p>
+            <p className='all-box-overview-para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quasi totam quia provident! Accusamus fugiat natus quam necessitatibus magni!</p>
           </div>
           <div className='course-detail-main-point-content'>
-            <p className='course-detail-points'><GoDotFill/>Introduction to Graphic Design</p>
-            <p className='course-detail-points'><GoDotFill/>Basics of Typography</p>
-            <p className='course-detail-points'><GoDotFill/>Color Theory and Applications</p>
-            <p className='course-detail-points'><GoDotFill/>Layout and Composition Techniques</p>
-            <p className='course-detail-points'><GoDotFill/>Branding and Visual Identity</p>
-            <p className='course-detail-points'><GoDotFill/>Real-World Design Projects</p>
+            <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Introduction to Graphic Design</p>
+            <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Basics of Typography</p>
+            <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Color Theory and Applications</p>
+            <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Layout and Composition Techniques</p>
+            <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Branding and Visual Identity</p>
+            <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Real-World Design Projects</p>
           </div>
         </div>
         <div className='course-content-container'>
           <div className='course-content-title'>
-            <p>Course Content</p>
+            <p className='all-box-overview-title'>Course Content</p>
           </div>
           <div className='course-content-main-list'>
             <div className='course-content-list'>
               <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+                <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
+                <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
               </div>
               <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
                 <p className='course-content-list-inner-time'>10:15</p>
               </div>
             </div>
-              <div className='course-content-list'>
+             <div className='course-content-list'>
               <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+                <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
+                <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
               </div>
               <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
                 <p className='course-content-list-inner-time'>10:15</p>
               </div>
             </div>
-              <div className='course-content-list'>
+             <div className='course-content-list'>
               <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+                <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
+                <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
               </div>
               <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
                 <p className='course-content-list-inner-time'>10:15</p>
               </div>
             </div>
-              <div className='course-content-list'>
+             <div className='course-content-list'>
               <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+                <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
+                <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
               </div>
               <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
                 <p className='course-content-list-inner-time'>10:15</p>
               </div>
             </div>
-              <div className='course-content-list'>
+             <div className='course-content-list'>
               <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
+                <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
+                <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
               </div>
               <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
+                <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
                 <p className='course-content-list-inner-time'>10:15</p>
               </div>
             </div>
-              <div className='course-content-list'>
-              <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p><FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/></p>
-              </div>
-              <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                <p className='course-content-list-inner-para'><IoIosVideocam/>Lorem ipsum dolor sit.</p>
-                <p className='course-content-list-inner-time'>10:15</p>
-              </div>
-            </div>
+              
             
           </div>
         </div>
         <div className='what-learn-from-course-container'>
-          <p className='what-learn-title'>What you'll learn</p>
+          <p className='all-box-overview-title'>What you'll learn</p>
           <div className='what-learn-content-holder'>
             <div className='what-learn-content'>
               <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
@@ -243,20 +236,20 @@ const CourseOverview = () => {
           </div>
         </div>
         <div className='course-instructor-container'>
-          <p className='what-learn-title'>Course Instructor</p>
+          <p className='all-box-overview-title'>Course Instructor</p>
           <div className='course-instructor-info'>
             <div className='course-intructor-image'></div>
             <div className='course-instructor-main-info'>
               <div className='instructor-name'>
                 <p>Jhon Smith</p>
-                <p>Learned Graphic Designer, Chennai</p>
+                <p className='instructor-qualification'>Learned Graphic Designer, Chennai</p>
               </div>
               <div className='instructor-information'>
-                <p className='instructor-infor-para-one'><FaStar/>4.8<span>(250 reviews)</span></p>
-                <p  className='instructor-infor-para-two'><FaPaintBrush/>8 Courses</p>
-                <p className='instructor-infor-para-three'><MdOutlinePersonOutline/>50,000 Students</p>
+                <p className='instructor-infor-para-one'><FaStar className='star-of-tutor'/>4.8<span className='tutor-number-of-review'>(&nbsp;250 reviews&nbsp;)</span></p>
+                <p  className='instructor-infor-para-two'><FaPaintBrush className='tutor-infor-icon'/>8 Courses</p>
+                <p className='instructor-infor-para-three'><FaMale className='tutor-infor-icon'/>50,000 Students</p>
               </div>
-              <p className='instructor-para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta reiciendis consequatur, quia illum fugiat aut tempore nemo obcaecati illo omnis necessitatibus possimus iste, dolore eos laboriosam repudiandae rem fuga reprehenderit.</p>
+              <p className='all-box-overview-para tutor-intro-para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta reiciendis consequatur, quia illum fugiat aut tempore nemo obcaecati illo omnis necessitatibus possimus iste, dolore eos laboriosam repudiandae rem fuga reprehenderit.</p>
             </div>
             <div className='course-instructor-social-media'>
               <div className='instructor-media'><FaFacebookF/></div>
@@ -268,55 +261,55 @@ const CourseOverview = () => {
 
         </div>
         <div className='course-rating'>
-          <p className='what-learn-title'>Course Rating</p>
+          <p className='all-box-overview-title'>Course Rating</p>
           <div className='course-rating-container-main'>
             <div className='total-rating-star-average'>
               <p className='total-rating-para'>4.1</p>
               <div className='total-rating-average-star'>
-                <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
-                <p>(233 reviews)</p>
+                <p className='star-in-rating'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+                <p className='number-review-in-rating'>(&nbsp;233 reviews&nbsp;)</p>
               </div>
             </div>
             <div className='total-rating-star-lineup'>
               <div className='total-rating-star-line'>
-                <p>5</p>
+                <p className='star-number-rating-box'>5</p>
                 <div className='line-rating-bg'>
-                  <div className='line-rating-inner'></div>
+                  <div className='line-rating-inner line-inner-for-five'></div>
                 </div>
-                <p>82%</p>
-                <p>122</p>
+                <p className='percentage-star-rating-box'>82%</p>
+                <p className='total-rating-in-rating-box'>122</p>
               </div>
               <div className='total-rating-star-line'>
-                <p>5</p>
+                <p className='star-number-rating-box'>4</p>
                 <div className='line-rating-bg'>
-                  <div className='line-rating-inner'></div>
+                  <div className='line-rating-inner line-inner-for-four'></div>
                 </div>
-                <p>82%</p>
-                <p>122</p>
+                <p className='percentage-star-rating-box'>82%</p>
+                <p className='total-rating-in-rating-box'>122</p>
               </div>
               <div className='total-rating-star-line'>
-                <p>5</p>
+                <p className='star-number-rating-box'>3</p>
                 <div className='line-rating-bg'>
-                  <div className='line-rating-inner'></div>
+                  <div className='line-rating-inner line-inner-for-three'></div>
                 </div>
-                <p>82%</p>
-                <p>122</p>
+                <p className='percentage-star-rating-box'>82%</p>
+                <p className='total-rating-in-rating-box'>122</p>
               </div>
               <div className='total-rating-star-line'>
-                <p>5</p>
+                <p className='star-number-rating-box'>2</p>
                 <div className='line-rating-bg'>
-                  <div className='line-rating-inner'></div>
+                  <div className='line-rating-inner line-inner-for-two'></div>
                 </div>
-                <p>82%</p>
-                <p>122</p>
+                <p className='percentage-star-rating-box'>82%</p>
+                <p className='total-rating-in-rating-box'>122</p>
               </div>
               <div className='total-rating-star-line'>
-                <p>5</p>
+                <p className='star-number-rating-box'>1</p>
                 <div className='line-rating-bg'>
-                  <div className='line-rating-inner'></div>
+                  <div className='line-rating-inner line-inner-for-one'></div>
                 </div>
-                <p>82%</p>
-                <p>122</p>
+                <p className='percentage-star-rating-box'>82%</p>
+                <p className='total-rating-in-rating-box'>122</p>
               </div>
               
             </div>
@@ -324,13 +317,13 @@ const CourseOverview = () => {
 
         </div>
         <div className='course-review-container'>
-          <p className='what-learn-title'>Course Review</p>
+          <p className='all-box-overview-title'>Course Review</p>
           <div className='review-of-the-course'>
             <div className='review-of-the-course-reviewer-img'>
               <div className='reviewer-image'></div>
             </div>
             <div className='review-of-the-course-cont'>
-              <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <p className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
               <div className='reviewer-content'>
                 <p className='reviewer-name-review'>Jame Bond</p>
                 <p className='reviewer-date-review'>July 20 2020</p>
@@ -338,12 +331,12 @@ const CourseOverview = () => {
               </div>
             </div>
           </div>
-           <div className='review-of-the-course'>
+          <div className='review-of-the-course'>
             <div className='review-of-the-course-reviewer-img'>
               <div className='reviewer-image'></div>
             </div>
             <div className='review-of-the-course-cont'>
-              <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <p className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
               <div className='reviewer-content'>
                 <p className='reviewer-name-review'>Jame Bond</p>
                 <p className='reviewer-date-review'>July 20 2020</p>
@@ -351,12 +344,12 @@ const CourseOverview = () => {
               </div>
             </div>
           </div>
-           <div className='review-of-the-course'>
+          <div className='review-of-the-course'>
             <div className='review-of-the-course-reviewer-img'>
               <div className='reviewer-image'></div>
             </div>
             <div className='review-of-the-course-cont'>
-              <p><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <p className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
               <div className='reviewer-content'>
                 <p className='reviewer-name-review'>Jame Bond</p>
                 <p className='reviewer-date-review'>July 20 2020</p>
@@ -370,36 +363,36 @@ const CourseOverview = () => {
         <p className='course-content-sider-title'>This Course Includes :</p>
         <div className='course-includes-list'>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><IoIosFunnel/>Level</p>
-            <p>Beginner</p>
+            <p className='corse-includes-list-para-one'><IoIosFunnel className='sider-list-icon'/>Level</p>
+            <p className='course-list-cont'>Beginner</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><HiComputerDesktop/>Lectures</p>
-            <p>8 Lectures</p>
+            <p className='corse-includes-list-para-one'><HiComputerDesktop className='sider-list-icon'/>Lectures</p>
+            <p className='course-list-cont'>8 Lectures</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><FaListUl/>Category</p>
-            <p>Data Science</p>
+            <p className='corse-includes-list-para-one'><FaListUl className='sider-list-icon'/>Category</p>
+            <p className='course-list-cont'>Data Science</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><IoEarthOutline/>Language</p>
-            <p>English</p>
+            <p className='corse-includes-list-para-one'><IoEarthOutline className='sider-list-icon'/>Language</p>
+            <p className='course-list-cont'>English</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><IoMdBowtie/>Access</p>
-            <p>Full Lifetime</p>
+            <p className='corse-includes-list-para-one'><IoMdBowtie className='sider-list-icon'/>Access</p>
+            <p className='course-list-cont'>Full Lifetime</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><TbCertificate/>Certificate</p>
-            <p>Yes</p>
+            <p className='corse-includes-list-para-one'><TbCertificate className='sider-list-icon'/>Certificate</p>
+            <p className='course-list-cont'>Yes</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><IoDocumentText/>Resource</p>
-            <p>5 Downloadable Files</p>
+            <p className='corse-includes-list-para-one'><IoDocumentText className='sider-list-icon'/>Resource</p>
+            <p className='course-list-cont'>5 Downloadable Files</p>
           </div>
           <div className='course-includes-list-items'>
-            <p className='corse-includes-list0para-one'><FaRegClock/>Duration</p>
-            <p>1h 30m 12s</p>
+            <p className='corse-includes-list-para-one'><FaRegClock className='sider-list-icon'/>Duration</p>
+            <p className='course-list-cont'>1h 30m 12s</p>
           </div>
         </div>
         <div className='course-sharing-path'>
@@ -412,7 +405,10 @@ const CourseOverview = () => {
 
           </div>
         </div>
-        <button className='enroll-btn-sider-course'>Enroll Course</button>
+        <button className='enroll-btn-sider-course'>Enroll Course
+          <div className='enroll-design-one'></div>
+          <div className='enroll-design-two'></div>
+        </button>
       </div>
      </div>
     </div>
