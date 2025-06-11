@@ -26,13 +26,33 @@ import { TbCertificate } from "react-icons/tb";
 import { IoDocumentText } from "react-icons/io5";
 import { MdOutlineDone } from "react-icons/md";
 import { FaMale } from "react-icons/fa";
+import { VscEyeClosed } from "react-icons/vsc";
 
 const CourseOverview = () => {
 
   const [showcont,setshowcont]=useState(false)
 
+  const [reviewwrite,setreviewwrite]=useState(false)
+
+  const [reviewername,setreviewername]=useState('')
+  const [revieweremail,setrevieweremail]=useState('')
+  const [reviewcomment,setreviewcomment]=useState('')
+
+  const cancelreview=()=>{
+    setreviewername('')
+    setrevieweremail('')
+    setreviewcomment('')
+    setreviewwrite(false)
+  }
+
   return (
     <div className='course-overview-main-conatainer'>
+      <style>{
+        `html{
+          overflow-x: hidden;
+          overflow-y:${reviewwrite?'hidden':'auto'}
+        }`}
+        </style>
      <div className='course-overview-intro-div'>
       <div className='course-main-title-box'>
         <div className='course-title-main-container'>
@@ -358,6 +378,7 @@ const CourseOverview = () => {
             </div>
           </div>
         </div>
+        <button className='review-written-btn' onClick={()=>setreviewwrite(!reviewwrite)}>Write Review</button>
       </div>
       <div className='course-overview-content-sider'>
         <p className='course-content-sider-title'>This Course Includes :</p>
@@ -411,6 +432,45 @@ const CourseOverview = () => {
         </button>
       </div>
      </div>
+
+     <div className={`review-written-container ${reviewwrite?'move':'remove'}`}>
+      <div className='review-written-input-container'>
+        <div className="review-input-main-container">
+          <div className='review-input-title-bar'>
+            <p>Voice Your Opinion</p>
+          </div>
+          <div className='rating-bar-in-review'>
+            <p className='all-review-input-title'>Rating</p>
+            <div className='star-for-review'><FaStar className='star-review'/><FaStar className='star-review'/><FaStar className='star-review'/><FaStar className='star-review'/><FaStar className='star-review'/></div>
+          </div>
+           <div className="review-writing-name-by-user">
+            <p className='all-review-input-title'>Name (display publicly)</p>
+            <input value={reviewername} onChange={(e)=>setreviewername(e.target.value)}  type="text" className="inpreview name-input-for-comment review-input-border"  placeholder="Enter your name"/>
+          </div>
+          <div className="review-writing-email-by-user">
+            <p className='all-review-input-title'>Email (Private)</p>
+            <input value={revieweremail} onChange={(e)=>setrevieweremail(e.target.value)}  type="email" className="inpreview email-input-for-comment review-input-border"  placeholder="Enter your email (private)"/>
+          </div>
+          <div className="comment-writing-review-box">
+                  <p className='all-review-input-title'>Review</p>
+                  
+                  <textarea value={reviewcomment} onChange={(e)=>setreviewcomment(e.target.value)}   className="inpreview review-input-for-comment review-input-border"  placeholder="Write your comment here" ></textarea>
+            </div>
+          <div className="privacy-policy-for-comment">
+            <p className='comment-writing-email'>How we use your data: We’ll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Fox CART’s <span className='comment-condition'>terms</span>, <span className='comment-condition'>privacy</span> and <span className='comment-condition'>content</span> policies.</p>
+          </div>
+          <div className='review-btn-container'>
+            <button className='review-btn-submit review-btn'>Submit</button>
+            <button className='review-btn-cancel review-btn' onClick={()=>cancelreview()}>Cancel</button>
+          </div>
+                  <button onClick={()=>setreviewwrite(false)} className='review-input-close-btn'><VscEyeClosed/></button>
+
+        </div>
+      </div>
+     </div>
+     
+
+
     </div>
   )
 }

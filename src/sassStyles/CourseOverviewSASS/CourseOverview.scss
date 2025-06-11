@@ -17,11 +17,249 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 .course-overview-main-conatainer{
     height: auto;
     width: 100%;
     @include Column-center.column-center;
+    position: relative;
+
+    .review-written-container{
+         height: 100dvh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.591);
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+
+        z-index:3000000;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+
+        .review-written-input-container{
+            height: auto;
+            width: 60%;
+            @include Row-center.row-center;
+            justify-content: flex-start;
+
+            .review-input-main-container{
+                height: 500px;
+                width: 100%;
+                background-color: white;
+                border-radius: 15px;
+                @include Column-center.column-center;
+                gap: 30px;
+                padding: 50px;
+                justify-content: flex-start;
+                overflow: auto;
+                position: relative;
+                .review-input-close-btn{
+                    position: absolute;
+                    top: 25px;
+                    right: 25px;
+                    font-size: 16px;
+                    border: none;
+                    background-color: white;
+                    cursor: pointer;
+                    color: #292929;
+                    transition-duration: 0.3s;
+
+                }
+                .review-input-close-btn:hover{
+                    transform: scale(1.1);
+                    transition-duration: 0.3s;
+                }
+
+                .all-review-input-title{
+                    font-size: 18px;
+                    font-family: Iceland;
+                    letter-spacing: 1px;
+                    color: #3a3a3a;
+                }
+
+                .review-input-title-bar{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    font-size: 26px;
+                    font-family: 'MedievalSharp';
+                    font-weight: 600;
+
+                }
+                .rating-bar-in-review{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 15px;
+
+                    .star-for-review{
+                        height: auto;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        gap: 10px;
+                        .star-review{
+                            font-size:22px;
+                            color: rgb(255, 204, 0);
+                        }
+
+
+                    }
+                    
+                }
+                .review-writing-name-by-user,.review-writing-email-by-user,.privacy-policy-for-comment,.comment-writing-review-box{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 15px;
+                }
+                .review-input-for-comment{
+                    padding: 15px 15px 15px 18px;
+                    min-height: 140px;
+                    max-height: 140px;
+                    max-width: 80%;
+                    min-width: 40%;
+                    width: 80%;
+                    border-radius: 20px;
+                    border: none;
+                    font-size: 15px;
+                    font-family: 'Times New Roman', Times, serif;
+                    resize: none;
+                    
+
+                }   
+                .review-input-for-comment::placeholder{
+                    font-size: 13px;
+                    font-family: 'Exo 2';
+                    letter-spacing:1px;
+
+                }
+                .review-input-for-comment:focus{
+                    border: 1px solid rgb(154, 154, 154);
+                    outline: none;
+                }
+                .name-input-for-comment{
+                    padding: 5px 15px 5px 18px;
+                    height:40px;
+                    width: 70%;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    font-family: 'Times New Roman', Times, serif;
+                    letter-spacing: 0.5px;
+                }
+                .name-input-for-comment::placeholder{
+                    font-size: 13px;
+                    font-family: 'Exo 2';
+                }
+                .name-input-for-comment:focus{
+                    border: 1px solid rgb(154, 154, 154);
+                    outline: none;
+                }
+                .comment-writing-email{
+                    width: 70%;
+                    font-size: 14px ;
+                    font-family: 'Ysabeau Office';
+                    color: rgb(97, 97, 97);
+                    text-align: center;
+                    .comment-condition{
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: #000000;
+                        padding: 0px 2px 0px 2px;
+                    }
+                }
+                
+                .email-input-for-comment{
+                    padding: 5px 15px 5px 18px;
+                    height:40px;
+                    width: 70%;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    font-family: 'Times New Roman', Times, serif;
+                    letter-spacing: 0.5px;
+                }
+                .email-input-for-comment::placeholder{
+                    font-size: 13px;
+                    font-family: 'Exo 2';
+                }
+                .email-input-for-comment:focus{
+                    border: 1px solid rgb(154, 154, 154);
+                    outline: none;
+                }
+                .review-input-border{
+                    border: 1px solid rgb(190, 190, 190);
+
+                }
+                .review-no-input-border{
+                    border: 1px solid rgb(255, 0, 0);
+
+                }
+
+                .review-btn-container{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    gap: 40px;
+                    margin-top: 20px;
+
+                    .review-btn{
+                        height: 40px;
+                        width: 180px;
+                        border-radius: 50px;
+                        border: none;
+                        font-family:'Delius';
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .review-btn-submit{
+                        background-color: #151515;
+                        color: white;
+                        cursor: pointer;
+                    }
+                     .review-btn-cancel{
+                        background-color: white;
+                        border: 1px solid rgb(123, 123, 123);
+                        color: rgb(44, 44, 44);
+                        cursor: pointer;
+                    }
+
+                }
+
+            }
+             
+            .review-input-main-container::-webkit-scrollbar{
+                width: 3px;
+                background-color: rgba(133, 133, 133, 0.986);
+                border-radius: 20px;
+            }
+            .review-input-main-container::-webkit-scrollbar-thumb{
+                width: 3px;
+                border-radius: 20px;
+
+                background-color: rgba(0, 0, 0, 0.676);
+            }
+
+        }
+
+    }
+    .move{
+    transform: translateY(0px) ;
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    }
+    .remove{
+    transform: translateY(2000px);
+    opacity: 0;
+    transition-duration: 0.6s;
+    transition-timing-function:linear;
+    }
+
     .course-overview-intro-div{
         height: auto;
         width: 100%;
@@ -538,8 +776,25 @@
             background-color: rgb(254, 254, 254);
             @include Column-center.column-center;
             gap: 40px;
+            align-items: flex-start;
             justify-content: flex-start;
             position: relative;
+
+
+            .review-written-btn{
+                height: 40px;
+                width: 200px;
+                background-color: main-color.$main-color-red-for-btn;
+                border: none;
+                border-radius: 5px;
+                 font-size: 14px ;
+                font-family: 'Roboto';
+                font-weight: 600;
+                letter-spacing: 1px;
+                cursor: pointer;
+                color: white;
+
+            }
 
              .all-box-overview-title{
                  @include Main-Title.MainTitleCont;
