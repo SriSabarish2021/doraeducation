@@ -47,13 +47,20 @@
             width: 60%;
             @include Row-center.row-center;
             justify-content: flex-start;
-            
+            background-color: white;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            border-radius: 15px;
+
+
             .review-input-main-container{
                 height: 500px;
                 width: 100%;
-                background-color: white;
                 border-radius: 15px;
                 @include Column-center.column-center;
+                background-color: transparent;
+                
                 gap: 30px;
                 padding: 50px;
                 justify-content: flex-start;
@@ -272,15 +279,7 @@
                 }
 
             }
-             .review-input-main-container::after{
-                height: 400px;
-                width: 400px;
-                content: '';
-                background-color: #3bf2ff;
-                position: absolute;
-                z-index: -1;
-                left: 0px;
-            }
+             
             
              
             .review-input-main-container::-webkit-scrollbar{
@@ -296,6 +295,28 @@
             }
 
         }
+        .review-written-input-container::after{
+                height: 400px;
+                width: 400px;
+                content: '';
+                background-color: #c7ffed;
+                position: absolute;
+                z-index: -1;
+                left: -200px;
+                top: -200px;
+                transform: rotate(45deg);
+            }
+            .review-written-input-container::before{
+                height: 400px;
+                width: 400px;
+                content: '';
+                background-color: #c2e6ff6d;
+                position: absolute;
+                z-index: -1;
+                right: -200px;
+                bottom: -200px;
+                transform: rotate(45deg);
+            }
        
 
     }
@@ -821,6 +842,74 @@
        align-items: flex-start;
         gap: 40px;
 
+        .instructor-media{
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 100%;
+                            border: 1px solid main-color.$border-light-color;
+                            @include Row-center.row-center;
+                            color: rgb(49, 49, 49);
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                        }
+                        .icon-for-clr-fb{
+                            color: #4267B2;
+                            transition-duration: 0.4s;
+                        }
+                        .icon-for-clr-twitter{
+                            color: #000000	;
+                            transition-duration: 0.4s;
+                        }
+                       .icon-for-clr-linkedin{
+                            color:  #0a66c2	;
+                            transition-duration: 0.4s;
+                        }
+
+                        .icon-for-clr-insta{
+                            transition-duration: 0.4s;
+                            color:  #C13584	;
+                        }
+                        .med-fb:hover{
+                                                        transition-duration: 0.4s;
+
+                            .icon-for-clr-fb{
+                            color: rgb(244, 244, 244);
+
+                            }
+                            background-color: #4267B2;
+                        }
+                        .med-insta:hover{
+                                                        transition-duration: 0.4s;
+
+                            .icon-for-clr-insta{
+                                
+                            color: #fafafa;
+                            }
+                                                        
+
+                            background: #d4b135;
+                            background: linear-gradient(152deg, rgba(212, 177, 53, 1) 0%, rgba(217, 67, 130, 1) 47%, rgba(123, 79, 209, 1) 100%);
+                        }
+                        .med-twitt:hover{
+                           transition-duration: 0.4s;
+
+                            .icon-for-clr-twitter{
+                            color: #ffffff	;
+                            
+                            }
+
+                            background-color: #000000;
+                        }
+                        .med-linkedin:hover{
+                             transition-duration: 0.4s;
+
+                            .icon-for-clr-linkedin{
+                            color:  #ffffff	;
+                        }
+
+                            background-color: #0a66c2;
+                        }
+
         .course-overview-content-main{
             height: 100%;
             width: 100%;
@@ -836,15 +925,50 @@
             .review-written-btn{
                 height: 40px;
                 width: 200px;
-                background-color: main-color.$main-color-red-for-btn;
+                background-color:transparent;
                 border: none;
-                border-radius: 5px;
-                 font-size: 14px ;
-                font-family: 'Roboto';
-                font-weight: 600;
-                letter-spacing: 1px;
-                cursor: pointer;
+                
                 color: white;
+                position: relative;
+                z-index: 1;
+
+                .review-written-btn-inner{
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    @include Column-center.column-center;
+                    background-color: main-color.$main-color-red-for-btn;
+                    border-radius: 5px;
+                    font-size: 14px ;
+                    font-family: 'Roboto';
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition-duration: 0.3s;
+
+
+                    .review-write-btn-design{
+                    height: 40px;
+                    width: 200px;
+                    background-color:  main-color.$main-color-yellow-for-btn;
+                    position: absolute;
+                    bottom:-5px;
+                    right: -5px;
+                    border-radius: 5px;
+                    z-index: -1;
+                     transition-duration: 0.3s
+
+                    
+                    }
+                }
+                 .review-written-btn-inner:hover .review-write-btn-design{
+                    
+                    bottom:0px;
+                    right: 0px;
+                    transition-duration: 0.3s
+                 }
+
+                
 
             }
 
@@ -852,6 +976,15 @@
                  @include Main-Title.MainTitleCont;
                      font-size:28px;
                     font-weight: 800;
+                    position: relative;
+                    .course-section-tit-underline{
+                        position: absolute;
+                        height: 13px;
+                        width: 100px;
+                        left: 40px;
+                        bottom: -10px;
+                        @include bg-img-center.bg-img-center('./WhyChoose/underline-why-choose.png')
+                    }
                 }
 
             .all-box-overview-para{
@@ -884,8 +1017,22 @@
                     font-size: 14px;
                     font-family:'Noto Sans';
                     font-weight: 600;
-                    color: rgb(24, 24, 24);
+                   
                     letter-spacing: 0.5px;
+                                        transition-duration: 0.3s;
+
+                }
+                 .course-overview-nav-bar-para:hover{
+                    transform: scale(1.05);
+                    transition-duration: 0.3s;
+                 }
+                .red-nav-cont{
+                    color: main-color.$main-color-for-app-little-lighter;
+                    transition-duration: 0.4s;
+                }
+                .black-nav-cont{
+                    color: rgb(24, 24, 24);
+                    transition-duration: 0.4s;
                 }
 
             }
@@ -1198,15 +1345,7 @@
                         justify-content: flex-start;
                         gap: 25px;
 
-                        .instructor-media{
-                            height: 40px;
-                            width: 40px;
-                            border-radius: 100%;
-                            border: 1px solid main-color.$border-light-color;
-                            @include Row-center.row-center;
-                            color: rgb(49, 49, 49);
-                        }
-
+                        
                     }
                 }
             }
@@ -1304,6 +1443,7 @@
                                     position: absolute;
                                     height: 100%;
                                     width: 40%;
+                                    border-radius: 10px;
                                 }
                                 .line-inner-for-five{
                                     background-color: #3bffa0;
@@ -1502,7 +1642,7 @@
                     font-family: 'Inter';
                     font-weight: 700;
                     letter-spacing: 1px;
-                    color: rgb(108, 108, 108);
+                    color: rgb(114, 114, 114);
 
                 }
                 .course-share-path-icon{
@@ -1511,16 +1651,8 @@
                     @include Row-center.row-center;
                     justify-content: flex-start;
                     gap: 25px;
-                    padding-left: 10px;
-                    .share-media{
-                            height: 40px;
-                            width: 40px;
-                            border-radius: 100%;
-                            border: 1px solid main-color.$border-light-color;
-                            @include Row-center.row-center;
-                            background-color: white;
-                            color: rgb(54, 54, 54);
-                        }
+                    padding-left: 15px;
+                    
                 }
             }
             .enroll-btn-sider-course{

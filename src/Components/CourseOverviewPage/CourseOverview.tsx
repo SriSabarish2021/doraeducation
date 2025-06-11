@@ -7,7 +7,7 @@ import { GrUpdate } from "react-icons/gr";
 import { FaPlay } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaChevronDown } from "react-icons/fa";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoIosVideocam } from "react-icons/io";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaPaintBrush } from "react-icons/fa";
@@ -29,6 +29,7 @@ import { FaMale } from "react-icons/fa";
 import { VscEyeClosed } from "react-icons/vsc";
 import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
+import { NavLink } from 'react-router-dom';
 
 const CourseOverview = () => {
 
@@ -237,6 +238,15 @@ const CourseOverview = () => {
           starsvg[4].classList.remove('hexa')
     }
 
+    const [summary,setsummary]=useState(false)
+    const [content,setcontent]=useState(false)
+    const [learn,setlearn]=useState(false)
+    const [instructor,setinstructor]=useState(false)
+    const [review,setreview]=useState(false)
+
+
+    
+
 
   return (
     <div className='course-overview-main-conatainer'>
@@ -339,16 +349,100 @@ const CourseOverview = () => {
      </div>
      <div className='course-overview-content-div'>
       <div className='course-overview-content-main'>
-        <div className='course-overview-nav-bar'>
-          <p className='course-overview-nav-bar-para'>Summary</p>
-          <p className='course-overview-nav-bar-para'>Content</p>
-          <p className='course-overview-nav-bar-para'>Outline</p>
-          <p className='course-overview-nav-bar-para'>Instructor</p>
-          <p className='course-overview-nav-bar-para'>Review</p>
-        </div>
-        <div className='Course-detail-container'>
+        
+          <div  className='course-overview-nav-bar'>
+            <a href="#" style={{textDecoration:'none'}}
+                onClick={(e) => {
+                  setsummary(true)
+                  setcontent(false)
+                  setlearn(false)
+                  setinstructor(false)
+                  setreview(false)
+                  e.preventDefault();
+                  const element = document.getElementById("course-summary");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth", block: "center"
+                     });
+                    
+                  }
+                }}>
+              <p className={`course-overview-nav-bar-para summary-para ${summary?'red-nav-cont':'black-nav-cont'}` }>Summary</p>
+            </a>
+
+            <a href="#" style={{textDecoration:'none'}}
+                onClick={(e) => {
+                  setsummary(false)
+                  setcontent(true)
+                  setlearn(false)
+                  setinstructor(false)
+                  setreview(false)
+                  e.preventDefault();
+                  const element = document.getElementById("course-content");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth", block: "center"});
+                    
+                  }
+                }}>
+              <p className={`course-overview-nav-bar-para content-para ${content?'red-nav-cont':'black-nav-cont'}` }>Content</p>
+            </a>
+
+            <a href="#" style={{textDecoration:'none'}}
+                onClick={(e) => {
+                  setsummary(false)
+                  setcontent(false)
+                  setlearn(true)
+                  setinstructor(false)
+                  setreview(false)
+                  e.preventDefault();
+                  const element = document.getElementById("what-learn");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth", block: "center"});
+                    
+                  }
+                }}>
+              <p className={`course-overview-nav-bar-para what-para ${learn?'red-nav-cont':'black-nav-cont'}` }>what-learn</p>
+            </a>
+
+            <a href="#" style={{textDecoration:'none'}}
+                onClick={(e) => {
+                  setsummary(false)
+                  setcontent(false)
+                  setlearn(false)
+                  setinstructor(true)
+                  setreview(false)
+                  e.preventDefault();
+                  const element = document.getElementById("course-instructor");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth", block: "center" });
+                    
+                  }
+                }}>
+              <p className={`course-overview-nav-bar-para ins-para ${instructor?'red-nav-cont':'black-nav-cont'}` }>Instructor</p>
+            </a>
+
+            <a href="#" style={{textDecoration:'none'}}
+                onClick={(e) => {
+                  setsummary(false)
+                  setcontent(false)
+                  setlearn(false)
+                  setinstructor(false)
+                  setreview(true)
+                  e.preventDefault();
+                  const element = document.getElementById("course-review");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth", block: "center" });
+                    
+                  }
+                }}>
+              <p className={`course-overview-nav-bar-para rev-para ${review?'red-nav-cont':'black-nav-cont'}` }>Review</p>
+            </a>
+            
+          </div>
+     
+        
+        <div id='course-summary' className='Course-detail-container'>
           <div className='course-detail-title-bar'>
-            <p className='all-box-overview-title'>Course Detail</p>
+            <p className='all-box-overview-title'>Course Detail <span className='course-section-tit-underline'></span></p>
             <p className='all-box-overview-para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quasi totam quia provident! Accusamus fugiat natus quam necessitatibus magni!</p>
           </div>
           <div className='course-detail-main-point-content'>
@@ -360,9 +454,9 @@ const CourseOverview = () => {
             <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Real-World Design Projects</p>
           </div>
         </div>
-        <div className='course-content-container'>
+        <div id='course-content' className='course-content-container'>
           <div className='course-content-title'>
-            <p className='all-box-overview-title'>Course Content</p>
+            <p className='all-box-overview-title'>Course Content<span className='course-section-tit-underline'></span></p>
           </div>
           <div className='course-content-main-list'>
             <div className='course-content-list'>
@@ -419,8 +513,8 @@ const CourseOverview = () => {
             
           </div>
         </div>
-        <div className='what-learn-from-course-container'>
-          <p className='all-box-overview-title'>What you'll learn</p>
+        <div id='what-learn' className='what-learn-from-course-container'>
+          <p className='all-box-overview-title'>What you'll learn<span className='course-section-tit-underline'></span></p>
           <div className='what-learn-content-holder'>
             <div className='what-learn-content'>
               <IoIosCheckmarkCircleOutline className='tick-what-learn'/>
@@ -448,8 +542,8 @@ const CourseOverview = () => {
             </div>
           </div>
         </div>
-        <div className='course-instructor-container'>
-          <p className='all-box-overview-title'>Course Instructor</p>
+        <div id='course-instructor' className='course-instructor-container'>
+          <p className='all-box-overview-title'>Course Instructor<span className='course-section-tit-underline'></span></p>
           <div className='course-instructor-info'>
             <div className='course-intructor-image'></div>
             <div className='course-instructor-main-info'>
@@ -465,16 +559,16 @@ const CourseOverview = () => {
               <p className='all-box-overview-para tutor-intro-para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta reiciendis consequatur, quia illum fugiat aut tempore nemo obcaecati illo omnis necessitatibus possimus iste, dolore eos laboriosam repudiandae rem fuga reprehenderit.</p>
             </div>
             <div className='course-instructor-social-media'>
-              <div className='instructor-media'><FaFacebookF/></div>
-              <div className='instructor-media'><FaXTwitter/></div>
-              <div className='instructor-media'><FaLinkedinIn/></div>
-              <div className='instructor-media'><FaInstagram/></div>
+              <div className='instructor-media med-fb'><FaFacebookF className='icon-for-clr-fb'/></div>
+              <div className='instructor-media  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></div>
+              <div className='instructor-media  med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></div>
+              <div className='instructor-media  med-insta'><FaInstagram className='icon-for-clr-insta'/></div>
             </div>
           </div>
 
         </div>
-        <div className='course-rating'>
-          <p className='all-box-overview-title'>Course Rating</p>
+        <div id='course-rating' className='course-rating'>
+          <p className='all-box-overview-title'>Course Rating<span className='course-section-tit-underline'></span></p>
           <div className='course-rating-container-main'>
             <div className='total-rating-star-average'>
               <p className='total-rating-para'>4.1</p>
@@ -529,8 +623,8 @@ const CourseOverview = () => {
           </div>
 
         </div>
-        <div className='course-review-container'>
-          <p className='all-box-overview-title'>Course Review</p>
+        <div id='course-review' className='course-review-container'>
+          <p className='all-box-overview-title'>Course Review<span className='course-section-tit-underline'></span></p>
           <div className='review-of-the-course'>
             <div className='review-of-the-course-reviewer-img'>
               <div className='reviewer-image'></div>
@@ -571,7 +665,13 @@ const CourseOverview = () => {
             </div>
           </div>
         </div>
-        <button className='review-written-btn' onClick={()=>setreviewwrite(!reviewwrite)}>Write Review</button>
+        <button className='review-written-btn' onClick={()=>setreviewwrite(!reviewwrite)}>
+          <div className='review-written-btn-inner'>
+            Write Review
+            <div className='review-write-btn-design'></div>
+
+          </div>
+        </button>
       </div>
       <div className='course-overview-content-sider'>
         <p className='course-content-sider-title'>This Course Includes :</p>
@@ -612,10 +712,10 @@ const CourseOverview = () => {
         <div className='course-sharing-path'>
           <p className='course-sharing-path-title'>Share Now :</p>
           <div className='course-share-path-icon'>
-              <div className='share-media'><FaFacebookF/></div>
-              <div className='share-media'><FaXTwitter/></div>
-              <div className='share-media'><FaLinkedinIn/></div>
-              <div className='share-media'><FaInstagram/></div>
+              <div className='instructor-media med-fb'><FaFacebookF className='icon-for-clr-fb'/></div>
+              <div className='instructor-media  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></div>
+              <div className='instructor-media  med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></div>
+              <div className='instructor-media  med-insta'><FaInstagram className='icon-for-clr-insta'/></div>
 
           </div>
         </div>

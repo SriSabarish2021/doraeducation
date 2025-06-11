@@ -46,16 +46,21 @@
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 15px;
 }
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
   height: 500px;
   width: 100%;
-  background-color: white;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
   gap: 30px;
   padding: 50px;
   justify-content: flex-start;
@@ -259,15 +264,6 @@
   color: rgb(44, 44, 44);
   cursor: pointer;
 }
-.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container::after {
-  height: 400px;
-  width: 400px;
-  content: "";
-  background-color: #3bf2ff;
-  position: absolute;
-  z-index: -1;
-  left: 0px;
-}
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container::-webkit-scrollbar {
   width: 3px;
   background-color: rgba(133, 133, 133, 0.986);
@@ -277,6 +273,28 @@
   width: 3px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.676);
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container::after {
+  height: 400px;
+  width: 400px;
+  content: "";
+  background-color: #c7ffed;
+  position: absolute;
+  z-index: -1;
+  left: -200px;
+  top: -200px;
+  transform: rotate(45deg);
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container::before {
+  height: 400px;
+  width: 400px;
+  content: "";
+  background-color: rgba(194, 230, 255, 0.4274509804);
+  position: absolute;
+  z-index: -1;
+  right: -200px;
+  bottom: -200px;
+  transform: rotate(45deg);
 }
 .course-overview-main-conatainer .move {
   transform: translateY(0px);
@@ -885,6 +903,64 @@
   align-items: flex-start;
   gap: 40px;
 }
+.course-overview-main-conatainer .course-overview-content-div .instructor-media {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid rgb(218, 218, 218);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(49, 49, 49);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-fb {
+  color: #4267B2;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-twitter {
+  color: #000000;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-linkedin {
+  color: #0a66c2;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-insta {
+  transition-duration: 0.4s;
+  color: #C13584;
+}
+.course-overview-main-conatainer .course-overview-content-div .med-fb:hover {
+  transition-duration: 0.4s;
+  background-color: #4267B2;
+}
+.course-overview-main-conatainer .course-overview-content-div .med-fb:hover .icon-for-clr-fb {
+  color: rgb(244, 244, 244);
+}
+.course-overview-main-conatainer .course-overview-content-div .med-insta:hover {
+  transition-duration: 0.4s;
+  background: #d4b135;
+  background: linear-gradient(152deg, rgb(212, 177, 53) 0%, rgb(217, 67, 130) 47%, rgb(123, 79, 209) 100%);
+}
+.course-overview-main-conatainer .course-overview-content-div .med-insta:hover .icon-for-clr-insta {
+  color: #fafafa;
+}
+.course-overview-main-conatainer .course-overview-content-div .med-twitt:hover {
+  transition-duration: 0.4s;
+  background-color: #000000;
+}
+.course-overview-main-conatainer .course-overview-content-div .med-twitt:hover .icon-for-clr-twitter {
+  color: #ffffff;
+}
+.course-overview-main-conatainer .course-overview-content-div .med-linkedin:hover {
+  transition-duration: 0.4s;
+  background-color: #0a66c2;
+}
+.course-overview-main-conatainer .course-overview-content-div .med-linkedin:hover .icon-for-clr-linkedin {
+  color: #ffffff;
+}
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main {
   height: 100%;
   width: 100%;
@@ -902,15 +978,44 @@
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn {
   height: 40px;
   width: 200px;
-  background-color: rgb(255, 74, 74);
+  background-color: transparent;
   border: none;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 74, 74);
   border-radius: 5px;
   font-size: 14px;
   font-family: "Roboto";
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
-  color: white;
+  transition-duration: 0.3s;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner .review-write-btn-design {
+  height: 40px;
+  width: 200px;
+  background-color: rgb(255, 203, 30);
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 5px;
+  z-index: -1;
+  transition-duration: 0.3s;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner:hover .review-write-btn-design {
+  bottom: 0px;
+  right: 0px;
+  transition-duration: 0.3s;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-title {
   font-size: 50px;
@@ -919,6 +1024,18 @@
   color: rgb(49, 49, 49);
   font-size: 28px;
   font-weight: 800;
+  position: relative;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-title .course-section-tit-underline {
+  position: absolute;
+  height: 13px;
+  width: 100px;
+  left: 40px;
+  bottom: -10px;
+  background-image: url("./WhyChoose/underline-why-choose.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-para {
   width: 100%;
@@ -959,8 +1076,20 @@
   font-size: 14px;
   font-family: "Noto Sans";
   font-weight: 600;
-  color: rgb(24, 24, 24);
   letter-spacing: 0.5px;
+  transition-duration: 0.3s;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar .course-overview-nav-bar-para:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar .red-nav-cont {
+  color: rgb(255, 89, 100);
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar .black-nav-cont {
+  color: rgb(24, 24, 24);
+  transition-duration: 0.4s;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container {
   height: auto;
@@ -1297,17 +1426,6 @@
   justify-content: flex-start;
   gap: 25px;
 }
-.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-social-media .instructor-media {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  border: 1px solid rgb(218, 218, 218);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: rgb(49, 49, 49);
-}
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating {
   height: auto;
   width: 100%;
@@ -1427,6 +1545,7 @@
   position: absolute;
   height: 100%;
   width: 40%;
+  border-radius: 10px;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .line-rating-bg .line-inner-for-five {
   background-color: #3bffa0;
@@ -1648,7 +1767,7 @@
   font-family: "Inter";
   font-weight: 700;
   letter-spacing: 1px;
-  color: rgb(108, 108, 108);
+  color: rgb(114, 114, 114);
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon {
   height: auto;
@@ -1659,19 +1778,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 25px;
-  padding-left: 10px;
-}
-.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon .share-media {
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  border: 1px solid rgb(218, 218, 218);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: rgb(54, 54, 54);
+  padding-left: 15px;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course {
   height: 45px;
