@@ -27,6 +27,8 @@ import { IoDocumentText } from "react-icons/io5";
 import { MdOutlineDone } from "react-icons/md";
 import { FaMale } from "react-icons/fa";
 import { VscEyeClosed } from "react-icons/vsc";
+import { FaRegStar } from "react-icons/fa";
+import { IoRemoveCircleOutline } from "react-icons/io5";
 
 const CourseOverview = () => {
 
@@ -34,6 +36,7 @@ const CourseOverview = () => {
 
   const [reviewwrite,setreviewwrite]=useState(false)
 
+  const [starnum,setstarnum]=useState(0)
   const [reviewername,setreviewername]=useState('')
   const [revieweremail,setrevieweremail]=useState('')
   const [reviewcomment,setreviewcomment]=useState('')
@@ -43,7 +46,197 @@ const CourseOverview = () => {
     setrevieweremail('')
     setreviewcomment('')
     setreviewwrite(false)
+    setstarnum(0)
   }
+
+  const starsvg=document.querySelectorAll('.star-svg')
+
+   const colorfixfive=()=>{
+          setstarnum(5)
+          starsvg[0].classList.add('hexa')
+          starsvg[1].classList.add('hexa')
+          starsvg[2].classList.add('hexa')
+          starsvg[3].classList.add('hexa')
+          starsvg[4].classList.add('hexa')
+
+    }
+    const colorfixfour=()=>{
+      setstarnum(4)
+
+          starsvg[0].classList.add('hexa')
+          starsvg[1].classList.add('hexa')
+          starsvg[2].classList.add('hexa')
+          starsvg[3].classList.add('hexa')
+          starsvg[4].classList.remove('hexa')
+
+
+    }
+    const colorfixthree=()=>{
+      setstarnum(3)
+
+          starsvg[0].classList.add('hexa')
+          starsvg[1].classList.add('hexa')
+          starsvg[2].classList.add('hexa')
+          starsvg[3].classList.remove('hexa')
+          starsvg[4].classList.remove('hexa')
+
+
+    }
+    const colorfixtwo=()=>{
+      setstarnum(2)
+
+          starsvg[0].classList.add('hexa')
+          starsvg[1].classList.add('hexa')
+          starsvg[2].classList.remove('hexa')
+          starsvg[3].classList.remove('hexa')
+          starsvg[4].classList.remove('hexa')
+
+
+    }
+    const colorfixone=()=>{
+      setstarnum(1)
+
+          starsvg[0].classList.add('hexa')
+          starsvg[1].classList.remove('hexa')
+          starsvg[2].classList.remove('hexa')
+          starsvg[3].classList.remove('hexa')
+          starsvg[4].classList.remove('hexa')
+
+
+    }
+
+      const colorchangeforfive=()=>{
+      
+      
+      starsvg[0].style.fill=`rgb(255, 157, 0)`
+      starsvg[0].style.transition='fill 0.6s ease 0.1s'
+      starsvg[1].style.fill=`rgb(255, 157, 0)`
+      starsvg[1].style.transition='fill 0.6s ease 0.2s'
+      starsvg[2].style.fill=`rgb(255, 157, 0)`
+      starsvg[2].style.transition='fill 0.6s ease 0.3s'
+      starsvg[3].style.fill=`rgb(255, 157, 0)`
+      starsvg[3].style.transition='fill 0.6s ease 0.4s'
+      starsvg[4].style.fill=`rgba(255, 178, 55, 0.69)`
+      starsvg[4].style.stroke=`rgba(255, 178, 55, 0.69)`
+      starsvg[4].style.transition='fill 0.6s ease'
+      
+    }
+    const colornotchangeforfive=()=>{
+      starsvg[0].style.fill=``
+      starsvg[0].style.transition='fill 0.6s ease 0.4s'
+      starsvg[1].style.fill=``
+      starsvg[1].style.transition='fill 0.6s ease 0.3s'
+      starsvg[2].style.fill=``
+      starsvg[2].style.transition='fill 0.6s ease 0.2s'
+      starsvg[3].style.fill=``
+      starsvg[3].style.transition='fill 0.6s ease 0.1s'
+      starsvg[4].style.fill=``
+      starsvg[4].style.stroke=``
+
+      starsvg[4].style.transition='fill 0.6s ease'
+
+    }
+
+   const colorchangeforfour=()=>{
+
+      starsvg[0].style.fill=`rgb(255, 157, 0)`
+      starsvg[0].style.transition='fill 0.6s ease 0.1s'
+      starsvg[1].style.fill=`rgb(255, 157, 0)`
+      starsvg[1].style.transition='fill 0.6s ease 0.2s'
+      starsvg[2].style.fill=`rgb(255, 157, 0)`
+      starsvg[2].style.transition='fill 0.6s ease 0.3s'
+      
+      starsvg[3].style.fill=`rgba(255, 178, 55, 0.69)`
+      starsvg[3].style.stroke=`rgba(255, 178, 55, 0.69)`
+      starsvg[3].style.transition='fill 0.6s ease'
+      
+    }
+    const colornotchangeforfour=()=>{
+      starsvg[0].style.fill=``
+      starsvg[0].style.transition='fill 0.6s ease 0.3s'
+      starsvg[1].style.fill=``
+      starsvg[1].style.transition='fill 0.6s ease 0.2s'
+      starsvg[2].style.fill=``
+      starsvg[2].style.transition='fill 0.6s ease 0.1s'
+
+      starsvg[3].style.fill=``
+      starsvg[3].style.stroke=``
+
+      starsvg[3].style.transition='fill 0.6s ease'
+
+    }
+    const colorchangeforthree=()=>{
+     
+      starsvg[0].style.fill=`rgb(255, 157, 0)`
+      starsvg[0].style.transition='fill 0.6s ease 0.1s'
+      starsvg[1].style.fill=`rgb(255, 157, 0)`
+      starsvg[1].style.transition='fill 0.6s ease 0.2s'
+      starsvg[2].style.fill=`rgba(255, 178, 55, 0.69)`
+      starsvg[2].style.stroke=`rgba(255, 178, 55, 0.69)`
+      starsvg[2].style.transition='fill 0.6s ease'
+      
+      
+    }
+    const colornotchangeforthree=()=>{
+      starsvg[0].style.fill=``
+      starsvg[0].style.transition='fill 0.6s ease 0.2s'
+      starsvg[1].style.fill=``
+      starsvg[1].style.transition='fill 0.6s ease 0.1s'
+      starsvg[2].style.fill=``
+      starsvg[2].style.stroke=``
+      starsvg[2].style.transition='fill 0.6s ease'
+
+    }
+    const colorchangefortwo=()=>{
+      
+      
+      starsvg[0].style.fill=`rgb(255, 157, 0)`
+      starsvg[0].style.transition='fill 0.6s ease 0.1s'
+      starsvg[1].style.fill=`rgba(255, 178, 55, 0.69)`
+      starsvg[1].style.stroke=`rgba(255, 178, 55, 0.69)`
+      starsvg[1].style.transition='fill 0.6s ease'
+      
+    
+    }
+    const colornotchangefortwo=()=>{
+      starsvg[0].style.fill=``
+      starsvg[0].style.transition='fill 0.6s ease 0.1s'
+      starsvg[1].style.fill=``
+      starsvg[1].style.stroke=``
+      starsvg[1].style.transition='fill 0.6s ease'
+
+    }
+    const colorchangeforone=()=>{
+     
+      
+      starsvg[0].style.fill=`rgba(255, 178, 55, 0.69)`
+      starsvg[0].style.stroke=`rgba(255, 178, 55, 0.69)`
+
+      starsvg[0].style.transition='fill 0.3s ease'
+      
+      
+    }
+    const colornotchangeforone=()=>{
+
+      starsvg[0].style.fill=``
+      starsvg[0].style.stroke=``
+
+      starsvg[0].style.transition='fill 0.3s ease'
+      
+
+    }
+
+    
+    const removelike=()=>{
+        setstarnum(0)
+
+          starsvg[0].classList.remove('hexa')
+          starsvg[1].classList.remove('hexa')
+          starsvg[2].classList.remove('hexa')
+          starsvg[3].classList.remove('hexa')
+          starsvg[4].classList.remove('hexa')
+    }
+
 
   return (
     <div className='course-overview-main-conatainer'>
@@ -441,7 +634,31 @@ const CourseOverview = () => {
           </div>
           <div className='rating-bar-in-review'>
             <p className='all-review-input-title'>Rating</p>
-            <div className='star-for-review'><FaStar className='star-review'/><FaStar className='star-review'/><FaStar className='star-review'/><FaStar className='star-review'/><FaStar className='star-review'/></div>
+            <div className='all-star-inreview'>
+              <div onMouseOver={()=>colorchangeforone()} onMouseOut={()=>colornotchangeforone()}  onClick={()=>colorfixone()} className='star-for-review'><svg className='star-svg one-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
+                </svg>
+              </div>
+                <div onMouseOver={()=>colorchangefortwo()} onMouseOut={()=>colornotchangefortwo()}  onClick={()=>colorfixtwo()} className='star-for-review'><svg className='star-svg two-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
+                </svg>
+              </div>
+                <div onMouseOver={()=>colorchangeforthree()} onMouseOut={()=>colornotchangeforthree()}  onClick={()=>colorfixthree()} className='star-for-review'><svg className='star-svg three-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
+                </svg>
+              </div>
+                <div onMouseOver={()=>colorchangeforfour()} onMouseOut={()=>colornotchangeforfour()}  onClick={()=>colorfixfour()} className='star-for-review'><svg className='star-svg four-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
+                </svg>
+              </div>
+                <div onMouseOver={()=>colorchangeforfive()} onMouseOut={()=>colornotchangeforfive()}  onClick={()=>colorfixfive()} className='star-for-review'><svg className='star-svg five-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
+                </svg>
+              </div>
+
+              <p className='remove-like' onClick={()=>removelike()}><IoRemoveCircleOutline/></p>
+            
+            </div>
           </div>
            <div className="review-writing-name-by-user">
             <p className='all-review-input-title'>Name (display publicly)</p>

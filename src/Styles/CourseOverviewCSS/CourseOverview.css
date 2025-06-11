@@ -61,6 +61,8 @@
   justify-content: flex-start;
   overflow: auto;
   position: relative;
+  z-index: 1;
+  position: relative;
 }
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-close-btn {
   position: absolute;
@@ -103,7 +105,7 @@
   align-items: center;
   gap: 15px;
 }
-.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .star-for-review {
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview {
   height: auto;
   width: 100%;
   display: flex;
@@ -111,10 +113,37 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
-.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .star-for-review .star-review {
-  font-size: 22px;
-  color: rgb(255, 204, 0);
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .remove-like {
+  font-size: 18px;
+  position: absolute;
+  right: 40px;
+  color: rgb(88, 88, 88);
+  transform: scale(0);
+  opacity: 0;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .star-for-review {
+  height: auto;
+  width: auto;
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .star-for-review .star-svg {
+  height: 25px;
+  width: 25px;
+  fill: transparent;
+  stroke: rgb(255, 157, 0);
+  stroke-width: 1.8px;
+  transition-duration: 0.3s;
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .star-for-review .hexa {
+  fill: rgb(255, 157, 0);
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview:hover .remove-like {
+  transform: scale(1);
+  opacity: 1;
+  transition-duration: 0.3s;
 }
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-name-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-email-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .privacy-policy-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-review-box {
   height: auto;
@@ -229,6 +258,15 @@
   border: 1px solid rgb(123, 123, 123);
   color: rgb(44, 44, 44);
   cursor: pointer;
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container::after {
+  height: 400px;
+  width: 400px;
+  content: "";
+  background-color: #3bf2ff;
+  position: absolute;
+  z-index: -1;
+  left: 0px;
 }
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container::-webkit-scrollbar {
   width: 3px;
