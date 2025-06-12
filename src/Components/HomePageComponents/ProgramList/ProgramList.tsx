@@ -74,11 +74,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -87,115 +93,7 @@ const ProgramList = () => {
                 
               </div>
             </div>
-          </div>
-         
-       
-          <div className='program-item-one'>
-            <div className='program-image-bar'></div>
-            <div className='program-content-bar'>
-              <div className='program-info'>
-                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
-                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
-                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
-              </div>
-              <div className='level-of-difficulty'>
-                <p>Beginner</p>
-              </div>
-              <div className='prog-con-container'>
-                <p className='program-title'>Stock Markting Ideas</p>
-                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
-              </div>
-            
-            </div>
-            <div className='program-star-bar'>
-              <div className='star-div-for-program'>
-                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
-                <p className='star-span-para'>(5.0/3)</p>
-              </div>
-              <p className='amt-para-in-prog-list'>$50</p>
-            </div>
-             <div className='hovering-content-program-items'>
-              <div className='hovering-content-container'>
-                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
-                <p className='hover-title'>Stock Marketing Analysis</p>
-                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
-                <p className="hover-amount">$50</p>
-                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
-                <div className='prog-info-hovering'>
-                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
-                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
-                </div>
-              </div>
-              <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
-                <div className='hover-add-favorite-btn'>
-                  <FaRegHeart/>
-                  <div className='hover-mess-box'><p>Add Like List</p>
-                  <span className='arrow-in-hover-mess'></span></div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        
-        
-          <div className='program-item-one'>
-            <div className='program-image-bar'></div>
-            <div className='program-content-bar'>
-              <div className='program-info'>
-                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
-                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
-                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
-              </div>
-              <div className='level-of-difficulty'>
-                <p>Beginner</p>
-              </div>
-              <div className='prog-con-container'>
-                <p className='program-title'>Stock Markting Ideas</p>
-                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
-              </div>
-            
-            </div>
-            <div className='program-star-bar'>
-              <div className='star-div-for-program'>
-                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
-                <p className='star-span-para'>(5.0/3)</p>
-              </div>
-              <p className='amt-para-in-prog-list'>$50</p>
-            </div>
-             <div className='hovering-content-program-items'>
-              <div className='hovering-content-container'>
-                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
-                <p className='hover-title'>Stock Marketing Analysis</p>
-                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
-                <p className="hover-amount">$50</p>
-                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
-                <div className='prog-info-hovering'>
-                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
-                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
-                </div>
-              </div>
-              <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
-                <div className='hover-add-favorite-btn'>
-                  <FaRegHeart/>
-                  <div className='hover-mess-box'><p>Add Like List</p>
-                  <span className='arrow-in-hover-mess'></span></div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        
-       
+          </div>  
           <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
@@ -233,11 +131,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -247,8 +151,6 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-       
-       
           <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
@@ -286,11 +188,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -300,8 +208,6 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-      
-        
           <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
@@ -326,7 +232,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -339,11 +245,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -353,9 +265,7 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-        
-
-         <div className='program-item-one'>
+          <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
               <div className='program-info'>
@@ -379,7 +289,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -392,11 +302,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -406,9 +322,7 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-
-
-           <div className='program-item-one'>
+          <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
               <div className='program-info'>
@@ -432,7 +346,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -445,11 +359,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -459,9 +379,7 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-
-
-           <div className='program-item-one'>
+          <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
               <div className='program-info'>
@@ -485,7 +403,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -498,11 +416,131 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -579,115 +617,7 @@ const ProgramList = () => {
                 
               </div>
             </div>
-          </div>
-         
-       
-          <div className='program-item-one'>
-            <div className='program-image-bar'></div>
-            <div className='program-content-bar'>
-              <div className='program-info'>
-                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
-                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
-                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
-              </div>
-              <div className='level-of-difficulty'>
-                <p>Beginner</p>
-              </div>
-              <div className='prog-con-container'>
-                <p className='program-title'>Stock Markting Ideas</p>
-                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
-              </div>
-            
-            </div>
-            <div className='program-star-bar'>
-              <div className='star-div-for-program'>
-                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
-                <p className='star-span-para'>(5.0/3)</p>
-              </div>
-              <p className='amt-para-in-prog-list'>$50</p>
-            </div>
-             <div className='hovering-content-program-items'>
-              <div className='hovering-content-container'>
-                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
-                <p className='hover-title'>Stock Marketing Analysis</p>
-                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
-                <p className="hover-amount">$50</p>
-                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
-                <div className='prog-info-hovering'>
-                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
-                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
-                </div>
-              </div>
-              <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
-                <div className='hover-add-favorite-btn'>
-                  <FaRegHeart/>
-                  <div className='hover-mess-box'><p>Add Like List</p>
-                  <span className='arrow-in-hover-mess'></span></div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        
-        
-          <div className='program-item-one'>
-            <div className='program-image-bar'></div>
-            <div className='program-content-bar'>
-              <div className='program-info'>
-                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
-                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
-                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
-              </div>
-              <div className='level-of-difficulty'>
-                <p>Beginner</p>
-              </div>
-              <div className='prog-con-container'>
-                <p className='program-title'>Stock Markting Ideas</p>
-                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
-              </div>
-            
-            </div>
-            <div className='program-star-bar'>
-              <div className='star-div-for-program'>
-                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
-                <p className='star-span-para'>(5.0/3)</p>
-              </div>
-              <p className='amt-para-in-prog-list'>$50</p>
-            </div>
-             <div className='hovering-content-program-items'>
-              <div className='hovering-content-container'>
-                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
-                <p className='hover-title'>Stock Marketing Analysis</p>
-                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
-                <p className="hover-amount">$50</p>
-                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
-                <div className='prog-info-hovering'>
-                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
-                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
-                </div>
-              </div>
-              <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
-                <div className='hover-add-favorite-btn'>
-                  <FaRegHeart/>
-                  <div className='hover-mess-box'><p>Add Like List</p>
-                  <span className='arrow-in-hover-mess'></span></div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        
-       
+          </div>  
           <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
@@ -725,11 +655,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -739,8 +675,6 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-       
-       
           <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
@@ -778,11 +712,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -792,8 +732,6 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-      
-        
           <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
@@ -818,7 +756,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -831,11 +769,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -845,9 +789,7 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-        
-
-         <div className='program-item-one'>
+          <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
               <div className='program-info'>
@@ -871,7 +813,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -884,11 +826,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -898,9 +846,7 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-
-
-           <div className='program-item-one'>
+          <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
               <div className='program-info'>
@@ -924,7 +870,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -937,11 +883,17 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>
@@ -951,9 +903,7 @@ const ProgramList = () => {
               </div>
             </div>
           </div>
-
-
-           <div className='program-item-one'>
+          <div className='program-item-one'>
             <div className='program-image-bar'></div>
             <div className='program-content-bar'>
               <div className='program-info'>
@@ -977,7 +927,7 @@ const ProgramList = () => {
               </div>
               <p className='amt-para-in-prog-list'>$50</p>
             </div>
-          <div className='hovering-content-program-items'>
+            <div className='hovering-content-program-items'>
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
                 <p className='hover-title'>Stock Marketing Analysis</p>
@@ -990,11 +940,131 @@ const ProgramList = () => {
                 </div>
               </div>
               <div className='hovering-btn-container'>
-                <button className='hover-enroll-btn'>
-                  Enroll Now
-                  <div className='prog-enroll-design-one'></div>
-                   <div className='prog-enroll-design-two'></div>
-                </button>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
+                <div className='hover-add-favorite-btn'>
+                  <FaRegHeart/>
+                  <div className='hover-mess-box'><p>Add Like List</p>
+                  <span className='arrow-in-hover-mess'></span></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div className='program-item-one'>
+            <div className='program-image-bar'></div>
+            <div className='program-content-bar'>
+              <div className='program-info'>
+                <p className='program-info-para-one'><PiClock className='icon'/>20 Hours</p>
+                <p className='program-info-para-two'><PiReadCvLogo className='icon'/>10 Lesson</p>
+                <p className='program-info-para-three'><PiStudent  className='icon'/>6 Students</p>
+              </div>
+              <div className='level-of-difficulty'>
+                <p>Beginner</p>
+              </div>
+              <div className='prog-con-container'>
+                <p className='program-title'>Stock Markting Ideas</p>
+                <p className='program-sub-title'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, reiciendis.</p>
+              </div>
+            
+            </div>
+            <div className='program-star-bar'>
+              <div className='star-div-for-program'>
+                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
+                <p className='star-span-para'>(5.0/3)</p>
+              </div>
+              <p className='amt-para-in-prog-list'>$50</p>
+            </div>
+            <div className='hovering-content-program-items'>
+              <div className='hovering-content-container'>
+                <div className='difficulty-level-hover-bar'><p>Beginner</p></div>
+                <p className='hover-title'>Stock Marketing Analysis</p>
+                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>0.5/3 Ratings</span></p>
+                <p className="hover-amount">$50</p>
+                <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, magni unde. Saepe nulla vero ullam quo. Qui accusantium non recusandae?</p>
+                <div className='prog-info-hovering'>
+                  <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>20 Hours</p>
+                  <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>10 Lesson</p>
+                </div>
+              </div>
+              <div className='hovering-btn-container'>
+                <div className='hover-enroll-btn'>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                    <div className='hover-enroll-btn-insider'>
+                      Enroll Now
+                      <div className='prog-enroll-design-one'></div>
+                      <div className='prog-enroll-design-two'></div>
+                    </div>
+                  </Link>
+                </div>
+                
+                
                 <div className='hover-add-favorite-btn'>
                   <FaRegHeart/>
                   <div className='hover-mess-box'><p>Add Like List</p>

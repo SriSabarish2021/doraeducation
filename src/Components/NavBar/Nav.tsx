@@ -9,7 +9,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { Image } from '@imagekit/react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -41,39 +41,63 @@ const Nav = () => {
         </div>
         <div className='nav-items'>
           <div className='nav-item-insider'>
-            <Link style={{textDecoration:'none'}} to={'/'}>
-             <p className='p-for-nav-item active-in-nav'>Home</p>
-            </Link>
-            <p className='line-in-hover-nav active-line-in-nav'></p>
+            <NavLink style={{textDecoration:'none'}} to={'/'}>
+            {({isActive})=>(
+              <>
+                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>Home</p>
+                <p className={`line-in-hover-nav  ${isActive?'active-line-in-nav':''}`}></p>
+              </>
+
+            )}
+            </NavLink>
           </div>
           <div className='nav-item-insider'>
-            <Link style={{textDecoration:'none'}} to={'About-Mindspire-Institute'}>
-              <p className='p-for-nav-item'>About</p>
-            </Link>  
-            <p className='line-in-hover-nav'></p>
+            <NavLink style={{textDecoration:'none'}} to={'About-Mindspire-Institute'}>
+              {({isActive})=>(
+              <>
+                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>About</p>
+                <p className={`line-in-hover-nav  ${isActive?'active-line-in-nav':''}`}></p>
+              </>
+
+            )}
+            </NavLink>  
           </div>
           <div className='nav-item-insider'>
             
+           <NavLink style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"}>
+              {({isActive})=>(
+              <>
+                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
+                <p className={`line-in-hover-nav  ${isActive?'active-line-in-nav':''}`}></p>
+              </>
+
+            )}
+            </NavLink> 
            
-            <Link style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"}>
-               <p className='p-for-nav-item'>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
-            </Link>  
-            <p className='line-in-hover-nav'> </p>
           </div>
           <div className='nav-item-insider'>
+            <NavLink style={{textDecoration:'none'}} to={'Contact-with-Mindspire-Institute'}>
+              {({isActive})=>(
+              <>
+                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>Contact</p>
+                <p className={`line-in-hover-nav  ${isActive?'active-line-in-nav':''}`}></p>
+              </>
+
+            )}
+            </NavLink> 
             
-            <Link style={{textDecoration:'none'}} to={"Contact-with-Mindspire-Institute"}>
-                <p className='p-for-nav-item'>Contact</p>
-            </Link>  
-            <p className='line-in-hover-nav'></p>
           </div>
          
           <div className='nav-item-insider'>
-             <Link style={{textDecoration:'none'}} to={"Mindspire-Institute-Student-Review-Page"}>
-                <p className='p-for-nav-item'>Review</p>
-            </Link>  
-           
-            <p className='line-in-hover-nav'></p>
+            <NavLink style={{textDecoration:'none'}} to={'Mindspire-Institute-Student-Review-Page'}>
+              {({isActive})=>(
+              <>
+                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>Review</p>
+                <p className={`line-in-hover-nav  ${isActive?'active-line-in-nav':''}`}></p>
+              </>
+
+            )}
+            </NavLink> 
           </div>
           
         </div>

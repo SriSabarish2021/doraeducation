@@ -11,9 +11,16 @@ import StudentPage from "../HomePageComponents/StudentPage/StudentPage"
 import Testimonial from "../HomePageComponents/Testimonial/Testimonial"
 import Topcourses from "../HomePageComponents/TopCourses/Topcourses"
 import WhyChoose from "../HomePageComponents/WhyChoose/WhyChoose"
+import { useEffect } from 'react'
 
 
 const HomePage = () => {
+   useEffect(() => {
+      
+      window.scrollTo(0,0)
+    
+      
+    }, [])
   return (
     <>
       <HomeMain/>

@@ -34,6 +34,15 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 const CourseOverview = () => {
 
+
+  useEffect(() => {
+    
+    window.scrollTo(0,0)
+  
+    
+  }, [])
+  
+
   const [showcont,setshowcont]=useState(false)
 
   const [reviewwrite,setreviewwrite]=useState(false)

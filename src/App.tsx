@@ -26,6 +26,7 @@ function App() {
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage/>}/>
             <Route path="mindspire-course" element={<CourseOverview/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview/>}/>
           </Route>
         </Routes>
       </div>
