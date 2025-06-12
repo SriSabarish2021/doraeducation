@@ -3,7 +3,7 @@ import CourseListCoursePage from '../CoursePageComponents/CourseListCoursePage'
 import TopShortCourse from "../CoursePageComponents/TopShortCourse"
 import { useEffect } from 'react'
 
-const CoursePage = () => {
+const CoursePage = ({course,LikeCourse}) => {
    useEffect(() => {
       
       window.scrollTo(0,0)
@@ -13,7 +13,7 @@ const CoursePage = () => {
   return (
     <div className="course-page-main-container">
       <TopShortCourse/>
-      <CourseListCoursePage/>
+      <CourseListCoursePage course={course} LikeCourse={LikeCourse}/>
     </div>
   )
 }

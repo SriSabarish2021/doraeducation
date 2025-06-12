@@ -31,7 +31,7 @@ const Topcourses = () => {
 
                 </div>
                 <p className='top-course-title-para'>Top Category
-                    <div className='top-course-underline'></div>
+                    <span className='top-course-underline'></span>
                 </p>
                 
             </div>

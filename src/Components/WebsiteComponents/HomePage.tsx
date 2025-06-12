@@ -14,7 +14,7 @@ import WhyChoose from "../HomePageComponents/WhyChoose/WhyChoose"
 import { useEffect } from 'react'
 
 
-const HomePage = () => {
+const HomePage = ({course,LikeCourse}) => {
    useEffect(() => {
       
       window.scrollTo(0,0)
@@ -30,7 +30,7 @@ const HomePage = () => {
       <AboutUs/>
       <SideBy/>
       <WhyChoose/>
-      <ProgramList/>
+      <ProgramList course={course} LikeCourse={LikeCourse}/>
       <ProgAdvantage/>
       <StudentJoin/>
       <Process/>

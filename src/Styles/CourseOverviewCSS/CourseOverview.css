@@ -391,7 +391,6 @@
 .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-img-for-course-overview {
   height: 50px;
   width: 50px;
-  background-image: url("./StaffPage/Top-staff-Four.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1295,15 +1294,18 @@
   gap: 10px;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .tick-what-learn {
+  flex: 1 1 5%;
   font-size: 26px;
   color: rgb(255, 68, 81);
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .para-what-learn {
+  flex: 1 1 95%;
   font-size: 16px;
   font-weight: 500;
   font-family: "Source Sans 3";
   color: rgb(61, 61, 61);
   line-height: 28px;
+  text-align: justify;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container {
   height: auto;
@@ -1335,7 +1337,6 @@
   width: 220px;
   border-radius: 100%;
   background-color: #ff523b;
-  background-image: url("./StaffPage/Top-staff-one.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

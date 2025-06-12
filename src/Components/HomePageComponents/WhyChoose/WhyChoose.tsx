@@ -74,7 +74,7 @@ const WhyChoose = () => {
             <div className='why-choose-main-title'>
                 <p className='why-choose'>Why Mindspire ?</p>
                 <div className='Why-choose-title'>
-                    <p className='Why-choose-title-one'>Not sure <span className='why-choose-tit-span'>where to begin?<div className='design-for-why-choose-tit-span'></div></span> Start</p>
+                    <p className='Why-choose-title-one'>Not sure <span className='why-choose-tit-span'>where to begin?<span className='design-for-why-choose-tit-span'></span></span> Start</p>
                     <p className='Why-choose-title-two'> with Mindspire </p>
                 </div>
                 <p className='para-why-choose'>Choose Mindspire — where expert guidance and personalized learning come together. We nurture your strengths and inspire growth at every step. Join us to unlock your potential and build a future full of opportunities.</p>

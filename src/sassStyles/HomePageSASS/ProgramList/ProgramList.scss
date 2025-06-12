@@ -359,12 +359,17 @@
                         height: 40px;
                         width: 40px;
                         background-color: white;
-                        color: red;
+                        color: main-color.$main-color-for-app;
                         @include Row-center.row-center;
                         font-size: 18px;
                         border-radius: 100%;
                         position: relative;
                         cursor: pointer;
+                        .heart-transition{
+                            transition-duration: 0.4s;
+                            transform: rotate3d(0,0,0,0deg);
+                        }
+                        
                         .hover-mess-box{
                             position: absolute;
                             height: 20px;
@@ -395,6 +400,10 @@
                         }
 
                     }
+                    .hover-add-favorite-btn:hover .heart-transition{
+                            transition-duration: 0.5s;
+                            transform: rotate3d(2,6,3,360deg);
+                        }
                     .hover-add-favorite-btn:hover .hover-mess-box{
                         opacity: 1;
                         transform:translateY(0px) scale(1);
@@ -407,9 +416,8 @@
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(50%);
-                background-color: aqua;
+                background-color: rgba(29, 111, 132, 0.936);
                 border-radius: 10px;
-                background-image: url('https://livi.wpengine.com/wp-content/uploads/2017/11/course-image-02.jpg');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: calc(100%);

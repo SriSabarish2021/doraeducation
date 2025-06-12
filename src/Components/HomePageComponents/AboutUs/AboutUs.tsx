@@ -117,7 +117,7 @@ const AboutUs = () => {
           <div className='about-us-main-tit-div'>
             <p className='about-us-main-tit'>Shaping Futures with</p>
             <p className='about-us-main-tit-two'><span className='span-tit-in-about-us'>Quality</span> <span className='about-us-underline-parent'>Education
-              <div className='about-us-underline'></div></span></p>
+              <span className='about-us-underline'></span></span></p>
           </div>
           
         </div>

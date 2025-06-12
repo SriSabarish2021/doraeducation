@@ -387,7 +387,9 @@
                     .tutor-img-for-course-overview{
                         height: 50px;
                         width: 50px;
-                        @include bg-img-center.bg-img-center('./StaffPage/Top-staff-Four.avif');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
                         border-radius: 100%;
                         border: 3px solid white;
                     }
@@ -1226,15 +1228,18 @@
                     align-items: flex-start;
                     gap: 10px;
                     .tick-what-learn{
+                        flex: 1 1 calc(5%);
                         font-size: 26px;
                         color: main-color.$main-color-for-app;
                     }
                     .para-what-learn{
+                         flex: 1 1 calc(95%);
                             font-size: 16px;
                             font-weight: 500;
                             font-family: "Source Sans 3";
                             color: rgb(61, 61, 61);
                             line-height: 28px;
+                            text-align: justify;
 
                     }
                 }
@@ -1263,7 +1268,10 @@
                         width: 220px;
                         border-radius: 100%;
                         background-color: #ff523b;
-                        @include bg-img-center.bg-img-center('./StaffPage/Top-staff-one.avif');
+                        
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
                     }
                     .course-instructor-main-info{
                         height: auto;
