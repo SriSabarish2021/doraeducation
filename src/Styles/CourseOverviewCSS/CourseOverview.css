@@ -945,6 +945,7 @@
   background: linear-gradient(152deg, rgb(212, 177, 53) 0%, rgb(217, 67, 130) 47%, rgb(123, 79, 209) 100%);
 }
 .course-overview-main-conatainer .course-overview-content-div .med-insta:hover .icon-for-clr-insta {
+  transition-duration: 0.4s;
   color: #fafafa;
 }
 .course-overview-main-conatainer .course-overview-content-div .med-twitt:hover {

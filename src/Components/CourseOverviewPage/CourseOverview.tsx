@@ -1,5 +1,6 @@
 import '../../Styles/CourseOverviewCSS/CourseOverview.css'
 import { FaStar } from "react-icons/fa";
+
 import { AiOutlineSound } from "react-icons/ai";
 import { PiSubtitles } from "react-icons/pi";
 import { SlCalender } from "react-icons/sl";
@@ -29,7 +30,7 @@ import { FaMale } from "react-icons/fa";
 import { VscEyeClosed } from "react-icons/vsc";
 import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const CourseOverview = () => {
 
@@ -245,8 +246,53 @@ const CourseOverview = () => {
     const [review,setreview]=useState(false)
 
 
+    const [activeId, setActiveId] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".section");
+ 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        console.log(entries);
+        
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.className);
+            console.log(entry.target.className);
+            setsummary(false)
+            setcontent(false)
+            setlearn(false)
+            setinstructor(false)
+            setreview(false)
+            
+          }
+        });
+      },
+      {
+        threshold: 0.4, 
+      }
+    );
+
+    if (sections) {
+      
+    
+      sections.forEach((section) => {
+      observer.observe(section);
+    });
+    }
     
 
+    return () => {
+      if (sections) {
+         sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+      }
+     
+    };
+  });
+
+  
 
   return (
     <div className='course-overview-main-conatainer'>
@@ -366,7 +412,7 @@ const CourseOverview = () => {
                     
                   }
                 }}>
-              <p className={`course-overview-nav-bar-para summary-para ${summary?'red-nav-cont':'black-nav-cont'}` }>Summary</p>
+              <p className={`course-overview-nav-bar-para summary-para ${summary||activeId.includes('Course-detail-container')?'red-nav-cont':'black-nav-cont'}` }>Summary</p>
             </a>
 
             <a href="#" style={{textDecoration:'none'}}
@@ -383,7 +429,7 @@ const CourseOverview = () => {
                     
                   }
                 }}>
-              <p className={`course-overview-nav-bar-para content-para ${content?'red-nav-cont':'black-nav-cont'}` }>Content</p>
+              <p className={`course-overview-nav-bar-para content-para ${content||activeId.includes('course-content-container')?'red-nav-cont':'black-nav-cont'}` }>Content</p>
             </a>
 
             <a href="#" style={{textDecoration:'none'}}
@@ -400,7 +446,7 @@ const CourseOverview = () => {
                     
                   }
                 }}>
-              <p className={`course-overview-nav-bar-para what-para ${learn?'red-nav-cont':'black-nav-cont'}` }>what-learn</p>
+              <p className={`course-overview-nav-bar-para what-para ${learn||activeId.includes('what-learn-from-course-container')?'red-nav-cont':'black-nav-cont'}` }>what-learn</p>
             </a>
 
             <a href="#" style={{textDecoration:'none'}}
@@ -417,7 +463,7 @@ const CourseOverview = () => {
                     
                   }
                 }}>
-              <p className={`course-overview-nav-bar-para ins-para ${instructor?'red-nav-cont':'black-nav-cont'}` }>Instructor</p>
+              <p className={`course-overview-nav-bar-para ins-para ${instructor||activeId.includes('course-instructor-container')?'red-nav-cont':'black-nav-cont'}` }>Instructor</p>
             </a>
 
             <a href="#" style={{textDecoration:'none'}}
@@ -434,13 +480,13 @@ const CourseOverview = () => {
                     
                   }
                 }}>
-              <p className={`course-overview-nav-bar-para rev-para ${review?'red-nav-cont':'black-nav-cont'}` }>Review</p>
+              <p className={`course-overview-nav-bar-para rev-para ${review||activeId.includes('course-review-container')?'red-nav-cont':'black-nav-cont'}` }>Review</p>
             </a>
             
           </div>
      
         
-        <div id='course-summary' className='Course-detail-container'>
+        <div id='course-summary' className='Course-detail-container section'>
           <div className='course-detail-title-bar'>
             <p className='all-box-overview-title'>Course Detail <span className='course-section-tit-underline'></span></p>
             <p className='all-box-overview-para'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem repellendus quasi totam quia provident! Accusamus fugiat natus quam necessitatibus magni!</p>
@@ -454,7 +500,7 @@ const CourseOverview = () => {
             <p className='course-detail-points'><GoDotFill className='bullet-icon'/>Real-World Design Projects</p>
           </div>
         </div>
-        <div id='course-content' className='course-content-container'>
+        <div id='course-content' className='course-content-container section'>
           <div className='course-content-title'>
             <p className='all-box-overview-title'>Course Content<span className='course-section-tit-underline'></span></p>
           </div>
@@ -513,7 +559,7 @@ const CourseOverview = () => {
             
           </div>
         </div>
-        <div id='what-learn' className='what-learn-from-course-container'>
+        <div id='what-learn' className='what-learn-from-course-container section'>
           <p className='all-box-overview-title'>What you'll learn<span className='course-section-tit-underline'></span></p>
           <div className='what-learn-content-holder'>
             <div className='what-learn-content'>
@@ -542,7 +588,7 @@ const CourseOverview = () => {
             </div>
           </div>
         </div>
-        <div id='course-instructor' className='course-instructor-container'>
+        <div id='course-instructor' className='course-instructor-container section'>
           <p className='all-box-overview-title'>Course Instructor<span className='course-section-tit-underline'></span></p>
           <div className='course-instructor-info'>
             <div className='course-intructor-image'></div>
@@ -623,7 +669,7 @@ const CourseOverview = () => {
           </div>
 
         </div>
-        <div id='course-review' className='course-review-container'>
+        <div id='course-review' className='course-review-container section'>
           <p className='all-box-overview-title'>Course Review<span className='course-section-tit-underline'></span></p>
           <div className='review-of-the-course'>
             <div className='review-of-the-course-reviewer-img'>
@@ -712,10 +758,16 @@ const CourseOverview = () => {
         <div className='course-sharing-path'>
           <p className='course-sharing-path-title'>Share Now :</p>
           <div className='course-share-path-icon'>
-              <div className='instructor-media med-fb'><FaFacebookF className='icon-for-clr-fb'/></div>
-              <div className='instructor-media  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></div>
-              <div className='instructor-media  med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></div>
-              <div className='instructor-media  med-insta'><FaInstagram className='icon-for-clr-insta'/></div>
+              <a   href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:5173/mindspire-course#javascript"
+              target="_blank"
+              rel="noopener noreferrer"  className='instructor-media med-fb'><FaFacebookF className='icon-for-clr-fb'/></a>
+              <a href="https://twitter.com/intent/tweet?url=localhost:5173/mindspire-course#javascript&text=Check%20out%20my%20site!"
+              target="_blank"
+              rel="noopener noreferrer" className='instructor-media  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></a>
+              <a  href="https://www.linkedin.com/shareArticle?mini=true&url=localhost:5173/mindspire-course#javascript"
+                target="_blank"
+                rel="noopener noreferrer" className='instructor-media  med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></a>
+              <a href='https://www.instagram.com/' target='_blank'  className='instructor-media  med-insta'><FaInstagram className='icon-for-clr-insta'/></a>
 
           </div>
         </div>
