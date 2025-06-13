@@ -26,9 +26,11 @@ function App() {
       totalEnroll:20,
       Category:'Front-End',
       rating:4,
+      CourseIntroVid:'https://www.youtube.com/watch?v=DHjqpvDnNGE',
+      CourseFullVid:'https://www.youtube.com/watch?v=toymwoKBtbM&t=24948s',
       CourseIntro:'Master JavaScript from the ground up with this complete tutorial',
       CoursePara:"Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanations.",
-      CourseSummaryList:['Introduction to Graphic Design','Basics of Typography','Color Theory and Applications','Layout and Composition Techniques','Branding and Visual Identity','Real-World Design Projects'],
+      CourseSummaryList:['Introduction to JavaScript Programming','Variables, Data Types, and Operators','Objects and Arrays in Depth','ES6+ Features and Modern Syntax','Building Interactive Web Projects','Real-World Design Projects'],
       Like:false,
       Enroll:false,
       CourseAMT:150,
@@ -39,7 +41,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
-      WhatLearn:['Master the principles of design: typography, layout, and color theory','Master the principles of design: typography, layout, and color theory','Master the principles of design: typography, layout, and color theory','Master the principles of design: typography, layout, and color theory','Master the principles of design: typography, layout, and color theory','Master the principles of design: typography, layout, and color theory'],
+      WhatLearn:['Understand the core concepts of JavaScript like variables, data types, and operators.','Write dynamic programs using conditional statements and loops.','Work with arrays and objects to store and manipulate data.','Manipulate the DOM to dynamically update web pages.','Handle user interactions through event listeners and form inputs.','Build reusable code with functions and manage scope effectively.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
         TutorName:'David Ranga',
@@ -72,19 +74,19 @@ function App() {
          {
           CourseContentID:3,
           ContentTitle:'Get Into First Step',
-          ContentItem:'Learn With JavaScript Variable',
+          ContentItem:'Variables, Data Types, and Operators',
            VideoDuration:'10:5',
         },
          {
           CourseContentID:4,
           ContentTitle:'JavaScript Intermediare',
-          ContentItem:'Function,Object,Array',
+          ContentItem:'Function, Objects and Arrays in Depth',
            VideoDuration:'10:5',
         },
          {
           CourseContentID:5,
-          ContentTitle:'Array Methonds',
-          ContentItem:'Learn More About Array in JavaScript',
+          ContentTitle:'Asynchronous JavaScript',
+          ContentItem:'Callbacks, Promises & Async/Await',
            VideoDuration:'10:5',
         },
          {
@@ -96,7 +98,7 @@ function App() {
          {
           CourseContentID:7,
           ContentTitle:'Advanced Concepts in JavaScript',
-          ContentItem:'Learn More About ES6',
+          ContentItem:'ES6+ Features and Modern Syntax',
            VideoDuration:'10:5',
         },
 

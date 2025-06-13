@@ -3,6 +3,8 @@ import { FaStar } from "react-icons/fa";
 import { RiUploadCloud2Line } from "react-icons/ri";
 import { IoIosRemoveCircleOutline } from "react-icons/io";
 import ReactFileReader from 'react-file-reader';
+import { IoSettings } from "react-icons/io5";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 import { AiOutlineSound } from "react-icons/ai";
 import { PiSubtitles } from "react-icons/pi";
@@ -33,7 +35,7 @@ import { FaMale } from "react-icons/fa";
 import { VscEyeClosed } from "react-icons/vsc";
 import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const CourseOverview = ({course,LikeCourse,setcourse}) => {
 
@@ -198,10 +200,12 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
 
     
     const updatedreview=Array.from(course).map((reviewupdate)=>
-      reviewupdate.id==contentID?{...reviewupdate,CourseReview:[...reviewupdate.CourseReview,{ReviewId:Number(reviewupdate.CourseReview.length)+1,ReviewerName:reviewNameref.current.value,ReviewerContent:reviewCommentref.current.value,RaatingNUM:starnum,ReviewedDate:`${month[getmonth]} ${getdate} ${getYear}`,ReviewerIMG:commentimg[0]}]}:{...reviewupdate}
+      reviewupdate.id==contentID?{...reviewupdate,CourseReview:[...reviewupdate.CourseReview,{ReviewId:Number(reviewupdate.CourseReview.length)+1,ReviewerName:reviewNameref.current.value,ReviewerContent:reviewCommentref.current.value,RaatingNUM:Starnumref.current,ReviewedDate:`${month[getmonth]} ${getdate} ${getYear}`,ReviewerIMG:commentimg[0]}]}:{...reviewupdate}
     )
     console.log(updatedreview);
     setcourse(updatedreview)
+   
+    setreviewwrite(false)
     
   }
 
@@ -492,6 +496,34 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
   }
 
 
+
+  const [enrollbtn,setenrollbtn]=useState(false)
+  const [enrollbtncont,setenrollbtncont]=useState(false)
+  const [enrollbtntick,setenrollbtntick]=useState(false)
+
+  useEffect(() => {
+    let timer
+    if (enrollbtn) {
+       timer=setTimeout(() => {
+      setenrollbtn(false)
+      setenrollbtntick(true)
+    }, 3000);
+    }
+  let timertwo
+     if (enrollbtntick) {
+       timertwo=setTimeout(() => {
+      setenrollbtntick(false)
+      setenrollbtncont(true)
+    }, 5000);
+    }
+   
+  
+    return () => {
+      
+      clearTimeout(timer)
+      clearTimeout(timertwo)
+    }
+  }, [enrollbtn])
   
 
   return (
@@ -529,8 +561,15 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
             </div>
             <div className='course-audio-review-info-side'>
               <div className='course-review-bar'>
-                <p className='course-review-rating'>{coursedetails.rating}</p>
-                <p className='star-for-course-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+                <p className='course-review-rating'>{Math.floor(Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(0))}/5</p>
+                {
+                  Math.floor(Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(0))==5? <p className='star-for-course-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>: 
+                   Math.floor(Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(0))==4?<p className='star-for-course-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></p>:
+                   Math.floor(Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(0))==3?<p className='star-for-course-review'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></p>:
+                   Math.floor(Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(0))==2?<p className='star-for-course-review'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:
+                   Math.floor(Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(0))==1?<p className='star-for-course-review'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:<p className='star-for-course-review'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>
+                }
+                
                 <p className='course-review-total'>(&nbsp;{coursedetails.rating} reviews&nbsp;)</p>
               </div>
               <div className='course-audio-bar'>
@@ -554,9 +593,9 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
         </div>
         <div className='course-enroll-box'>
           <div className='course-enroll-video-overview'>
-            <div className='course-video-image'>
+            <div className='course-video-image' style={{backgroundImage:`url(${coursedetails.courseIMG})`}}>
               <div className='video-play-btn-container'>
-                <a href="">
+                <a href={coursedetails.CourseIntroVid} target='_blank'>
                   <div className='icon-play-vid'>
                     <FaPlay/>
                   </div>
@@ -819,10 +858,10 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
                 </div>
                 <div id='course-review' className='course-review-container section'>
                   <p className='all-box-overview-title'>Course Review<span className='course-section-tit-underline'></span></p>
-                  {Array.from(coursedetails.CourseReview).map((indiReview)=>
+                  {Array.from(coursedetails.CourseReview).slice(-3).map((indiReview)=>
                    <div key={indiReview.ReviewId} className='review-of-the-course'>
                     <div className='review-of-the-course-reviewer-img'>
-                      <div className='reviewer-image' style={{backgroundImage:`url(${indiReview.ReviewerIMG})`}}>
+                      <div className='reviewer-image' style={{backgroundImage:indiReview.ReviewerIMG?`url(${indiReview.ReviewerIMG})`:`url(${coursedetails.courseIMG})`}}>
 
                       </div>
                     </div>
@@ -866,7 +905,7 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
                   )}
                  
                 </div>
-                <button className='review-written-btn' onClick={()=>setreviewwrite(!reviewwrite)}>
+                <button className='review-written-btn' onClick={()=>setreviewwrite(true)}>
                   <div className='review-written-btn-inner'>
                     Write Review
                     <div className='review-write-btn-design'></div>
@@ -926,10 +965,32 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
 
                   </div>
                 </div>
-                <button className='enroll-btn-sider-course'>Enroll Course
-                  <div className='enroll-design-one'></div>
-                  <div className='enroll-design-two'></div>
-                </button>
+                {
+                  enrollbtn && !enrollbtncont && !enrollbtntick? 
+                  <button onClick={()=>setenrollbtn(!enrollbtn)} className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
+                  <span className='enroll-ball enroll-ball-two'></span>
+                  <span className='enroll-ball enroll-ball-three'></span>
+                  <span className='enroll-ball enroll-ball-four'></span>
+                  <span className='enroll-ball enroll-ball-five'></span>
+                  <span className='rotate-in-enroll'><IoSettings className='rotate-icon-enroll'/></span>
+                  
+                  </button>: !enrollbtn && !enrollbtncont && enrollbtntick?
+                     <DotLottieReact
+                          src="https://lottie.host/4a15363c-8297-4af5-b506-b8b95205e70a/STQRQoNmVA.lottie"
+                          loop
+                          autoplay
+                          className='lottie-file-tick'
+                        />
+                 
+                  : !enrollbtn && !enrollbtntick && enrollbtncont?<div className='enroll-done-para-div'>
+                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <Link className='cart-page-link-in-enroll-cont'>Cart Page</Link> </p>
+                  </div> :
+                  <button onClick={()=>setenrollbtn(!enrollbtn)} className='enroll-btn-sider-course'>Enroll Course
+                    <div className='enroll-design-one'></div>
+                    <div className='enroll-design-two'></div>
+                  </button>
+                }
+               
               </div>
           </div>
 
@@ -1005,7 +1066,7 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
                   <p className='comment-writing-email'>How we use your data: We’ll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Fox CART’s <span className='comment-condition'>terms</span>, <span className='comment-condition'>privacy</span> and <span className='comment-condition'>content</span> policies.</p>
                 </div>
                 <div className='review-btn-container'>
-                  <button onClick={()=>ReviewSubmit(coursedetails.id)} className='review-btn-submit review-btn'>Submit</button>
+                  <button onClick={()=>{ReviewSubmit(coursedetails.id),cancelreview()}} className='review-btn-submit review-btn'>Submit</button>
                   <button className='review-btn-cancel review-btn' onClick={()=>cancelreview()}>Cancel</button>
                 </div>
                         <button onClick={()=>setreviewwrite(false)} className='review-input-close-btn'><VscEyeClosed/></button>
