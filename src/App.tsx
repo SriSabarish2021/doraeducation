@@ -116,7 +116,7 @@ function App() {
           ReviewerName:'David Josh Kanna',
           ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanationsDive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Le',
           ReviewedDate:'July 20 2020',
-          RaatingNUM:4
+          RaatingNUM:1
         },
         {
           ReviewId:3,
@@ -124,7 +124,7 @@ function App() {
           ReviewerName:'David Josh Kanna',
           ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanations',
           ReviewedDate:'July 20 2020',
-          RaatingNUM:5
+          RaatingNUM:1
         },
         {
           ReviewId:4,
@@ -300,8 +300,8 @@ function App() {
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage course={course} LikeCourse={LikeCourse}/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage/>}/>
-            <Route path="mindspire-course" element={<CourseOverview course={course} LikeCourse={LikeCourse}/>}/>
-            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview course={course} LikeCourse={LikeCourse}/>}/>
+            <Route path="mindspire-course" element={<CourseOverview course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>

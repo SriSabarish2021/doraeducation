@@ -160,12 +160,87 @@
                     
                     
                 }
-                .review-writing-name-by-user,.review-writing-email-by-user,.privacy-policy-for-comment,.comment-writing-review-box{
+                .review-writing-name-by-user,.review-writing-email-by-user,.privacy-policy-for-comment,.comment-writing-review-box,.comment-writing-image-box{
                     height: auto;
                     width: 100%;
                     @include Column-center.column-center;
                     gap: 15px;
                 }
+                
+                    .image-selection-box{
+                        padding: 15px 15px 15px 18px;
+                        min-height: 120px;
+                        max-width: 60%;
+                        width: 50%;
+                        border-radius: 10px;
+                        border: none;
+                        border: 1px solid rgb(222, 222, 222);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+                         .btn-for-image-select{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        background-color: transparent;
+                        .image-to-upload-in-comment{
+                            font-size: 50px;
+                        }
+                    }
+                    }
+                    .comment-img-showing-box{
+                        height: auto;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        .user-putted-image-for-review{
+                        padding: 10px 5px 10px 5px;
+                        height: auto;
+                        max-width: 40%;
+                        width: 40%;
+                        border-radius: 15px;
+                        background-color: white;
+                        border: 1px solid rgb(222, 222, 222);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        .comment-img-remove{
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 20px;
+                                    border-radius: 100%;
+                                    font-size: 13px;
+                                }
+                                .img-of-review{
+                                    height: 100px;
+                                    width: 150px;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    border-radius: 10px;
+                                }
+                    }
+
+}
+
+
+
+                   
                 .review-input-for-comment{
                     padding: 15px 15px 15px 18px;
                     min-height: 140px;
@@ -1423,24 +1498,34 @@
                             @include Row-center.row-center;
                             gap: 15px;
                             .star-number-rating-box{
+                                flex: 1 1 calc(5%);
+                                                               @include Row-center.row-center;
+
                                 font-size: 14px;
                                 font-family: 'Open Sans';
                                 font-weight: 600;
                                 color: rgb(79, 79, 79);
                             }
                             .percentage-star-rating-box{
+                               flex: 1 1 calc(10%);
+                               @include Row-center.row-center;
                                 font-size: 14px;
                                 font-family:  'Roboto';
                                 font-weight: 600;
                                 color: rgb(71, 71, 71);
                             }
                             .total-rating-in-rating-box{
+                                flex: 1 1 calc(5%);
+                               @include Row-center.row-center;
+
                                 font-size: 14px;
                                 font-family:  'Roboto';
                                 font-weight: 600;
                                 color: rgb(113, 113, 113);
                             }
                             .line-rating-bg{
+                                flex: 1 1 calc(80%);
+
                                 height: 12px;
                                 width: 80%;
                                 position: relative;

@@ -1,5 +1,8 @@
 import '../../Styles/CourseOverviewCSS/CourseOverview.css'
 import { FaStar } from "react-icons/fa";
+import { RiUploadCloud2Line } from "react-icons/ri";
+import { IoIosRemoveCircleOutline } from "react-icons/io";
+import ReactFileReader from 'react-file-reader';
 
 import { AiOutlineSound } from "react-icons/ai";
 import { PiSubtitles } from "react-icons/pi";
@@ -8,7 +11,7 @@ import { GrUpdate } from "react-icons/gr";
 import { FaPlay } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaChevronDown } from "react-icons/fa";
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { IoIosVideocam } from "react-icons/io";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaPaintBrush } from "react-icons/fa";
@@ -32,7 +35,7 @@ import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { NavLink, useLocation } from 'react-router-dom';
 
-const CourseOverview = ({course,LikeCourse}) => {
+const CourseOverview = ({course,LikeCourse,setcourse}) => {
 
   const gethash=useLocation().hash
 
@@ -154,27 +157,76 @@ const CourseOverview = ({course,LikeCourse}) => {
 
   
 
-  const [showcont,setshowcont]=useState(false)
 
   const [reviewwrite,setreviewwrite]=useState(false)
 
-  const [starnum,setstarnum]=useState(0)
-  const [reviewername,setreviewername]=useState('')
-  const [revieweremail,setrevieweremail]=useState('')
-  const [reviewcomment,setreviewcomment]=useState('')
+
+
+  let Starnumref=useRef(0)
+  let reviewNameref=useRef('')
+  let reviewEmailref=useRef('')
+    let reviewCommentref=useRef('')
+
+  
+ const [commentimg,setcommentimg]=useState([])
+
+  const handleFiles = (files) => {
+    setcommentimg((curfiles)=>{
+      let imgone=files.base64
+      let arrayofoldimg=imgone
+      return arrayofoldimg       
+    })
+  };
+
+  let removeimgincomment=(url)=>{
+    let removedimgofcomment=commentimg.filter((indiimgurl)=>indiimgurl!=url)
+    setcommentimg(removedimgofcomment)
+    
+  }
+
+
+  const ReviewSubmit=(contentID)=>{
+    console.log(Starnumref.current);
+    console.log(reviewNameref.current.value);
+    console.log(reviewCommentref.current.value);
+    
+    let month=['January','February','March','April','May','June','July','August','September','November','December']
+    let getdate=new Date().getDate()
+    let getmonth=new Date().getMonth()
+    let getYear=new Date().getFullYear()
+   
+
+    
+    const updatedreview=Array.from(course).map((reviewupdate)=>
+      reviewupdate.id==contentID?{...reviewupdate,CourseReview:[...reviewupdate.CourseReview,{ReviewId:Number(reviewupdate.CourseReview.length)+1,ReviewerName:reviewNameref.current.value,ReviewerContent:reviewCommentref.current.value,RaatingNUM:starnum,ReviewedDate:`${month[getmonth]} ${getdate} ${getYear}`,ReviewerIMG:commentimg[0]}]}:{...reviewupdate}
+    )
+    console.log(updatedreview);
+    setcourse(updatedreview)
+    
+  }
 
   const cancelreview=()=>{
-    setreviewername('')
-    setrevieweremail('')
-    setreviewcomment('')
+    Starnumref.current=0
+    reviewNameref.current.value = '';
+    reviewEmailref.current.value = '';
+    reviewCommentref.current.value = '';
     setreviewwrite(false)
-    setstarnum(0)
+    
   }
 
   const starsvg=document.querySelectorAll('.star-svg')
 
+   const removelike=()=>{
+ Starnumref.current=0
+          starsvg[0].classList.remove('hexa')
+          starsvg[1].classList.remove('hexa')
+          starsvg[2].classList.remove('hexa')
+          starsvg[3].classList.remove('hexa')
+          starsvg[4].classList.remove('hexa')
+    }
+
    const colorfixfive=()=>{
-          setstarnum(5)
+           Starnumref.current=5
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.add('hexa')
           starsvg[2].classList.add('hexa')
@@ -183,8 +235,7 @@ const CourseOverview = ({course,LikeCourse}) => {
 
     }
     const colorfixfour=()=>{
-      setstarnum(4)
-
+ Starnumref.current=4
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.add('hexa')
           starsvg[2].classList.add('hexa')
@@ -194,8 +245,7 @@ const CourseOverview = ({course,LikeCourse}) => {
 
     }
     const colorfixthree=()=>{
-      setstarnum(3)
-
+ Starnumref.current=3
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.add('hexa')
           starsvg[2].classList.add('hexa')
@@ -205,8 +255,7 @@ const CourseOverview = ({course,LikeCourse}) => {
 
     }
     const colorfixtwo=()=>{
-      setstarnum(2)
-
+ Starnumref.current=2
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.add('hexa')
           starsvg[2].classList.remove('hexa')
@@ -216,7 +265,7 @@ const CourseOverview = ({course,LikeCourse}) => {
 
     }
     const colorfixone=()=>{
-      setstarnum(1)
+      Starnumref.current=1
 
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.remove('hexa')
@@ -349,15 +398,7 @@ const CourseOverview = ({course,LikeCourse}) => {
     }
 
     
-    const removelike=()=>{
-        setstarnum(0)
-
-          starsvg[0].classList.remove('hexa')
-          starsvg[1].classList.remove('hexa')
-          starsvg[2].classList.remove('hexa')
-          starsvg[3].classList.remove('hexa')
-          starsvg[4].classList.remove('hexa')
-    }
+   
 
     const [summary,setsummary]=useState(false)
     const [content,setcontent]=useState(false)
@@ -901,23 +942,23 @@ const CourseOverview = ({course,LikeCourse}) => {
                 <div className='rating-bar-in-review'>
                   <p className='all-review-input-title'>Rating</p>
                   <div className='all-star-inreview'>
-                    <div onMouseOver={()=>colorchangeforone()} onMouseOut={()=>colornotchangeforone()}  onClick={()=>colorfixone()} className='star-for-review'><svg className='star-svg one-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <div ref={Starnumref} onMouseOver={()=>colorchangeforone()} onMouseOut={()=>colornotchangeforone()}  onClick={()=>colorfixone()} className='star-for-review'><svg className='star-svg one-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
                       </svg>
                     </div>
-                      <div onMouseOver={()=>colorchangefortwo()} onMouseOut={()=>colornotchangefortwo()}  onClick={()=>colorfixtwo()} className='star-for-review'><svg className='star-svg two-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                      <div ref={Starnumref} onMouseOver={()=>colorchangefortwo()} onMouseOut={()=>colornotchangefortwo()}  onClick={()=>colorfixtwo()} className='star-for-review'><svg className='star-svg two-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
                       </svg>
                     </div>
-                      <div onMouseOver={()=>colorchangeforthree()} onMouseOut={()=>colornotchangeforthree()}  onClick={()=>colorfixthree()} className='star-for-review'><svg className='star-svg three-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                      <div ref={Starnumref} onMouseOver={()=>colorchangeforthree()} onMouseOut={()=>colornotchangeforthree()}  onClick={()=>colorfixthree()} className='star-for-review'><svg className='star-svg three-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
                       </svg>
                     </div>
-                      <div onMouseOver={()=>colorchangeforfour()} onMouseOut={()=>colornotchangeforfour()}  onClick={()=>colorfixfour()} className='star-for-review'><svg className='star-svg four-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                      <div ref={Starnumref} onMouseOver={()=>colorchangeforfour()} onMouseOut={()=>colornotchangeforfour()}  onClick={()=>colorfixfour()} className='star-for-review'><svg className='star-svg four-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
                       </svg>
                     </div>
-                      <div onMouseOver={()=>colorchangeforfive()} onMouseOut={()=>colornotchangeforfive()}  onClick={()=>colorfixfive()} className='star-for-review'><svg className='star-svg five-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                      <div ref={Starnumref} onMouseOver={()=>colorchangeforfive()} onMouseOut={()=>colornotchangeforfive()}  onClick={()=>colorfixfive()} className='star-for-review'><svg className='star-svg five-star ' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                           <path d="M12 2L15 9H22L16 14L18 21L12 17L6 21L8 14L2 9H9L12 2Z" />
                       </svg>
                     </div>
@@ -928,22 +969,43 @@ const CourseOverview = ({course,LikeCourse}) => {
                 </div>
                 <div className="review-writing-name-by-user">
                   <p className='all-review-input-title'>Name (display publicly)</p>
-                  <input value={reviewername} onChange={(e)=>setreviewername(e.target.value)}  type="text" className="inpreview name-input-for-comment review-input-border"  placeholder="Enter your name"/>
+                  <input ref={reviewNameref}    type="text" className="inpreview name-input-for-comment review-input-border"  placeholder="Enter your name"/>
                 </div>
                 <div className="review-writing-email-by-user">
                   <p className='all-review-input-title'>Email (Private)</p>
-                  <input value={revieweremail} onChange={(e)=>setrevieweremail(e.target.value)}  type="email" className="inpreview email-input-for-comment review-input-border"  placeholder="Enter your email (private)"/>
+                  <input ref={reviewEmailref}   type="email" className="inpreview email-input-for-comment review-input-border"  placeholder="Enter your email (private)"/>
+                </div>
+                <div className="comment-writing-image-box">
+                  <p className='all-review-input-title'>Profile Picture [100 X 100]</p>
+                  <div className="image-selection-box">
+                    <ReactFileReader base64={true}  multipleFiles={true}   handleFiles={handleFiles}   fileTypes={[".jpg",".gif",".jpeg","png"]}>
+                      <p className="btn-for-image-select" ><RiUploadCloud2Line className="image-to-upload-in-comment" style={{color:`#707070`,cursor:'pointer'}}/></p>
+                    </ReactFileReader>
+                  </div>
+                  <div className="comment-img-showing-box">
+                    {commentimg.map((indiimgforcomment,index)=>
+                      
+                      <div key={index} className="user-putted-image-for-review">
+                        <img src={indiimgforcomment} className="img-of-review" />
+                        <p className='comment-img-remove' onClick={()=>removeimgincomment(indiimgforcomment)}><IoIosRemoveCircleOutline style={{cursor:'pointer'}}/></p>
+                      </div>
+                    )}
+                    
+                    
+                  </div>
+                  
+                  
                 </div>
                 <div className="comment-writing-review-box">
                         <p className='all-review-input-title'>Review</p>
                         
-                        <textarea value={reviewcomment} onChange={(e)=>setreviewcomment(e.target.value)}   className="inpreview review-input-for-comment review-input-border"  placeholder="Write your comment here" ></textarea>
+                        <textarea ref={reviewCommentref}   className="inpreview review-input-for-comment review-input-border"  placeholder="Write your comment here" ></textarea>
                   </div>
                 <div className="privacy-policy-for-comment">
                   <p className='comment-writing-email'>How we use your data: We’ll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Fox CART’s <span className='comment-condition'>terms</span>, <span className='comment-condition'>privacy</span> and <span className='comment-condition'>content</span> policies.</p>
                 </div>
                 <div className='review-btn-container'>
-                  <button className='review-btn-submit review-btn'>Submit</button>
+                  <button onClick={()=>ReviewSubmit(coursedetails.id)} className='review-btn-submit review-btn'>Submit</button>
                   <button className='review-btn-cancel review-btn' onClick={()=>cancelreview()}>Cancel</button>
                 </div>
                         <button onClick={()=>setreviewwrite(false)} className='review-input-close-btn'><VscEyeClosed/></button>
