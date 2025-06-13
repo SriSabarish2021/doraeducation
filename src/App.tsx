@@ -55,7 +55,87 @@ function App() {
         TeacherInstalink:'',
 
 
-      }
+      },
+      CourseContent:[
+        {
+          CourseContentID:1,
+          ContentTitle:'Course Introduction',
+          ContentItem:'Introduction Lesson Of JavaScript',
+          VideoDuration:'10:5',
+        },
+         {
+          CourseContentID:2,
+          ContentTitle:'Basic Setup',
+          ContentItem:'Vs Code Setup for JavaScript',
+           VideoDuration:'10:5',
+        },
+         {
+          CourseContentID:3,
+          ContentTitle:'Get Into First Step',
+          ContentItem:'Learn With JavaScript Variable',
+           VideoDuration:'10:5',
+        },
+         {
+          CourseContentID:4,
+          ContentTitle:'JavaScript Intermediare',
+          ContentItem:'Function,Object,Array',
+           VideoDuration:'10:5',
+        },
+         {
+          CourseContentID:5,
+          ContentTitle:'Array Methonds',
+          ContentItem:'Learn More About Array in JavaScript',
+           VideoDuration:'10:5',
+        },
+         {
+          CourseContentID:6,
+          ContentTitle:'JavaScript OOPS Concept',
+          ContentItem:'Get into the JavaScript main Concept OOPS',
+           VideoDuration:'10:5',
+        },
+         {
+          CourseContentID:7,
+          ContentTitle:'Advanced Concepts in JavaScript',
+          ContentItem:'Learn More About ES6',
+           VideoDuration:'10:5',
+        },
+
+      ],
+      CourseReview:[
+        {
+          ReviewId:1,
+          ReviewerIMG:'https://images.unsplash.com/photo-1667996112761-3e14e3795e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
+          ReviewerName:'David Josh Kanna',
+          ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanations',
+          ReviewedDate:'July 20 2020',
+          RaatingNUM:5
+        } ,
+         {
+          ReviewId:2,
+          ReviewerIMG:'https://images.unsplash.com/photo-1667996112761-3e14e3795e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
+          ReviewerName:'David Josh Kanna',
+          ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanationsDive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Le',
+          ReviewedDate:'July 20 2020',
+          RaatingNUM:4
+        },
+        {
+          ReviewId:3,
+          ReviewerIMG:'https://images.unsplash.com/photo-1667996112761-3e14e3795e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
+          ReviewerName:'David Josh Kanna',
+          ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanations',
+          ReviewedDate:'July 20 2020',
+          RaatingNUM:5
+        },
+        {
+          ReviewId:4,
+          ReviewerIMG:'https://images.unsplash.com/photo-1667996112761-3e14e3795e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
+          ReviewerName:'David Josh Kanna',
+          ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanations',
+          ReviewedDate:'July 20 2020',
+          RaatingNUM:1
+        }
+
+      ]
       
     },
     {

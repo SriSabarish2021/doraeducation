@@ -38,6 +38,14 @@ const CourseOverview = ({course,LikeCourse}) => {
 
   const [coursedetail,setcoursedetail]=useState([])
 
+    const [getstarnum,setstartotalnum]=useState(0)
+
+    const [onestarnum,setonestarnum]=useState(0)
+    const [twostarnum,settwostarnum]=useState(0)
+    const [threestarnum,setthreestarnum]=useState(0)
+    const [fourstarnum,setfourstarnum]=useState(0)
+    const [fivestarnum,setfivestarnum]=useState(0)
+
   useEffect(() => {
     
     window.scrollTo(0,0)
@@ -45,10 +53,105 @@ const CourseOverview = ({course,LikeCourse}) => {
     
     const gettingcoursedetail=Array.from(course).filter((indicourse)=>String(indicourse.courseName)==String(gethash).slice(1))
     setcoursedetail(gettingcoursedetail)
-    console.log(gettingcoursedetail);
+    setstartotalnum((number)=>{
+      let starinitial=number
+      const reviewnumberarray=gettingcoursedetail.map((indiitemforreview)=>
+        indiitemforreview.CourseReview
+      )
+      const reviewnumber=reviewnumberarray[0].map((reviewnumber)=>{
+        
+        
+       
+        
+        starinitial=Number(starinitial)+Number(reviewnumber.RaatingNUM)
+      
+      })
+      return starinitial
+      
+    })
+
+    const reviewtotal=gettingcoursedetail.map((indiitemfortotalreview)=>
+        indiitemfortotalreview.CourseReview
+      )
+      const reviewnumber=reviewtotal[0].map((reviewtotnumber)=>{
+            if (Number(reviewtotnumber.RaatingNUM)==5) {
+                  console.log(5);
+                  
+                    setfivestarnum((fivestarnum)=>{
+                      let oldernum=fivestarnum
+                      let newnum=oldernum+1
+                      console.log(newnum);
+                      return newnum
+                      
+                    }) 
+                  
+                  
+                }else if (Number(reviewtotnumber.RaatingNUM)==4) {
+                  console.log(4);
+                  setfourstarnum((fourstarnum)=>{
+                      let oldernum=fourstarnum
+                      let newnum=oldernum+1
+                      console.log(newnum);
+                      return newnum
+                      
+                    })
+                 
+                }
+                else if (Number(reviewtotnumber.RaatingNUM)==3) {
+                  console.log(3);
+                  setthreestarnum((threestarnum)=>{
+                      let oldernum=threestarnum
+                      let newnum=oldernum+1
+                      console.log(newnum);
+                      return newnum
+                      
+                    })
+                 
+                }
+                else if (Number(reviewtotnumber.RaatingNUM)==2) {
+                  console.log(2);
+                  settwostarnum((twostarnum)=>{
+                      let oldernum=twostarnum
+                      let newnum=oldernum+1
+                      console.log(newnum);
+                      return newnum
+                      
+                    })
+                  console.log(twostarnum);
+
+                }
+                else if (Number(reviewtotnumber.RaatingNUM)==1) {
+                  console.log(1);
+                  setonestarnum((onestarnum)=>{
+                      let oldernum=onestarnum
+                      let newnum=oldernum+1
+                      console.log(newnum);
+                      return newnum
+                      
+                    })
+                  console.log(onestarnum);
+                }
+                else{
+                  return
+                }
+      })
+
+     
     
+
+    return () => {
+      setcoursedetail([])
+      setstartotalnum(0)
+      setfivestarnum(0)
+      setfourstarnum(0)
+      setthreestarnum(0)
+      settwostarnum(0)
+      setonestarnum(0)
+    }
     
   }, [course])
+
+
   
 
   const [showcont,setshowcont]=useState(false)
@@ -270,12 +373,10 @@ const CourseOverview = ({course,LikeCourse}) => {
  
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
         
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveId(entry.target.className);
-            console.log(entry.target.className);
             setsummary(false)
             setcontent(false)
             setlearn(false)
@@ -308,6 +409,47 @@ const CourseOverview = ({course,LikeCourse}) => {
      
     };
   });
+
+
+
+  const ShowContent=(indexnumber)=>{
+    const parentElement=document.querySelectorAll('.course-content-list')
+
+    if (parentElement) {
+      let elementdestructure=parentElement[indexnumber]
+      let InnerElementONE=elementdestructure.querySelector('.course-content-list-title')
+        let ArrowIcon=InnerElementONE?.querySelector('.arrow-icon-for-course-cont')
+        if (ArrowIcon.style.rotate=='-180deg') {
+          ArrowIcon.style.rotate='0deg'
+        }else{
+        ArrowIcon.style.rotate='-180deg'
+
+        }
+
+
+        let InnerElementTWO=elementdestructure.querySelector('.Course-Content-List')
+        
+    
+      
+         if (InnerElementTWO?.className=='Course-Content-List course-content-list-cont') {
+           
+           
+          InnerElementTWO?.classList.remove('course-content-list-cont')
+          InnerElementTWO?.classList.add('course-content-list-cont-show')
+         }else{
+         
+          
+          InnerElementTWO?.classList.remove('course-content-list-cont-show')
+          InnerElementTWO?.classList.add('course-content-list-cont')
+        } 
+        
+      
+      
+      
+      
+    }
+  }
+
 
   
 
@@ -522,56 +664,20 @@ const CourseOverview = ({course,LikeCourse}) => {
                     <p className='all-box-overview-title'>Course Content<span className='course-section-tit-underline'></span></p>
                   </div>
                   <div className='course-content-main-list'>
-                    <div className='course-content-list'>
-                      <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                        <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
-                        <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
+                    {Array.from(coursedetails.CourseContent).map((CourseContentIndi,index)=>
+                      <div key={CourseContentIndi.CourseContentID} className='course-content-list'>
+                        <div className='course-content-list-title' onClick={()=>ShowContent(index)}>
+                          <p className='course-para-course-content'><span className='number-course-content'>{CourseContentIndi.CourseContentID<10?`0${CourseContentIndi.CourseContentID}`:CourseContentIndi.CourseContentID}</span>{CourseContentIndi.ContentTitle}</p>
+                          <FaChevronDown className='arrow-icon-for-course-cont' />
+                        </div>
+                        <div className='Course-Content-List course-content-list-cont'>
+                          <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>{CourseContentIndi.ContentItem}</p>
+                          <p className='course-content-list-inner-time'>{CourseContentIndi.VideoDuration}</p>
+                        </div>
                       </div>
-                      <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                        <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
-                        <p className='course-content-list-inner-time'>10:15</p>
-                      </div>
-                    </div>
-                    <div className='course-content-list'>
-                      <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                        <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
-                        <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
-                      </div>
-                      <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                        <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
-                        <p className='course-content-list-inner-time'>10:15</p>
-                      </div>
-                    </div>
-                    <div className='course-content-list'>
-                      <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                        <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
-                        <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
-                      </div>
-                      <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                        <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
-                        <p className='course-content-list-inner-time'>10:15</p>
-                      </div>
-                    </div>
-                    <div className='course-content-list'>
-                      <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                        <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
-                        <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
-                      </div>
-                      <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                        <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
-                        <p className='course-content-list-inner-time'>10:15</p>
-                      </div>
-                    </div>
-                    <div className='course-content-list'>
-                      <div className='course-content-list-title' onClick={()=>setshowcont(!showcont)}>
-                        <p className='course-para-course-content'><span className='number-course-content'>01</span>Lorem ipsum dolor sit amet.</p>
-                        <FaChevronDown className='arrow-icon-for-course-cont' style={{transform:showcont?`rotate(-180deg)`:`rotate(0deg)`}}/>
-                      </div>
-                      <div className={showcont?'course-content-list-cont-show':'course-content-list-cont'}>
-                        <p className='course-content-list-inner-para'><IoIosVideocam className='video-cam'/>Lorem ipsum dolor sit.</p>
-                        <p className='course-content-list-inner-time'>10:15</p>
-                      </div>
-                    </div>
+                    )}
+                    
+                    
                       
                     
                   </div>
@@ -618,52 +724,52 @@ const CourseOverview = ({course,LikeCourse}) => {
                   <p className='all-box-overview-title'>Course Rating<span className='course-section-tit-underline'></span></p>
                   <div className='course-rating-container-main'>
                     <div className='total-rating-star-average'>
-                      <p className='total-rating-para'>4.1</p>
+                      <p className='total-rating-para'>{Number(Number(Number(getstarnum)/Number((Number(coursedetails.CourseReview.length)*5)))*5).toFixed(1)}</p>
                       <div className='total-rating-average-star'>
                         <p className='star-in-rating'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
-                        <p className='number-review-in-rating'>(&nbsp;233 reviews&nbsp;)</p>
+                        <p className='number-review-in-rating'>(&nbsp;{coursedetails.CourseReview.length} reviews&nbsp;)</p>
                       </div>
                     </div>
                     <div className='total-rating-star-lineup'>
                       <div className='total-rating-star-line'>
                         <p className='star-number-rating-box'>5</p>
                         <div className='line-rating-bg'>
-                          <div className='line-rating-inner line-inner-for-five'></div>
+                          <div className='line-rating-inner line-inner-for-five' style={{width:`${Number(Number(fivestarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}`}}></div>
                         </div>
-                        <p className='percentage-star-rating-box'>82%</p>
-                        <p className='total-rating-in-rating-box'>122</p>
+                        <p className='percentage-star-rating-box'>{Number(Number(fivestarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}</p>
+                        <p className='total-rating-in-rating-box'>{fivestarnum}</p>
                       </div>
                       <div className='total-rating-star-line'>
                         <p className='star-number-rating-box'>4</p>
                         <div className='line-rating-bg'>
-                          <div className='line-rating-inner line-inner-for-four'></div>
+                          <div className='line-rating-inner line-inner-for-four' style={{width:`${Number(Number(fourstarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}`}}></div>
                         </div>
-                        <p className='percentage-star-rating-box'>82%</p>
-                        <p className='total-rating-in-rating-box'>122</p>
+                        <p className='percentage-star-rating-box'>{Number(Number(fourstarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}</p>
+                        <p className='total-rating-in-rating-box'>{fourstarnum}</p>
                       </div>
                       <div className='total-rating-star-line'>
                         <p className='star-number-rating-box'>3</p>
                         <div className='line-rating-bg'>
-                          <div className='line-rating-inner line-inner-for-three'></div>
+                          <div className='line-rating-inner line-inner-for-three' style={{width:`${Number(Number(threestarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}`}}></div>
                         </div>
-                        <p className='percentage-star-rating-box'>82%</p>
-                        <p className='total-rating-in-rating-box'>122</p>
+                        <p className='percentage-star-rating-box'>{Number(Number(threestarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}</p>
+                        <p className='total-rating-in-rating-box'>{threestarnum}</p>
                       </div>
                       <div className='total-rating-star-line'>
                         <p className='star-number-rating-box'>2</p>
                         <div className='line-rating-bg'>
-                          <div className='line-rating-inner line-inner-for-two'></div>
+                          <div className='line-rating-inner line-inner-for-two' style={{width:`${Number(Number(twostarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}`}}></div>
                         </div>
-                        <p className='percentage-star-rating-box'>82%</p>
-                        <p className='total-rating-in-rating-box'>122</p>
+                        <p className='percentage-star-rating-box'>{Number(Number(twostarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}</p>
+                        <p className='total-rating-in-rating-box'>{twostarnum}</p>
                       </div>
                       <div className='total-rating-star-line'>
                         <p className='star-number-rating-box'>1</p>
                         <div className='line-rating-bg'>
-                          <div className='line-rating-inner line-inner-for-one'></div>
+                          <div className='line-rating-inner line-inner-for-one' style={{width:`${Number(Number(onestarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}`}}></div>
                         </div>
-                        <p className='percentage-star-rating-box'>82%</p>
-                        <p className='total-rating-in-rating-box'>122</p>
+                        <p className='percentage-star-rating-box'>{Number(Number(onestarnum)/Number(coursedetails.CourseReview.length)*100).toFixed(0)+'%'}</p>
+                        <p className='total-rating-in-rating-box'>{onestarnum}</p>
                       </div>
                       
                     </div>
@@ -672,45 +778,52 @@ const CourseOverview = ({course,LikeCourse}) => {
                 </div>
                 <div id='course-review' className='course-review-container section'>
                   <p className='all-box-overview-title'>Course Review<span className='course-section-tit-underline'></span></p>
-                  <div className='review-of-the-course'>
+                  {Array.from(coursedetails.CourseReview).map((indiReview)=>
+                   <div key={indiReview.ReviewId} className='review-of-the-course'>
                     <div className='review-of-the-course-reviewer-img'>
-                      <div className='reviewer-image'></div>
+                      <div className='reviewer-image' style={{backgroundImage:`url(${indiReview.ReviewerIMG})`}}>
+
+                      </div>
                     </div>
                     <div className='review-of-the-course-cont'>
-                      <p className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+                      
+                        {Number(indiReview.RaatingNUM)==1?
+                          <p className='star-in-review'>
+                          <FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                          </p>
+                          :Number(indiReview.RaatingNUM)==2?
+                          <p className='star-in-review'>
+                          <FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                          </p>
+                          :Number(indiReview.RaatingNUM)==3?
+                          <p className='star-in-review'>
+                          <FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/>
+                          </p>
+                          :Number(indiReview.RaatingNUM)==4?
+                          <p className='star-in-review'>
+                           <FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/>
+                           </p>
+                           :Number(indiReview.RaatingNUM)==5?
+                           <p className='star-in-review'>
+                           <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
+                           </p>
+                           
+                           :
+                            <p className='star-in-review'>
+                               <FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                            </p>
+                        }
+                      
+                        
                       <div className='reviewer-content'>
-                        <p className='reviewer-name-review'>Jame Bond</p>
-                        <p className='reviewer-date-review'>July 20 2020</p>
-                        <p className='reviewer-cont-review'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae quia facilis necessitatibus vel repellat nobis assumenda possimus illo debitis.</p>
+                        <p className='reviewer-name-review'>{indiReview.ReviewerName}</p>
+                        <p className='reviewer-date-review'>{indiReview.ReviewedDate}</p>
+                        <p className='reviewer-cont-review'>{indiReview.ReviewerContent}</p>
                       </div>
                     </div>
                   </div>
-                  <div className='review-of-the-course'>
-                    <div className='review-of-the-course-reviewer-img'>
-                      <div className='reviewer-image'></div>
-                    </div>
-                    <div className='review-of-the-course-cont'>
-                      <p className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
-                      <div className='reviewer-content'>
-                        <p className='reviewer-name-review'>Jame Bond</p>
-                        <p className='reviewer-date-review'>July 20 2020</p>
-                        <p className='reviewer-cont-review'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae quia facilis necessitatibus vel repellat nobis assumenda possimus illo debitis.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='review-of-the-course'>
-                    <div className='review-of-the-course-reviewer-img'>
-                      <div className='reviewer-image'></div>
-                    </div>
-                    <div className='review-of-the-course-cont'>
-                      <p className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
-                      <div className='reviewer-content'>
-                        <p className='reviewer-name-review'>Jame Bond</p>
-                        <p className='reviewer-date-review'>July 20 2020</p>
-                        <p className='reviewer-cont-review'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae quia facilis necessitatibus vel repellat nobis assumenda possimus illo debitis.</p>
-                      </div>
-                    </div>
-                  </div>
+                  )}
+                 
                 </div>
                 <button className='review-written-btn' onClick={()=>setreviewwrite(!reviewwrite)}>
                   <div className='review-written-btn-inner'>

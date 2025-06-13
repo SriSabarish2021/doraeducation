@@ -1546,7 +1546,6 @@
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .line-rating-bg .line-rating-inner {
   position: absolute;
   height: 100%;
-  width: 40%;
   border-radius: 10px;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .line-rating-bg .line-inner-for-five {
@@ -1608,7 +1607,6 @@
   width: 110px;
   border-radius: 100%;
   background-color: aqua;
-  background-image: url("./StaffPage/Top-staff-one.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

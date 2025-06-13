@@ -1147,6 +1147,7 @@
 
 
                         }
+                       
                         .course-content-list-cont{
                             height: 0px;
                             width: 100%;
@@ -1449,7 +1450,7 @@
                                 .line-rating-inner{
                                     position: absolute;
                                     height: 100%;
-                                    width: 40%;
+                                   
                                     border-radius: 10px;
                                 }
                                 .line-inner-for-five{
@@ -1511,7 +1512,9 @@
                             width: 110px;
                             border-radius: 100%;
                             background-color: aqua;
-                            @include bg-img-center.bg-img-center('./StaffPage/Top-staff-one.avif');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
 
                         }
                     }
