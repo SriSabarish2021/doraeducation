@@ -12,6 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 
+
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -34,6 +35,8 @@
         left: 0px;
         box-sizing: border-box;
         z-index:3000000;
+        cursor:url('/close-two.png') 10 10,auto;
+
         @include Row-center.row-center;
         .cart-page-container{
             height: 80%;
@@ -41,6 +44,7 @@
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
             @include Column-center.column-center;
+            cursor: default;
             overflow: hidden;
             padding: 10px;
             gap: 10px;
@@ -53,9 +57,14 @@
                 color: rgb(72, 72, 72);
                 top: 20px;
                 right:30px;
-            
+                cursor: pointer;
+                transition-duration: 0.3s;
+
             }
-            
+            .cart-page-close-icon-div:hover{
+                transform: scale(1.1);
+                transition-duration: 0.3s;
+            }            
 
             .cart-page-intro-bar{
                 height: 100%;
@@ -77,6 +86,19 @@
                         font-size: 30px;
                         .cart-name-title{
                             @include main-color.letter-color-main;
+                        }
+                        .cart-page-underline{
+                            position: relative;
+                            .underline-cart-page{
+                                height: 20px;
+                                width: 80px;
+                                bottom: -10px;
+                                left: 0px;
+                                position: absolute;
+                                
+                                @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/Vector 11.png');
+                                background-size: contain;
+                            }
                         }
 
 
@@ -156,8 +178,40 @@
                         height:350px;
                         width: 100%;
                         overflow: auto;
+                        @include Column-center.column-center;
+                        justify-content: flex-start;
                         
-                       
+                       .no-enroll-courses{
+                        height: auto;
+                        width: 100%;
+                        @include Column-center.column-center;
+                        gap: 20px;
+                        margin-top: 60px;
+                        color: main-color.$main-color-for-app-little-lighter;
+
+                        .no-enroll{
+                            font-size: 18px;
+                            font-family: 'Sour Gummy';
+                            font-weight: 500;
+                            letter-spacing: 1px;
+
+                        }
+                        .start-enroll{
+                              font-size: 18px;
+                            font-family:'Delius';
+                            letter-spacing: 1px;
+                            font-weight: 800;
+                            .start-learning-click{
+                                cursor: pointer;
+                                @include main-color.letter-color-main;
+                                text-decoration: underline;
+                                text-decoration-color:main-color.$main-color-yellow-for-btn;
+                                text-underline-offset: 8px;
+                                text-decoration-thickness: 2px;
+
+                            }
+                        }
+                       }
 
                         .course-box{
                             height: 150px;

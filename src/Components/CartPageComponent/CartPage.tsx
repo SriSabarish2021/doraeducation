@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import '../../Styles/CartPageCSS/CartPage.css'
 import { FaPlay } from "react-icons/fa";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const CartPage = ({cartpage,setcartpage,course}) => {
     const[coursestatus,setcoursestatus]=useState(false)
@@ -11,19 +12,34 @@ const CartPage = ({cartpage,setcartpage,course}) => {
             enrollindi.Enroll===true
             
     )
+
+
+     useEffect(() => {
+          
+          const cartbox=document.querySelector('.cart-page-course-box')
+    
+            cartbox?.scrollTo(0,0)
+          
+        }, [cartpage])
     
     
     
-    
+    const CloseCartbyClick=(id)=>{
+        if (String(id).includes('cart-page-close')) {
+            setcartpage(false)
+        }else{
+            return
+        }
+    }
    
     
   return (
-    <div className={`cart-page-main-container ${cartpage?'zoomin':'zoomout'}`}>
+    <div id='cart-page-close' onClick={(e)=>CloseCartbyClick(e.target.id)} className={`cart-page-main-container ${cartpage?'zoomin':'zoomout'}`}>
         
-            <div className='cart-page-container'>
+            <div  id='cart-page-not-close' onClick={(e)=>CloseCartbyClick(e.target.id)} className='cart-page-container'>
             <div className='cart-page-intro-bar'>
                 <div className='cart-page-title-bar'>
-                    <p className='cart-page-title'>Your <span className='cart-name-title'>Cart</span> Page</p>
+                    <p className='cart-page-title'>Your <span className='cart-name-title'>Cart</span> <span className='cart-page-underline'>Page <span className='underline-cart-page'></span></span></p>
                     <p className='cart-page-course-num'>Enrolled {enrollelement.length==1?'Course':'Courses'} : <span className='course-enroll-num'>{enrollelement.length}</span></p>
                 </div>
                 
@@ -44,8 +60,8 @@ const CartPage = ({cartpage,setcartpage,course}) => {
                     <div className='cart-page-main-bar'>
                         
                         <div className='cart-page-course-box'>
-                        {enrollelement&&
-                    enrollelement.map((itemforcart)=>
+                        {enrollelement&&enrollelement.length?
+                            enrollelement.map((itemforcart)=>
                             <div className='course-box'>
                                 <div className='course-video-div'>
                                     <div className='course-video-container'>
@@ -75,10 +91,8 @@ const CartPage = ({cartpage,setcartpage,course}) => {
                                         </span>
                                     </button>
                                 </div>
-                            </div>
-                            
-                            
-                        )  
+                            </div>)  :
+                            <p className='no-enroll-courses'><span className='no-enroll'> No courses enrolled yet</span><span className='start-enroll'>click to&nbsp;&nbsp;<Link onClick={()=>setcartpage(false)} to={"Providing-Education's-in-Mindspire-Institute"} className='start-learning-click'>Start learning&nbsp;</Link> and bring ideas alive!</span></p>
                         }
                    
                         </div>

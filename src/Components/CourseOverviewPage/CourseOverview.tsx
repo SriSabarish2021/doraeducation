@@ -37,7 +37,7 @@ import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
+const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
 
 
@@ -53,11 +53,26 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
     const [fourstarnum,setfourstarnum]=useState(0)
     const [fivestarnum,setfivestarnum]=useState(0)
 
+
+      const [reviewwrite,setreviewwrite]=useState(false)
+
+       const [commentimg,setcommentimg]=useState([])
+
+
     useEffect(() => {
       
      window.scrollTo(0,0)
       
     }, [])
+
+    useEffect(() => {
+      
+      const reviewwrittenbox=document.querySelector('.review-input-main-container')
+
+    reviewwrittenbox?.scrollTo(0,0)
+      
+    }, [reviewwrite])
+    
     
 
   useEffect(() => {
@@ -89,61 +104,49 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
       )
       const reviewnumber=reviewtotal[0].map((reviewtotnumber)=>{
             if (Number(reviewtotnumber.RaatingNUM)==5) {
-                  console.log(5);
                   
                     setfivestarnum((fivestarnum)=>{
                       let oldernum=fivestarnum
                       let newnum=oldernum+1
-                      console.log(newnum);
                       return newnum
                       
                     }) 
                   
                   
                 }else if (Number(reviewtotnumber.RaatingNUM)==4) {
-                  console.log(4);
                   setfourstarnum((fourstarnum)=>{
                       let oldernum=fourstarnum
                       let newnum=oldernum+1
-                      console.log(newnum);
                       return newnum
                       
                     })
                  
                 }
                 else if (Number(reviewtotnumber.RaatingNUM)==3) {
-                  console.log(3);
                   setthreestarnum((threestarnum)=>{
                       let oldernum=threestarnum
                       let newnum=oldernum+1
-                      console.log(newnum);
                       return newnum
                       
                     })
                  
                 }
                 else if (Number(reviewtotnumber.RaatingNUM)==2) {
-                  console.log(2);
                   settwostarnum((twostarnum)=>{
                       let oldernum=twostarnum
                       let newnum=oldernum+1
-                      console.log(newnum);
                       return newnum
                       
                     })
-                  console.log(twostarnum);
 
                 }
                 else if (Number(reviewtotnumber.RaatingNUM)==1) {
-                  console.log(1);
                   setonestarnum((onestarnum)=>{
                       let oldernum=onestarnum
                       let newnum=oldernum+1
-                      console.log(newnum);
                       return newnum
                       
                     })
-                  console.log(onestarnum);
                 }
                 else{
                   return
@@ -167,19 +170,12 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
 
   
-
-
-  const [reviewwrite,setreviewwrite]=useState(false)
-
-
-
   let Starnumref=useRef(0)
   let reviewNameref=useRef('')
   let reviewEmailref=useRef('')
     let reviewCommentref=useRef('')
 
   
- const [commentimg,setcommentimg]=useState([])
 
   const handleFiles = (files) => {
     setcommentimg((curfiles)=>{
@@ -189,7 +185,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
     })
   };
 
-  let removeimgincomment=(url)=>{
+  const removeimgincomment=(url)=>{
     let removedimgofcomment=commentimg.filter((indiimgurl)=>indiimgurl!=url)
     setcommentimg(removedimgofcomment)
     
@@ -197,9 +193,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
 
   const ReviewSubmit=(contentID)=>{
-    console.log(Starnumref.current);
-    console.log(reviewNameref.current.value);
-    console.log(reviewCommentref.current.value);
+    
     
     let month=['January','February','March','April','May','June','July','August','September','November','December']
     let getdate=new Date().getDate()
@@ -211,7 +205,6 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
     const updatedreview=Array.from(course).map((reviewupdate)=>
       reviewupdate.id==contentID?{...reviewupdate,CourseReview:[...reviewupdate.CourseReview,{ReviewId:Number(reviewupdate.CourseReview.length)+1,ReviewerName:reviewNameref.current.value,ReviewerContent:reviewCommentref.current.value,RaatingNUM:Starnumref.current,ReviewedDate:`${month[getmonth]} ${getdate} ${getYear}`,ReviewerIMG:commentimg[0]}]}:{...reviewupdate}
     )
-    console.log(updatedreview);
     setcourse(updatedreview)
    
     setreviewwrite(false)
@@ -230,7 +223,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
   const starsvg=document.querySelectorAll('.star-svg')
 
    const removelike=()=>{
- Starnumref.current=0
+          Starnumref.current=0
           starsvg[0].classList.remove('hexa')
           starsvg[1].classList.remove('hexa')
           starsvg[2].classList.remove('hexa')
@@ -258,7 +251,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
     }
     const colorfixthree=()=>{
- Starnumref.current=3
+          Starnumref.current=3
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.add('hexa')
           starsvg[2].classList.add('hexa')
@@ -268,7 +261,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
     }
     const colorfixtwo=()=>{
- Starnumref.current=2
+           Starnumref.current=2
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.add('hexa')
           starsvg[2].classList.remove('hexa')
@@ -278,7 +271,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
     }
     const colorfixone=()=>{
-      Starnumref.current=1
+          Starnumref.current=1
 
           starsvg[0].classList.add('hexa')
           starsvg[1].classList.remove('hexa')
@@ -546,12 +539,39 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
   }
   
 
+  const clickreviewcloser=(id)=>{
+    if (String(id).includes('close-review-write')) {
+      setreviewwrite(false)
+    }else{
+      return
+    }
+  }
+
+  const [pick,setpick]=useState(false)
+  const pickcourse=(id)=>{
+    if (enrollbtn||enrollbtncont||enrollbtntick) {
+      courseenrolled(id)
+    }else{
+      setpick(true)
+    }
+  }
+  useEffect(() => {
+    setpick(false)
+  
+    return () => {
+      setpick(false)
+    }
+  }, [enrollbtn])
+  
+  
+  
+
   return (
     <div className='course-overview-main-conatainer'>
       <style>{
         `html{
           overflow-x: hidden;
-          overflow-y:${reviewwrite||cartpage?'hidden':'auto'}
+          overflow-y:${reviewwrite||cartpage||likepage?'hidden':'auto'}
         }`}
         </style>
         {Array.from(coursedetail).map((coursedetails)=>
@@ -638,7 +658,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
               <p className='time-left-offer-para'><FaRegClock/> 5 Days left at this price!</p>
             </div>
             <div className='course-join-btns'>
-              <button className='course-btn course-btn-one'>Pick JavaScript
+              <button onClick={()=>pickcourse(coursedetails.id)} className='course-btn course-btn-one'>{pick?'Please Enroll':'Pick JavaScript'}
                 <div className='course-btn-design course-btn-design-one'></div>
                 <div className='course-btn-design course-btn-design-two'></div>
                 <div className='course-btn-design course-btn-design-three'></div>
@@ -966,7 +986,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><FaRegClock className='sider-list-icon'/>Duration</p>
-                    <p className='course-list-cont'>{coursedetails.CourseDuration}</p>
+                    <p className='course-list-cont'>{coursedetails.CourseDuration}/ hr:min</p>
                   </div>
                 </div>
                 <div className='course-sharing-path'>
@@ -1016,8 +1036,8 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
               </div>
           </div>
 
-          <div className={`review-written-container ${reviewwrite?'move':'remove'}`}>
-            <div className='review-written-input-container'>
+          <div id='close-review-write' onClick={(e)=>clickreviewcloser(e.target.id)} className={`review-written-container ${reviewwrite?'move':'remove'}`}>
+            <div id='not-close-review-write' onClick={(e)=>clickreviewcloser(e.target.id)} className='review-written-input-container'>
               <div className="review-input-main-container">
                 <div className='review-input-title-bar'>
                   <p>Voice Your Opinion</p>

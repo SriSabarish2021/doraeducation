@@ -115,7 +115,7 @@ const ProgramList = ({course,LikeCourse}) => {
       </div>
       <div className='program-list-items-container'> 
         {
-        Array.from(course).map((indicourse:any)=>
+        Array.from(course).slice(-9).map((indicourse:any)=>
         
             <div key={indicourse.id} className='program-item-one'>
             <div className='program-image-bar' style={{backgroundImage:`url(${indicourse.courseIMG})`}}></div>

@@ -11,6 +11,7 @@ import ReviewMainPage from './Components/WebsiteComponents/ReviewMainPage'
 import CourseOverview from './Components/CourseOverviewPage/CourseOverview'
 import { useEffect, useState } from 'react'
 import CartPage from './Components/CartPageComponent/CartPage'
+import LikePage from './Components/LikePageComponents/LikePage'
 
 function App() {
 
@@ -1148,26 +1149,28 @@ function App() {
   }
   
   const[cartpage,setcartpage]=useState(false)
+  const[likepage,setlikepage]=useState(false)
 
 
   return (
     
     <div className='website-main-container'>
-      <Nav/>
+      <Nav setcartpage={setcartpage} setlikepage={setlikepage}/>
       <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
-            <Route index element={<HomePage course={course} LikeCourse={LikeCourse}/>}/>
+            <Route index element={<HomePage  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path='About-Mindspire-Institute' element={<AboutPage/>}/>
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage course={course} LikeCourse={LikeCourse}/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage/>}/>
-            <Route path="mindspire-course" element={<CourseOverview cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="mindspire-course" element={<CourseOverview likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
             <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>
       <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
+      <LikePage setlikepage={setlikepage} likepage={likepage}/>
       <Footer/>
     </div>
    

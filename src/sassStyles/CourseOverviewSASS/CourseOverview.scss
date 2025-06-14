@@ -38,7 +38,7 @@
         top: 0;
         left: 0;
         box-sizing: border-box;
-
+        cursor:url('/close-two.png') 10 10,auto;
         z-index:3000000;
         display: flex;
         flex-direction: row;
@@ -55,6 +55,7 @@
             z-index: 1;
             overflow: hidden;
             border-radius: 15px;
+            cursor: default;
 
 
             .review-input-main-container{
@@ -1915,12 +1916,15 @@
                     font-weight: 600;
                     letter-spacing: 0.8px; 
                     color: rgb(41, 108, 41);
+                    transition-duration: 0.5s;
                     .course-name-in-enroll-done
                     {
                         font-size: 15px;
                         font-family: 'Delius Swash Caps';
                         font-weight: 900;
                         @include main-color.letter-color-main;
+                        
+
                     }
                     .cart-page-link-in-enroll-cont{
                          color: rgb(41, 108, 41);
@@ -1929,6 +1933,15 @@
                          text-underline-offset: 5px;
                          text-decoration-thickness: 2px;
                          text-decoration-color: rgb(112, 198, 112);
+                         cursor: pointer;
+                         transition-duration: 0.5s;
+
+                    }
+                    .cart-page-link-in-enroll-cont:hover{
+                         @include main-color.letter-color-main;
+                        transition-duration: 0.5s;
+
+                        text-decoration-color: main-color.$main-color-for-app-little-lighter;
 
                     }
                 }

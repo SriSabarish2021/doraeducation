@@ -35,6 +35,7 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
+  cursor: url("/close-two.png") 10 10, auto;
   z-index: 3000000;
   display: flex;
   flex-direction: row;
@@ -54,6 +55,7 @@
   z-index: 1;
   overflow: hidden;
   border-radius: 15px;
+  cursor: default;
 }
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
   height: 500px;
@@ -2017,6 +2019,7 @@
   font-weight: 600;
   letter-spacing: 0.8px;
   color: rgb(41, 108, 41);
+  transition-duration: 0.5s;
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-done-para-div .enroll-done-para .course-name-in-enroll-done {
   font-size: 15px;
@@ -2034,6 +2037,17 @@
   text-underline-offset: 5px;
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(112, 198, 112);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-done-para-div .enroll-done-para .cart-page-link-in-enroll-cont:hover {
+  background: #c757b6;
+  background: linear-gradient(32deg, rgb(199, 87, 182) 14%, rgb(218, 87, 133) 53%, rgb(237, 86, 83) 91%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition-duration: 0.5s;
+  text-decoration-color: rgb(255, 89, 100);
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .lottie-file-tick {
   height: 70px;

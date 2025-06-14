@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.like-page-main-container {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(0, 0, 0, 0.591);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  z-index: 3000000;
+  cursor: url("/close-two.png") 10 10, auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.like-page-main-container .like-page-item-main-box {
+  height: 100%;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
+}
+.like-page-main-container .nolikezoom {
+  transform: translateX(200px) scale(0);
+  transition-duration: 0.4s;
+  transition-delay: 0s;
+}
+.like-page-main-container .likezoom {
+  transform: translateX(0px) scale(1);
+  transition-duration: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.slide {
+  transform: translateX(2000px);
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.noslide {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+/*# sourceMappingURL=LikePage.css.map */

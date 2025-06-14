@@ -1,0 +1,52 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+@use'../bg-img-center';
+
+
+.like-page-main-container{
+    height: 100dvh;
+    width: 100dvw;
+    background-color: rgba(0, 0, 0, 0.591);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    z-index:3000000;
+    cursor:url('/close-two.png') 10 10,auto;
+
+    @include Row-center.row-center;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .like-page-item-main-box{
+        height: 100%;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        cursor: default;
+    }
+    .nolikezoom{
+        transform: translateX(200px) scale(0);
+        transition-duration: 0.4s;
+        transition-delay: 0s;
+    }
+    .likezoom{
+        transform: translateX(0px) scale(1);
+        transition-duration: 0.4s;
+        transition-delay: 0.4s;
+    }
+}
+
+.slide{
+    transform: translateX(2000px);
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.noslide{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-duration: 0.5s;
+}
