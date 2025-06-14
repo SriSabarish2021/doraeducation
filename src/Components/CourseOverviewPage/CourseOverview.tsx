@@ -37,7 +37,7 @@ import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-const CourseOverview = ({course,LikeCourse,setcourse}) => {
+const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
   const gethash=useLocation().hash
 
@@ -531,7 +531,7 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
       <style>{
         `html{
           overflow-x: hidden;
-          overflow-y:${reviewwrite?'hidden':'auto'}
+          overflow-y:${reviewwrite||cartpage?'hidden':'auto'}
         }`}
         </style>
         {Array.from(coursedetail).map((coursedetails)=>
@@ -983,7 +983,7 @@ const CourseOverview = ({course,LikeCourse,setcourse}) => {
                         />
                  
                   : !enrollbtn && !enrollbtntick && enrollbtncont?<div className='enroll-done-para-div'>
-                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <Link className='cart-page-link-in-enroll-cont'>Cart Page</Link> </p>
+                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>setcartpage(true)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
                   </div> :
                   <button onClick={()=>setenrollbtn(!enrollbtn)} className='enroll-btn-sider-course'>Enroll Course
                     <div className='enroll-design-one'></div>

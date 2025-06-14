@@ -10,6 +10,7 @@ import ContactPage from './Components/WebsiteComponents/ContactPage'
 import ReviewMainPage from './Components/WebsiteComponents/ReviewMainPage'
 import CourseOverview from './Components/CourseOverviewPage/CourseOverview'
 import { useEffect, useState } from 'react'
+import CartPage from './Components/CartPageComponent/CartPage'
 
 function App() {
 
@@ -288,6 +289,7 @@ function App() {
     
   }
   
+  const[cartpage,setcartpage]=useState(false)
 
 
   return (
@@ -302,11 +304,12 @@ function App() {
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage course={course} LikeCourse={LikeCourse}/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage/>}/>
-            <Route path="mindspire-course" element={<CourseOverview course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
-            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="mindspire-course" element={<CourseOverview cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>
+      <CartPage cartpage={cartpage}/>
       <Footer/>
     </div>
    
