@@ -81,7 +81,7 @@ const ProgramList = ({course,LikeCourse}) => {
               </div>
               <div className='hovering-btn-container'>
                 <div className='hover-enroll-btn'>
-                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: "#javascript" }}>
+                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: `#${indicourse.courseName}` }}>
                     <div className='hover-enroll-btn-insider'>
                       Enroll Now
                       <div className='prog-enroll-design-one'></div>

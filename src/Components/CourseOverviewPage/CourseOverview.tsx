@@ -39,6 +39,8 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
+
+
   const gethash=useLocation().hash
 
   const [coursedetail,setcoursedetail]=useState([])
@@ -51,10 +53,17 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
     const [fourstarnum,setfourstarnum]=useState(0)
     const [fivestarnum,setfivestarnum]=useState(0)
 
-  useEffect(() => {
+    useEffect(() => {
+      
+     window.scrollTo(0,0)
+      
+    }, [])
     
-    window.scrollTo(0,0)
-    console.log(gethash);
+
+  useEffect(() => {
+   
+
+   
     
     const gettingcoursedetail=Array.from(course).filter((indicourse)=>String(indicourse.courseName)==String(gethash).slice(1))
     setcoursedetail(gettingcoursedetail)
@@ -524,6 +533,17 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
       clearTimeout(timertwo)
     }
   }, [enrollbtn])
+
+
+  const courseenrolled=(enrollid)=>{
+     const enrollcourse=Array.from(course).map((indicourse)=>
+      Number(indicourse.id)==Number(enrollid)?{...indicourse,Enroll:true}:{...indicourse}
+    )
+    
+     setcourse(enrollcourse)
+
+    setcartpage(true)
+  }
   
 
   return (
@@ -965,7 +985,9 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
                   </div>
                 </div>
-                {
+                {coursedetails.Enroll?<div className='enroll-done-para-div'>
+                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>courseenrolled(coursedetails.id)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
+                  </div> :
                   enrollbtn && !enrollbtncont && !enrollbtntick? 
                   <button onClick={()=>setenrollbtn(!enrollbtn)} className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
                   <span className='enroll-ball enroll-ball-two'></span>
@@ -983,7 +1005,7 @@ const CourseOverview = ({course,LikeCourse,setcourse,setcartpage,cartpage}) => {
                         />
                  
                   : !enrollbtn && !enrollbtntick && enrollbtncont?<div className='enroll-done-para-div'>
-                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>setcartpage(true)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
+                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>courseenrolled(coursedetails.id)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
                   </div> :
                   <button onClick={()=>setenrollbtn(!enrollbtn)} className='enroll-btn-sider-course'>Enroll Course
                     <div className='enroll-design-one'></div>

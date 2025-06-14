@@ -44,6 +44,14 @@
   overflow: hidden;
   padding: 10px;
   gap: 10px;
+  position: relative;
+}
+.cart-page-main-container .cart-page-container .cart-page-close-icon-div {
+  position: absolute;
+  font-size: 20px;
+  color: rgb(72, 72, 72);
+  top: 20px;
+  right: 30px;
 }
 .cart-page-main-container .cart-page-container .cart-page-intro-bar {
   height: 100%;
@@ -72,6 +80,13 @@
   font-weight: 600;
   color: rgb(49, 49, 49);
   font-size: 30px;
+}
+.cart-page-main-container .cart-page-container .cart-page-intro-bar .cart-page-title-bar .cart-page-title .cart-name-title {
+  background: #c757b6;
+  background: linear-gradient(32deg, rgb(199, 87, 182) 14%, rgb(218, 87, 133) 53%, rgb(237, 86, 83) 91%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .cart-page-main-container .cart-page-container .cart-page-intro-bar .cart-page-title-bar .cart-page-course-num {
   font-size: 13px;
@@ -194,7 +209,6 @@
   padding: 6px;
 }
 .cart-page-main-container .cart-page-container .cart-page-main-course-bar .cart-page-course-bar-container .cart-page-main-bar .cart-page-course-box .course-box .course-video-div .course-video-container .course-video-image {
-  background-image: url("./lilla-szente-jvVRdSxfArc-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -405,11 +419,22 @@
   transition-duration: 0.6s;
   opacity: 1;
 }
+.zoomin .cart-page-container {
+  transform: scale(1);
+  transition-duration: 0.4s;
+  transition-delay: 0.5s;
+}
 
 .zoomout {
-  transform: scale(0);
+  transform: translateX(2000px);
   transition-duration: 0.6s;
+  transition-delay: 0.3s;
   opacity: 0;
+}
+.zoomout .cart-page-container {
+  transform: scale(0);
+  transition-duration: 0.4s;
+  transition-delay: 0s;
 }
 
 /*# sourceMappingURL=CartPage.css.map */

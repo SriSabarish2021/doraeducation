@@ -44,6 +44,17 @@
             overflow: hidden;
             padding: 10px;
             gap: 10px;
+            position: relative;
+            
+
+            .cart-page-close-icon-div{
+                position: absolute;
+                font-size: 20px;
+                color: rgb(72, 72, 72);
+                top: 20px;
+                right:30px;
+            
+            }
             
 
             .cart-page-intro-bar{
@@ -64,6 +75,9 @@
                     .cart-page-title{
                         @include Main-Title.MainTitleCont;
                         font-size: 30px;
+                        .cart-name-title{
+                            @include main-color.letter-color-main;
+                        }
 
 
                     }
@@ -169,7 +183,6 @@
                                     padding: 6px;
 
                                      .course-video-image{
-                                        background-image: url('./lilla-szente-jvVRdSxfArc-unsplash.jpg');
                                         background-position: center;
                                         background-repeat: no-repeat;
                                         background-size: cover;
@@ -396,9 +409,20 @@
     transform: scale(1);
     transition-duration: 0.6s;
     opacity: 1;
+    .cart-page-container{
+            transform: scale(1);
+            transition-duration: 0.4s;
+            transition-delay: 0.5s;
+    }
 }
 .zoomout{
-    transform: scale(0);
+    transform:translateX(2000px);
     transition-duration: 0.6s;
+    transition-delay: 0.3s;
     opacity: 0;
+    .cart-page-container{
+            transform: scale(0);
+            transition-duration: 0.4s;
+            transition-delay: 0s;
+    }
 }
