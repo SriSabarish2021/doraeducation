@@ -771,20 +771,11 @@
                         border: none;
                         cursor: pointer;
                      }
-                     .course-btn-one{
-                        background-color: main-color.$main-color-red-for-btn;
-                        font-size: 15px;
-                        font-family: 'Inter';
-                        font-weight: 600;
-                        letter-spacing: 1px;
-                        color: white;
+                     .btn-for-pick-enroll-div{
+                        height: auto;
+                        width: 100%;
                         position: relative;
                         @include Row-center.row-center;
-                        z-index: 1;
-                        overflow: hidden;
-                        gap: 5px;
-                        transition-duration: 0.4s;
-
                         .pick-alert-box{
                             height: auto;
                             padding: 8px 10px;
@@ -799,7 +790,7 @@
                             bottom: 130%;
                             border-radius: 5px;
                             z-index: 1;
-                            transform: translateY(20px) scale(0);
+                            transform: translateY(30px) scale(0);
                             opacity: 0;
                             transition-duration: 0.4s;
                             .pick-alert-arrow{
@@ -814,6 +805,27 @@
 
                             }
                         }
+                     }
+                     .btn-for-pick-enroll-div:hover .pick-alert-box{
+                            transform: translateY(0px) scale(1);
+                            opacity: 1;
+                            transition-duration: 0.4s;
+                     }
+                     .course-btn-one{
+                        background-color: main-color.$main-color-red-for-btn;
+                        font-size: 15px;
+                        font-family: 'Inter';
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        color: white;
+                        position: relative;
+                        @include Row-center.row-center;
+                        z-index: 1;
+                        overflow: hidden;
+                        gap: 5px;
+                        transition-duration: 0.4s;
+
+                        
                         .course-btn-design{
                             position: absolute;
                             height: 0%;

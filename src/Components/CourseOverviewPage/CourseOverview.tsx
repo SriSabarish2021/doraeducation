@@ -658,11 +658,10 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
               <p className='time-left-offer-para'><FaRegClock/> 5 Days left at this price!</p>
             </div>
             <div className='course-join-btns'>
-              <button onClick={()=>pickcourse(coursedetails.id)} className={`course-btn course-btn-one ${pick?'alert-pick':'design-pick'}`} style={{overflow:pick?'visible':'hidden'}}>{pick?'Please Enroll':'Pick JavaScript'}
+              <div className='btn-for-pick-enroll-div'>
+                <button onClick={()=>pickcourse(coursedetails.id)} className={`course-btn course-btn-one ${pick?'':'design-pick'}`} >{pick?'Please Enroll':'Pick JavaScript'}
                 {pick?<>
-                <div className='pick-alert-box'>Scroll Down to Enroll
-                  <div className='pick-alert-arrow'></div>
-                </div>
+               
                 </>:<>
                 <div className='course-btn-design course-btn-design-one'></div>
                 <div className='course-btn-design course-btn-design-two'></div>
@@ -671,6 +670,12 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
                 </>}
                 
               </button>
+              {pick&&<div className='pick-alert-box'>Scroll Down to Enroll
+                  <div className='pick-alert-arrow'></div>
+                </div>}
+               
+              </div>
+             
               <button onClick={()=>LikeCourse(coursedetails.id)} className='course-btn course-btn-two'>{coursedetails.Like?'in LikeList':'Move to LikeList'}
                 <div className='course-btn-design-two course-btn-design-two-one'></div>
                 <div className='course-btn-design-two course-btn-design-two-two'></div>
