@@ -843,6 +843,37 @@
   gap: 5px;
   transition-duration: 0.4s;
 }
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .pick-alert-box {
+  height: auto;
+  padding: 8px 10px;
+  width: auto;
+  background-color: white;
+  border: 1px solid rgb(218, 218, 218);
+  color: rgb(116, 116, 116);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: "Public Sans";
+  position: absolute;
+  bottom: 130%;
+  border-radius: 5px;
+  z-index: 1;
+  transform: translateY(20px) scale(0);
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .pick-alert-box .pick-alert-arrow {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  transform: rotate(45deg);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  border-right: 1px solid rgb(218, 218, 218);
+}
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one .course-btn-design {
   position: absolute;
   height: 0%;
@@ -870,29 +901,34 @@
   background-color: rgb(255, 203, 30);
   top: 0px;
 }
-.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover {
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .design-pick:hover {
   transition-duration: 0.4s;
   color: rgb(44, 44, 44);
 }
-.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design {
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .design-pick:hover .course-btn-design {
   height: 100%;
   transition-duration: 0.4s;
 }
-.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-one {
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .design-pick:hover .course-btn-design-one {
   top: auto;
   bottom: 0px;
 }
-.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-two {
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .design-pick:hover .course-btn-design-two {
   bottom: auto;
   top: 0px;
 }
-.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-three {
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .design-pick:hover .course-btn-design-three {
   bottom: auto;
   top: 0px;
 }
-.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one:hover .course-btn-design-four {
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .design-pick:hover .course-btn-design-four {
   top: auto;
   bottom: 0px;
+}
+.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .alert-pick:hover .pick-alert-box {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+  transition-duration: 0.4s;
 }
 .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two {
   border: 2px solid rgb(255, 203, 30);

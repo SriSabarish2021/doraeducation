@@ -609,7 +609,7 @@ function App() {
           ReviewerName:'David Josh Kanna',
           ReviewerContent:'Dive into the world of JavaScript with this complete tutorial designed for beginners and aspiring developers.Learn everything from the fundamentals to advanced concepts with hands-on examples and clear explanations',
           ReviewedDate:'July 20 2020',
-          RaatingNUM:5
+          RaatingNUM:2
         } ,
          {
           ReviewId:2,
@@ -1147,10 +1147,17 @@ function App() {
     
     
   }
+  const removelike=(likeitemid)=>{
+    
+    const removelike=Array.from(course).map((likeid)=>likeid.id==likeitemid?{...likeid,Like:false}:{...likeid})
+    setcourse(removelike)
+    
+  }
   
   const[cartpage,setcartpage]=useState(false)
   const[likepage,setlikepage]=useState(false)
 
+  
 
   return (
     
@@ -1165,12 +1172,12 @@ function App() {
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage/>}/>
             <Route path="mindspire-course" element={<CourseOverview likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
-            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>
       <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
-      <LikePage setlikepage={setlikepage} likepage={likepage}/>
+      <LikePage setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
       <Footer/>
     </div>
    

@@ -8,12 +8,28 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link, useLocation } from 'react-router-dom';
 import { FaHeart } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const ProgramList = ({course,LikeCourse}) => {
   let getlocation=useLocation()
   getlocation.pathname
 
-  
+
+
+  const starcalc=(idnum)=>{
+    const gettotalstar=Array.from(course).filter((stararr)=>idnum==stararr.id)
+    let starinitial=0
+    const totalstarnum=gettotalstar[0].CourseReview.map((indistarnum)=>indistarnum.RaatingNUM)
+    let calculate=Array.from(totalstarnum).map((startget)=>{
+      starinitial=starinitial+startget
+    })
+ 
+
+    return starinitial
+    
+    
+  }
   
   return (
     <>
@@ -62,8 +78,14 @@ const ProgramList = ({course,LikeCourse}) => {
             </div>
             <div className='program-star-bar'>
               <div className='star-div-for-program'>
-                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
-                <p className='star-span-para'>({indicourse.rating}/5)</p>
+                {
+                Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==5? <p className='star-para-program-list'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>: 
+                   Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==4?<p className='star-para-program-list'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==3?<p className='star-para-program-list'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==2?<p className='star-para-program-list'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<p className='star-para-program-list'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:<p className='star-para-program-list'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>
+                                }
+                <p className='star-span-para'>({Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5)</p>
               </div>
               <p className='amt-para-in-prog-list'>${indicourse.CourseAMT}</p>
             </div>
@@ -71,7 +93,13 @@ const ProgramList = ({course,LikeCourse}) => {
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>{indicourse.studyLevel}</p></div>
                 <p className='hover-title'>{indicourse.courseTitle}</p>
-                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>{indicourse.rating}/5 Ratings</span></p>
+                <p className='star-para-hovering'>{
+                Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==5? <span className='star-hover'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></span>: 
+                   Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==4?<span className='star-hover'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></span>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==3?<span className='star-hover'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></span>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==2?<span className='star-hover'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<span className='star-hover'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:<span className='star-hover'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>
+                                }<span className='star-hover-cont'>{Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5 Ratings</span></p>
                 <p className="hover-amount">${indicourse.CourseAMT}</p>
                 <p className="hover-sub-title">{String(indicourse.CoursePara).slice(0,150)+'...'}</p>
                 <div className='prog-info-hovering'>
@@ -136,8 +164,14 @@ const ProgramList = ({course,LikeCourse}) => {
             </div>
             <div className='program-star-bar'>
               <div className='star-div-for-program'>
-                <p className='star-para-program-list'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></p>
-                <p className='star-span-para'>({indicourse.rating}/5)</p>
+                {
+                Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==5? <p className='star-para-program-list'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>: 
+                   Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==4?<p className='star-para-program-list'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==3?<p className='star-para-program-list'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==2?<p className='star-para-program-list'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<p className='star-para-program-list'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:<p className='star-para-program-list'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>
+                                }
+                <p className='star-span-para'>({Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5)</p>
               </div>
               <p className='amt-para-in-prog-list'>${indicourse.CourseAMT}</p>
             </div>
@@ -145,7 +179,13 @@ const ProgramList = ({course,LikeCourse}) => {
               <div className='hovering-content-container'>
                 <div className='difficulty-level-hover-bar'><p>{indicourse.studyLevel}</p></div>
                 <p className='hover-title'>{indicourse.courseTitle}</p>
-                <p className='star-para-hovering'><span className='star-hover'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/></span><span className='star-hover-cont'>{indicourse.rating}/5 Ratings</span></p>
+                <p className='star-para-hovering'>{
+                Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==5? <span className='star-hover'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></span>: 
+                   Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==4?<span className='star-hover'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></span>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==3?<span className='star-hover'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></span>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==2?<span className='star-hover'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:
+                  Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<span className='star-hover'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:<span className='star-hover'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>
+                                }<span className='star-hover-cont'>{Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5 Ratings</span></p>
                 <p className="hover-amount">${indicourse.CourseAMT}</p>
                 <p className="hover-sub-title">{String(indicourse.CoursePara).slice(0,150)+'...'}</p>
                 <div className='prog-info-hovering'>

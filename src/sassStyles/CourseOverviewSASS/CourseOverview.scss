@@ -784,6 +784,36 @@
                         overflow: hidden;
                         gap: 5px;
                         transition-duration: 0.4s;
+
+                        .pick-alert-box{
+                            height: auto;
+                            padding: 8px 10px;
+                            width: auto;
+                            background-color: white;
+                            border: 1px solid main-color.$border-light-color;
+                            color: rgb(116, 116, 116);
+                            @include Row-center.row-center;
+                            font-size: 10px;
+                            font-family:'Public Sans';
+                            position: absolute;
+                            bottom: 130%;
+                            border-radius: 5px;
+                            z-index: 1;
+                            transform: translateY(20px) scale(0);
+                            opacity: 0;
+                            transition-duration: 0.4s;
+                            .pick-alert-arrow{
+                                height: 10px;
+                                width: 10px;
+                                background-color: white;
+                                position: absolute;
+                                bottom: -5px;
+                                transform: rotate(45deg);
+                                border-bottom: 1px solid main-color.$border-light-color;
+                                border-right: 1px solid main-color.$border-light-color;
+
+                            }
+                        }
                         .course-btn-design{
                             position: absolute;
                             height: 0%;
@@ -813,7 +843,7 @@
                         }
                         
                      }
-                     .course-btn-one:hover{
+                     .design-pick:hover{
                          transition-duration: 0.4s;
                          color: rgb(44, 44, 44);
                         .course-btn-design{
@@ -838,6 +868,11 @@
                               top: auto;
                             bottom: 0px;
                         }
+                     }
+                     .alert-pick:hover .pick-alert-box{
+                            transform: translateY(0px) scale(1);
+                            opacity: 1;
+                            transition-duration: 0.4s;
                      }
                      .course-btn-two{
                         border:2px solid main-color.$main-color-yellow-for-btn;
