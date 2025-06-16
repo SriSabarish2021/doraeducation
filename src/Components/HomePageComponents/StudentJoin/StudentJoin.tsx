@@ -3,6 +3,7 @@ import '../../../Styles/HomePageCSS/StudentJoin/StudentJoin.css'
 
 import { FaArrowRight } from "react-icons/fa6";
 import { IoStar } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const StudentJoin = () => {
 
@@ -134,7 +135,7 @@ const StudentJoin = () => {
           </div>
         </div>
         <div className='stud-join-main-btn'>
-          <button className='stud-join-btn'>View Programs <span className='span-for-btn-stud-join'><FaArrowRight/> </span><div className='design-div-for-tud-btn-join-stud'></div></button>
+          <Link to={"Providing-Education's-in-Mindspire-Institute"} style={{textDecoration:'none'}} className='stud-join-btn'>View Programs <span className='span-for-btn-stud-join'><FaArrowRight/> </span><div className='design-div-for-tud-btn-join-stud'></div></Link>
         
         </div>
       </div>

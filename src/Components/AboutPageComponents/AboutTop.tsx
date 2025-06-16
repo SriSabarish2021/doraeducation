@@ -4,7 +4,7 @@ import { FaAnglesRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import { Image } from '@imagekit/react';
 
-const AboutTop = () => {
+const AboutTop = ({course}) => {
     const scrollRefAbout = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -97,36 +97,19 @@ const AboutTop = () => {
                     <div className='about-to-home-btn-design'></div>
                 </div>
                 <div className='student-testimonial-in-about-page'  ref={scrollRefAbout}>
-                    <div className='testi-for-about-page'>
-                        <p className='testi-for-about-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor quam, dolorem magnam maiores necessitatibus molestiae laudantium doloribus officia harum?</p>
+                    {Array.from(course).map((indicoursereview)=>
+                     <div className='testi-for-about-page'>
+                        <p className='testi-for-about-para'>{String(indicoursereview.CourseReview[0].ReviewerContent).slice(0,200)+'......'}</p>
                         <div className='testimonial-person'>
-                            <div className='person-image-testi'></div>
+                            <div className='person-image-testi' style={{backgroundImage:`url(${indicoursereview.CourseReview[0].ReviewerIMG})`}}></div>
                             <div className='testi-person-info'>
-                                <p className='teti-about-page-person-name'>Velu Mani</p>
-                                <p className='teti-about-page-person-degree'>Computer Science</p>
+                                <p className='teti-about-page-person-name'>{indicoursereview.CourseReview[0].ReviewerName}</p>
+                                <p className='teti-about-page-person-degree'>{indicoursereview.CourseReview[0].Qualification}</p>
                             </div>
                         </div>
                     </div>
-                    <div className='testi-for-about-page'>
-                        <p className='testi-for-about-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor quam, dolorem magnam maiores necessitatibus molestiae laudantium doloribus officia harum?</p>
-                        <div className='testimonial-person'>
-                            <div className='person-image-testi'></div>
-                            <div className='testi-person-info'>
-                                <p className='teti-about-page-person-name'>Velu Mani</p>
-                                <p className='teti-about-page-person-degree'>Computer Science</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='testi-for-about-page'>
-                        <p className='testi-for-about-para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor quam, dolorem magnam maiores necessitatibus molestiae laudantium doloribus officia harum?</p>
-                        <div className='testimonial-person'>
-                            <div className='person-image-testi'></div>
-                            <div className='testi-person-info'>
-                                <p className='teti-about-page-person-name'>Velu Mani</p>
-                                <p className='teti-about-page-person-degree'>Computer Science</p>
-                            </div>
-                        </div>
-                    </div>
+                    )}
+                   
                 </div>
                 
                     <Image
@@ -162,7 +145,7 @@ const AboutTop = () => {
                 </div>
                 <div className='about-side-bar-cont'>
                     <p className='about-side-para-one'>Gurenteed Certified</p>
-                    <p className='about-side-para-two'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium amet perspiciatis, quis ad rerum tenetur reprehenderit minima quaerat repellendus?</p>
+                    <p className='about-side-para-two'>Complete your course and earn a professional certificate recognized across industries.Showcase your skills, boost your resume, and stand out with Mindspire’s trusted validation.</p>
                 </div>
             </div>
             <div className='about-side-bar  about-side-by-two'>
@@ -174,8 +157,8 @@ const AboutTop = () => {
                     <div className='about-side-img-design-two about-side-img-two-design-two'></div>
                 </div>
                 <div className='about-side-bar-cont  '>
-                    <p className='about-side-para-one'>Gurenteed Certified</p>
-                    <p className='about-side-para-two'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium amet perspiciatis, quis ad rerum tenetur reprehenderit minima quaerat repellendus?</p>
+                    <p className='about-side-para-one'>Global Standards</p>
+                    <p className='about-side-para-two'>Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready, competitive, and globally competent.</p>
                 </div>
             </div>
             <div className='about-side-bar about-side-by-three'>
@@ -187,8 +170,8 @@ const AboutTop = () => {
                     <div className='about-side-img-design-two about-side-img-three-design-two'></div>
                 </div>
                 <div className='about-side-bar-cont'>
-                    <p className='about-side-para-one'>Gurenteed Certified</p>
-                    <p className='about-side-para-two'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium amet perspiciatis, quis ad rerum tenetur reprehenderit minima quaerat repellendus?</p>
+                    <p className='about-side-para-one'>Job-Ready Training</p>
+                    <p className='about-side-para-two'>Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio, and the ability to land your dream job.</p>
                 </div>
             </div>
         </div>
@@ -219,7 +202,7 @@ const AboutTop = () => {
                 </div>
                 <div className='about-information-main-content'>
                     <div className='about-information-cont-div-one'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus. Quaerat hic atque placeat quas perspiciatis ab quibusdam eaque vero ex dolorum, vel tempore. Quam beatae soluta incidunt saepe rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit?</p>
+                        <p>Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.</p>
                     </div>
                     <div className='student-image-and-number'>
                         <div className='student-image-bar'>
@@ -242,7 +225,7 @@ const AboutTop = () => {
                                 <p className='staff-one-head-tit'>Skilled Lecturers</p>
                             </div>
                             <div className='staff-info-one-cont'>
-                                <p>Our prestigious university is dedicated to academic excellence and innovation.</p>
+                                <p>Our skilled lecturers bring real-world experience and passion to every lesson</p>
                             </div>
                         </div>
                         <div className='staff-infor-in-about-two'>
@@ -250,17 +233,17 @@ const AboutTop = () => {
                                 <div className='staff-info-one-img'>
                                      <img src="./AboutPageImage/ABOUT-TOP/ic44.svg" alt="stud-image" className='staff-infor-in-about-top-two'/>
                                 </div>
-                                <p className='staff-one-head-tit'>Book Library</p>
+                                <p className='staff-one-head-tit'>Academic Excellence</p>
                             </div>
                             <div className='staff-info-one-cont'>
                                 <p>Our prestigious university is dedicated to academic excellence and innovation.</p>
                             </div>
                         </div>
                     </div>
-                    <button className='about-information-btn'>Know About Us
+                    <Link style={{textDecoration:'none'}} to={"/Providing-Education's-in-Mindspire-Institute"} className='about-information-btn'>Know About Us
                         <div className='about-information-btn-design-one'></div>
                         <div className='about-information-btn-design-two'></div>
-                    </button>
+                    </Link>
                    
                 </div>
             </div>

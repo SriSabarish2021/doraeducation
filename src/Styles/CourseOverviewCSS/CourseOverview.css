@@ -155,7 +155,7 @@
   opacity: 1;
   transition-duration: 0.3s;
 }
-.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-name-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-email-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .privacy-policy-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-review-box, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-image-box {
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-name-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-degree-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-email-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .privacy-policy-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-review-box, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-image-box {
   height: auto;
   width: 100%;
   display: flex;
@@ -269,6 +269,23 @@
   font-family: "Exo 2";
 }
 .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .name-input-for-comment:focus {
+  border: 1px solid rgb(154, 154, 154);
+  outline: none;
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment {
+  padding: 5px 15px 5px 18px;
+  height: 40px;
+  width: 70%;
+  border-radius: 30px;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.5px;
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment::placeholder {
+  font-size: 13px;
+  font-family: "Exo 2";
+}
+.course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment:focus {
   border: 1px solid rgb(154, 154, 154);
   outline: none;
 }
@@ -1764,13 +1781,27 @@
   align-items: flex-start;
   padding-right: 15px;
 }
-.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-in-review {
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-date-in-review {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-date-in-review .star-in-review {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 3px;
   color: rgb(250, 200, 0);
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-date-in-review .reviewer-date-review {
+  font-size: 13px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(125, 125, 125);
 }
 .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content {
   height: auto;

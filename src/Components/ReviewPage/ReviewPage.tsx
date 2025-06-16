@@ -1,9 +1,9 @@
 import '../../Styles/ReviewPageCSS/ReviewPage.css'
 import Testimonial from '../HomePageComponents/Testimonial/Testimonial'
-const ReviewPage = () => {
+const ReviewPage = ({course}) => {
   return (
     <div className='review-page-container'>
-      <Testimonial/>  
+      <Testimonial course={course}/>  
     </div>
   )
 }

@@ -190,7 +190,9 @@
                         .person-image-testi{
                             height: 40px;
                             width: 40px;
-                            @include bg-image-for-about-info('https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/ab14.webp');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
                             
                             border-radius: 100%;
                             
@@ -775,6 +777,7 @@
                     font-weight: 600;
                     border: none;
                     border-radius: 10px;
+                    @include Row-center.row-center;
                     position: relative;
                     z-index: 1;
                     overflow: hidden;

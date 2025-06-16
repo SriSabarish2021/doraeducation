@@ -164,7 +164,7 @@
                     
                     
                 }
-                .review-writing-name-by-user,.review-writing-email-by-user,.privacy-policy-for-comment,.comment-writing-review-box,.comment-writing-image-box{
+                .review-writing-name-by-user,.review-writing-degree-by-user,.review-writing-email-by-user,.privacy-policy-for-comment,.comment-writing-review-box,.comment-writing-image-box{
                     height: auto;
                     width: 100%;
                     @include Column-center.column-center;
@@ -284,6 +284,23 @@
                     font-family: 'Exo 2';
                 }
                 .name-input-for-comment:focus{
+                    border: 1px solid rgb(154, 154, 154);
+                    outline: none;
+                }
+                .qualification-input-for-comment{
+                    padding: 5px 15px 5px 18px;
+                    height:40px;
+                    width: 70%;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    font-family: 'Times New Roman', Times, serif;
+                    letter-spacing: 0.5px;
+                }
+                .qualification-input-for-comment::placeholder{
+                    font-size: 13px;
+                    font-family: 'Exo 2';
+                }
+                .qualification-input-for-comment:focus{
                     border: 1px solid rgb(154, 154, 154);
                     outline: none;
                 }
@@ -1668,11 +1685,25 @@
                         align-items: flex-start;
                         padding-right: 15px;
 
-                        .star-in-review{
+                        .star-date-in-review{
+                            width: 100%;
                             @include Row-center.row-center;
-                            gap: 3px;
-                            color: rgb(250, 200, 0);
+                            justify-content: space-between;
+                            .star-in-review{
+                            @include Row-center.row-center;
+                                gap: 3px;
+                                color: rgb(250, 200, 0);
+                            }
+                            .reviewer-date-review{
+                                font-size: 13px;
+                                font-family: 'Open Sans';
+                                font-weight: 600;
+                                color: rgb(125, 125, 125);
+                                
+                            }
                         }
+
+                        
                         .reviewer-content{
                             height: auto;
                             width: 100%;

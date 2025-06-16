@@ -2,6 +2,7 @@ import '../../../Styles/HomePageCSS/WhyChoose/WhyChoose.css'
 import { MdDone } from "react-icons/md";
 import { IoIosStar } from "react-icons/io";
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const WhyChoose = () => {
      useEffect(() => {
@@ -87,7 +88,7 @@ const WhyChoose = () => {
                 <p  className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Real-World Curriculum</p>
                 <p className='why-choose-ol'><span className='why-choose-ol-span'><MdDone/></span>Personalized Learning</p>
             </div>
-            <button className='why-choose-btn'>Why? Mindspire <div className='why-choose-btn-animation'></div></button>
+            <Link to={'About-Mindspire-Institute'} style={{textDecoration:'none'}} className='why-choose-btn'>Why? Mindspire <div className='why-choose-btn-animation'></div></Link>
         </div>
         <div className='why-choose-img'>
             <div className='image-design-one' >

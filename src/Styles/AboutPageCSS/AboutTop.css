@@ -209,7 +209,6 @@
 .about-page-top-container .about-top-image-container .student-testimonial-in-about-page .testi-for-about-page .testimonial-person .person-image-testi {
   height: 40px;
   width: 40px;
-  background-image: url("https://themexriver.com/wp/edrio/wp-content/uploads/2025/04/ab14.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -843,6 +842,10 @@
   font-weight: 600;
   border: none;
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
   overflow: hidden;

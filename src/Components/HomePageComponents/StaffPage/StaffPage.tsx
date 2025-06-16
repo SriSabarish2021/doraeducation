@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../../../Styles/HomePageCSS/StaffPage/StaffPage.css'
 import { Image } from '@imagekit/react';
 import { Video } from '@imagekit/react';
+import { Link } from 'react-router-dom';
 
 const StaffPage = () => {
   
@@ -28,8 +29,8 @@ const StaffPage = () => {
       <div className='staff-page-image-container'>
         <div className='staff-page-image-box-one'>
           
-            <img src="./StaffPage/Staff-one.webp" alt="Staff Image"
-            className='image-box-one-image'/>
+            <img src="./StaffPage/Staff-one.webp" alt="Staff Image "
+            className='image-box-one-image Staff-Image-Scroll'/>
           <div className='image-box-one-totors'>
             <div className='tutors-img-tag'>
                <img src="./StaffPage/Top-staff-one.avif" alt="Staff Image"
@@ -64,8 +65,8 @@ const StaffPage = () => {
                 <p className='our-story'>Our Story</p>
               </div>
           </div>
-           <img src="./StaffPage/Staff-page-img.webp" alt="Staff Image"
-             className='image-box-two-imagetwo'/>
+           <img src="./StaffPage/Staff-page-img.webp" alt="Staff Image "
+             className='image-box-two-imagetwo Staff-Image-Scroll'/>
           
         </div>
       </div>
@@ -132,11 +133,11 @@ const StaffPage = () => {
             </div>
           </div>
         </div>
-        <button className='btn-in-tutor-analysis'>Learn More
+        <Link to={'About-Mindspire-Institute'} style={{textDecoration:'none'}} className='btn-in-tutor-analysis'>Learn More
           <div className='btn-animation-in-staff-page'>
 
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   )

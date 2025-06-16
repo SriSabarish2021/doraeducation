@@ -173,7 +173,6 @@
   width: 100%;
   flex: 1 1 45%;
   background-color: aqua;
-  background-image: url("./AboutPageImage/Top-staff-Four.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,6 +193,7 @@
 .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
   height: auto;
   width: auto;
+  flex: 1 1 15%;
   padding: 6px 20px;
   font-size: 11px;
   font-family: "Roboto";
@@ -210,6 +210,7 @@
 .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div {
   height: auto;
   width: 100%;
+  flex: 1 1 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,6 +242,7 @@
 .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page {
   height: auto;
   width: 100%;
+  flex: 1 1 15%;
   display: flex;
   flex-direction: row;
   justify-content: center;

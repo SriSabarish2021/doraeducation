@@ -2,6 +2,7 @@ import '../../../Styles/HomePageCSS/SideBy/SideBy.css'
 import { Video } from '@imagekit/react';
 import { GoDotFill } from "react-icons/go";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const SideBy = () => {
   return (
@@ -27,10 +28,10 @@ const SideBy = () => {
                         
                     </div>
                     <p className='side-by-sub-para'>Join live sessions led by skilled educators—learn, ask,and interact directly with top educators, and grow in real time.</p>
-                    <button className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
+                    <Link to={"About-Mindspire-Institute"} style={{textDecoration:'none'}} className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
                        <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
-                    </button>
+                    </Link>
                 </div>
 
                 <div className='design-circle-one-box-one'></div>
@@ -55,10 +56,10 @@ const SideBy = () => {
                         <p  className='side-by-p-two'>Recorded Session's</p>
                     </div>
                     <p className='side-by-sub-para'>All our sessions are recorded and available 24/7, so students can revisit lessons anytime at their own pace.</p>
-                    <button className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
+                    <Link to={"Providing-Education's-in-Mindspire-Institute"} style={{textDecoration:'none'}} className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
                           <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
-                    </button>
+                    </Link>
                 </div>
 
                  <div className='design-circle-two-box-one'></div>

@@ -169,7 +169,10 @@
                     width: 100%;
                     flex: 1 1 calc(45%);
                     background-color: aqua;
-                    @include bg-img-center.bg-img-center('./AboutPageImage/Top-staff-Four.avif');                    
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
                 }
                  .about-page-prog-cont{
                     height: 100%;
@@ -182,7 +185,8 @@
                     padding: 10px 15px;
                     .level-in-prog-ab-list{
                         height: auto;
-                        width: auto;
+                        width:auto;
+                        flex: 1 1 calc(15%);
                         padding: 6px 20px;
                         font-size: 11px;
                         font-family: 'Roboto';
@@ -196,6 +200,8 @@
                     .prog-list-abt-page-cont-div{
                         height: auto;
                         width: 100%;
+                        
+                        flex: 1 1 calc(70%);
                          @include Column-center.column-center;
                          gap: 10px;
                          align-items: flex-start;
@@ -220,6 +226,8 @@
                     .addi-info-prog-list-abt-page{
                         height: auto;
                         width: 100%;
+                       
+                        flex: 1 1 calc(15%);
                         @include Row-center.row-center;
                         justify-content: space-between;
                         padding-top: 0px;

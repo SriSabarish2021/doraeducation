@@ -3,7 +3,7 @@ import '../../Styles/CoursePageCSS/TopShortCourse.css'
 import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa"; 
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const TopShortCourse = () => {
 
     const getlocation=useLocation()
@@ -106,12 +106,12 @@ const TopShortCourse = () => {
             <p><span className='course-page-title-line-span'>—</span> Only at <span className='course-page-title-span-name'>Mindspire <span className='course-page-title-design'></span></span></p>
         </div>
         <p className='para-in-course-page'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, ea tempora voluptatum nemo quod assumenda. Possimus nam distinctio sunt voluptates.':'At Mindspire Institute, our courses blend expert instruction, real-world content, and hands-on learning. With flexible schedules and personalized support, we help students build the skills and confidence to achieve their goals.'}</p>
-        <button className='btn-in-course-page-title'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'View Course':'Learn More'}
+        <Link to={'About-Mindspire-Institute'} style={{textDecoration:'none'}} className='btn-in-course-page-title'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'View Course':'Learn More'}
           <div className='btn-in-course-page-design-one'></div>
           <div className='btn-in-course-page-design-two'></div>
           <div className='btn-in-course-page-design-three'></div>
           <div className='btn-in-course-page-design-four'></div>
-        </button>
+        </Link>
        
       </div>
       <div className='top-short-course-content-container'>

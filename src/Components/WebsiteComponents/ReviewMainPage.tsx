@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import '../../Styles/ReviewPageCSS/ReviewPage.css'
 import ReviewPage from '../ReviewPage/ReviewPage'
-const ReviewMainPage = () => {
+const ReviewMainPage = ({course}) => {
    useEffect(() => {
       
       window.scrollTo(0,0)
@@ -10,7 +10,7 @@ const ReviewMainPage = () => {
     }, [])
   return (
     <div className='review-page-main-container'>
-      <ReviewPage/>
+      <ReviewPage course={course}/>
     </div>
   )
 }

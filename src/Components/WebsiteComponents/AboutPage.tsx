@@ -4,7 +4,7 @@ import StepPageAbout from "../AboutPageComponents/StepPageAbout"
 import Tutor from "../AboutPageComponents/Tutor"
 import { useEffect } from 'react'
 
-const AboutPage = () => {
+const AboutPage = ({course}) => {
    useEffect(() => {
       
       window.scrollTo(0,0)
@@ -13,8 +13,8 @@ const AboutPage = () => {
     }, [])
   return (
     <div className="about-page-main-container">
-      <AboutTop/>
-      <AboutPageCourse/>
+      <AboutTop course={course}/>
+      <AboutPageCourse course={course}/>
       <Tutor/>
       <StepPageAbout/>
     </div>

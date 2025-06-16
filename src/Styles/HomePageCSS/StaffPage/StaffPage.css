@@ -46,6 +46,19 @@
   height: 360px;
   width: 100%;
   border-radius: 10px;
+  animation: img-one-move-home linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+@keyframes img-one-move-home {
+  0% {
+    transform: translateX(-200px) translateY(-100px) rotate(35deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
 }
 .staff-page-container .staff-page-image-container .staff-page-image-box-one .image-box-one-totors {
   height: 100px;
@@ -241,7 +254,7 @@
 }
 .staff-page-container .staff-page-content-container .tutor-title-content .heading-tutor .heading-tutor-p-one .span-in-analysis {
   font-size: 60px;
-  color: rgb(255, 68, 81);
+  color: rgb(255, 52, 66);
   font-family: "Imperial Script";
   text-decoration: underline;
   text-underline-offset: 12px;
@@ -287,7 +300,7 @@
   font-size: 45px;
   font-family: "Kirang Haerang";
   font-weight: 600;
-  color: rgb(255, 68, 81);
+  color: rgb(255, 52, 66);
 }
 .staff-page-container .staff-page-content-container .total-number-in-staff-achievements .analysis-cont {
   font-size: 14px;

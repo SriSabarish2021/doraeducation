@@ -3,8 +3,9 @@ import '../../../Styles/HomePageCSS/Testimonial/Testimonial.css'
 import { FaStar } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
+import { FaRegStar } from "react-icons/fa";
 
-const Testimonial = () => {
+const Testimonial = ({course}) => {
 
     const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -77,61 +78,55 @@ const Testimonial = () => {
         <div className='testimonial-content-bar'>
           <div className='testimonial-image-bar'>
             <div className='image-border-line'>
-              <div className='testimonial-border-image-one'></div>
-              <div className='testimonial-border-image-two'></div>
-              <div className='testimonial-border-image-three'></div>
+               {Array.from(course).slice(-3).map((indireviewforquote,index)=>
+                <div className={`${index==0?'testimonial-border-image-one':index==1?'testimonial-border-image-two':'testimonial-border-image-three'}`} style={{backgroundImage:`url(${indireviewforquote.CourseReview[0].ReviewerIMG})`}}></div>
+              )}
               <div className='quote-image-bar'></div>
             </div>
           </div>
           <div className='testimonail-main-content-bar'>
             <div className='testimonial-inner-content-bar' ref={scrollRef}>
-             
-                <div className='student-testimonial-one'>
-                <div className='student-star-rating'>
-                  <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
-                </div>
-                <div className='student-comment'>
-                  <p className='comment-student'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit dolorum magnam mollitia aut aliquam dolorem praesentium. Quisquam ut ex et voluptates reiciendis cum quibusdam similique ipsam, pariatur tenetur sed. Ullam?</p>
-                </div>
-                <div className='student-info'>
-                  <div className='student-image-tag'></div>
-                  <div className='student-info-tag'>
-                    <p className='student-name-para'>Velu Mani</p>
-                    <p className='student-degree-para'>Computer Science</p>
-                  </div>
-                </div>
-                </div>
-                <div className='student-testimonial-one'>
-                <div className='student-star-rating'>
-                  <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
-                </div>
-                <div className='student-comment'>
-                  <p className='comment-student'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit dolorum magnam mollitia aut aliquam dolorem praesentium. Quisquam ut ex et voluptates reiciendis cum quibusdam similique ipsam, pariatur tenetur sed. Ullam?</p>
-                </div>
-                <div className='student-info'>
-                  <div className='student-image-tag'></div>
-                  <div className='student-info-tag'>
-                    <p className='student-name-para'>Velu Mani</p>
-                    <p className='student-degree-para'>Computer Science</p>
-                  </div>
-                </div>
-                </div>
-                <div className='student-testimonial-one'>
-                <div className='student-star-rating'>
-                  <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
-                </div>
-                <div className='student-comment'>
-                  <p className='comment-student'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit dolorum magnam mollitia aut aliquam dolorem praesentium. Quisquam ut ex et voluptates reiciendis cum quibusdam similique ipsam, pariatur tenetur sed. Ullam?</p>
-                </div>
-                <div className='student-info'>
-                  <div className='student-image-tag'></div>
-                  <div className='student-info-tag'>
-                    <p className='student-name-para'>Velu Mani</p>
-                    <p className='student-degree-para'>Computer Science</p>
-                  </div>
-                </div>
-                </div>
-             
+
+              {Array.from(course).map((indireview)=>
+                  <div className='student-testimonial-one'>
+                    {indireview.CourseReview[0].RaatingNUM==5?
+                      <div className='student-star-rating'>
+                        <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
+                      </div>:
+                      indireview.CourseReview[0].RaatingNUM==4?
+                      <div className='student-star-rating'>
+                        <FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/>
+                      </div>:
+                      indireview.CourseReview[0].RaatingNUM==3?
+                      <div className='student-star-rating'>
+                        <FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/>
+                      </div>:
+                      indireview.CourseReview[0].RaatingNUM==2?
+                      <div className='student-star-rating'>
+                        <FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                      </div>:
+                      indireview.CourseReview[0].RaatingNUM==1?
+                      <div className='student-star-rating'>
+                        <FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                      </div>:
+                      <div className='student-star-rating'>
+                        <FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                      </div>
+                    }
+                    
+                    <div className='student-comment'>
+                      <p className='comment-student'>{String(indireview.CourseReview[0].ReviewerContent).slice(0,300)+'......'}</p>
+                    </div>
+                    <div className='student-info'>
+                      <div className='student-image-tag' style={{backgroundImage:`url(${indireview.CourseReview[0].ReviewerIMG})`}}></div>
+                      <div className='student-info-tag'>
+                        <p className='student-name-para'>{indireview.CourseReview[0].ReviewerName}</p>
+                        <p className='student-degree-para'>{indireview.CourseReview[0].Qualification}</p>
+                      </div>
+                    </div>
+                    </div>
+              )}
+                         
               
             </div>
 

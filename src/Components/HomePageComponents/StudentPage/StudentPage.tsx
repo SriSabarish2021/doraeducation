@@ -3,6 +3,7 @@ import '../../../Styles/HomePageCSS/StudentPage/StudentPage.css'
 
 import { FaArrowRight } from "react-icons/fa6";
 import { Image } from '@imagekit/react';
+import { Link } from 'react-router-dom';
 
 const StudentPage = () => {
 
@@ -149,7 +150,7 @@ const StudentPage = () => {
                             </div>
                         </div>
                         <div className='stud-content-main-btn'>
-                            <button className='stud-analysis-btn'>View Programs <span className='span-for-btn-stud-page'><FaArrowRight/> </span><div className='design-div-for-tud-btn'></div></button>
+                            <Link style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"} className='stud-analysis-btn'>View Programs <span className='span-for-btn-stud-page'><FaArrowRight/> </span><div className='design-div-for-tud-btn'></div></Link>
 
                         </div>
                     </div>

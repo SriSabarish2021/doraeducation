@@ -39,7 +39,18 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
+useEffect(() => {
+  const handleHashChange = () => {
+    window.location.reload(); 
+  };
 
+  window.addEventListener('hashchange', handleHashChange);
+
+  
+  return () => {
+    window.removeEventListener('hashchange', handleHashChange);
+  };
+}, []);
 
   const gethash=useLocation().hash
 
@@ -54,7 +65,7 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
     const [fivestarnum,setfivestarnum]=useState(0)
 
 
-      const [reviewwrite,setreviewwrite]=useState(false)
+    const [reviewwrite,setreviewwrite]=useState(false)
 
        const [commentimg,setcommentimg]=useState([])
 
@@ -172,6 +183,7 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
   
   let Starnumref=useRef(0)
   let reviewNameref=useRef('')
+  let reviewDegreeref=useRef('')
   let reviewEmailref=useRef('')
     let reviewCommentref=useRef('')
 
@@ -203,20 +215,22 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
 
     
     const updatedreview=Array.from(course).map((reviewupdate)=>
-      reviewupdate.id==contentID?{...reviewupdate,CourseReview:[...reviewupdate.CourseReview,{ReviewId:Number(reviewupdate.CourseReview.length)+1,ReviewerName:reviewNameref.current.value,ReviewerContent:reviewCommentref.current.value,RaatingNUM:Starnumref.current,ReviewedDate:`${month[getmonth]} ${getdate} ${getYear}`,ReviewerIMG:commentimg[0]}]}:{...reviewupdate}
+      reviewupdate.id==contentID?{...reviewupdate,CourseReview:[...reviewupdate.CourseReview,{ReviewId:Number(reviewupdate.CourseReview.length)+1,ReviewerName:reviewNameref.current.value,Qualification:reviewDegreeref.current.value,ReviewerContent:reviewCommentref.current.value,RaatingNUM:Starnumref.current,ReviewedDate:`${month[getmonth]} ${getdate} ${getYear}`,ReviewerIMG:commentimg[0]}]}:{...reviewupdate}
     )
     setcourse(updatedreview)
    
-    setreviewwrite(false)
+    setreviewwrite(!reviewwrite)
     
   }
 
   const cancelreview=()=>{
+   
     Starnumref.current=0
+    reviewDegreeref.current.value=''
     reviewNameref.current.value = '';
     reviewEmailref.current.value = '';
     reviewCommentref.current.value = '';
-    setreviewwrite(false)
+     setreviewwrite(!reviewwrite)
     
   }
 
@@ -920,36 +934,40 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
                     <div className='review-of-the-course-cont'>
                       
                         {Number(indiReview.RaatingNUM)==1?
-                          <p className='star-in-review'>
-                          <FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                          <p className='star-date-in-review'>
+                            <span className='star-in-review'> <FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span><span className='reviewer-date-review'>{indiReview.ReviewedDate}</span>
+                         
                           </p>
                           :Number(indiReview.RaatingNUM)==2?
-                          <p className='star-in-review'>
-                          <FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                          <p className='star-date-in-review'>
+                            <span className='star-in-review'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></span><span className='reviewer-date-review'>{indiReview.ReviewedDate}</span>
                           </p>
                           :Number(indiReview.RaatingNUM)==3?
-                          <p className='star-in-review'>
-                          <FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/>
+                          <p className='star-date-in-review'>
+                            <span className='star-in-review'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></span><span className='reviewer-date-review'>{indiReview.ReviewedDate}</span>
                           </p>
                           :Number(indiReview.RaatingNUM)==4?
-                          <p className='star-in-review'>
-                           <FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/>
+                          <p className='star-date-in-review'><span className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></span><span className='reviewer-date-review'>{indiReview.ReviewedDate}</span>
+                           
                            </p>
                            :Number(indiReview.RaatingNUM)==5?
-                           <p className='star-in-review'>
-                           <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>
+                           <p className='star-date-in-review'>
+                            <span className='star-in-review'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></span><span className='reviewer-date-review'>{indiReview.ReviewedDate}</span>
+                           
                            </p>
                            
                            :
-                            <p className='star-in-review'>
-                               <FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/>
+                            <p className='star-date-in-review'>
+                              <span className='star-in-review'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span><span className='reviewer-date-review'>{indiReview.ReviewedDate}</span>
+                           
+                               
                             </p>
                         }
                       
                         
                       <div className='reviewer-content'>
                         <p className='reviewer-name-review'>{indiReview.ReviewerName}</p>
-                        <p className='reviewer-date-review'>{indiReview.ReviewedDate}</p>
+                        <p className='reviewer-date-review'>{indiReview.Qualification}</p>
                         <p className='reviewer-cont-review'>{indiReview.ReviewerContent}</p>
                       </div>
                     </div>
@@ -1085,6 +1103,10 @@ const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpa
                 <div className="review-writing-name-by-user">
                   <p className='all-review-input-title'>Name (display publicly)</p>
                   <input ref={reviewNameref}    type="text" className="inpreview name-input-for-comment review-input-border"  placeholder="Enter your name"/>
+                </div>
+                <div className="review-writing-degree-by-user">
+                  <p className='all-review-input-title'>Qualification (display publicly)</p>
+                  <input ref={reviewDegreeref}    type="text" className="inpreview qualification-input-for-comment review-input-border"  placeholder="Your Qualification"/>
                 </div>
                 <div className="review-writing-email-by-user">
                   <p className='all-review-input-title'>Email (Private)</p>

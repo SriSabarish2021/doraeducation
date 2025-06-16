@@ -1,11 +1,13 @@
-import '/src/Styles/Footer.css'
+import '../../Styles/Footer/Footer.css'
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { Image } from '@imagekit/react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  
   return (
     <div className='footer-container'>
       <div className='footer-desing-container'></div>
@@ -29,10 +31,10 @@ const Footer = () => {
               alt="Logo Image"
               className='logo-footer'
             />
-            <div className='logo-content'>
+            <Link to={'/'} style={{textDecoration:'none'}} className='logo-content' >
               <p>Mindspire</p>
               <p className='name-institute'>Institute</p>
-            </div>
+            </Link>
           </div>
           <p className='sub-title-footer'>Mindspire Institute empowers learners with quality education and expert support to shape a brighter future.</p>
         </div>
@@ -49,31 +51,31 @@ const Footer = () => {
           <div className='navigation-link'>
             <p className='navigation-title'>Navigation</p>
             <div className='navigation-list-item'>
-              <p className='list-item-footer'>About Us</p>
-              <p className='list-item-footer'>Courses</p>
-              <p className='list-item-footer'>News</p>
-              <p className='list-item-footer'>Know More</p>
-              <p className='list-item-footer'>Contact</p>
+              <Link to={'About-Mindspire-Institute'} className='list-item-footer'>About Us</Link>
+              <Link to={"Providing-Education's-in-Mindspire-Institute"} className='list-item-footer'>Courses</Link>
+              <Link to={'About-Mindspire-Institute'}  className='list-item-footer'>News</Link>
+              <Link to={'About-Mindspire-Institute'} className='list-item-footer'>Know More</Link>
+              <Link to={"Contact-with-Mindspire-Institute"}  className='list-item-footer'>Contact</Link>
             </div>
           </div>
           <div className='quick-link'>
             <p className='quick-link-title'>Quick Links</p>
             <div className='quick-link-list-item'>
-              <p className='list-item-footer'>Vision, Mision & Stragedy</p>
-              <p className='list-item-footer'>Event</p>
-              <p className='list-item-footer'>Purchase Guide</p>
-              <p className='list-item-footer'>Webinar Details</p>
-              <p className='list-item-footer'>Offering Courses</p>
+              <Link to={'About-Mindspire-Institute'} className='list-item-footer'>Vision, Mision & Stragedy</Link>
+              <p  className='list-item-footer'>Event</p>
+              <Link to={"About-Mindspire-Institute"} className='list-item-footer'>Purchase Guide</Link>
+              <p  className='list-item-footer'>Webinar Details</p>
+              <Link  to={"Providing-Education's-in-Mindspire-Institute"} className='list-item-footer'>Offering Courses</Link>
             </div>
           </div>
           <div className='program-link'>
             <p  className='program-link-title'>Programs</p>
             <div className='program-list-item'>
-              <p className='list-item-footer'>Play School</p>
-              <p className='list-item-footer'>Nursery</p>
-              <p className='list-item-footer'>Secondar</p>
-              <p className='list-item-footer'>Primary</p>
-              <p className='list-item-footer'>College</p>
+              <Link to={'mindspire-course#JavaScript'} className='list-item-footer'>Java Script</Link>
+              <Link to={'mindspire-course#HTML'} className='list-item-footer'>HTML</Link>
+              <Link to={'mindspire-course#TypeScript'} className='list-item-footer'>TypeScript</Link>
+              <Link to={'mindspire-course#ReactJS'} className='list-item-footer'>ReactJS</Link>
+              <Link to={'mindspire-course#SASS'} className='list-item-footer'>SASS</Link>
             </div>
           </div>  
         </div>
@@ -82,7 +84,7 @@ const Footer = () => {
             <div className='address-items'>  
                 <p className='address-item-cont'>Adress : <span className='address-item-cont-span'>77, Nasiyanur, Erode</span></p>
                 <p className='address-item-cont'>Phone : <span className='address-item-cont-span'>80175-70575</span></p>
-                <p className='address-item-cont'>Emain : <span className='address-item-cont-span'>srisabarish003@gmail.com</span></p>
+                <p className='address-item-cont'>Email : <span className='address-item-cont-span'>srisabarish003@gmail.com</span></p>
                 
             </div>
           <div className='social-media-link'>
