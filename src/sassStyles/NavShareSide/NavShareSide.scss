@@ -1,0 +1,436 @@
+@use'../Column-center';
+@use'../Row-center';
+@use'../main-color';
+@use'../Main-Title';
+@use'../WebSubContent';
+@use'../bg-img-center';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+.nav-side-share-page-container{
+    height: 100dvh;
+    width: 100dvw;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    z-index:3000000;
+    cursor:url('/close-two.png') 10 10,auto;
+
+    @include Row-center.row-center;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+
+    .nav-side-share-main-container{
+        height: 100%;
+        width: 600px;
+        background-color: white;
+        @include Column-center.column-center;
+        justify-content: flex-start;
+        padding: 40px;
+        
+        cursor: default;
+        position: relative;
+                box-shadow: -10px 0 10px #0003;
+
+
+        .nav-side-share-close{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background-color: main-color.$main-color-for-app;
+            border-radius: 100%;
+            top: 20px;
+            right: 30px;
+            @include Column-center.column-center;
+            cursor: pointer;
+            .close-nav-side-line-one{
+                height: 2px;
+                width: 15px;
+                background-color: white;
+                position: absolute;
+                transform: rotate(50deg);
+                border-radius: 3px;
+                                transition-duration: 0.3s;
+
+            }
+            .close-nav-side-line-two{
+                height: 2px;
+                width: 15px;
+                background-color: white;
+                position: absolute;
+                border-radius: 3px;
+                transform: rotate(-50deg);
+                                transition-duration: 0.3s;
+
+
+            }
+        }
+        .nav-side-share-close:hover{
+            .close-nav-side-line-one{
+                transition-duration: 0.3s;
+                transform: rotate(0deg);
+            }
+            .close-nav-side-line-two{
+                transition-duration: 0.3s;
+
+                transform: rotate(0deg);
+
+            }
+        }
+
+        .nav-side-share-inner-scroll{
+            height: auto;
+            width: 100%;
+            @include Column-center.column-center;
+            gap: 30px;
+            padding: 30px 0px;
+            justify-content: flex-start;
+            overflow: auto;
+            
+                .nav-share-side-div-one{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    gap: 70px;
+                    justify-content: flex-start;
+                    .nav-share-logo{
+                        height: auto;
+                        width: auto;
+                        @include Row-center.row-center;
+                        gap: 10px;
+                        .website-icon{
+                            height: 70px;
+                            width: 70px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                        .web-name-side-share{
+                            height: auto;
+                            width:  auto;
+                            @include Column-center.column-center;
+                            gap: 5px;
+                            align-items: flex-start;
+                            font-size: 16px;
+                            font-family: 'Delius';
+                            font-weight: 800;
+                            color: rgb(51, 51, 51);
+                            
+                        }
+                    }
+                    .nav-share-app-link{
+                        height: auto;
+                        width: auto;
+                        @include Row-center.row-center;
+                        gap: 20px;
+                        .nav-share-link{
+                            height: 43px;
+                            width: 43px;
+                            background-color: white;
+                            border: 1px solid rgb(195, 195, 195);
+                            border-radius: 100%;
+                            @include Row-center.row-center;
+                            font-size: 18px;
+                            color: rgb(57, 57, 57);
+                            overflow: hidden;
+                            position: relative;
+                            z-index: 1;
+                            transition-duration: 0.4s;
+
+                            .nav-share-link-design{
+                                position: absolute;
+                                transition-duration: 0.4s;
+                                height: 100%;
+                                width: 100%;
+                                right: 0px;
+                                border-radius: 100%;
+                                background-color: main-color.$main-color-for-app;
+                                width: 0%;
+                                z-index: -1;
+
+
+                            }
+
+
+                        }
+                        .nav-share-link:hover{
+                            transition-duration: 0.4s;
+                            color: white;
+                            .nav-share-link-design{
+                                width: 100%;
+                                transition-duration: 0.4s;
+                                right: auto;
+                                left: 0px;
+
+                            }
+                        }
+                    }
+                }
+
+                .nav-share-side-div-two{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    
+                    font-size: 14px;
+                    font-family: 'Open Sans';
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    color: rgb(88, 88, 88);
+
+                }
+
+                .nav-share-side-div-three{
+                    height: auto;
+                    width: 100%;
+                    border-radius: 20px;
+                    background-color: rgba(255, 239, 239, 0.429);
+                    padding: 25px 20px;
+                    @include Column-center.column-center;
+                    box-shadow: rgba(40, 40, 40, 0.066) 0px 2px 4px 0px, rgba(44, 44, 44, 0.221) 0px 2px 16px 0px;
+                    gap: 35px;
+
+                    .nav-share-contact{
+                        height: auto;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        gap: 15px;
+                        padding-bottom: 35px;
+                        border-bottom: 1px solid main-color.$border-light-color;
+                        .call-image-for-share{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(15%);
+                            @include Row-center.row-center;
+                            font-size: 60px;
+                            color: rgb(95, 95, 95);
+                        }
+                        .call-para-for-share{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(80%);
+                            font-family: 'Onest';
+                            font-size: 15px;
+                            letter-spacing: 0.5px;
+                            line-height: 30px;
+                            color: rgb(129, 129, 129);
+                            .contact-number{
+                                color: rgb(31, 31, 31);
+                                font-family: 'Public Sans';
+                            }
+                        }
+                    }
+                    .nav-share-whatsapp{
+                        height: auto;
+                        width: 100%;
+                        @include Row-center.row-center;
+                        gap: 15px;
+
+                        .whatsapp-icon{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(20%);
+                            @include Row-center.row-center;
+                            font-size: 60px;
+                            color: rgb(95, 95, 95);
+                            align-items: flex-start;
+                        }
+                        .side-share-whatsapp-para{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(65%);
+                            @include Column-center.column-center;
+                            gap: 10px;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            .para-one-whatsapp-share{
+                                font-size: 17px;
+                                font-family:'Delius';
+                                font-weight: 800;
+                                letter-spacing: 0.5px;
+                                color: rgb(41, 41, 41);
+                            }
+                            .para-two-whatsapp-share{
+                                font-family: 'Onest';
+                                font-size: 14px;
+                                letter-spacing: 0.5px;
+                                line-height: 25px;
+                                color: rgb(129, 129, 129);
+                            }
+                        }
+                        .qr-for-whatsapp{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(20%);
+                            background-color: rgb(255, 255, 255);
+                            @include Column-center.column-center;
+
+                            .qr-image{
+                                height: 100px;
+                                width: 100px;
+                                @include bg-img-center.bg-img-center('https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.youtube.com/watch?v=uvp0otoY7Kc')
+                            }
+                            
+                        }
+                    }
+                }
+                .nav-share-side-div-four{
+                    height: auto;
+                    width: 100%;
+                    padding: 50px 40px;
+                    border-radius: 20px;
+                    @include Column-center.column-center;
+                    gap: 30px;
+                    align-items: flex-start;
+                    @include bg-img-center.bg-img-center('https://livi.wpengine.com/wp-content/uploads/2024/10/newletter-bg.jpg');
+                    z-index: 1;
+                    position: relative;
+                
+                    .black-design-image{
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0px;
+                        background-color: rgba(0, 0, 0, 0.658);
+                        z-index: -1;
+                        border-radius: 20px;
+                    }
+                    .nav-share-four-para{
+                        font-size: 20px;
+                        color: white;
+                        font-family: 'Lexend Deca';
+                        font-weight: 600;
+                        letter-spacing: 0.5px;
+                    }
+
+                    .subsribe-input-box-side-share{
+                        height: auto;
+                        width: 100%;
+                        @include Column-center.column-center;
+                        gap: 20px;
+                        align-items: flex-start;
+                        .email-inp-container-side-share{
+                        height: 50px;
+                        background-color: rgb(255, 255, 255);
+                    
+                        width: 95%;
+                        border-radius:6px;
+                        @include Row-center.row-center;
+                        justify-content: flex-start;
+                        padding: 6px 10px;
+                        .side-share-email-inp{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(70%);
+                            border: none;
+                            padding-left: 10px;
+                            padding-right: 20px;
+                            font-size: 15px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            letter-spacing: 1px;
+                            background-color: white;
+                            color: rgb(34, 34, 34);
+                        }
+                        .side-share-email-inp::placeholder{
+                            font-size: 14px;
+                            font-family: Arial, Helvetica, sans-serif;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                            color: rgb(176, 176, 176);
+                        }
+                        .side-share-email-inp:focus{
+                            outline: none;
+                            border: none;
+                        }
+
+                        .side-share-email-btn{
+                            height: 100%;
+                            width: 100%;
+                            flex: 1 1 calc(30%);
+                            background-color: rgb(255, 78, 78);
+                            border-radius: 6px;
+                            @include Row-center.row-center;
+                            font-size: 14px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            font-family:Arial, Helvetica, sans-serif;
+                            color: rgb(255, 255, 255);
+                            cursor: pointer;
+                        }
+                        }
+                        
+                        .para-for-subscribe-side-nav{
+                            font-size: 14px;
+                            font-family: 'Open Sans';
+                            letter-spacing: 0.5px;
+                            color: white;
+                        }
+                    }
+                }
+        }
+        
+    .nav-side-share-inner-scroll::-webkit-scrollbar{
+                width:2px;
+                background-color: rgba(255, 255, 255, 0.986);
+                border-radius: 10px;
+            }
+    .nav-side-share-inner-scroll::-webkit-scrollbar-thumb{
+        width: 2px;
+        border-radius: 10px;
+
+        background-color: rgba(255, 255, 255, 0.676);
+    }
+        
+
+    }
+
+
+
+
+    .sideshareinnermove{
+    transform: translateY(0px);
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+    opacity: 1;
+    }
+    .sideshareinnernotmove{
+        transform: translateY(1000px);
+        transition-duration: 0.5s;
+        transition-delay: 0s;
+        opacity: 0;
+    }
+
+}
+
+.sidesharemainmove{
+    transform: translateX(0px);
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+.sidesharemainnotmove{
+    transform: translateX(2000px);
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+}

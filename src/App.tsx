@@ -12,6 +12,7 @@ import CourseOverview from './Components/CourseOverviewPage/CourseOverview'
 import { useEffect, useState } from 'react'
 import CartPage from './Components/CartPageComponent/CartPage'
 import LikePage from './Components/LikePageComponents/LikePage'
+import NavShareSide from './Components/NavShareSide/NavShareSide'
 
 function App() {
 
@@ -1195,12 +1196,19 @@ function App() {
   const[cartpage,setcartpage]=useState(false)
   const[likepage,setlikepage]=useState(false)
 
+  const[sidesharepage,setsidesharepage]=useState(false)
   
 
   return (
     
     <div className='website-main-container'>
-      <Nav  setcartpage={setcartpage} setlikepage={setlikepage}/>
+      <style>{
+        `html{
+          overflow-x: hidden;
+          overflow-y:${sidesharepage||cartpage||likepage?'hidden':'auto'}
+        }`}
+        </style>
+      <Nav setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
       <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
@@ -1216,6 +1224,7 @@ function App() {
       </div>
       <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
       <LikePage setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
+      <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
       <Footer/>
     </div>
    

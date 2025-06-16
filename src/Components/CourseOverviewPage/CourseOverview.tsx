@@ -636,7 +636,7 @@ const removeredborder=()=>{
       <style>{
         `html{
           overflow-x: hidden;
-          overflow-y:${reviewwrite||cartpage||likepage?'hidden':'auto'}
+          overflow-y:${reviewwrite?'hidden':'auto'}
         }`}
         </style>
         {Array.from(coursedetail).map((coursedetails)=>

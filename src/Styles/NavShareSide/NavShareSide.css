@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap");
+.nav-side-share-page-container {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(0, 0, 0, 0.671);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  z-index: 3000000;
+  cursor: url("/close-two.png") 10 10, auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.nav-side-share-page-container .nav-side-share-main-container {
+  height: 100%;
+  width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  cursor: default;
+  position: relative;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 68, 81);
+  border-radius: 100%;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close .close-nav-side-line-one {
+  height: 2px;
+  width: 15px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(50deg);
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close .close-nav-side-line-two {
+  height: 2px;
+  width: 15px;
+  background-color: white;
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(-50deg);
+  transition-duration: 0.3s;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close:hover .close-nav-side-line-one {
+  transition-duration: 0.3s;
+  transform: rotate(0deg);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close:hover .close-nav-side-line-two {
+  transition-duration: 0.3s;
+  transform: rotate(0deg);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0px;
+  justify-content: flex-start;
+  overflow: auto;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  justify-content: flex-start;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .website-icon {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  object-position: center;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .web-name-side-share {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  align-items: flex-start;
+  font-size: 16px;
+  font-family: "Delius";
+  font-weight: 800;
+  color: rgb(51, 51, 51);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link {
+  height: 43px;
+  width: 43px;
+  background-color: white;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: rgb(57, 57, 57);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link .nav-share-link-design {
+  position: absolute;
+  transition-duration: 0.4s;
+  height: 100%;
+  width: 100%;
+  right: 0px;
+  border-radius: 100%;
+  background-color: rgb(255, 68, 81);
+  width: 0%;
+  z-index: -1;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link:hover {
+  transition-duration: 0.4s;
+  color: white;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link:hover .nav-share-link-design {
+  width: 100%;
+  transition-duration: 0.4s;
+  right: auto;
+  left: 0px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Open Sans";
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgb(88, 88, 88);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgba(255, 239, 239, 0.429);
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(40, 40, 40, 0.066) 0px 2px 4px 0px, rgba(44, 44, 44, 0.221) 0px 2px 16px 0px;
+  gap: 35px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-image-for-share {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: rgb(95, 95, 95);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 80%;
+  font-family: "Onest";
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  color: rgb(129, 129, 129);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share .contact-number {
+  color: rgb(31, 31, 31);
+  font-family: "Public Sans";
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .whatsapp-icon {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: rgb(95, 95, 95);
+  align-items: flex-start;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+  font-size: 17px;
+  font-family: "Delius";
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: rgb(41, 41, 41);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+  font-family: "Onest";
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  color: rgb(129, 129, 129);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 20%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp .qr-image {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.youtube.com/watch?v=uvp0otoY7Kc");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+  height: auto;
+  width: 100%;
+  padding: 50px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  align-items: flex-start;
+  background-image: url("https://livi.wpengine.com/wp-content/uploads/2024/10/newletter-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .black-design-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.658);
+  z-index: -1;
+  border-radius: 20px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .nav-share-four-para {
+  font-size: 20px;
+  color: white;
+  font-family: "Lexend Deca";
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share {
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 6px 10px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 70%;
+  border: none;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  background-color: white;
+  color: rgb(34, 34, 34);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp::placeholder {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: rgb(176, 176, 176);
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp:focus {
+  outline: none;
+  border: none;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-btn {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 30%;
+  background-color: rgb(255, 78, 78);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+  font-size: 14px;
+  font-family: "Open Sans";
+  letter-spacing: 0.5px;
+  color: white;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.986);
+  border-radius: 10px;
+}
+.nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll::-webkit-scrollbar-thumb {
+  width: 2px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.676);
+}
+.nav-side-share-page-container .sideshareinnermove {
+  transform: translateY(0px);
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.nav-side-share-page-container .sideshareinnernotmove {
+  transform: translateY(1000px);
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  opacity: 0;
+}
+
+.sidesharemainmove {
+  transform: translateX(0px);
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.sidesharemainnotmove {
+  transform: translateX(2000px);
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=NavShareSide.css.map */
