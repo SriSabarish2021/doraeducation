@@ -147,12 +147,12 @@ const TopShortCourse = () => {
           
            {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply
+            <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#JavaScript`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
               <div className='top-course-apply-btn-one'></div>
               <div className='top-course-apply-btn-two'></div>
               <div className='top-course-apply-btn-three'></div>
               <div className='top-course-apply-btn-four'></div>
-            </button>
+            </Link>
             <button className='like-btn-course-box'><FaRegHeart/>
             <div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div>
             </button>
@@ -186,12 +186,12 @@ const TopShortCourse = () => {
          
            {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-              <button className='apply-btn-course-box'>Apply
+              <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#TypeScript`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>
                 <div className='top-course-apply-btn-four'></div>
-              </button>
+              </Link>
               <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
             </div>
            }
@@ -223,12 +223,12 @@ const TopShortCourse = () => {
            }
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-              <button className='apply-btn-course-box'>Apply
+              <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#CSS`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>
                 <div className='top-course-apply-btn-four'></div>
-              </button>
+              </Link>
               <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
             </div>
           }
@@ -260,12 +260,12 @@ const TopShortCourse = () => {
            }
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-              <button className='apply-btn-course-box'>Apply
+              <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#NextJS`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>
                 <div className='top-course-apply-btn-four'></div>
-              </button>
+              </Link>
               <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
             </div>
           }
@@ -274,7 +274,7 @@ const TopShortCourse = () => {
         <div className='course-box course-box-five'>
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?
           <div className='course-box-head-div'>
-            <p>Node.js</p>
+            <p>React</p>
             <p>Mastery</p>
           </div>:
           <div className='course-box-head-div home-para-small'>
@@ -298,12 +298,12 @@ const TopShortCourse = () => {
            }
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
           <div  className='course-box-btn-div'>
-            <button className='apply-btn-course-box'>Apply
+            <Link to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#React`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
               <div className='top-course-apply-btn-one'></div>
               <div className='top-course-apply-btn-two'></div>
               <div className='top-course-apply-btn-three'></div>
               <div className='top-course-apply-btn-four'></div>
-            </button>
+            </Link>
             <button className='like-btn-course-box'><FaRegHeart/><div className='like-btn-mess-course-page'>Add whishlist <div className='arrow-desing-like-course-page'></div></div></button>
           </div>
           }

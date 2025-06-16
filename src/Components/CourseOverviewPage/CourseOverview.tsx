@@ -203,11 +203,41 @@ useEffect(() => {
     
   }
 
+  const openwritereview=()=>{
+    Starnumref.current=0
+    reviewDegreeref.current.value=''
+    reviewNameref.current.value = '';
+    reviewEmailref.current.value = '';
+    reviewCommentref.current.value = '';
+    
+     setreviewwrite(true)
+  }
 
+const removeredborder=()=>{
+  let allinputborder=document.querySelectorAll('.review-input-border')
+    allinputborder.forEach((indiinp)=>{
+      if (String(indiinp.value).length!==0) {
+        indiinp.classList.remove('review-no-input-border')
+      }else{
+        return
+      }
+    
+        
+      })
+}
   const ReviewSubmit=(contentID)=>{
-    
-    
-    let month=['January','February','March','April','May','June','July','August','September','November','December']
+    let allinputborder=document.querySelectorAll('.review-input-border')
+    if (String(reviewDegreeref.current.value).length!==0&&String(reviewNameref.current.value).length!==0&&String(reviewEmailref.current.value).length!==0&&String(reviewCommentref.current.value).length!==0) {
+
+      allinputborder.forEach((indiinp)=>{
+        if (String(indiinp.value).length!==0) {
+        indiinp.classList.remove('review-no-input-border')
+        }else{
+          return
+        }
+      })
+      
+      let month=['January','February','March','April','May','June','July','August','September','November','December']
     let getdate=new Date().getDate()
     let getmonth=new Date().getMonth()
     let getYear=new Date().getFullYear()
@@ -220,17 +250,38 @@ useEffect(() => {
     setcourse(updatedreview)
    
     setreviewwrite(!reviewwrite)
-    
+    }
+    else{
+      const reviewwrittenbox=document.querySelector('.review-input-main-container')
+
+      reviewwrittenbox?.scrollTo(0,0)
+      
+       allinputborder.forEach((indiinp)=>{
+        if (String(indiinp.value).length!==0) {
+        indiinp.classList.remove('review-no-input-border')
+        }else{
+          indiinp.classList.add('review-no-input-border')
+        }
+      })
+      
+    }
+ 
   }
 
   const cancelreview=()=>{
-   
+    let allinputborder=document.querySelectorAll('.review-input-border')
+
     Starnumref.current=0
     reviewDegreeref.current.value=''
     reviewNameref.current.value = '';
     reviewEmailref.current.value = '';
     reviewCommentref.current.value = '';
+    allinputborder.forEach((indiinp)=>{
+       indiinp.classList.remove('review-no-input-border')
+      })
      setreviewwrite(!reviewwrite)
+   
+    
     
   }
 
@@ -975,7 +1026,7 @@ useEffect(() => {
                   )}
                  
                 </div>
-                <button className='review-written-btn' onClick={()=>setreviewwrite(true)}>
+                <button className='review-written-btn' onClick={()=>openwritereview()}>
                   <div className='review-written-btn-inner'>
                     Write Review
                     <div className='review-write-btn-design'></div>
@@ -1102,15 +1153,15 @@ useEffect(() => {
                 </div>
                 <div className="review-writing-name-by-user">
                   <p className='all-review-input-title'>Name (display publicly)</p>
-                  <input ref={reviewNameref}    type="text" className="inpreview name-input-for-comment review-input-border"  placeholder="Enter your name"/>
+                  <input ref={reviewNameref} onChange={()=>removeredborder()}    type="text" className="inpreview name-input-for-comment review-input-border"  placeholder="Enter your name"/>
                 </div>
                 <div className="review-writing-degree-by-user">
                   <p className='all-review-input-title'>Qualification (display publicly)</p>
-                  <input ref={reviewDegreeref}    type="text" className="inpreview qualification-input-for-comment review-input-border"  placeholder="Your Qualification"/>
+                  <input ref={reviewDegreeref} onChange={()=>removeredborder()}    type="text" className="inpreview qualification-input-for-comment review-input-border"  placeholder="Your Qualification"/>
                 </div>
                 <div className="review-writing-email-by-user">
                   <p className='all-review-input-title'>Email (Private)</p>
-                  <input ref={reviewEmailref}   type="email" className="inpreview email-input-for-comment review-input-border"  placeholder="Enter your email (private)"/>
+                  <input ref={reviewEmailref} onChange={()=>removeredborder()}   type="email" className="inpreview email-input-for-comment review-input-border"  placeholder="Enter your email (private)"/>
                 </div>
                 <div className="comment-writing-image-box">
                   <p className='all-review-input-title'>Profile Picture [100 X 100]</p>
@@ -1136,16 +1187,16 @@ useEffect(() => {
                 <div className="comment-writing-review-box">
                         <p className='all-review-input-title'>Review</p>
                         
-                        <textarea ref={reviewCommentref}   className="inpreview review-input-for-comment review-input-border"  placeholder="Write your comment here" ></textarea>
+                        <textarea ref={reviewCommentref} onChange={()=>removeredborder()}   className="inpreview review-input-for-comment review-input-border"  placeholder="Write your comment here" ></textarea>
                   </div>
                 <div className="privacy-policy-for-comment">
                   <p className='comment-writing-email'>How we use your data: We’ll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Fox CART’s <span className='comment-condition'>terms</span>, <span className='comment-condition'>privacy</span> and <span className='comment-condition'>content</span> policies.</p>
                 </div>
                 <div className='review-btn-container'>
-                  <button onClick={()=>{ReviewSubmit(coursedetails.id),cancelreview()}} className='review-btn-submit review-btn'>Submit</button>
+                  <button onClick={()=>ReviewSubmit(coursedetails.id)} className='review-btn-submit review-btn'>Submit</button>
                   <button className='review-btn-cancel review-btn' onClick={()=>cancelreview()}>Cancel</button>
                 </div>
-                        <button onClick={()=>setreviewwrite(false)} className='review-input-close-btn'><VscEyeClosed/></button>
+                        <button onClick={()=>cancelreview()} className='review-input-close-btn'><VscEyeClosed/></button>
 
               </div>
             </div>

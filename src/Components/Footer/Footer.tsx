@@ -88,10 +88,10 @@ const Footer = () => {
                 
             </div>
           <div className='social-media-link'>
-            <div className='app-link'><FaWhatsapp/></div>
-            <div className='app-link'><FaFacebook/></div>
-            <div className='app-link'><FaXTwitter/></div>
-            <div className='app-link'><FaLinkedin/></div>
+            <a href='https://web.whatsapp.com/' style={{textDecoration:'none'}} target='_blank' className='app-link'><FaWhatsapp/></a>
+            <a href='https://www.facebook.com/srisabarish003' style={{textDecoration:'none'}} target='_blank' className='app-link'><FaFacebook/></a>
+            <a href='https://x.com/SriSabarish2003' style={{textDecoration:'none'}} target='_blank' className='app-link'><FaXTwitter/></a>
+            <a href='https://www.linkedin.com/in/sri-sabarish-b922222a5/' style={{textDecoration:'none'}} target='_blank' className='app-link'><FaLinkedin/></a>
           </div>
         </div>
       </div>
