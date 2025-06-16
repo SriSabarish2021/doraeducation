@@ -1,3 +1,4 @@
+import TopShortCourse from "../CoursePageComponents/TopShortCourse"
 import AboutUs from "../HomePageComponents/AboutUs/AboutUs"
 import Blog from "../HomePageComponents/Blog/Blog"
 import HomeMain from "../HomePageComponents/HomeMain/HomeMain"
@@ -32,6 +33,7 @@ const HomePage = ({course,LikeCourse,getstarnum}) => {
       <WhyChoose/>
       <ProgramList course={course} LikeCourse={LikeCourse} getstarnum={getstarnum}/>
       <ProgAdvantage/>
+      <TopShortCourse/>
       <StudentJoin/>
       <Process/>
       <Testimonial/>

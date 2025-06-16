@@ -58,9 +58,7 @@ const ProgAdvantage = () => {
             <div className='prog-advantage-progress-bar'>
                 <div className='progress-one'>
                     <p className='progress-para'>Education : <span className='percentage-progress'>80%</span></p>
-                    <div className='progress-line'>
-                        <div className='progress-inner-line'></div>
-                    </div>
+                    
                 </div>
                 <div className='progress-two'>
                     <p className='progress-para'>Innovation : <span className='percentage-progress'>80%</span></p>

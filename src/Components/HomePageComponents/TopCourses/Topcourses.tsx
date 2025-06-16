@@ -39,7 +39,7 @@ const Topcourses = () => {
         </div>
         <div className='top-course-course-list'>
             
-            <div className='course-box course-box-one'>
+            <div className='course-box-top course-box-top-one'>
                 <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-one'>
                     <LuBriefcaseBusiness/>
@@ -48,7 +48,7 @@ const Topcourses = () => {
                     <p>Business Management</p>
                 </div>
             </div>
-            <div className='course-box course-box-two'>
+            <div className='course-box-top course-box-top-two'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-two'>
                     <GiPencilBrush/>
@@ -58,7 +58,7 @@ const Topcourses = () => {
                 </div>
                 
             </div>
-            <div className='course-box course-box-three'>
+            <div className='course-box-top course-box-top-three'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-three'>
                     <LuListTodo/>
@@ -67,7 +67,7 @@ const Topcourses = () => {
                     <p>Personal Development</p>
                 </div>
             </div>
-            <div className='course-box course-box-four'>
+            <div className='course-box-top course-box-top-four'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-four'>
                     <GiMedicines/>
@@ -77,7 +77,7 @@ const Topcourses = () => {
                 </div>
             </div>
            
-            <div className='course-box course-box-five'>
+            <div className='course-box-top course-box-top-five'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-five'>
                     <RiDatabaseLine/>
@@ -87,7 +87,7 @@ const Topcourses = () => {
                 </div>
             </div>
             
-            <div className='course-box course-box-six'>
+            <div className='course-box-top course-box-top-six'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-six'>
                     <AiTwotoneSound/>
@@ -96,7 +96,7 @@ const Topcourses = () => {
                     <p>Marketing</p>
                 </div>
             </div>
-            <div className='course-box course-box-seven'>
+            <div className='course-box-top course-box-top-seven'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-seven'>
                     <FaRegHandshake/>
@@ -106,7 +106,7 @@ const Topcourses = () => {
                 </div>
             </div>
 
-            <div className='course-box course-box-eight'>
+            <div className='course-box-top course-box-top-eight'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-eight'>
                     <HiMiniComputerDesktop/>
@@ -117,7 +117,7 @@ const Topcourses = () => {
                
             </div>
             
-            <div className='course-box course-box-nine'>
+            <div className='course-box-top course-box-top-nine'>
                  <div className='course-box-design'></div>
                 <div className='course-box-icon icon-course-nine'>
                     <FaPhotoFilm/>

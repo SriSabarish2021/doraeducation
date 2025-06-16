@@ -290,6 +290,48 @@
             font-weight: 600;
             color: rgb(0, 42, 52);
            }
+           .home-para-small{
+             font-size: 45px;
+           }
+           .advantage-progress-line-div{
+                height: auto;
+                width: 100%;
+                @include Column-center.column-center;
+                gap: 25px;
+                margin-top: 15px;
+                align-items: flex-start;
+                .progress-para{
+                    height: auto;
+                                width: 90%;
+                                @include Row-center.row-center;
+                                justify-content: space-between;
+                                font-size: 16px;
+                                font-family:'Open Sans';
+                                font-weight: 600;
+                                color: main-color.$font-main-color;
+
+                                .percentage-progress{
+                                    font-size: 16px;
+                                    font-family:'Open Sans';
+                                    font-weight: 600;
+                                    color: rgb(73, 73, 73);
+                                }
+                }
+                .progress-line{
+                                height: 12px;
+                                width: 90%;
+                                background-color: rgb(224, 224, 224);
+                                border-radius: 15px;
+                                overflow: hidden;
+                                .progress-inner-line{                 
+                                    height: 100%;
+                                    border-radius: 15px;
+                                   
+                                    background-color: main-color.$main-color-for-app;
+                                }
+                }
+           }
+           
            .course-box-course-info-div{
              @include Column-center.column-center;
             align-items: flex-start;

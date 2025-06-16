@@ -191,7 +191,7 @@
     width: 0%;
   }
 }
-.top-courses-container .top-course-course-list .course-box {
+.top-courses-container .top-course-course-list .course-box-top {
   height: 80px;
   width: 360px;
   border-radius: 5px;
@@ -224,7 +224,7 @@
     width: 100px;
   }
 }
-.top-courses-container .top-course-course-list .course-box .course-box-icon {
+.top-courses-container .top-course-course-list .course-box-top .course-box-icon {
   height: 100%;
   width: 100%;
   flex: 1 1 30%;
@@ -236,7 +236,7 @@
   transition-timing-function: linear;
   transition-duration: 0.3s;
 }
-.top-courses-container .top-course-course-list .course-box .course-box-cont {
+.top-courses-container .top-course-course-list .course-box-top .course-box-cont {
   height: 100%;
   width: 100%;
   flex: 1 1 70%;
@@ -252,31 +252,31 @@
   transition-timing-function: linear;
   transition-duration: 0.3s;
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-one {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-one {
   color: rgb(0, 208, 132);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-two {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-two {
   color: rgb(255, 28, 168);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-three {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-three {
   color: rgb(255, 28, 58);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-four {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-four {
   color: rgb(62, 28, 255);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-five {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-five {
   color: rgb(255, 130, 28);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-six {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-six {
   color: rgb(28, 221, 255);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-seven {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-seven {
   color: rgb(236, 28, 255);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-eight {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-eight {
   color: rgb(255, 197, 38);
 }
-.top-courses-container .top-course-course-list .course-box .icon-course-nine {
+.top-courses-container .top-course-course-list .course-box-top .icon-course-nine {
   color: rgb(255, 28, 104);
 }
 .top-courses-container .top-course-course-list .course-box-design {
@@ -291,72 +291,72 @@
   transform: rotate(0deg);
   transition-duration: 0.5s;
 }
-.top-courses-container .top-course-course-list .course-box:hover .course-box-design {
+.top-courses-container .top-course-course-list .course-box-top:hover .course-box-design {
   transform: rotate(90deg);
   transition-duration: 0.5s;
 }
-.top-courses-container .top-course-course-list .course-box:hover .course-box-cont {
+.top-courses-container .top-course-course-list .course-box-top:hover .course-box-cont {
   transition-timing-function: linear;
   transition-duration: 0.3s;
   color: white;
 }
-.top-courses-container .top-course-course-list .course-box:hover .course-box-icon {
+.top-courses-container .top-course-course-list .course-box-top:hover .course-box-icon {
   color: white;
   transition-timing-function: linear;
   transition-duration: 0.3s;
 }
-.top-courses-container .top-course-course-list .course-box-one {
+.top-courses-container .top-course-course-list .course-box-top-one {
   background-color: rgba(0, 208, 132, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-one:hover {
+.top-courses-container .top-course-course-list .course-box-top-one:hover {
   background-color: rgb(0, 208, 132);
 }
-.top-courses-container .top-course-course-list .course-box-two {
+.top-courses-container .top-course-course-list .course-box-top-two {
   background-color: rgba(255, 28, 168, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-two:hover {
+.top-courses-container .top-course-course-list .course-box-top-two:hover {
   background-color: rgb(255, 99, 195);
 }
-.top-courses-container .top-course-course-list .course-box-three {
+.top-courses-container .top-course-course-list .course-box-top-three {
   background-color: rgba(255, 28, 58, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-three:hover {
+.top-courses-container .top-course-course-list .course-box-top-three:hover {
   background-color: rgb(255, 101, 122);
 }
-.top-courses-container .top-course-course-list .course-box-four {
+.top-courses-container .top-course-course-list .course-box-top-four {
   background-color: rgba(62, 28, 255, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-four:hover {
+.top-courses-container .top-course-course-list .course-box-top-four:hover {
   background-color: rgb(125, 103, 255);
 }
-.top-courses-container .top-course-course-list .course-box-five {
+.top-courses-container .top-course-course-list .course-box-top-five {
   background-color: rgba(255, 130, 28, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-five:hover {
+.top-courses-container .top-course-course-list .course-box-top-five:hover {
   background-color: rgb(255, 160, 83);
 }
-.top-courses-container .top-course-course-list .course-box-six {
+.top-courses-container .top-course-course-list .course-box-top-six {
   background-color: rgba(28, 221, 255, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-six:hover {
+.top-courses-container .top-course-course-list .course-box-top-six:hover {
   background-color: rgb(67, 227, 255);
 }
-.top-courses-container .top-course-course-list .course-box-seven {
+.top-courses-container .top-course-course-list .course-box-top-seven {
   background-color: rgba(236, 28, 255, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-seven:hover {
+.top-courses-container .top-course-course-list .course-box-top-seven:hover {
   background-color: rgb(242, 98, 255);
 }
-.top-courses-container .top-course-course-list .course-box-eight {
+.top-courses-container .top-course-course-list .course-box-top-eight {
   background-color: rgba(255, 208, 77, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-eight:hover {
+.top-courses-container .top-course-course-list .course-box-top-eight:hover {
   background-color: rgb(255, 211, 88);
 }
-.top-courses-container .top-course-course-list .course-box-nine {
+.top-courses-container .top-course-course-list .course-box-top-nine {
   background-color: rgba(255, 28, 104, 0.07);
 }
-.top-courses-container .top-course-course-list .course-box-nine:hover {
+.top-courses-container .top-course-course-list .course-box-top-nine:hover {
   background-color: rgb(255, 88, 144);
 }
 

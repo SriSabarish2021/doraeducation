@@ -308,6 +308,51 @@
   font-weight: 600;
   color: rgb(0, 42, 52);
 }
+.top-short-course-page-container .top-short-course-content-container .course-box .home-para-small {
+  font-size: 45px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .advantage-progress-line-div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+  align-items: flex-start;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .advantage-progress-line-div .progress-para {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(52, 52, 52);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .advantage-progress-line-div .progress-para .percentage-progress {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .advantage-progress-line-div .progress-line {
+  height: 12px;
+  width: 90%;
+  background-color: rgb(224, 224, 224);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .advantage-progress-line-div .progress-line .progress-inner-line {
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgb(255, 68, 81);
+}
 .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div {
   display: flex;
   flex-direction: column;

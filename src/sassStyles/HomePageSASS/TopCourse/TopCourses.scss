@@ -189,7 +189,7 @@
                 width: 0%;
             }
         }
-        .course-box{
+        .course-box-top{
             height: 80px;
             width: 360px;
             border-radius: 5px;
@@ -283,75 +283,75 @@
             transform: rotate(0deg);
             transition-duration: 0.5s;
         }
-        .course-box:hover .course-box-design{
+        .course-box-top:hover .course-box-design{
             transform: rotate(90deg);
             transition-duration: 0.5s;
 
          }
-        .course-box:hover .course-box-cont{
+        .course-box-top:hover .course-box-cont{
             transition-timing-function: linear;
             transition-duration: 0.3s;
             color: white;
         }
-         .course-box:hover .course-box-icon{
+         .course-box-top:hover .course-box-icon{
             color: white;
             transition-timing-function: linear;
             transition-duration: 0.3s;
         }
          
 
-         .course-box-one{
+         .course-box-top-one{
                 background-color: rgba(0, 208, 132,0.070);
             }
-        .course-box-one:hover{
+        .course-box-top-one:hover{
                 background-color: rgb(0, 208, 132);
             }
-            .course-box-two{
+            .course-box-top-two{
                 background-color:  rgba(255, 28, 168, 0.070);
             }
-            .course-box-two:hover{
+            .course-box-top-two:hover{
                 background-color:  rgb(255, 99, 195);
             }
-            .course-box-three{
+            .course-box-top-three{
                 background-color: rgba(255, 28, 58, 0.070);
             }
-             .course-box-three:hover{
+             .course-box-top-three:hover{
                 background-color: rgb(255, 101, 122);
             }
-            .course-box-four{
+            .course-box-top-four{
                 background-color:rgba(62, 28, 255, 0.070);
             }
-            .course-box-four:hover{
+            .course-box-top-four:hover{
                 background-color:rgb(125, 103, 255);
             }
-            .course-box-five{
+            .course-box-top-five{
                 background-color: rgba(255, 130, 28, 0.070);
             }
-            .course-box-five:hover{
+            .course-box-top-five:hover{
                 background-color: rgb(255, 160, 83);
             }
-            .course-box-six{
+            .course-box-top-six{
                 background-color: rgba(28, 221, 255, 0.070);
             }
-            .course-box-six:hover{
+            .course-box-top-six:hover{
                 background-color: rgb(67, 227, 255);
             }
-            .course-box-seven{
+            .course-box-top-seven{
                 background-color: rgba(236, 28, 255, 0.070);
             }
-            .course-box-seven:hover{
+            .course-box-top-seven:hover{
                 background-color: rgb(242, 98, 255);
             }
-            .course-box-eight{
+            .course-box-top-eight{
                 background-color: rgba(255, 208, 77, 0.070);
             }
-            .course-box-eight:hover{
+            .course-box-top-eight:hover{
                 background-color: rgb(255, 211, 88);
             }
-            .course-box-nine{
+            .course-box-top-nine{
                 background-color: rgba(255, 28, 104, 0.070);
             }
-            .course-box-nine:hover{
+            .course-box-top-nine:hover{
                 background-color: rgb(255, 88, 144);
             }
     }
