@@ -152,7 +152,7 @@ background: linear-gradient(121deg, rgba(255, 97, 102, 1) 0%, rgba(255, 66, 76, 
                 width: 60%;
                 margin-top: 80px;
                 @include Column-center.column-center;
-                gap: 10px;
+                gap: 15px;
                 align-items: flex-start;
 
                 .welcome-para{
@@ -171,7 +171,7 @@ background: linear-gradient(121deg, rgba(255, 97, 102, 1) 0%, rgba(255, 66, 76, 
 
                 }
                 .welcome-para-main{
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: 600;
                     line-height: 25px;
                     letter-spacing: 1px;
@@ -417,6 +417,28 @@ background: linear-gradient(114deg, rgba(255, 97, 102, 1) 0%, rgba(255, 66, 76, 
            
 
             
+        }
+    }
+
+    .rotatelogin{
+        animation: rotatelogin 0.7s linear forwards;
+    }
+    @keyframes rotatelogin {
+        0%{
+          transform: rotateY(0deg) scale(1) ;
+          opacity: 1;
+        }
+        40%{
+            transform: rotateY(180deg) scale(0.4);
+            opacity: 0.8;
+        }
+        80%{
+           transform: rotateY(360deg) scale(0.8); 
+           opacity: 1;
+        }
+        100%{
+             transform: rotateY(360deg) scale(1); 
+           opacity: 1;
         }
     }
 

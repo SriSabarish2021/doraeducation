@@ -4,6 +4,7 @@ import '../../../Styles/HomePageCSS/HomeMain/HomeMain.css'
 
 import { IoIosStar } from "react-icons/io";
 import { Image } from '@imagekit/react';
+import { Link } from 'react-router-dom';
 
 
 const HomeMain = () => {
@@ -139,9 +140,9 @@ const HomeMain = () => {
               <div  className='search-for-home-content'>
                 <div className='inpt-box-home'>
                   <input className='inp-bar-home' type="text" placeholder='Search for Courses'/>
-                  <button className='inp-bar-search-btn'>Search
+                  <Link style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"} className='inp-bar-search-btn'>Search
                     <span className='hover-btn-design'></span>
-                  </button>
+                  </Link>
                 </div>
                 <div className='search-below'>
                   <p className='home-qual-para'><span className='star-span'><IoIosStar/><IoIosStar/> <IoIosStar/> <IoIosStar/> <IoIosStar/> </span>5-Star ratings on G2, Discord and More</p>
