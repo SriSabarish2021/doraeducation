@@ -23,11 +23,6 @@
   position: relative;
   overflow: hidden;
 }
-.program-list-main-container .program-list-deisgn-div {
-  position: absolute;
-  height: 300px;
-  width: 300px;
-}
 .program-list-main-container .program-list-title-container {
   height: auto;
   width: 100%;
@@ -82,8 +77,73 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 12px;
+  position: relative;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .notshowfilt {
+  transform: translateY(-100px) scale(0);
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .showfilt {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+  background-color: #f3f3f3;
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  top: 140%;
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: rgba(37, 63, 74, 0.12) 0px 2px 4px 0px, rgba(37, 63, 74, 0.12) 0px 2px 16px 0px;
+  border: 1px solid rgb(232, 232, 232);
+  background-color: #ffffff;
+  gap: 20px;
+  padding: 20px 20px 20px 20px;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-top: 1px solid rgb(232, 232, 232);
+  border-left: 1px solid rgb(232, 232, 232);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -7px;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Nunito";
+  text-decoration: none;
+  font-weight: 700;
+  color: #5c5c5c;
+  transform: scale(1);
+  transition-duration: 0.3s;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .more-filt-icon {
+  transition-duration: 0.4s;
+}
+.program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more:hover .more-filt-icon {
+  transform: rotate(90deg);
+  transition-duration: 0.4s;
 }
 .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter {
   height: auto;
@@ -614,6 +674,182 @@
   transform: translateX(0px);
   transition-duration: 0.7s;
   transition-delay: 0.3s;
+}
+@keyframes animationforloading {
+  0% {
+    background: rgb(248, 248, 248);
+  }
+  25% {
+    background: rgb(239, 239, 239);
+  }
+  50% {
+    background: rgb(243, 243, 243);
+  }
+  75% {
+    background: rgb(236, 236, 236);
+  }
+  100% {
+    background: rgb(248, 248, 248);
+  }
+}
+@keyframes animationforloadingcontbar {
+  0% {
+    background: #e3e3e3;
+  }
+  25% {
+    background: rgb(225, 225, 225);
+  }
+  50% {
+    background: rgb(239, 239, 239);
+  }
+  75% {
+    background: #e8e8e8;
+  }
+  100% {
+    background: #e3e3e3;
+  }
+}
+@keyframes mainanimationinloading {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(0.91);
+  }
+  50% {
+    transform: scale(0.93);
+  }
+  75% {
+    transform: scale(0.91);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.program-list-main-container .loading-icon-shows {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: 80px;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transform: scale(0.9);
+  animation: mainanimationinloading 2s linear forwards infinite;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-img {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 50%;
+  background: rgb(240, 240, 240);
+  border-radius: 15px;
+  animation: animationforloading 2s linear forwards infinite;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 50%;
+  background: rgb(255, 255, 255);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-left: 15px;
+  gap: 20px;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+  height: 30px;
+  width: 160px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  animation: animationforloading 2s linear forwards infinite;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+  height: 40px;
+  width: 90%;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  animation: animationforloading 2s linear forwards infinite;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one {
+  height: 10px;
+  width: 80%;
+  background-color: #e3e3e3;
+  border-radius: 50px;
+  animation: animationforloadingcontbar 2s linear forwards infinite;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two {
+  height: 10px;
+  width: 50%;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  animation: animationforloadingcontbar 2s linear 0.2s forwards infinite;
+}
+.program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+  height: 10px;
+  width: 60%;
+  background-color: #dadada;
+  border-radius: 50px;
+  animation: animationforloadingcontbar 2s linear 0.5s forwards infinite;
+}
+.program-list-main-container .no-course-alert {
+  height: 180px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+  padding-right: 25px;
+  color: #454545;
+  background-color: #fbfbfb;
+  border: 1px solid rgb(236, 236, 236);
+  font-family: "Baumans";
+  letter-spacing: 2px;
+  border-radius: 30px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  position: relative;
+}
+.program-list-main-container .no-course-alert .div-for-no-items-image {
+  position: absolute;
+  height: 320px;
+  width: 300px;
+  background-image: url("/no-item-image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -120px;
+  left: -50px;
+}
+.program-list-main-container .no-course-alert .para-in-no-items {
+  width: 60%;
+  text-align: justify;
+  color: #4d4d4d;
+  font-family: "Delius";
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  line-height: 30px;
 }
 .program-list-main-container .program-list-btn {
   height: auto;

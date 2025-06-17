@@ -919,7 +919,7 @@ function App() {
       CourseDuration:'2:45',
       totalLesson:18,
       totalEnroll:25,
-      Category:'User-InterFace',
+      Category:'UI/UX',
       rating:4,
       CourseIntroVid:'https://www.youtube.com/watch?v=61mkx_OV61s',
       CourseFullVid:'https://www.youtube.com/watch?v=Rx3FquN30TE',
