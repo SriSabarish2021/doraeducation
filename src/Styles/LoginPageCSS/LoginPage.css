@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap");
+.login-page-main-container {
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(0, 0, 0, 0.265);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  z-index: 3000000;
+  cursor: url("/close-two.png") 10 10, auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.login-page-main-container .login-page-inner-container {
+  height: 75%;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.login-page-main-container .login-page-inner-container .login-close-btn {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(255, 68, 81);
+  border-radius: 100%;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+.login-page-main-container .login-page-inner-container .login-close-btn .login-close-btn-x-one {
+  height: 2px;
+  width: 12px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(50deg);
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+.login-page-main-container .login-page-inner-container .login-close-btn .login-close-btn-x-two {
+  height: 2px;
+  width: 12px;
+  background-color: white;
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(-50deg);
+  transition-duration: 0.3s;
+}
+.login-page-main-container .login-page-inner-container .login-close-btn:hover .login-close-btn-x-one {
+  transition-duration: 0.3s;
+  transform: rotate(0deg);
+}
+.login-page-main-container .login-page-inner-container .login-close-btn:hover .login-close-btn-x-two {
+  transition-duration: 0.3s;
+  transform: rotate(0deg);
+}
+.login-page-main-container .login-page-inner-container .login-page-intro {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-page-intro-design {
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  background: #ff6b70;
+  background: linear-gradient(90deg, rgb(255, 107, 112) 0%, rgb(255, 79, 88) 39%, rgb(255, 46, 60) 100%);
+  border-radius: 100%;
+  left: -150px;
+  top: -250px;
+  z-index: -1;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-page-intro-design-one {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  background: #ff6166;
+  background: linear-gradient(249deg, rgb(255, 97, 102) 0%, rgb(255, 66, 76) 43%, rgb(255, 46, 60) 100%);
+  position: absolute;
+  z-index: -1;
+  left: -100px;
+  bottom: -100px;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-page-intro-design-two {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background: #ff6166;
+  background: linear-gradient(121deg, rgb(255, 97, 102) 0%, rgb(255, 66, 76) 39%, rgb(255, 46, 60) 100%);
+  position: absolute;
+  z-index: -1;
+  right: 80px;
+  bottom: 80px;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-intro-para-box {
+  height: auto;
+  width: 60%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-items: flex-start;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-intro-para-box .welcome-para {
+  font-size: 40px;
+  font-family: "Merienda";
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  color: white;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-intro-para-box .welcome-para .welcome-para-span {
+  font-size: 28px;
+  font-family: "Lexend Deca";
+  font-weight: 600;
+}
+.login-page-main-container .login-page-inner-container .login-page-intro .login-intro-para-box .welcome-para-main {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: "Delius";
+  color: white;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  padding: 60px 0px;
+  position: relative;
+  z-index: 1;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-page-input-design {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background: #ff6166;
+  background: linear-gradient(114deg, rgb(255, 97, 102) 0%, rgb(255, 66, 76) 43%, rgb(255, 46, 60) 100%);
+  position: absolute;
+  z-index: -1;
+  right: -80px;
+  bottom: -80px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-title {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 10px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-title .login-page-inp-title-para-one {
+  font-size: 40px;
+  font-family: "Funnel Sans";
+  font-weight: 700;
+  color: rgb(61, 61, 61);
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-title .login-page-inp-title-para-two {
+  font-size: 13px;
+  font-family: "Funnel Sans";
+  font-weight: 500;
+  color: rgb(109, 109, 109);
+  letter-spacing: 0.5px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 5px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-icon {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 15%;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(59, 59, 59);
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-input-bar {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 85%;
+  border: none;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito";
+  padding-right: 10px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-input-bar-two {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 65%;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Nunito";
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .pass-show-btn {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-left: 1px solid rgb(218, 218, 218);
+  font-family: "Delius";
+  color: rgb(255, 68, 81);
+  cursor: pointer;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-input-bar:focus {
+  border: none;
+  outline: none;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-input-bar-two:focus {
+  border: none;
+  outline: none;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-input-bar::placeholder {
+  font-size: 12px;
+  font-family: "Lato";
+  letter-spacing: 0.5px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .input-login-input-bar-two::placeholder {
+  font-size: 12px;
+  font-family: "Lato";
+  letter-spacing: 0.5px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .login-page-email-input {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(218, 218, 218);
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .login-page-pass-input {
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgb(218, 218, 218);
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-read-pass {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-read-pass .check-box-read-pass {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-read-pass .check-box-read-pass .check-box-show-pass {
+  height: 15px;
+  width: 15px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-read-pass .check-box-read-pass .para-show-pass {
+  font-size: 12px;
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  color: rgb(109, 109, 109);
+  cursor: pointer;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-read-pass .forget-pass {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Instrument Sans";
+  font-weight: 500;
+  color: rgb(255, 203, 30);
+  cursor: pointer;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-btn {
+  margin-top: 15px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-btn .login-page-btn-inner {
+  height: 45px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Delius";
+  font-weight: 900;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  border: none;
+  background-color: rgb(255, 74, 74);
+  color: white;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .sign-up-div {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .sign-up-div .sign-up-btn {
+  font-size: 12px;
+  font-family: "Onest";
+  font-weight: 400;
+  color: rgb(117, 117, 117);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .sign-up-div .sign-up-btn .sign-up-span {
+  font-size: 14px;
+  font-family: "Delius";
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  color: rgb(255, 105, 105);
+}
+.login-page-main-container .notshowlogininner {
+  transform: scale(0);
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-delay: 0s;
+}
+.login-page-main-container .showlogininner {
+  transform: scale(1);
+  opacity: 1;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+}
+
+.notshowlogin {
+  transform: scale(0);
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-delay: 0.3s;
+}
+
+.showlogin {
+  transform: scale(1);
+  opacity: 1;
+  transition-duration: 0.4s;
+  transition-delay: 0s;
+}
+
+/*# sourceMappingURL=LoginPage.css.map */

@@ -12,7 +12,7 @@ import { Image } from '@imagekit/react';
 import { Link, NavLink } from 'react-router-dom';
 import { IoHeartOutline } from "react-icons/io5";
 
-const Nav = ({setcartpage,setlikepage,setsidesharepage}) => {
+const Nav = ({setlogin,setcartpage,setlikepage,setsidesharepage}) => {
   return (
     <div className="nav-bar-container">
       <div className="contact-in-nav-bar">
@@ -103,7 +103,7 @@ const Nav = ({setcartpage,setlikepage,setsidesharepage}) => {
           
         </div>
         <div className='side-bar-in-nav'>
-          <p className='icon-in-last-bar-nav'><IoPersonOutline/></p>
+          <p className='icon-in-last-bar-nav' onClick={()=>setlogin(true)}><IoPersonOutline/></p>
           <p className='icon-in-last-bar-nav' onClick={()=>setlikepage(true)}><IoHeartOutline/></p>
           <p className='icon-in-last-bar-nav' onClick={()=>setcartpage(true)}><IoCartOutline/></p>
           <p className='icon-in-last-bar-nav offer-bar' onClick={()=>setsidesharepage(true)}><BiMenuAltLeft/></p>
