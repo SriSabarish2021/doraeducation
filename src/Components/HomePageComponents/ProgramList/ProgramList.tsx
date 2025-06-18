@@ -65,6 +65,14 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
    
    const[morefilt,setmorefilt]=useState(false)
 
+   useEffect(() => {
+      window.addEventListener('scroll',()=>{
+        setmorefilt(false)
+      })
+  
+   }, [])
+   
+
   
   
   

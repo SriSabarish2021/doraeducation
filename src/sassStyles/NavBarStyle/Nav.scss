@@ -85,7 +85,9 @@
 
 }
 
-
+.contact-in-nav-bar-for-course-page{
+    height: 35px;
+}
 
 
 
@@ -233,6 +235,17 @@
 
                 
             }
+            .p-for-nav-item-for-course{
+                font-size: 16px;
+                  
+                  .arrow-icon-in-nav-for-course{
+                    font-size: 13px;
+                 
+                  }
+                   
+
+                
+            }
     
             .active-in-nav{
                     color: main-color.$main-color-for-app;
@@ -251,6 +264,17 @@
                  transition-duration: 0.3s;
                   transition-timing-function: linear;
             }
+            .line-in-hover-nav-for-course{
+                height: 2px;
+            }
+            .active-line-in-nav-for-course{
+                width: 100%;
+                    position: absolute;
+                height: 2px;
+                background-color: main-color.$main-color-for-app;
+                border-radius:500px;
+                opacity: 1;
+             }
              .active-line-in-nav{
                 width: 100%;
                     position: absolute;
@@ -302,7 +326,7 @@
 
         .icon-in-last-bar-nav{
             font-size: 20px;
-            color: rgb(30, 0, 12);
+            color: rgb(37, 0, 15);
             cursor: pointer;
             transition-duration: 0.2s;
                   transition-timing-function: linear;
@@ -318,4 +342,14 @@
              }
     }
     
+}
+
+.nav-bar-for-course-page{
+    height: 75px;
+}
+
+.nav-bar-sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }

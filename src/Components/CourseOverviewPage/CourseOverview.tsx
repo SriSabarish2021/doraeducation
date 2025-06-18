@@ -37,7 +37,7 @@ import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-const CourseOverview = ({hashget,likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
+const CourseOverview = ({navheight,hashget,likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
 
 
@@ -721,7 +721,7 @@ const removeredborder=()=>{
             </div>
             <div className='course-join-btns'>
               <div className='btn-for-pick-enroll-div'>
-                <button onClick={()=>pickcourse(coursedetails.id)} className={`course-btn course-btn-one ${pick?'':'design-pick'}`} >{pick?'Please Enroll':'Pick JavaScript'}
+                <button onClick={()=>pickcourse(coursedetails.id)} className={`course-btn course-btn-one ${pick?'':'design-pick'}`} >{pick?'Please Enroll':`Pick ${coursedetails.courseName}`}
                 {pick?<>
                
                 </>:<>
@@ -1031,7 +1031,7 @@ const removeredborder=()=>{
                   </div>
                 </button>
               </div>
-              <div className='course-overview-content-sider'>
+              <div className='course-overview-content-sider' style={{top:Number(navheight)+20}}>
                 <p className='course-content-sider-title'>This Course Includes :</p>
                 <div className='course-includes-list'>
                   <div className='course-includes-list-items'>

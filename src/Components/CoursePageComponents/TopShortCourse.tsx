@@ -4,7 +4,7 @@ import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa"; 
 import { Link, useLocation } from 'react-router-dom';
-const TopShortCourse = () => {
+const TopShortCourse = ({sethashget}) => {
 
     const getlocation=useLocation()
 
@@ -147,7 +147,7 @@ const TopShortCourse = () => {
           
            {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-            <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#JavaScript`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
+            <Link onClick={()=>sethashget('JavaScript')} style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#JavaScript`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
               <div className='top-course-apply-btn-one'></div>
               <div className='top-course-apply-btn-two'></div>
               <div className='top-course-apply-btn-three'></div>
@@ -186,7 +186,7 @@ const TopShortCourse = () => {
          
            {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-              <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#TypeScript`} className='apply-btn-course-box'>Apply
+              <Link  onClick={()=>sethashget('TypeScript')} style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#TypeScript`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>
@@ -223,7 +223,7 @@ const TopShortCourse = () => {
            }
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-              <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#CSS`} className='apply-btn-course-box'>Apply
+              <Link onClick={()=>sethashget('CSS')} style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#CSS`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>
@@ -260,7 +260,7 @@ const TopShortCourse = () => {
            }
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
             <div  className='course-box-btn-div'>
-              <Link style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#NextJS`} className='apply-btn-course-box'>Apply
+              <Link onClick={()=>sethashget('NextJS')} style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#NextJS`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>
@@ -298,7 +298,7 @@ const TopShortCourse = () => {
            }
           {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
           <div  className='course-box-btn-div'>
-            <Link to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#React`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
+            <Link onClick={()=>sethashget('ReactJS')} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#React`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
               <div className='top-course-apply-btn-one'></div>
               <div className='top-course-apply-btn-two'></div>
               <div className='top-course-apply-btn-three'></div>

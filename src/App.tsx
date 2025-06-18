@@ -1203,6 +1203,8 @@ function App() {
 
   const [hashget,sethashget]=useState('')
 
+  const [navheight,setnavheight]=useState(0)
+
   const starcalc=(idnum)=>{
       const gettotalstar=Array.from(course).filter((stararr)=>idnum==stararr.id)
       let starinitial=0
@@ -1226,7 +1228,7 @@ function App() {
           overflow-y:${login||sidesharepage||cartpage||likepage?'hidden':'auto'}
         }`}
         </style>
-      <Nav sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
+      <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
       <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
@@ -1235,8 +1237,8 @@ function App() {
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage course={course}/>}/>
-            <Route path="mindspire-course" element={<CourseOverview hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
-            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="mindspire-course" element={<CourseOverview navheight={navheight} hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview navheight={navheight} hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>
