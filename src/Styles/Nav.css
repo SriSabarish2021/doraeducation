@@ -7,6 +7,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Griffy&display=swap");
 .nav-bar-container {
   height: auto;
   width: 100%;
@@ -26,6 +30,145 @@
   align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+}
+.contact-in-nav-bar .mover-in-nav-top {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+.contact-in-nav-bar .mover-in-nav-top .nav-mover-para {
+  position: absolute;
+  transform: translateX(300px);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: "Griffy";
+  color: white;
+}
+.contact-in-nav-bar .mover-in-nav-top .nav-mover-para-0 {
+  animation: text-mover-in-nav 6s linear infinite;
+  animation-delay: 0s;
+}
+.contact-in-nav-bar .mover-in-nav-top .nav-mover-para-1 {
+  animation: text-mover-in-nav-two 6s linear infinite;
+  animation-delay: 2s;
+}
+.contact-in-nav-bar .mover-in-nav-top .nav-mover-para-2 {
+  animation: text-mover-in-nav-three 6s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes text-mover-in-nav {
+  0% {
+    transform: translateX(300px);
+  }
+  10% {
+    transform: translateX(300px);
+  }
+  20% {
+    transform: translateX(150px);
+  }
+  30% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateX(-150px);
+  }
+  70% {
+    transform: translateX(-300px);
+  }
+  80% {
+    transform: translateX(-300px);
+  }
+  90% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+@keyframes text-mover-in-nav-two {
+  0% {
+    transform: translateX(300px);
+  }
+  10% {
+    transform: translateX(300px);
+  }
+  20% {
+    transform: translateX(150px);
+  }
+  30% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateX(-150px);
+  }
+  70% {
+    transform: translateX(-300px);
+  }
+  80% {
+    transform: translateX(-300px);
+  }
+  90% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+@keyframes text-mover-in-nav-three {
+  0% {
+    transform: translateX(300px);
+  }
+  10% {
+    transform: translateX(300px);
+  }
+  20% {
+    transform: translateX(150px);
+  }
+  30% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateX(-150px);
+  }
+  70% {
+    transform: translateX(-300px);
+  }
+  80% {
+    transform: translateX(-300px);
+  }
+  90% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
 }
 .contact-in-nav-bar .phone-div-in-nav {
   height: 100%;

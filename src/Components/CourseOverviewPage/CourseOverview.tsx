@@ -1048,7 +1048,7 @@ const removeredborder=()=>{
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><IoEarthOutline className='sider-list-icon'/>Language</p>
-                    <p className='course-list-cont'>{Array.from(coursedetails.Audio).map((indicourselang:any)=>indicourselang)}</p>
+                    <p className='course-list-cont'>{Array.from(coursedetails.Audio).map((indicourselang:any)=>Array.from(coursedetails.Audio).length>1?`${indicourselang},`:indicourselang)}</p>
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><IoMdBowtie className='sider-list-icon'/>Access</p>

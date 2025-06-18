@@ -45,12 +45,10 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
     {String(locationhashnav.pathname).includes("mindspire-course")?
       <div className="nav-bar-container nav-bar-sticky">
        <div className="contact-in-nav-bar contact-in-nav-bar-for-course-page">
-        <div className='phone-div-in-nav'>
-          <p className='call-in-nav'><IoIosCall className='icon-in-nav'/>80155-70575</p>
-          <p className='mail-in-nav'><IoIosMail className='icon-in-nav'/>srisabarish003@gmail.com</p>
-        </div>
-        <div className='location-div-in-nav'>
-           <p className='location-in-nav'><ImLocation className='icon-in-nav-loc'/>Erode, Tamil Nadu, India</p>
+        <div className='mover-in-nav-top'>
+           {Array.from(course).slice(-3).map((indifornavmover,index)=>
+          <p className={`nav-mover-para nav-mover-para-${index} `}>{indifornavmover.courseName}</p>
+          )}
         </div>
       </div> 
       <div className="nav-bar-items-container nav-bar-for-course-page">
