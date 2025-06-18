@@ -9,10 +9,16 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { Image } from '@imagekit/react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { IoHeartOutline } from "react-icons/io5";
+import { useState } from 'react';
 
-const Nav = ({setlogin,setcartpage,setlikepage,setsidesharepage}) => {
+const Nav = ({sethashget,course,setlogin,setcartpage,setlikepage,setsidesharepage}) => {
+
+  const locationhashnav=useLocation()
+
+
+  
   return (
     <div className="nav-bar-container">
       <div className="contact-in-nav-bar">
@@ -63,7 +69,7 @@ const Nav = ({setlogin,setcartpage,setlikepage,setsidesharepage}) => {
             )}
             </NavLink>  
           </div>
-          <div className='nav-item-insider'>
+          <div className='nav-item-insider course-nav'>
             
            <NavLink style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"}>
               {({isActive})=>(
@@ -74,6 +80,13 @@ const Nav = ({setlogin,setcartpage,setlikepage,setsidesharepage}) => {
 
             )}
             </NavLink> 
+
+            <div className='courses-showing-nav-bar'>
+              <div className='course-more-arrow'></div>
+              {Array.from(course).slice(-4).map((indifornav)=>
+              <Link key={indifornav.id} onClick={()=>sethashget(indifornav.courseName)} to={`/mindspire-course#${indifornav.courseName}`} className='course-filter-para' style={{color:String(locationhashnav.hash).slice(1).includes(String(indifornav.courseName))?'rgba(255, 89, 100, 1)':''}}>{indifornav.courseName}</Link>
+              )}
+            </div>
            
           </div>
           <div className='nav-item-insider'>

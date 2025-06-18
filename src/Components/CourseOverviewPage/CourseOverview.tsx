@@ -37,20 +37,9 @@ import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
-const CourseOverview = ({likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
+const CourseOverview = ({hashget,likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
-useEffect(() => {
-  const handleHashChange = () => {
-    window.location.reload(); 
-  };
 
-  window.addEventListener('hashchange', handleHashChange);
-
-  
-  return () => {
-    window.removeEventListener('hashchange', handleHashChange);
-  };
-}, []);
 
   const gethash=useLocation().hash
 
@@ -87,18 +76,26 @@ useEffect(() => {
     
 
   useEffect(() => {
-   
 
+    let pathname;
+
+    if (hashget) {
+      pathname=hashget
+    }else{
+      pathname=gethash.slice(1)
+    }
    
     
-    const gettingcoursedetail=Array.from(course).filter((indicourse)=>String(indicourse.courseName)==String(gethash).slice(1))
+    const gettingcoursedetail=Array.from(course).filter((indicourse)=>String(indicourse.courseName)==pathname)
+    
+    
     setcoursedetail(gettingcoursedetail)
     setstartotalnum((number)=>{
       let starinitial=number
-      const reviewnumberarray=gettingcoursedetail.map((indiitemforreview)=>
+      const reviewnumberarray=gettingcoursedetail?.map((indiitemforreview)=>
         indiitemforreview.CourseReview
       )
-      const reviewnumber=reviewnumberarray[0].map((reviewnumber)=>{
+      const reviewnumber=reviewnumberarray[0]?.map((reviewnumber)=>{
         
         
        
@@ -110,10 +107,10 @@ useEffect(() => {
       
     })
 
-    const reviewtotal=gettingcoursedetail.map((indiitemfortotalreview)=>
+    const reviewtotal=gettingcoursedetail?.map((indiitemfortotalreview)=>
         indiitemfortotalreview.CourseReview
       )
-      const reviewnumber=reviewtotal[0].map((reviewtotnumber)=>{
+      const reviewnumber=reviewtotal[0]?.map((reviewtotnumber)=>{
             if (Number(reviewtotnumber.RaatingNUM)==5) {
                   
                     setfivestarnum((fivestarnum)=>{
@@ -177,7 +174,7 @@ useEffect(() => {
       setonestarnum(0)
     }
     
-  }, [course])
+  }, [course,hashget])
 
 
   

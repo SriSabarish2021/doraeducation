@@ -13,25 +13,13 @@ import { FaRegStar } from "react-icons/fa";
 import { useEffect, useState } from 'react';
 import { FaPlus } from "react-icons/fa";
 
-const ProgramList = ({course,LikeCourse}) => {
+const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
   let getlocation=useLocation()
   getlocation.pathname
 
 
 
-  const starcalc=(idnum)=>{
-    const gettotalstar=Array.from(course).filter((stararr)=>idnum==stararr.id)
-    let starinitial=0
-    const totalstarnum=gettotalstar[0].CourseReview.map((indistarnum)=>indistarnum.RaatingNUM)
-    let calculate=Array.from(totalstarnum).map((startget)=>{
-      starinitial=starinitial+startget
-    })
- 
-
-    return starinitial
-    
-    
-  }
+  
 
   const [coursearr,setcoursearr]=useState(course)
 
@@ -76,6 +64,8 @@ const ProgramList = ({course,LikeCourse}) => {
     
    
    const[morefilt,setmorefilt]=useState(false)
+
+  
   
   
   return (
@@ -166,7 +156,7 @@ const ProgramList = ({course,LikeCourse}) => {
                 </div>
                 <div className='hovering-btn-container'>
                   <div className='hover-enroll-btn'>
-                    <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: `#${indicourse.courseName}` }}>
+                    <Link  style={{textDecoration:'none',width:'100%'}}  to={{ pathname: "mindspire-course", hash: `#${indicourse.courseName}`}}   onClick={()=>sethashget(indicourse.courseName)}>
                       <div className='hover-enroll-btn-insider'>
                         Enroll Now
                         <div className='prog-enroll-design-one'></div>
@@ -317,7 +307,7 @@ const ProgramList = ({course,LikeCourse}) => {
               </div>
               <div className='hovering-btn-container'>
                 <div className='hover-enroll-btn'>
-                  <Link style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: `#${indicourse.courseName}` }}>
+                  <Link onClick={()=>sethashget(indicourse.courseName)} style={{textDecoration:'none',width:'100%'}} to={{ pathname: "mindspire-course", hash: `#${indicourse.courseName}` }}>
                     <div className='hover-enroll-btn-insider'>
                       Enroll Now
                       <div className='prog-enroll-design-one'></div>

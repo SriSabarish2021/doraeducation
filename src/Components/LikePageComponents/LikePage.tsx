@@ -6,7 +6,7 @@ import { MdCloseFullscreen } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const LikePage = ({likepage,setlikepage,course,removelike,setcartpage}) => {
+const LikePage = ({sethashget,likepage,setlikepage,course,removelike,setcartpage,starcalc}) => {
 
   const likeclose=(id)=>{
     if (String(id).includes('like-close')) {
@@ -18,10 +18,8 @@ const LikePage = ({likepage,setlikepage,course,removelike,setcartpage}) => {
 
   const likearray=Array.from(course).filter((likeitems)=>likeitems.Like==true)
 
-  if(likearray){
-    console.log(likearray);
-    
-  }
+
+ 
 
   
 
@@ -39,8 +37,16 @@ const LikePage = ({likepage,setlikepage,course,removelike,setcartpage}) => {
           <div className='like-item-inner'>
             <div className='like-item-image-box' style={{backgroundImage:`url(${indilike.courseIMG})`}}><FaHeart className='heart-icon-like-img'/></div>
             <div className='like-item-content-box'>
-              <p className='like-item-para-one'>{indilike.courseTitle}</p>
-              <p className='like-item-star'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>
+              <Link onClick={()=>{setlikepage(false),sethashget(indilike.courseName)}} style={{textDecoration:'none'}} to={{ pathname: "mindspire-course", hash: `#${indilike.courseName}` }} className='like-item-para-one'>{indilike.courseTitle}
+              <div className='like-item-underline'></div>
+              </Link>
+              {
+                Math.floor(Number(Number(Number(starcalc(indilike.id))/Number((Number(indilike.CourseReview.length)*5)))*5).toFixed(0))==5? <p className='like-item-star'><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></p>: 
+                   Math.floor(Number(Number(Number(starcalc(indilike.id))/Number((Number(indilike.CourseReview.length)*5)))*5).toFixed(0))==4?<p className='like-item-star'><FaStar/><FaStar/><FaStar/><FaStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indilike.id))/Number((Number(indilike.CourseReview.length)*5)))*5).toFixed(0))==3?<p className='like-item-star'><FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indilike.id))/Number((Number(indilike.CourseReview.length)*5)))*5).toFixed(0))==2?<p className='like-item-star'><FaStar/><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:
+                  Math.floor(Number(Number(Number(starcalc(indilike.id))/Number((Number(indilike.CourseReview.length)*5)))*5).toFixed(0))==1?<p className='like-item-star'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>:<p className='like-item-star'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></p>
+                  }
               <p className='like-item-amt'>${indilike.CourseAMT}.00</p>
             </div>
             <div className='like-item-close-box'><IoCloseCircleOutline className='icon-close-like' onClick={()=>removelike(indilike.id)}/></div>

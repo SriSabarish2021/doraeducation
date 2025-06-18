@@ -1,9 +1,9 @@
 import ProgramList from "../HomePageComponents/ProgramList/ProgramList"
 
-const CourseListCoursePage = ({course,LikeCourse}) => {
+const CourseListCoursePage = ({course,LikeCourse,sethashget,starcalc}) => {
   return (
     <>
-    <ProgramList  course={course} LikeCourse={LikeCourse}/>
+    <ProgramList starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>
     </>
   )
 }

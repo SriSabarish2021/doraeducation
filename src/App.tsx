@@ -1200,6 +1200,22 @@ function App() {
   const[sidesharepage,setsidesharepage]=useState(false)
 
   const[login,setlogin]=useState(false)
+
+  const [hashget,sethashget]=useState('')
+
+  const starcalc=(idnum)=>{
+      const gettotalstar=Array.from(course).filter((stararr)=>idnum==stararr.id)
+      let starinitial=0
+      const totalstarnum=gettotalstar[0].CourseReview.map((indistarnum)=>indistarnum.RaatingNUM)
+      let calculate=Array.from(totalstarnum).map((startget)=>{
+        starinitial=starinitial+startget
+      })
+   
+  
+      return starinitial
+      
+      
+    }
   
   return (
     
@@ -1210,22 +1226,22 @@ function App() {
           overflow-y:${login||sidesharepage||cartpage||likepage?'hidden':'auto'}
         }`}
         </style>
-      <Nav setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
+      <Nav sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
       <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
-            <Route index element={<HomePage  course={course} LikeCourse={LikeCourse}/>}/>
+            <Route index element={<HomePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path='About-Mindspire-Institute' element={<AboutPage course={course}/>}/>
-            <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage course={course} LikeCourse={LikeCourse}/>}/>
+            <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage course={course}/>}/>
-            <Route path="mindspire-course" element={<CourseOverview likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
-            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="mindspire-course" element={<CourseOverview hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>
       <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
-      <LikePage setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
+      <LikePage sethashget={sethashget} starcalc={starcalc} setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
       <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
       <LoginPage login={login} setlogin={setlogin}/>
       <Footer/>

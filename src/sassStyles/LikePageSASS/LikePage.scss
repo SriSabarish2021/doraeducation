@@ -116,6 +116,25 @@
                         .like-item-para-one{
                             font-size: 15px;
                             font-family: 'National Park';
+                            color: black;
+                            text-decoration:none;
+                            transition-duration: 0.3s;
+                            position: relative;
+
+                            .like-item-underline{
+                                position: absolute;
+                                height: 0.5px;
+                                width: 0%;
+                                bottom: 0px;
+                                background-color: #898989;
+                                transition-duration: 0.3s;
+
+                            }
+
+                        }
+                        .like-item-para-one:hover .like-item-underline{
+                             width: 100%;
+                            transition-duration: 0.3s;
                         }
                         .like-item-star{
                             height: auto;
