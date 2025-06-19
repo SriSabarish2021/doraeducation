@@ -210,6 +210,7 @@ background: linear-gradient(114deg, rgba(255, 97, 102, 1) 0%, rgba(255, 66, 76, 
                 @include Column-center.column-center;
                 justify-content: flex-start;
                 gap: 20px;
+               
                 .login-page-input-title{
                     height: auto;
                     width: 100%;
@@ -315,7 +316,15 @@ background: linear-gradient(114deg, rgba(255, 97, 102, 1) 0%, rgba(255, 66, 76, 
                         border-radius: 8px;
                         @include Row-center.row-center;
                         overflow: hidden;
-                        border: 1px solid main-color.$border-light-color;
+                       
+                    }
+                     .login-input-border{
+                    border: 1px solid main-color.$border-light-color;
+
+                    }
+                    .login-no-input-border{
+                        border: 2px solid rgb(250, 133, 133);
+
                     }
                     .login-page-pass-input{
                         height: 50px;
@@ -323,8 +332,7 @@ background: linear-gradient(114deg, rgba(255, 97, 102, 1) 0%, rgba(255, 66, 76, 
                         border-radius: 8px;
                         @include Row-center.row-center;
                         overflow: hidden;
-                        border: 1px solid main-color.$border-light-color;
-
+                       
 
                     }
                 }

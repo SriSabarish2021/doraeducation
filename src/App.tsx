@@ -9,7 +9,7 @@ import CoursePage from './Components/WebsiteComponents/CoursePage'
 import ContactPage from './Components/WebsiteComponents/ContactPage'
 import ReviewMainPage from './Components/WebsiteComponents/ReviewMainPage'
 import CourseOverview from './Components/CourseOverviewPage/CourseOverview'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import CartPage from './Components/CartPageComponent/CartPage'
 import LikePage from './Components/LikePageComponents/LikePage'
 import NavShareSide from './Components/NavShareSide/NavShareSide'
@@ -1221,7 +1221,11 @@ function App() {
 
 
      const [reviewwrite,setreviewwrite]=useState(false)
-  
+
+    const [userName,setuserName]=useState('')
+    const [userEmail,setuserEmail]=useState('')
+
+
   return (
     
     <div className='website-main-container'>
@@ -1238,7 +1242,7 @@ function App() {
             <Route index element={<HomePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path='About-Mindspire-Institute' element={<AboutPage course={course}/>}/>
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
-            <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
+            <Route path="Contact-with-Mindspire-Institute" element={<ContactPage setuserName={setuserName} setuserEmail={setuserEmail} userName={userName} userEmail={userEmail}/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage course={course}/>}/>
             <Route path="mindspire-course" element={<CourseOverview reviewwrite={reviewwrite} setreviewwrite={setreviewwrite} navheight={navheight} hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
             <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview reviewwrite={reviewwrite} setreviewwrite={setreviewwrite} navheight={navheight} hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>

@@ -314,7 +314,12 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .login-input-border {
   border: 1px solid rgb(218, 218, 218);
+}
+.login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .login-no-input-border {
+  border: 2px solid rgb(250, 133, 133);
 }
 .login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-box .login-page-pass-input {
   height: 50px;
@@ -325,7 +330,6 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 1px solid rgb(218, 218, 218);
 }
 .login-page-main-container .login-page-inner-container .login-page-input-container .login-input-inner-box .login-page-input-read-pass {
   height: auto;

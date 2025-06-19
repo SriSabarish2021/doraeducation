@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import '../../Styles/LoginPageCSS/LoginPage.css'
 import { FaUser } from "react-icons/fa";
 import { FaUnlock } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import { FaAlignCenter } from "react-icons/fa6";
 
 const LoginPage = ({login,setlogin}) => {
     const loginclose=(id)=>{
@@ -15,6 +16,96 @@ const LoginPage = ({login,setlogin}) => {
 
   const[showpass,setashowpass]=useState(false)
   const[signup,setsignup]=useState(false)
+
+
+  let UserLoginNameref=useRef('')
+  let UserLoginEmailref=useRef('')
+  let UserLoginPassref=useRef('')
+
+ const removeredbordersignup=()=>{
+  let allinputbordersignup=document.querySelectorAll('.input-border-login')
+  let inputbox=document.querySelectorAll('.input-signup-bar')
+    inputbox.forEach((indiinp,index)=>{
+      if (String(indiinp.value).length!==0) {
+        allinputbordersignup[index].classList.remove('login-no-input-border')
+      }else{
+        return
+      }
+    
+        
+      })
+}
+
+
+ const SigninSubmit=()=>{
+  
+  
+    let allinputbordersignin=document.querySelectorAll('.input-border-login')
+    let inputbox=document.querySelectorAll('.input-signup-bar')
+    if (String(UserLoginEmailref.current.value).length!==0&&String(UserLoginPassref.current.value).length!==0) {
+
+      inputbox.forEach((indiinp,index)=>{
+        if (String(indiinp.value).length!==0) {
+        allinputbordersignin[index].classList.remove('login-no-input-border')
+        }else{
+          return
+        }
+      })
+      
+      
+    }
+    else{
+      
+      
+      
+       inputbox.forEach((indiinp,index)=>{
+        if (String(indiinp.value).length!==0) {
+         
+         allinputbordersignin[index].classList.remove('login-no-input-border')
+        }else{
+          
+           allinputbordersignin[index].classList.add('login-no-input-border')
+        }
+      })
+      
+    }
+ 
+  }
+
+   const SignupSubmit=()=>{
+  
+  
+    let allinputbordersignin=document.querySelectorAll('.input-border-login')
+    let inputbox=document.querySelectorAll('.input-signup-bar')
+    if (String(UserLoginNameref.current.value).length!==0&&String(UserLoginEmailref.current.value).length!==0&&String(UserLoginPassref.current.value).length!==0) {
+
+      inputbox.forEach((indiinp,index)=>{
+        if (String(indiinp.value).length!==0) {
+        allinputbordersignin[index].classList.remove('login-no-input-border')
+        }else{
+          return
+        }
+      })
+      
+      
+    }
+    else{
+      
+      
+      
+       inputbox.forEach((indiinp,index)=>{
+        if (String(indiinp.value).length!==0) {
+         
+         allinputbordersignin[index].classList.remove('login-no-input-border')
+        }else{
+          
+           allinputbordersignin[index].classList.add('login-no-input-border')
+        }
+      })
+      
+    }
+ 
+  }
   return (
     <div id='login-close' onClick={(e)=>loginclose(e.target.id)} className={`login-page-main-container ${login?'showlogin':'notshowlogin'} `}>
       <div id='login-not-close' onClick={(e)=>loginclose(e.target.id)}  className={`login-page-inner-container ${login?'showlogininner':'notshowlogininner'} ${signup?'rotatelogin':''}`} >
@@ -40,13 +131,19 @@ const LoginPage = ({login,setlogin}) => {
                     <p className='login-page-inp-title-para-two'>Let’s keep growing, one lesson at a time!</p>
                 </div>
                 <div className='login-page-input-box'>
-                    <div className='login-page-email-input'>
-                        <div className='input-login-icon'><FaUser/></div>
-                        <input placeholder='Email' type="text" className='input-login-input-bar'/>
+                  {signup&&
+                    <div className='login-page-email-input input-border-login login-input-border'>
+                        <div className='input-login-icon'><FaAlignCenter/></div>
+                        <input placeholder='Name' onChange={()=>removeredbordersignup()} ref={UserLoginNameref} type="text" className='input-login-input-bar input-signup-bar'/>
                     </div>
-                    <div className='login-page-pass-input'>
+                  }
+                    <div className='login-page-email-input input-border-login login-input-border'>
+                        <div className='input-login-icon'><FaUser/></div>
+                        <input placeholder='Email' onChange={()=>removeredbordersignup()} ref={UserLoginEmailref} type="text" className='input-login-input-bar input-signup-bar'/>
+                    </div>
+                    <div className='login-page-pass-input input-border-login login-input-border '>
                         <div className='input-login-icon'>{showpass?<FaUnlock/>:<FaLock/>}</div>
-                        <input placeholder='Password' type="text" className='input-login-input-bar-two'/>
+                        <input onChange={()=>removeredbordersignup()} ref={UserLoginPassref} placeholder='Password' type="text" className='input-login-input-bar-two input-signup-bar'/>
                         <div className='pass-show-btn' onClick={()=>setashowpass(!showpass)}>{showpass?'hide':'show'}</div>
 
                     </div>
@@ -56,7 +153,7 @@ const LoginPage = ({login,setlogin}) => {
                       <div className='forget-pass'><p>fogot password ?</p></div>
                   </div>
                 }
-                <div className='login-page-btn'><button className='login-page-btn-inner'>{signup?'Sign Up':'Sign In'}</button></div>
+                <div className='login-page-btn'><button onClick={()=>signup?SignupSubmit():SigninSubmit()} className='login-page-btn-inner'>{signup?'Sign Up':'Sign In'}</button></div>
                 {!signup&&
                 <div className='sign-up-div'>
                     <p className='sign-up-btn'>don't have an account ? <span className='sign-up-span' onClick={()=>setsignup(!signup)}>sign up</span></p>

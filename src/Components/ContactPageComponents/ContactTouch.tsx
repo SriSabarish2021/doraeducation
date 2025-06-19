@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import '../../Styles/ContactPageCSS/ContactTouch.css'
 import { FaArrowRight } from "react-icons/fa6";
 
-const ContactTouch = () => {
+const ContactTouch = ({setuserName,setuserEmail,userName,userEmail}) => {
       const [getoffsetXcontact,setoffsetXcontact]=useState(0)
       const [getoffsetYcontact,setoffsetYcontact]=useState(0)
 const MouseMoveEvent=(event:unknown)=>{
@@ -49,7 +49,14 @@ const MouseMoveEvent=(event:unknown)=>{
         }
       }
     }, [])
-    
+
+    let userPhone=useRef('dasd')
+    let userCity=useRef('')
+    let userState=useRef('')
+    let userCountry=useRef('')
+    let userIdeas=useRef('')
+
+
   return (
     <div className='contact-touch-container' >
         <div className='contact-get-in-touch-input'  onMouseMove={(e)=>MouseMoveEvent(e)}>
@@ -65,27 +72,27 @@ const MouseMoveEvent=(event:unknown)=>{
                 <div className='contact-get-in-touch-input-container'>
                     <div className='input-container-basic-info'>
                         <div className='input-bar'>
-                            <input type="text" id='name' className='input-bar-contact-get' placeholder='Full Name'/>
+                            <input value={userName} onChange={(e)=>setuserName(e.target.value)} type="text" id='name' className='input-bar-contact-get' placeholder='Full Name'/>
                             
                         </div>
                         <div className='input-bar'>
-                            <input type="text" name="" id="" className='input-bar-contact-get' placeholder='Email Address'/>
+                            <input value={userEmail} onChange={(e)=>setuserEmail(e.target.value)} type="text" name="" id="" className='input-bar-contact-get' placeholder='Email Address'/>
                         </div>
                         <div className='input-bar'>
-                             <input type="text" name="" id="" className='input-bar-contact-get' placeholder='80155-75757' />
+                             <input ref={userPhone}  type="number" name="" id="" className='input-bar-contact-get' placeholder='80155-75757' />
                         </div>
                         <div className='input-bar'>
-                             <input type="text" name="" id="" className='input-bar-contact-get' placeholder='Country'/>
+                             <input ref={userCity} type="text" name="" id="" className='input-bar-contact-get' placeholder='Country'/>
                         </div>
                         <div className='input-bar'>
-                            <input type="text" name="" id="" className='input-bar-contact-get' placeholder='State'/>
+                            <input ref={userState} type="text" name="" id="" className='input-bar-contact-get' placeholder='State'/>
                         </div>
                         <div className='input-bar'>
-                             <input type="text" name="" id="" className='input-bar-contact-get' placeholder='City'/>
+                             <input ref={userCountry} type="text" name="" id="" className='input-bar-contact-get' placeholder='City'/>
                         </div>
                     </div>
                     <div className='input-container-message'>
-                        <textarea name="" id="" className='message-inp' placeholder='Enter Your Ideas....'></textarea>
+                        <textarea ref={userIdeas} name="" id="" className='message-inp' placeholder='Enter Your Ideas....'></textarea>
                     </div>
                 </div>
                 <div className='proceed-main-btn'>

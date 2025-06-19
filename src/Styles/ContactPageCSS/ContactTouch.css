@@ -50,6 +50,7 @@
   position: absolute;
   height: 350px;
   width: 350px;
+  z-index: -1;
   background-image: url("./ContactPageImage/sakura.png");
   background-position: center;
   background-repeat: no-repeat;
