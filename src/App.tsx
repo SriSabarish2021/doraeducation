@@ -1222,8 +1222,6 @@ function App() {
 
      const [reviewwrite,setreviewwrite]=useState(false)
 
-    const [userName,setuserName]=useState('')
-    const [userEmail,setuserEmail]=useState('')
 
 
   return (
@@ -1242,7 +1240,7 @@ function App() {
             <Route index element={<HomePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path='About-Mindspire-Institute' element={<AboutPage course={course}/>}/>
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
-            <Route path="Contact-with-Mindspire-Institute" element={<ContactPage setuserName={setuserName} setuserEmail={setuserEmail} userName={userName} userEmail={userEmail}/>}/>
+            <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage course={course}/>}/>
             <Route path="mindspire-course" element={<CourseOverview reviewwrite={reviewwrite} setreviewwrite={setreviewwrite} navheight={navheight} hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
             <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview reviewwrite={reviewwrite} setreviewwrite={setreviewwrite} navheight={navheight} hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>

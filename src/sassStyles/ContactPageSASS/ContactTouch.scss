@@ -12,6 +12,106 @@
     width: 100%;
     @include Row-center.row-center;
     position: relative;
+
+    .contact-submitted-alert-div{
+        position: fixed;
+        height: 100px;
+        width: 280px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        bottom: 10px;
+        left: 10px;
+        z-index: 100;
+        @include Row-center.row-center;
+        
+        .lineloading{
+            animation:loading-line 2s linear forwards ;
+            animation-delay: 0.7s;
+        }
+        .contat-alert-loading{
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            border-radius: 10px;
+            background-color: rgb(171, 171, 171);
+            bottom:0px;
+            right: 0px;
+
+            @keyframes loading-line {
+                0%{
+                    width: 0%;
+
+                }100%{
+                    width: 100%;
+                }
+            }
+
+        }
+
+
+        .contact-alert-img-div{
+             height: 100%;
+            width: 100%;
+            flex: 1 1 calc(35%);
+            position: relative;
+           @include Row-center.row-center;
+           
+
+            .contact-alert-img{
+                        position: absolute;
+                        left: 10px;
+                        top: -70px;
+                        height: 180px;
+                        width: 100px;
+                        object-position: center;
+                        object-fit: cover;
+            }
+
+            .noalrtimageshow{
+                transform: translateY(100px) translateX(-100px) rotate(20deg);
+                transition-duration: 0.5s;
+                opacity: 0;
+            }
+            .alrtimageshow{
+                transform: translateY(0px) translateX(0px) rotate(0deg);
+                transition-duration: 0.5s;
+                transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition-delay: 0.5s;
+                opacity: 1;
+            }
+        }
+        .contact-alert-cont-div{
+            height: 100%;
+            width: 100%;
+            flex: 1 1 calc(65%);
+            font-size: 15px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            letter-spacing: 0.5px;
+            padding: 10px;
+            @include Column-center.column-center;
+            gap: 8px;
+            text-align: center;
+
+            .checkmark-done{
+                color: #2b9cff;
+                font-size: 24px;
+            }
+
+        }
+    }
+
+    .submittedalert{
+        transform: translateX(0px);
+        transition-duration: 1s;
+        opacity: 1;
+    }
+    .nosubmittedalert{
+        transform: translateX(-400px);
+        transition-duration: 1s;
+        opacity: 0;
+    }
  
     
 
@@ -270,6 +370,63 @@
                          .proceed-btn:hover .span-for-btn-proceed{
                              color: rgb(255, 56, 56);
                             transition-duration: 0.4s;
+                         }
+
+
+                         .submitted-btn{
+                             border: none;
+                            height: 55px;
+                            width: 190px;
+                            border-radius: 30px;
+                            background-color:  main-color.$main-color-for-app-little-darker;
+                            border: 2px solid rgba(10, 10, 10, 0.365);
+                            font-size: 15px;
+                            font-weight: 500;
+                            font-family: 'Anta';
+                            color: white;
+                            font-weight: 500;
+                            @include Row-center.row-center;
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                            gap: 15px;
+                            overflow: hidden;
+                            position: relative;
+                            transition-duration: 0.4s;
+                            z-index: 1;
+                         }
+                         .proceeding-btn{
+                            border: none;
+                            height: 55px;
+                            width: 190px;
+                            border-radius: 30px;
+                            background-color:  main-color.$main-color-for-app-little-darker;
+                            border: 2px solid rgba(10, 10, 10, 0.365);
+                            font-size: 15px;
+                            font-weight: 500;
+                            font-family: 'Anta';
+                            color: white;
+                            font-weight: 500;
+                            @include Row-center.row-center;
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                            gap: 15px;
+                            overflow: hidden;
+                            position: relative;
+                            transition-duration: 0.4s;
+                            z-index: 1;
+                            .loading-for-btn-proceeding{
+                                font-size: 25px;
+                                color: white;
+                                animation:loadinproceedin 0.5s ease-in-out infinite forwards ;
+
+                                @keyframes loadinproceedin {
+                                    0%{
+                                        transform: rotate(0deg);
+                                    }100%{
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
                          }
                     }
         }

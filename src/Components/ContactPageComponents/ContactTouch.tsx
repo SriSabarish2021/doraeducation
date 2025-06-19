@@ -1,8 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import '../../Styles/ContactPageCSS/ContactTouch.css'
 import { FaArrowRight } from "react-icons/fa6";
+import { AiOutlineLoading } from "react-icons/ai";
+import { IoIosCheckmarkCircle } from "react-icons/io";
+import { Image } from '@imagekit/react';
 
-const ContactTouch = ({setuserName,setuserEmail,userName,userEmail}) => {
+const ContactTouch = () => {
       const [getoffsetXcontact,setoffsetXcontact]=useState(0)
       const [getoffsetYcontact,setoffsetYcontact]=useState(0)
 const MouseMoveEvent=(event:unknown)=>{
@@ -50,15 +53,85 @@ const MouseMoveEvent=(event:unknown)=>{
       }
     }, [])
 
-    let userPhone=useRef('dasd')
+    let userName=useRef('')
+    let userEmail=useRef('')
+    let userPhone=useRef('')
     let userCity=useRef('')
     let userState=useRef('')
     let userCountry=useRef('')
     let userIdeas=useRef('')
 
+    const [proceedingbtn,setproceedingbtn]=useState(false)
+    const [proceeded,setproceeded]=useState(false)
+
+    const[alert,setalert]=useState(false)
+    useEffect(() => {
+      
+        console.log('sdsdsdsd');
+        let proceedtimer;
+        if (proceedingbtn) {
+            proceedtimer=setTimeout(() => {
+            setproceedingbtn(false)
+            setalert(true)
+            setproceeded(true)
+        
+        }, 2000);
+        }
+        
+        
+    
+      return () => {
+      
+        clearTimeout(proceedtimer)
+      }
+    }, [proceedingbtn])
+    
+    useEffect(() => {
+        let alerttimer;
+      if (alert) {
+        
+            alerttimer=setTimeout(() => {
+            setalert(false)
+        
+        }, 3000);
+        }
+
+       
+    
+      return () => {
+        clearTimeout(alerttimer)
+      }
+    }, [alert])
+    
+
+
+    const formproceed=()=>{
+        if (String(userName.current.value).length!==0&&String(userEmail.current.value).length!==0&&String(userPhone.current.value).length!==0&&String(userCity.current.value).length!==0&&String(userState.current.value).length!==0&&String(userCountry.current.value).length!==0&&String(userIdeas.current.value).length!==0) {
+            setproceedingbtn(true)
+        }else{
+            console.log('hello');
+            setproceeded(false)
+            setalert(true)
+        }
+}
 
   return (
     <div className='contact-touch-container' >
+        <div className={`contact-submitted-alert-div ${alert?'submittedalert':'nosubmittedalert'}` }>
+            <div className={`contat-alert-loading ${alert?'lineloading':''}`}></div>
+            <div className='contact-alert-img-div'>
+                <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/proceed-contact.png"      
+                    alt='study-image' 
+                    className={`contact-alert-img ${alert?'alrtimageshow':'noalrtimageshow'}`}        
+                />
+            </div>
+            <div  className='contact-alert-cont-div'>
+                <IoIosCheckmarkCircle className='checkmark-done'/>
+                <p>{proceeded?'Your Form has been Submitted':'Make Sure Your Form is Correct to Proceed'}</p>
+            </div>
+        </div>
         <div className='contact-get-in-touch-input'  onMouseMove={(e)=>MouseMoveEvent(e)}>
            <div className='contact-page-circle-design'></div>
            
@@ -72,11 +145,11 @@ const MouseMoveEvent=(event:unknown)=>{
                 <div className='contact-get-in-touch-input-container'>
                     <div className='input-container-basic-info'>
                         <div className='input-bar'>
-                            <input value={userName} onChange={(e)=>setuserName(e.target.value)} type="text" id='name' className='input-bar-contact-get' placeholder='Full Name'/>
+                            <input ref={userName}  type="text" id='name' className='input-bar-contact-get' placeholder='Full Name'/>
                             
                         </div>
                         <div className='input-bar'>
-                            <input value={userEmail} onChange={(e)=>setuserEmail(e.target.value)} type="text" name="" id="" className='input-bar-contact-get' placeholder='Email Address'/>
+                            <input ref={userEmail}  type="text" name="" id="" className='input-bar-contact-get' placeholder='Email Address'/>
                         </div>
                         <div className='input-bar'>
                              <input ref={userPhone}  type="number" name="" id="" className='input-bar-contact-get' placeholder='80155-75757' />
@@ -96,7 +169,10 @@ const MouseMoveEvent=(event:unknown)=>{
                     </div>
                 </div>
                 <div className='proceed-main-btn'>
-                          <button className='proceed-btn'>Proceed <span className='span-for-btn-proceed'><FaArrowRight/> </span><div className='design-div-for-tud-btn-proceed'></div></button>
+                    {proceedingbtn?<button  className='proceeding-btn'>Proceeding<span className='span-for-btn-proceeding'><AiOutlineLoading className='loading-for-btn-proceeding'/> </span></button>:
+                    
+                    
+                          <button onClick={()=>formproceed()} className='proceed-btn'>Proceed<span className='span-for-btn-proceed'><FaArrowRight/> </span><div className='design-div-for-tud-btn-proceed'></div></button>}
                         
                         </div>
             </div>

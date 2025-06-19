@@ -5,7 +5,7 @@ import ContactTop from '../ContactPageComponents/ContactTop'
 import ContactTouch from '../ContactPageComponents/ContactTouch'
 import { useEffect } from 'react'
 
-const ContactPage = ({setuserName,setuserEmail,userName,userEmail}) => {
+const ContactPage = () => {
    useEffect(() => {
       
       window.scrollTo(0,0)
@@ -17,7 +17,7 @@ const ContactPage = ({setuserName,setuserEmail,userName,userEmail}) => {
         <ContactTop/>
         <ContactSider/>
         <ContactConsult/>
-        <ContactTouch userName={userName} userEmail={userEmail} setuserName={setuserName} setuserEmail={setuserEmail} />
+        <ContactTouch/>
     </div>
   )
 }
