@@ -28,7 +28,10 @@ const LikePage = ({sethashget,likepage,setlikepage,course,removelike,setcartpage
       <div id='like-not-close' onClick={(e)=>likeclose(e.target.id)}  className={`like-page-item-main-box ${likepage?'likezoom':'nolikezoom'}`}>
        <div className='like-page-title-bar'>
         <p>Favorite Courses</p>
-        <p onClick={()=>setlikepage(false)}><MdCloseFullscreen className='like-page-close-icon'/></p>
+        <div className='like-close-btn' onClick={()=>setlikepage(false)}>
+                <div className='like-close-btn-x-one'></div>
+                <div className='like-close-btn-x-two'></div>
+        </div>
        </div>
        <div className='like-pagae-main-list-bar'>
         {likearray&&likearray.length?
@@ -57,7 +60,10 @@ const LikePage = ({sethashget,likepage,setlikepage,course,removelike,setcartpage
         
        </div>
        <div className='like-page-view-cart-bar'>
-        <button onClick={()=>{setlikepage(false),setcartpage(true)}} className='like-page-btn'>View Cart</button>
+        <button onClick={()=>{setlikepage(false),setcartpage(true)}} className='like-page-btn'>View Cart
+          <div className='like-page-to-cart-page-btn-design'></div>
+        </button>
+        
        </div>
       </div>
     </div>

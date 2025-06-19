@@ -1218,6 +1218,9 @@ function App() {
       
       
     }
+
+
+     const [reviewwrite,setreviewwrite]=useState(false)
   
   return (
     
@@ -1225,7 +1228,7 @@ function App() {
       <style>{
         `html{
           overflow-x: hidden;
-          overflow-y:${login||sidesharepage||cartpage||likepage?'hidden':'auto'}
+          overflow-y:${reviewwrite||login||sidesharepage||cartpage||likepage?'hidden':'auto'}
         }`}
         </style>
       <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
@@ -1237,8 +1240,8 @@ function App() {
             <Route path="Providing-Education's-in-Mindspire-Institute" element={<CoursePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
             <Route path="Contact-with-Mindspire-Institute" element={<ContactPage/>}/>
             <Route path="Mindspire-Institute-Student-Review-Page" element={<ReviewMainPage course={course}/>}/>
-            <Route path="mindspire-course" element={<CourseOverview navheight={navheight} hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
-            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview navheight={navheight} hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="mindspire-course" element={<CourseOverview reviewwrite={reviewwrite} setreviewwrite={setreviewwrite} navheight={navheight} hashget={hashget} likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
+            <Route path="/Providing-Education's-in-Mindspire-Institute/mindspire-course" element={<CourseOverview reviewwrite={reviewwrite} setreviewwrite={setreviewwrite} navheight={navheight} hashget={hashget}  likepage={likepage} cartpage={cartpage} setcartpage={setcartpage} course={course} LikeCourse={LikeCourse} setcourse={setcourse}/>}/>
           </Route>
         </Routes>
       </div>

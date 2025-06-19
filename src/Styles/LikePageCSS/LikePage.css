@@ -54,6 +54,44 @@
   transition-duration: 0.4s;
   cursor: pointer;
 }
+.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn {
+  height: 26px;
+  width: 26px;
+  background-color: rgb(255, 68, 81);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn .like-close-btn-x-one {
+  height: 2px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(50deg);
+  border-radius: 3px;
+  transition-duration: 0.3s;
+}
+.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn .like-close-btn-x-two {
+  height: 2px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(-50deg);
+  transition-duration: 0.3s;
+}
+.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn:hover .like-close-btn-x-one {
+  transition-duration: 0.3s;
+  transform: rotate(0deg);
+}
+.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn:hover .like-close-btn-x-two {
+  transition-duration: 0.3s;
+  transform: rotate(0deg);
+}
 .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-page-close-icon:hover {
   transform: scale(1.1);
   transition-duration: 0.4s;
@@ -254,6 +292,29 @@
   font-weight: 500;
   color: white;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn .like-page-to-cart-page-btn-design {
+  position: absolute;
+  height: 0%;
+  width: 95%;
+  opacity: 0;
+  background-color: rgb(255, 74, 74);
+  z-index: -1;
+  border-radius: 6px;
+  border: 3px solid rgb(255, 203, 30);
+  transition-duration: 0.4s;
+}
+.like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn:hover .like-page-to-cart-page-btn-design {
+  height: 90%;
+  transition-duration: 0.4s;
+  opacity: 1;
 }
 .like-page-main-container .nolikezoom {
   transform: translateX(200px) scale(0);

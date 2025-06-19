@@ -52,9 +52,7 @@ const AboutPageCourse = ({course}) => {
          <div className='about-page-program-list'>
           <div className='abt-prog-list-tit-div'>
                <p className='abt-page-course-box-para'>Our <span className='span-in-prog-list-tit-abt-page'>Programs</span></p> 
-               <p className='span-prog-list-abt-tit'>At Mindspire, we offer a diverse range of programs designed to equip learners with in-demand skills and practical experience.Our courses are tailored to help you thrive in today’s competitive landscape.
-
-</p>
+               <p className='span-prog-list-abt-tit'>At Mindspire, we offer a diverse range of programs designed to equip learners with in-demand skills and practical experience.Our courses are tailored to help you thrive in today’s competitive landscape.</p>
                <Link style={{textDecoration:'none'}} to={"/Providing-Education's-in-Mindspire-Institute"} className='abt-page-btn-prog-list'>More Course <FaArrowRight className='right-arrow-icon'/>
                <div className='abt-page-prog-list-btn-one-des'></div>
                <div className='abt-page-prog-list-btn-two-des'></div>

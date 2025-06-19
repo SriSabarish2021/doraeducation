@@ -10,33 +10,6 @@ const TopShortCourse = ({sethashget}) => {
 
 
 
-     /*  const cards = document.querySelectorAll(".course-box") ;
-
-      const stackArea = document.querySelector(".top-short-course-page-container");
-
-      function rotateCards() {
-        let angle = 0;
-        if (cards) {
-          cards.forEach((card, index) => {
-          if (card.classList.contains("away")) {
-            card.style.transform = `translateY(-120vh) rotate(-48deg)`;
-          } else {
-            card.style.transform = ` rotate(${angle}deg)`;
-            angle = angle - 10;
-            card.style.zIndex = cards.length - index;
-          }
-        });
-        }
-        
-      }
-
-     
-
-  
-
-        document.addEventListener("DOMContentLoaded", () => {
-        rotateCards();
-      }); */
         useEffect(() => {
           console.log(getlocation.pathname);
           

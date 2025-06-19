@@ -3,6 +3,7 @@
 @use'../main-color';
 @use'../Main-Title';
 @use'../WebSubContent';
+@use'../bg-img-center';
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
@@ -14,12 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-@mixin bg-image-for-about-info($bgimg-url){
-    background-image: url($bgimg-url);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .about-page-main-container{
     height: auto;
     width: 100%;
@@ -35,7 +31,7 @@
       top: -620px; 
         height: 140dvh;
         width: 100%;
-        @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/hero-6.1.webp');
+        @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/hero-6.1.webp');
         background-size: calc(130%);
         @include Column-center.column-center;
         z-index: 9;
@@ -231,7 +227,7 @@
             height:200px;
             width: 90%;
             position: absolute;
-            @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/guarantee (1).png');
+            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/guarantee (1).png');
         }
         .about-special-design-one{
             height:300px;
@@ -240,7 +236,7 @@
             left: -250px;
             top: 0px;
             rotate:30deg;
-            @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/scribble (2).png');
+            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/scribble (2).png');
             background-size: contain;
         }
         .about-special-design-two{
@@ -250,7 +246,7 @@
             right: -250px;
             bottom: 0px;
             rotate:-40deg;
-            @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/scribble (2).png');
+            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/scribble (2).png');
             background-size: contain;
         }
         .about-side-bar-img{
@@ -446,7 +442,7 @@
             position: absolute;
             height: 250px;
             width: 250px;
-           @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/book3.webp');
+           @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/book3.webp');
            top: 0px;
            left: 0px;
            transform: translateY(-60px);
@@ -470,7 +466,7 @@
             position: absolute;
             height: 200px;
             width: 200px;
-           @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/pen3.webp');
+           @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/pen3.webp');
            top: 20px;
            right: 20px;
            transform: translateY(550px);
@@ -611,7 +607,7 @@
                         width: 200px;
                         left: 0px;
                         bottom: -20px;
-                        @include bg-image-for-about-info('./AboutPageImage/ABOUT-TOP/Vector 11.png');
+                        @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/Vector 11.png');
                         background-size: contain;
                     }
                 }
