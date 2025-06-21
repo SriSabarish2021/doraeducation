@@ -1,4 +1,4 @@
-import { useEffect,useRef } from 'react';
+import { useEffect,useRef, useState } from 'react';
 import '../../../Styles/HomePageCSS/Testimonial/Testimonial.css'
 import { FaStar } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -9,22 +9,35 @@ const Testimonial = ({course}) => {
 
     const scrollRef = useRef<HTMLDivElement>(null);
 
+useEffect(() => {
+
+  
+
+  
+}, [])
+
+    
+
   const scrollLeft = () => {
    
     
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft -= 780; 
+        const commentbox=document.querySelector('.testimonial-inner-content-bar')?.getBoundingClientRect().width
+       
+      scrollRef.current.scrollLeft -= Number(commentbox)+80; 
     }
   };
 
   const scrollRight = () => {
+        const commentboxright=document.querySelector('.testimonial-inner-content-bar')?.getBoundingClientRect().width
+
     if (scrollRef.current) {
              const valueofscroll:number=scrollRef.current.scrollWidth - scrollRef.current.clientWidth
 
       if (scrollRef.current.scrollLeft>=valueofscroll) {
          scrollRef.current.scrollLeft = 0;
       }else{
-      scrollRef.current.scrollLeft += 780;
+      scrollRef.current.scrollLeft += Number(commentboxright)+80;
 
       }
     }
@@ -36,6 +49,8 @@ const Testimonial = ({course}) => {
 
   const timer = setInterval(() => {
     if (scrollContainer) {
+      const commentboxscroll=document.querySelector('.testimonial-inner-content-bar')?.getBoundingClientRect().width
+
       const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
       if (scrollContainer.scrollLeft >= maxScrollLeft) {
@@ -43,7 +58,7 @@ const Testimonial = ({course}) => {
         scrollContainer.scrollLeft = 0;
       } else {
         
-        scrollContainer.scrollLeft += 780;
+        scrollContainer.scrollLeft += Number(commentboxscroll)+80;
       }
     }
   }, 5000);
@@ -52,9 +67,26 @@ const Testimonial = ({course}) => {
     }
   })
   
+  const [parawidth,setparawidth]=useState(0)
+  useEffect(() => {
+
+
+    
+    setparawidth(window.innerWidth)
+   
+    
+     return () => {
+      setparawidth(0)
+    }
+  
+  
+  }, [])
+
+  
+  
 
   return (
-    <div className='testimonial-container'>
+    <div  className='testimonial-container'>
     <div className='comment-image-design'></div>
     <div className='side-image-design'></div>
     <div className='book-image-testimonial'></div>
@@ -73,7 +105,7 @@ const Testimonial = ({course}) => {
             <p className='tistimonail-title'>Testimonial</p>
             <p className='testimonial-main-title-para'>What Our Student's <span className='stud-think'>Think About <span className='stud-think-design'></span></span></p>
           </div>
-          <p className='quote-para-testimonial'>Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures</p>
+          <p className='quote-para-testimonial'>{parawidth<1100?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,140)+'...':'Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures'}</p>
         </div>
         <div className='testimonial-content-bar'>
           <div className='testimonial-image-bar'>

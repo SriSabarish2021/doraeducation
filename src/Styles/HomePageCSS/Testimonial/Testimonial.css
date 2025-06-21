@@ -29,6 +29,7 @@
   align-items: center;
   padding: 100px 120px;
   position: relative;
+  overflow: hidden;
 }
 .testimonial-container .comment-image-design {
   position: absolute;
@@ -460,6 +461,346 @@
 .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-right-btn:hover .btn-cont {
   transform: translateX(2px);
   transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 1420px) {
+  .testimonial-container {
+    padding: 100px 100px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .testimonial-container {
+    padding: 80px;
+    padding-bottom: 130px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    padding-right: 30px;
+  }
+  .testimonial-container .comment-image-design {
+    height: 75px;
+    width: 75px;
+    top: 30px;
+    left: 20px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para {
+    font-size: 38px;
+  }
+  .testimonial-container .book-image-testimonial {
+    height: 100px;
+    width: 100px;
+    top: 200px;
+  }
+  .testimonial-container .line-image-testimonial {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar {
+    flex: 1 1 35%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    flex: 1 1 65%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line {
+    height: 330px;
+    width: 330px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line {
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .testimonial-container {
+    padding: 70px;
+  }
+  .testimonial-container .book-image-testimonial {
+    right: 10px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar {
+    width: 640px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .testimonial-container {
+    padding: 70px;
+    padding-bottom: 120px;
+  }
+  .testimonial-container .book-image-testimonial {
+    right: 10px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment {
+    font-size: 14px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-name-para {
+    font-size: 15px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-degree-para {
+    font-size: 12px;
+  }
+  .testimonial-container .side-image-design {
+    height: 160px;
+    width: 160px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para {
+    font-size: 35px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .tistimonail-title {
+    font-size: 22px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .quote-para-testimonial {
+    font-size: 13px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-image-tag {
+    height: 45px;
+    width: 45px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar {
+    flex: 1 1 40%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    flex: 1 1 60%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line {
+    height: 280px;
+    width: 280px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-left-btn, .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-right-btn {
+    height: 25px;
+    width: 25px;
+    font-size: 15px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar {
+    width: 620px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .testimonial-container .comment-image-design {
+    height: 60px;
+    width: 60px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para {
+    font-size: 30px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para .stud-think .stud-think-design {
+    height: 30px;
+    width: 120px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .tistimonail-title {
+    font-size: 20px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .quote-para-testimonial {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .testimonial-container .book-image-testimonial {
+    height: 80px;
+    width: 80px;
+    top: 160px;
+  }
+  .testimonial-container .line-image-testimonial {
+    top: 20%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar {
+    height: 420px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-star-rating {
+    font-size: 16px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-name-para {
+    font-size: 14px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-degree-para {
+    font-size: 11px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-image-tag {
+    height: 40px;
+    width: 40px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-left-btn, .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-right-btn {
+    height: 22px;
+    width: 22px;
+    font-size: 12px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar {
+    width: 560px;
+  }
+  .testimonial-container {
+    padding: 60px;
+    padding-bottom: 100px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line {
+    height: 260px;
+    width: 260px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-one {
+    height: 30px;
+    width: 30px;
+    top: 10px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-three {
+    height: 30px;
+    width: 30px;
+    right: -10px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-two {
+    height: 30px;
+    width: 30px;
+    bottom: 10px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar {
+    flex: 1 1 35%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    flex: 1 1 65%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment .comment-student::before {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar {
+    width: 520px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar {
+    flex: 1 1 40%;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    flex: 1 1 60%;
+    gap: 30px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment {
+    font-size: 12px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-image-tag {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .testimonial-container .testimonial-main-container {
+    gap: 60px;
+  }
+  .testimonial-container .comment-image-design {
+    opacity: 0.7;
+    height: 65px;
+    width: 65px;
+    top: 20px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title {
+    gap: 15px;
+  }
+  .testimonial-container .side-image-design {
+    height: 110px;
+    width: 110px;
+  }
+  .testimonial-container .line-image-testimonial {
+    top: 25%;
+    height: 150px;
+    width: 150px;
+  }
+  .testimonial-container .book-image-testimonial {
+    top: 140px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line {
+    height: 240px;
+    width: 240px;
+    padding: 30px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar {
+    width: 500px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-star-rating {
+    font-size: 15px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one {
+    gap: 20px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment .comment-student::before {
+    font-size: 17px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-name-para {
+    font-size: 13px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-degree-para {
+    font-size: 10px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-image-tag {
+    height: 32px;
+    width: 32px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button {
+    gap: 35px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-left-btn, .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-right-btn {
+    height: 21px;
+    width: 21px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .testimonial-container .comment-image-design {
+    height: 55px;
+    width: 55px;
+    top: 25px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .tistimonail-title {
+    font-size: 18px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para {
+    font-size: 27px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para .stud-think .stud-think-design {
+    height: 28px;
+    width: 100px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .quote-para-testimonial {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .testimonial-container .line-image-testimonial {
+    top: 20%;
+  }
+  .testimonial-container .testimonial-main-container {
+    gap: 50px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar {
+    height: 400px;
+  }
+  .testimonial-container {
+    padding: 50px;
+    padding-bottom: 80px;
+  }
+  .testimonial-container .book-image-testimonial {
+    top: 120px;
+  }
 }
 
 /*# sourceMappingURL=Testimonial.css.map */
