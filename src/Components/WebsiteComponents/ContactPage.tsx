@@ -15,9 +15,9 @@ const ContactPage = () => {
   return (
     <div  className="contact-page-main-container">
         {/*  <ContactTop/> 
-        <ContactSider/> */}
-         <ContactConsult/>
-       {/*  <ContactTouch/> */}
+          <ContactSider/> 
+          <ContactConsult/>*/}
+          <ContactTouch/> 
     </div>
   )
 }

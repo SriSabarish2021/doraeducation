@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .contact-touch-container .contact-submitted-alert-div {
   position: fixed;
@@ -480,6 +481,502 @@
   transform: translateX(0px) translateY(0px) rotate(3deg);
   opacity: 1;
   transition-duration: 1s;
+}
+
+@media screen and (max-width: 1450px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    right: 1%;
+    bottom: 10%;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 420px;
+    width: 420px;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .contact-touch-container .contact-get-in-touch-input {
+    padding: 0px 60px;
+    flex: 1 1 52%;
+    padding-left: 30px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title {
+    width: 100%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    width: 100%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    width: 85%;
+  }
+  .contact-touch-container .contact-get-in-touch-img {
+    flex: 1 1 48%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 380px;
+    width: 380px;
+    bottom: 12%;
+    right: 8%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 380px;
+    width: 380px;
+    bottom: 12%;
+    right: 3%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 46px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 12px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 380px;
+    width: 380px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 350px;
+    width: 350px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    bottom: 16%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    gap: 30px;
+    row-gap: 40px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 190px;
+    width: 190px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    left: 5%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    bottom: 18%;
+    right: 5%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-three {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .contact-touch-container .contact-get-in-touch-input {
+    flex: 1 1 55%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 35px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 9.5px;
+    line-height: 20px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 150px;
+    width: 150px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 220px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get {
+    font-size: 13px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get::placeholder {
+    font-size: 11px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-three {
+    height: 250px;
+    width: 250px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn {
+    height: 50px;
+    width: 170px;
+    font-size: 14px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn .span-for-btn-proceed {
+    height: 18px;
+    width: 18px;
+    font-size: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 350px;
+    width: 350px;
+    left: -1%;
+    top: 8%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 330px;
+    width: 330px;
+    right: -2%;
+    bottom: 13%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    height: 150px;
+    font-size: 13px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp::placeholder {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .contact-touch-container .contact-get-in-touch-input {
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 9px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container {
+    margin-top: 5px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design {
+    height: 150px;
+    width: 150px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 200px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    height: 140px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 330px;
+    width: 330px;
+    top: 5%;
+    left: 2%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 300px;
+    width: 300px;
+    bottom: 20%;
+    right: -1%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two-no-move {
+    transform: rotate(5deg);
+  }
+}
+@media screen and (max-width: 870px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 330px;
+    width: 330px;
+    top: 5%;
+    left: -4%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 315px;
+    width: 315px;
+    bottom: 13%;
+    right: -6%;
+  }
+  .contact-touch-container {
+    height: 110dvh;
+  }
+}
+@media screen and (max-width: 820px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 320px;
+    width: 320px;
+    left: -3%;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 300px;
+    width: 300px;
+    bottom: 15%;
+    right: -5%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn {
+    margin-top: 0px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn {
+    height: 46px;
+    font-size: 13px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn .span-for-btn-proceed {
+    height: 16px;
+    width: 16px;
+    font-size: 9px;
+  }
+  .apply-for-contact {
+    display: none;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 39px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 300px;
+    width: 300px;
+    bottom: 14%;
+    right: -15%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get {
+    font-size: 12px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get::placeholder {
+    font-size: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    font-size: 12px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp::placeholder {
+    font-size: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    column-gap: 15px;
+    row-gap: 30px;
+    height: 180px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 38px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 130px;
+    width: 130px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    height: 120px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message {
+    height: 140px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container {
+    margin-top: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 275px;
+    width: 275px;
+    bottom: 20%;
+    right: -14%;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn {
+    height: 40px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-one {
+    height: 290px;
+    width: 290px;
+    left: -8%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
+    height: 250px;
+    width: 250px;
+    bottom: 26%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .contact-touch-container .contact-get-in-touch-img {
+    display: none;
+  }
+  .contact-touch-container {
+    height: 100dvh;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 180px;
+    width: 180px;
+  }
+  .apply-for-contact {
+    display: contents;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 42px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 11.5px;
+    line-height: 23px;
+  }
+  .contact-touch-container .contact-get-in-touch-input {
+    padding-left: 25px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 190px;
+    gap: 30px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    height: 130px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message {
+    height: 130px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn {
+    margin-top: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-three {
+    height: 300px;
+    width: 300px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get {
+    font-size: 14px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get::placeholder {
+    font-size: 11px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    font-size: 14px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp::placeholder {
+    font-size: 11px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn {
+    height: 43px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 38px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 160px;
+    width: 160px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    font-size: 8.5px;
+    font-family: "Inter";
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 35px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container {
+    margin-top: 0px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 185px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design {
+    height: 135px;
+    width: 135px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-two {
+    line-height: 18px;
+    font-size: 8px;
+  }
+  .contact-touch-container .contact-get-in-touch-input {
+    padding-left: 20px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 30px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 180px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get {
+    font-size: 13px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get::placeholder {
+    font-size: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    font-size: 13px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp::placeholder {
+    font-size: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container {
+    gap: 30px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn .design-div-for-tud-btn-proceed {
+    right: 32px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 150px;
+    width: 150px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-three {
+    height: 270px;
+    width: 270px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact-touch-container .contact-get-in-touch-input {
+    padding-right: 15px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 140px;
+    width: 140px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    gap: 20px;
+    row-gap: 30px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 180px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get {
+    font-size: 11px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info .input-bar .input-bar-contact-get::placeholder {
+    font-size: 9px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    font-size: 11px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp::placeholder {
+    font-size: 9px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .proceed-main-btn .proceed-btn .design-div-for-tud-btn-proceed {
+    right: 24px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-three {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .contact-touch-container .contact-get-in-touch-input {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-title .contact-get-para-one {
+    font-size: 28px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message {
+    height: 120px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-message .message-inp {
+    height: 120px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-get-title-container .contact-get-in-touch-input-container .input-container-basic-info {
+    height: 160px;
+    gap: 15px;
+    row-gap: 25px;
+  }
+  .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 /*# sourceMappingURL=ContactTouch.css.map */

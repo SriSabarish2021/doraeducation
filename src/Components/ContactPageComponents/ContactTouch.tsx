@@ -115,6 +115,19 @@ const MouseMoveEvent=(event:unknown)=>{
         }
 }
 
+const [contacttouchwidth,setcontacttouchwidth]=useState(0)
+    useEffect(() => {
+  
+  
+      setcontacttouchwidth(window.innerWidth)
+     
+      
+       return () => {
+        setcontacttouchwidth(0)
+      }
+    
+    
+    }, [])
   return (
     <div className='contact-touch-container' >
         <div className={`contact-submitted-alert-div ${alert?'submittedalert':'nosubmittedalert'}` }>
@@ -139,8 +152,8 @@ const MouseMoveEvent=(event:unknown)=>{
             <div className='contact-page-circle-design-three' style={{transform:`translateX(${getoffsetXcontact}px) translateY(${getoffsetYcontact}px)`,transitionDuration:'0.3s'}}></div>
             <div className='contact-get-title-container'>
                 <div className='contact-get-in-touch-title'>
-                    <p className='contact-get-para-one'>Apply For Admission</p>
-                    <p  className='contact-get-para-two'>Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.</p>
+                    <p className='contact-get-para-one'><span className='apply-for-contact'>Apply</span> For Admission</p>
+                    <p  className='contact-get-para-two'>{contacttouchwidth<610?'Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.':contacttouchwidth<930?'Follow this comprehensive guide to navigate the application':'Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.'}</p>
                 </div>
                 <div className='contact-get-in-touch-input-container'>
                     <div className='input-container-basic-info'>
