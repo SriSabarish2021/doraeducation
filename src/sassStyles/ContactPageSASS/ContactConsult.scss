@@ -424,3 +424,38 @@
         font-size: 8px;
     }
 }
+
+
+
+
+@media screen and  (min-height:1000px) {
+        .contact-consult-page .contact-page-consult-inner{
+        height: 280px;
+        border-radius: 20px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one{
+        font-size: 24px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        gap: 20px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 36px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 26px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        height: 65px;
+        width: 65px;
+        font-size: 24px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+        height: 140px;
+        width: 140px;
+    }
+}

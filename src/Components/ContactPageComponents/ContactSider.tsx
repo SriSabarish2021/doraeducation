@@ -8,7 +8,6 @@ const ContactSider = () => {
   
   
       setcontactwidth(window.innerWidth)
-      
      
       
        return () => {
@@ -29,80 +28,51 @@ const ContactSider = () => {
     const itemone=document.querySelector('.contact-logo-one')
     const itemtwo=document.querySelector('.contact-logo-two')
     const itemthree=document.querySelector('.contact-logo-three')
-
+    const itemfour=document.querySelector('.contact-logo-last')
+    
     const boxone=document.querySelector('.contact-sider-box-one')
     const boxtwo=document.querySelector('.contact-sider-box-three')
 
-    const boxonemob=document.querySelector('.contact-sider-left-one')
-    const boxtwomob=document.querySelector('.contact-sider-left-two')
-    const boxthreemob=document.querySelector('.contact-sider-left-three')
-    const boxfourmob=document.querySelector('.contact-sider-left-four')
+    const boxthree=document.querySelector('.contact-sider-box-two')
+    const boxfour=document.querySelector('.contact-sider-box-four')
     
 
-    let observer;
-
-    if (Number(contactwidth)>930) {
-          observer=new IntersectionObserver(([entry])=>{
+  let  observer=new IntersectionObserver(([entry])=>{
           if (entry.intersectionRatio>0.5) {
               itemone?.classList.add('no-logo-contact-move')
               itemtwo?.classList.add('no-logo-contact-move')
               itemthree?.classList.add('no-logo-contact-move')
+              itemfour?.classList.add('no-logo-contact-move')
+            
               boxone?.classList.add('no-box-move-contact')
               boxtwo?.classList.add('no-box-move-contact')
+              boxthree?.classList.add('no-box-move-contact')
+              boxfour?.classList.add('no-box-move-contact')
           }
           else{
               itemone?.classList.remove('no-logo-contact-move')
               itemtwo?.classList.remove('no-logo-contact-move')
               itemthree?.classList.remove('no-logo-contact-move')
+              itemfour?.classList.remove('no-logo-contact-move')
+
               boxone?.classList.remove('no-box-move-contact')
               boxtwo?.classList.remove('no-box-move-contact')
+              boxthree?.classList.remove('no-box-move-contact')
+              boxfour?.classList.remove('no-box-move-contact')
           }
         },{threshold:0.5})
         
         if (mainelement) {
           observer.observe(mainelement)
         }
-    }
-    else{
-          observer=new IntersectionObserver(([entry])=>{
-          if (entry.intersectionRatio>0.5) {
-              itemone?.classList.add('no-logo-contact-move')
-              itemtwo?.classList.add('no-logo-contact-move')
-              itemthree?.classList.add('no-logo-contact-move')
-              boxonemob?.classList.add('no-box-move-contact')
-              boxtwomob?.classList.add('no-box-move-contact')
-              boxthreemob?.classList.add('no-box-move-contact')
-              boxfourmob?.classList.add('no-box-move-contact')
-
-          }
-          else{
-              itemone?.classList.remove('no-logo-contact-move')
-              itemtwo?.classList.remove('no-logo-contact-move')
-              itemthree?.classList.remove('no-logo-contact-move')
-              boxonemob?.classList.remove('no-box-move-contact')
-              boxtwomob?.classList.remove('no-box-move-contact')
-              boxthreemob?.classList.remove('no-box-move-contact')
-              boxfourmob?.classList.remove('no-box-move-contact')
-          }
-        },{threshold:0.5})
-        
-        if (mainelement) {
-          observer.observe(mainelement)
-        }
-    }
     
   
     return () => {
-      if (Number(contactwidth)>930) {
+     
         if (mainelement) {
       observer.unobserve(mainelement)
     }
-      }else{
-          if (mainelement) {
-        observer.unobserve(mainelement)
-        }
-      }
-      
+    
     }
   }, [contactwidth])
   
@@ -111,9 +81,9 @@ const ContactSider = () => {
 
   return (
     <div className="contact-side-bar-conatainer">
-      <div className={`contact-side-box  ${Number(contactwidth)>930?'contact-sider-box-one':'contact-sider-left-one'}`}>
+      <div className={`contact-side-box  contact-sider-box-one`}>
         <div className='contact-sider-logo'>
-          <div className='contact-logo-one'>
+          <div className='contact-logo-one logo-delay-one'>
             <img src="./ContactPageImage/location.png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
@@ -128,9 +98,9 @@ const ContactSider = () => {
           </div>
         </div>
       </div>
-      <div className={ `contact-side-box  ${Number(contactwidth)>930?'contact-sider-box-two':'contact-sider-right-one'}`}>
-        <div className='contact-sider-logo contact-inner-logo-two'>
-          <div className='contact-logo-two'>
+      <div className={ `contact-side-box contact-sider-box-two`}>
+        <div className='contact-sider-logo contact-inner-logo-two '>
+          <div className='contact-logo-two logo-delay-two'>
             <img src="./ContactPageImage/call.png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
@@ -145,9 +115,9 @@ const ContactSider = () => {
           </div>
         </div>
       </div>
-      <div className={`contact-side-box ${Number(contactwidth)>930?'contact-sider-box-three':'contact-sider-left-two'}`}>
+      <div className={`contact-side-box contact-sider-box-three`}>
         <div className='contact-sider-logo'>
-          <div className='contact-logo-three'>
+          <div className='contact-logo-three logo-delay-three'>
             <img src="./ContactPageImage/message (1).png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
@@ -156,26 +126,25 @@ const ContactSider = () => {
             <p>Email</p>
           </div>
           <div className='contact-content'>
-            <p>srisabarish003@gmail.com</p>
-            <p>sabarishsri315@gmail.com</p>
+            <p>{String('srisabarish003@gmail.com').slice(0,-7)+'..'}</p>
+            <p>{String('sabarishsri315@gmail.com').slice(0,-7)+'..'}</p>
            
           </div>
         </div>
       </div>
-      <div className={`contact-side-box  contact-sider-box-four${Number(contactwidth)>930?'':'contact-sider-right-two'}`}>
-        <div className='contact-sider-logo contact-inner-logo-two'>
-          <div className='contact-logo-two'>
-            <img src="./ContactPageImage/message (1).png" alt="location-logo" className='contact-logo' />
+      <div className={`contact-side-box  contact-sider-box-four`}>
+        <div className='contact-sider-logo contact-inner-logo-two '>
+          <div className='contact-logo-two contact-logo-last logo-delay-four'>
+            <img src="./ContactPageImage/chain.png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
         <div className='contact-sider-cont'>
           <div className='contact-title'>
-            <p>Email</p>
+            <p>Links</p>
           </div>
           <div className='contact-content'>
-            <p>srisabarish003@gmail.com</p>
-            <p>sabarishsri315@gmail.com</p>
-           
+            <p>Linkedin</p>
+            <p>Twitter</p>
           </div>
         </div>
       </div>
