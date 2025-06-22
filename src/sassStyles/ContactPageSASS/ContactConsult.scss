@@ -106,3 +106,321 @@
         }
     }
 }
+
+
+
+
+@media screen and  (max-width:1300px) {
+    
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        padding-right: 0px;
+    }
+}
+
+@media screen and  (max-width:1250px) {
+    .contact-consult-page{
+        padding: 40px 100px;
+    }
+}
+
+
+@media screen and  (max-width:1190px) {
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number{
+        flex: 1 1 calc(40%);
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        flex: 1 1 calc(60%);
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 30px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and  (max-width:1090px) {
+   .contact-consult-page{
+    padding: 30px 70px;
+   }
+   .contact-consult-page .contact-page-consult-inner{
+    height: 215px;
+   }
+   .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one{
+    font-size: 18px;
+   }
+   .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+    font-size: 36px;
+   }
+   .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+    font-size: 10px;
+   }
+   .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+    padding-left: 25px;
+   }
+   
+   .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+    font-size: 26px;
+    letter-spacing: 1px;
+   }.contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+    height: 55px;
+    width: 55px;
+    font-size: 20px
+   }
+   .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+    height: 100px;
+    width: 100px;
+   }
+}
+
+
+@media screen and  (max-width:920px) {
+    .contact-consult-page{
+        padding: 30px 50px;
+    }
+    .contact-consult-page .contact-page-consult-inner{
+        height: 200px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 32px;
+        width: 100%;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 24px;
+    }
+   
+}
+
+
+
+@media screen and  (max-width:820px) {
+     .contact-consult-page .contact-page-consult-inner{
+        background-position:left;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number{
+        flex: 1 1 calc(35%);
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        flex: 1 1 calc(65%);
+    }
+    .contact-consult-page .contact-page-consult-inner{
+        border-radius: 15px;
+        height: 190px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 30px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 22px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        height: 50px;
+        width: 50px;
+        font-size: 19px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+        height: 90px;
+        width: 90px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        width: 80%;
+        line-height:18px;
+        font-size: 9.5px;
+    }
+}
+
+@media screen and  (max-width:720px) {
+    .contact-consult-page .contact-page-consult-inner{
+        height: 180px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 26px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 20px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        height: 45px;
+        width: 45px;
+        font-size: 18px;
+    }
+}
+
+@media screen and  (max-width:620px) {
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        padding-left: 20px;
+    }
+    .contact-consult-page{
+        padding: 30px ;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one{
+        font-size: 17px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 24px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        font-size: 9px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and  (max-width:540px) {
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        padding-left: 15px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 22px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        line-height: 15px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+        height: 80px;
+        width: 80px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 16px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number{
+        gap: 20px;
+    }
+     .contact-consult-page .contact-page-consult-inner{
+        background-position:right;
+    }
+}
+
+
+
+
+@media screen and  (max-width:480px) {
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one{
+        font-size: 16px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 20px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three {
+        font-size: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contact-consult-page .contact-page-consult-inner{
+        height: 165px;
+    }
+    .contact-consult-page{
+        padding: 30px 25px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }.contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+        height: 70px;
+        width: 70px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 14px;
+    }
+}
+
+@media screen and  (max-width:430px) {
+    .contact-consult-page .contact-page-consult-inner{
+        height: 155px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one{
+        font-size: 14px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        gap: 10px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        font-size: 7.5px;
+        letter-spacing: normal;
+        color: rgba(240, 240, 240, 0.909);
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 18px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 13px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        height: 36px;
+        width: 36px;
+        font-size: 13px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+        height: 65px;
+        width: 65px;
+
+    }
+    .contact-consult-page .contact-page-consult-inner{
+        background-position: right;
+    }
+}
+
+@media screen and  (max-width:400px) {
+    .contact-consult-page .contact-page-consult-inner{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .contact-consult-page .contact-page-consult-inner{
+        height: 240px;
+        border-radius: 20px;
+        padding: 20px 0px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        align-items: center;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        text-align: center;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-one{
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 23px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        font-size: 9px;
+        text-align: center;
+        width: 100%;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont{
+        padding-left: 0px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-consult-number{
+        font-size: 16px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        height: 40px;
+        width: 40px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .icon-call-consult{
+        font-size: 15px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-number .call-logo-consult .call-logo-consult-design{
+        height: 70px;
+        width: 70px;
+    }
+    .contact-consult-page .contact-page-consult-inner{
+        background-position:right;
+        
+    }
+}
+
+@media screen and  (max-width:350px) {
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-two{
+        font-size: 20px;
+    }
+    .contact-consult-page .contact-page-consult-inner .contact-consult-cont .contact-consult-para-three{
+        font-size: 8px;
+    }
+}

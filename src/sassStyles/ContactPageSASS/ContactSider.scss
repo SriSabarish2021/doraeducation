@@ -12,6 +12,7 @@
     width: 100%;
     padding: 20px 60px;
     @include Row-center.row-center;
+    
     gap: 60px;
     .contact-side-box{
         height: 200px;
@@ -64,6 +65,7 @@
                               transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
             }
+            
              .no-logo-contact-move{
               transform: translateY(0px);
               transition-duration: 0.8s;
@@ -84,7 +86,7 @@
                 border-top-right-radius: 50px;
                 @include Row-center.row-center;
                 border-bottom: none;
-                transform: translateY(100px);
+               /*  transform: translateY(100px); */
                 transition-duration: 0.8s;
                 transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
                 
@@ -144,9 +146,396 @@
         z-index: -1;
            transition-duration: 0.5s;
     }
+
+    .contact-sider-left-one{
+        transform: translateX(-200px);
+        transition-duration: 0.5s;
+        transition-delay: 0s;
+    }
+      .contact-sider-left-two{
+        transform: translateX(-200px);
+        transition-duration: 0.5s;
+        transition-delay: 0.2s;
+    }
+    .contact-sider-right-one{
+        transform: translateX(200px);
+        transition-duration: 0.5s;
+    }
+     .contact-sider-right-two{
+        transform: translateX(200px);
+        transition-duration: 0.5s;
+        transition-delay: 0.2s;
+    }
     .no-box-move-contact{
         transform: translateX(0px);
         z-index: auto;
            transition-duration: 0.5s;
+    }
+
+    .contact-sider-box-four{
+                display: none;
+    }
+}
+
+
+@media screen and  (max-width:1260px) {
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 45px;
+        width: 45px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex:  1 1 calc(35%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        flex: 1 1 calc(65%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        padding-left: 0px;
+    }
+}
+
+
+@media screen and  (max-width:1170px) {
+    .contact-side-bar-conatainer{
+        padding:20px 45px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        width: 450px;
+    }
+    .contact-side-bar-conatainer{
+        gap: 50px;
+    }
+}
+
+@media screen and  (max-width:1090px) {
+    .contact-side-bar-conatainer{
+        padding:10px 35px;
+    }
+    .contact-side-bar-conatainer{
+        gap: 20px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        padding-left: 10px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three,.contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two,.contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        height: 55%;
+        width: 55%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 40px;
+        width: 40px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-title{
+        font-size: 18px;
+    }.contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 12px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 180px;
+        width: 430px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(33%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        flex: 1 1 calc(67%);
+        padding-left: 0px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 38px;
+        width: 38px;
+
+    }
+}
+
+
+@media screen and  (max-width:930px) {
+    .contact-side-bar-conatainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        padding: 10px 70px;
+        gap: 50px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 170px;
+        width: 100%;
+    }
+    .contact-side-bar-conatainer .contact-sider-box-four{
+        display: flex;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(40%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        flex: 1 1 calc(60%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        height: 60%;
+        width: 45%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 40px;
+        width: 40px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 12px;
+        gap: 10px;
+    }
+    
+}
+
+
+
+@media screen and  (max-width:800px) {
+    .contact-side-bar-conatainer{
+        padding: 0px 60px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(35%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        flex: 1 1 calc(65%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        width: 50%;
+    }
+   
+}
+
+
+@media screen and  (max-width:750px) {
+    .contact-side-bar-conatainer{
+        padding: 0px 50px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 160px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-title{
+        font-size: 16px;
+    }.contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 11px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 35px;
+        width: 35px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        height: 55%;
+    }
+}
+
+
+
+@media screen and  (max-width:680px) {
+     .contact-side-bar-conatainer{
+        padding: 0px 45px;
+    }
+   
+    .contact-side-bar-conatainer{
+        gap: 40px;
+        row-gap: 50px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 150px;
+    }
+     .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(30%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        flex: 1 1 calc(70%);
+        padding-left: 5px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        width: 55%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 30px;
+        width: 30px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-title{
+        font-size: 15px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 10.5px;
+        font-family: 'Inter';
+    }
+}
+
+
+@media screen and  (max-width:620px) {
+   .contact-side-bar-conatainer{
+        padding: 0px 35px;
+    }
+    .contact-side-bar-conatainer{
+        gap: 35px;
+        row-gap: 45px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        padding-left: 0px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo {
+        height: 26px;
+        width: 26px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 10px;
+        font-family: 'Open Sans';
+    }
+   
+}
+
+@media screen and  (max-width:570px) {
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        width: 60%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 9px;
+        gap: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(77, 77, 77);
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 145px;
+    }
+    .contact-side-bar-conatainer{
+        padding: 0px 30px;
+    }
+}
+
+@media screen and  (max-width:525px) {
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(35%);
+    }
+}
+
+@media screen and  (max-width:500px) {
+    .contact-side-bar-conatainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        padding: 10px 75px;
+        gap: 50px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 170px;
+        width: 100%;
+    }
+    .contact-side-bar-conatainer .contact-sider-box-four{
+        display: none;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(40%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont{
+        flex: 1 1 calc(60%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        width: 45%;
+        height: 60%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 35px;
+        width: 35px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-title{
+        font-size: 18px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+            font-size: 15px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-weight: 400;
+            font-family: "Inter";
+            color: rgb(67, 67, 67);
+            line-height: normal;
+            font-size: 11px;
+            gap: 10px;
+    }
+}
+
+
+
+@media screen and  (max-width:450px) {
+    .contact-side-bar-conatainer{
+        padding: 0px 55px;
+    }
+     .contact-side-bar-conatainer .contact-side-box{
+        height: 165px;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and  (max-width:410px) {
+    .contact-side-bar-conatainer{
+        padding: 0px 55px;
+    }
+     .contact-side-bar-conatainer .contact-side-box{
+        height: 165px;
+        width: 100%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 31px;
+        width: 31px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 155px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        font-size: 10.5px;
+    }
+}
+
+
+
+@media screen and  (max-width:385px) {
+    .contact-side-bar-conatainer{
+        padding: 0px 45px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 150px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo{
+        flex: 1 1 calc(35%);
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont {
+        flex: 1 1 calc(65%);
+        gap: 12px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-logo{
+        height: 28px;
+        width: 28px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-title{
+        font-size: 15px;
+    }
+    .contact-side-bar-conatainer{
+        gap: 40px;
+    }
+
+}
+
+@media screen and  (max-width:345px) {
+.contact-side-bar-conatainer{
+        padding: 0px 40px;
+    }
+    .contact-side-bar-conatainer .contact-side-box{
+        height: 140px;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-three, .contact-side-bar-conatainer .contact-side-box .contact-inner-logo-two .contact-logo-two, .contact-side-bar-conatainer .contact-side-box .contact-sider-logo .contact-logo-one{
+        width: 50%;
+    }
+    .contact-side-bar-conatainer .contact-side-box .contact-sider-cont .contact-content{
+        gap: 8px;
+        font-size: 9.5px;
     }
 }

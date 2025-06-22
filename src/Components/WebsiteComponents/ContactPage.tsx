@@ -14,10 +14,10 @@ const ContactPage = () => {
     }, [])
   return (
     <div  className="contact-page-main-container">
-        <ContactTop/>
-        <ContactSider/>
+        {/* <ContactTop/>
+        <ContactSider/> */}
         <ContactConsult/>
-        <ContactTouch/>
+       {/*  <ContactTouch/> */}
     </div>
   )
 }

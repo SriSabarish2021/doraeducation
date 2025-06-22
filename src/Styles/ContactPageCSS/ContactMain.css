@@ -10,4 +10,15 @@
   gap: 40px;
 }
 
+@media screen and (max-width: 680px) {
+  .contact-page-main-container {
+    gap: 35px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .contact-page-main-container {
+    gap: 30px;
+  }
+}
+
 /*# sourceMappingURL=ContactMain.css.map */
