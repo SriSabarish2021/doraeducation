@@ -243,8 +243,11 @@
   height: auto;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   column-gap: 60px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
   row-gap: 80px;
 }
 .program-list-main-container .program-list-items-container .program-item-one {
@@ -940,6 +943,854 @@
   z-index: -1;
   border-radius: 120px 550px 600px 800px;
   transform: rotate(-60deg);
+}
+
+@media screen and (max-width: 1450px) {
+  .program-list-main-container {
+    padding: 0px 80px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    width: 360px;
+  }
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .program-list-main-container::before {
+    height: 700px;
+    width: 700px;
+  }
+  .program-list-main-container::after {
+    height: 700px;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 490px;
+    width: 340px;
+  }
+  .program-list-main-container {
+    padding: 0px 60px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 11.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .icon {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 5px 23px;
+    font-size: 11.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title {
+    font-size: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 38px;
+    width: 68%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container {
+    justify-content: flex-start;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 38px;
+    width: 38px;
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 21px;
+  }
+  .program-list-main-container .program-list-items-container {
+    column-gap: 40px;
+    row-gap: 50px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .program-list-main-container {
+    padding: 0px 50px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    padding: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-image-bar {
+    flex: 1 1 40%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    flex: 1 1 50%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 450px;
+    width: 330px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    gap: 4px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list {
+    font-size: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .program-list-main-container::before {
+    height: 550px;
+    width: 550px;
+    top: 0px;
+  }
+  .program-list-main-container::after {
+    height: 550px;
+    width: 550px;
+    bottom: 80px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 370px;
+    width: 280px;
+  }
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .icon {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 5px 16px;
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 10.5px;
+    line-height: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    padding: 10px;
+  }
+  .program-list-main-container {
+    padding: 0px 30px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list {
+    font-size: 17px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container {
+    height: 100%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    height: 100%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 10.5px;
+    line-height: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    gap: 35px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one {
+    padding-right: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering {
+    gap: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 31px;
+    width: 60%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 31px;
+    width: 31px;
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one:hover .hovering-content-program-items {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media screen and (max-width: 910px) {
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 380px;
+    width: 250px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 4px 13px;
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    gap: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items {
+    padding: 10px 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 11.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 28px;
+    width: 50%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 28px;
+    width: 28px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 380px;
+    width: 240px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  .program-list-main-container::before {
+    height: 500px;
+    width: 500px;
+    top: 0px;
+  }
+  .program-list-main-container::after {
+    height: 500px;
+    width: 500px;
+    bottom: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 330px;
+    width: 210px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 8px;
+    font-weight: 300;
+    font-family: "Inter";
+    line-height: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .icon {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    gap: 3px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover {
+    gap: 3px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    gap: 25px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    line-height: 16px;
+    font-size: 8.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one {
+    padding-right: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering {
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one:hover .hovering-content-program-items {
+    gap: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 25px;
+    width: 42%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    font-size: 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 9.5px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 360px;
+    width: 260px;
+  }
+  .program-list-main-container {
+    padding: 0px 50px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 5px 15px;
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 10px;
+    font-family: "Overlock";
+    line-height: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    padding: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 9.5px;
+    line-height: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one {
+    padding-right: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering {
+    gap: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 28px;
+    width: 55%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 10px;
+    font-family: "Inter";
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 28px;
+    width: 28px;
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .program-list-main-container .program-list-items-container {
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .program-list-main-container {
+    padding: 0px 30px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 350px;
+    width: 240px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .icon {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 4px 12px;
+    font-size: 8.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 17px;
+  }
+  .program-list-main-container .program-list-items-container {
+    row-gap: 40px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .program-list-main-container::before {
+    height: 560px;
+    width: 450px;
+    top: 0px;
+  }
+  .program-list-main-container::after {
+    height: 580px;
+    width: 400px;
+    bottom: 20px;
+    left: -150px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 330px;
+    width: 210px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    padding: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    line-height: 16px;
+    font-size: 8px;
+    font-family: "Inter";
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 8.5px;
+    line-height: 17px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 25px;
+    width: 50%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 300px;
+    width: 190px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 7.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 4px 10px;
+    font-size: 7.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 6px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 6px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 6.5px;
+    font-family: "Inter";
+    font-weight: 400;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    padding-top: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    gap: 2px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    padding-bottom: 0px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    gap: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 23px;
+    width: 46%;
+    border-radius: 5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 7.5px;
+    border-radius: 5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 23px;
+    width: 23px;
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 8.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one {
+    padding-right: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering {
+    gap: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 250px;
+    width: 170px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    display: none;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 11.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    line-height: 14px;
+    font-size: 6.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program {
+    gap: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 8px;
+    font-family: "Inter";
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 7px;
+    line-height: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items {
+    padding: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 21px;
+    width: 45%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one:hover .hovering-content-program-items {
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    border-radius: 3px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 21px;
+    width: 21px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .program-list-main-container {
+    padding: 0px 20px;
+  }
+  .program-list-main-container .program-list-items-container {
+    column-gap: 15px;
+  }
+  .program-list-main-container::before {
+    height: 560px;
+    width: 400px;
+    top: 0px;
+  }
+  .program-list-main-container::after {
+    height: 500px;
+    width: 370px;
+    bottom: 20px;
+    left: -150px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 250px;
+    width: 160px;
+  }
+  .program-list-main-container .program-list-items-container {
+    row-gap: 35px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    display: none;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    gap: 5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one {
+    padding-right: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 365px) {
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 220px;
+    width: 140px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    display: none;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    padding: 8px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-image-bar {
+    border-radius: 6px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 3px 8px;
+    font-size: 6px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 7.5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    border-radius: 0px;
+    font-size: 6px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    border-radius: 2px;
+    height: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 18px;
+    width: 18px;
+    font-size: 8px;
+  }
 }
 
 /*# sourceMappingURL=ProgramList.css.map */

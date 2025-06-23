@@ -30,7 +30,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
   useEffect(() => {
     
     const timertoload=setTimeout(() => {
-      setloading(true)
+      setloading(false)
     }, 2000);
   
     return () => {
@@ -64,11 +64,14 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
     
    
    const[morefilt,setmorefilt]=useState(false)
+   const[proglistwidth,setproglistwidth]=useState(0)
 
    useEffect(() => {
       window.addEventListener('scroll',()=>{
         setmorefilt(false)
       })
+
+      setproglistwidth(window.innerWidth)
   
    }, [])
    
@@ -81,7 +84,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
     {getlocation.pathname.includes("/Providing-Education's-in-Mindspire-Institute")?
     <div className='program-list-main-container'>
       
-      <div className='program-list-title-container'>
+      {/* <div className='program-list-title-container'>
         <p className='program-list-para-one'>Popular Courses</p>
         <p className='program-list-para-two'>Our <span className='prog-list-underline-title'>Programs <span className='underline-for-prog-list-tit'></span></span> & <span className='span-for-title-in-program-list'>Courses</span></p>
         <p className='program-list-para-three'>At Mindspire Institute, we offer a wide range of expert-led courses tailored to today’s academic and career needs. With flexible learning, real-world relevance, and ongoing support, we make your journey impactful and future-ready.</p>
@@ -107,7 +110,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
           
          
         </div>
-      </div>
+      </div> */}
       
         {loding?
           Array.from(coursearr).length?
@@ -127,7 +130,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                 </div>
                 <div className='prog-con-container'>
                   <p className='program-title'>{indicourse.courseTitle}</p>
-                  <p className='program-sub-title'>{String(indicourse.CourseIntro).slice(0,100)+'.'}</p>
+                  <p className='program-sub-title'>{proglistwidth<=380?String(indicourse.CourseIntro).slice(0,45)+'...':proglistwidth<=380?String(indicourse.CourseIntro).slice(0,55)+'...':proglistwidth<=440?String(indicourse.CourseIntro).slice(0,95)+'...':proglistwidth<=500?String(indicourse.CourseIntro).slice(0,65)+'...':String(indicourse.CourseIntro).slice(0,75)+'...'}</p>
                 </div>
               
               </div>
@@ -156,7 +159,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                     Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<span className='star-hover'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:<span className='star-hover'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>
                                   }<span className='star-hover-cont'>{Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5 Ratings</span></p>
                   <p className="hover-amount">${indicourse.CourseAMT}</p>
-                  <p className="hover-sub-title">{String(indicourse.CoursePara).slice(0,150)+'...'}</p>
+                  <p className="hover-sub-title">{proglistwidth<=500?String(indicourse.CoursePara).slice(0,100)+'...':String(indicourse.CoursePara).slice(0,150)+'...'}</p>
                   <div className='prog-info-hovering'>
                     <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>{indicourse.CourseDuration} Hours</p>
                     <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>{indicourse.totalLesson} Lesson</p>

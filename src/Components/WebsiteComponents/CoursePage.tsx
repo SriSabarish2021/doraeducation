@@ -12,8 +12,8 @@ const CoursePage = ({course,LikeCourse,sethashget,starcalc}) => {
     }, [])
   return (
     <div className="course-page-main-container">
-      <TopShortCourse sethashget={sethashget}/>
-    {/*   <CourseListCoursePage starcalc={starcalc}  sethashget={sethashget} course={course} LikeCourse={LikeCourse}/> */}
+    {/*   <TopShortCourse sethashget={sethashget}/> */}
+      <CourseListCoursePage starcalc={starcalc}  sethashget={sethashget} course={course} LikeCourse={LikeCourse}/>
     </div>
   )
 }
