@@ -18,6 +18,7 @@
     @include Row-center.row-center;
     align-items: flex-start;
     position: relative;
+   
 
     .top-short-course-title-container{
         height: 100dvh;
@@ -526,5 +527,783 @@ transition-duration: 0.4s;
           
                background: rgb(236, 211, 84);
         }
+    }
+}
+
+.for-mobile-short-course-page{
+    height: 100dvh;
+    @include Row-center.row-center;
+    display: none;
+    width: 100%;
+    position: relative;
+
+    .for-mobile-course-title{
+    
+        height: auto;
+        width: 100%;
+       
+        position: relative;
+    
+    
+        @include Column-center.column-center;
+        align-items: flex-start;
+        gap: 25px;
+        position: relative;
+        
+        .top-short-title-design{
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            right:20%;
+            bottom: 10%;
+            @include bg-img-center.bg-img-center('./HomeImg/Untitled (5).png')
+        }
+        .top-short-title-design-two{
+             position: absolute;
+            height: 280px;
+            width: 280px;
+            border-radius: 100%;
+            top:10%;
+            left: -10%;
+            opacity: 0.8;
+            @include bg-img-center.bg-img-center('./Testimonial/dot-testi.png');
+            z-index: -1;
+        }
+        
+        .course-page-top-course-title{
+            height: auto;
+            width: 100%;
+            @include Column-center.column-center;
+            align-items: flex-start;
+            @include Main-Title.MainTitleCont;
+            font-size: 55px;
+            font-weight: 900;
+            gap: 10px;
+
+            .course-page-title-span{
+               
+                font-family: "Bonbon";
+                color: main-color.$main-color-for-app;
+            }
+            .course-page-title-line-span{
+                color: main-color.$main-color-yellow-for-btn;
+            }
+            .course-page-title-span-two{
+                color: main-color.$main-color-yellow-for-btn; 
+                font-family: 'Lavishly Yours';
+                font-size: 50px
+            }
+            .course-page-title-span-name{
+                position: relative;
+                .course-page-title-design{
+                    position: absolute;
+                    height: 32px;
+                    width: 160px;
+                    left: 0px;
+                    bottom: -20px;
+                    @include bg-img-center.bg-img-center('./underline.png');
+                    background-position: 0%;
+                    background-size: auto;
+                    animation:underlinemove-about-us 6s linear infinite forwards ;
+                }
+                @keyframes underlinemove-about-us {
+                    0%{
+                        width: 0px;
+                    }
+                    20%{
+                         width: 80px;
+                    }
+                    40%{
+                        width: 160px;
+                    }
+                    60%{
+                        width: 160px;
+                    }
+                    80%{
+                        width: 80px;
+                    }
+                    100%{
+                        width: 0px;
+                    }
+
+                
+                }
+            }
+        }
+        .para-in-course-page{
+            
+            @include WebSubContent.SubContent;
+            width:90%;
+
+        }
+        .btn-in-course-page-title{
+            height: 40px;
+            width: 200px;
+            border-radius: 5px;
+            background-color: main-color.$main-color-red-for-btn;
+            font-family:'Roboto';
+            font-weight: 600;
+            color: white;
+            border: none;
+            position: relative;
+            @include Row-center.row-center;
+            overflow: hidden;
+            gap: 20px;
+            z-index: 1;
+            transition-duration: 0.4s;
+
+            .btn-in-course-page-design-one{
+                position: absolute;
+                height: 0%;
+                width: 25%;
+                background-color:  main-color.$main-color-yellow-for-btn;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                transition-duration: 0.4s;
+             
+
+            }
+            .btn-in-course-page-design-two{
+                position: absolute;
+                height:0%;
+                width: 25%;
+                background-color:  main-color.$main-color-yellow-for-btn;
+                left: 25%;
+                bottom: 0px;
+                z-index: -1;
+                transition-duration: 0.4s;
+
+            }
+            .btn-in-course-page-design-three{
+                position: absolute;
+                height: 0%;
+                width: 25%;
+                right: 25%;
+                background-color:  main-color.$main-color-yellow-for-btn;
+                top: 0px;
+                z-index: -1;
+                transition-duration: 0.4s;
+            }
+            .btn-in-course-page-design-four{
+                position: absolute;
+                height: 0%;
+                width: 25%;
+                right: 0%;
+                bottom: 0px;
+               background-color:  main-color.$main-color-yellow-for-btn;
+                z-index: -1;
+                transition-duration: 0.4s;
+            }
+        }
+         .btn-in-course-page-title:hover{
+
+            color: black;
+            transition-duration: 0.4s;
+
+            .btn-in-course-page-design-one{
+                transition-duration: 0.4s;
+                height: 100%;
+                
+                top: auto;
+                bottom: 0px;
+                
+             
+
+            }
+            .btn-in-course-page-design-two{
+                height: 100%;
+                transition-duration: 0.4s;
+                bottom: auto;
+                top: 0px;
+               
+
+            }
+            .btn-in-course-page-design-three{
+                height: 100%;
+                transition-duration: 0.4s;
+                top: auto;
+                bottom: 0px;
+                
+
+            }
+            .btn-in-course-page-design-four{
+               
+                height: 100%;
+                transition-duration: 0.4s;
+                bottom: auto;
+                top: 0px;
+               
+            }
+         }
+        
+}
+   
+}
+
+
+
+
+@media screen and  (max-width:1350px) {
+    .top-short-course-page-container .top-short-course-title-container .top-short-title-design{
+        right: 15%;
+        bottom: 8%;
+    }
+    .top-short-course-page-container .top-short-course-title-container{
+        gap: 30px;
+    }
+    .top-short-course-page-container .top-short-course-title-container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+
+@media screen and  (max-width:1240px) {
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 350px;
+        width: 350px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 45px;
+    }
+    .top-short-course-page-container .top-short-course-title-container{
+        padding-right: 0px;
+    }
+
+    .top-short-course-page-container .top-short-course-title-container .para-in-course-page{
+        width: 85%;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        left: -20px;
+    }
+}
+
+
+
+@media screen and  (max-width:1175px) {
+    .top-short-course-page-container .top-short-course-title-container .para-in-course-page{
+        font-size: 14px;
+        width: 90%;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 50px;
+    }
+}
+
+
+
+@media screen and  (max-width:1090px) {
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 300px;
+        width: 300px;
+
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 35px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time,.top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 15px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box{
+        height: 32px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box{
+        height: 32px;
+        width: 32px;
+        font-size: 12px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        height: 430px;
+        width: 400px;
+        left: -10px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three{
+        height: 60px;
+        width: 60px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three .top-short-title-design-three-inner{
+        height: 25px;
+        width: 25px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 41px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .para-in-course-page{
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .top-short-title-design{
+        height: 100px;
+        width: 100px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title{
+        height: 36px;
+        width: 180px;
+        font-size: 13px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-name .course-page-title-design{
+      width: 130px;
+    }
+}
+
+
+
+@media screen and  (max-width:1000px) {
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        gap: 5px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 41px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 280px;
+        width: 280px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 32px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time, .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 14px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box {
+
+        height: 30px;
+        width: 110px;
+        font-size: 13px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+
+@media screen and  (max-width:880px) {
+    .top-short-course-page-container .top-short-course-title-container{
+        padding-left: 30px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .para-in-course-page{
+        font-size:11px;
+        font-family: 'Inter';
+    }
+    .top-short-course-page-container .top-short-course-title-container .top-short-title-design-two{
+        height: 260px;
+        width: 260px;
+        top: 5%;
+        left: -5%;
+    }
+}
+
+
+@media screen and  (max-width:845px) {
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 38px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 270px;
+        width: 270px;
+        
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 30px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time, .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 13px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .para-in-course-page{
+        font-size: 10px;
+
+    }
+    .top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title{
+        height: 36px;
+        width: 160px;
+        font-size: 12px;
+    }
+   .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+    height: 400px;
+    width:370px;
+   }
+   .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-name .course-page-title-design{
+    height: 25px;
+    width: 140px;
+    
+   }
+
+}
+
+
+
+
+@media screen and  (max-width:785px) {
+    .top-short-course-page-container .top-short-course-title-container .top-short-title-design-two{
+        z-index: -1;
+        height: 240px;
+        width: 240px;;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        z-index: 1;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 36px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-two{
+        font-size: 40px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        gap: 10px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .btn-in-course-page-title{
+        height: 34px;
+        width: 140px;
+        font-size: 11px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title .course-page-title-span-name .course-page-title-design{
+        
+        height: 22px;
+        width: 120px;
+        background-image: url('./underline1.png');
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 270px;
+        width: 240px;
+        border-radius: 15px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        height: 350px;
+        width: 330px;
+    }
+     
+}
+
+@media screen and  (max-width:750px) {
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 37px;
+    }
+    .top-short-course-page-container .top-short-course-title-container .para-in-course-page{
+        font-size: 9.5px;
+        line-height: 18px;
+    }
+    .top-short-course-page-container .top-short-course-title-container{
+        padding-left: 20px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        padding-left: 15px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 260px;
+        width: 230px;
+    }
+   
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 28px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time, .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 12px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div{
+        gap: 8px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box{
+        height: 28px;
+        width: 100px;
+        font-size: 10px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box{
+        height: 28px;
+        width: 28px;
+        font-size: 11px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        height: 380px;
+        width: 360px;
+        left: -5%;
+    }
+}
+
+
+@media screen and  (max-width:730px) {
+    .top-short-course-page-container .top-short-course-title-container .course-page-top-course-title{
+        font-size: 35px;
+    }
+}
+
+
+
+@media screen and  (max-width:700px) {
+   .top-short-course-page-container .top-short-course-title-container{
+    display: none;
+   }
+   .for-mobile-short-course-page{
+    display: flex;
+   }
+   .for-mobile-course-title{
+   
+    padding-left: 50px;
+    padding-right: 0px;
+
+   }
+
+   .for-mobile-course-title .course-page-top-course-title{
+    font-size: 40px;
+   }
+   .for-mobile-course-title .para-in-course-page{
+    font-size: 12px;
+    width: 80%;
+   }
+   .for-mobile-course-title {
+    gap: 45px;
+    }
+    .for-mobile-course-title .top-short-title-design{
+        height: 110px;
+        width: 110px;
+        bottom: -5%;
+    }
+    .for-mobile-course-title .btn-in-course-page-title{
+        height: 38px;
+        width: 180px;
+        font-size: 14px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 320px;
+        width: 320px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 39px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time, .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 15px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        padding-left: 20px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div{
+        gap: 30px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box{
+        height: 34px;
+        width: 140px;
+        font-size: 14px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div{
+        margin-top: 20px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box{
+        height: 33px;
+        width: 33px;
+        font-size: 14px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three{
+        height: 70px;
+        width: 70px;
+
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three .top-short-title-design-three-inner{
+        height: 30px;
+        width: 30px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        height: 450px;
+        width: 400px;
+        left: 0px;
+    }
+}
+
+
+
+@media screen and  (max-width:540px) {
+    .for-mobile-course-title{
+        padding-left: 40px;
+    }
+    .for-mobile-course-title .course-page-top-course-title{
+        font-size: 38px;
+    }
+    .for-mobile-course-title .para-in-course-page{
+        font-size: 10px;
+        line-height: 22px;
+    }
+}
+
+
+@media screen and  (max-width:500px) {
+  .for-mobile-course-title .course-page-top-course-title{
+        font-size: 37px;
+    }
+    .for-mobile-course-title .btn-in-course-page-title{
+        height: 36px;
+        width: 170px;
+        font-size: 13px;
+    }
+    .for-mobile-course-title .course-page-top-course-title .course-page-title-span-two{
+        font-size: 40px;
+    }
+    .for-mobile-course-title{
+        padding-left: 25px;
+    }
+}
+
+
+@media screen and  (max-width:476px) {
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 300px;
+        width: 300px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 36px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time, .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 14px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        height: 420px;
+        width: 380px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three{
+        height: 60px;
+        width: 60px;
+        top: 5%;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three .top-short-title-design-three-inner{
+        height: 26px;
+        width: 26px;
+    }
+}
+
+@media screen and  (max-width:450px) {
+    
+    .for-mobile-course-title .para-in-course-page{
+        width: 85%;
+    }
+    .for-mobile-course-title .top-short-title-design{
+        bottom: -6%;
+        right: 10%;
+        height: 100px;
+        width: 100px;
+    }
+    .for-mobile-course-title .top-short-title-design-two
+    {
+        height: 280px;
+        width: 280px;
+        top: -13%;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 300px;
+        width: 280px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        width: 400px;
+    }
+}
+
+@media screen and  (max-width:405px) {
+    .for-mobile-course-title .course-page-top-course-title .course-page-title-span-name .course-page-title-design{
+        background-image: url('./underline1.png');
+    }
+ .top-short-course-page-container .top-short-course-content-container .course-box{
+        height: 300px;
+        width: 250px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        width: 360px;
+        height: 380px;
+        bottom: 10%;
+    }
+    .for-mobile-short-course-page{
+        overflow: hidden;
+    }
+      .top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+        font-size: 32px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-time, .top-short-course-page-container .top-short-course-content-container .course-box .course-box-course-info-div .para-in-box-lesson{
+        font-size: 13px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box{
+        height: 30px;
+        width: 120px;
+        font-size: 11px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box{
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and  (max-width:375px) {
+    .for-mobile-course-title{
+        padding-left: 10px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        width: 340px;
+        height: 370px;
+        bottom: 10%;
+        left: 10px;
+    }
+}
+
+
+@media screen and  (max-width:365px) {
+.for-mobile-course-title .course-page-top-course-title{
+    font-size: 35px;
+}.for-mobile-course-title .course-page-top-course-title .course-page-title-span-two{
+    font-size: 36px;
+}
+.for-mobile-course-title{
+    gap: 40px;
+}.for-mobile-course-title .btn-in-course-page-title{
+    height: 34px;
+    width: 160px;
+    font-size: 11px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box{
+    height: 300px;
+    width: 230px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-head-div{
+    font-size: 30px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .apply-btn-course-box{
+    height: 28px;
+    width: 110px;
+    font-size: 9.5px;
+}
+.top-short-course-page-container .top-short-course-content-container .course-box .course-box-btn-div .like-btn-course-box{
+    height: 28px;
+    width: 28px;
+    font-size: 10px;
+}
+}
+
+
+
+
+@media screen and  (max-width:350px) {
+    .for-mobile-course-title .course-page-top-course-title{
+        font-size: 32px;
+    }
+    .for-mobile-course-title .para-in-course-page{
+        width: 90%;
+        font-size: 9.5px;
+    }
+    .for-mobile-course-title .top-short-title-design-two{
+        height: 230px;
+        width: 230px;
+    }
+    .for-mobile-course-title .top-short-title-design{
+        height: 90px;
+        width: 90px;
+        bottom: -15%;
+    }
+    .top-short-course-page-container .top-short-course-content-container .top-short-cont-design{
+        height: 330px;
+        width: 300px;
+    }
+    .top-short-course-page-container .top-short-course-content-container .course-box{
+        width: 215px;
+
     }
 }
