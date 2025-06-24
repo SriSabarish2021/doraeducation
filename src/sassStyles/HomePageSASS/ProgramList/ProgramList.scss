@@ -21,6 +21,7 @@
     width: 100%;
     
     padding-bottom: 60px;
+    padding-top: 50px;
     @include Column-center.column-center;
     gap: 60px;
     position: relative;
@@ -1131,6 +1132,11 @@
 }
 
 
+@media screen and  (max-width:405px) {
+    .program-list-main-container{
+        padding-top: 0px;
+    }
+}
 @media screen and  (max-width:1100px) {
      .program-list-main-container::before{
         height: 550px;

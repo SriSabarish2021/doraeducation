@@ -1456,7 +1456,10 @@
 }
 @media screen and (max-width: 350px) {
   .for-mobile-short-course-page .for-mobile-course-title .course-page-top-course-title {
-    font-size: 32px;
+    font-size: 30px;
+  }
+  .for-mobile-short-course-page .for-mobile-course-title {
+    gap: 30px;
   }
   .for-mobile-short-course-page .for-mobile-course-title .para-in-course-page {
     width: 90%;
