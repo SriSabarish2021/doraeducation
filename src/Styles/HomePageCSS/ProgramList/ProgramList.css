@@ -13,7 +13,6 @@
 .program-list-main-container {
   height: auto;
   width: 100%;
-  padding: 0px 100px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -31,6 +30,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  padding: 0px 100px;
 }
 .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
   height: auto;
@@ -249,6 +249,7 @@
   align-content: center;
   justify-items: center;
   row-gap: 80px;
+  padding: 0px 100px;
 }
 .program-list-main-container .program-list-items-container .program-item-one {
   height: 500px;
@@ -744,6 +745,8 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 60px;
   row-gap: 80px;
+  justify-items: center;
+  align-content: center;
 }
 .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
   height: 500px;
@@ -755,6 +758,7 @@
   border-radius: 15px;
   transform: scale(0.9);
   animation: mainanimationinloading 2s linear forwards infinite;
+  background-color: white;
 }
 .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-img {
   height: 100%;
@@ -946,7 +950,7 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 80px;
   }
 }
@@ -971,7 +975,7 @@
     height: 490px;
     width: 340px;
   }
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 60px;
   }
   .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
@@ -1027,7 +1031,7 @@
   }
 }
 @media screen and (max-width: 1180px) {
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 50px;
   }
   .program-list-main-container .program-list-items-container .program-item-one {
@@ -1114,7 +1118,7 @@
   .program-list-main-container .program-list-items-container .program-item-one {
     padding: 10px;
   }
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 30px;
   }
   .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
@@ -1357,7 +1361,7 @@
     height: 360px;
     width: 260px;
   }
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 50px;
   }
   .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
@@ -1438,7 +1442,7 @@
   }
 }
 @media screen and (max-width: 590px) {
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 30px;
   }
   .program-list-main-container .program-list-items-container .program-item-one {
@@ -1698,7 +1702,7 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .program-list-main-container {
+  .program-list-main-container .program-list-items-container {
     padding: 0px 20px;
   }
   .program-list-main-container .program-list-items-container {
@@ -1790,6 +1794,844 @@
     height: 18px;
     width: 18px;
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 80px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    width: 360px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media screen and (max-width: 1270px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 490px;
+    width: 340px;
+  }
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 60px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    row-gap: 40px;
+    column-gap: 40px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 380px;
+    width: 280px;
+  }
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 30px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 25px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 6px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 32px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 15px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    column-gap: 30px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 370px;
+    width: 250px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 22px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 6px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 30px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 16px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one {
+    width: 70%;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two {
+    width: 40%;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    column-gap: 30px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 320px;
+    width: 220px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-img {
+    flex: 1 1 45%;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    flex: 1 1 55%;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    padding-left: 10px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 20px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 5px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 29px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 50px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    column-gap: 30px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 360px;
+    width: 260px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 24px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 6px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 31px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 17px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 350px;
+    width: 240px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 300px;
+    width: 190px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 20px;
+    width: 120px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 5px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 24px;
+    width: 80%;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 250px;
+    width: 170px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    padding-top: 10px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 13px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 18px;
+    width: 100px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 5px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 22px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .program-list-main-container .loading-icon-shows {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 250px;
+    width: 160px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 13px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 17px;
+    width: 90px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 4.5px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 20px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 230px;
+    width: 140px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 0px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 15px;
+    width: 90px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 4.5px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 18px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .program-list-main-container .program-list-title-container {
+    padding: 0PX 60px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    left: -90px;
+    top: 155%;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    right: 37px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    width: 80%;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 9px 22px;
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+    gap: 35px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .program-list-main-container .program-list-title-container {
+    padding: 0px 40px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    min-width: 130px;
+    padding: 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    right: 16px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    right: 11px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    left: -100px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-title-container {
+    padding: 0px 20px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 40px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two .prog-list-underline-title .underline-for-prog-list-tit {
+    height: 22px;
+    width: 150px;
+    bottom: -12px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 8px 17px;
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 28px;
+    width: 28px;
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+    gap: 30px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    height: 22px;
+    width: 45px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 38px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two .prog-list-underline-title .underline-for-prog-list-tit {
+    height: 20px;
+    width: 160px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
+    margin-top: 10px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    width: 75%;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+    gap: 25px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 7px 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 26px;
+    width: 26px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    font-size: 11.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 11.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    height: 20px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    right: 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    min-width: 110px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    left: -80px;
+    gap: 17px;
+    border-radius: 10px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    height: 11px;
+    width: 11px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 35px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-title-container {
+    gap: 12px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 9.5px;
+    font-family: "Inter";
+    line-height: 20px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 6.5px 12px;
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 24px;
+    width: 24px;
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    min-width: 100px;
+    padding: 12px;
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    right: 10px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 32px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
+    margin-top: 8px;
+    gap: 25px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 6px 11px;
+    font-size: 7.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+    gap: 18px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 10.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter {
+    gap: 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    width: 40px;
+    height: 18px;
+    font-size: 8.5px;
+    border-radius: 3px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .program-list-main-container .program-list-title-container {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 30px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two .prog-list-underline-title .underline-for-prog-list-tit {
+    height: 18px;
+    width: 120px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    line-height: 16px;
+    font-size: 8.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 22px;
+    width: 22px;
+    font-size: 8.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #Back-End {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+    font-size: 8.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    gap: 13px;
+    min-width: 95px;
+    left: -70px;
+  }
+  .program-list-main-container .program-list-title-container {
+    padding: 0px 15px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 28px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
+    gap: 20px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    font-size: 9.5px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    height: 16px;
+    width: 38px;
+    font-size: 7.5px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 355px) {
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 10px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 26px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two .prog-list-underline-title .underline-for-prog-list-tit {
+    height: 16px;
+    width: 130px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    font-size: 7px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 21px;
+    width: 21px;
+    font-size: 8px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter {
+    gap: 12px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    padding-right: 12px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page, .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    height: 15px;
+    width: 35px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
+    gap: 18px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 24px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 9px;
+  }
+}
+@media screen and (min-height: 900px) and (max-height: 989px) {
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 30px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 10px;
+    width: 85%;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 6px 15px;
+    font-size: 9px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 30px;
+    width: 30px;
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    height: 20px;
+    width: 55px;
+    font-size: 11px;
+  }
+}
+@media screen and (min-height: 990px) {
+  .program-list-main-container .program-list-title-container {
+    padding: 0px 30px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-one {
+    font-size: 20px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two {
+    font-size: 54px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-two .prog-list-underline-title .underline-for-prog-list-tit {
+    height: 28px;
+    width: 180px;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    font-size: 14px;
+    width: 85%;
+  }
+  .program-list-main-container .program-list-title-container .program-list-para-three {
+    margin-top: 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page {
+    margin-top: 20px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter {
+    padding: 9px 22px;
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more {
+    height: 37px;
+    width: 37px;
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn {
+    gap: 35px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    font-size: 17px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-span-course-page {
+    font-size: 17px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filt-clear-btn {
+    height: 25px;
+    width: 70px;
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter .filter-para-course-page {
+    padding-right: 20px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .selected-filter {
+    gap: 25px;
+  }
+}
+@media screen and (min-height: 990px) {
+  .program-list-main-container .program-list-items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .program-list-main-container .program-list-items-container .program-item-one {
+    height: 420px;
+    width: 300px;
+  }
+  .program-list-main-container .program-list-items-container {
+    padding: 0px 50px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-title, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-title {
+    font-size: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .prog-con-container .program-sub-title {
+    font-size: 12.5px;
+    line-height: 24px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .level-of-difficulty, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .difficulty-level-hover-bar {
+    padding: 5px 18px;
+    font-size: 11px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-three {
+    font-size: 12px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .icon {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info {
+    gap: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .program-content-bar .program-info .program-info-para-two {
+    padding-right: 10px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-content-bar {
+    gap: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-para-program-list {
+    gap: 5px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .star-div-for-program .star-span-para {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar .amt-para-in-prog-list {
+    font-size: 25px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .program-star-bar {
+    border-top: 1px solid rgb(184, 184, 184);
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .star-para-hovering .star-hover-cont {
+    font-size: 14px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-amount {
+    font-size: 23px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container {
+    gap: 18px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .hover-sub-title {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one {
+    padding-right: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering {
+    gap: 20px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-one, .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .hover-program-info-para-two {
+    font-size: 13px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-content-container .prog-info-hovering .icon-hover {
+    font-size: 16px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn {
+    height: 36px;
+    width: 65%;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-enroll-btn .hover-enroll-btn-insider {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-items-container .program-item-one .hovering-content-program-items .hovering-btn-container .hover-add-favorite-btn {
+    height: 36px;
+    width: 36px;
+    font-size: 15px;
+  }
+}
+@media screen and (min-height: 990px) {
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
+    height: 420px;
+    width: 300px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-level {
+    height: 32px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-btn {
+    height: 38px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-one, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-two, .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont .loading-cont-three {
+    height: 10px;
+  }
+  .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen .loading-div-for-cont {
+    gap: 18px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    min-width: 180px;
+    padding: 20px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
+    font-size: 15px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner {
+    gap: 25px;
+    left: -140px;
+  }
+  .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .filter-more-arrow {
+    height: 24px;
+    width: 24px;
+    right: 10px;
   }
 }
 

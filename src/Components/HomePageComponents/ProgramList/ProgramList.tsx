@@ -30,7 +30,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
   useEffect(() => {
     
     const timertoload=setTimeout(() => {
-      setloading(false)
+      setloading(true)
     }, 2000);
   
     return () => {
@@ -65,12 +65,13 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
    
    const[morefilt,setmorefilt]=useState(false)
    const[proglistwidth,setproglistwidth]=useState(0)
+   const[proglistheight,setproglistheight]=useState(0)
 
    useEffect(() => {
       window.addEventListener('scroll',()=>{
         setmorefilt(false)
       })
-
+      setproglistheight(window.innerHeight)
       setproglistwidth(window.innerWidth)
   
    }, [])
@@ -84,10 +85,10 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
     {getlocation.pathname.includes("/Providing-Education's-in-Mindspire-Institute")?
     <div className='program-list-main-container'>
       
-      {/* <div className='program-list-title-container'>
+     <div className='program-list-title-container'>
         <p className='program-list-para-one'>Popular Courses</p>
         <p className='program-list-para-two'>Our <span className='prog-list-underline-title'>Programs <span className='underline-for-prog-list-tit'></span></span> & <span className='span-for-title-in-program-list'>Courses</span></p>
-        <p className='program-list-para-three'>At Mindspire Institute, we offer a wide range of expert-led courses tailored to today’s academic and career needs. With flexible learning, real-world relevance, and ongoing support, we make your journey impactful and future-ready.</p>
+        <p className='program-list-para-three'>{proglistwidth<500?'At Mindspire Institute, we offer a wide range of expert-led courses tailored to today’s academic and career needs.':proglistwidth<900?'At Mindspire Institute, we offer a wide range of expert-led courses tailored to today’s academic and career needs. With flexible learning, real-world relevance.':'At Mindspire Institute, we offer a wide range of expert-led courses tailored to today’s academic and career needs. With flexible learning, real-world relevance, and ongoing support, we make your journey impactful and future-ready.'}</p>
         <div className='course-filter-bar-for-course-page'>
           <div className='course-filter-btn'>
             <div id='All-Program' onClick={()=>setfiltername('All-Programs')} className='course-filter'><p>All Programs</p></div>
@@ -100,6 +101,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                 <p className='more-filter-para' onClick={()=>setfiltername('Graphic Design')} >Graphic Design</p>
                 <p className='more-filter-para' onClick={()=>setfiltername('Business')} >Business</p>
                 <p className='more-filter-para' onClick={()=>setfiltername('Full-Stack')} >Full-Stack</p>
+                {proglistwidth<450&&<p className='more-filter-para' onClick={()=>setfiltername('Back-End')} >Back-End</p>}
               </div>
             </div>
           </div>
@@ -110,9 +112,9 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
           
          
         </div>
-      </div> */}
+      </div> 
       
-        {loding?
+        { loding?
           Array.from(coursearr).length?
           <div className='program-list-items-container'>
           {Array.from(coursearr).map((indicourse:any)=>
@@ -159,7 +161,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                     Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<span className='star-hover'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:<span className='star-hover'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>
                                   }<span className='star-hover-cont'>{Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5 Ratings</span></p>
                   <p className="hover-amount">${indicourse.CourseAMT}</p>
-                  <p className="hover-sub-title">{proglistwidth<=500?String(indicourse.CoursePara).slice(0,100)+'...':String(indicourse.CoursePara).slice(0,150)+'...'}</p>
+                  <p className="hover-sub-title">{proglistheight>989?String(indicourse.CoursePara).slice(1,150)+'...': proglistwidth<=500?String(indicourse.CoursePara).slice(0,100)+'...':String(indicourse.CoursePara).slice(0,150)+'...'}</p>
                   <div className='prog-info-hovering'>
                     <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>{indicourse.CourseDuration} Hours</p>
                     <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>{indicourse.totalLesson} Lesson</p>
@@ -253,7 +255,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                 </div>
 
         </div>
-        
+         
         }
            
     </div>
