@@ -59,7 +59,7 @@ const TopShortCourse = ({sethashget}) => {
         if(stackArea){
           let topVal;
           if (window.innerWidth<700) {
-            topVal = stackArea.getBoundingClientRect().top+Number(mobilescreen?.getBoundingClientRect().height);
+            topVal = stackArea.getBoundingClientRect().top-Number(mobilescreen?.getBoundingClientRect().height)+Number(mobilescreen?.getBoundingClientRect().height/2);
           }else{
              topVal = stackArea.getBoundingClientRect().top
           }
@@ -92,7 +92,10 @@ const TopShortCourse = ({sethashget}) => {
   return (
     <>
       <div className=' for-mobile-short-course-page' style={{flexDirection:getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'row':'row-reverse'}}>
+        <div className='student-design-mobile-course'></div>
+         <div className='student-design-mobile-course-two'></div>
         <div className=' for-mobile-course-title'>
+          
           <div className='top-short-title-design'></div>
           <div className='top-short-title-design-two'></div>
           
@@ -131,8 +134,23 @@ const TopShortCourse = ({sethashget}) => {
         
         </div>
         <div className='top-short-course-content-container'>
-          
+          <div className="ball-move-animation-top-course">
+            <div className='ball-div ball-arrow-one'></div>
+            <div  className='ball-div  ball-arrow-two'></div>
+            <div  className='ball-div  ball-arrow-three'></div>
+            <div  className='ball-div  ball-arrow-four'></div>
+            <div className='ball-div ball-arrow-five' ></div>
+          </div>
           <div className='top-short-cont-design'></div>
+          <div className='top-short-cont-stud-img-design'>
+            <div className='top-course-scroll-info-img'>
+              <img className='img-for-small-cont-short-course' src="./HomeImg/online-learning.png" alt="" />
+            </div>
+            <div className='top-course-scroll-info-cont'>
+               <p className='p-one-small-cont-short-course'>20+</p>
+                  <p  className='p-two-small-cont-short-course'>Online Courses</p>
+            </div>
+          </div>
           <div className='top-short-title-design-three'>
             <div className='top-short-title-design-three-inner'></div>
           </div>

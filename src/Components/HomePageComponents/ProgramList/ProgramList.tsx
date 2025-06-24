@@ -283,7 +283,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
               </div>
               <div className='prog-con-container'>
                 <p className='program-title'>{indicourse.courseTitle}</p>
-                <p className='program-sub-title'>{String(indicourse.CourseIntro).slice(0,100)+'.'}</p>
+                <p className='program-sub-title'>{proglistwidth<=380?String(indicourse.CourseIntro).slice(0,45)+'...':proglistwidth<=380?String(indicourse.CourseIntro).slice(0,55)+'...':proglistwidth<=440?String(indicourse.CourseIntro).slice(0,95)+'...':proglistwidth<=500?String(indicourse.CourseIntro).slice(0,65)+'...':String(indicourse.CourseIntro).slice(0,95)+'...'}</p>
               </div>
             
             </div>
