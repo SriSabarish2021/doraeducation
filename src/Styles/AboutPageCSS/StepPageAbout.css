@@ -198,6 +198,8 @@
   bottom: 100%;
   border-radius: 3px;
   font-size: 14px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   font-weight: 500;
   letter-spacing: 0.5px;
   font-family: "Roboto";
@@ -279,6 +281,244 @@
   font-size: 13px;
   line-height: 20px;
 }
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  padding: 0px 40px;
+  gap: 30px;
+  row-gap: 80px;
+  position: relative;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+  position: absolute;
+  background-image: url("./AboutPageImage/milestones.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  height: 150px;
+  width: 150px;
+  top: 5%;
+  left: 5%;
+  animation: img-slide-move-img-abt-two linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+@keyframes img-slide-move-img-abt-two {
+  0% {
+    transform: translateY(350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+  position: absolute;
+  background-image: url("./AboutPageImage/book (3).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  bottom: 15%;
+  right: 10%;
+  animation: img-slide-move-img-abt linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+@keyframes img-slide-move-img-abt {
+  0% {
+    transform: translateX(-350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+  height: 190px;
+  width: 290px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: justify;
+  gap: 10px;
+  background-color: white;
+  z-index: 10;
+  position: relative;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
+  height: 220px;
+  width: 220px;
+  z-index: -100;
+  right: 50%;
+  position: absolute;
+  border-radius: 5px;
+  border-bottom: none;
+  bottom: -70%;
+  transform: rotate(-450deg);
+  background-image: url("./AboutPageImage/border-line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+  left: 100%;
+  height: 100px;
+  width: 80px;
+  z-index: -100;
+  position: absolute;
+  border-radius: 5px;
+  border-bottom: none;
+  bottom: 30%;
+  transform: rotate(180deg);
+  background-image: url("./AboutPageImage/Untitled (11).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one {
+  left: 100%;
+  height: 100px;
+  width: 80px;
+  z-index: -100;
+  position: absolute;
+  border-radius: 5px;
+  border-bottom: none;
+  bottom: 30%;
+  background-image: url("./AboutPageImage/Untitled (11).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page-bg {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .bg-abt-step-one {
+  border: 1px solid rgb(255, 138, 230);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .bg-abt-step-two {
+  border: 1px solid rgb(255, 182, 108);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .bg-abt-step-three {
+  border: 1px solid rgb(143, 191, 255);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .bg-abt-step-four {
+  border: 1px solid rgb(183, 255, 57);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+  position: absolute;
+  height: 30px;
+  width: 100px;
+  bottom: 100%;
+  border-radius: 3px;
+  font-size: 14px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page .num-step {
+  font-family: "Great Vibes";
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(255, 68, 81);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-bg-four {
+  background-color: rgb(255, 138, 230);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-bg-three {
+  background-color: rgb(255, 180, 105);
+  color: rgb(61, 61, 61);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-bg-two {
+  background-color: rgb(111, 173, 255);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-bg-one {
+  background-color: rgb(183, 255, 57);
+  color: rgb(61, 61, 61);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-one-about-mob {
+  margin-top: 0px;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.7s;
+  z-index: 10;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-two-about-mob {
+  margin-top: 0px;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.2s;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-three-about-mob {
+  margin-top: 0px;
+  transform: translateX(200px);
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-move-mob {
+  transform: translateX(0px);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  opacity: 1;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-four-about {
+  margin-top: 0px;
+  background-color: #ffd324;
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Margarine";
+  letter-spacing: 1px;
+  color: rgb(51, 51, 51);
+}
+.step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
+  font-size: 13px;
+  line-height: 20px;
+}
 .step-page-container-for-about-page .step-page-bottom-para {
   height: auto;
   width: 100%;
@@ -332,6 +572,776 @@
   gap: 5px;
   font-weight: 600;
   color: rgb(255, 203, 30);
+}
+
+@media screen and (max-width: 1380px) {
+  .step-page-container-for-about-page .step-container-in-about-page .step-title-about-page {
+    width: 100%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page {
+    padding: 30px 30px;
+  }
+  .step-page-container-for-about-page {
+    padding: 0px 60px;
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-line-abt-page {
+    width: 230px;
+    height: 270px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 15px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 18px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .step-page-container-for-about-page .step-container-in-about-page .book-move-design-step-abt-page-two {
+    height: 130px;
+    width: 130px;
+    left: 3%;
+  }
+  .step-page-container-for-about-page {
+    padding: 0px 40px;
+    padding-top: 40px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .book-move-design-step-abt-page-two {
+    top: 15%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .book-move-design-step-abt-page {
+    bottom: 10%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page {
+    height: 210px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-title-about-page {
+    font-size: 19px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-para-about-page {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-line-abt-page {
+    height: 250px;
+    width: 210px;
+    bottom: 35%;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 50px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 45px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-title-about-page {
+    text-align: left;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page {
+    gap: 40px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page {
+    padding: 20px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .book-move-design-step-abt-page {
+    height: 140px;
+    width: 140px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 14px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 17px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 13px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 15px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 14px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 42px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 38px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one .span-in-title-one .step-underline-design {
+    height: 30px;
+    width: 120px;
+    top: auto;
+    bottom: -15px;
+  }
+  .step-page-container-for-about-page {
+    padding: 0px 25px;
+    padding-top: 30px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .book-move-design-step-abt-page-two {
+    height: 120px;
+    width: 120px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .book-move-design-step-abt-page {
+    height: 125px;
+    width: 125px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page {
+    gap: 30px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-title-about-page {
+    font-size: 15px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-para-about-page {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-num-abt-page {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-num-abt-page .num-step {
+    font-size: 15px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page {
+    height: 180px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-line-abt-page {
+    height: 290px;
+    bottom: 10%;
+    width: 190px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-num-abt-page {
+    height: 23px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .step-page-container-for-about-page .step-container-in-about-page .step-para-about-page {
+    letter-spacing: 0.5px;
+    line-height: 18px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-about-page .step-line-abt-page {
+    width: 160px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-three-about {
+    margin-top: 85px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-two-about {
+    margin-top: 165px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-one-about {
+    margin-top: 245px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 14px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+    top: auto;
+    height: 120px;
+    width: 120px;
+    left: auto;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+    bottom: -33%;
+    right: auto;
+    left: 10%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+    width: 105px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-three-about {
+    margin-top: 0px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-two-about {
+    margin-top: 0px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page .step-one-about {
+    margin-top: 0px;
+  }
+  .step-page-container-for-about-page {
+    gap: 80px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page {
+    display: none;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    display: grid;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-three-about, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-two-about, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-one-about {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 18px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page .num-step {
+    font-size: 16px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    padding: 0px 20px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    width: 260px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    height: 24px;
+    width: 80px;
+    font-size: 11px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+    height: 80px;
+    width: 90px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+    top: auto;
+    height: 90px;
+    width: 90px;
+    left: auto;
+  }
+  .step-page-container-for-about-page {
+    padding: 0px 20px;
+    padding-top: 30px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 39px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 36px;
+  }
+  .step-page-container-for-about-page {
+    gap: 60px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    height: 170px;
+    width: 250px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    column-gap: 0px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    font-size: 10px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 17px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
+    right: 40%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .book-move-design-step-abt-page-two {
+    animation: img-slide-move-img-abt-two linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+  }
+  @keyframes img-slide-move-img-abt-two {
+    0% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+    bottom: -35%;
+    right: auto;
+    left: 8%;
+    height: 110px;
+    width: 110px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+    height: 80px;
+    width: 80px;
+    left: 90%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one {
+    left: 100%;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 11px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 13px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 37px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 34px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    height: 160px;
+    width: 220px;
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    padding: 0px 30px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
+    height: 180px;
+    width: 220px;
+    bottom: -90%;
+    right: 20%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    height: 150px;
+    width: 200px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 15px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    font-family: "Inter";
+    font-size: 9.5px;
+    line-height: 16px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page .num-step {
+    font-size: 15px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    height: 22px;
+    width: 70px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .step-page-container-for-about-page {
+    padding: 0px 15px;
+    padding-top: 25px;
+  }
+  .step-page-container-for-about-page {
+    gap: 50px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 35px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 33px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    padding: 0px 15px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 10px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .book-move-design-step-abt-page-two {
+    animation: img-slide-move-img-abt-two linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+  }
+  @keyframes img-slide-move-img-abt-two {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    height: 160px;
+    width: 180px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 14px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    list-style: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
+    background-image: url("./AboutPageImage/Untitled (11).png");
+    height: 80px;
+    width: 80px;
+    top: 100%;
+    left: -10%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    padding: 0px;
+    column-gap: 60px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 32px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    column-gap: 20px;
+  }
+  .step-page-container-for-about-page {
+    padding: 0px 10px;
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+    bottom: -35%;
+    right: auto;
+    left: 8%;
+    height: 100px;
+    width: 100px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    width: 160px;
+    padding: 0px 10px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 13px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page .num-step {
+    font-size: 13px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 9.5px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 11px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+    height: 80px;
+    width: 80px;
+  }
+  .book-move-design-step-abt-page-two {
+    animation: img-slide-move-img-abt-two linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+  }
+  @keyframes img-slide-move-img-abt-two {
+    0% {
+      transform: translateY(80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+    bottom: -35%;
+    right: auto;
+    left: 10%;
+    height: 90px;
+    width: 90px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 28px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 26px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one .span-in-title-one .step-underline-design {
+    height: 26px;
+    width: 90px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    width: 140px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    row-gap: 70px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one {
+    left: 90%;
+    height: 70px;
+    width: 70px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+    height: 70px;
+    width: 70px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    letter-spacing: normal;
+    font-size: 8.5px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 9px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 10px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 9.5px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para {
+    gap: 8px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one {
+    gap: 3px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 26px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 23px;
+  }
+  .step-page-container-for-about-page {
+    padding: 0px 8px;
+    padding-top: 18px;
+  }
+  .step-page-container-for-about-page {
+    gap: 40px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    height: 19px;
+    width: 60px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    font-size: 9px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page .num-step {
+    font-size: 12px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    width: 135px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+    height: 50px;
+    width: 50px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 11px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    column-gap: 0px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 8.5px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 9.5px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 9px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+    height: 70px;
+    width: 70px;
+  }
+  .book-move-design-step-abt-page-two {
+    animation: img-slide-move-img-abt-two linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+  }
+  @keyframes img-slide-move-img-abt-two {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+    bottom: -35%;
+    right: auto;
+    left: 8%;
+    height: 70px;
+    width: 70px;
+  }
+}
+@media screen and (min-height: 900px) and (max-height: 980px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+    height: 100px;
+    width: 100px;
+  }
+  .book-move-design-step-abt-page-two {
+    animation: img-slide-move-img-abt-two linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+  }
+  @keyframes img-slide-move-img-abt-two {
+    0% {
+      transform: translateY(600px);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+}
+@media screen and (min-height: 990px) {
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page-two {
+    height: 150px;
+    width: 150px;
+  }
+  .book-move-design-step-abt-page-two {
+    animation: img-slide-move-img-abt-two linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+  }
+  @keyframes img-slide-move-img-abt-two {
+    0% {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .book-move-design-step-abt-page {
+    bottom: -40%;
+    right: auto;
+    left: 8%;
+    height: 170px;
+    width: 170px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one, .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-two {
+    font-size: 16px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one-span {
+    font-size: 18px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-three {
+    font-size: 17px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para {
+    gap: 10px;
+  }
+  .step-page-container-for-about-page .step-page-bottom-para .step-page-bottom-para-one {
+    gap: 8px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-one {
+    font-size: 54px;
+  }
+  .step-page-container-for-about-page .step-page-title-bat-in-about .step-in-about-page-para-two {
+    font-size: 50px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page {
+    height: 200px;
+    width: 280px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-title-about-page {
+    font-size: 22px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-para-about-page {
+    font-size: 15px;
+    font-family: "Roboto";
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    height: 30px;
+    width: 120px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page {
+    font-size: 19px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-num-abt-page .num-step {
+    font-size: 22px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
+    background-image: url("./AboutPageImage/Untitled (11).png");
+    height: 100px;
+    width: 140px;
+    top: 100%;
+    left: -10%;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    padding: 0px 0px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-one, .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .rotate-for-step-four {
+    height: 100px;
+    width: 180px;
+    left: 90%;
+  }
+  .step-page-container-for-about-page {
+    gap: 70px;
+  }
+  .step-page-container-for-about-page .step-container-in-about-page-for-mobile {
+    row-gap: 120px;
+  }
 }
 
 /*# sourceMappingURL=StepPageAbout.css.map */

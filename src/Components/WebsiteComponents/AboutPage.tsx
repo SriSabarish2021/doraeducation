@@ -3,7 +3,7 @@ import AboutTop from "../AboutPageComponents/AboutTop"
 import StepPageAbout from "../AboutPageComponents/StepPageAbout"
 import Tutor from "../AboutPageComponents/Tutor"
 import { useEffect } from 'react'
-
+import '../../Styles/AboutPageCSS/AboutPageMain.css'
 const AboutPage = ({course}) => {
    useEffect(() => {
       
@@ -13,9 +13,9 @@ const AboutPage = ({course}) => {
     }, [])
   return (
     <div className="about-page-main-container">
-      <AboutTop course={course}/>
+   {/*    <AboutTop course={course}/>
       <AboutPageCourse course={course}/>
-      <Tutor/>
+      <Tutor/> */}
       <StepPageAbout/>
     </div>
   )
