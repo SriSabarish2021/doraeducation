@@ -124,6 +124,7 @@
                     @include WebSubContent.SubContent;
                     font-size: 13px; 
                     color: rgb(79, 79, 79);
+                    z-index: 1;
                 }
 
              }
@@ -235,7 +236,7 @@
 .tutor-title-box{
             
                 @include Column-center.column-center;
-                justify-content: flex-start;
+                justify-content: center;
                 align-items: flex-start;
                 .tutor-indicator{
                     height:28px;
@@ -331,4 +332,794 @@
         
     }
     
+}
+
+
+
+
+@media screen and  (max-width:1400px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        padding-left: 50PX;
+    }
+}
+
+@media screen and  (max-width:1340px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        padding-left: 40px;
+    }
+    .tutor-about-page-container{
+        padding: 30px 50px;
+    }
+}
+
+@media screen and  (max-width:1300px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        padding-left: 40px;
+    }
+}
+
+
+@media screen and  (max-width:1250px) {
+       .tutor-about-page-container{
+        padding: 30px 30px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 110px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height: 110px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{font-size: 21px;}
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 12px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img,.tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 160px;
+        width: 160px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 65px;
+        width: 65px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 42px;
+        width: 42px;
+        font-size: 17px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn{
+        gap: 20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        padding-top: 15px;
+    }
+}
+
+@media screen and  (max-width:1180px) {
+    .tutor-about-page-container .tutor-elements{
+        column-gap: 20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img,.tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 150px;
+        width: 150px;
+    }
+}
+@media screen and  (max-width:1125px) {
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 43px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 50px;
+    }
+}
+
+@media screen and  (max-width:1090px) {
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 38px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 45px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        height: 24px;
+        width: 110px;
+        font-size: 12px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 31px;
+        width: 130px;
+        font-size: 13px;
+
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 125px;
+        width: 125px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 90px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height: 90px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 50px;
+        width: 50px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 16px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 10px;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        gap: 5px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 34px;
+        width: 34px;
+        font-size: 12px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn{
+        gap: 15px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        row-gap: 60px;
+    }
+    .tutor-about-page-container{
+        height: 110dvh;
+    }
+}
+
+
+@media screen and  (max-width:960px) {
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 34px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and  (max-width:920px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+    height: 85px;
+    padding-top: 5px;
+    padding-left: 25px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 85px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 120px;
+        width: 120px;
+    }
+    
+}
+
+@media screen and  (max-width:880px) {
+    .tutor-about-page-container{
+        padding: 30px 20px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        column-gap: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        width: 100%;
+    }
+}
+
+@media screen and  (max-width:830px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 80px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height:80px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 15px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 9.5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+    height: 120px;
+    width: 120px;
+   }
+   
+   .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+    width: 94%;
+   }
+   .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+    font-size: 32px;
+   }
+   .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+    height: 28px;
+    width: 120px;
+    font-size: 12px;
+   }
+   .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+    height: 32px;
+    width: 32px;
+    font-size: 12px;
+   }
+}
+
+
+
+@media screen and  (max-width:790px) {
+    .tutor-about-page-container{
+        padding: 30px 15px;
+    }.tutor-about-page-container {
+        height: 100dvh;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 28px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 35px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 26px;
+        width: 100px;
+        font-size: 11px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        width: 100px;
+        height: 22px;
+        font-size: 11px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 110px;
+        width: 110px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 11px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn{
+        gap: 13px;
+    }.tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 45px;
+        width: 45px;
+    }
+    .tutor-about-page-container .tutor-elements{
+    row-gap: 40px;
+   }
+}
+
+@media screen and  (max-width:750px) {
+   .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+    font-size: 9px;
+   }
+   .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+    font-size: 14px;
+   }
+   
+   .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box {
+    height: 76px;
+   }
+   .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+    width: 76px;
+   }.tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+    height: 100px;
+    width: 100px;
+   }
+   .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+    height: 28px;
+    width: 28px;
+   }
+
+
+
+}
+
+
+@media screen and  (max-width:690px) {
+    .tutor-about-page-container .tutor-elements{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr); 
+    }
+    .tutor-about-page-container{
+        height: auto;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height: 900px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 33px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 40px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        height:24px;
+        width: 110px;
+        font-size: 12px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        width: 130px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 130px;
+        width: 130px;
+        margin-bottom: 30px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        column-gap: 40px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        height: 98%;
+        width: 86px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 90%;
+        height: 86px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 17px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 11px;
+        font-family: 'Inter';
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 55px;
+        width: 55px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 32px;
+        width: 32px;
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and  (max-width:650px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 95%;
+        height: 83px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 83px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 120px;
+        width: 120px;
+    }
+}
+
+
+@media screen and  (max-width:590px) {
+    .tutor-about-page-container .tutor-elements{
+        column-gap: 20px;
+    }
+}
+
+@media screen and  (max-width:570px) {
+ .tutor-about-page-container .tutor-elements{
+        column-gap: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 78px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height: 78px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 16px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 50px;
+        width: 50px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 110px;
+        width: 110px;
+        margin-top: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        height: 95%;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 31px;
+        width: 31px;
+        font-size: 11px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn{
+        padding-top: 20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        height: 22px;
+        width: 100px;
+        font-size: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 28px;
+        width: 120px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 30px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 37px;
+    }
+}
+
+@media screen and  (max-width:515px) {
+  
+    .tutor-about-page-container .tutor-elements{
+        height:850px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box{
+        gap: 15px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height: 73px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 73px;
+        height: 90%;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 105px;
+        width: 105px;
+        margin-top: 25px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        row-gap: 30px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 15px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 9px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 45px;
+        width: 45px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 11px;
+    }
+}
+
+@media screen and  (max-width:500px) {
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 28px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 33px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 26px;
+        width: 110px;
+        font-size: 10px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        row-gap: 20px;
+    }
+}
+
+@media screen and  (max-width:465px) {
+    .tutor-about-page-container{
+        padding: 30px 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 70px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height: 70px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 26px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        height: 20px;
+        width: 90px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 93%;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        height: 87%;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 100px;
+        width: 100px;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box{
+        justify-content: center;
+    }
+}
+
+@media screen and  (max-width:425px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 95%;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height:800px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 90px;
+        width: 90px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 13px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 8.5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 40px;
+        width: 40px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 27px;
+        width: 27px;
+        font-size: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 24px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 30px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 23px;
+        width: 90px;
+        font-size: 9px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        height: 19px;
+        width: 85px;
+        font-size: 9px;
+    }
+}
+
+
+
+@media screen and  (max-width:400px) {
+ .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 8px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 100%;
+        height: 62px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        height: 90%;
+        width: 62px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height:700px;
+    }
+
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 90px;
+        width: 90px;
+        margin-left: 0px;
+        margin-right: 25px;
+        margin-top: 0px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn{
+        gap: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn{
+        padding-top: 10px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 22px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 28px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        width: 80px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 22px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and  (max-width:370px) {
+    .tutor-about-page-container .tutor-elements{
+        column-gap: 0px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 93%;
+        height: 58px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 58px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 80px;
+        width: 80px;
+        margin-right: 13px;
+        margin-top: 10px;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height:670px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size: 12px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 7.5px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 35px;
+        width: 35px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height: 25px;
+        width: 25px;
+        font-size: 9.5px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size:20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 20px;
+        width: 80px;
+        border-radius: 3px;
+    }
+}
+
+
+@media screen and  (max-width:340px) {
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        padding-left: 12px;
+    }
+    .tutor-about-page-container{
+        padding: 30px 6px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        margin-right: 28px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        height: 87%;
+    }
+}
+
+
+@media screen and  (max-width:325px) {
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 19px;
+    }
+}
+
+
+@media screen and  (min-height:760px) and (max-height:900px) and (max-width:600px){
+  .tutor-about-page-container{
+        height: auto;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height: 720px;
+    }
+    
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height:84px;
+        width: 84px;
+        margin-right: 30px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 95%;
+    }
+    .tutor-about-page-container .tutor-elements{
+        row-gap: 30px;
+    }
+    
+
+}
+
+@media screen and  (min-height:900px) and (max-height:980px) and (max-width:600px){
+  .tutor-about-page-container{
+        height: auto;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height: 800px;
+    }
+    
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height:84px;
+        width: 84px;
+        margin-right: 30px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        width: 95%;
+    }
+    .tutor-about-page-container .tutor-elements{
+        row-gap: 30px;
+    }
+    
+
+}
+
+@media screen and  (min-height:985px) and (max-height:1400px) and  (max-width:1100px){
+   .tutor-about-page-container .tutor-elements{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3, 1fr); 
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box{
+        justify-content: center;
+    }
+    .tutor-about-page-container{
+        height: auto;
+    }
+    .tutor-about-page-container .tutor-elements{
+        height: 1000px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box{
+        gap: 15px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .btn-for-tutor-page{
+        height: 30px;
+        width: 120px;
+        font-size: 12px;
+    }
+   .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-indicator{
+        height: 26px;
+        width: 130px;
+        font-size: 15px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-page-para{
+        font-size: 45px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-title-box .tutor-title-span{
+        font-size: 50px;
+    }
+
+    .tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 140px;
+        width: 140px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box{
+        width: 100px;
+        height: 98%;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box{
+        height: 100px;
+        width: 90%;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-plus .plus-for-tutor-show{
+        height: 70px;
+        width: 70px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-name{
+        font-size:20px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .name-tutor-box .tutor-study-field{
+        font-size: 12px;
+    }
+    .tutor-about-page-container .tutor-elements .tutor-box .info-tutor-box .div-for-tutor-btn .tutor-btn{
+        height:40px;
+        width: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and  (min-height:1180px){
+.tutor-about-page-container .tutor-elements .tutor-box .tutor-img, .tutor-about-page-container .tutor-elements .tutor-box .tutor-img-design{
+        height: 160px;
+        width: 160px;
+    }
 }

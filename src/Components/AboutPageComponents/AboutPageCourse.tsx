@@ -47,7 +47,7 @@ const AboutPageCourse = ({course}) => {
   
   return (
     <div className='about-page-course-container'>
-      <div className='about-page-course-box'>
+   {/*    <div className='about-page-course-box'>
         
          <div className='about-page-program-list'>
           <div className='abt-prog-list-tit-div'>
@@ -81,7 +81,7 @@ const AboutPageCourse = ({course}) => {
         )}
 
          </div>
-      </div>
+      </div> */}
       <div className='about-page-analysis-box'>
         
         <div className='about-page-analysis-content'>
