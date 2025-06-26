@@ -54,11 +54,40 @@ const [gettitheight,setgettitheight]=useState(0)
          observer.unobserve(observingelement)
     }
     }
-  })
+  },[])
+
+  useEffect(() => {
+    
+    const observingslide=document.querySelectorAll('.slide-observe')
+
+
+    const observeroneslide=new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if (entry.intersectionRatio>0.5) {
+          entry.target.classList.add('slider-move')
+        }
+        else{
+          entry.target.classList.remove('slider-move')
+        }
+      })
+    },{threshold:0.5})
+
+    if (observingslide) {
+      observingslide.forEach((indislide)=>observeroneslide.observe(indislide))
+    }
+
+    return () => {
+      if (observingslide) {
+      observingslide.forEach((indislide)=>observeroneslide.unobserve(indislide))
+    }
+
+    }
+  }, [])
+  
   
   return (
     <div className='about-page-course-container'>
-      <div className='about-page-course-box'>
+       <div className='about-page-course-box'>
         <div style={{top:`0px`}} className='about-page-program-list-mob'>
             <div className='abt-prog-list-tit-div-mob'>
                 <p className='abt-page-course-box-para'>Our <span className='span-in-prog-list-tit-abt-page'>Programs</span></p> 
@@ -125,7 +154,7 @@ const [gettitheight,setgettitheight]=useState(0)
 
          </div>
       </div> 
-     {/*   <div className='about-page-analysis-box'>
+      <div className='about-page-analysis-box'>
         
         <div className='about-page-analysis-content'>
           
@@ -175,6 +204,7 @@ const [gettitheight,setgettitheight]=useState(0)
           </div>
         </div>
         <div className='about-page-why-content-container'>
+          <div className='about-why-image-design'></div>
           <div className='why-indicator-in-about-page'>
             <p>Why Choose ?</p>
             <div className='why-indicator-design-bar-one'></div>
@@ -186,7 +216,7 @@ const [gettitheight,setgettitheight]=useState(0)
             <p className='why-about-page-sub-main'>At Mindspire, we believe learning should align with your goals — not the other way around. Our programs are crafted to empower your unique journey, whether it's career growth, creativity, or curiosity.</p>
           </div>
           <div className='why-about-page-slide-bar'>
-            <div className='why-content-container-one'>
+            <div className='why-content-container-one slide-observe'>
                <div className='why-content-about-page-one why-cont-bar-abt-page'>
               <div className='why-cont-border-dsign-one why-cont-bar-design'></div>
               <div className='why-content-image-bar'>
@@ -196,11 +226,11 @@ const [gettitheight,setgettitheight]=useState(0)
               </div>
               <div className='why-content-cont-bar'>
                 <p className='why-cont-head'>Real Success Stories</p>
-                <p className='why-cont-para'>See how learners turned passion into careers with hands-on training at Mindspire.</p>
+                <p className='why-cont-para'>{String('See how learners turned passion into careers with hands-on training at Mindspire.').slice(0,80)+'...'}</p>
               </div>
             </div>
             </div>
-            <div className='why-content-container-two'>
+            <div className='why-content-container-two slide-observe'>
               <div className='why-content-about-page-two why-cont-bar-abt-page'>
                <div className='why-cont-border-dsign-two why-cont-bar-design'></div>
               <div className='why-content-image-bar'>
@@ -210,11 +240,11 @@ const [gettitheight,setgettitheight]=useState(0)
               </div>
               <div className='why-content-cont-bar'>
                  <p className='why-cont-head'>Your Dream, Your Direction</p>
-                <p className='why-cont-para'>At Mindspire, we help you shape your path and turn your dreams into reality.</p>
+                <p className='why-cont-para'>{String('At Mindspire, we help you shape your path and turn your dreams into reality.').slice(0,80)+'...'}</p>
               </div>
             </div>
             </div>
-            <div className='why-content-container-three'>
+            <div className='why-content-container-three slide-observe'>
               <div className='why-content-about-page-three why-cont-bar-abt-page'>
                <div className='why-cont-border-dsign-three why-cont-bar-design'></div>
               <div className='why-content-image-bar'>
@@ -224,7 +254,7 @@ const [gettitheight,setgettitheight]=useState(0)
               </div>
               <div className='why-content-cont-bar'>
                        <p className='why-cont-head'>Passion to Profession</p>
-                <p className='why-cont-para'>At Mindspire, we turn your passion into a profession through hands-on learning and career-focused guidance.</p>
+                <p className='why-cont-para'>{String(' At Mindspire, we turn your passion into a profession through hands-on learning and career-focused guidance.').slice(0,80)+'...'}</p>
               </div>
         
             </div>
@@ -234,7 +264,7 @@ const [gettitheight,setgettitheight]=useState(0)
             
           </div>
         </div>
-      </div> */}
+      </div> 
     </div>
   )
 }

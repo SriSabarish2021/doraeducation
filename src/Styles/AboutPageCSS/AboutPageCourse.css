@@ -900,6 +900,7 @@
   display: none;
 }
 .about-page-course-container .why-showing-container {
+  overflow: hidden;
   height: auto;
   width: 100%;
   background-color: rgb(255, 248, 237);
@@ -1028,6 +1029,24 @@
   justify-content: flex-start;
   padding-left: 60px;
   gap: 30px;
+  position: relative;
+}
+.about-page-course-container .why-showing-container .about-page-why-content-container .about-why-image-design {
+  position: absolute;
+  height: 660px;
+  width: 550px;
+  background-color: white;
+  border-radius: 20px;
+  background-image: url("./AboutPageImage/ABT/wc4.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  clip-path: polygon(6.65% 35.258%, 4.816% 34.959%, 4.205% 47.937%, 8.04% 60.376%, 15.376% 71.918%, 24.713% 86.689%, 26.658% 89.141%, 26.658% 91.653%, 27.825% 90.636%, 28.881% 91.653%, 28.881% 91.653%, 30.888% 91.932%, 32.649% 92.273%, 34.177% 92.661%, 35.483% 93.082%, 36.578% 93.52%, 37.476% 93.962%, 38.188% 94.394%, 38.726% 94.8%, 39.103% 95.167%, 39.329% 95.48%, 41.33% 94.882%, 43.664% 93.148%, 44.831% 94.045%, 50.778% 91.952%, 56.058% 87.168%, 58.392% 88.543%, 60.893% 85.732%, 63.505% 86.689%, 63.505% 86.689%, 63.621% 86.433%, 63.804% 86.138%, 64.06% 85.819%, 64.392% 85.489%, 64.804% 85.16%, 65.302% 84.845%, 65.889% 84.559%, 66.569% 84.313%, 67.348% 84.122%, 68.229% 83.998%, 68.229% 83.998%, 69.129% 83.967%, 69.961% 84.036%, 70.723% 84.187%, 71.412% 84.406%, 72.029% 84.675%, 72.571% 84.979%, 73.036% 85.301%, 73.422% 85.624%, 73.729% 85.933%, 73.953% 86.211%, 75.788% 81.845%, 77.066% 82.862%, 78.677% 82.862%, 79.845% 78.975%, 80.456% 79.692%, 82.068% 77.181%, 82.512% 77.779%, 83.957% 76.044%, 86.069% 73.353%, 87.681% 69.526%, 89.848% 67.313%, 91.404% 63.844%, 95.795% 63.844%, 92.238% 43.631%, 92.238% 43.631%, 92.046% 43.201%, 91.82% 42.688%, 91.57% 42.11%, 91.302% 41.485%, 91.028% 40.832%, 90.755% 40.169%, 90.491% 39.512%, 90.247% 38.882%, 90.029% 38.295%, 89.848% 37.77%, 89.848% 37.77%, 89.641% 37.225%, 89.35% 36.581%, 88.993% 35.863%, 88.586% 35.096%, 88.148% 34.305%, 87.694% 33.513%, 87.242% 32.745%, 86.809% 32.026%, 86.413% 31.381%, 86.069% 30.833%, 81.234% 21.145%, 74.843% 11.816%, 74.176% 9.304%, 72.397% 9.304%, 72.397% 9.304%, 71.884% 8.964%, 71.296% 8.605%, 70.659% 8.252%, 70.001% 7.928%, 69.346% 7.656%, 68.722% 7.462%, 68.156% 7.368%, 67.672% 7.399%, 67.299% 7.578%, 67.062% 7.929%, 67.062% 7.929%, 66.882% 8.332%, 66.668% 8.656%, 66.428% 8.91%, 66.17% 9.099%, 65.903% 9.232%, 65.636% 9.316%, 65.376% 9.358%, 65.133% 9.365%, 64.914% 9.344%, 64.728% 9.304%, 64.728% 9.304%, 63.938% 9.179%, 63.236% 8.9%, 62.615% 8.502%, 62.074% 8.022%, 61.609% 7.495%, 61.214% 6.957%, 60.888% 6.445%, 60.627% 5.993%, 60.426% 5.639%, 60.282% 5.417%, 60.282% 5.417%, 60.152% 5.315%, 59.958% 5.237%, 59.712% 5.181%, 59.427% 5.144%, 59.116% 5.124%, 58.792% 5.117%, 58.466% 5.122%, 58.153% 5.135%, 57.865% 5.155%, 57.614% 5.178%, 57.003% 5.776%, 54.446% 4.52%, 54.279% 4.998%, 52.89% 5.357%, 53.279% 7.749%, 51.223% 9.663%, 51.223% 9.663%, 50.913% 10.245%, 50.621% 10.958%, 50.349% 11.764%, 50.101% 12.621%, 49.882% 13.49%, 49.694% 14.33%, 49.542% 15.102%, 49.428% 15.764%, 49.358% 16.277%, 49.333% 16.6%, 49.333% 16.6%, 49.314% 16.756%, 49.261% 16.882%, 49.18% 16.981%, 49.077% 17.055%, 48.958% 17.107%, 48.829% 17.14%, 48.696% 17.157%, 48.565% 17.16%, 48.442% 17.153%, 48.333% 17.138%, 47.221% 15.882%, 43.386% 20.427%, 41.886% 19.171%, 41.219% 19.889%, 39.996% 19.53%, 38.885% 21.145%, 36.106% 21.145%, 33.772% 22.162%, 33.327% 20.846%, 32.438% 20.726%, 31.16% 22.939%, 30.771% 22.939%, 30.548% 23.956%, 28.381% 25.271%, 27.881% 25.092%, 27.492% 25.63%, 25.991% 22.162%, 25.046% 23.059%, 24.49% 22.939%, 22.212% 25.63%, 22.212% 25.63%, 22.155% 25.832%, 22.067% 26.035%, 21.955% 26.235%, 21.825% 26.429%, 21.682% 26.614%, 21.533% 26.788%, 21.383% 26.947%, 21.239% 27.088%, 21.105% 27.208%, 20.989% 27.305%, 19.377% 27.424%, 18.488% 27.424%, 17.877% 26.707%, 17.877% 26.707%, 17.846% 26.392%, 17.786% 26.107%, 17.701% 25.851%, 17.596% 25.625%, 17.478% 25.427%, 17.352% 25.257%, 17.223% 25.116%, 17.097% 25.001%, 16.98% 24.914%, 16.876% 24.853%, 16.765% 23.836%, 15.765% 25.81%, 14.542% 24.793%, 14.431% 25.092%, 14.153% 24.853%, 13.375% 24.793%, 13.597% 24.315%, 12.986% 24.255%, 12.264% 23.717%, 12.264% 23.717%, 12.228% 23.8%, 12.176% 23.892%, 12.109% 23.987%, 12.024% 24.08%, 11.923% 24.167%, 11.805% 24.241%, 11.669% 24.298%, 11.515% 24.332%, 11.343% 24.34%, 11.152% 24.315%, 11.152% 24.315%, 10.935% 24.292%, 10.689% 24.305%, 10.423% 24.35%, 10.144% 24.419%, 9.86% 24.507%, 9.579% 24.609%, 9.31% 24.718%, 9.061% 24.829%, 8.838% 24.935%, 8.651% 25.032%, 7.817% 25.032%, 7.039% 24.673%, 6.65% 25.511%, 7.039% 26.467%, 7.039% 26.467%, 7.011% 26.823%, 6.982% 27.231%, 6.957% 27.675%, 6.935% 28.135%, 6.921% 28.593%, 6.917% 29.033%, 6.924% 29.435%, 6.945% 29.781%, 6.983% 30.054%, 7.039% 30.235%, 7.039% 30.235%, 7.096% 30.404%, 7.134% 30.641%, 7.155% 30.935%, 7.162% 31.269%, 7.157% 31.63%, 7.143% 32.004%, 7.122% 32.376%, 7.096% 32.734%, 7.068% 33.061%, 7.039% 33.345%, 6.65% 33.345%, 6.762% 33.704%, 6.539% 34.062%, 6.65% 35.258%);
+  opacity: 0.1;
+  left: 10%;
+  top: 10%;
+  display: none;
 }
 .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
   height: 28px;
@@ -1150,38 +1169,23 @@
   position: relative;
 }
 .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three {
-  animation: img-slide-move linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-}
-@keyframes img-slide-move {
-  0% {
-    transform: translateX(150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+  transform: translateX(-100px);
+  opacity: 0;
+  transition-duration: 0.6s;
 }
 .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two {
-  animation: img-slide-move-two linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  transform: translateX(100px);
+  opacity: 0;
+  transition-duration: 0.6s;
 }
-@keyframes img-slide-move-two {
-  0% {
-    transform: translateX(-150px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+.about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .slider-move {
+  transform: translateX(0px);
+  opacity: 1;
+  transition-duration: 0.6s;
 }
 .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three {
   height: auto;
-  width: auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2242,6 +2246,534 @@
   }
   .about-page-course-container .about-page-course-box {
     height: 1200px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .about-page-course-container .why-showing-container {
+    padding: 120px 30px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container {
+    padding-left: 30px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .about-why-image-one {
+    height: 400px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .about-why-image-two {
+    height: 430px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 12px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 45px;
+    gap: 5px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar {
+    margin-top: 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 14px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    height: 105px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 16px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .about-why-image-one {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 40px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    height: 26px;
+    width: 140px;
+    font-size: 12px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    width: 250px;
+    height: 24px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar {
+    gap: 14px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container {
+    gap: 25px;
+  }
+  .about-page-course-container .why-showing-container {
+    padding: 100px 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 15px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    line-height: 18px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar {
+    gap: 3px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 40px;
+    width: 40px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide {
+    height: 16px;
+    width: 16px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    height: 95px;
+    width: 65%;
+    gap: 13px;
+    padding: 15px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .about-why-image-one {
+    width: 280px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .about-why-image-two {
+    height: 410px;
+    width: 90%;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div .para-for-why-small-box {
+    font-size: 14px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div .number-for-why-small-box .number-plus-for-small-box {
+    font-size: 26px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div .number-for-why-small-box {
+    font-size: 50px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div {
+    gap: 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar {
+    width: 100%;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 36px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    height: 24px;
+    width: 170px;
+    top: 40px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    height: 22px;
+    width: 120px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    font-size: 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 11px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container {
+    padding-left: 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 13px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 36px;
+    width: 36px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide {
+    height: 15px;
+    width: 15px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    height: 90px;
+    padding: 12px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .about-why-image-one {
+    width: 260px;
+    height: 350px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .about-why-image-two {
+    height: 370px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div {
+    padding: 8px 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div .para-for-why-small-box {
+    font-size: 13px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div .number-for-why-small-box .number-plus-for-small-box {
+    font-size: 24px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container .why-about-image-container-small-box .why-about-image-small-box-cont-div .number-for-why-small-box {
+    font-size: 45px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 9.5px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container {
+    margin-top: 80px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .about-why-image-one {
+    top: -80px;
+  }
+}
+@media screen and (max-width: 785px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 33px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    height: 22px;
+    width: 120px;
+    top: 30px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    font-size: 8.5px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    width: 110px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    width: 70%;
+    height: 85px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 90px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 12px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 33px;
+    width: 33px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide {
+    height: 14px;
+    width: 14px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .about-why-image-one {
+    width: 230px;
+    height: 320px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-image-container .why-image-container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 685px) {
+  .about-page-course-container .why-showing-container .about-page-why-image-container {
+    display: none;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 45px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    height: 28px;
+    width: 200px;
+    top: 40px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    width: 140px;
+    height: 25px;
+    font-size: 11px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 12.5px;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 16px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 37px;
+    width: 37px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide {
+    height: 16px;
+    width: 16px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    height: 100px;
+    padding: 15px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar {
+    gap: 8px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 100px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .about-why-image-design {
+    display: flex;
+  }
+}
+@media screen and (max-width: 585px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 40px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    width: 120px;
+    font-size: 10px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container {
+    padding-left: 0px;
+  }
+  .about-page-course-container .why-showing-container {
+    padding: 100px 13px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 15px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.8px;
+    line-height: 20px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar {
+    gap: 4px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    padding: 13px;
+    height: 95px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .about-why-image-design {
+    height: 690px;
+    width: 550px;
+    left: 1%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 36px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    width: 110px;
+    font-size: 9px;
+    font-family: "Inter";
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    height: 24px;
+    width: 130px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 10.5px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 9px;
+    letter-spacing: 0.6px;
+    line-height: 17px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 14px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    padding: 10px;
+    height: 90px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 34px;
+    width: 34px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .about-why-image-design {
+    left: -10%;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    top: 30px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 9.5px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 30px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    gap: 8px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    width: 80%;
+    height: 85px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .about-why-image-design {
+    height: 650px;
+    width: 450px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 13px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 8.5px;
+    font-family: "Inter";
+    letter-spacing: normal;
+    line-height: 16px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    height: 80px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 32px;
+    width: 32px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 27px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    width: 100px;
+    font-size: 8.5px;
+    height: 22px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    height: 21px;
+    width: 100px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 9px;
+    line-height: 19px;
+    width: 95%;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    width: 85%;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 40px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .about-page-course-container .why-showing-container .about-page-why-image-container {
+    display: none;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main {
+    font-size: 55px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-title-main .slide-about-tit-underline {
+    height: 40px;
+    width: 300px;
+    top: 40px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-indicator-in-about-page {
+    width: 160px;
+    height: 33px;
+    font-size: 15px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-title-bar .why-about-page-sub-main {
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 35px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-head, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-head {
+    font-size: 22px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar .why-cont-para, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar .why-cont-para {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image {
+    height: 55px;
+    width: 55px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-image-bar .why-about-page-image .img-in-why-about-slide, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-image-bar .why-about-page-image .img-in-why-about-slide {
+    height: 28px;
+    width: 28px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three {
+    height: 140px;
+    padding: 20px;
+    width: 73%;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-one .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-two .why-content-about-page-three .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-one .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-two .why-content-cont-bar, .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-container-three .why-content-about-page-three .why-content-cont-bar {
+    gap: 6px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .why-about-page-slide-bar .why-content-about-page-two {
+    margin-left: 130px;
+  }
+  .about-page-course-container .why-showing-container .about-page-why-content-container .about-why-image-design {
+    display: flex;
+    height: 1000px;
+    width: 1100px;
+    top: 0%;
+    left: -10%;
   }
 }
 
