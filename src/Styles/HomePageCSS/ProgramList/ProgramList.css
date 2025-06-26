@@ -2424,7 +2424,7 @@
     font-size: 9px;
   }
 }
-@media screen and (min-height: 900px) and (max-height: 989px) {
+@media screen and (min-height: 900px) and (max-height: 989px) and (max-width: 990px) {
   .program-list-main-container .program-list-title-container .program-list-para-one {
     font-size: 13px;
   }
@@ -2456,7 +2456,7 @@
     font-size: 11px;
   }
 }
-@media screen and (min-height: 990px) {
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
   .program-list-main-container .program-list-title-container {
     padding: 0px 30px;
   }
@@ -2510,7 +2510,7 @@
     gap: 25px;
   }
 }
-@media screen and (min-height: 990px) {
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
   .program-list-main-container .program-list-items-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2603,7 +2603,7 @@
     font-size: 15px;
   }
 }
-@media screen and (min-height: 990px) {
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
   .program-list-main-container .loading-icon-shows .loader-sym-container-forviewall .item-showing-in-loading-screen {
     height: 420px;
     width: 300px;

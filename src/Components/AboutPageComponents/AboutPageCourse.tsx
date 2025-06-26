@@ -59,7 +59,7 @@ const [gettitheight,setgettitheight]=useState(0)
   return (
     <div className='about-page-course-container'>
       <div className='about-page-course-box'>
-        <div style={{top:`-${gettitheight}px`}} className='about-page-program-list-mob'>
+        <div style={{top:`0px`}} className='about-page-program-list-mob'>
             <div className='abt-prog-list-tit-div-mob'>
                 <p className='abt-page-course-box-para'>Our <span className='span-in-prog-list-tit-abt-page'>Programs</span></p> 
                 <p className='span-prog-list-abt-tit'>At Mindspire, we offer a diverse range of programs designed to equip learners with in-demand skills and practical experience.Our courses are tailored to help you thrive in today’s competitive landscape.</p>

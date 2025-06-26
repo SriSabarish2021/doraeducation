@@ -155,7 +155,7 @@
 .about-us-container .about-us-image-container .about-image-box-one .about-us-image-cont-one .about-us-content-one-inner {
   height: 85%;
   width: 90%;
-  background-color: rgb(255, 68, 81);
+  background-color: rgb(255, 52, 66);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -358,7 +358,7 @@
 .about-us-container .about-us-content-container .about-us-title-bar .about-us-main-tit-div .span-tit-in-about-us {
   font-size: 45px;
   font-family: "Bonbon";
-  color: rgb(255, 68, 81);
+  color: rgb(255, 52, 66);
 }
 .about-us-container .about-us-content-container .about-us-title-bar .about-us-main-tit-div .about-us-underline-parent {
   position: relative;
