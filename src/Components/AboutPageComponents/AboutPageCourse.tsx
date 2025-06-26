@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import '../../Styles/AboutPageCSS/AboutPageCourse.css'
 import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
@@ -10,6 +10,17 @@ import { Image } from '@imagekit/react';
 import { Link } from 'react-router-dom';
 
 const AboutPageCourse = ({course}) => {
+
+const [gettitheight,setgettitheight]=useState(0)
+  useEffect(() => {
+    
+    const getheight=document.querySelector('.abt-prog-list-tit-div-mob')
+  setgettitheight(Number(getheight?.getBoundingClientRect().height)+0)
+    return () => {
+      setgettitheight(0)
+    }
+  }, [])
+  
   
   useEffect(() => {
 
@@ -47,8 +58,40 @@ const AboutPageCourse = ({course}) => {
   
   return (
     <div className='about-page-course-container'>
-   {/*    <div className='about-page-course-box'>
-        
+      <div className='about-page-course-box'>
+        <div style={{top:`-${gettitheight}px`}} className='about-page-program-list-mob'>
+            <div className='abt-prog-list-tit-div-mob'>
+                <p className='abt-page-course-box-para'>Our <span className='span-in-prog-list-tit-abt-page'>Programs</span></p> 
+                <p className='span-prog-list-abt-tit'>At Mindspire, we offer a diverse range of programs designed to equip learners with in-demand skills and practical experience.Our courses are tailored to help you thrive in today’s competitive landscape.</p>
+                <Link style={{textDecoration:'none'}} to={"/Providing-Education's-in-Mindspire-Institute"} className='abt-page-btn-prog-list'>More Course <FaArrowRight className='right-arrow-icon'/>
+                <div className='abt-page-prog-list-btn-one-des'></div>
+                <div className='abt-page-prog-list-btn-two-des'></div>
+                </Link>
+            </div>
+            <div className='prog-list-mobile-item'>
+          
+              {Array.from(course).slice(-3).map((indicourseabtpage,index)=>
+                <div className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==1?'prog-item-mobile':Number(index)==2?'prog-two-ani-abt-page':''}`}>
+                  <div className='about-page-prog-img' style={{backgroundImage:`url(${indicourseabtpage.courseIMG})`}}></div>
+                  <div className='about-page-prog-cont'>
+                    <div className='level-in-prog-ab-list'>{indicourseabtpage.studyLevel}</div>
+                    <div className='prog-list-abt-page-cont-div'>
+                      <p className='prog-abt-page-title'>{indicourseabtpage.courseName}</p>
+                      <p className='prog-abt-page-cont'>{indicourseabtpage.CourseIntro}</p>
+                    </div>
+                    
+                    <div className='addi-info-prog-list-abt-page'>
+                      <p className='addi-info-cont-one'><PiClock className='icon-prog-list-abt-page'/>{indicourseabtpage.CourseDuration}</p>
+                      <p className='addi-info-cont-two'><PiReadCvLogo className='icon-prog-list-abt-page'/>5+ Credits</p>
+                      <Link style={{textDecoration:'none'}} to={`/mindspire-course/#${indicourseabtpage.courseName}`} className='addi-info-cont-btn'>Apply
+                        <div className='abt-page-prog-list-btn-design'></div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+         </div>
          <div className='about-page-program-list'>
           <div className='abt-prog-list-tit-div'>
                <p className='abt-page-course-box-para'>Our <span className='span-in-prog-list-tit-abt-page'>Programs</span></p> 
@@ -59,30 +102,30 @@ const AboutPageCourse = ({course}) => {
                </Link>
           </div>
         
-        {Array.from(course).slice(-3).map((indicourseabtpage,index)=>
-          <div className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==2?'prog-two-ani-abt-page':''}`}>
-            <div className='about-page-prog-img' style={{backgroundImage:`url(${indicourseabtpage.courseIMG})`}}></div>
-            <div className='about-page-prog-cont'>
-              <div className='level-in-prog-ab-list'>{indicourseabtpage.studyLevel}</div>
-              <div className='prog-list-abt-page-cont-div'>
-                <p className='prog-abt-page-title'>{indicourseabtpage.courseName}</p>
-                <p className='prog-abt-page-cont'>{indicourseabtpage.CourseIntro}</p>
+            {Array.from(course).slice(-3).map((indicourseabtpage,index)=>
+              <div className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==2?'prog-two-ani-abt-page':''}`}>
+                <div className='about-page-prog-img' style={{backgroundImage:`url(${indicourseabtpage.courseIMG})`}}></div>
+                <div className='about-page-prog-cont'>
+                  <div className='level-in-prog-ab-list'>{indicourseabtpage.studyLevel}</div>
+                  <div className='prog-list-abt-page-cont-div'>
+                    <p className='prog-abt-page-title'>{indicourseabtpage.courseName}</p>
+                    <p className='prog-abt-page-cont'>{indicourseabtpage.CourseIntro}</p>
+                  </div>
+                  
+                  <div className='addi-info-prog-list-abt-page'>
+                    <p className='addi-info-cont-one'><PiClock className='icon-prog-list-abt-page'/>{indicourseabtpage.CourseDuration}</p>
+                    <p className='addi-info-cont-two'><PiReadCvLogo className='icon-prog-list-abt-page'/>5+ Credits</p>
+                    <Link style={{textDecoration:'none'}} to={`/mindspire-course/#${indicourseabtpage.courseName}`} className='addi-info-cont-btn'>Apply
+                      <div className='abt-page-prog-list-btn-design'></div>
+                    </Link>
+                  </div>
+                </div>
               </div>
-              
-              <div className='addi-info-prog-list-abt-page'>
-                <p className='addi-info-cont-one'><PiClock className='icon-prog-list-abt-page'/>{indicourseabtpage.CourseDuration}</p>
-                <p className='addi-info-cont-two'><PiReadCvLogo className='icon-prog-list-abt-page'/>5+ Credits</p>
-                <Link style={{textDecoration:'none'}} to={`/mindspire-course/#${indicourseabtpage.courseName}`} className='addi-info-cont-btn'>Apply
-                  <div className='abt-page-prog-list-btn-design'></div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
+            )}
 
          </div>
-      </div> */}
-      <div className='about-page-analysis-box'>
+      </div> 
+     {/*   <div className='about-page-analysis-box'>
         
         <div className='about-page-analysis-content'>
           
@@ -116,8 +159,8 @@ const AboutPageCourse = ({course}) => {
         </div>
         <div className='div-for-about-analysis-design'></div>
          <div className='div-for-about-analysis-design-two'></div>
-      </div>
-      {/* <div className='why-showing-container'>
+      </div> 
+     <div className='why-showing-container'>
         <div className='about-page-why-image-container'>
           <div className='about-why-image-one'></div>
           <div className='why-image-container'>

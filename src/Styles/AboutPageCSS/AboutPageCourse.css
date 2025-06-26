@@ -144,6 +144,118 @@
   transition-duration: 0.3s;
   transition-timing-function: linear;
 }
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para {
+  align-items: flex-start;
+  font-size: 50px;
+  font-family: "Averia Libre";
+  font-weight: 600;
+  color: rgb(49, 49, 49);
+  color: white;
+  font-size: 40px;
+  gap: 0px;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para .span-in-prog-list-tit-abt-page {
+  font-family: "Imperial Script";
+  font-size: 55px;
+  color: rgb(255, 203, 30);
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .span-prog-list-abt-tit {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  width: 80%;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list {
+  height: 40px;
+  width: 180px;
+  background-color: rgb(255, 74, 74);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list .abt-page-prog-list-btn-one-des {
+  position: absolute;
+  height: 0%;
+  width: 50%;
+  z-index: -1;
+  right: 0px;
+  background-color: rgb(255, 203, 30);
+  top: 0px;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list .abt-page-prog-list-btn-two-des {
+  position: absolute;
+  height: 0%;
+  width: 50%;
+  z-index: -1;
+  left: 0px;
+  background-color: rgb(255, 203, 30);
+  bottom: 0px;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list .right-arrow-icon {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(255, 203, 30);
+  border-radius: 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list:hover {
+  color: rgb(36, 36, 36);
+  font-weight: 900;
+  transition-duration: 0.3s;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list:hover .abt-page-prog-list-btn-one-des {
+  height: 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list:hover .abt-page-prog-list-btn-two-des {
+  height: 100%;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+.about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list:hover .right-arrow-icon {
+  color: white;
+  background-color: rgb(255, 74, 74);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
 .about-page-course-container .about-page-course-box .about-page-program-list {
   height: auto;
   width: 100%;
@@ -332,6 +444,214 @@
 @keyframes list-move-two {
   0% {
     transform: translateX(-300px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob {
+  height: auto;
+  width: 100%;
+  position: sticky;
+  padding: 50px 60px;
+  margin-top: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  display: none;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+  height: 400px;
+  width: 270px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-img {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 45%;
+  background-color: aqua;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 15px;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+  height: auto;
+  width: auto;
+  flex: 1 1 15%;
+  padding: 6px 16px;
+  font-size: 10px;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  background-color: rgb(255, 89, 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div {
+  height: auto;
+  width: 100%;
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-items: flex-start;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-title {
+  font-size: 20px;
+  font-family: "Saira";
+  font-weight: 600;
+  color: rgb(41, 41, 41);
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: justify;
+  font-weight: 400;
+  font-family: "Roboto";
+  color: rgb(67, 67, 67);
+  line-height: 20px;
+  font-size: 11px;
+  height: 100%;
+  color: rgb(26, 26, 26);
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page {
+  height: auto;
+  width: 100%;
+  flex: 1 1 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0px;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+  font-size: 12px;
+  color: #103B43;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+  height: 30px;
+  width: 90px;
+  font-size: 12px;
+  font-family: "Roboto";
+  border-radius: 5px;
+  background-color: rgb(255, 203, 30);
+  border: none;
+  color: rgb(49, 49, 49);
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.3s;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn .abt-page-prog-list-btn-design {
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0px;
+  background-color: rgb(255, 74, 74);
+  transition-duration: 0.3s;
+  z-index: -1;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn:hover {
+  color: white;
+  transition-duration: 0.3s;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn:hover .abt-page-prog-list-btn-design {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  background-color: rgb(255, 74, 74);
+  transition-duration: 0.3s;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .prog-one-ani-abt-page {
+  z-index: -1;
+  animation: list-move-one linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+.about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .prog-two-ani-abt-page {
+  z-index: -1;
+  animation: list-move-two linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+@keyframes list-move-one {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes list-move-two {
+  0% {
+    transform: translateX(-200px);
     opacity: 0;
   }
   30% {
@@ -1412,6 +1732,474 @@
   }
   .about-page-course-container .about-page-analysis-box {
     height: 130dvh;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list {
+    padding: 50px 30px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 12px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 34px;
+    width: 90px;
+    font-size: 13px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 12.5px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 16px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list {
+    padding: 50px 15px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .span-prog-list-abt-tit {
+    font-size: 11.5px;
+    line-height: 28px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-course-box-para .span-in-prog-list-tit-abt-page {
+    font-size: 50px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-course-box-para {
+    font-size: 30px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-btn-prog-list {
+    height: 43px;
+    width: 170px;
+    font-size: 13px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-btn-prog-list .right-arrow-icon {
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list {
+    gap: 20px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one {
+    height: 440px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 30px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-course-box-para {
+    font-size: 26px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-course-box-para .span-in-prog-list-tit-abt-page {
+    font-size: 44px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .span-prog-list-abt-tit {
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-btn-prog-list {
+    height: 40px;
+    width: 150px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div .abt-page-btn-prog-list .right-arrow-icon {
+    height: 18px;
+    width: 18px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont {
+    padding: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one {
+    height: 400px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 5px 10px;
+    font-size: 9px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 10.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont {
+    gap: 15px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 14px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 26px;
+    width: 70px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one {
+    height: 380px;
+  }
+  .about-page-course-container .about-page-course-box {
+    height: 1400px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list {
+    display: none;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob {
+    display: flex;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob {
+    margin-top: 220px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob {
+    padding: 50px 10px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item {
+    gap: 15px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 12px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 26px;
+    width: 70px;
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .span-prog-list-abt-tit {
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 10.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 380px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-img {
+    flex: 1 1 50%;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    flex: 1 1 50%;
+    gap: 10px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para .span-in-prog-list-tit-abt-page {
+    font-size: 52px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para {
+    font-size: 36px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob {
+    gap: 15px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list {
+    margin-top: 20px;
+    height: 36px;
+    width: 160px;
+    font-size: 12px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list .right-arrow-icon {
+    height: 18px;
+    width: 18px;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 360px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    line-height: 19px;
+    letter-spacing: 0.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 5px 15px;
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 340px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 9.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div {
+    gap: 4px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 22px;
+    width: 50px;
+    font-size: 9px;
+    border-radius: 3px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 9.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    padding: 8px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 4.5px 14px;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-page-course-container .about-page-course-box {
+    height: 1000px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob {
+    margin-top: 160px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .prog-item-mobile {
+    display: none;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 360px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-img {
+    flex: 1 1 45%;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    padding: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 13px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 5px 15px;
+    font-size: 9px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 24px;
+    width: 75px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-title {
+    font-size: 22px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 10.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div {
+    gap: 4px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    display: none;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 13px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 15px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 25px;
+    width: 95px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .span-prog-list-abt-tit {
+    width: 90%;
+    font-size: 9.5px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 340px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    padding: 6px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 5px 14px;
+    font-size: 8.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-title {
+    font-size: 20px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 9.5px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    display: none;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 12px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 13px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 24px;
+    width: 90px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item {
+    gap: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 320px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    padding: 6px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 5px 14px;
+    font-size: 8px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-title {
+    font-size: 18px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 9px;
+    line-height: 17px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    display: none;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 12px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 23px;
+    width: 80px;
+    font-size: 10px;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one {
+    height: 260px;
+    border-radius: 6px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .prog-list-abt-page-cont-div .prog-abt-page-cont {
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .level-in-prog-ab-list {
+    padding: 5px 12px;
+    font-size: 7px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont {
+    gap: 6px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    display: none;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two {
+    font-size: 10px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-one .icon-prog-list-abt-page, .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-two .icon-prog-list-abt-page {
+    font-size: 11px;
+  }
+  .about-page-course-container .about-page-course-box .about-page-program-list-mob .prog-list-mobile-item .about-page-prog-one .about-page-prog-cont .addi-info-prog-list-abt-page .addi-info-cont-btn {
+    height: 22px;
+    width: 70px;
+    font-size: 9.5px;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para {
+    font-size: 31px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para .span-in-prog-list-tit-abt-page {
+    font-size: 50px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .span-prog-list-abt-tit {
+    font-size: 9px;
+    width: 96%;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob {
+    gap: 12px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list {
+    height: 34px;
+    width: 140px;
+    font-size: 11px;
+    margin-top: 15px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list .right-arrow-icon {
+    height: 16px;
+    width: 16px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .span-prog-list-abt-tit {
+    font-size: 8px;
+    width: 98%;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-course-box-para .span-in-prog-list-tit-abt-page {
+    font-size: 46px;
+  }
+  .about-page-course-container .about-page-course-box .abt-prog-list-tit-div-mob .abt-page-btn-prog-list {
+    height: 33px;
+    width: 120px;
+    font-size: 10px;
   }
 }
 
