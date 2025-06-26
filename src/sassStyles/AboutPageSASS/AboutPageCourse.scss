@@ -527,6 +527,18 @@
                 background-size: contain;
                 top: 5%;
                 right: 200px;
+            } .div-for-about-analysis-design-two{
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                z-index: -1;
+                @include bg-img-center.bg-img-center('./WhyChoose/shaky-line 3.png');
+                background-size: contain;
+                top: 5%;
+                left: 0px;
+                transform: rotate(100deg);
+                opacity: 0.4;
+                display: none;
             }
      }
 
@@ -1007,7 +1019,7 @@
 
 @media screen and  (max-width:860px) {
     .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-two,.about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-one{
-        font-size: 36px;
+        font-size: 38px;
     }
     .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-analysis-sub-head-para{
         font-size: 10.5px;
@@ -1017,8 +1029,8 @@
         right: 100px;
     }
       .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
-        height: 590px;
-        width: 700px;
+        height: 610px;
+        width: 750px;
     }
     .about-page-course-container .about-page-analysis-box{
         height: 150dvh;
@@ -1038,11 +1050,17 @@
         font-size: 11px;
     }
     .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design{
-        height: 120px;
-        width: 120px;
+        height: 130px;
+        width: 130px;
     }
 }
 
+
+@media screen and  (max-width:765px) {
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-two,.about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-one{
+        font-size: 36px;
+    }
+}
 
 
 @media screen and  (max-width:730px) {
@@ -1090,13 +1108,14 @@
         width: 45%;
     }
      .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
-        width:700px;
-        height: 610px;
+        width:670px;
+        height: 600px;
         object-fit: cover;
     }
     .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design{
         right: 30px;
     }
+   
 }
 
 @media screen and  (max-width:590px) {
@@ -1128,7 +1147,7 @@
 @media screen and  (max-width:545px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
         width: 600px;
-        height: 550px;
+        height: 600px;
     }
     .about-page-course-container .about-page-analysis-box .about-page-analysis-content{
         width: 55%;
@@ -1140,8 +1159,11 @@
 
 @media screen and  (max-width:505px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
-        width: 550px;
-        height: 550px;
+        width: 580px;
+        height: 580px;
+    }
+    .about-page-course-container .about-page-analysis-box{
+        height: 145dvh;
     }
     .about-page-course-container .about-page-analysis-box .analysis-design-two-about-page{
         left: 10%;
@@ -1150,25 +1172,27 @@
         top: 15%;
     }
     .about-page-course-container .about-page-analysis-box .analysis-design-one-about-page, .about-page-course-container .about-page-analysis-box .analysis-design-two-about-page, .about-page-course-container .about-page-analysis-box .analysis-design-three-about-page{
-        height: 100px;
-        width: 90px;
+        height: 115px;
+        width: 100px;
     }
     .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one .span-for-analysisi-one-para-one{
-        font-size: 30px;
+        font-size: 37px;
     }
     .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one{
-        font-size: 20px;
+        font-size: 22px;
     }
     .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one{
         gap: 5px;
     }
     .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-two{
-        font-size: 8px;
+        font-size:9px;
     }
     .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design{
-        height: 90px;
-        width: 90px;
+        height: 110px;
+        width: 110px;
 
+    }.about-page-course-container .about-page-analysis-box .analysis-design-one-about-page{
+        left: 2%;
     }
 }
 
@@ -1189,22 +1213,31 @@
     }
 }
 
+@media screen and  (max-width:400px) {
+.about-page-course-container .about-page-analysis-box .analysis-design-one-about-page{
+        top: 40%;
+    }
+    .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design-two{
+        display: flex;
+    }
+}
 
 @media screen and  (max-width:380px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content{
         width: 65%;
     }
-    .about-page-course-container .about-page-analysis-box .analysis-design-one-about-page, .about-page-course-container .about-page-analysis-box .analysis-design-two-about-page, .about-page-course-container .about-page-analysis-box .analysis-design-three-about-page{
-        width: 75px;
+   .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design{
+    height: 90px;
+    width: 90px;
+    right: 10px;
+   }
+    .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design-two{
+        height: 230px;
+        width: 200px;
+        left: -10px;transform: rotate(110deg);
     }
-    .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one .span-for-analysisi-one-para-one{
-        font-size: 27px;
-    }
-    .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one{
-        font-size: 18px;
-    }
-    .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-two{
-        font-size: 7px;
+    .about-page-course-container .about-page-analysis-box{
+        height: 140dvh;
     }
 }
 
@@ -1215,35 +1248,148 @@
     .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design{
         right: 10px;
     }
+    .about-page-course-container .about-page-analysis-box .analysis-design-three-about-page{
+        top: 35%;
+    }
+    .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design-two{
+        height: 200px;
+        width: 160px;
+    }
+    .about-page-course-container .about-page-analysis-box .analysis-design-one-about-page{
+        display:none;
+    }
+    .about-page-course-container .about-page-analysis-box .analysis-design-two-about-page{
+        bottom: 10%;
+    }
+}
+
+@media screen and  (max-height:590px) and (max-width:600px) {
+    .about-page-course-container .about-page-analysis-box{
+        height: 160dvh;
+    }
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
+        width: 600px;
+        height: 500px;
+    }
 }
 
 
-@media screen and (min-height:600px) and (max-height:700px) {
+@media screen and (min-height:630px) and (max-height:700px) and (max-width:600px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
-        width: 550px;
+        width: 600px;
         height: 600px;
     }
 }
 
-@media screen and (min-height:700px) and (max-height:800px) {
+@media screen and (min-height:701px) and (max-height:800px) and (max-width:600px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
-        width: 450px;
-        height: 760px;
+        width: 600px;
+        height: 680px;
         bottom: 0px;
     }
+    .about-page-course-container .about-page-analysis-box{
+        height: 130dvh;
+    }
 }
-@media screen and (min-height:800px) and (max-height:900px) {
+@media screen and (min-height:801px) and (max-height:900px) and (max-width:600px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
-        width: 550px;
-        height: 770px;
+        width: 600px;
+        height: 730px;
         bottom: 0px;
+    }
+    .about-page-course-container .about-page-analysis-box{
+        height: 130dvh;
     }
 }
 
-@media screen and (min-height:900px) and (max-height:980px) {
+@media screen and (min-height:900px) and (max-height:980px) and (max-width:600px) {
  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
         width: 650px;
         height: 880px;
         bottom: 0px;
+    }
+}
+
+
+@media screen and (min-height:981px) and (max-height:1400px) and (max-width:950px) {
+    .about-page-course-container .about-page-analysis-box .analysis-design-one-about-page{
+        top: 35%;
+    }
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content{
+        width:60%;
+    }
+    .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design-two{
+        display: block;
+        height: 340px;
+        width: 350px;
+    }
+    .about-page-course-container .about-page-analysis-box .div-for-about-analysis-design{
+        height: 200px;
+        width: 200px;
+        right: 10px;
+    }
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-two, .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-one{
+        font-size:58px;
+    }
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-page-analysis-head .about-analysis-head-para-two .best-time-tit .design-div-for-best-time-tit{
+        height: 30px;
+        width: 200px;
+    }
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing .about-analysis-sub-head-para{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-content-showing{
+        gap: 40px;
+    }
+    .about-page-course-container .about-page-analysis-box .analysis-design-one-about-page, .about-page-course-container .about-page-analysis-box .analysis-design-two-about-page, .about-page-course-container .about-page-analysis-box .analysis-design-three-about-page{
+        height: 180px;
+        width: 170px;
+    }
+    .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one .span-for-analysisi-one-para-one{
+        font-size: 70px;
+    }
+    .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-two{
+        font-size: 15px;
+    }
+    .about-page-course-container .about-page-analysis-box .analysis-about-page-one-para-one{
+        font-size: 40px;
+    }
+  
+}
+@media screen and (min-height:981px) and (max-height:1100px) and (max-width:950px) {
+  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
+        object-fit: cover;
+        height: 950px;
+        width: 1300px;
+    }
+}
+@media screen and (min-height:1101px) and (max-height:1200px) and (max-width:950px) {
+  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
+        object-fit: cover;
+        height: 1200px;
+        width: 1400px;
+    }
+}
+
+@media screen and (min-height:1201px) and (max-height:1300px) and (max-width:950px) {
+  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
+        object-fit: cover;
+        height: 1200px;
+        width: 1400px;
+    }
+      .about-page-course-container .about-page-analysis-box{
+        height: 130dvh;
+    }
+}
+
+@media screen and (min-height:1301px) and (max-height:1400px) and (max-width:950px) {
+  .about-page-course-container .about-page-analysis-box .about-page-analysis-content .about-page-analysis-imgae-design{
+        object-fit: cover;
+        height: 1400px;
+        width: 1600px;
+    }
+      .about-page-course-container .about-page-analysis-box{
+        height: 130dvh;
     }
 }

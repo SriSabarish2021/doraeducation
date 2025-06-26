@@ -94,7 +94,7 @@ const AboutPageCourse = ({course}) => {
             <p className='about-analysis-sub-head-para'>Explore university’s 20+ courses across various specialisations that
               provoke intellectual and intuitive learning among students.</p>
           </div>
-          <div ></div>
+         
            <Image
             urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
             src="/cta6.webp"
@@ -115,9 +115,9 @@ const AboutPageCourse = ({course}) => {
           <p className='analysis-about-page-one-para-two'>years of <span className='span-for-analysisi-one-para-two'>Experience</span></p>
         </div>
         <div className='div-for-about-analysis-design'></div>
-        
+         <div className='div-for-about-analysis-design-two'></div>
       </div>
-      <div className='why-showing-container'>
+      {/* <div className='why-showing-container'>
         <div className='about-page-why-image-container'>
           <div className='about-why-image-one'></div>
           <div className='why-image-container'>
@@ -191,7 +191,7 @@ const AboutPageCourse = ({course}) => {
             
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
