@@ -22,6 +22,8 @@ const AboutTop = ({course}) => {
     useEffect(() => {
         
         const scrollContainer = scrollRefAbout.current;
+
+        const gettotalwidth=document.querySelector('.student-testimonial-in-about-page')
     
       const timer = setInterval(() => {
         if (scrollContainer) {
@@ -32,7 +34,7 @@ const AboutTop = ({course}) => {
             scrollContainer.scrollLeft = 0;
           } else {
             
-            scrollContainer.scrollLeft += 500;
+            scrollContainer.scrollLeft +=Number(gettotalwidth?.getBoundingClientRect().width)+50;
           }
         }
       }, 5000);
@@ -136,6 +138,13 @@ const AboutTop = ({course}) => {
                     alt="Student Image"
                     className='about-top-image-style-two'
                     />
+                     <Image
+                    urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    src="/hero6_2.webp"
+                    alt="Student Image"
+                    className='about-top-image-style-three'
+                    />
+                     
             </div>
         </div>
        {/*   <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
