@@ -94,7 +94,7 @@ const AboutTop = ({course}) => {
 
   return (
     <div className='about-page-top-container'>
-        {/* <div className='about-top-image-container'>
+       <div className='about-top-image-container'>
             <div className='top-about-image-content-container'>
                 <div className='about-top-main-title'>
                     <p>Your Top Choice</p>
@@ -138,7 +138,7 @@ const AboutTop = ({course}) => {
                     />
             </div>
         </div>
-        <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+       {/*   <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
             <div className='about-special-design'></div>
             <div className='about-special-design-one' style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
             <div className='about-special-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
@@ -186,7 +186,7 @@ const AboutTop = ({course}) => {
                     <p className='about-side-para-two'>Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio, and the ability to land your dream job.</p>
                 </div>
             </div>
-        </div> */}
+        </div> 
         <div className='about-top-information-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
             <div className='about-top-information-design' ></div>
             <div className='about-top-information-design-three' ></div>
@@ -260,7 +260,7 @@ const AboutTop = ({course}) => {
                    
                 </div>
             </div>
-        </div>
+        </div>*/}
     </div>
   )
 }
