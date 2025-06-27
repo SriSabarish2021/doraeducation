@@ -7,6 +7,18 @@ import { Image } from '@imagekit/react';
 const AboutTop = ({course}) => {
     const scrollRefAbout = useRef<HTMLDivElement>(null);
 
+
+    const [abouttopwidth,setabouttopwidth]=useState(0)
+
+    useEffect(() => {
+      setabouttopwidth(window.innerWidth)
+    
+      return () => {
+        setabouttopwidth(0)
+      }
+    }, [])
+    
+
     useEffect(() => {
         
         const scrollContainer = scrollRefAbout.current;
@@ -177,6 +189,7 @@ const AboutTop = ({course}) => {
         </div> */}
         <div className='about-top-information-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
             <div className='about-top-information-design' ></div>
+            <div className='about-top-information-design-three' ></div>
             <div className='div-for-design'><div className='div-for-inner-design'  style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div></div>
             <div className='about-top-information-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
             <div className='about-information-image-div'>
@@ -202,7 +215,7 @@ const AboutTop = ({course}) => {
                 </div>
                 <div className='about-information-main-content'>
                     <div className='about-information-cont-div-one'>
-                        <p>Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.</p>
+                        <p>{abouttopwidth<600?String('Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.').slice(0,200)+'...':'Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.'}</p>
                     </div>
                     <div className='student-image-and-number'>
                         <div className='student-image-bar'>

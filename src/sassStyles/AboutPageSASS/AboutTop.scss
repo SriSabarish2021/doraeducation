@@ -458,6 +458,17 @@
            }
 
         }
+        .about-top-information-design-three{
+            position: absolute;
+            display: none;
+            height: 250px;
+            width: 250px;
+           @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/book3.webp');
+           top: 0px;
+           left: 0px;
+          
+
+        }
          .about-top-information-design-two{
             position: absolute;
             height: 200px;
@@ -1104,19 +1115,20 @@
 .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 26px;
 }
 .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-one-head-tit{
     font-size: 20px;
 }
 .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-cont{
-    font-size: 12px;
-    letter-spacing: 1px ;
-    line-height: 24px;
+    font-size: 13px;
+    letter-spacing: 0.3px ;
+    line-height: 22px;
+    width: 90%;
 }
 .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
     border-bottom: 1px solid rgb(210, 210, 210);
-    padding-bottom: 30px;
+    padding-bottom: 26px;
     border-right: none;
 }
 .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-two, .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
@@ -1125,5 +1137,497 @@
 .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
     width: 80%;
     padding-left: 50px;
+}
+    .about-page-top-container .about-top-information-container .about-top-information-design-two{
+        right: 10px;z-index: -1;
+    }
+    .about-page-top-container .about-top-information-container{
+        padding: 70px 10px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        width: 100%;
+        padding: 20px 40px ;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        gap: 30px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        font-size: 11px;
+        line-height: 22px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-info-one-img{
+        height: 40px;
+        width: 40px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-btn{
+        font-size: 12px;
+        height: 35px;
+        width: 140px;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design-two{
+        height: 110px;
+        width: 110px;
+        top: 30px;
+    }
+}
+
+
+@media screen and  (max-width:700px) {
+    .about-page-top-container .about-top-information-container .about-information-image-div{
+        display: none;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design{
+        z-index: -1;
+    }
+
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 45px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .about-infor-para-span{
+        font-size: 50px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .education-underline-about-page .education-underline-img{
+        height: 30px;
+        width: 200px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        font-size: 13.5px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        width: 90%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        padding-left: 35px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        gap: 35px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img{
+        height: 46px;
+        width: 46px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-two-abt{
+        left: 30px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-three-abt{
+        left: 60px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-four-abt{
+        left: 90px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-five-abt{
+        left: 120px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number{
+        gap: 15px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para .stud-img-num-span{
+        font-size: 36px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para{
+        font-size: 13px;
+    }
+    .about-page-top-container .about-top-information-container .div-for-design{
+        height: 60px;
+        width: 60px;
+        top: 45%;
+        left: 50%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-btn{
+        height: 40px;
+        width: 150px;
+        font-size: 13.5px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-one-head-tit{
+        font-size: 22px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-info-one-img{
+        height:45px;
+        width:45px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-two, .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        gap: 8px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        width: 75%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-cont{
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        gap: 23px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        padding-bottom: 23px;
+    }
+    .about-page-top-container .about-top-information-container{
+        height: auto;
+    }
+    .about-page-top-container .about-top-information-container{
+        padding: 60px 10px;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design-two{
+        height: 130px;
+        width: 130px;
+        top: 110px;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design{
+        height: 160px;
+        width: 160px;
+    }
+    
+}
+
+
+@media screen and  (max-width:580px) {
+.about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 40px;
+    }.about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .about-infor-para-span{
+        font-size: 45px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        padding-left: 30px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .about-page-top-container .about-top-information-container .div-for-design{
+        top: 38%;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design{
+        height: 140px;
+        width: 140px;
+    }
+}
+
+@media screen and  (max-width:560px) {
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        width: 85%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-one-head-tit{
+        font-size: 21px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-cont{
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-info-one-img{
+        height: 40px;
+        width: 40px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        padding: 20px;
+    }
+    .about-page-top-container .about-top-information-container .div-for-design{
+        height: 45px;
+        width: 45px;
+
+    }
+}
+
+
+@media screen and  (max-width:520px) {
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 35px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .about-infor-para-span{
+        font-size: 40px
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .education-underline-about-page .education-underline-img{
+        height: 25px;
+        width: 140px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        padding-left: 20px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        gap: 30px;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design-two{
+        height: 130px;
+        width: 110px;
+    }
+}
+
+
+
+@media screen and  (max-width:440px) {
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 32px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        font-size: 11px;
+        line-height: 23px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img{
+        height: 43px;
+        width: 43px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-two-abt{
+        left: 25px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-three-abt{
+        left: 50px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-four-abt{
+        left: 75px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-five-abt{
+        left: 100px;
+    }
+    .about-page-top-container .about-top-information-container .div-for-design{
+        left: 60%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        width: 90%;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design{
+        display: none;
+    }
+     .about-page-top-container .about-top-information-container .about-top-information-design-three{
+        display: flex;
+        z-index: -1;
+        top: auto;
+        bottom: 20%;
+        opacity: 0.1;
+        height: 280px;
+        width: 280px;
+        left: 10%;
+    }
+}
+
+
+@media screen and  (max-width:400px) {
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 30px;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design-two{
+        top: 40px;
+        height: 110px;
+        width:100px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        padding:15px 5px;
+        gap: 20px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        padding-bottom: 20px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        padding-left: 10px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-btn{
+        height: 35px;
+        width: 130px;
+        font-size: 12px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para .stud-img-num-span{
+        font-size: 34px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para{
+        font-size: 12px;
+    }
+}
+
+@media screen and  (max-width:372px) {
+
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .about-infor-para-span{
+        font-size: 30px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 27px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .education-underline-about-page .education-underline-img{
+        height: 23px;
+        width: 120px;
+
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        line-height: 20px;
+        font-size: 10.5px;
+        font-family: 'Inter';
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        gap: 25px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-one-head-tit{
+        font-size: 20px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-cont{
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-two, .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        gap: 5px;
+    }
+}
+
+
+@media screen and  (max-width:340px) {
+    .about-page-top-container .about-top-information-container{
+        padding: 50px 10px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 25px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        width: 95%;
+        line-height: 18px;
+    }
+    .about-page-top-container .about-top-information-container .div-for-design{
+        left: 65%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-cont{
+        line-height: 20px;
+        font-size: 11px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para{
+        font-size: 11px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-btn{
+        font-size: 11px;
+        height: 30px;
+    }
+}
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+       .about-page-top-container .about-top-information-container .about-information-image-div{
+        display: none;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design{
+        z-index: -1;
+    }
+
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div{
+        font-size: 60px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .about-infor-para-span{
+        font-size: 60px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-top-div .education-underline-about-page .education-underline-img{
+        height: 40px;
+        width: 250px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-cont-div-one{
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 1px;
+        width: 90%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        padding-left: 35px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content{
+        gap: 45px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img{
+        height: 70px;
+        width: 70px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-two-abt{
+        left: 45px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-three-abt{
+        left: 90px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-four-abt{
+        left: 135px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .student-image-bar .stud-img-five-abt{
+        left: 175px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number{
+        gap: 20px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para .stud-img-num-span{
+        font-size: 60px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .student-image-and-number .stud-img-num-para{
+        font-size: 18px;
+    }
+   
+    .about-page-top-container .about-top-information-container .div-for-design{
+        height:80px;
+        width:80px;
+        top: 40%;
+        left: 65%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-information-btn{
+        height: 50px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-one-head-tit{
+        font-size: 32px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head .staff-info-one-img{
+        height:65px;
+        width:65px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-two, .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        gap: 10px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        width: 90%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-cont{
+        font-size: 21px;
+        line-height: 35px;
+        letter-spacing: 1px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        gap: 28px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        padding-bottom: 28px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-info-one-head{
+        gap: 28px;
+    }
+    .about-page-top-container .about-top-information-container{
+        height: auto;
+    }
+    .about-page-top-container .about-top-information-container{
+        padding: 60px 10px;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+        border-top: 1px solid rgb(158, 158, 158);
+    border-bottom: 1px solid rgb(158, 158, 158);
+    
+        
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information .staff-infor-in-about-one{
+        border-bottom: 1px solid rgb(171, 171, 171);
+        border-right: none;
+    }
+    .about-page-top-container .about-top-information-container .about-top-information-design-two{
+        height: 200px;
+        width: 180px;
+        top: 20px;
+    }
+
+
+    .about-page-top-container .about-top-information-container .about-top-information-design{
+        display: none;
+    }
+     .about-page-top-container .about-top-information-container .about-top-information-design-three{
+        display: flex;
+        z-index: -1;
+        top: auto;
+        bottom: 10%;
+        opacity: 0.1;
+        height: 520px;
+        width: 520px;
+        left: 6%;
+    }
+    .about-page-top-container .about-top-information-container .about-information-cont-div .about-information-main-content .about-staff-information{
+    display: flex;
+    flex-direction: column;
+    padding-right: 60px;
 }
 }
