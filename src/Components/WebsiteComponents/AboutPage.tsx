@@ -14,9 +14,9 @@ const AboutPage = ({course}) => {
   return (
     <div className="about-page-main-container">
       <AboutTop course={course}/>
-      {/* <AboutPageCourse course={course}/> 
+      <AboutPageCourse course={course}/> 
       <Tutor/> 
-      <StepPageAbout/> */}
+      <StepPageAbout/> 
     </div>
   )
 }

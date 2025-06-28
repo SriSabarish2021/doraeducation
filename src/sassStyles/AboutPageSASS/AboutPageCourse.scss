@@ -2248,8 +2248,36 @@
     }
     .about-page-course-container .about-page-course-box{
         height: 1200px;
+        margin-top: 0px;
     }
+
+
+
+   
  
+}
+
+
+
+@media screen and  (min-height:700px) and  (max-height:800px) and  (max-width:600px){
+    .about-page-course-container .about-page-course-box{
+      
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and  (min-height:801px) and  (max-height:900px) and  (max-width:600px){
+    .about-page-course-container .about-page-course-box{
+       
+        margin-top: 10px;
+    }
+}
+@media screen and  (min-height:901px) and  (max-height:980px) and  (max-width:600px){
+    .about-page-course-container .about-page-course-box{
+        
+        margin-top:10px;
+    }
 }
 
 

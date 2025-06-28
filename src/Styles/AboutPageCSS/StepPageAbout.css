@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   gap: 0px;
+  overflow: hidden;
 }
 .step-page-container-for-about-page .step-page-title-bat-in-about {
   height: auto;

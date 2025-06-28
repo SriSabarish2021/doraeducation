@@ -230,6 +230,7 @@
         gap: 80px;
         overflow: hidden;
         position: relative;
+        padding: 0px 40px;
         .about-special-design{
             height:200px;
             width: 90%;
@@ -1950,20 +1951,30 @@
 }
 
 
+@media screen and  (min-height:550px) and  (max-height:699px) and  (max-width:400px){
+   .about-page-top-container .about-top-image-container {
+       
+           top: -400px; 
+    }
+}
+
 @media screen and  (min-height:700px) and  (max-height:800px) and  (max-width:600px){
    .about-page-top-container .about-top-image-container {
         height: 100dvh;
+           top: -420px; 
     }
 }
 
 @media screen and  (min-height:801px) and  (max-height:900px) and  (max-width:600px){
    .about-page-top-container .about-top-image-container {
         height: 90dvh;
+        top: -420px; 
     }
 }
 @media screen and  (min-height:901px) and  (max-height:980px) and  (max-width:600px){
    .about-page-top-container .about-top-image-container {
         height: 85dvh;
+           top: -420px; 
     }
 }
 @media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
@@ -2020,5 +2031,356 @@
     }
     .about-page-top-container .about-top-image-container{
         height: 100dvh;
+    }
+}
+
+
+
+//Side Boxes IN AboUT tOP Responsive Design 
+
+
+
+
+
+@media screen and  (max-width:1300px) {
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        bottom: 30%;
+        height: 350px;
+        width: 450px;
+    }
+    .about-page-top-container .about-top-side-bar-container{
+        gap: 40px;
+    }
+}
+
+
+
+@media screen and  (max-width:1200px) {
+    .about-page-top-container .about-top-side-bar-container .about-special-design{
+        height: 160px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+    padding:30px 20px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        right: 0px;
+        width: 200px;
+        opacity: 0.7;
+        height: 260px;
+        bottom: auto;
+        top: 10px;
+    }
+}
+
+
+@media screen and  (max-width:1100px) {
+    .about-page-top-container .about-top-side-bar-container{
+        padding: 0px 20px;
+        gap: 30px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        height: 43px;
+        width: 43px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        height: 16px;
+        width: 16px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design-two{
+        height: 10px;
+        width: 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 20px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+        padding: 30px 15px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        height:400px;
+        right: -100px;
+    }
+}
+
+@media screen and  (max-width:960px) {
+    .about-page-top-container .about-top-side-bar-container{
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-by-two{
+        margin-top: 60px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-by-three{
+        margin-top: 120px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design{
+        width: 95%;
+        height: 130px;
+       top: 40%;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two {
+        height: 300px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 19px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 12px;
+        line-height:23px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img{
+        padding-bottom: 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img .img-for-side-by-about{
+        height: 65%;
+        width: 65%;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+        padding: 20px 15px;
+    }
+}
+
+@media screen and  (max-width:900px) {
+    .about-page-top-container .about-top-side-bar-container{
+        gap: 20px;
+        padding-top: 50px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+@media screen and  (max-width:800px) {
+    .about-page-top-container .about-top-side-bar-container{
+        padding: 0px 10px;
+        padding-top: 40px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-one {
+        height: 250px;
+        width:400px;
+        left: -200px;
+        top: -80px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        height: 250px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design{
+        height: 100px;
+        top: 75%;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+        padding: 20px 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 16px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 11px;
+        letter-spacing: 0.6px;
+        line-height: 25px;
+
+    }
+}
+
+@media screen and  (max-width:670px) {
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        height: 36px;
+        width: 36px;
+
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        height: 13px;
+        width: 13px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design-two{
+        height: 9px;
+        width: 9px;
+    }
+    .about-page-top-container .about-top-side-bar-container{
+        gap: 15px;
+    }
+}
+
+@media screen and  (max-width:620px) {
+    .about-page-top-container .about-top-side-bar-container .about-side-by-two{
+        display: none;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-by-three{
+        margin-top: 60px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design{
+        top: 60%;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        height: 38px;
+        width: 38px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        height: 14px;
+        width: 14px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design-two{
+        height: 11px;
+        width: 11px;
+    }
+    .about-page-top-container .about-top-side-bar-container{
+        gap: 20px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        right: -80px;
+    }.about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 17px;
+    }
+}
+
+@media screen and  (max-width:500px) {
+.about-page-top-container .about-top-side-bar-container{
+        gap: 15px;
+    }
+}
+
+@media screen and  (max-width:460px) {.about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+    height: 35px;
+    width: 35px;
+}
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        height: 13px;
+        width: 13px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design-two{
+        height: 10px;
+        width: 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design{
+        top: 70%;
+        height: 100px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 15px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 10.5px;
+        letter-spacing: 0.5px;
+        line-height: 22px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont{
+        gap: 8px;
+    }
+    
+}
+
+@media screen and  (max-width:400px) {
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+        padding: 15px 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 14px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        line-height: 20px;
+    }
+}
+@media screen and  (max-width:370px) {
+    .about-page-top-container .about-top-side-bar-container{
+        gap: 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        height: 200px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        line-height: 18px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 13px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 10px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        height: 33px;
+        width: 33px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        height: 12px;
+        width: 12px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design-two{
+        height: 9px;
+        width: 9px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        transform: translateX(23px);
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        transform: translateX(10px);
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+        padding: 15px 8px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 9.5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+       .about-page-top-container .about-top-side-bar-container .about-side-by-two{
+        display: none;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-by-three{
+        margin-top: 60px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-one{
+        font-size: 28px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont .about-side-para-two{
+        font-size: 19px;
+        line-height: 35px;
+        letter-spacing: 1.4px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar{
+        padding: 20px;
+    }
+    .about-page-top-container .about-top-side-bar-container{
+        gap: 30px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-cont{
+        gap: 15px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img{
+        height: 55px;
+        width: 55px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design{
+        height: 20px;
+        width: 20px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-side-bar-img .about-side-img-design-two{
+        height: 15px;
+        width: 15px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-two{
+        height: 300px;
+        width: 600px;
+        right: -250px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design-one{
+        height: 300px;
+        width: 500px;
+        left:-200px;
+    }
+    .about-page-top-container .about-top-side-bar-container .about-special-design{
+        height: 200px;
+        top: 60%;
+    }
+     .about-page-top-container .about-top-information-container {
+     padding-bottom: 10px;   
     }
 }

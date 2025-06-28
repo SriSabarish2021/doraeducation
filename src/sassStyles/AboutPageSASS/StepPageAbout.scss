@@ -21,7 +21,7 @@
     padding-top: 80px;
     @include Column-center.column-center;
     gap: 0px;
-  
+   overflow: hidden;
 
     .step-page-title-bat-in-about{
         height: auto;
