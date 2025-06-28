@@ -51,6 +51,52 @@ const WhyChoose = () => {
             
           },[])
 
+          useEffect(() => {
+            
+        
+            const getelementoneinwhychoose=document.querySelector('.why-choose-container') as HTMLElement;
+              const getanimateelementoneinwhychoose=document.querySelector('.image-design-one-cont') as HTMLElement;       
+              
+              const getanimateelementtwoinwhychoose=document.querySelector('.image-design-two-cont') as HTMLElement;
+            
+            const observerinabout=new IntersectionObserver(([entry])=>{
+              if (entry.intersectionRatio>0.6) {
+               
+                if (getanimateelementoneinwhychoose) {
+                    getanimateelementoneinwhychoose.classList.add('nomove-img-about-one')
+                }
+                if (getanimateelementtwoinwhychoose) {
+                    getanimateelementtwoinwhychoose.classList.add('nomove-img-about-two')
+                }
+                
+              }
+              else{
+                
+                if (getanimateelementoneinwhychoose) {
+                    getanimateelementoneinwhychoose.classList.remove('nomove-img-about-one')
+                }
+                if (getanimateelementtwoinwhychoose) {
+                    getanimateelementtwoinwhychoose.classList.remove('nomove-img-about-two')
+                }
+              }
+            
+            },{threshold:0.6})
+        
+            if (getelementoneinwhychoose) {
+                  observerinabout.observe(getelementoneinwhychoose)
+            }
+        
+        
+             return () => {
+              
+              if (getelementoneinwhychoose) {
+                    observerinabout.unobserve(getelementoneinwhychoose)
+              }     
+          }
+            
+            
+          },[])
+
       const [getoffsetXwhy,setoffsetXwhy]=useState(0)
       const [getoffsetYwhy,setoffsetYwhy]=useState(0)
     const MouseMoveEvent=(event:unknown)=>{
@@ -70,7 +116,41 @@ const WhyChoose = () => {
    }
   return (
     <div className="why-choose-container" onMouseMove={(e)=>MouseMoveEvent(e)}>
+        <div className='image-design-one-cont' >
+
+                    <div className='image-box-one-totors'>
+                        <div className='tutors-img-tag'>
+                            <div className='tutor-round tutor-one'></div>
+                            <div className='tutor-two'></div>
+                            <div className='tutor-three'></div>
+                            <div className='tutor-four'></div>
+                            <div className='tutor-five'>
+                                <p>+50</p>
+                            </div>
+                        </div>
+                        <div className='tutor-cont'>
+                            <p className='top-mentor'>Top-Mentors</p>
+                            <p className='top-mentor-sub'>Around the Globe</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='image-design-two-cont'>
+                    <p className='success-rate'><IoIosStar className='star-in-sucess-rate'/>Success Rate 4.9</p>
+                    <div className='line-div-one'>
+                        <div className="line-div-one-inner"></div>
+                        <div className='line-year'>
+                            <p>2024</p>
+                        </div>
+                    </div>
+                    <div className='line-div-two'>
+                        <div className="line-div-two-inner"></div>
+                        <div className='line-year'>
+                            <p>2023</p>
+                        </div>
+                    </div>
+                </div>
         <div className='why-choose-cont'>
+             
             <div className='rounded-desing' style={{transform:`translateX(${-getoffsetXwhy}px) translateY(${-getoffsetYwhy}px)`,transitionDuration:'0.2s'}}></div>
             <div className='why-choose-main-title'>
                 <p className='why-choose'>Why Mindspire ?</p>
@@ -91,7 +171,7 @@ const WhyChoose = () => {
             <Link to={'About-Mindspire-Institute'} style={{textDecoration:'none'}} className='why-choose-btn'>Why? Mindspire <div className='why-choose-btn-animation'></div></Link>
         </div>
         <div className='why-choose-img'>
-            <div className='image-design-one' >
+                <div className='image-design-one' >
 
                     <div className='image-box-one-totors'>
                         <div className='tutors-img-tag'>
