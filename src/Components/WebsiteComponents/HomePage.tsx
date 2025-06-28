@@ -24,20 +24,23 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
     }, [])
   return (
     <>
-      <HomeMain/>
-      <StaffPage/>
-      <Topcourses/>
-      <StudentPage/>
-      <AboutUs/>
-      <SideBy/>
-      <WhyChoose/>
-      <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} />
-      <TopShortCourse/>
-      <StudentJoin/>
-      <Process/>
-      <Testimonial course={course}/>
-      <Blog/>
-    </>
+     {/*  <HomeMain/>
+      <StaffPage/> */}
+{/*       <Topcourses/>
+ */}      {/* <StudentPage/>
+      <AboutUs/> */}
+      {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} */}
+       <WhyChoose/> 
+      {/* <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} />
+      <TopShortCourse sethashget={sethashget}/> */}
+      {/* <StudentJoin/> */}
+    {/*   {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} */}
+      
+
+{/*       <Process/>
+ */}      {/* <Testimonial course={course}/> */}
+{/*       <Blog/>
+ */}    </>
   )
 }
 
