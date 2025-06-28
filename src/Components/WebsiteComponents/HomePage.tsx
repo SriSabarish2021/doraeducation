@@ -24,23 +24,21 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
     }, [])
   return (
     <>
-     {/*  <HomeMain/>
+      {/*<HomeMain/>
       <StaffPage/> */}
-{/*       <Topcourses/>
- */}      {/* <StudentPage/>
-      <AboutUs/> */}
-      {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} */}
-       <WhyChoose/> 
+      {/*<Topcourses/>*/}
+      {/* <StudentPage/>*/}
+      <AboutUs/> 
+      {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} DONE */}
+      {/* <WhyChoose/> DONE */}
       {/* <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} />
       <TopShortCourse sethashget={sethashget}/> */}
       {/* <StudentJoin/> */}
-    {/*   {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} */}
-      
-
-{/*       <Process/>
- */}      {/* <Testimonial course={course}/> */}
-{/*       <Blog/>
- */}    </>
+      {/* {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} DONE*/}
+      {/*<Process/>*/}
+      {/* <Testimonial course={course}/> */}
+      {/* <Blog/>  DONE*/}
+    </>
   )
 }
 

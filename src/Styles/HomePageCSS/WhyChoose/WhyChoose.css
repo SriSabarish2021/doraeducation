@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 .why-choose-container {
   height: auto;
   width: 100%;
@@ -30,6 +31,7 @@
   top: 30px;
   right: 0px;
   z-index: 1;
+  display: none;
 }
 .why-choose-container .image-design-one-cont .image-box-one-totors {
   height: 100%;
@@ -149,6 +151,7 @@
   gap: 15px;
   padding-left: 20px;
   z-index: 1;
+  display: none;
 }
 .why-choose-container .image-design-two-cont .success-rate {
   width: 100%;
@@ -963,6 +966,9 @@
   }
 }
 @media screen and (max-width: 720px) {
+  .why-choose-container .image-design-two-cont {
+    display: flex;
+  }
   .why-choose-container .why-choose-img {
     display: none;
   }
@@ -970,22 +976,23 @@
     gap: 20px;
   }
   .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
-    font-size: 45px;
+    font-size: 50px;
+    letter-spacing: 1px;
   }
   .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
     font-size: 13px;
     line-height: 30px;
-    width: 80%;
+    width: 90%;
   }
   .why-choose-container .why-choose-cont {
-    gap: 30px;
+    gap: 35px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one .why-choose-tit-span .design-for-why-choose-tit-span {
+    height: 24px;
+    width: 140px;
   }
   .why-choose-container .why-choose-cont .why-choose-main-title .why-choose {
     font-size: 14px;
-  }
-  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
-    font-size: 11px;
-    font-family: "Delius Unicase";
   }
   .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol .why-choose-ol-span {
     height: 20px;
@@ -1000,28 +1007,28 @@
     font-size: 13px;
   }
   .why-choose-container .image-design-one-cont {
-    height: 78px;
-    width: 190px;
-    top: 50px;
+    height: 80px;
+    width: 200px;
+    top: 80px;
     right: 20px;
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-round, .why-choose-container .image-design-one-cont .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-two, .why-choose-container .why-choose-img .image-design-one .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-two, .why-choose-container .image-design-one-cont .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-three, .why-choose-container .why-choose-img .image-design-one .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-three, .why-choose-container .image-design-one-cont .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-four, .why-choose-container .why-choose-img .image-design-one .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-four, .why-choose-container .image-design-one-cont .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-five, .why-choose-container .why-choose-img .image-design-one .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-five, .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-two, .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-three, .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-four, .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-five {
-    height: 28px;
-    width: 28px;
+    height: 29px;
+    width: 29px;
     border-width: 4px;
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-four {
-    right: 22px;
+    right: 20px;
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-five {
-    right: 11px;
+    right: 5px;
     font-size: 9px;
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-two {
-    left: 22px;
+    left: 20px;
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-one {
-    left: 11px;
+    left: 5px;
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutor-cont .top-mentor {
     font-size: 11px;
@@ -1034,6 +1041,257 @@
   }
   .why-choose-container .image-design-one-cont .image-box-one-totors .tutor-cont {
     flex: 1 1 50%;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
+    font-family: "Oxygen";
+    font-size: 13px;
+  }
+  .why-choose-container {
+    padding: 0px 15px;
+    padding-bottom: 40px;
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 450px;
+    width: 450px;
+    left: 5%;
+  }
+  .why-choose-container .image-design-two-cont {
+    left: auto;
+    right: 0px;
+    padding: 10px 15px;
+  }
+  .why-choose-container .image-design-two-cont .success-rate .star-in-sucess-rate {
+    font-size: 18px;
+  }
+  .why-choose-container .image-design-two-cont .success-rate {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .why-choose-container .image-design-two-cont .line-div-one, .why-choose-container .image-design-two-cont .line-div-two {
+    height: 4px;
+  }
+  .why-choose-container .image-design-two-cont {
+    gap: 12px;
+    width: 190px;
+    left: auto;
+    right: -20px;
+    bottom: auto;
+    top: 20%;
+    animation: image-design-two-cont-animation 3s linear infinite forwards;
+  }
+  @keyframes image-design-two-cont-animation {
+    0% {
+      opacity: 0.2;
+    }
+    35% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    z-index: -2;
+  }
+}
+@media screen and (max-width: 630px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 45px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
+    width: 95%;
+  }
+  .why-choose-container .image-design-two-cont {
+    right: -40px;
+    width: 170px;
+    transform: rotate(90deg);
+    top: 50%;
+  }
+  .why-choose-container .image-design-two-cont .line-div-one, .why-choose-container .image-design-two-cont .line-div-two {
+    width: 100%;
+    height: 3.5px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 42px;
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 440px;
+    width: 440px;
+    left: 10%;
+  }
+  .why-choose-container .image-design-two-cont {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 43px;
+  }
+  .start-with-tit {
+    display: none;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
+    color: rgb(100, 100, 100);
+    font-weight: 500;
+  }
+  .why-choose-container .why-choose-cont {
+    gap: 30px;
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 400px;
+    width: 400px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol .why-choose-ol-span {
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 40px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
+    font-size: 11.5px;
+    line-height: 24px;
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 360px;
+    width: 360px;
+    left: 0%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
+    font-size: 11px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 37px;
+  }
+  .why-choose-container {
+    padding: 0px 10px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 340px;
+    width: 340px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list {
+    column-gap: 10px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 35px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title {
+    gap: 15px;
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 300px;
+    width: 300px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
+    font-size: 11px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .why-choose {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 32px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
+    font-size: 10.5px;
+    line-height: 22px;
+  }
+  .why-choose-container .why-choose-cont {
+    gap: 25px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one .why-choose-tit-span .design-for-why-choose-tit-span {
+    left: 20px;
+    height: 18px;
+    width: 100px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .why-choose-container .image-design-one-cont {
+    display: none;
+  }
+  .why-choose-container .image-design-two-cont {
+    display: none;
+  }
+  .why-choose-container .why-choose-img {
+    display: none;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one, .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-two {
+    font-size: 60px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .why-choose {
+    font-size: 20px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .para-why-choose {
+    font-size: 19px;
+    line-height: 45px;
+  }
+  .why-choose-container .why-choose-cont .rounded-desing {
+    height: 700px;
+    width: 700px;
+    left: 100px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol {
+    font-size: 19px;
+    font-family: "Inter";
+    gap: 15px;
+  }
+  .why-choose-container .why-choose-cont {
+    gap: 40px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list .why-choose-ol .why-choose-ol-span {
+    height: 26px;
+    width: 26px;
+    font-size: 18px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-order-list {
+    row-gap: 35px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-main-title .Why-choose-title .Why-choose-title-one .why-choose-tit-span .design-for-why-choose-tit-span {
+    height: 27px;
+    width: 200px;
+  }
+  .why-choose-container .why-choose-cont .why-choose-btn {
+    font-size: 18px;
+    padding: 14px 20px;
   }
 }
 
