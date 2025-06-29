@@ -6,6 +6,8 @@ import { MdOutlineJoinInner } from "react-icons/md";
 import { MdOutlineNotStarted } from "react-icons/md";
 
 const Process = () => {
+
+
   return (
     <div className='process-container'>
       <div className='process-inner-container'>
@@ -13,7 +15,7 @@ const Process = () => {
             <p className='process-title'>Process</p>
             <div className='process-main-tit-div'>
                 <p className='process-main-title'>Step Into Success</p>
-                <p className='process-sub-main-title'>By staying engaged, practicing regularly, and using our resources, every student can make steady progress and achieve meaningful results.Once enrolled, students gain access to live and recorded classes, expert guidance, and hands-on support.</p>
+                <p className='process-sub-main-title'>{window.innerWidth<550?'Stay engaged and practice regularly to make steady progress. Enroll to access live classes, expert guidance, and hands-on support.':'By staying engaged, practicing regularly, and using our resources, every student can make steady progress and achieve meaningful results.Once enrolled, students gain access to live and recorded classes, expert guidance, and hands-on support.'}</p>
             </div>
             
         </div>
@@ -33,7 +35,7 @@ const Process = () => {
                             <p className='step-tit-para-two'>Search For Your Course</p>
                         </div>
                         <div className='step-two-cont'>
-                            <p className='step-cont-main'>Start by exploring courses that match your goals and interests. Choosing the right course is your first step toward success at Mindspire.</p>
+                            <p className='step-cont-main'>{window.innerWidth<530?'Explore courses that fit your goals—your first step for success.':window.innerWidth<800?'Start by exploring courses that match your goals and interests. Choosing the right course is your first step':'Start by exploring courses that match your goals and interests. Choosing the right course is your first step toward success at Mindspire.'}</p>
                             <p className='step-cont-icon'><IoSearch/></p>
                         </div>
                     </div>
@@ -54,7 +56,7 @@ const Process = () => {
                         </div>
                         <div className='step-three-cont'>
                             <p className='step-cont-icon'><VscSymbolConstant/></p>
-                            <p className='step-cont-main'>Preview the syllabus to get a clear overview of the topics and course structure before you begin.</p>
+                            <p className='step-cont-main'>{window.innerWidth<530?'Preview the syllabus for a quick overview of topics and course structure.':'Preview the syllabus to get a clear overview of the topics and course structure before you begin.'}</p>
                         </div>
                     </div>
                      <div className='div-for-step-three-line'>
@@ -71,7 +73,7 @@ const Process = () => {
                             <p className='step-tit-para-two'>Easy Course Enrollment</p>
                         </div>
                         <div className='step-four-cont'>
-                            <p className='step-cont-main'>Enroll easily and get instant access to all course materials to start learning right away.</p>
+                            <p className='step-cont-main'>{window.innerWidth<530?'Enroll now for instant access to all course materials.':'Enroll easily and get instant access to all course materials to start learning right away.'}</p>
                            <p className='step-cont-icon'><MdOutlineJoinInner/></p>
                         </div>
                     </div>
@@ -90,7 +92,7 @@ const Process = () => {
                         </div>
                         <div className='step-five-cont'>
                             <p className='step-cont-icon'><MdOutlineNotStarted/></p>
-                            <p className='step-cont-main'>Dive into your lessons with enthusiasm and make every session count. Engage actively and enjoy your learning journey with Mindspire.</p>
+                            <p className='step-cont-main'>{window.innerWidth<530?'Dive in with enthusiasm and make every Mindspire session count.':window.innerWidth<800?'Dive into your lessons with enthusiasm and make every session count.':'Dive into your lessons with enthusiasm and make every session count. Engage actively and enjoy your learning journey with Mindspire.'}</p>
                             
                         </div>
                     </div>

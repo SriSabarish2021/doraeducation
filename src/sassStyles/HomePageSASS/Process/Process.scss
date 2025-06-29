@@ -132,6 +132,7 @@
     width: 100%;
     padding: 0px 140px; 
     padding-bottom: 100px;
+    overflow: hidden;
    
     @include Column-center.column-center;
     .process-inner-container{
@@ -251,9 +252,9 @@
                 
                  .step-two{
                    @include steps-container;
-                    animation: left-boxmove linear ;
+                   /*  animation: left-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%;
+                    animation-range: entry 0% cover 40%; */
                     .step-two-inner{
                        
                         @include side-inner(false);
@@ -294,9 +295,9 @@
                 .step-three{
                      @include steps-container;
                     
-                    animation: right-boxmove linear ;
+                  /*   animation: right-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%;
+                    animation-range: entry 0% cover 40%; */
                     .step-three-inner{
                             @include side-inner(true);
 
@@ -336,10 +337,10 @@
                
                 .step-four{
                       @include steps-container;
-                    
+                   /*  
                     animation: left-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%;
+                    animation-range: entry 0% cover 40%; */
                     .step-four-inner{
                         @include side-inner(false);
 
@@ -385,9 +386,9 @@
                 .step-five{
                     
                       @include steps-container;
-                     animation: right-boxmove linear ;
+                   /*   animation: right-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%;
+                    animation-range: entry 0% cover 40%; */
                 .step-five-inner{
                         @include side-inner(true);
 
@@ -462,4 +463,340 @@
             opacity: 1;
         }
     }
+}
+
+
+
+@media screen and  (max-width:1230px) {
+    .process-container{
+        padding: 0px 70px;
+        padding-bottom: 100px;
+
+    }
+}
+
+
+@media screen and  (max-width:1200px) {
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        width: 85%;
+    }
+}
+
+
+@media screen and  (max-width:1100px) {
+    .process-container .process-inner-container .process-head-title-container .process-title{
+        font-size: 15px;
+    }.process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-main-title{
+        font-size: 37px;
+    }.process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        font-size: 12px;
+        width:70%;
+        line-height: 25px;
+    }
+    .process-container {
+    padding: 0px 50px;
+    padding-bottom:80px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line,.process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line,.process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line,.process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line,.process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line{
+        width: 8px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line .div-for-step-one-round,.process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line .div-for-step-two-round,.process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line .div-for-step-three-round,.process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line .div-for-step-four-round,.process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round,.process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round-two{
+        height: 24px;
+        width: 24px;
+    }
+    .process-container .process-inner-container .step-tit-para-one{
+        font-size: 28px;
+    }
+    .process-container .process-inner-container .step-tit-para-two{
+        font-size: 12px;
+    }
+    .process-container .process-inner-container .step-cont-main{
+        font-size: 13px;
+    }
+    .process-container .process-inner-container .step-cont-icon{
+        font-size: 40px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .search-book-image,.process-container .process-inner-container .process-div-container .process-four .enroll-image,.process-container .process-inner-container .process-div-container .process-three .test-image,.process-container .process-inner-container .process-div-container .process-five .computer-image{
+        height: 90px;
+        width: 90px;
+    }.process-container .process-inner-container .process-div-container .process-two .step-two,.process-container .process-inner-container .process-div-container .process-three .step-three,.process-container .process-inner-container .process-div-container .process-four .step-four{
+        padding-bottom: 50px;
+    }
+
+}
+
+
+@media screen and  (max-width:1000px) {
+    .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-title,.process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-title,.process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-title,.process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-title{
+        padding-bottom: 15px;
+        gap: 5px;
+    }
+    .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-cont,.process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-cont,.process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-cont,.process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-cont{
+        padding-top: 15px;
+    }
+    .process-container .process-inner-container .step-cont-main {
+        font-size: 10.5px;
+        font-weight: 400;
+        font-family: 'Inter';
+    }
+    .process-container .process-inner-container .step-cont-icon{
+        font-size: 36px;
+    }
+}
+
+
+@media screen and  (max-width:850px) {
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        width: 90%;
+    }
+    .process-container {
+    padding: 0px 40px;
+    padding-bottom: 70px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        font-size: 11.5px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line{
+        width: 7px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner,.process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner{
+        padding-right: 20px;
+    }
+    .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner,.process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner{
+        padding-left: 20px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .search-book-image, .process-container .process-inner-container .process-div-container .process-four .enroll-image, .process-container .process-inner-container .process-div-container .process-three .test-image, .process-container .process-inner-container .process-div-container .process-five .computer-image{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+
+@media screen and  (max-width:700px) {
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-main-title{
+        font-size: 35px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div{
+        gap: 15px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        font-size: 11px;
+        line-height: 22px;
+    }
+    .process-container .process-inner-container{
+        gap: 60px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line{
+        width: 6px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line .div-for-step-one-round, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line .div-for-step-two-round, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line .div-for-step-three-round, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line .div-for-step-four-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round-two{
+        height: 22px;
+        width: 22px;
+    }
+    .process-container {
+    padding: 0px 20px;
+    padding-bottom: 70px;
+    }
+    .process-container .process-inner-container .step-tit-para-one{
+        font-size: 27px;
+    }
+    .process-container .process-inner-container .step-tit-para-two{
+        font-size: 11px;
+    }
+    .process-container .process-inner-container .step-cont-icon{
+        font-size: 34px;
+    }
+    .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-cont, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-cont, .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-cont, .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-cont{
+        gap: 10px;
+    }
+    .process-container .process-inner-container .step-cont-main{
+        font-size: 10px;
+        line-height: 20px;
+    }
+}
+
+
+
+@media screen and  (max-width:600px) {
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-main-title{
+        font-size: 31px;
+    }.process-container .process-inner-container .process-head-title-container .process-title{
+        font-size: 14px;
+    }
+   
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line .div-for-step-one-round, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line .div-for-step-two-round, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line .div-for-step-three-round, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line .div-for-step-four-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round-two{
+        height: 21px;
+        width: 21px;
+    }
+    .process-container .process-inner-container .step-tit-para-one {
+        font-size: 25px;
+    }
+    .process-container .process-inner-container .step-tit-para-two{
+        font-size: 10px;
+    }.process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-cont, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-cont, .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-cont, .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-cont{
+        gap: 8px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner{
+        padding-right: 15px;
+    }
+    .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner, .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner{
+        padding-left: 15px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .search-book-image, .process-container .process-inner-container .process-div-container .process-four .enroll-image, .process-container .process-inner-container .process-div-container .process-three .test-image, .process-container .process-inner-container .process-div-container .process-five .computer-image{
+        height: 70px;
+        width: 70px;
+    }
+    .process-container .process-inner-container .step-cont-main{
+        font-size: 9.5px;
+        line-height: 18px;
+    }
+}
+
+
+@media screen and  (max-width:530px) {
+    .process-container {
+        padding: 0px 15px;
+        padding-bottom: 70px;
+    }
+}
+
+
+@media screen and  (max-width:440px) {
+    .process-container .process-inner-container .step-tit-para-one{
+        font-size: 23px;
+    }
+    .process-container .process-inner-container .step-tit-para-two{
+        font-size: 9px;
+    }
+    .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-cont, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-cont, .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-cont, .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-cont{
+        gap: 5px;
+        padding-top: 10px;
+    }
+    .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-title, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-title, .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-title, .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-title{
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one{
+        height: 80px;
+    }
+  .process-container .process-inner-container {
+        gap: 50px;
+    }
+    .process-container .process-inner-container .step-cont-icon{
+        font-size: 30px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .search-book-image, .process-container .process-inner-container .process-div-container .process-four .enroll-image, .process-container .process-inner-container .process-div-container .process-three .test-image, .process-container .process-inner-container .process-div-container .process-five .computer-image{
+        height: 65px;
+        width: 65px;
+    }
+}
+
+
+@media screen and  (max-width:400px) {
+    .process-container .process-inner-container .step-cont-main{
+        font-size: 8.5px;
+        line-height: 16px;
+    }
+}
+
+
+@media screen and  (max-width:360px) {
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-main-title{font-size: 28px;}
+    .process-container .process-inner-container .process-head-title-container .process-title{
+        font-size: 13px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div{
+        gap: 10px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line{
+        width: 5px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line .div-for-step-one-round, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line .div-for-step-two-round, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line .div-for-step-three-round, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line .div-for-step-four-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round-two{
+        height: 20px;
+        width: 20px;
+        border-width: 5px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner{
+        padding-right: 10px;
+    }
+    .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner, .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner{
+        padding-left: 10px;
+    }
+    .process-container .process-inner-container .step-cont-main{
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .process-container .process-inner-container .process-div-container .process-five .step-five{
+        padding-bottom: 50px;
+    }
+}
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+    .process-container .process-inner-container .process-head-title-container .process-title{
+        font-size: 23px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-main-title{
+        font-size:55px;
+    }
+    .process-container .process-inner-container .process-head-title-container .process-main-tit-div .process-sub-main-title{
+        font-size: 17px;
+        line-height: 32px;
+        width: 95%;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line{
+        width: 11px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one .div-for-step-one-line .div-for-step-one-round, .process-container .process-inner-container .process-div-container .process-two .step-two .div-for-step-two-line .div-for-step-two-round, .process-container .process-inner-container .process-div-container .process-three .step-three .div-for-step-three-line .div-for-step-three-round, .process-container .process-inner-container .process-div-container .process-four .step-four .div-for-step-four-line .div-for-step-four-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round, .process-container .process-inner-container .process-div-container .process-five .step-five .div-for-step-five-line .div-for-step-five-round-two{
+        height: 36px;
+        width: 36px;
+        border-width: 8px;
+    }
+    .process-container .process-inner-container .step-tit-para-one{
+        font-size: 43px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner{
+        padding-right: 25px;
+    }
+    .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-title, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-title, .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-title, .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-title{
+        gap: 10px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid rgb(255, 232, 232);
+    }
+    .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner .step-five-cont, .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner .step-four-cont, .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner .step-three-cont, .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner .step-two-cont{
+        padding-top: 20px;
+    }
+    .process-container .process-inner-container .step-tit-para-two{
+        font-size: 20px;
+    }
+    .process-container .process-inner-container .step-cont-icon{
+        font-size:60px;
+    }
+    .process-container .process-inner-container .step-cont-main{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .search-book-image, .process-container .process-inner-container .process-div-container .process-four .enroll-image, .process-container .process-inner-container .process-div-container .process-three .test-image, .process-container .process-inner-container .process-div-container .process-five .computer-image{
+        height: 140px;
+        width: 140px;
+    }
+    .process-container .process-inner-container .process-div-container .process-two .step-two, .process-container .process-inner-container .process-div-container .process-three .step-three, .process-container .process-inner-container .process-div-container .process-four .step-four{
+        padding-bottom: 70px;
+    }
+    .process-container .process-inner-container .process-div-container .process-five .step-five{
+        padding-bottom: 100px;
+    }
+    .process-container .process-inner-container .process-div-container .process-one{
+        height: 120px;
+    }
+
 }

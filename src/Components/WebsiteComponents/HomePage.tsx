@@ -26,16 +26,16 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
     <>
       {/*<HomeMain/>
       <StaffPage/> */}
-      <Topcourses/>
+      {/* <Topcourses/>  DONE*/}
       {/* <StudentPage/>*/}
-     {/*  <AboutUs/>  */}
+     {/*  <AboutUs/>  DONE*/}
       {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} DONE */}
       {/* <WhyChoose/> DONE */}
       {/* <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} />
       <TopShortCourse sethashget={sethashget}/> */}
       {/* <StudentJoin/> */}
       {/* {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} DONE*/}
-      {/*<Process/>*/}
+      <Process/>
       {/* <Testimonial course={course}/> */}
       {/* <Blog/>  DONE*/}
     </>
