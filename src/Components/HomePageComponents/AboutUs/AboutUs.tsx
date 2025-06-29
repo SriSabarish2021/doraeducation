@@ -112,6 +112,22 @@ const AboutUs = () => {
         <div className='circle-img-about'></div>
       </div>
       <div className='about-us-content-container'>
+      <div className='about-us-image-cont-two-cont'>
+            <div className='about-us-cont-inner-two'>
+              <div className='alumini-img-and-cont'>
+                <div className='alumini-images'>
+                  <div className='alumini-img-show'></div>
+                </div>
+                <div className='alumini-cont'>
+                  <p>30K</p>
+                </div>
+              </div>
+              <p className='alumini-cont-two'>Alumni in top positions</p>
+
+
+              <div className='ellipse-design'></div>
+            </div>
+          </div>
         <div className='about-us-title-bar'>
           <p className='about-us-small'>About Us</p>
           <div className='about-us-main-tit-div'>
