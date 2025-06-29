@@ -132,7 +132,7 @@
     width: 100%;
     padding: 0px 140px; 
     padding-bottom: 100px;
-    overflow: hidden;
+   
    
     @include Column-center.column-center;
     .process-inner-container{
@@ -252,9 +252,9 @@
                 
                  .step-two{
                    @include steps-container;
-                   /*  animation: left-boxmove linear ;
+                    animation: left-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%; */
+                    animation-range: entry 0% cover 40%;
                     .step-two-inner{
                        
                         @include side-inner(false);
@@ -295,9 +295,9 @@
                 .step-three{
                      @include steps-container;
                     
-                  /*   animation: right-boxmove linear ;
+                    animation: right-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%; */
+                    animation-range: entry 0% cover 40%;
                     .step-three-inner{
                             @include side-inner(true);
 
@@ -337,10 +337,10 @@
                
                 .step-four{
                       @include steps-container;
-                   /*  
+               
                     animation: left-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%; */
+                    animation-range: entry 0% cover 40%;
                     .step-four-inner{
                         @include side-inner(false);
 
@@ -386,9 +386,9 @@
                 .step-five{
                     
                       @include steps-container;
-                   /*   animation: right-boxmove linear ;
+                     animation: right-boxmove linear ;
                     animation-timeline: view();
-                    animation-range: entry 0% cover 40%; */
+                    animation-range: entry 0% cover 40%;
                 .step-five-inner{
                         @include side-inner(true);
 

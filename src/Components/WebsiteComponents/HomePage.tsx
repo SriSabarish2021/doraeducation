@@ -31,12 +31,12 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
      {/*  <AboutUs/>  DONE*/}
       {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} DONE */}
       {/* <WhyChoose/> DONE */}
-      {/* <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} />
-      <TopShortCourse sethashget={sethashget}/> */}
-      {/* <StudentJoin/> */}
+      {/* <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} DONE/>
+      <TopShortCourse sethashget={sethashget}/> DONE */}
+      <StudentJoin/>
       {/* {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} DONE*/}
-      <Process/>
-      {/* <Testimonial course={course}/> */}
+     {/*  <Process/> DONE */}
+      {/* <Testimonial course={course}/> DONE */}
       {/* <Blog/>  DONE*/}
     </>
   )

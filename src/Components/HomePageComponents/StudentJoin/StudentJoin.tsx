@@ -133,6 +133,18 @@ const StudentJoin = () => {
               <p  className='student-number-para-two'>+320</p>
             </div>
           </div>
+          <div className='small-box-about-review-design-cont'>
+          
+            <div className='design-box-stud-reviews'>
+              <p className='design-box-stud-rev'><span className='star-for-design-in-stug-join'><IoStar/><IoStar/><IoStar/><IoStar/><IoStar/> </span><span className='stud-join-design-para'>3.0</span></p>
+            </div>
+            <div className='number-of-student-reviewed'>
+              <p  className='student-reviewed-number-para-one'>Learner Reviews</p>
+              <p  className='student-reviewed-number-para-two'>+120</p>
+            </div>
+          
+          
+        </div>
         </div>
         <div className='stud-join-main-btn'>
           <Link to={"Providing-Education's-in-Mindspire-Institute"} style={{textDecoration:'none'}} className='stud-join-btn'>View Programs <span className='span-for-btn-stud-join'><FaArrowRight/> </span><div className='design-div-for-tud-btn-join-stud'></div></Link>

@@ -290,6 +290,74 @@
   justify-content: flex-start;
   padding-left: 20px;
 }
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+  height: 150px;
+  width: 170px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fec300;
+  gap: 15px;
+  padding: 20px 20px;
+  z-index: 1;
+  display: none;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews {
+  height: 35px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .star-for-design-in-stug-join {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: rgb(255, 196, 0);
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .stud-join-design-para {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-one {
+  font-size: 14px;
+  font-family: "Delius";
+  font-weight: 800;
+  color: rgb(24, 24, 24);
+}
+.student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-two {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(42, 42, 42);
+}
 .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
   height: 160px;
   width: 180px;
@@ -449,6 +517,576 @@
 .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn:hover .span-for-btn-stud-join {
   color: rgb(255, 56, 56);
   transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 1343px) {
+  .student-join-container .student-join-content-container .box-animation {
+    right: 0%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .student-join-container {
+    padding: 50px 20px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .student-join-container {
+    gap: 15px;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    top: 10%;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    bottom: 5%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 40px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 22px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 13px;
+    line-height: 28px;
+    width: 90%;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
+    height: 140px;
+    width: 160px;
+    padding: 20px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design {
+    height: 150px;
+    width: 170px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .number-of-student-reviewed .student-reviewed-number-para-one {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .number-of-student-reviewed .student-reviewed-number-para-two {
+    font-size: 30px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews .design-box-stud-rev {
+    font-size: 11px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews .design-box-stud-rev .stud-join-design-para {
+    font-size: 13px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews {
+    height: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two {
+    font-size: 28px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    height: 30px;
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    gap: 50px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    height: 100px;
+    width: 100px;
+    bottom: 0%;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 43px;
+    width: 180px;
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn .span-for-btn-stud-join {
+    height: 20px;
+    width: 20px;
+    font-size: 11px;
+  }
+  .student-join-container {
+    padding: 20px;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    top: 0%;
+  }
+}
+@media screen and (max-width: 940px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 36px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 20px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 12px;
+    line-height: 26px;
+    width: 95%;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
+    height: 130px;
+    width: 145px;
+    border-radius: 14px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .break-circle-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .break-circle-two {
+    height: 45px;
+    width: 45px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two {
+    font-size: 26px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    width: 160px;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    height: 45px;
+    width: 45px;
+    top: 5%;
+    right: 4%;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design {
+    height: 140px;
+    width: 160px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .number-of-student-reviewed .student-reviewed-number-para-two {
+    font-size: 28px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews .design-box-stud-rev {
+    font-size: 10px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews {
+    height: 26px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .student-join-container {
+    height: 90dvh;
+    padding: 10px;
+  }
+  .student-join-container .student-join-image-container {
+    padding: 20px 0px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 19px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 33px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    gap: 40px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    font-size: 11px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .break-circle-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .break-circle-two {
+    height: 40px;
+    width: 40px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design {
+    height: 130px;
+    width: 150px;
+    border-radius: 10px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 40px;
+    width: 170px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .student-join-container .student-join-image-container {
+    padding: 30px 0px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 17px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 31px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 10.5px;
+  }
+  .student-join-container .student-join-content-container {
+    gap: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
+    width: 135px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    padding-left: 5px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one {
+    font-size: 11.5px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two {
+    font-size: 25px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    height: 22px;
+    border-radius: 5px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 35px;
+    width: 150px;
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn .span-for-btn-stud-join {
+    height: 16px;
+    width: 16px;
+    font-size: 9.5px;
+  }
+  .student-join-container .student-join-image-container .student-join-image-container-one .student-join-image-one-insider-one, .student-join-container .student-join-image-container .student-join-image-container-two .student-join-image-two-insider-one, .student-join-container .student-join-image-container .student-join-image-container-two .student-join-image-two-insider-two, .student-join-container .student-join-image-container .student-join-image-container-one .student-join-image-one-insider-two {
+    border-radius: 10px;
+  }
+  .student-join-container {
+    height: 85dvh;
+  }
+}
+@media screen and (max-width: 740px) {
+  .student-join-container .student-join-image-container .small-box-about-review-design {
+    height: 125px;
+    width: 140px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design .design-box-stud-reviews {
+    height: 25px;
+  }
+  .student-join-container .student-join-image-container .small-box-about-review-design {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .student-join-container .student-join-image-container {
+    display: none;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    padding-left: 0px;
+  }
+  .student-join-container {
+    height: auto;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 22px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 45px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 13px;
+    line-height: 33px;
+    width: 90%;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    height: 55px;
+    width: 55px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
+    height: 150px;
+    width: 170px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    height: 28px;
+    border-radius: 15px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-one {
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed {
+    gap: 6px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews {
+    height: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .stud-join-design-para {
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-two {
+    font-size: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .break-circle-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .break-circle-two {
+    height: 50px;
+    width: 50px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    height: 120px;
+    width: 120px;
+    right: 10%;
+    top: 40%;
+    z-index: -1;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 43px;
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    display: flex;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two {
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .student-join-container .student-join-content-container .box-animation {
+    height: 46px;
+    width: 46px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    height: 100px;
+    width: 100px;
+    right: 15%;
+    top: auto;
+    bottom: -5%;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 550px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 40px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    gap: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    height: 140px;
+    width: 150px;
+    padding: 15px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-one {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-two {
+    font-size: 28px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews {
+    height: 28px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .star-for-design-in-stug-join {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .break-circle-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .break-circle-two {
+    height: 40px;
+    width: 40px;
+    right: -20px;
+    top: -20px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    gap: 20px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 20px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 35px;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    height: 40px;
+    width: 40px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    width: 95%;
+    font-size: 11px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    font-size: 11px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews {
+    height: 25px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .star-for-design-in-stug-join {
+    font-size: 10px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .stud-join-design-para {
+    font-size: 10px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev {
+    gap: 6px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    height: 130px;
+    border-radius: 10px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-one {
+    font-size: 11px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-two {
+    font-size: 26px;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    top: 0%;
+    border-width: 3.5px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 38px;
+    width: 140px;
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    bottom: -6%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 32px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 10px;
+    line-height: 23px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    gap: 12px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    padding: 15px;
+    height: 130px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one {
+    display: none;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    gap: 30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-one {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .star-for-design-in-stug-join {
+    font-size: 11px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .stud-join-design-para {
+    font-size: 12px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    bottom: -6%;
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 28px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    bottom: -6%;
+    right: 0%;
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .student-join-container .student-join-image-container {
+    display: none;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join {
+    padding-left: 0px;
+  }
+  .student-join-container {
+    height: auto;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-one-stud-join, .student-join-container .student-join-content-container .main-title-in-student-join .main-title-div-for-head-stud-join .main-tit-two-stud-join {
+    font-size: 55px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .small-tit-in-student-join {
+    font-size: 30px;
+  }
+  .student-join-container .student-join-content-container .main-title-in-student-join .sub-tit-in-stud-join {
+    font-size: 17.5px;
+    line-height: 34px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    display: flex;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont {
+    height: 180px;
+    width: 200px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews {
+    height: 38px;
+    border-radius: 20px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .break-circle-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .break-circle-two {
+    height: 65px;
+    width: 65px;
+    top: -30px;
+    right: -30px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .star-for-design-in-stug-join {
+    font-size: 16px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one {
+    gap: 10px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .design-box-stud-reviews .design-box-stud-rev .stud-join-design-para {
+    font-size: 18px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .mode-of-student-join-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .mode-of-student-join-one {
+    font-size: 18px;
+  }
+  .student-join-container .student-join-content-container .box-animation {
+    height: 65px;
+    width: 65px;
+  }
+  .student-join-container .student-join-content-container .hand-shake-animation {
+    height: 160px;
+    width: 160px;
+    bottom: -8%;
+    right: 10%;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn {
+    height: 58px;
+    width: 190px;
+    font-size: 18px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn .span-for-btn-stud-join {
+    height: 22px;
+    width: 22px;
+  }
+  .student-join-container .student-join-content-container .stud-join-main-btn .stud-join-btn .span-for-btn-stud-join {
+    font-size: 13px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-one, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-one {
+    font-size: 19px;
+  }
+  .student-join-container .student-join-content-container .information-boxes-student-join .information-box-one .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .information-box-two .number-of-student-join-one .student-number-para-two, .student-join-container .student-join-content-container .information-boxes-student-join .small-box-about-review-design-cont .number-of-student-reviewed .student-reviewed-number-para-two {
+    font-size: 38px;
+  }
 }
 
 /*# sourceMappingURL=StudentJoin.css.map */

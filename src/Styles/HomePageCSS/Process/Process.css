@@ -15,7 +15,6 @@
   width: 100%;
   padding: 0px 140px;
   padding-bottom: 100px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -168,9 +167,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
-  /*  animation: left-boxmove linear ;
-   animation-timeline: view();
-   animation-range: entry 0% cover 40%; */
+  animation: left-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-two .step-two .step-two-inner {
   height: 100%;
@@ -258,9 +257,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
-  /*   animation: right-boxmove linear ;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%; */
+  animation: right-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-three .step-three .step-three-inner {
   height: 100%;
@@ -348,10 +347,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
-  /*  
-   animation: left-boxmove linear ;
-   animation-timeline: view();
-   animation-range: entry 0% cover 40%; */
+  animation: left-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-four .step-four .step-four-inner {
   height: 100%;
@@ -439,9 +437,9 @@
   align-items: center;
   align-items: flex-start;
   position: relative;
-  /*   animation: right-boxmove linear ;
-   animation-timeline: view();
-   animation-range: entry 0% cover 40%; */
+  animation: right-boxmove linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 .process-container .process-inner-container .process-div-container .process-five .step-five .step-five-inner {
   height: 100%;
