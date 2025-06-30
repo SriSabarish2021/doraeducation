@@ -24,20 +24,20 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
     }, [])
   return (
     <>
-      {/* <HomeMain/> */}
-     {/*  <StaffPage/> DONE */}
-      {/* <Topcourses/>  DONE*/}
-      {/* <StudentPage/>  DONE*/}
-     {/*  <AboutUs/>  DONE*/}
-      {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} DONE */}
-      {/* <WhyChoose/> DONE */}
-      {/* <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} /> DONE*/}
-      {/* <TopShortCourse sethashget={sethashget}/>  DONE */}
-     {/*  <StudentJoin/> DONE */}
-      {/* {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} DONE*/}
-     {/*  <Process/> DONE */}
+      <HomeMain/>
+      <StaffPage/> 
+      <Topcourses/>  
+      <StudentPage/>  
+      <AboutUs/>  
+       {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} 
+      <WhyChoose/> 
+      <ProgramList starcalc={starcalc} sethashget={sethashget} course={course} LikeCourse={LikeCourse} /> 
+      <TopShortCourse sethashget={sethashget}/>  
+      <StudentJoin/> 
+      <Process/> 
+      {window.innerWidth<980&&<SideBy  onedisp={true} twodisp={true}/>} 
       <Testimonial course={course}/> 
-      {/* <Blog/>  DONE*/}
+      <Blog/>  
     </>
   )
 }
