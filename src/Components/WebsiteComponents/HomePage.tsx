@@ -24,8 +24,8 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
     }, [])
   return (
     <>
-      {/*<HomeMain/>*/}
-      <StaffPage/> 
+      <HomeMain/>
+     {/*  <StaffPage/> DONE */}
       {/* <Topcourses/>  DONE*/}
       {/* <StudentPage/>  DONE*/}
      {/*  <AboutUs/>  DONE*/}

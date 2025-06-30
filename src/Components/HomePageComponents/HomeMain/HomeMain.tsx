@@ -59,7 +59,55 @@ const HomeMain = () => {
     
     
   },[])
-  
+  useEffect(() => {
+    
+
+    const getelementone=document.querySelector('.home-main-for-intro') as HTMLElement
+    const getanimateelementone=document.querySelector('.smallcontent-one-home-cont') as HTMLElement
+    const observer=new IntersectionObserver(([entry])=>{
+      if (entry.intersectionRatio>0.7) {
+        if (getanimateelementone) {
+                  getanimateelementone?.classList.add('smallcontent-one-home-move')
+
+        }
+        
+      }
+    
+    },{threshold:0.7})
+
+    if (getelementone) {
+          observer.observe(getelementone)
+    }
+
+
+
+    const getelementtwo=document.querySelector('.home-main-for-intro') as HTMLElement
+    const getanimateelementtwo=document.querySelector('.smallcontent-two-home-cont') as HTMLElement
+    const observertwo=new IntersectionObserver(([entry])=>{
+      if (entry.intersectionRatio>0.7) {
+        if (getanimateelementtwo) {
+                  getanimateelementtwo?.classList.add('smallcontent-two-home-move')
+
+        }
+        
+      }
+      
+    },{threshold:0.7})
+
+    if (getelementtwo) {
+          observertwo.observe(getelementtwo)
+    }
+     return () => {
+      if (getelementone) {
+          observer.unobserve(getelementone)
+      } 
+      if (getelementtwo) {
+            observertwo.unobserve(getelementtwo)
+      }     
+  }
+    
+    
+  },[])
   const [getoffsetX,setoffsetX]=useState(0)
   const [getoffsetY,setoffsetY]=useState(0)
 
@@ -127,6 +175,26 @@ const HomeMain = () => {
               </div>
             </div>
             <div className='home-content-div'>
+              <div className='smallcontent-one-home-cont' >
+                <div className='smallcontent-img'>
+                  <img className='img-for-small-cont' src="./HomeImg/read.png" alt="" />
+                </div>
+                <div className='smallcontent-content'>
+                  <p className='p-one-small-cont'>10K</p>
+                  <p  className='p-two-small-cont'>Students</p>
+                </div>
+                
+              </div>
+              <div className='smallcontent-two-home-cont' >
+                <div className='smallcontent-img'>
+                  <img className='img-for-small-cont' src="./HomeImg/online-learning.png" alt="" />
+                </div>
+                <div className='smallcontent-content'>
+                  <p className='p-one-small-cont'>20+</p>
+                  <p  className='p-two-small-cont'>Online Courses</p>
+                </div>
+                
+              </div>
               <div className='tit-for-home-content'>
                 <div className='top-border-div-home'></div>
                 <div className='main-cont-home'>
