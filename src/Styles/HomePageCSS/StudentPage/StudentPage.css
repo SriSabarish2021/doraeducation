@@ -20,6 +20,7 @@
   padding: 60px 110px;
   padding-top: 0px;
   position: relative;
+  overflow: hidden;
 }
 .student-page-container .scale-img-one-stud {
   transform: translateX(330px);
@@ -614,6 +615,958 @@
 .student-page-container .student-page-inner-container .rocket-animation-show {
   transform: rotate(-10deg) translateX(0px) translateY(0px);
   transition-duration: 2s;
+}
+
+@media screen and (max-width: 1280px) {
+  .student-page-container {
+    padding: 50px 80px;
+  }
+  .student-page-container .stud-design-main {
+    width: 80px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num {
+    flex: 1 1 55%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image {
+    flex: 1 1 45%;
+  }
+  .student-page-container {
+    padding: 50px 20px;
+  }
+  .student-page-container .stud-design-main {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page {
+    font-size: 45px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 44px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 100px;
+    width: 100px;
+  }
+  .student-page-container {
+    padding: 40px 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container {
+    gap: 25px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content {
+    gap: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 13.5px;
+    line-height: 26px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    gap: 18px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 75px;
+    width: 75px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 45px;
+    width: 45px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 23px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 14px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 45px;
+    width: 45px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 25px;
+    width: 25px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content {
+    gap: 5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container {
+    gap: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis {
+    flex: 1 1 35%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 36px;
+    width: 36px;
+  }
+  .student-page-container .student-page-inner-container, .student-page-container .student-page-inner-container .student-page-image-container, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    gap: 20px;
+  }
+  .student-page-container .stud-round-design-one {
+    right: 60px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 45px;
+    width: 160px;
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .span-for-btn-stud-page {
+    height: 20px;
+    width: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .span-for-btn-stud-page {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .student-page-container {
+    padding: 35px 10px;
+    height: 110dvh;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container {
+    padding: 0px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 80px;
+    width: 80px;
+  }
+  .student-page-container .student-page-inner-container, .student-page-container .student-page-inner-container .student-page-image-container, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    gap: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    flex: 1 1 36%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content {
+    gap: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    padding: 20px 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container {
+    gap: 15px;
+  }
+  .student-page-container .stud-round-design-one {
+    bottom: 40px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 40px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 12.5px;
+    letter-spacing: 0.6px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    gap: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 65px;
+    width: 65px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 40px;
+    width: 40px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 43px;
+    width: 43px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 23px;
+    width: 23px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 10.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one {
+    gap: 7px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 33px;
+    width: 33px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num {
+    flex: 1 1 50%;
+  }
+  .student-page-container .stud-round-design-one {
+    height: 50px;
+    width: 50px;
+    bottom: 60px;
+  }
+  .student-page-container .stud-round-design-one .stud-round-design-two {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .student-page-container {
+    height: 100dvh;
+    padding: 25px 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    padding: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 14px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 11px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 30px;
+    width: 30px;
+    border-width: 4px;
+  }
+  .student-page-container .student-page-inner-container, .student-page-container .student-page-inner-container .student-page-image-container, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    gap: 10px;
+  }
+  .student-page-container .stud-round-design-one {
+    bottom: 40px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 40px;
+    width: 40px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 21px;
+    width: 21px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 14px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 10px;
+    letter-spacing: 0.4px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 60px;
+    width: 60px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis {
+    flex: 1 1 30%;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 70px;
+    width: 70px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .student-page-container .student-page-inner-container .student-page-image-container {
+    display: none;
+  }
+  .student-page-container {
+    height: auto;
+    padding: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .content-image-bar-in-main-cont {
+    flex: none;
+    height: 280px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    flex: none;
+    height: 80px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 35px;
+    width: 35px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 45px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 98px;
+    width: 98px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    padding: 0px;
+    gap: 25px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 13.5px;
+    letter-spacing: 1px;
+    line-height: 26px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis {
+    gap: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content {
+    gap: 7px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one {
+    padding-bottom: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 45px;
+    width: 45px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 25px;
+    width: 25px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 65px;
+    width: 65px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 45px;
+    width: 45px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 26px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis {
+    flex: 1 1 65%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    gap: 25px;
+  }
+  .student-page-container .stud-round-design-one {
+    bottom: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 600px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 12.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 42px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 90px;
+    width: 90px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 60px;
+    width: 60px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 40px;
+    width: 40px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 40px;
+    width: 40px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 22px;
+    width: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 24px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis {
+    gap: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    gap: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    margin-top: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    gap: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 30px;
+    width: 30px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    height: 75px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 11.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 70px;
+    width: 70px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 19px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 38px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 11.5px;
+    line-height: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    gap: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 14px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 55px;
+    width: 55px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 35px;
+    width: 35px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 21px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 10.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 37px;
+    width: 37px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 38px;
+    width: 140px;
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .span-for-btn-stud-page {
+    height: 18px;
+    width: 18px;
+    font-size: 11px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .content-image-bar-in-main-cont {
+    height: 250px;
+    border-radius: 15px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis {
+    gap: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    height: 72px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 36px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 60px;
+    width: 60px;
+    right: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container {
+    gap: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 10.5px;
+    line-height: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 13px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 35px;
+    width: 35px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 9.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 50px;
+    width: 50px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 9.6px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one {
+    padding-bottom: 8px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content {
+    gap: 5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .content-image-bar-in-main-cont {
+    height: 230px;
+    border-radius: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    height: 70px;
+    border-radius: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 10.5px;
+    gap: 5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 27px;
+    width: 27px;
+  }
+  .student-page-container .stud-round-design-one {
+    right: 5px;
+    bottom: 5px;
+    height: 46px;
+    width: 46px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    height: 65px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 36px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 18px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 33px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content {
+    gap: 5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 10px;
+    line-height: 21px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content {
+    gap: 3px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 9.5px;
+    line-height: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container {
+    gap: 8px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 18px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 9px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 46px;
+    width: 46px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 32px;
+    width: 32px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 32px;
+    width: 32px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 20px;
+    width: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    flex-direction: column;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 9.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 9px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num {
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three {
+    right: 30%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-one {
+    left: 30%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 35px;
+    font-size: 11px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two {
+    gap: 0px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    line-height: 18px;
+    font-size: 9.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 11px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 8.5px;
+    letter-spacing: normal;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis {
+    flex: 1 1 25%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .content-image-bar-in-main-cont {
+    height: 200px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 25px;
+    width: 25px;
+    border-width: 3px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container {
+    gap: 3px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 42px;
+    width: 42px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 30px;
+    width: 30px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 17px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 8.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 30px;
+    width: 30px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 18px;
+    width: 18px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 30px;
+    width: 120px;
+    font-size: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .span-for-btn-stud-page {
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+  }
+  .student-page-container .stud-round-design-one {
+    height: 42px;
+    width: 42px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 30px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    top: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .content-image-bar-in-main-cont {
+    height: 190px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 22px;
+    width: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    height: 60px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 9px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 8.5px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container {
+    gap: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis {
+    gap: 8px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 38px;
+    width: 38px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 26px;
+    width: 26px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 8px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 27px;
+    width: 27px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 17px;
+    width: 17px;
+  }
+  .student-page-container .stud-round-design-one {
+    height: 40px;
+    width: 40px;
+  }
+  .student-page-container .stud-round-design-one .stud-round-design-two {
+    height: 22px;
+    width: 22px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 20px;
+    width: 20px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .student-page-container .student-page-inner-container .student-page-image-container {
+    display: none;
+  }
+  .student-page-container {
+    height: auto;
+    padding: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .content-image-bar-in-main-cont {
+    flex: none;
+    height: 380px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    flex: none;
+    height: 80px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-top-tit {
+    font-size: 30px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    gap: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont {
+    height: 110px;
+    border: 1px solid rgb(155, 155, 155);
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-one-stud-page, .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title .main-tit-two-stud-page {
+    font-size: 60px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-two {
+    height: 44px;
+    width: 44px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-one {
+    left: 15%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-image .stu-img-three {
+    right: 15%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one {
+    font-size: 19px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-one .span-in-stud-num {
+    font-size: 21px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content .stud-enroll-image-bar-in-main-cont .stu-enroll-num .stu-enroll-para-two {
+    font-size: 16px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-title-bar .student-page-title {
+    gap: 8px;
+  }
+  .student-page-container .student-page-inner-container .design-element-stud-page {
+    height: 130px;
+    width: 130px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-para .conatent-bar-main-para {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 42px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content {
+    gap: 20px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image {
+    height: 90px;
+    width: 90px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-image .img-for-main-analysis-one {
+    height: 65px;
+    width: 65px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img {
+    height: 55px;
+    width: 55px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-image .stu-thinking-img .img-for-main-analysis-two {
+    height: 30px;
+    width: 30px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-main-para {
+    font-size: 23px;
+    width: 100%;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content .stu-thinking-sub-para {
+    font-size: 17px;
+    line-height: 29px;
+    text-align: justify;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis {
+    gap: 25px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one {
+    gap: 12px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container {
+    gap: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-content {
+    gap: 10px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-one {
+    font-size: 38px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .tot-stu-analysis .tot-stu-analysis-content .tot-stu-analysis-para-two {
+    font-size: 19px;
+  }
+  .student-page-container .stud-round-design-one {
+    height: 70px;
+    width: 70px;
+    bottom: 0px;
+  }
+  .student-page-container .stud-round-design-one .stud-round-design-two {
+    height: 40px;
+    width: 40px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 50px;
+    font-size: 16px;
+    width: 180px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn .span-for-btn-stud-page {
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+  }
+  .student-page-container .student-page-inner-container, .student-page-container .student-page-inner-container .student-page-image-container, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .image-bar-in-main-content {
+    padding: 0px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content {
+    gap: 25px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-one, .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .analysis-student-container .stu-thinking-analysis .stu-thinking-two {
+    border-bottom: 1px solid rgb(194, 194, 194);
+    padding-bottom: 18px;
+  }
+  .student-page-container .student-page-inner-container .student-page-content-container .student-page-main-content .content-bar-in-main-content .stud-content-main-btn .stud-analysis-btn {
+    height: 55px;
+    width: 180px;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=StudentPage.css.map */
