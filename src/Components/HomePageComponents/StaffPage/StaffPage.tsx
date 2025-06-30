@@ -67,10 +67,48 @@ const StaffPage = () => {
           </div>
            <img src="./StaffPage/Staff-page-img.webp" alt="Staff Image "
              className='image-box-two-imagetwo Staff-Image-Scroll'/>
+
+          <div className='mobile-image-for-staff-page'>
+            <div className='mobile-image-bar-two-section-one'>
+              <img src="./StaffPage/Staff-page-img.webp" alt="Staff Image "
+             className='image-box-one-imagetwo-mob Staff-Image-Scroll'/>
+            </div>
+            <div className='mobile-image-bar-two-section-two'>
+            <img src="./StaffPage/Staff-one.webp" alt="Staff Image "
+             className='image-box-two-imagetwo-mob-two Staff-Image-Scroll'/>
+             <div className='image-box-one-totors-mobile'>
+            <div className='tutors-img-tag'>
+               <img src="./StaffPage/Top-staff-one.avif" alt="Staff Image"
+             className='tutor-round tutor-one'/>
+              <img src="./StaffPage/Top-staff-two.avif" alt="Staff Image"
+             className='tutor-two'/>
+              <img src="./StaffPage/Top-staff-three.avif" alt="Staff Image"
+             className='tutor-three'/>
+             <img src="./StaffPage/Top-staff-Four.avif" alt="Staff Image"
+             className='tutor-four'/>
+              <div className='tutor-five'>
+                <p>+50</p>
+              </div>
+            </div>
+            <div className='tutor-cont'>
+              <p className='top-mentor'>Top-Mentors</p>
+              <p className='top-mentor-sub'>Around the Globe</p>
+            </div>
+              </div>
+            </div>
+          </div>
           
         </div>
       </div>
       <div className='staff-page-content-container'>
+        <Video 
+                urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                src="./Home+1+Video.mp4"
+                  autoPlay
+                muted 
+                loop
+                className='video-tag-for-content'
+                />
         <div className='short-title-staff-page'>
           <div className='line-img-tag'></div>
           <p className='flexible-short-tit'>FLEXIBLE SUPPORTED LEARNING</p> 
@@ -96,7 +134,7 @@ const StaffPage = () => {
               </div>
               <div className='analysis-tag-content-one'>
                 <p  className='analysis-num'>70%</p>
-                <p className='analysis-cont'>70% of our  educators have 5+ years of experience, enriching classrooms.</p>
+                <p className='analysis-cont'>{window.innerWidth<370?'70% of our  educators have 5+ years.':window.innerWidth<730?String('70% of our educators have 5+ years of experience in Teaching.').slice(0,60)+'..':window.innerWidth<850?'70% of our  educators have 5+ years.':'70% of our  educators have 5+ years of experience, enriching classrooms.'}</p>
               </div>
             </div>
             <div className='number-analysis-two'>
@@ -105,7 +143,7 @@ const StaffPage = () => {
               </div>
               <div className='analysis-tag-content-two'>
                 <p className='analysis-num'>9/10</p>
-                <p className='analysis-cont'>9 out of 10 teachers exceed benchmarks, showing dedication.</p>
+                <p className='analysis-cont'>{window.innerWidth<370?'9 in 10 teachers exceed in benchmarks.':window.innerWidth<730?String('9 out of 10 teachers exceed benchmarks, showing dedication.').slice(0,60)+'..':window.innerWidth<850?'9 in 10 teachers exceed benchmarks.':'9 out of 10 teachers exceed benchmarks, showing dedication.'}</p>
               </div>
             </div>
           </div>
@@ -116,7 +154,7 @@ const StaffPage = () => {
               </div>
               <div className='analysis-tag-content-three'>
                 <p className='analysis-num'>95%</p>
-                <p className='analysis-cont'>Our faculty hold advanced degrees and provide excellent guidance.
+                <p className='analysis-cont'>{window.innerWidth<370?'Our expert faculty offer great guidance.':window.innerWidth<730?String('Our faculty hold advanced degrees and provide excellent guidance.').slice(0,60)+'..':window.innerWidth<850?'Our expert faculty offer top-notch guidance.':'Our faculty hold advanced degrees and provide excellent guidance.'}
 </p>
               </div>
             </div>
@@ -126,7 +164,7 @@ const StaffPage = () => {
               </div>
               <div className='analysis-tag-content-four'>
                 <p className='analysis-num'>10+</p>
-                <p className='analysis-cont'>10 staff excel in personalized academic and career guidance.</p>
+                <p className='analysis-cont'>{window.innerWidth<370?'10 staff specialize in personalized academic':window.innerWidth<730?String('10 staff excel in personalized academic and career guidance.').slice(0,60)+'..':window.innerWidth<850?'10 staff specialize in personalized academic':'10 staff excel in personalized academic and career guidance.'}</p>
               </div>
               
               

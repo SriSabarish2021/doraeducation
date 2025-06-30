@@ -24,10 +24,10 @@ const HomePage = ({course,LikeCourse,sethashget,starcalc}) => {
     }, [])
   return (
     <>
-      {/*<HomeMain/>
-      <StaffPage/> */}
+      {/*<HomeMain/>*/}
+      <StaffPage/> 
       {/* <Topcourses/>  DONE*/}
-      <StudentPage/>
+      {/* <StudentPage/>  DONE*/}
      {/*  <AboutUs/>  DONE*/}
       {/*  {window.innerWidth<980?<SideBy  onedisp={true} twodisp={false}/>:<SideBy  onedisp={false} twodisp={false}/>} DONE */}
       {/* <WhyChoose/> DONE */}
