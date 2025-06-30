@@ -1497,5 +1497,63 @@
     height: 8px;
   }
 }
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .tistimonail-title {
+    font-size: 25px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para {
+    font-size: 30px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .quote-para-testimonial {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .testimonial-container {
+    padding: 15px;
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-title-bar .testimonial-main-title .testimonial-main-title-para .stud-think .stud-think-design {
+    height: 40px;
+    width: 120px;
+    bottom: -30px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-one, .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-three, .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-two {
+    height: 35px;
+    width: 35px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line {
+    height: 220px;
+    width: 220px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-three {
+    right: -20px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .testimonial-border-image-two {
+    bottom: 3px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-star-rating {
+    font-size: 16px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-comment {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-name-para {
+    font-size: 14px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-info-tag .student-degree-para {
+    font-size: 11px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-inner-content-bar .student-testimonial-one .student-info .student-image-tag {
+    height: 40px;
+    width: 40px;
+  }
+  .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-left-btn, .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonail-main-content-bar .testimonial-move-button .testimonial-right-btn {
+    height: 24px;
+    width: 24px;
+    font-size: 13px;
+  }
+}
 
 /*# sourceMappingURL=Testimonial.css.map */

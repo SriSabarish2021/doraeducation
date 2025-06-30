@@ -1070,6 +1070,10 @@
   }
 }
 @media screen and (max-width: 1100px) {
+  .program-list-main-container .program-list-btn {
+    font-size: 13px;
+    padding: 13px 30px;
+  }
   .program-list-main-container::before {
     height: 550px;
     width: 550px;
@@ -2255,6 +2259,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .program-list-main-container .program-list-btn {
+    font-size: 11px;
+    padding: 13px 20px;
+  }
   .program-list-main-container .program-list-title-container .course-filter-bar-for-course-page .course-filter-btn .course-filter-more .course-filter-more-inner .more-filter-para {
     font-size: 9px;
   }
@@ -2336,6 +2344,12 @@
 @media screen and (max-width: 450px) {
   #Back-End {
     display: none;
+  }
+  .program-list-main-container .program-list-btn {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Inter";
+    padding: 12px 16px;
   }
 }
 @media screen and (max-width: 400px) {

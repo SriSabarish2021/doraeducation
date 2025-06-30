@@ -312,7 +312,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                   Math.floor(Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0))==1?<span className='star-hover'><FaStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>:<span className='star-hover'><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/><FaRegStar/></span>
                                 }<span className='star-hover-cont'>{Number(Number(Number(starcalc(indicourse.id))/Number((Number(indicourse.CourseReview.length)*5)))*5).toFixed(0)}/5 Ratings</span></p>
                 <p className="hover-amount">${indicourse.CourseAMT}</p>
-                <p className="hover-sub-title">{String(indicourse.CoursePara).slice(0,150)+'...'}</p>
+                <p className="hover-sub-title">{window.innerWidth<350?String(indicourse.CoursePara).slice(0,80)+'...': String(indicourse.CoursePara).slice(0,150)+'...'}</p>
                 <div className='prog-info-hovering'>
                   <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>{indicourse.CourseDuration} Hours</p>
                   <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>{indicourse.totalLesson} Lesson</p>
