@@ -55,13 +55,33 @@ const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,likepage,c
 
 
    
-
+const [mobtop,setmobtop]=useState(0)
        const [commentimg,setcommentimg]=useState([])
+
+       useEffect(() => {
+         const gettopvalue=document.querySelector('.course-overview-content-sider')?.getBoundingClientRect().height
+         
+     
+          if (gettopvalue) {
+            setmobtop(-Number(gettopvalue)/3)
+            console.log(gettopvalue);
+          }
+    
+       
+         return () => {
+          setmobtop(0)
+         }
+       })
+       
 
 
     useEffect(() => {
       
      window.scrollTo(0,0)
+
+
+
+     
       
     }, [])
 
@@ -1026,7 +1046,7 @@ const removeredborder=()=>{
                   </div>
                 </button>
               </div>
-              <div className='course-overview-content-sider' style={{top:Number(navheight)+20}}>
+              <div className='course-overview-content-sider' style={{top:window.innerWidth<690?`${mobtop}px`:Number(navheight)+20}}>
                 <p className='course-content-sider-title'>This Course Includes :</p>
                 <div className='course-includes-list'>
                   <div className='course-includes-list-items'>
@@ -1055,7 +1075,7 @@ const removeredborder=()=>{
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><IoDocumentText className='sider-list-icon'/>Resource</p>
-                    <p className='course-list-cont'>{Array.from(coursedetails.DownloadResourses).length} Downloadable Files</p>
+                    <p className='course-list-cont'>{window.innerWidth<690?`${Array.from(coursedetails.DownloadResourses).length} Downloadable Files`:window.innerWidth<1000?`${Array.from(coursedetails.DownloadResourses).length} Files`:`${Array.from(coursedetails.DownloadResourses).length} Downloadable Files`}</p>
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><FaRegClock className='sider-list-icon'/>Duration</p>
@@ -1067,14 +1087,14 @@ const removeredborder=()=>{
                   <div className='course-share-path-icon'>
                       <a   href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:5173/mindspire-course#javascript"
                       target="_blank"
-                      rel="noopener noreferrer"  className='instructor-media med-fb'><FaFacebookF className='icon-for-clr-fb'/></a>
+                      rel="noopener noreferrer"  className='instructor-media-side med-fb'><FaFacebookF className='icon-for-clr-fb'/></a>
                       <a href="https://twitter.com/intent/tweet?url=localhost:5173/mindspire-course#javascript&text=Check%20out%20my%20site!"
                       target="_blank"
-                      rel="noopener noreferrer" className='instructor-media  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></a>
+                      rel="noopener noreferrer" className='instructor-media-side  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></a>
                       <a  href="https://www.linkedin.com/shareArticle?mini=true&url=localhost:5173/mindspire-course#javascript"
                         target="_blank"
-                        rel="noopener noreferrer" className='instructor-media  med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></a>
-                      <a href='https://www.instagram.com/' target='_blank'  className='instructor-media  med-insta'><FaInstagram className='icon-for-clr-insta'/></a>
+                        rel="noopener noreferrer" className='instructor-media-side med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></a>
+                      <a href='https://www.instagram.com/' target='_blank'  className='instructor-media-side  med-insta'><FaInstagram className='icon-for-clr-insta'/></a>
 
                   </div>
                 </div>

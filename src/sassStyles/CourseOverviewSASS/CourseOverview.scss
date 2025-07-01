@@ -8,6 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
 
@@ -999,8 +1003,7 @@
                             color: rgb(49, 49, 49);
                             transition-duration: 0.4s;
                             cursor: pointer;
-                        }
-                        .icon-for-clr-fb{
+                                                       .icon-for-clr-fb{
                             color: #4267B2;
                             transition-duration: 0.4s;
                         }
@@ -1056,6 +1059,74 @@
 
                             background-color: #0a66c2;
                         }
+                        }
+.instructor-media-side{
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 100%;
+                            border: 1px solid main-color.$border-light-color;
+                            @include Row-center.row-center;
+                            color: rgb(49, 49, 49);
+                            transition-duration: 0.4s;
+                            cursor: pointer;
+                                                       .icon-for-clr-fb{
+                            color: #4267B2;
+                            transition-duration: 0.4s;
+                        }
+                        .icon-for-clr-twitter{
+                            color: #000000	;
+                            transition-duration: 0.4s;
+                        }
+                       .icon-for-clr-linkedin{
+                            color:  #0a66c2	;
+                            transition-duration: 0.4s;
+                        }
+
+                        .icon-for-clr-insta{
+                            transition-duration: 0.4s;
+                            color:  #C13584	;
+                        }
+                        .med-fb:hover{
+                                                        transition-duration: 0.4s;
+
+                            .icon-for-clr-fb{
+                            color: rgb(244, 244, 244);
+
+                            }
+                            background-color: #4267B2;
+                        }
+                        .med-insta:hover{
+                            transition-duration: 0.4s;
+
+                            .icon-for-clr-insta{
+                            transition-duration: 0.4s;
+
+                            color: #fafafa;
+                            }
+                            background: #d4b135;
+                            background: linear-gradient(152deg, rgba(212, 177, 53, 1) 0%, rgba(217, 67, 130, 1) 47%, rgba(123, 79, 209, 1) 100%);
+                        }
+                        .med-twitt:hover{
+                           transition-duration: 0.4s;
+
+                            .icon-for-clr-twitter{
+                            color: #ffffff	;
+                            
+                            }
+
+                            background-color: #000000;
+                        }
+                        .med-linkedin:hover{
+                             transition-duration: 0.4s;
+
+                            .icon-for-clr-linkedin{
+                            color:  #ffffff	;
+                        }
+
+                            background-color: #0a66c2;
+                        }
+                        }
+                     
 
         .course-overview-content-main{
             height: 100%;
@@ -1091,6 +1162,7 @@
                     font-weight: 600;
                     letter-spacing: 1px;
                     cursor: pointer;
+                    top: 0px;
                     transition-duration: 0.3s;
 
 
@@ -1213,6 +1285,7 @@
                     grid-template-columns: repeat(2,1fr);
                     grid-template-rows: repeat(3,1fr);
                     padding-left: 30px;
+                    column-gap: 5px;
                     row-gap: 25px;
                     .course-detail-points{
                         @include Row-center.row-center;
@@ -1375,12 +1448,12 @@
                     align-items: flex-start;
                     gap: 10px;
                     .tick-what-learn{
-                        flex: 1 1 calc(5%);
+                        width: 10%;
                         font-size: 26px;
                         color: main-color.$main-color-for-app;
                     }
                     .para-what-learn{
-                         flex: 1 1 calc(95%);
+                            width: 90%;
                             font-size: 16px;
                             font-weight: 500;
                             font-family: "Source Sans 3";
@@ -2033,5 +2106,942 @@
 
             }
         }
+    }
+}
+
+
+
+@media screen and  (max-width:1340px) {
+    .course-overview-main-conatainer .course-overview-intro-div{
+        padding: 60px 40px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        padding: 40px 60px;
+    }
+}
+
+
+@media screen and  (max-width:1250px) {
+ .course-overview-main-conatainer .course-overview-intro-div{
+        padding: 60px 30px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        padding: 40px 50px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container{
+        padding: 30px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content .course-detail-points{
+        width: 100%;
+    }
+}
+
+
+@media screen and  (max-width:1180px) {
+ .course-overview-main-conatainer .course-overview-content-div{
+        padding: 40px 40px;
+    }
+}
+
+
+
+@media screen and  (max-width:1100px) {
+.course-overview-main-conatainer .course-overview-intro-div{
+        padding: 50px 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview .course-overview-title{
+        font-size: 38px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-para-in-course-overview{
+        font-size: 13px;
+        letter-spacing: 0.6px;
+        width: 95%;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container{
+        gap: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box{
+        gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-img-for-course-overview{
+        height: 43px;
+        width: 43px;
+    }.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name-tit{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name{
+        font-size: 13px;
+    }
+   
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-rating{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .star-for-course-review{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-total{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar,.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar{
+        padding: 6px 14px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para,.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar{
+        gap: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para .audio-course-span-main,.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para .audio-course-span-main{
+        font-size: 11px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-icon{
+        height: 24px;
+        width: 24px;
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-course-cont,.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-course-cont .calender-cont{
+        font-size: 11.5px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div{
+        gap: 30px;
+    }
+    
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side{
+        flex-wrap: wrap;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+        width: 98%;
+        padding: 10px;
+        height: 170px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .icon-play-vid{
+        height: 45px;
+        width: 45px;
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .vid-play-design{
+        height: 90px;
+        width: 90px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-one{
+        font-size: 22px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-two{
+        font-size: 18px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-discount{
+        font-size: 10.5px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .time-left-offer{
+        font-size: 11px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn{
+        height: 38px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one,.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        padding: 40px 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
+        padding: 18px 0px;
+        padding-left: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar .course-overview-nav-bar-para{
+        font-size: 12.5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
+        gap: 45px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container{
+        padding: 30px 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-title{
+        font-size: 24px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-para{
+        font-size: 12.5px;
+        line-height: 28px;
+    }
+    
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container{
+        gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content{
+        padding-left: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content .course-detail-points{
+        gap: 10px;
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title{
+        padding: 12px 14px;
+        padding-right: 28px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-cont-show,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-cont{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .video-cam{
+        font-size: 16px;
+    }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-inner-time{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title .course-para-course-content .number-course-content{
+        font-size: 26px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container{
+        gap: 30px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title .course-para-course-content{
+        font-size: 15px;
+        font-family: 'Averia Sans Libre';
+        font-weight: 600;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title .arrow-icon-for-course-cont{
+        font-size: 14px;
+    }
+
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content-holder{
+        padding-left: 10px;
+        column-gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .tick-what-learn{
+        font-size: 18px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .para-what-learn{
+        font-size: 14.5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-intructor-image{
+        height: 200px;
+        width: 200px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-name{
+        font-size: 16px;
+    }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-name .instructor-qualification{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .star-of-tutor{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .instructor-infor-para-one{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .tutor-number-of-review{
+        font-size: 11.5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .tutor-infor-icon{
+        font-size: 15px;
+    }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .instructor-infor-para-two, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .instructor-infor-para-three{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .instructor-media{
+        height: 38px;
+        width: 38px;
+    }.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-insta,.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-linkedin,.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-twitter,.course-overview-main-conatainer .course-overview-content-div .icon-for-clr-fb{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info{
+        gap: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main{
+        padding: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-average .total-rating-para{
+        font-size: 60px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-average .total-rating-average-star .star-in-rating{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-average .total-rating-average-star .number-review-in-rating{
+        font-size: 11px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .line-rating-bg{
+        height: 9px;
+    }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .star-number-rating-box,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .percentage-star-rating-box,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .total-rating-in-rating-box{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course{
+        padding: 25px 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-reviewer-img .reviewer-image{
+        height: 85px;
+        width: 85px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-date-in-review .star-in-review{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content .reviewer-name-review{
+        font-size: 16px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content .reviewer-date-review{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content .reviewer-cont-review{
+    font-size: 12px;
+    letter-spacing: 0.6px;
+   
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content{
+        gap: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-date-in-review .reviewer-date-review{
+        font-size: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-content-sider-title{
+        font-size: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .course-list-cont{
+        font-size: 11.5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .corse-includes-list-para-one{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .sider-list-icon{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        gap: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-sharing-path-title{
+        font-size: 16px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path{
+        padding: 20px;
+        gap: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+        height: 40px;
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner .review-write-btn-design{
+        height: 38px;
+        width: 180px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        flex: 1 1 calc(30%);
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main{
+        flex: 1 1 calc(70%);
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        padding: 18px;
+    }
+}
+
+
+
+@media screen and  (max-width:950px) {
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        flex: 1 1 calc(25%);
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main{
+        flex: 1 1 calc(75%);
+    }
+    
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        width: auto;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon{
+        gap: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .instructor-media-side{
+        height: 34px;
+        width: 34px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-content-sider-title{
+        font-size: 19px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .course-list-cont{
+        font-size: 11.5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .corse-includes-list-para-one{
+        font-size: 12.5px;
+    }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+    padding: 18px 15px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+    gap: 15px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-sharing-path-title{
+    font-size: 14px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path{
+    padding:20px 16px;
+     gap: 15px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path{
+    margin-top: 10px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon{
+    padding-left: 10px;
+   
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+    height: 36px;
+    font-size: 13px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-fb,.course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-twitter,.course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-linkedin,.course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-insta{
+    font-size: 14px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div{
+    gap: 20px;
+   }
+   .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-discount{
+    padding: 4px 8px;
+    font-size: 9px;
+   }
+}
+
+
+@media screen and  (max-width:870px) {
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-para-in-course-overview{
+        font-size: 12.5px;
+        line-height: 28px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name-tit{
+        font-size: 11.5px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name{
+        font-size: 12.5px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-rating{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .star-for-course-review{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-total{
+        font-size: 11px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div{
+        gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+        height: 150px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .icon-play-vid{
+        height: 42px;
+        width: 42px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .vid-play-design{
+        height: 80px;
+        width:80px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box{
+        gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-one{
+        font-size: 21px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-two{
+        font-size: 16px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-discount{
+        font-size: 8px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .time-left-offer{
+        font-size: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para{
+        gap: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns{
+        margin-top: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one, .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn{
+        height: 36px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div{
+        padding: 40px 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        padding: 30px 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar .course-overview-nav-bar-para{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
+        padding: 16px;
+        padding-left: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-title{
+        font-size: 22px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-title .course-section-tit-underline{
+        height: 12px;
+        width: 90px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-para{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container{
+        padding: 25px 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content .course-detail-points{
+        gap: 8px;
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title .course-para-course-content{
+        font-size: 14px;
+    }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title{
+        padding: 9px 12px;
+        padding-right: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-cont-show, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-cont{font-size: 12px;}
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-inner-time{
+        font-size: 12.5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .tick-what-learn{
+        font-size: 16px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .para-what-learn{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content{
+        gap: 5px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-intructor-image{
+        height: 190px;
+        width: 190px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main{
+        padding: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-average .total-rating-para{
+        font-size: 55px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-average .total-rating-average-star .star-in-rating{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .line-rating-bg{
+        height: 8px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup{
+        gap: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-reviewer-img .reviewer-image{
+        height: 80px;
+        width: 80px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .star-date-in-review .star-in-review{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content .reviewer-name-review{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content .reviewer-cont-review{
+        font-size: 11.5px;
+        line-height: 22px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course{
+        padding: 20px 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner .review-write-btn-design{
+        height: 36px;
+        width: 170px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content{
+        padding-left: 0px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side{
+        row-gap: 15px;
+    }
+}
+
+
+
+@media screen and  (max-width:810px) {
+    .course-overview-main-conatainer .course-overview-intro-div{
+        gap: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn {
+        height: 35px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
+        gap: 35px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .para-what-learn{
+        font-size: 13.5px;
+        line-height: 23px;
+    }
+     .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container {
+        gap: 25px;
+    }
+}
+
+
+@media screen and  (max-width:780px) {
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview .course-overview-title{
+        font-size: 35px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-para-in-course-overview{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div{
+        padding: 40px 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview{
+        width: 100%;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+        height: 145px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+        width: 100%;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .icon-play-vid{
+        height: 40px;
+        width: 40px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .vid-play-design{
+        height: 70px;
+        width: 70px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box{
+        gap: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div{
+        gap: 6px;
+    }
+   .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-discount{
+    border-radius: 3px;
+   }
+   .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn{
+    height: 33px;
+   }.course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-one, .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn-two{
+    font-size: 11px;
+   }
+   .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+    padding: 8px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div{
+    padding: 30px 15px;
+    padding-right: 10px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar .course-overview-nav-bar-para{
+    font-size: 11.5px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
+    gap: 32px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main{
+    gap: 35px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container{
+    padding: 20px 15px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .all-box-overview-para{
+    font-size: 11.5px;
+    line-height: 24px;
+
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content .course-detail-points{
+    gap: 4px;
+   
+   }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .Course-detail-container .course-detail-main-point-content .course-detail-points{
+    font-size: 13px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .para-what-learn{
+    font-size: 13.5px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .tutor-number-of-review{
+    font-size: 11px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .instructor-infor-para-two, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .instructor-information .instructor-infor-para-three{
+    font-size: 11.5px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .instructor-media{
+    height: 36px;
+    width: 36px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main{
+    gap:5px;
+   
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup{
+    gap: 10px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .star-number-rating-box, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .percentage-star-rating-box, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .total-rating-in-rating-box{
+    font-size: 12px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-reviewer-img .reviewer-image{
+    height: 70px;
+    width: 70px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-review-container .review-of-the-course .review-of-the-course-cont .reviewer-content .reviewer-cont-review{
+    font-size: 11px;
+    line-height: 20px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-instructor-main-info .tutor-intro-para{
+    line-height: 25px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content-holder{
+    padding-left: 0px;
+    column-gap: 20px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn, .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner .review-write-btn-design{
+    height: 34px;
+    width: 160px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner{
+    font-size: 12px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-content-sider-title{
+    font-size: 18px;
+}  
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .corse-includes-list-para-one{
+    font-size: 12px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .course-list-cont{
+    font-size: 11px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .sider-list-icon{
+    font-size: 14px;
+}.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items{
+    padding-bottom: 12px;
+}
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+    padding: 18px 12px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon{
+    padding-left: 5px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .instructor-media-side{
+    height: 32px;
+    width: 32px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-fb, .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-twitter, .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-linkedin, .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-insta{
+    font-size: 13px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-sharing-path-title{
+    font-size: 13px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path{
+    padding: 18px 12px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon{
+    gap: 12px;
+   }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+    height: 34px;
+    font-size: 12px;
+   }
+}
+
+
+@media screen and  (max-width:730px) {
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .what-learn-from-course-container .what-learn-content .para-what-learn{
+    font-size: 13px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
+    gap: 30px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title .course-para-course-content{
+    font-size: 13.5px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-content-container .course-content-main-list .course-content-list .course-content-list-title .course-para-course-content .number-course-content{
+    font-size: 24px;
+}
+.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-instructor-container .course-instructor-info .course-intructor-image{
+    height: 180px;
+    width: 180px;
+}.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-rating .course-rating-container-main .total-rating-star-lineup .total-rating-star-line .line-rating-bg{
+    height: 7px;
+}
+}
+
+
+@media screen and  (max-width:690px) {
+    .course-overview-main-conatainer .course-overview-intro-div{
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        align-items: flex-start;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box{
+        height: auto;
+        flex: none;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box{
+        height: auto;
+        flex: none;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main{
+        height: auto;
+        flex: none;
+        z-index: 1;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+         height: auto;
+        flex: none;
+     
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview .course-overview-title{
+        font-size: 45px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-para-in-course-overview{
+        font-size: 13.5px;
+        line-height: 28px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container{
+        gap: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box{
+        gap: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-img-for-course-overview{
+        height: 50px;
+        width: 50px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name-tit{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-tutor-side .tutor-name{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-rating{
+        font-size: 13px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .star-for-course-review{
+        font-size: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-review-bar .course-review-total{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para, .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-audio-bar .course-audio-para .audio-course-span-main, .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-audio-review-info-side .course-language-bar .course-lang-para .audio-course-span-main{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box{
+        flex-direction: row;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-icon{
+        height: 27px;
+        width: 27px;
+    }.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-icon{
+        font-size: 12.5px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-course-cont, .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container .course-calender-box .calender-course-cont .calender-cont{
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container{
+        gap: 30px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box{
+        flex-direction: row;
+        width: 85%;
+      
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-one{
+        font-size: 25px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-para .actual-cost-para-two{
+        font-size: 18px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .actual-course-cost .actual-course-discount{
+        font-size: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .time-left-offer{
+        font-size: 11px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns .course-btn{
+        height: 36px;
+        font-size: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview .course-join-btns{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview{
+        align-items: center;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+        height: 160px;
+        padding: 10px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .icon-play-vid{
+        height: 50px;
+        width: 50px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .icon-play-vid{
+        font-size: 16px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview .course-video-image .video-play-btn-container .vid-play-design{
+        height: 100px;
+        width: 100px;
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-video-overview{
+                flex: 1 1 calc(50%);
+
+    }
+    .course-overview-main-conatainer .course-overview-intro-div .course-enroll-box .course-enroll-amount-overview{
+        
+        flex: 1 1 calc(50%);
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        width: 90%;
+    }
+    .course-overview-main-conatainer .course-overview-content-div{
+        padding: 30px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-content-sider-title{
+        font-size: 24px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider{
+        padding: 20px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items {
+        padding: 10px 15px;
+        padding-bottom: 15px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list{
+        gap: 12px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .sider-list-icon{
+        font-size: 18px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .corse-includes-list-para-one{
+        font-size: 14px;
+    }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .course-list-cont{
+        font-size: 13px;
     }
 }
