@@ -768,7 +768,7 @@ const removeredborder=()=>{
                             
                           }
                         }}>
-                      <p className={`course-overview-nav-bar-para summary-para ${summary||activeId.includes('Course-detail-container')?'red-nav-cont':'black-nav-cont'}` }>Summary</p>
+                      <p className={`course-overview-nav-bar-para summary-para ${summary||activeId.includes('Course-detail-container')?'red-nav-cont':'black-nav-cont'}` }>{window.innerWidth<450?'Gist':'Summary'}</p>
                     </a>
 
                     <a href="#" style={{textDecoration:'none'}}
@@ -785,7 +785,7 @@ const removeredborder=()=>{
                             
                           }
                         }}>
-                      <p className={`course-overview-nav-bar-para content-para ${content||activeId.includes('course-content-container')?'red-nav-cont':'black-nav-cont'}` }>Content</p>
+                      <p className={`course-overview-nav-bar-para content-para ${content||activeId.includes('course-content-container')?'red-nav-cont':'black-nav-cont'}` }>{window.innerWidth<450?'Info':'Content'}</p>
                     </a>
 
                     <a href="#" style={{textDecoration:'none'}}
@@ -802,7 +802,7 @@ const removeredborder=()=>{
                             
                           }
                         }}>
-                      <p className={`course-overview-nav-bar-para what-para ${learn||activeId.includes('what-learn-from-course-container')?'red-nav-cont':'black-nav-cont'}` }>what-learn</p>
+                      <p className={`course-overview-nav-bar-para what-para ${learn||activeId.includes('what-learn-from-course-container')?'red-nav-cont':'black-nav-cont'}` }>{window.innerWidth<450?'Guid':'what-learn'}</p>
                     </a>
 
                     <a href="#" style={{textDecoration:'none'}}
@@ -819,7 +819,7 @@ const removeredborder=()=>{
                             
                           }
                         }}>
-                      <p className={`course-overview-nav-bar-para ins-para ${instructor||activeId.includes('course-instructor-container')?'red-nav-cont':'black-nav-cont'}` }>Instructor</p>
+                      <p className={`course-overview-nav-bar-para ins-para ${instructor||activeId.includes('course-instructor-container')?'red-nav-cont':'black-nav-cont'}` }>{window.innerWidth<450?'Tchr':'Instructor'}</p>
                     </a>
 
                     <a href="#" style={{textDecoration:'none'}}
@@ -836,7 +836,7 @@ const removeredborder=()=>{
                             
                           }
                         }}>
-                      <p className={`course-overview-nav-bar-para rev-para ${review||activeId.includes('course-review-container')?'red-nav-cont':'black-nav-cont'}` }>Review</p>
+                      <p className={`course-overview-nav-bar-para rev-para ${review||activeId.includes('course-review-container')?'red-nav-cont':'black-nav-cont'}` }>{window.innerWidth<450?'Crit':'Review'}</p>
                     </a>
                     
                   </div>
@@ -1108,7 +1108,7 @@ const removeredborder=()=>{
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><IoDocumentText className='sider-list-icon'/>Resource</p>
-                    <p className='course-list-cont'>{window.innerWidth<690?`${Array.from(coursedetails.DownloadResourses).length} Downloadable Files`:window.innerWidth<1000?`${Array.from(coursedetails.DownloadResourses).length} Files`:`${Array.from(coursedetails.DownloadResourses).length} Downloadable Files`}</p>
+                    <p className='course-list-cont'>{window.innerWidth<400?`${Array.from(coursedetails.DownloadResourses).length} Files`:window.innerWidth<690?`${Array.from(coursedetails.DownloadResourses).length} Downloadable Files`:window.innerWidth<1000?`${Array.from(coursedetails.DownloadResourses).length} Files`:`${Array.from(coursedetails.DownloadResourses).length} Downloadable Files`}</p>
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><FaRegClock className='sider-list-icon'/>Duration</p>
