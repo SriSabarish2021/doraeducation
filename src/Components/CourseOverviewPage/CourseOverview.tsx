@@ -55,23 +55,9 @@ const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,likepage,c
 
 
    
-const [mobtop,setmobtop]=useState(0)
        const [commentimg,setcommentimg]=useState([])
 
-       useEffect(() => {
-         const gettopvalue=document.querySelector('.course-overview-content-sider')?.getBoundingClientRect().height
-         
-     
-          if (gettopvalue) {
-            setmobtop(-Number(gettopvalue)/3)
-            console.log(gettopvalue);
-          }
     
-       
-         return () => {
-          setmobtop(0)
-         }
-       })
        
 
 
@@ -1045,8 +1031,55 @@ const removeredborder=()=>{
 
                   </div>
                 </button>
+                <div className='course-overview-content-sider-bottom' >
+                
+                <div className='course-sharing-path'>
+                  <p className='course-sharing-path-title'>Share Now :</p>
+                  <div className='course-share-path-icon'>
+                      <a   href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:5173/mindspire-course#javascript"
+                      target="_blank"
+                      rel="noopener noreferrer"  className='instructor-media-side med-fb'><FaFacebookF className='icon-for-clr-fb'/></a>
+                      <a href="https://twitter.com/intent/tweet?url=localhost:5173/mindspire-course#javascript&text=Check%20out%20my%20site!"
+                      target="_blank"
+                      rel="noopener noreferrer" className='instructor-media-side  med-twitt'><FaXTwitter className='icon-for-clr-twitter'/></a>
+                      <a  href="https://www.linkedin.com/shareArticle?mini=true&url=localhost:5173/mindspire-course#javascript"
+                        target="_blank"
+                        rel="noopener noreferrer" className='instructor-media-side med-linkedin'><FaLinkedinIn className='icon-for-clr-linkedin'/></a>
+                      <a href='https://www.instagram.com/' target='_blank'  className='instructor-media-side  med-insta'><FaInstagram className='icon-for-clr-insta'/></a>
+
+                  </div>
+                </div>
+                {coursedetails.Enroll?<div className='enroll-done-para-div'>
+                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>courseenrolled(coursedetails.id)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
+                  </div> :
+                  enrollbtn && !enrollbtncont && !enrollbtntick? 
+                  <button onClick={()=>setenrollbtn(!enrollbtn)} className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
+                  <span className='enroll-ball enroll-ball-two'></span>
+                  <span className='enroll-ball enroll-ball-three'></span>
+                  <span className='enroll-ball enroll-ball-four'></span>
+                  <span className='enroll-ball enroll-ball-five'></span>
+                  <span className='rotate-in-enroll'><IoSettings className='rotate-icon-enroll'/></span>
+                  
+                  </button>: !enrollbtn && !enrollbtncont && enrollbtntick?
+                     <DotLottieReact
+                          src="https://lottie.host/4a15363c-8297-4af5-b506-b8b95205e70a/STQRQoNmVA.lottie"
+                          loop
+                          autoplay
+                          className='lottie-file-tick'
+                        />
+                 
+                  : !enrollbtn && !enrollbtntick && enrollbtncont?<div className='enroll-done-para-div'>
+                    <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>courseenrolled(coursedetails.id)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
+                  </div> :
+                  <button onClick={()=>setenrollbtn(!enrollbtn)} className='enroll-btn-sider-course'>Enroll Course
+                    <div className='enroll-design-one'></div>
+                    <div className='enroll-design-two'></div>
+                  </button>
+                }
+               
+                </div>
               </div>
-              <div className='course-overview-content-sider' style={{top:window.innerWidth<690?`${mobtop}px`:Number(navheight)+20}}>
+              <div className='course-overview-content-sider' style={{top:Number(navheight)+20}}>
                 <p className='course-content-sider-title'>This Course Includes :</p>
                 <div className='course-includes-list'>
                   <div className='course-includes-list-items'>
