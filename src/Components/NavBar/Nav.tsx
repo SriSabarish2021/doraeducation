@@ -196,7 +196,7 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
             
           </div>
          
-          <div className='nav-item-insider'>
+          <div className='nav-item-insider mob-remove'>
             <NavLink style={{textDecoration:'none'}} to={'Mindspire-Institute-Student-Review-Page'}>
               {({isActive})=>(
               <>
@@ -297,7 +297,7 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
             
           </div>
          
-          <div className='nav-item-insider'>
+          <div className='nav-item-insider mob-remove'>
             <NavLink style={{textDecoration:'none'}} to={'Mindspire-Institute-Student-Review-Page'}>
               {({isActive})=>(
               <>

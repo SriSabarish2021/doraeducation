@@ -1227,13 +1227,13 @@ function App() {
   return (
     
     <div className='website-main-container'>
-      {/* <style>{
+      <style>{
         `html{
           overflow-x: hidden;
           overflow-y:${reviewwrite||login||sidesharepage||cartpage||likepage?'hidden':'auto'}
         }`}
-        </style> */}
-      {/* <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
+        </style>
+      <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
          <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
@@ -1250,7 +1250,7 @@ function App() {
       <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
       <LikePage sethashget={sethashget} starcalc={starcalc} setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
       <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
-     <LoginPage login={login} setlogin={setlogin}/> */}
+     <LoginPage login={login} setlogin={setlogin}/>
       <Footer/>
     </div>
    

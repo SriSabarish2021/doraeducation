@@ -40,7 +40,7 @@ const LikePage = ({sethashget,likepage,setlikepage,course,removelike,setcartpage
           <div className='like-item-inner'>
             <div className='like-item-image-box' style={{backgroundImage:`url(${indilike.courseIMG})`}}><FaHeart className='heart-icon-like-img'/></div>
             <div className='like-item-content-box'>
-              <Link onClick={()=>{setlikepage(false),sethashget(indilike.courseName)}} style={{textDecoration:'none'}} to={{ pathname: "mindspire-course", hash: `#${indilike.courseName}` }} className='like-item-para-one'>{indilike.courseTitle}
+              <Link onClick={()=>{setlikepage(false),sethashget(indilike.courseName)}} style={{textDecoration:'none'}} to={{ pathname: "mindspire-course", hash: `#${indilike.courseName}` }} className='like-item-para-one'>{window.innerWidth<450?String(indilike.courseTitle).slice(0,15)+'...':indilike.courseTitle }
               <div className='like-item-underline'></div>
               </Link>
               {

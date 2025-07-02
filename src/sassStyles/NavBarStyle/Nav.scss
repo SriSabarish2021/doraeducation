@@ -1196,6 +1196,13 @@
    .contact-in-nav-bar{
     height: 50px;
    }
+   .nav-bar-items-container .nav-items{
+    gap:20px;
+
+   }
+   .nav-bar-items-container .nav-items .mob-remove{
+    display: none;
+   }
    .nav-bar-container{
     position: sticky;
     top: 0px;
@@ -1247,10 +1254,7 @@
  .nav-bar-items-container .nav-items .nav-item-insider .p-for-nav-item{
     font-size: 17px;
    }
-    .nav-bar-items-container .nav-items{
-    gap: 6px;
-
-   }
+    
 }
 
 
@@ -1258,8 +1262,5 @@
  .nav-bar-items-container .nav-items .nav-item-insider .p-for-nav-item{
     font-size: 17px;
    }
-    .nav-bar-items-container .nav-items{
-    gap: 16px;
-
-   }
+    
 }

@@ -1081,6 +1081,12 @@
   .contact-in-nav-bar {
     height: 50px;
   }
+  .nav-bar-items-container .nav-items {
+    gap: 20px;
+  }
+  .nav-bar-items-container .nav-items .mob-remove {
+    display: none;
+  }
   .nav-bar-container {
     position: sticky;
     top: 0px;
@@ -1130,16 +1136,10 @@
   .nav-bar-items-container .nav-items .nav-item-insider .p-for-nav-item {
     font-size: 17px;
   }
-  .nav-bar-items-container .nav-items {
-    gap: 6px;
-  }
 }
 @media screen and (min-height: 980px) and (max-height: 1300px) and (min-width: 801px) and (max-width: 990px) {
   .nav-bar-items-container .nav-items .nav-item-insider .p-for-nav-item {
     font-size: 17px;
-  }
-  .nav-bar-items-container .nav-items {
-    gap: 16px;
   }
 }
 

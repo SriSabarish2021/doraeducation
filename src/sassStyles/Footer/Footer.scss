@@ -19,8 +19,8 @@
     @include Column-center.column-center;
     background-color: rgb(255, 93, 93);
     justify-content: flex-start;
-    position:absolute;
-    bottom: 0px;
+    position:relative;
+   
     margin-top: 80px;
 z-index: 0;
     overflow: hidden;

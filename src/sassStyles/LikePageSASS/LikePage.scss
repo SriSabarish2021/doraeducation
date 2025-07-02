@@ -106,11 +106,14 @@
             height: 100%;
             width: 100%;
             flex:  1 1 calc(75%);
-            gap: 5px;
+            
             padding: 0px 20px;
             padding-bottom: 20px;
             overflow-x: hidden;
             overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
             .like-items{
                 height: auto;
                 width: 100%;
@@ -126,11 +129,12 @@
                     width: 100%;
                     @include Row-center.row-center;
                     gap: 10px;
+                    position: relative;
 
                     .like-item-image-box{
                         height: 80%;
                         width: 100%;
-                        flex: 1 1 calc(20%);
+                        flex: 1 1 calc(25%);
                         background-color: antiquewhite;
                         border-radius: 10%;
                         @include Row-center.row-center;
@@ -152,11 +156,11 @@
                     .like-item-content-box{
                         height: 100%;
                         width: 100%;
-                        flex: 1 1 calc(70%);
+                        flex: 1 1 calc(75%);
                         @include Column-center.column-center;
                         gap: 10px;
                         align-items: flex-start;
-                        padding-left: 10px;
+                        padding-left: 3px;
 
                         .like-item-para-one{
                             font-size: 15px;
@@ -202,10 +206,11 @@
 
                     }
                     .like-item-close-box{
-                        height: 100%;
-                        width: 100%;
-                        flex: 1 1 calc(5%);
-                         @include Row-center.row-center;
+                        height: auto;
+                        width:auto;position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        @include Row-center.row-center;
                         align-items: flex-start;
                         font-size: 18px;
                         color: rgb(49, 49, 49);
@@ -339,4 +344,351 @@
     transform: translateX(0px);
     opacity: 1;
     transition-duration: 0.5s;
+}
+
+
+
+
+@media screen and  (max-width:1255px) {
+    .like-page-main-container .like-page-item-main-box{
+        width: 470px;
+    }
+}
+
+
+
+@media screen and  (max-width:1090px) {
+ .like-page-main-container .like-page-item-main-box{
+        width: 420px;
+        padding: 10px 15px 20px 15px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar{
+        font-size: 23px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn {
+        height: 24px;
+        width: 24px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner{
+        height: 95px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-para-one{
+        font-size: 14px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box .icon-close-like{
+        font-size: 16px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box .heart-icon-like-img{
+        font-size: 16px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-view-cart-bar{
+        flex: 1 1 calc(10%);
+        
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+        flex: 1 1 calc(80%);
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn{
+        height: 40px;
+        font-size: 14.5px;
+    }
+}
+
+
+@media screen and  (max-width:800px) {
+ .like-page-main-container .like-page-item-main-box{
+        width: 400px;
+        padding: 10px 15px 20px 15px;
+    }
+}
+
+
+@media screen and  (max-width:630px) {
+ .like-page-main-container .like-page-item-main-box{
+        width: 350px;
+        padding: 10px 12px 20px 12px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar{
+        font-size: 21.5px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn{
+        height: 22px;
+        width: 22px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+        padding: 0px 15px 15px 15px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner{
+        height: 83px;
+        gap: 5px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-para-one{
+        font-size: 13.5px;
+        letter-spacing: normal;
+        font-weight: 500;
+        color: #404040;
+        font-family: 'Inter';
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-star{
+        font-size: 9px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-amt{
+        font-size: 11px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box .icon-close-like{
+        font-size: 15px;
+    }.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box .heart-icon-like-img{
+        font-size: 15px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn{
+        height: 37px;
+        width: 160px;
+        font-size: 13.5px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn .like-page-to-cart-page-btn-design{
+        border-width: 2.5px;
+    }
+}
+
+
+@media screen and  (max-width:480px) {
+.like-page-main-container .like-page-item-main-box{
+        width: 290px;
+        padding: 10px 10px 15px 10px;
+    }.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .no-like{
+        font-size: 15px;
+        text-align: center;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .start-like{
+        font-size: 14px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar{
+        font-size: 19px;
+        padding: 8px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn{
+        height:20px;
+        width:20px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn .like-close-btn-x-two,.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn:hover .like-close-btn-x-one{
+        width: 9px;
+        
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn .like-close-btn-x-one{
+        width: 9px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+        padding: 0px 12px 15px 12px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner{
+        height: 75px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-para-one{
+        font-size: 12.5px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-amt{
+        font-size: 10px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box .icon-close-like{
+        font-size: 13.5px;
+        
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box{
+        top: 5px;
+        right: 5px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box{
+        padding-left: 0px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn{
+        height: 33px;
+        font-size: 13px;
+        width: 150px;
+    }
+       .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+    
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items{
+        padding-bottom: 10px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items{
+        border-bottom: 1px solid rgba(192, 192, 192, 0.781);
+    }
+}
+
+
+@media screen and  (max-width:450px) {
+.like-page-main-container .like-page-item-main-box{
+        width: 260px;
+        padding: 10px 10px 15px 10px;
+    }
+}
+
+@media screen and  (max-width:400px) {
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .no-like{
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .start-like{
+        font-size: 13px;
+    }
+.like-page-main-container .like-page-item-main-box{
+        width: 245px;
+        padding: 10px 10px 15px 10px;
+    }.like-page-main-container .like-page-item-main-box .like-page-title-bar{
+        font-size: 18px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn{
+        height: 18px;
+        width: 18px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+        padding: 0px 7px 12px 7px;
+      
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner{
+        height: 70px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box{
+        flex: 1 1 calc(30%);
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-para-one{
+        font-size: 12px;
+    }
+    
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box{
+        top: 0px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box .heart-icon-like-img{
+        font-size: 13px;
+        top: -6.5px;
+        left: -6.5px;
+    }
+}
+
+
+@media screen and  (max-width:350px) {
+      .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .no-like{
+        font-size: 13px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .start-like{
+        font-size: 13px;
+    }
+.like-page-main-container .like-page-item-main-box{
+    width: 225px;
+}
+.like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn{
+    height: 17px;
+    width: 17px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+    padding: 0px 10px 10px 10px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner{
+    height: 66px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box{
+    flex: 1 1 calc(25%);
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box .heart-icon-like-img{
+    font-size: 12px;
+    top: -5px;
+    left: -5px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-para-one{
+    font-size: 11px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box{
+    gap: 8px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-star{
+    font-size: 8px;
+}
+.like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box .icon-close-like{
+    font-size: 12.5px
+}
+.like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn{
+    height: 31px;
+    width: 130px;
+    font-size: 12.5px;
+    border-radius: 5px;
+}
+}
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+    .like-page-main-container .like-page-item-main-box{
+        width: 460px;
+        padding: 30px 45px 45px 30px;
+    }.like-page-main-container .like-page-item-main-box .like-page-title-bar{
+        font-size: 35px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn{
+        height: 35px;
+        width: 35px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn .like-close-btn-x-two{
+        width: 17px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items{
+        padding-bottom: 15px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-title-bar .like-close-btn .like-close-btn-x-one{
+        width: 17px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .no-like{
+        font-size: 23px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses .start-like{
+        font-size: 23px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .no-like-courses{
+        gap: 30px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-page-view-cart-bar .like-page-btn{
+        height: 55px;
+        width: 250px;
+        border-radius: 10px;
+        font-size: 23px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner{
+        height: 130px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-para-one{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-star{
+        font-size: 14.5px;
+        gap: 7px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-content-box .like-item-amt{
+        font-size: 18px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-close-box .icon-close-like{
+        font-size: 25px;
+    }
+    .like-page-main-container .like-page-item-main-box .like-pagae-main-list-bar .like-items .like-item-inner .like-item-image-box .heart-icon-like-img{
+        font-size: 24px;
+    }
 }
