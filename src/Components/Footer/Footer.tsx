@@ -42,7 +42,7 @@ const Footer = () => {
           <p className='email-inp-para'>Join With Us</p>
           <div className='email-inp-container-footer'>
             <input type="email" placeholder='Your Email' className='footer-email-inp'/>
-            <div className='footer-email-btn'>Subscribe Now</div>
+            <div className='footer-email-btn'>{window.innerWidth<600?'Subscribe':'Subscribe Now'}</div>
           </div>
         </div>
       </div>
@@ -61,11 +61,11 @@ const Footer = () => {
           <div className='quick-link'>
             <p className='quick-link-title'>Quick Links</p>
             <div className='quick-link-list-item'>
-              <Link to={'About-Mindspire-Institute'} className='list-item-footer'>Vision, Mision & Stragedy</Link>
+              <Link to={'About-Mindspire-Institute'} className='list-item-footer'>{window.innerWidth<500?'Vision':'Vision, Mision & Stragedy'}</Link>
               <p  className='list-item-footer'>Event</p>
-              <Link to={"About-Mindspire-Institute"} className='list-item-footer'>Purchase Guide</Link>
-              <p  className='list-item-footer'>Webinar Details</p>
-              <Link  to={"Providing-Education's-in-Mindspire-Institute"} className='list-item-footer'>Offering Courses</Link>
+              <Link to={"About-Mindspire-Institute"} className='list-item-footer'>{window.innerWidth<500?'Buy Guide':"Purchase Guide"}</Link>
+              <p  className='list-item-footer'>{window.innerWidth<500?'Webinar':'Webinar Details'}</p>
+              <Link  to={"Providing-Education's-in-Mindspire-Institute"} className='list-item-footer'>{window.innerWidth<500?'Courses':'Offering Courses'} </Link>
             </div>
           </div>
           <div className='program-link'>
