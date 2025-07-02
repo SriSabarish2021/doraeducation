@@ -114,7 +114,7 @@ const TopShortCourse = ({sethashget}) => {
         
         </div>
       </div>
-      <div className='top-short-course-page-container' style={{flexDirection:getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'row':'row-reverse',display:getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&window.innerWidth>700?'flex':'none'}}>
+      <div className='top-short-course-page-container' style={{flexDirection:getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'row':'row-reverse',display:getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")||getlocation.pathname.includes("/")&&window.innerWidth>700?'flex':'none'}}>
         <div className='top-short-course-title-container'>
           <div className='top-short-title-design'></div>
           <div className='top-short-title-design-two'></div>

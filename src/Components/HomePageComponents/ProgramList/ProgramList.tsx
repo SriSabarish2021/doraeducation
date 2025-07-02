@@ -332,8 +332,9 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
                 
                 <div className='hover-add-favorite-btn' onClick={()=>LikeCourse(indicourse.id)}>
                   {indicourse.Like?<FaHeart className='heart-transition'/>:<FaRegHeart className='heart-transition'/>}
+                  {window.innerWidth>600&&
                   <div className='hover-mess-box'><p>{indicourse.Like?'remove Like List':'Add Like List'}</p>
-                  <span className='arrow-in-hover-mess'></span></div>
+                  <span className='arrow-in-hover-mess'></span></div>}
                 </div>
                 
               </div>
