@@ -1233,8 +1233,8 @@ function App() {
           overflow-y:${reviewwrite||login||sidesharepage||cartpage||likepage?'hidden':'auto'}
         }`}
         </style> */}
-{/*       <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/> */}
-      <div className='edu-main-page'>
+      <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
+         <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
             <Route index element={<HomePage starcalc={starcalc} sethashget={sethashget}  course={course} LikeCourse={LikeCourse}/>}/>
@@ -1250,8 +1250,8 @@ function App() {
       <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
       <LikePage sethashget={sethashget} starcalc={starcalc} setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
       <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
-      <LoginPage login={login} setlogin={setlogin}/>
-{/*       <Footer/>
+    {/*      <LoginPage login={login} setlogin={setlogin}/>
+<Footer/>
  */}    </div>
    
     

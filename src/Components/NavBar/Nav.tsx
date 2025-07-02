@@ -13,6 +13,8 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { IoHeartOutline } from "react-icons/io5";
 import { useEffect, useState } from 'react';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoLocation } from "react-icons/io5";
+import { FiMenu } from "react-icons/fi";
 
 
 const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,setsidesharepage}) => {
@@ -23,17 +25,39 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
   useEffect(() => {
     
     const getnavbar=document.querySelector('.nav-bar-sticky')
-
+    const getnavbarmob=document.querySelector('.nav-bar-container-mob')   
     if (getnavbar) {
-      console.log(getnavbar.getBoundingClientRect().height);
+
       setnavheight(getnavbar.getBoundingClientRect().height)
+      console.log(getnavbar.getBoundingClientRect().height);
       
+    }
+
+    
+    if (getnavbarmob) {
+      
+      setnavheight(getnavbarmob.getBoundingClientRect().height)
+      console.log(getnavbarmob.getBoundingClientRect().height);
     }
   
     return () => {
       setnavheight(0)
     }
   }, [locationhashnav])
+
+  window.addEventListener('scroll',()=>{
+    const getnavbarformobiletoshow=document.querySelector('.nav-bar-container-mob')
+    if (window.scrollY>100) {
+      if (getnavbarformobiletoshow) {
+        getnavbarformobiletoshow.classList.add('show-mobile-nav')
+      }
+    }else{
+      if (getnavbarformobiletoshow) {
+        getnavbarformobiletoshow.classList.remove('show-mobile-nav')
+      }
+    }
+    
+  })
   
 
   
@@ -41,8 +65,57 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
 
   
   return (
-    <>
-    {String(locationhashnav.pathname).includes("mindspire-course")?
+    <>{
+      window.innerWidth<640?<>
+      <div className='mobile-screen-nav'>
+      <div className='logo-div-nav'>  
+          <Image
+              urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+              src="/edu-logo-removebg.png"
+              
+              alt="Website Logo"
+              className='logo-image'
+            />
+          <div className='title-logo'>
+            <p className='title-main-name'>Mindspire</p>
+            <p  className='title-sub-main-name'>Institute</p>
+          </div>
+      </div>
+      <FiMenu  className='mobile-screen-burger-menu'/>
+    </div>
+    <div className="nav-bar-container-mob ">
+       <div className="contact-in-nav-bar-mob">
+        <div className='mover-in-nav-top'>
+           {Array.from(course).slice(-3).map((indifornavmover,index)=>
+          <p className={`nav-mover-para nav-mover-para-${index} `}>{indifornavmover.courseName}</p>
+          )}
+        </div>
+      </div> 
+      <div className="nav-bar-items-container-mob ">
+        <div className='logo-div-nav'>  
+         
+           <Image
+              urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+              src="/edu-logo-removebg.png"
+              
+              alt="Website Logo"
+              className='logo-image'
+            />
+          <div className='title-logo'>
+            <p className='title-main-name'>Mindspire</p>
+            <p  className='title-sub-main-name'>Institute</p>
+          </div>
+        </div>
+      
+        <div className='side-bar-in-nav'>
+          <p className='icon-in-last-bar-nav' onClick={()=>setlogin(true)}><IoPersonOutline/></p>
+          <p className='icon-in-last-bar-nav' onClick={()=>setlikepage(true)}><IoHeartOutline/></p>
+          <p className='icon-in-last-bar-nav' onClick={()=>setcartpage(true)}><IoCartOutline/></p>
+          <p className='icon-in-last-bar-nav offer-bar' onClick={()=>setsidesharepage(true)}><BiMenuAltLeft/></p>
+        </div>
+      </div>
+    </div></>: 
+    String(locationhashnav.pathname).includes("mindspire-course")?
       <div className="nav-bar-container nav-bar-sticky">
        <div className="contact-in-nav-bar contact-in-nav-bar-for-course-page">
         <div className='mover-in-nav-top'>
@@ -53,7 +126,7 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
       </div> 
       <div className="nav-bar-items-container nav-bar-for-course-page">
         <div className='logo-div-nav'>  
-          <div></div>
+         
            
            <Image
               urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
@@ -151,14 +224,12 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
           <p className='mail-in-nav'><IoIosMail className='icon-in-nav'/>srisabarish003@gmail.com</p>
         </div>
         <div className='location-div-in-nav'>
-           <p className='location-in-nav'><ImLocation className='icon-in-nav-loc'/>Erode, Tamil Nadu, India</p>
+           <p className='location-in-nav'><IoLocation className='icon-in-nav-loc'/>Erode, Tamil Nadu, India</p>
         </div>
       </div>
       <div className="nav-bar-items-container">
         <div className='logo-div-nav'>  
-          <div></div>
-           
-           <Image
+          <Image
               urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
               src="/edu-logo-removebg.png"
               
@@ -246,7 +317,9 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
           <p className='icon-in-last-bar-nav offer-bar' onClick={()=>setsidesharepage(true)}><BiMenuAltLeft/></p>
         </div>
       </div>
-    </div>}
+    </div>
+    }
+   
     </>
   )
 }
