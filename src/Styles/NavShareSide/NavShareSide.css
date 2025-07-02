@@ -57,6 +57,7 @@
   border-radius: 100%;
   top: 20px;
   right: 30px;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +100,8 @@
   gap: 30px;
   padding: 30px 0px;
   justify-content: flex-start;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one {
   height: auto;
@@ -452,6 +454,470 @@
   transition-duration: 0.5s;
   transition-delay: 0.2s;
   opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 500px;
+    padding: 40px 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close {
+    height: 35px;
+    width: 35px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .website-icon {
+    height: 55px;
+    width: 55px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .web-name-side-share {
+    font-size: 14px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one {
+    justify-content: space-between;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link {
+    height: 38px;
+    width: 38px;
+    font-size: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll {
+    gap: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    font-size: 13px;
+    line-height: 28px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-image-for-share, .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .whatsapp-icon {
+    font-size: 50px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share {
+    font-size: 13px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+    font-size: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp .qr-image {
+    height: 90px;
+    width: 90px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three {
+    gap: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact {
+    padding-bottom: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+    padding: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .nav-share-four-para {
+    font-size: 17px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share {
+    height: 43px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp {
+    font-size: 13px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp::placeholder {
+    font-size: 13px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-btn {
+    font-size: 12px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 470px;
+    padding: 30px 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 430px;
+    padding: 30px 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .website-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .web-name-side-share {
+    font-size: 13.5px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one {
+    gap: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close {
+    height: 30px;
+    width: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close .close-nav-side-line-two {
+    width: 12px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close .close-nav-side-line-one {
+    width: 12px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    font-size: 12px;
+    text-align: justify;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll {
+    gap: 25px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-image-for-share, .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .whatsapp-icon {
+    font-size: 45px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+    font-size: 14px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+    font-size: 11px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para {
+    gap: 8px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp .qr-image {
+    height: 85px;
+    width: 85px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact {
+    padding-bottom: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three {
+    gap: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+    padding: 30px 22px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .nav-share-four-para {
+    font-size: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share {
+    height: 38px;
+    padding: 3px 6px;
+    width: 100%;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp {
+    font-size: 12px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp::placeholder {
+    font-size: 11px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 360px;
+    padding: 30px 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp {
+    padding-right: 10px;
+    padding-left: 0px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .web-name-side-share {
+    font-size: 14px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link {
+    height: 37px;
+    width: 37px;
+    font-size: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    font-size: 12px;
+    line-height: 27px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll {
+    gap: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 300px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-image-for-share, .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .whatsapp-icon {
+    font-size: 40px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three {
+    padding: 20px 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share {
+    font-size: 11px;
+    line-height: 22px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp .qr-image {
+    height: 75px;
+    width: 75px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+    font-size: 13px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp {
+    gap: 8px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .nav-share-four-para {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Inter";
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+    margin-top: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+    gap: 20px;
+    border-radius: 10px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .black-design-image {
+    border-radius: 10px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share {
+    height: 33px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-btn {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-btn {
+    padding: 0px 5px;
+    border-radius: 4px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media screen and (max-width: 410px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 260px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close {
+    height: 26px;
+    width: 26px;
+    top: 20px;
+    right: 22px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .website-icon {
+    height: 45px;
+    width: 45px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .web-name-side-share {
+    font-size: 13px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link {
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll {
+    gap: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    line-height: 23px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three {
+    padding: 20px 10px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact {
+    gap: 10px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-image-for-share, .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .whatsapp-icon {
+    font-size: 36px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+    font-size: 12px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+    font-size: 9.5px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp .qr-image {
+    height: 70px;
+    width: 70px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+    padding: 25px 15px;
+    padding-right: 6px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp {
+    font-size: 11px;
+    letter-spacing: normal;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp::placeholder {
+    font-size: 10px;
+    letter-spacing: normal;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share {
+    gap: 10px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+    font-size: 8.6px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .nav-share-four-para {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 240px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link {
+    gap: 15px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+    display: none;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+    line-height: 16px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    line-height: 22px;
+    font-size: 12px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four {
+    padding-left: 10px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share {
+    height: 31px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-btn {
+    font-size: 9px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+    font-size: 8px;
+    line-height: 15px;
+  }
+}
+@media screen and (min-height: 870px) and (max-height: 950px) and (max-width: 500px) {
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    line-height: 29px;
+    font-size: 13px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .nav-side-share-page-container .nav-side-share-main-container {
+    width: 450px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container {
+    padding: 50px 40px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close {
+    height: 40px;
+    width: 40px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close .close-nav-side-line-two {
+    width: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-close .close-nav-side-line-one {
+    width: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .website-icon {
+    height: 65px;
+    width: 65px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-logo .web-name-side-share {
+    font-size: 22px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link .nav-share-link {
+    height: 55px;
+    width: 55px;
+    font-size: 22px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-one .nav-share-app-link {
+    gap: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll {
+    gap: 50px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-two {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 42px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share {
+    gap: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-image-for-share, .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .whatsapp-icon {
+    font-size: 60px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-contact .call-para-for-share {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-one-whatsapp-share {
+    font-size: 20px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .side-share-whatsapp-para .para-two-whatsapp-share {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-three .nav-share-whatsapp .qr-for-whatsapp .qr-image {
+    height: 100px;
+    width: 100px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .nav-share-four-para {
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share {
+    height: 45px;
+    width: 100%;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-btn {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp {
+    font-size: 18px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .email-inp-container-side-share .side-share-email-inp::placeholder {
+    font-size: 18px;
+  }
+  .nav-side-share-page-container .nav-side-share-main-container .nav-side-share-inner-scroll .nav-share-side-div-four .subsribe-input-box-side-share .para-for-subscribe-side-nav {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 /*# sourceMappingURL=NavShareSide.css.map */
