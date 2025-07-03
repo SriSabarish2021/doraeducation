@@ -119,11 +119,16 @@ const LoginPage = ({login,setlogin}) => {
             <div className='login-page-intro-design-two'></div>
             <div className='login-intro-para-box'>
                 <p className='welcome-para'>{signup?'Welcome to':'WELCOME'}<span className='welcome-para-span'>{signup?'MindSpire Institute':'Sri Sabarish'}</span></p>
-                <p  className='welcome-para-main'>{signup?'We’re happy to have you join our learning community. Start exploring courses, discover your passions, and take the first step toward building your future.':"We're excited to have you continue your learning journey with us. Access your courses, track your progress, and stay inspired as you move forward in mastering new skills"}</p>
+                <p  className='welcome-para-main'>{signup?'We’re happy to have you join our learning community. Start exploring courses, discover your passions, and take the first step toward building your future.':window.innerWidth<600?String("We're excited to have you continue your learning journey with us. Access your courses, track your progress, and stay inspired as you move forward in mastering new skills").slice(0,130)+'...':"We're excited to have you continue your learning journey with us. Access your courses, track your progress, and stay inspired as you move forward in mastering new skills"}</p>
             </div>
           
         </div>
         <div className='login-page-input-container'>
+          <div className='login-page-intro-design-one-inp'></div>
+            <div className='login-page-intro-design-two-inp'></div>
+            <div className='login-page-intro-design-three-inp'></div>
+            <div className='login-page-intro-design-four-inp'></div>
+            <div className='login-page-intro-design-five-inp'></div>
             <div className='login-page-input-design'></div>
             <div className='login-input-inner-box'>
                 <div className='login-page-input-title'>
