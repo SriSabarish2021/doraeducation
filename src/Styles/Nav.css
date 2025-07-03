@@ -1078,6 +1078,15 @@
   }
 }
 @media screen and (min-height: 980px) and (max-height: 1300px) and (max-width: 990px) {
+  .contact-in-nav-bar .mover-in-nav-top .nav-mover-para {
+    font-size: 30px;
+  }
+  .contact-in-nav-bar .mover-in-nav-top {
+    width: 400px;
+  }
+  .contact-in-nav-bar {
+    height: 55px;
+  }
   .contact-in-nav-bar {
     height: 50px;
   }
