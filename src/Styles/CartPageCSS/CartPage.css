@@ -1038,6 +1038,9 @@
     width: 90px;
     font-size: 12px;
   }
+  .cart-page-main-container .cart-page-container .cart-page-main-course-bar .cart-page-course-bar-container .cart-page-main-bar .cart-page-course-box .no-enroll-courses .no-enroll, .cart-page-main-container .cart-page-container .cart-page-main-course-bar .cart-page-course-bar-container .cart-page-main-bar .cart-page-course-box .no-enroll-courses .start-enroll {
+    font-size: 21px;
+  }
 }
 
 /*# sourceMappingURL=CartPage.css.map */
