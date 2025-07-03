@@ -13,14 +13,19 @@ const CartPage = ({cartpage,setcartpage,course}) => {
             
     )
 
+    const [scrollheight,setscrollheight]=useState(0)
+
 
      useEffect(() => {
           
           const cartbox=document.querySelector('.cart-page-course-box')
-    
+
             cartbox?.scrollTo(0,0)
           
         }, [cartpage])
+
+        
+
     
     
     
@@ -52,17 +57,17 @@ const CartPage = ({cartpage,setcartpage,course}) => {
                         </div>
                         <div className='cart-page-course-nav-two'>
                             <p className='para-in-cart-nav'>Duration</p>
-                            <p className='para-in-cart-nav'>Resourses</p>
+                            <p className='para-in-cart-nav'>{window.innerWidth<400?'Files':'Resourses'}</p>
                             <p className='para-in-cart-nav'>Status</p>
                         </div>
                     </div>
                     
                     <div className='cart-page-main-bar'>
                         
-                        <div className='cart-page-course-box'>
+                        <div   className='cart-page-course-box'>
                         {enrollelement&&enrollelement.length?
                             enrollelement.map((itemforcart)=>
-                            <div className='course-box'>
+                            <div className='course-box-for-cart-page'>
                                 <div className='course-video-div'>
                                     <div className='course-video-container'>
                                         <div className='course-video-image'  style={{backgroundImage:`url(${itemforcart.courseIMG})`}} >
