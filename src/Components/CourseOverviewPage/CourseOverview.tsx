@@ -1215,9 +1215,9 @@ const removeredborder=()=>{
                       <p className="btn-for-image-select" ><RiUploadCloud2Line className="image-to-upload-in-comment" style={{color:`#707070`,cursor:'pointer'}}/></p>
                     </ReactFileReader>
                   </div>
+                  {commentimg.length?
                   <div className="comment-img-showing-box">
                     {commentimg.map((indiimgforcomment,index)=>
-                      
                       <div key={index} className="user-putted-image-for-review">
                         <img src={indiimgforcomment} className="img-of-review" />
                         <p className='comment-img-remove' onClick={()=>removeimgincomment(indiimgforcomment)}><IoIosRemoveCircleOutline style={{cursor:'pointer'}}/></p>
@@ -1225,7 +1225,8 @@ const removeredborder=()=>{
                     )}
                     
                     
-                  </div>
+                  </div>:<></>
+                  }
                   
                   
                 </div>

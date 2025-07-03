@@ -242,6 +242,7 @@
   max-width: 80%;
   min-width: 40%;
   width: 80%;
+  height: 100%;
   border-radius: 20px;
   border: none;
   font-size: 15px;
@@ -4718,6 +4719,435 @@
   }
   .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box, .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container {
     gap: 38px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 430px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .img-of-review {
+    height: 100px;
+    width: 100px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review {
+    width: 30%;
+    max-width: 30%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-title-bar {
+    font-size: 21px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 17px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .star-for-review .star-svg {
+    height: 21px;
+    width: 21px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    height: 37px;
+    font-size: 14px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 13px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email {
+    font-size: 13px;
+    width: 80%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    height: 37px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    padding: 50px 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 400px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container {
+    width: 75%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    min-height: 115px;
+    max-height: 115px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-title-bar {
+    font-size: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 16px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    font-size: 13px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .image-selection-box {
+    min-height: 90px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .image-selection-box .btn-for-image-select .image-to-upload-in-comment {
+    font-size: 45px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    max-width: 76%;
+    border-radius: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email {
+    font-size: 90%;
+    font-size: 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    height: 35px;
+    width: 160px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container {
+    gap: 80px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container::before, .course-overview-main-conatainer .review-written-container .review-written-input-container::after {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container {
+    width: 80%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .comment-img-remove {
+    top: 10px;
+    right: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    width: 65%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-title-bar {
+    font-size: 19px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 380px;
+    gap: 25px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 11.5px;
+    font-family: "Exo 2";
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container {
+    gap: 50px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 350px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container {
+    width: 85%;
+    border-radius: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    height: 34px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    font-size: 13px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 10.5px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    width: 75%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .img-of-review {
+    height: 80px;
+    width: 80px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review {
+    width: 25%;
+    max-width: 25%;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 11px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    height: 33px;
+    width: 74%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    min-height: 100px;
+    max-height: 100px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email {
+    width: 94%;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email .comment-condition {
+    font-size: 13px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    width: 140px;
+    height: 34px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container {
+    margin-top: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    padding: 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .name-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .email-input-for-comment {
+    padding: 3px 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 330px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .img-of-review {
+    height: 70px;
+    width: 70px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review {
+    width: 30%;
+    max-width: 30%;
+    border-radius: 8px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-title-bar {
+    font-size: 18px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-name-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-degree-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-email-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .privacy-policy-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-review-box, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-image-box {
+    gap: 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .star-for-review .star-svg {
+    height: 18px;
+    width: 18px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .name-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .email-input-for-comment {
+    height: 31px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    font-size: 12.5px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 9.5px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container {
+    margin-top: 0px;
+    gap: 25px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    width: 120px;
+    height: 31px;
+    font-size: 11px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container::before, .course-overview-main-conatainer .review-written-container .review-written-input-container::after {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .comment-img-remove {
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    gap: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .name-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .email-input-for-comment {
+    height: 29px;
+    border-radius: 5px;
+    padding: 3px 8px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    width: 75%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-close-btn {
+    font-size: 15px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .image-selection-box {
+    min-height: 80px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .image-selection-box .btn-for-image-select .image-to-upload-in-comment {
+    font-size: 40px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    border-radius: 5px;
+    min-height: 90px;
+    max-height: 90px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email {
+    font-size: 10.5px;
+    line-height: 16px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview {
+    gap: 8px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    height: 30px;
+    font-size: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    font-size: 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .img-of-review {
+    height: 65px;
+    width: 65px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review {
+    width: 30%;
+    max-width: 30%;
+    border-radius: 8px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-title-bar {
+    font-size: 16px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    gap: 18px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-name-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-degree-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-email-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .privacy-policy-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-review-box, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-image-box {
+    gap: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 9px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .name-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .email-input-for-comment {
+    height: 26px;
+    width: 75%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    font-size: 10px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 8.5px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    min-width: 50%;
+    max-width: 90%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    width: 80%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email {
+    font-size: 9.5px;
+    line-height: 13px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email .comment-condition {
+    font-size: 12px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    height: 28px;
+  }
+}
+@media screen and (min-height: 800px) and (max-height: 900px) and (max-width: 600px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 390px;
+  }
+}
+@media screen and (min-height: 901px) and (max-height: 970px) and (max-width: 600px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 430px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container {
+    height: 600px;
+    gap: 40px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-name-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-degree-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-writing-email-by-user, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .privacy-policy-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-review-box, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-image-box {
+    gap: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-title-bar {
+    font-size: 35px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .all-review-input-title {
+    font-size: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .star-for-review .star-svg {
+    height: 30px;
+    width: 30px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .name-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .qualification-input-for-comment, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .email-input-for-comment {
+    height: 45px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border {
+    font-size: 18px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-border::placeholder {
+    font-size: 16px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .image-selection-box .btn-for-image-select .image-to-upload-in-comment {
+    font-size: 65px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .image-selection-box {
+    height: 100px;
+    border: 1px solid rgb(190, 190, 190);
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-for-comment {
+    min-height: 130px;
+    max-height: 130px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email {
+    font-size: 16px;
+    width: 90%;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-writing-email .comment-condition {
+    font-size: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn-submit, .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-btn-container .review-btn {
+    height: 45px;
+    width: 180px;
+    font-size: 18px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .review-input-close-btn {
+    font-size: 22px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .img-of-review {
+    height: 115px;
+    width: 115px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review {
+    width: 30%;
+    max-width: 30%;
+    border-radius: 8px;
+    border: 1px solid rgb(190, 190, 190);
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .comment-img-showing-box .user-putted-image-for-review .comment-img-remove {
+    font-size: 20px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container .review-input-main-container .rating-bar-in-review .all-star-inreview .remove-like {
+    font-size: 24px;
+  }
+  .course-overview-main-conatainer .review-written-container .review-written-input-container::before, .course-overview-main-conatainer .review-written-container .review-written-input-container::after {
+    width: 270px;
+    height: 700px;
   }
 }
 
