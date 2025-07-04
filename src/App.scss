@@ -15,3 +15,16 @@
    align-items: center;
   gap: 60px;
 }
+
+
+@media screen and  (max-width:450px) {
+  .edu-main-page{
+    gap: 40px;
+  }
+}
+
+@media screen and  (max-width:370px) {
+  .edu-main-page{
+    gap: 30px;
+  }
+}

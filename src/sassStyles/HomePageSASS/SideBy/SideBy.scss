@@ -649,7 +649,7 @@
     }
     .side-by-elements-container{
         padding: 0px 80px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 }
 
@@ -726,7 +726,7 @@
 @media screen and  (max-width:520px) {
  .side-by-elements-container {
     padding: 0px 30px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 }
 .side-by-elements-container .side-by-inner-container .side-by-two, .side-by-elements-container .side-by-inner-container .side-by-one{
     gap: 10px;
@@ -797,7 +797,7 @@
     }
     .side-by-elements-container {
     padding: 0px 15px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 }
 
@@ -829,7 +829,8 @@
         gap: 30px;
     }.side-by-elements-container {
     padding: 0px 10px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 }
 @media screen and  (max-width:355px) {

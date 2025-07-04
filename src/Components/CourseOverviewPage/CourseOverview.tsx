@@ -593,7 +593,7 @@ const removeredborder=()=>{
       clearTimeout(timer)
       clearTimeout(timertwo)
     }
-  }, [enrollbtn])
+  }, [enrollbtn]) 
 
 
   const courseenrolled=(enrollid)=>{
@@ -1053,7 +1053,7 @@ const removeredborder=()=>{
                     <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>courseenrolled(coursedetails.id)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
                   </div> :
                   enrollbtn && !enrollbtncont && !enrollbtntick? 
-                  <button onClick={()=>setenrollbtn(!enrollbtn)} className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
+                  <button className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
                   <span className='enroll-ball enroll-ball-two'></span>
                   <span className='enroll-ball enroll-ball-three'></span>
                   <span className='enroll-ball enroll-ball-four'></span>
@@ -1131,11 +1131,12 @@ const removeredborder=()=>{
 
                   </div>
                 </div>
-                {coursedetails.Enroll?<div className='enroll-done-para-div'>
+                {coursedetails.Enroll?
+                  <div className='enroll-done-para-div'>
                     <p  className='enroll-done-para'>Your Enrollement for the Course <span className='course-name-in-enroll-done'>{coursedetails.courseName}</span> has Successfully Done Please Visit Your <span onClick={()=>courseenrolled(coursedetails.id)} className='cart-page-link-in-enroll-cont'>Cart Page</span> </p>
                   </div> :
                   enrollbtn && !enrollbtncont && !enrollbtntick? 
-                  <button onClick={()=>setenrollbtn(!enrollbtn)} className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
+                  <button  className='enrolling-btn-sider-course'>Enrolling <span className='enroll-ball enroll-ball-one'></span>
                   <span className='enroll-ball enroll-ball-two'></span>
                   <span className='enroll-ball enroll-ball-three'></span>
                   <span className='enroll-ball enroll-ball-four'></span>

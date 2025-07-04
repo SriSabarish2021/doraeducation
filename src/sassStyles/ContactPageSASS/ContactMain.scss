@@ -10,6 +10,7 @@
     width: 100%;
     @include Column-center.column-center;
     gap: 40px;
+    overflow: hidden;
 }
 
 
@@ -18,6 +19,12 @@
     .contact-page-main-container{
     
     gap: 35px;
+    }
+}
+
+@media screen and  (max-width:640px) {
+    .contact-page-main-container{
+    padding-top: 50px;
     }
 }
 

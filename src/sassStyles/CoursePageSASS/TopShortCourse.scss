@@ -653,12 +653,14 @@ transition-duration: 0.4s;
 }
 
 .for-mobile-short-course-page{
-    height: 100dvh;
+    height: auto;
     @include Row-center.row-center;
     display: none;
     width: 100%;
     position: relative;
     overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 40px;
     .student-design-mobile-course{
         position: absolute;
         background-color: aqua;
@@ -1317,7 +1319,7 @@ transition-duration: 0.4s;
 
 @media screen and  (max-width:540px) {
     .for-mobile-short-course-page .for-mobile-course-title .top-short-title-design{
-        top: -25%;
+        top: 8%;
     }
     .for-mobile-short-course-page .for-mobile-course-title{
         padding-left: 40px;
@@ -1393,10 +1395,10 @@ transition-duration: 0.4s;
         width: 85%;
     }
     .for-mobile-short-course-page .for-mobile-course-title .top-short-title-design{
-        bottom: -6%;
+        top:10%;
         right: 10%;
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
     }
     .for-mobile-short-course-page .for-mobile-course-title .top-short-title-design-two
     {
@@ -1417,7 +1419,7 @@ transition-duration: 0.4s;
 
 @media screen and  (max-width:435px) {
     .for-mobile-short-course-page .for-mobile-course-title .top-short-title-design{
-        top: -10%;
+        top: 5%;
         right: 10px;
     }
     .for-mobile-short-course-page .for-mobile-course-title .top-short-title-design-two{

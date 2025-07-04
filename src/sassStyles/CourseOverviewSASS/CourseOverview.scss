@@ -1150,7 +1150,7 @@
             width: 100%;
          
             background-color: rgb(255, 255, 255);
-            position: sticky;
+     
             box-shadow: 0 8px 40px 0 rgba(0,0,0,.1);
 
             @include Column-center.column-center;
@@ -1251,6 +1251,7 @@
                     width: 50%;
                 }
             }
+
 
             .enrolling-btn-sider-course{
                 height: 45px;
@@ -2674,9 +2675,12 @@
         padding: 20px;
         gap: 20px;
     }
-    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course{
         height: 40px;
         font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course .rotate-in-enroll{
+        font-size: 17px;
     }
     .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .review-written-btn .review-written-btn-inner{
         font-size: 13px;
@@ -2757,10 +2761,18 @@
     padding-left: 10px;
    
    }
-   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course{
     height: 36px;
     font-size: 13px;
    }
+
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course .rotate-in-enroll{
+        font-size: 16px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course .enroll-ball{
+        height: 4px;
+        width: 4px;
+    }
    .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-fb,.course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-twitter,.course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-linkedin,.course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-insta{
     font-size: 14px;
    }
@@ -3116,10 +3128,18 @@
    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path .course-share-path-icon{
     gap: 12px;
    }
-   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course ,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course{
     height: 34px;
     font-size: 12px;
    }
+  
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course .rotate-in-enroll{
+        font-size: 14px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course .enroll-ball{
+        height: 3.5px;
+        width: 3.5px;
+    }
 }
 
 
@@ -3322,9 +3342,11 @@
     }.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-includes-list .course-includes-list-items .course-list-cont{
         font-size: 13px;
     }
-    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course{
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .course-sharing-path,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enroll-done-para-div,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-sider .enrolling-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider .lottie-file-tick{
         display: none;
     }
+
+    
 
     .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
         gap: 40px;
@@ -3470,10 +3492,23 @@
         gap: 20px;
         padding: 16px;
     }
-    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course{
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course{
         height: 38px;
         font-size: 13px;
         width: 70%;
+    }
+     
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .rotate-in-enroll .rotate-icon-enroll{
+        font-size: 14px;
+    }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .enroll-ball{
+        height: 3.5px;
+        width: 3.5px;
+    }
+
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .lottie-file-tick{
+        height: 80px;
+        width: 80px;
     }
 }
 
@@ -3505,6 +3540,10 @@
     }
 }
 @media screen and  (max-width:580px) {
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .lottie-file-tick{
+        height: 70px;
+        width: 70px;
+    }
     .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-nav-bar{
         gap: 30px;
     }
@@ -3716,6 +3755,13 @@
 
 
 @media screen and  (max-width:465px) {
+     .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-done-para-div .enroll-done-para{
+        font-size: 11px;
+        line-height: 24px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-done-para-div .enroll-done-para .course-name-in-enroll-done{
+        font-size: 13px;
+    }
     .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview{
         font-size: 13.5px;
     }
@@ -4069,14 +4115,22 @@
    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom{
     width: 90%;
    }
-   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course{
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course ,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course{
     height: 36px;
    }
+ 
 }
 
 
 
 @media screen and  (max-width:355px) {
+       .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-done-para-div .enroll-done-para{
+        font-size: 10px;
+        line-height: 24px;
+    }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-done-para-div .enroll-done-para .course-name-in-enroll-done{
+        font-size: 12px;
+    }
     .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-title-main-container .course-name-in-course-overview .course-overview-title{
         font-size: 28px;
     }
@@ -4226,9 +4280,18 @@
    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom{
     width: 100%;
    }
-   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course{
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course{
     font-size: 12.5px;
    }
+ 
+     
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .rotate-in-enroll .rotate-icon-enroll{
+        font-size: 13px;
+    }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .enroll-ball{
+        height: 3.5px;
+        width: 3.5px;
+    }
 }
 
 
@@ -4300,9 +4363,17 @@
     .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-fb, .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-twitter, .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-linkedin, .course-overview-main-conatainer .course-overview-content-div .instructor-media-side .icon-for-clr-insta{
         font-size: 18px;
     }
-    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course{
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course{
         font-size: 15px;
         height: 40px;
+    }
+
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .rotate-in-enroll .rotate-icon-enroll{
+        font-size: 15px;
+    }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .enroll-ball{
+        height: 5px;
+        width:5px;
     }
 }
 
@@ -4677,11 +4748,18 @@
        .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .course-sharing-path{
         background-color: #f1f1f1;
        }
-       .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course{
+       .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enroll-btn-sider-course,.course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course{
         height: 60px;
         width: 80%;
         font-size: 22px;
        }
+    .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .rotate-in-enroll .rotate-icon-enroll{
+        font-size: 26px;
+    }
+   .course-overview-main-conatainer .course-overview-content-div .course-overview-content-main .course-overview-content-sider-bottom .enrolling-btn-sider-course .enroll-ball{
+        height: 8px;
+        width:8px;
+    }
        .course-overview-main-conatainer .course-overview-intro-div .course-main-title-box,.course-overview-main-conatainer .course-overview-intro-div .course-main-title-box .course-main-titile-content-container{
         gap: 38px;
        }

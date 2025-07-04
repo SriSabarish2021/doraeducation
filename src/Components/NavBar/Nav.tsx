@@ -77,12 +77,13 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
               className='logo-image'
             />
           <div className='title-logo'>
-            <p className='title-main-name'>Mindspire</p>
-            <p  className='title-sub-main-name'>Institute</p>
+            <p className='title-main-name' style={{color:String(locationhashnav.pathname).includes("About-Mindspire-Institute")?'white':''}}>Mindspire</p>
+            <p  className='title-sub-main-name' style={{color:String(locationhashnav.pathname).includes("About-Mindspire-Institute")?'white':''}}>Institute</p>
           </div>
       </div>
-      <FiMenu  className='mobile-screen-burger-menu'/>
+      <FiMenu style={{color:String(locationhashnav.pathname).includes("About-Mindspire-Institute")?'white':''}}  className='mobile-screen-burger-menu'/>
     </div>
+    { !String(locationhashnav.pathname).includes("About-Mindspire-Institute")&&
     <div className="nav-bar-container-mob ">
        <div className="contact-in-nav-bar-mob">
         <div className='mover-in-nav-top'>
@@ -114,7 +115,8 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
           <p className='icon-in-last-bar-nav offer-bar' onClick={()=>setsidesharepage(true)}><BiMenuAltLeft/></p>
         </div>
       </div>
-    </div></>: 
+    </div>}
+    </>: 
     String(locationhashnav.pathname).includes("mindspire-course")?
       <div className="nav-bar-container nav-bar-sticky">
        <div className="contact-in-nav-bar contact-in-nav-bar-for-course-page">

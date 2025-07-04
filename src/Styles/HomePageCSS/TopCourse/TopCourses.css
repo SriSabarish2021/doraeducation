@@ -446,6 +446,9 @@
     height: 18px;
     width: 30px;
   }
+  .top-courses-container {
+    padding: 0px 10px;
+  }
 }
 @media screen and (max-width: 830px) {
   .top-courses-container .top-course-course-list .course-box-top {
@@ -658,7 +661,7 @@
     height: 52px;
   }
   .top-courses-container {
-    padding: 30px 8px;
+    padding: 20px 8px;
   }
   .top-courses-container .line-move-animation-main {
     display: none;

@@ -260,7 +260,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
            
     </div>
     : <div className='program-list-main-container'>
-      <div className='program-list-deisgn-div'></div>
+    
       <div className='program-list-title-container'>
         <p className='program-list-para-one'>Popular Courses</p>
         <p className='program-list-para-two'>Our <span className='prog-list-underline-title'>Programs <span className='underline-for-prog-list-tit'></span></span> & <span className='span-for-title-in-program-list'>Courses</span></p>

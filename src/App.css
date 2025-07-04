@@ -3,9 +3,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .edu-main-page {
@@ -16,4 +14,17 @@
   justify-content: center;
   align-items: center;
   gap: 60px;
-}/*# sourceMappingURL=App.css.map */
+}
+
+@media screen and (max-width: 450px) {
+  .edu-main-page {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .edu-main-page {
+    gap: 30px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

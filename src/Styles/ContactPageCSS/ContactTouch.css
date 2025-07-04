@@ -991,7 +991,7 @@
     gap: 25px;
   }
 }
-@media screen and (min-height: 990px) and (max-width: 990px) {
+@media screen and (min-height: 990px) and (max-height: 1099px) and (max-width: 990px) {
   .contact-touch-container .contact-get-in-touch-input .contact-page-circle-design-two {
     height: 180px;
     width: 180px;
@@ -1054,7 +1054,7 @@
     right: 36px;
   }
 }
-@media screen and (min-height: 1100px) and (max-width: 990px) {
+@media screen and (min-height: 1100px) and (max-height: 1199px) and (max-width: 990px) {
   .contact-touch-container .contact-get-in-touch-img .contact-get-in-touch-inner-img .contact-get-img-two {
     height: 380px;
     width: 380px;
@@ -1081,6 +1081,86 @@
     width: 380px;
     right: -24%;
     bottom: 13%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-img-div .contact-alert-img {
+    height: 160px;
+    width: 90px;
+    left: 0px;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div {
+    font-size: 11px;
+    font-family: "Inter";
+    font-weight: 500;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div .checkmark-done {
+    font-size: 22px;
+  }
+  .contact-touch-container .contact-submitted-alert-div {
+    height: 85px;
+    width: 230px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-img-div .contact-alert-img {
+    height: 140px;
+    width: 75px;
+    left: 0px;
+    top: -60px;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div {
+    font-size: 10px;
+    font-family: "Inter";
+    font-weight: 500;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div .checkmark-done {
+    font-size: 21px;
+  }
+  .contact-touch-container .contact-submitted-alert-div {
+    height: 76px;
+    width: 210px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-img-div .contact-alert-img {
+    height: 120px;
+    width: 65px;
+    left: 0px;
+    top: -50px;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div {
+    font-size: 9.5px;
+    font-family: "Inter";
+    font-weight: 500;
+    padding-left: 0px;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div .checkmark-done {
+    font-size: 21px;
+  }
+  .contact-touch-container .contact-submitted-alert-div {
+    height: 70px;
+    width: 200px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-img-div .contact-alert-img {
+    height: 180px;
+    width: 100px;
+    left: 0px;
+    top: -80px;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 0px;
+  }
+  .contact-touch-container .contact-submitted-alert-div .contact-alert-cont-div .checkmark-done {
+    font-size: 30px;
+  }
+  .contact-touch-container .contact-submitted-alert-div {
+    height: 100px;
+    width: 300px;
   }
 }
 
