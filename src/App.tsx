@@ -14,6 +14,7 @@ import CartPage from './Components/CartPageComponent/CartPage'
 import LikePage from './Components/LikePageComponents/LikePage'
 import NavShareSide from './Components/NavShareSide/NavShareSide'
 import LoginPage from './Components/LoginPage/LoginPage'
+import NavForMobile from './Components/NavForMobile/NavForMobile'
 
 function App() {
 
@@ -1221,6 +1222,7 @@ function App() {
 
 
      const [reviewwrite,setreviewwrite]=useState(false)
+     const [mobilenav,setmobilenav]=useState(false)
 
 
 
@@ -1230,10 +1232,10 @@ function App() {
       <style>{
         `html{
           overflow-x: hidden;
-          overflow-y:${reviewwrite||login||sidesharepage||cartpage||likepage?'hidden':'auto'}
+          overflow-y:${mobilenav||reviewwrite||login||sidesharepage||cartpage||likepage?'hidden':'auto'}
         }`}
         </style>
-      <Nav setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
+      <Nav mobilenav={mobilenav} setmobilenav={setmobilenav} setnavheight={setnavheight} sethashget={sethashget} course={course}  setlogin={setlogin} setsidesharepage={setsidesharepage}  setcartpage={setcartpage} setlikepage={setlikepage}/>
          <div className='edu-main-page'>
         <Routes>
           <Route path='/'>
@@ -1251,6 +1253,7 @@ function App() {
       <LikePage sethashget={sethashget} starcalc={starcalc} setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
       <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
      <LoginPage login={login} setlogin={setlogin}/>
+     {window.innerWidth<640&&<NavForMobile course={course} sethashget={sethashget}  mobilenav={mobilenav} setmobilenav={setmobilenav}/>}  
       <Footer/>
     </div>
    

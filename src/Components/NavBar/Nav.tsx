@@ -17,7 +17,7 @@ import { IoLocation } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 
 
-const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,setsidesharepage}) => {
+const Nav = ({mobilenav,setmobilenav,setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,setsidesharepage}) => {
 
   let locationhashnav=useLocation()
 
@@ -81,7 +81,7 @@ const Nav = ({setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,se
             <p  className='title-sub-main-name' style={{color:String(locationhashnav.pathname).includes("About-Mindspire-Institute")?'white':''}}>Institute</p>
           </div>
       </div>
-      <FiMenu style={{color:String(locationhashnav.pathname).includes("About-Mindspire-Institute")?'white':''}}  className='mobile-screen-burger-menu'/>
+      <FiMenu onClick={()=>setmobilenav(true)} style={{color:String(locationhashnav.pathname).includes("About-Mindspire-Institute")?'white':''}}  className='mobile-screen-burger-menu'/>
     </div>
     { !String(locationhashnav.pathname).includes("About-Mindspire-Institute")&&
     <div className="nav-bar-container-mob ">
