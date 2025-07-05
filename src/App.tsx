@@ -1231,7 +1231,7 @@ function App() {
   return (
     
     <div className='website-main-container'>
-      <div onClick={()=>setchatbot(!chatbot)} className='chat-bot-opener'></div>
+      <div onClick={()=>setchatbot(true)} className={`chat-bot-opener ${chatbot?'noopacity':'opacity'}`}></div>
       <style>{
         `html{
           overflow-x: hidden;
