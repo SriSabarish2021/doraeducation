@@ -15,6 +15,7 @@ import LikePage from './Components/LikePageComponents/LikePage'
 import NavShareSide from './Components/NavShareSide/NavShareSide'
 import LoginPage from './Components/LoginPage/LoginPage'
 import NavForMobile from './Components/NavForMobile/NavForMobile'
+import ChatBOT from './Components/ChatBOT/ChatBOT'
 
 function App() {
 
@@ -1224,11 +1225,13 @@ function App() {
      const [reviewwrite,setreviewwrite]=useState(false)
      const [mobilenav,setmobilenav]=useState(false)
 
+     const [chatbot,setchatbot]=useState(false)
 
 
   return (
     
     <div className='website-main-container'>
+      <div onClick={()=>setchatbot(!chatbot)} className='chat-bot-opener'></div>
       <style>{
         `html{
           overflow-x: hidden;
@@ -1254,6 +1257,7 @@ function App() {
       <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
      <LoginPage login={login} setlogin={setlogin}/>
      {window.innerWidth<640&&<NavForMobile course={course} sethashget={sethashget}  mobilenav={mobilenav} setmobilenav={setmobilenav}/>}  
+     <ChatBOT chatbot={chatbot} setchatbot={setchatbot}/>
       <Footer/>
     </div>
    
