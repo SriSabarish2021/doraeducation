@@ -670,7 +670,7 @@ const removeredborder=()=>{
                 <p className='course-review-total'>(&nbsp;{coursedetails.rating} reviews&nbsp;)</p>
               </div>
               <div className='course-audio-bar'>
-                <p className='course-audio-para'><AiOutlineSound/><span className='audio-course-span-main'>Audio : <span className='audio-language'>{String(Array.from(coursedetails.Audio).map((indicourselang:any)=>indicourselang))}</span></span></p>
+                <p className='course-audio-para'><AiOutlineSound/><span className='audio-course-span-main'>Audio : <span className='audio-language'>{String(Array.from(coursedetails.Audio).map((indicourselang)=>indicourselang))}</span></span></p>
               </div>
               <div className='course-language-bar'>
                 <p className='course-lang-para'><PiSubtitles/><span className='audio-course-span-main'>Subtitles : <span  className='avail-language'>{coursedetails.SubtitlesNUM}+ Languages</span></span></p>
@@ -1090,7 +1090,7 @@ const removeredborder=()=>{
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><IoEarthOutline className='sider-list-icon'/>Language</p>
-                    <p className='course-list-cont'>{String(Array.from(coursedetails.Audio).map((indicourselang:any)=>Array.from(coursedetails.Audio).length>1?`${indicourselang}`:indicourselang))}</p>
+                    <p className='course-list-cont'>{String(Array.from(coursedetails.Audio).map((indicourselang)=>Array.from(coursedetails.Audio).length>1?`${indicourselang}`:indicourselang))}</p>
                   </div>
                   <div className='course-includes-list-items'>
                     <p className='corse-includes-list-para-one'><IoMdBowtie className='sider-list-icon'/>Access</p>

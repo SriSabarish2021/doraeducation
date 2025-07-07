@@ -112,7 +112,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
         { loding?
           Array.from(coursearr).length?
           <div className='program-list-items-container'>
-          {Array.from(coursearr).map((indicourse:any)=>
+          {Array.from(coursearr).map((indicourse)=>
           
               <div key={indicourse.id} className='program-item-one'>
               <div className='program-image-bar' style={{backgroundImage:`url(${indicourse.courseIMG})`}}></div>
@@ -263,7 +263,7 @@ const ProgramList = ({course,LikeCourse,sethashget,starcalc}) => {
       </div>
       <div className='program-list-items-container'> 
         {
-        Array.from(course).slice(-9).map((indicourse:any)=>
+        Array.from(course).slice(-9).map((indicourse)=>
         
             <div key={indicourse.id} className='program-item-one'>
             <div className='program-image-bar' style={{backgroundImage:`url(${indicourse.courseIMG})`}}></div>

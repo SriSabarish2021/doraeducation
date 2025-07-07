@@ -136,7 +136,7 @@ const ChatBOT = ({setchatbot,chatbot}) => {
                             ></path>
                           </svg>
                       </span>
-                    <p className='chat-para-from-dora'>👋 Hello, User!<br></br>I'm here to assist you — just ask away! 🧠💬</p>
+                    <p className='chat-para-from-dora'>👋 Hello, User!<br></br>I'm DORA, here to assist you — just ask away! 🧠💬</p>
                 </li>          
             </ol>
         </div>
