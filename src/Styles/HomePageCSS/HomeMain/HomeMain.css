@@ -115,7 +115,7 @@
   position: absolute;
   height: 140px;
   width: 140px;
-  background-image: url("./HomeImg/Untitled (5).png");
+  background-image: url("/HomeImg/Untitled (5).png");
   top: 80px;
   right: 60px;
   rotate: 0deg;
@@ -124,7 +124,7 @@
   position: absolute;
   height: 220px;
   width: 220px;
-  background-image: url("./Testimonial/dots-testi (1).png");
+  background-image: url("/Testimonial/dots-testi (1).png");
   top: 120px;
   left: 20px;
   rotate: 0deg;
@@ -147,7 +147,7 @@
   position: absolute;
   height: 70px;
   width: 70px;
-  background-image: url("./HomeImg/insidecircle.png");
+  background-image: url("/HomeImg/insidecircle.png");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 220px;
@@ -441,7 +441,7 @@
   position: absolute;
   height: 107px;
   width: 100px;
-  background-image: url("./HomeImg/Untitled (4).png");
+  background-image: url("/HomeImg/Untitled (4).png");
   top: 60px;
   right: 80px;
   rotate: -20deg;
@@ -450,7 +450,7 @@
   position: absolute;
   height: 65px;
   width: 65px;
-  background-image: url("./HomeImg/round (2).png");
+  background-image: url("/HomeImg/round (2).png");
   bottom: 160px;
   right: 60px;
   rotate: 0deg;
@@ -649,7 +649,7 @@
   width: 100%;
   position: absolute;
   bottom: 0px;
-  background-image: url("./HomeImg/kindergarten-banner-overly.fec9c3a9.webp");
+  background-image: url("/HomeImg/kindergarten-banner-overly.fec9c3a9.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
