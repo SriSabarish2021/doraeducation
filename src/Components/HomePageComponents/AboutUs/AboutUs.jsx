@@ -9,10 +9,10 @@ const AboutUs = () => {
  useEffect(() => {
         
     
-       const getelementoneinabout=document.querySelector('.about-us-container') as HTMLElement;
-          const getanimateelementoneinaboutud=document.querySelector('.about-us-image-one') as HTMLElement;       
+       const getelementoneinabout=document.querySelector('.about-us-container') ;
+          const getanimateelementoneinaboutud=document.querySelector('.about-us-image-one') ;       
           
-          const getanimateelementtwoinaboutus=document.querySelector('.about-us-image-two') as HTMLElement;
+          const getanimateelementtwoinaboutus=document.querySelector('.about-us-image-two') ;
         
         const observerinabout=new IntersectionObserver(([entry])=>{
           if (entry.intersectionRatio>0.5) {

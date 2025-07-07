@@ -13,8 +13,8 @@ const HomeMain = () => {
   useEffect(() => {
     
 
-    const getelementone=document.querySelector('.home-main-for-intro') as HTMLElement
-    const getanimateelementone=document.querySelector('.smallcontent-one-home') as HTMLElement
+    const getelementone=document.querySelector('.home-main-for-intro') 
+    const getanimateelementone=document.querySelector('.smallcontent-one-home') 
     const observer=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
         if (getanimateelementone) {
@@ -32,8 +32,8 @@ const HomeMain = () => {
 
 
 
-    const getelementtwo=document.querySelector('.home-main-for-intro') as HTMLElement
-    const getanimateelementtwo=document.querySelector('.smallcontent-two-home') as HTMLElement
+    const getelementtwo=document.querySelector('.home-main-for-intro') 
+    const getanimateelementtwo=document.querySelector('.smallcontent-two-home') 
     const observertwo=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
         if (getanimateelementtwo) {
@@ -62,8 +62,8 @@ const HomeMain = () => {
   useEffect(() => {
     
 
-    const getelementone=document.querySelector('.home-main-for-intro') as HTMLElement
-    const getanimateelementone=document.querySelector('.smallcontent-one-home-cont') as HTMLElement
+    const getelementone=document.querySelector('.home-main-for-intro') 
+    const getanimateelementone=document.querySelector('.smallcontent-one-home-cont') 
     const observer=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
         if (getanimateelementone) {
@@ -81,8 +81,8 @@ const HomeMain = () => {
 
 
 
-    const getelementtwo=document.querySelector('.home-main-for-intro') as HTMLElement
-    const getanimateelementtwo=document.querySelector('.smallcontent-two-home-cont') as HTMLElement
+    const getelementtwo=document.querySelector('.home-main-for-intro') 
+    const getanimateelementtwo=document.querySelector('.smallcontent-two-home-cont') 
     const observertwo=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio>0.7) {
         if (getanimateelementtwo) {
@@ -120,18 +120,18 @@ const gethomemovelementthree=useRef(null)
 const gethomemovelementfour=useRef(null)
 const gethomemovelementfive=useRef(null)
 
-   const MouseMoveEvent=(event:unknown)=>{
+   const MouseMoveEvent=(event)=>{
 
     
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()
 
-    const totwidht:number=event.clientX-viewelement.left
-    const totheight:number=event.clientY-viewelement.top
+    const totwidht=event.clientX-viewelement.left
+    const totheight=event.clientY-viewelement.top
 
-    const offsetX:number=(totwidht/viewelement.width)*100
-    const offsetY:number=(totheight/viewelement.height)*100
+    const offsetX=(totwidht/viewelement.width)*100
+    const offsetY=(totheight/viewelement.height)*100
     getoffsetX.current=-offsetX/8
     getoffsetY.current=-offsetY/8
 

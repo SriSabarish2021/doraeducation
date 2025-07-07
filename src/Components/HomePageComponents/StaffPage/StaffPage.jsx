@@ -11,17 +11,17 @@ const StaffPage = () => {
   const getoffsetXstaff=useRef(0)
     const getoffsetYstaff=useRef(0)
 
-   const MouseMoveEvent=(event:unknown)=>{
+   const MouseMoveEvent=(event)=>{
     
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()
 
-    const totwidht:number=event.clientX-viewelement.left
-    const totheight:number=event.clientY-viewelement.top
+    const totwidht=event.clientX-viewelement.left
+    const totheight=event.clientY-viewelement.top
 
-    const offsetX:number=(totwidht/viewelement.width)*100
-    const offsetY:number=(totheight/viewelement.height)*100
+    const offsetX=(totwidht/viewelement.width)*100
+    const offsetY=(totheight/viewelement.height)*100
     getoffsetXstaff.current=-offsetX/10
     getoffsetYstaff.current=-offsetY/10
 

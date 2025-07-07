@@ -13,17 +13,17 @@ const moveYcontactRef = useRef(0);
 const circleRef = useRef(null);
 
 
-const MouseMoveEvent=(event:unknown)=>{
+const MouseMoveEvent=(event)=>{
 
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()
 
-    const totwidht:number=event.clientX-viewelement.left
-    const totheight:number=event.clientY-viewelement.top
+    const totwidht=event.clientX-viewelement.left
+    const totheight=event.clientY-viewelement.top
 
-    const offsetX:number=(totwidht/viewelement.width)*100
-    const offsetY:number=(totheight/viewelement.height)*100
+    const offsetX=(totwidht/viewelement.width)*100
+    const offsetY=(totheight/viewelement.height)*100
   
     moveXcontactRef.current = -offsetX/1;
     moveYcontactRef.current = -offsetY/1;

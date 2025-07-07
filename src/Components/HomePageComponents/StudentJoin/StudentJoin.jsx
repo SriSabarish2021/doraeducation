@@ -9,7 +9,7 @@ const StudentJoin = () => {
 
   useEffect(() => {
     
-    const observercontent=document.querySelector('.student-join-container')as HTMLElement
+    const observercontent=document.querySelector('.student-join-container')
     const observeelementone=document.querySelector('.student-join-image-one-insider-one')
     const observeelementtwo=document.querySelector('.student-join-image-one-insider-two')
 
@@ -60,17 +60,17 @@ const StudentJoin = () => {
     const handmoveelement=useRef(null)
     const handmoveelementtwo=useRef(null)
 
-    const MouseMoveEvent=(event:unknown)=>{
+    const MouseMoveEvent=(event)=>{
 
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()
 
-    const totwidht:number=event.clientX-viewelement.left
-    const totheight:number=event.clientY-viewelement.top
+    const totwidht=event.clientX-viewelement.left
+    const totheight=event.clientY-viewelement.top
 
-    const offsetX:number=(totwidht/viewelement.width)*100
-    const offsetY:number=(totheight/viewelement.height)*100
+    const offsetX=(totwidht/viewelement.width)*100
+    const offsetY=(totheight/viewelement.height)*100
     handX.current=-offsetX/5
     handY.current=-offsetY/5
 

@@ -10,9 +10,10 @@ const StudentPage = () => {
       useEffect(() => {
         
     
-        const getelementoneinstud=document.querySelector('.student-page-container') as HTMLElement;
-        const getanimateelementoneinstud=document.querySelector('.scale-img-one-stud') as HTMLElement;       const getanimateelementtwoinstud=document.querySelector('.scale-img-two-stud') as HTMLElement;
-        const getanimateelementthreeinstud=document.querySelector('.scale-img-three-stud') as HTMLElement;
+        const getelementoneinstud=document.querySelector('.student-page-container') 
+        const getanimateelementoneinstud=document.querySelector('.scale-img-one-stud')       
+        const getanimateelementtwoinstud=document.querySelector('.scale-img-two-stud') 
+        const getanimateelementthreeinstud=document.querySelector('.scale-img-three-stud') 
         const rockwtimage=document.querySelector('.design-element-stud-page')
         const observerinstud=new IntersectionObserver(([entry])=>{
           if (entry.intersectionRatio>0.4) {

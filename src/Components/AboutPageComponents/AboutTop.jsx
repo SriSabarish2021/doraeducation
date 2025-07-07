@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Image } from '@imagekit/react';
 
 const AboutTop = ({course}) => {
-    const scrollRefAbout = useRef<HTMLDivElement>(null);
+    const scrollRefAbout = useRef(null);
 
     useEffect(() => {
         
@@ -63,25 +63,25 @@ const AboutTop = ({course}) => {
 
 
 
-        const minusdesignref=useRef<HTMLDivElement>(null)
-        const plusdesignref=useRef<HTMLDivElement>(null)
-        const minusdesignreftwo=useRef<HTMLDivElement>(null)
-        const plusdesignreftwo=useRef<HTMLDivElement>(null)
+        const minusdesignref=useRef(null)
+        const plusdesignref=useRef(null)
+        const minusdesignreftwo=useRef(null)
+        const plusdesignreftwo=useRef(null)
 
         const offsetforaboutX=useRef(0)
         const offsetforaboutY=useRef(0)
       
-         const MouseMoveEvent=(event:unknown,targetone,targettwo)=>{
+         const MouseMoveEvent=(event,targetone,targettwo)=>{
       
           
           const elementtargeting=event.currentTarget
           const viewelement=elementtargeting.getBoundingClientRect()
       
-          const totwidht:number=event.clientX-viewelement.left
-          const totheight:number=event.clientY-viewelement.top
+          const totwidht=event.clientX-viewelement.left
+          const totheight=event.clientY-viewelement.top
       
-          const offsetX:number=(totwidht/viewelement.width)*100
-          const offsetY:number=(totheight/viewelement.height)*100
+          const offsetX=(totwidht/viewelement.width)*100
+          const offsetY=(totheight/viewelement.height)*100
 
           offsetforaboutX.current=-offsetX/2
           

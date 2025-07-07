@@ -7,7 +7,7 @@ import { FaRegStar } from "react-icons/fa";
 
 const Testimonial = ({course}) => {
 
-    const scrollRef = useRef<HTMLDivElement>(null);
+    const scrollRef = useRef(null);
 
     
 
@@ -25,7 +25,7 @@ const Testimonial = ({course}) => {
         const commentboxright=document.querySelector('.testimonial-inner-content-bar')?.getBoundingClientRect().width
 
     if (scrollRef.current) {
-             const valueofscroll:number=scrollRef.current.scrollWidth - scrollRef.current.clientWidth
+             const valueofscroll=scrollRef.current.scrollWidth - scrollRef.current.clientWidth
 
       if (scrollRef.current.scrollLeft>=valueofscroll) {
          scrollRef.current.scrollLeft = 0;

@@ -162,7 +162,7 @@ const TopShortCourse = ({sethashget}) => {
             
             {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&
               <div  className='course-box-btn-div'>
-              <Link onClick={()=>sethashget('JavaScript')} style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#JavaScript`} style={{textDecoration:'none'}} className='apply-btn-course-box'>Apply
+              <Link onClick={()=>sethashget('JavaScript')} style={{textDecoration:'none'}} to={`/Providing-Education's-in-Mindspire-Institute/mindspire-course#JavaScript`} className='apply-btn-course-box'>Apply
                 <div className='top-course-apply-btn-one'></div>
                 <div className='top-course-apply-btn-two'></div>
                 <div className='top-course-apply-btn-three'></div>

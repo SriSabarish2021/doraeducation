@@ -8,10 +8,10 @@ const WhyChoose = () => {
      useEffect(() => {
             
         
-            const getelementoneinwhychoose=document.querySelector('.why-choose-container') as HTMLElement;
-              const getanimateelementoneinwhychoose=document.querySelector('.image-design-one') as HTMLElement;       
+            const getelementoneinwhychoose=document.querySelector('.why-choose-container') 
+              const getanimateelementoneinwhychoose=document.querySelector('.image-design-one')        
               
-              const getanimateelementtwoinwhychoose=document.querySelector('.image-design-two') as HTMLElement;
+              const getanimateelementtwoinwhychoose=document.querySelector('.image-design-two') 
             
             const observerinabout=new IntersectionObserver(([entry])=>{
               if (entry.intersectionRatio>0.6) {
@@ -54,11 +54,10 @@ const WhyChoose = () => {
           useEffect(() => {
             
         
-            const getelementoneinwhychoose=document.querySelector('.why-choose-container') as HTMLElement;
-              const getanimateelementoneinwhychoose=document.querySelector('.image-design-one-cont') as HTMLElement;       
+            const getelementoneinwhychoose=document.querySelector('.why-choose-container') 
+              const getanimateelementoneinwhychoose=document.querySelector('.image-design-one-cont') 
               
-              const getanimateelementtwoinwhychoose=document.querySelector('.image-design-two-cont') as HTMLElement;
-            
+              const getanimateelementtwoinwhychoose=document.querySelector('.image-design-two-cont') 
             const observerinabout=new IntersectionObserver(([entry])=>{
               if (entry.intersectionRatio>0.6) {
                
@@ -105,17 +104,17 @@ const WhyChoose = () => {
       const getoffsetwhycomponent=useRef(null)
 const getoffsetwhycomponenttwo=useRef(null)
 const getoffsetwhycomponentthree=useRef(null)
-    const MouseMoveEvent=(event:unknown)=>{
+    const MouseMoveEvent=(event)=>{
     
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()
 
-    const totwidht:number=event.clientX-viewelement.left
-    const totheight:number=event.clientY-viewelement.top
+    const totwidht=event.clientX-viewelement.left
+    const totheight=event.clientY-viewelement.top
 
-    const offsetX:number=(totwidht/viewelement.width)*100
-    const offsetY:number=(totheight/viewelement.height)*100
+    const offsetX=(totwidht/viewelement.width)*100
+    const offsetY=(totheight/viewelement.height)*100
     getoffsetXwhy.current=-offsetX/5
     getoffsetYwhy.current=-offsetY/5
 
