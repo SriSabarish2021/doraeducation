@@ -67,7 +67,7 @@ const ContactSider = () => {
       <div className={`contact-side-box  contact-sider-box-one`}>
         <div className='contact-sider-logo'>
           <div className='contact-logo-one logo-delay-one'>
-            <img src="./ContactPageImage/location.png" alt="location-logo" className='contact-logo' />
+            <img src="/ContactPageImage/location.png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
         <div className='contact-sider-cont'>
@@ -84,7 +84,7 @@ const ContactSider = () => {
       <div className={ `contact-side-box contact-sider-box-two`}>
         <div className='contact-sider-logo contact-inner-logo-two '>
           <div className='contact-logo-two logo-delay-two'>
-            <img src="./ContactPageImage/call.png" alt="location-logo" className='contact-logo' />
+            <img src="/ContactPageImage/call.png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
         <div className='contact-sider-cont'>
@@ -101,7 +101,7 @@ const ContactSider = () => {
       <div className={`contact-side-box contact-sider-box-three`}>
         <div className='contact-sider-logo'>
           <div className='contact-logo-three logo-delay-three'>
-            <img src="./ContactPageImage/message (1).png" alt="location-logo" className='contact-logo' />
+            <img src="/ContactPageImage/message (1).png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
         <div className='contact-sider-cont'>
@@ -118,7 +118,7 @@ const ContactSider = () => {
       <div className={`contact-side-box  contact-sider-box-four`}>
         <div className='contact-sider-logo contact-inner-logo-two '>
           <div className='contact-logo-two contact-logo-last logo-delay-four'>
-            <img src="./ContactPageImage/chain.png" alt="location-logo" className='contact-logo' />
+            <img src="/ContactPageImage/chain.png" alt="location-logo" className='contact-logo' />
           </div>
         </div>
         <div className='contact-sider-cont'>

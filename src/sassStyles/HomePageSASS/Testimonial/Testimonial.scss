@@ -51,7 +51,7 @@
         left:40px;
         transform: rotate(-20deg);
 
-        @include bg-image-for-special-design('./Testimonial/message.png');
+        @include bg-image-for-special-design('/Testimonial/message.png');
                 background-size: contain;
 
     }
@@ -61,7 +61,7 @@
         width: 200px;
         top: 0px;
         right:-20px;
-        @include bg-image-for-special-design('./Testimonial/testi-shape-ex-1.webp');
+        @include bg-image-for-special-design('/Testimonial/testi-shape-ex-1.webp');
                 background-size: contain;
 
     }
@@ -70,7 +70,7 @@
         position: absolute;
         height: 120px;
         width: 120px;
-        @include bg-image-for-special-design('./Testimonial/book-for-testimonial.png');
+        @include bg-image-for-special-design('/Testimonial/book-for-testimonial.png');
                         background-size: contain;
 
         top: 180px;
@@ -81,7 +81,7 @@
         position: absolute;
         height: 200px;
         width:200px;
-        @include bg-image-for-special-design('./Testimonial/Vector 1 (1).png');
+        @include bg-image-for-special-design('/Testimonial/Vector 1 (1).png');
                         background-size: contain;
 
         top: 30%;
@@ -92,7 +92,7 @@
         position: absolute;
         height: 220px;
         width:220px;
-        @include bg-image-for-special-design('./Testimonial/dot-testi.png');
+        @include bg-image-for-special-design('/Testimonial/dot-testi.png');
         border-radius: 150px 10px 50px 100px;
         bottom: 0%;
         left: 20px;
@@ -104,7 +104,7 @@
         position: absolute;
         height: 220px;
         width:220px;
-        @include bg-image-for-special-design('./Testimonial/dot-testi.png');
+        @include bg-image-for-special-design('/Testimonial/dot-testi.png');
         border-radius: 100%;
         bottom: 0%;
         right: 20px;
@@ -116,7 +116,7 @@
         position: absolute;
         height:280px;
         width:280px;
-        @include bg-image-for-special-design('./Testimonial/line-testi.png');
+        @include bg-image-for-special-design('/Testimonial/line-testi.png');
 
         bottom: 0%;
         right:30%;
@@ -141,7 +141,7 @@
             width: 100%;
             position: absolute;
             top: 0px;
-            background-image: url('./Testimonial/triangle (1).png');
+            background-image: url('/Testimonial/triangle (1).png');
         }
         .testimonial-wave-design{
             height: 150px;
@@ -149,7 +149,7 @@
             position: absolute;
             bottom: -10px;
             
-            @include bg-image-for-special-design('./Testimonial/kinder.webp');
+            @include bg-image-for-special-design('/Testimonial/kinder.webp');
 
         }
     }
@@ -194,7 +194,7 @@
                             width: 140px;
                             left: 0px;
                             bottom: -20px;
-                            @include bg-image-for-special-design('./WhyChoose/underline-why-choose.png');
+                            @include bg-image-for-special-design('/WhyChoose/underline-why-choose.png');
                             background-size: contain;
                         }
                     }
@@ -293,7 +293,7 @@
                     .quote-image-bar{
                         height: 100%;
                         width: 100%;
-                        background-image: url('./Testimonial/quote.png');
+                        background-image: url('/Testimonial/quote.png');
                         background-repeat: no-repeat;
                         background-size: contain;
                         background-position: center;

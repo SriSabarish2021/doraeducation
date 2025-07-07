@@ -36,17 +36,17 @@ const StaffPage = () => {
       <div className='staff-page-image-container'>
         <div className='staff-page-image-box-one'>
           
-            <img src="./StaffPage/Staff-one.webp" alt="Staff Image "
+            <img src="/StaffPage/Staff-one.webp" alt="Staff Image "
             className='image-box-one-image Staff-Image-Scroll'/>
           <div className='image-box-one-totors'>
             <div className='tutors-img-tag'>
-               <img src="./StaffPage/Top-staff-one.avif" alt="Staff Image"
+               <img src="/StaffPage/Top-staff-one.avif" alt="Staff Image"
              className='tutor-round tutor-one'/>
-              <img src="./StaffPage/Top-staff-two.avif" alt="Staff Image"
+              <img src="/StaffPage/Top-staff-two.avif" alt="Staff Image"
              className='tutor-two'/>
-              <img src="./StaffPage/Top-staff-three.avif" alt="Staff Image"
+              <img src="/StaffPage/Top-staff-three.avif" alt="Staff Image"
              className='tutor-three'/>
-             <img src="./StaffPage/Top-staff-Four.avif" alt="Staff Image"
+             <img src="/StaffPage/Top-staff-Four.avif" alt="Staff Image"
              className='tutor-four'/>
               <div className='tutor-five'>
                 <p>+50</p>
@@ -62,7 +62,7 @@ const StaffPage = () => {
           <div className='image-box-two-imageone'>
               <Video 
                 urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                src="./Home+1+Video.mp4"
+                src="/Home+1+Video.mp4"
                   autoPlay
                 muted 
                 loop
@@ -72,26 +72,26 @@ const StaffPage = () => {
                 <p className='our-story'>Our Story</p>
               </div>
           </div>
-           <img src="./StaffPage/Staff-page-img.webp" alt="Staff Image "
+           <img src="/StaffPage/Staff-page-img.webp" alt="Staff Image "
              className='image-box-two-imagetwo Staff-Image-Scroll'/>
 
           <div className='mobile-image-for-staff-page'>
             <div className='mobile-image-bar-two-section-one'>
-              <img src="./StaffPage/Staff-page-img.webp" alt="Staff Image "
+              <img src="/StaffPage/Staff-page-img.webp" alt="Staff Image "
              className='image-box-one-imagetwo-mob Staff-Image-Scroll'/>
             </div>
             <div className='mobile-image-bar-two-section-two'>
-            <img src="./StaffPage/Staff-one.webp" alt="Staff Image "
+            <img src="/StaffPage/Staff-one.webp" alt="Staff Image "
              className='image-box-two-imagetwo-mob-two Staff-Image-Scroll'/>
              <div className='image-box-one-totors-mobile'>
             <div className='tutors-img-tag'>
-               <img src="./StaffPage/Top-staff-one.avif" alt="Staff Image"
+               <img src="/StaffPage/Top-staff-one.avif" alt="Staff Image"
              className='tutor-round tutor-one'/>
-              <img src="./StaffPage/Top-staff-two.avif" alt="Staff Image"
+              <img src="/StaffPage/Top-staff-two.avif" alt="Staff Image"
              className='tutor-two'/>
-              <img src="./StaffPage/Top-staff-three.avif" alt="Staff Image"
+              <img src="/StaffPage/Top-staff-three.avif" alt="Staff Image"
              className='tutor-three'/>
-             <img src="./StaffPage/Top-staff-Four.avif" alt="Staff Image"
+             <img src="/StaffPage/Top-staff-Four.avif" alt="Staff Image"
              className='tutor-four'/>
               <div className='tutor-five'>
                 <p>+50</p>
@@ -110,7 +110,7 @@ const StaffPage = () => {
       <div className='staff-page-content-container'>
         <Video 
                 urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                src="./Home+1+Video.mp4"
+                src="/Home+1+Video.mp4"
                   autoPlay
                 muted 
                 loop

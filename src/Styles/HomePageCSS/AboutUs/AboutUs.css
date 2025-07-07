@@ -128,7 +128,7 @@
   z-index: -1;
   right: 20px;
   bottom: 20px;
-  background-image: url("./Aboutus/circle.png");
+  background-image: url("/Aboutus/circle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -238,7 +238,7 @@
   position: absolute;
   height: 60px;
   width: 60px;
-  background-image: url("./Aboutus/Ellipse 1.png");
+  background-image: url("/Aboutus/Ellipse 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,7 +278,7 @@
 .about-us-container .about-us-image-container .about-image-box-two .about-us-image-cont-two .about-us-cont-inner-two .alumini-img-and-cont .alumini-images .alumini-img-show {
   height: 70%;
   width: 70%;
-  background-image: url("./Aboutus/user-01.webp");
+  background-image: url("/Aboutus/user-01.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -345,7 +345,7 @@
   position: absolute;
   height: 60px;
   width: 60px;
-  background-image: url("./Aboutus/Ellipse 1.png");
+  background-image: url("/Aboutus/Ellipse 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -385,7 +385,7 @@
 .about-us-container .about-us-content-container .about-us-image-cont-two-cont .about-us-cont-inner-two .alumini-img-and-cont .alumini-images .alumini-img-show {
   height: 70%;
   width: 70%;
-  background-image: url("./Aboutus/user-01.webp");
+  background-image: url("/Aboutus/user-01.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -462,7 +462,7 @@
   width: 160px;
   left: 40%;
   top: 90%;
-  background-image: url("./Aboutus/underline-two.png");
+  background-image: url("/Aboutus/underline-two.png");
   animation: underlinemove-about-us 6s linear infinite forwards;
 }
 @keyframes underlinemove-about-us {

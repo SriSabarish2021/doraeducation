@@ -46,7 +46,7 @@
         height: 180px;
         width: 80px;
         left: 10px;
-        background-image: url('./StydentPage/sidename.png');
+        background-image: url('/StydentPage/sidename.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -58,7 +58,7 @@
         bottom: 80px;
         height: 60px;
         width: 60px;
-        background-image: url('./StydentPage/round-one.png');
+        background-image: url('/StydentPage/round-one.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -68,7 +68,7 @@
                 @include Row-center.row-center;
         height: 30px;
         width: 30px;
-        background-image: url('./StydentPage/round-one.png');
+        background-image: url('/StydentPage/round-one.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -209,7 +209,7 @@
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
-                        background-image: url('./StydentPage/stu-img-thre.webp');
+                        background-image: url('/StydentPage/stu-img-thre.webp');
                     }
                     
                     .stud-enroll-image-bar-in-main-cont{
@@ -549,7 +549,7 @@
             width: 130px;
             top: 20px;
             right: 30px;
-            background-image: url('./StydentPage/Screenshot_2025-05-15_142316-removebg-preview.png');
+            background-image: url('/StydentPage/Screenshot_2025-05-15_142316-removebg-preview.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

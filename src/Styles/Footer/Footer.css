@@ -25,7 +25,7 @@
   position: absolute;
   height: 70px;
   width: 100%;
-  background-image: url("./Footer/copy-right-shape-2.25d7d399.webp");
+  background-image: url("/Footer/copy-right-shape-2.25d7d399.webp");
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
@@ -36,7 +36,7 @@
   position: absolute;
   height: 70px;
   width: 100%;
-  background-image: url("./Footer/copy-right-shape-2.25d7d399.webp");
+  background-image: url("/Footer/copy-right-shape-2.25d7d399.webp");
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
@@ -89,7 +89,7 @@
   line-height: 0;
   display: block;
   background-color: rgba(255, 255, 255, 0);
-  background-image: url("./Footer/Untitled (8).png");
+  background-image: url("/Footer/Untitled (8).png");
   background-repeat: repeat-x;
   background-position: center;
   background-size: contain;

@@ -39,7 +39,7 @@
   top: 50px;
   left: 40px;
   transform: rotate(-20deg);
-  background-image: url("./Testimonial/message.png");
+  background-image: url("/Testimonial/message.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,7 +51,7 @@
   width: 200px;
   top: 0px;
   right: -20px;
-  background-image: url("./Testimonial/testi-shape-ex-1.webp");
+  background-image: url("/Testimonial/testi-shape-ex-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,7 +61,7 @@
   position: absolute;
   height: 120px;
   width: 120px;
-  background-image: url("./Testimonial/book-for-testimonial.png");
+  background-image: url("/Testimonial/book-for-testimonial.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,7 +74,7 @@
   position: absolute;
   height: 200px;
   width: 200px;
-  background-image: url("./Testimonial/Vector 1 (1).png");
+  background-image: url("/Testimonial/Vector 1 (1).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,7 +87,7 @@
   position: absolute;
   height: 220px;
   width: 220px;
-  background-image: url("./Testimonial/dot-testi.png");
+  background-image: url("/Testimonial/dot-testi.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +101,7 @@
   position: absolute;
   height: 220px;
   width: 220px;
-  background-image: url("./Testimonial/dot-testi.png");
+  background-image: url("/Testimonial/dot-testi.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +115,7 @@
   position: absolute;
   height: 280px;
   width: 280px;
-  background-image: url("./Testimonial/line-testi.png");
+  background-image: url("/Testimonial/line-testi.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,14 +138,14 @@
   width: 100%;
   position: absolute;
   top: 0px;
-  background-image: url("./Testimonial/triangle (1).png");
+  background-image: url("/Testimonial/triangle (1).png");
 }
 .testimonial-container .tesitimonial-top-design .testimonial-wave-design {
   height: 150px;
   width: 100%;
   position: absolute;
   bottom: -10px;
-  background-image: url("./Testimonial/kinder.webp");
+  background-image: url("/Testimonial/kinder.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,7 +200,7 @@
   width: 140px;
   left: 0px;
   bottom: -20px;
-  background-image: url("./WhyChoose/underline-why-choose.png");
+  background-image: url("/WhyChoose/underline-why-choose.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,7 +304,7 @@
 .testimonial-container .testimonial-main-container .testimonial-content-bar .testimonial-image-bar .image-border-line .quote-image-bar {
   height: 100%;
   width: 100%;
-  background-image: url("./Testimonial/quote.png");
+  background-image: url("/Testimonial/quote.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

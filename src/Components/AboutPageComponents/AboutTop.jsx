@@ -159,7 +159,7 @@ const AboutTop = ({course}) => {
             <div className='about-side-bar about-side-by-one'>
                 <div className='about-side-bar-img'>
                     <div className='about-side-img about-side-img-one'>
-                        <img className='img-for-side-by-about img-about-side-one' src='./AboutPageImage/ABOUT-TOP/ic42.svg' ></img>
+                        <img className='img-for-side-by-about img-about-side-one' src='/AboutPageImage/ABOUT-TOP/ic42.svg' ></img>
                     </div>
                     
                     <div className='about-side-img-design about-side-img-one-design-one'>
@@ -177,7 +177,7 @@ const AboutTop = ({course}) => {
             <div className='about-side-bar  about-side-by-two'>
                 <div className='about-side-bar-img '>
                     <div className='about-side-img  about-side-img-two'>
-                        <img className='img-for-side-by-about img-about-side-two' src='./AboutPageImage/ABOUT-TOP/ic41.svg' ></img>
+                        <img className='img-for-side-by-about img-about-side-two' src='/AboutPageImage/ABOUT-TOP/ic41.svg' ></img>
                     </div>
                     <div className='about-side-img-design about-side-img-two-design-one'></div>
                     <div className='about-side-img-design-two about-side-img-two-design-two'></div>
@@ -190,7 +190,7 @@ const AboutTop = ({course}) => {
             <div className='about-side-bar about-side-by-three'>
                 <div className='about-side-bar-img'>
                     <div className='about-side-img  about-side-img-three'>
-                        <img className='img-for-side-by-about img-about-side-three' src='./AboutPageImage/ABOUT-TOP/ic40.svg' ></img>
+                        <img className='img-for-side-by-about img-about-side-three' src='/AboutPageImage/ABOUT-TOP/ic40.svg' ></img>
                     </div>
                     <div className='about-side-img-design about-side-img-three-design-one'></div>
                     <div className='about-side-img-design-two about-side-img-three-design-two'></div>
@@ -233,11 +233,11 @@ const AboutTop = ({course}) => {
                     </div>
                     <div className='student-image-and-number'>
                         <div className='student-image-bar'>
-                            <img src='./StaffPage/Top-staff-Four.avif' className='stud-img stud-img-one-abt'></img>
-                            <img src='./StaffPage/Staff-one.webp' className='stud-img stud-img-two-abt'></img>
-                            <img src='./StaffPage/Top-staff-three.avif' className='stud-img stud-img-three-abt'></img>
-                            <img  src='./StaffPage/Top-staff-two.avif' className='stud-img stud-img-four-abt'></img>
-                            <img src='./StaffPage/Top-staff-one.avif' className='stud-img stud-img-five-abt'></img>
+                            <img src='/StaffPage/Top-staff-Four.avif' className='stud-img stud-img-one-abt'></img>
+                            <img src='/StaffPage/Staff-one.webp' className='stud-img stud-img-two-abt'></img>
+                            <img src='/StaffPage/Top-staff-three.avif' className='stud-img stud-img-three-abt'></img>
+                            <img  src='/StaffPage/Top-staff-two.avif' className='stud-img stud-img-four-abt'></img>
+                            <img src='/StaffPage/Top-staff-one.avif' className='stud-img stud-img-five-abt'></img>
                         </div>
                         
                         <p className='stud-img-num-para'><span className='stud-img-num-span'>150+</span> Satisfied Students</p>
@@ -247,7 +247,7 @@ const AboutTop = ({course}) => {
                         <div className='staff-infor-in-about-one'>
                             <div className='staff-info-one-head'>
                                 <div className='staff-info-one-img'>
-                                    <img src="./AboutPageImage/ABOUT-TOP/ic43.svg" alt="stud-image" className='staff-infor-in-about-top-one'/>
+                                    <img src="/AboutPageImage/ABOUT-TOP/ic43.svg" alt="stud-image" className='staff-infor-in-about-top-one'/>
                                 </div>
                                 <p className='staff-one-head-tit'>Skilled Lecturers</p>
                             </div>
@@ -258,7 +258,7 @@ const AboutTop = ({course}) => {
                         <div className='staff-infor-in-about-two'>
                             <div className='staff-info-one-head'>
                                 <div className='staff-info-one-img'>
-                                     <img src="./AboutPageImage/ABOUT-TOP/ic44.svg" alt="stud-image" className='staff-infor-in-about-top-two'/>
+                                     <img src="/AboutPageImage/ABOUT-TOP/ic44.svg" alt="stud-image" className='staff-infor-in-about-top-two'/>
                                 </div>
                                 <p className='staff-one-head-tit'>Academic Excellence</p>
                             </div>

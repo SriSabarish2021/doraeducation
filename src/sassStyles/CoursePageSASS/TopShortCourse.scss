@@ -669,7 +669,7 @@ transition-duration: 0.4s;
         z-index: -1;
         
       
-        background-image: url('./AboutPageImage/ABOUT-TOP/ab13.webp');
+        background-image: url('/AboutPageImage/ABOUT-TOP/ab13.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -686,7 +686,7 @@ transition-duration: 0.4s;
         right: 30px;
         bottom: 10px;
       
-        background-image: url('./book (3).png');
+        background-image: url('/book (3).png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1138,7 +1138,7 @@ transition-duration: 0.4s;
         
         height: 22px;
         width: 120px;
-        background-image: url('./underline1.png');
+        background-image: url('/underline1.png');
     }
     .top-short-course-page-container .top-short-course-content-container .course-box{
         height: 270px;
@@ -1208,7 +1208,7 @@ transition-duration: 0.4s;
 
 @media screen and  (max-width:700px) {
     .for-mobile-short-course-page .for-mobile-course-title .course-page-top-course-title .course-page-title-span-name .course-page-title-design{
-        background-image: url('./underline1.png');
+        background-image: url('/underline1.png');
     }
    .top-short-course-page-container .top-short-course-title-container{
     display: none;

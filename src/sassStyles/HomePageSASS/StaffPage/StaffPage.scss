@@ -492,7 +492,7 @@ height: 100%;
 
                         .img-for-analysis{
                             
-                            @include image-for-analysis-cont('./StaffPage/stack-of-books (3).png');
+                            @include image-for-analysis-cont('/StaffPage/stack-of-books (3).png');
                         }
                     }
                     .analysis-tag-content-one{
@@ -508,7 +508,7 @@ height: 100%;
 
                         .img-for-analysis{
                             
-                            @include image-for-analysis-cont('./StaffPage/online-course (3).png');
+                            @include image-for-analysis-cont('/StaffPage/online-course (3).png');
 
                         }
                     }
@@ -527,7 +527,7 @@ height: 100%;
 ;
                         .img-for-analysis{
                            
-                            @include image-for-analysis-cont('./StaffPage/online-education (1).png');
+                            @include image-for-analysis-cont('/StaffPage/online-education (1).png');
 
                         }
                     }
@@ -544,7 +544,7 @@ height: 100%;
 
                         .img-for-analysis{
                             
-                            @include image-for-analysis-cont('./StaffPage/online-certificate (1).png');
+                            @include image-for-analysis-cont('/StaffPage/online-certificate (1).png');
 
                         }
                     }

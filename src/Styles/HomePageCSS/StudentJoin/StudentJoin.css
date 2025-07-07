@@ -113,7 +113,7 @@
   height: 100%;
   width: 100%;
   flex: 1 1 60%;
-  background-image: url("./StudentJoin/img-side-one-stud-join.avif");
+  background-image: url("/StudentJoin/img-side-one-stud-join.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -129,7 +129,7 @@
   height: 100%;
   width: 100%;
   flex: 1 1 40%;
-  background-image: url("./StudentJoin/img-side-two-stud-join.avif");
+  background-image: url("/StudentJoin/img-side-two-stud-join.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,7 +156,7 @@
   height: 100%;
   width: 100%;
   flex: 1 1 40%;
-  background-image: url("./StudentJoin/img-side-three-stud-join.avif");
+  background-image: url("/StudentJoin/img-side-three-stud-join.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -172,7 +172,7 @@
   height: 100%;
   width: 100%;
   flex: 1 1 60%;
-  background-image: url("./StudentJoin/img-side-four-stud-join.avif");
+  background-image: url("/StudentJoin/img-side-four-stud-join.avif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

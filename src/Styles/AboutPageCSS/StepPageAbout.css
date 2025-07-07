@@ -1009,7 +1009,7 @@
 }
 @media screen and (max-width: 500px) {
   .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
-    background-image: url("./AboutPageImage/Untitled (11).png");
+    background-image: url("/AboutPageImage/Untitled (11).png");
     height: 80px;
     width: 80px;
     top: 100%;
@@ -1323,7 +1323,7 @@
     font-size: 22px;
   }
   .step-page-container-for-about-page .step-container-in-about-page-for-mobile .step-about-page .step-line-abt-page {
-    background-image: url("./AboutPageImage/Untitled (11).png");
+    background-image: url("/AboutPageImage/Untitled (11).png");
     height: 100px;
     width: 140px;
     top: 100%;

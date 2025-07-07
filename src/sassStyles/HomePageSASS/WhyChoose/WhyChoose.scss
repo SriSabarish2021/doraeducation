@@ -68,24 +68,24 @@
                         }
                         .tutor-three{
                             z-index: 3;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-three.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-three.avif')
                         
                         }.tutor-two{
                             z-index: 2;
                         
                             left: 35px;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-two.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-two.avif')
                             
                         }
                         .tutor-one{
                             z-index: 1;  left: 15px;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-one.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-one.avif')
                             
                         }
                         .tutor-four{
                             z-index: 4;
                             right: 35px;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-Four.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-Four.avif')
                             
                         }
                         .tutor-five{
@@ -257,7 +257,7 @@
             width: 400px;
             z-index: -1;
             left: 10%;
-            background-image: url('./WhyChoose/circular (2).png');
+            background-image: url('/WhyChoose/circular (2).png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;     
@@ -301,7 +301,7 @@
                             width:120px;
                             left:40px;
                             bottom: 0px;
-                            background-image: url('./WhyChoose/underline-why-choose.png');
+                            background-image: url('/WhyChoose/underline-why-choose.png');
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -450,24 +450,24 @@
                         }
                         .tutor-three{
                             z-index: 3;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-three.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-three.avif')
                         
                         }.tutor-two{
                             z-index: 2;
                         
                             left: 35px;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-two.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-two.avif')
                             
                         }
                         .tutor-one{
                             z-index: 1;  left: 15px;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-one.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-one.avif')
                             
                         }
                         .tutor-four{
                             z-index: 4;
                             right: 35px;
-                            @include tutor-image-for-whychoose('./WhyChoose/Top-staff-Four.avif')
+                            @include tutor-image-for-whychoose('/WhyChoose/Top-staff-Four.avif')
                             
                         }
                         .tutor-five{
@@ -630,7 +630,7 @@
             z-index: -1;
             left: -20px;
             top: -40px;
-            background-image: url('./WhyChoose/shaky-line 2.png');
+            background-image: url('/WhyChoose/shaky-line 2.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -642,7 +642,7 @@
             z-index: -1;
             right: -50px;
             bottom: -20px;
-            background-image: url('./WhyChoose/shaky-line 3.png');
+            background-image: url('/WhyChoose/shaky-line 3.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -652,7 +652,7 @@
             width:450px;
             border-radius: 100%;
              @include Row-center.row-center;
-            background-image: url('./WhyChoose/premium_photo-1681248156438-5c37ee8ed15e.avif');
+            background-image: url('/WhyChoose/premium_photo-1681248156438-5c37ee8ed15e.avif');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

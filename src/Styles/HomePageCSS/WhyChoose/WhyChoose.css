@@ -62,7 +62,7 @@
 }
 .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-three {
   z-index: 3;
-  background-image: url("./WhyChoose/Top-staff-three.avif");
+  background-image: url("/WhyChoose/Top-staff-three.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +70,7 @@
 .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-two {
   z-index: 2;
   left: 35px;
-  background-image: url("./WhyChoose/Top-staff-two.avif");
+  background-image: url("/WhyChoose/Top-staff-two.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,7 +78,7 @@
 .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-one {
   z-index: 1;
   left: 15px;
-  background-image: url("./WhyChoose/Top-staff-one.avif");
+  background-image: url("/WhyChoose/Top-staff-one.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +86,7 @@
 .why-choose-container .image-design-one-cont .image-box-one-totors .tutors-img-tag .tutor-four {
   z-index: 4;
   right: 35px;
-  background-image: url("./WhyChoose/Top-staff-Four.avif");
+  background-image: url("/WhyChoose/Top-staff-Four.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,7 +270,7 @@
   width: 400px;
   z-index: -1;
   left: 10%;
-  background-image: url("./WhyChoose/circular (2).png");
+  background-image: url("/WhyChoose/circular (2).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -316,7 +316,7 @@
   width: 120px;
   left: 40px;
   bottom: 0px;
-  background-image: url("./WhyChoose/underline-why-choose.png");
+  background-image: url("/WhyChoose/underline-why-choose.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -462,7 +462,7 @@
 }
 .why-choose-container .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-three {
   z-index: 3;
-  background-image: url("./WhyChoose/Top-staff-three.avif");
+  background-image: url("/WhyChoose/Top-staff-three.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -470,7 +470,7 @@
 .why-choose-container .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-two {
   z-index: 2;
   left: 35px;
-  background-image: url("./WhyChoose/Top-staff-two.avif");
+  background-image: url("/WhyChoose/Top-staff-two.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -478,7 +478,7 @@
 .why-choose-container .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-one {
   z-index: 1;
   left: 15px;
-  background-image: url("./WhyChoose/Top-staff-one.avif");
+  background-image: url("/WhyChoose/Top-staff-one.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,7 +486,7 @@
 .why-choose-container .why-choose-img .image-design-one .image-box-one-totors .tutors-img-tag .tutor-four {
   z-index: 4;
   right: 35px;
-  background-image: url("./WhyChoose/Top-staff-Four.avif");
+  background-image: url("/WhyChoose/Top-staff-Four.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -657,7 +657,7 @@
   z-index: -1;
   left: -20px;
   top: -40px;
-  background-image: url("./WhyChoose/shaky-line 2.png");
+  background-image: url("/WhyChoose/shaky-line 2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -669,7 +669,7 @@
   z-index: -1;
   right: -50px;
   bottom: -20px;
-  background-image: url("./WhyChoose/shaky-line 3.png");
+  background-image: url("/WhyChoose/shaky-line 3.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -682,7 +682,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url("./WhyChoose/premium_photo-1681248156438-5c37ee8ed15e.avif");
+  background-image: url("/WhyChoose/premium_photo-1681248156438-5c37ee8ed15e.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

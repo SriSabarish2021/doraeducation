@@ -208,7 +208,7 @@ const AboutPageCourse = ({course}) => {
               <div className='why-cont-border-dsign-one why-cont-bar-design'></div>
               <div className='why-content-image-bar'>
                 <div className='why-about-page-image'>
-                  <img className='img-in-why-about-slide' src="./AboutPageImage/AboutPageCourse/ic37.svg"  />
+                  <img className='img-in-why-about-slide' src="/AboutPageImage/AboutPageCourse/ic37.svg"  />
                 </div>
               </div>
               <div className='why-content-cont-bar'>
@@ -222,7 +222,7 @@ const AboutPageCourse = ({course}) => {
                <div className='why-cont-border-dsign-two why-cont-bar-design'></div>
               <div className='why-content-image-bar'>
                 <div className='why-about-page-image'>
-                  <img className='img-in-why-about-slide' src="./AboutPageImage/AboutPageCourse/ic38.svg"  />
+                  <img className='img-in-why-about-slide' src="/AboutPageImage/AboutPageCourse/ic38.svg"  />
                 </div>
               </div>
               <div className='why-content-cont-bar'>
@@ -236,7 +236,7 @@ const AboutPageCourse = ({course}) => {
                <div className='why-cont-border-dsign-three why-cont-bar-design'></div>
               <div className='why-content-image-bar'>
                 <div className='why-about-page-image'>
-                  <img className='img-in-why-about-slide' src="./AboutPageImage/AboutPageCourse/ic39.svg"  />
+                  <img className='img-in-why-about-slide' src="/AboutPageImage/AboutPageCourse/ic39.svg"  />
                 </div>
               </div>
               <div className='why-content-cont-bar'>

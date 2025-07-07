@@ -20,7 +20,7 @@
   height: 400px;
   width: 400px;
   left: 0px;
-  background-image: url("./ProgAdvan/dot-advantage.png");
+  background-image: url("/ProgAdvan/dot-advantage.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@
   width: 400px;
   border-radius: 15px;
   position: relative;
-  background-image: url("./ProgAdvan/service-filler-img-6.jpg");
+  background-image: url("/ProgAdvan/service-filler-img-6.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

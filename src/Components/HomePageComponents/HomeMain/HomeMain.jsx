@@ -183,7 +183,7 @@ const gethomemovelementfive=useRef(null)
 
               <div className='smallcontent-one-home' >
                 <div className='smallcontent-img'>
-                  <img className='img-for-small-cont' src="./HomeImg/read.png" alt="" />
+                  <img className='img-for-small-cont' src="/HomeImg/read.png" alt="" />
                 </div>
                 <div className='smallcontent-content'>
                   <p className='p-one-small-cont'>10K</p>
@@ -193,7 +193,7 @@ const gethomemovelementfive=useRef(null)
               </div>
               <div className='smallcontent-two-home' >
                 <div className='smallcontent-img'>
-                  <img className='img-for-small-cont' src="./HomeImg/online-learning.png" alt="" />
+                  <img className='img-for-small-cont' src="/HomeImg/online-learning.png" alt="" />
                 </div>
                 <div className='smallcontent-content'>
                   <p className='p-one-small-cont'>20+</p>
@@ -205,7 +205,7 @@ const gethomemovelementfive=useRef(null)
             <div className='home-content-div'>
               <div className='smallcontent-one-home-cont' >
                 <div className='smallcontent-img'>
-                  <img className='img-for-small-cont' src="./HomeImg/read.png" alt="" />
+                  <img className='img-for-small-cont' src="/HomeImg/read.png" alt="" />
                 </div>
                 <div className='smallcontent-content'>
                   <p className='p-one-small-cont'>10K</p>
@@ -215,7 +215,7 @@ const gethomemovelementfive=useRef(null)
               </div>
               <div className='smallcontent-two-home-cont' >
                 <div className='smallcontent-img'>
-                  <img className='img-for-small-cont' src="./HomeImg/online-learning.png" alt="" />
+                  <img className='img-for-small-cont' src="/HomeImg/online-learning.png" alt="" />
                 </div>
                 <div className='smallcontent-content'>
                   <p className='p-one-small-cont'>20+</p>

@@ -155,7 +155,7 @@ const AboutUs = () => {
         </div>
 
         
-        <img src="./Aboutus/open-book.png" alt="Book-Image"  className='design-image-about' />
+        <img src="/Aboutus/open-book.png" alt="Book-Image"  className='design-image-about' />
       </div>
             
 

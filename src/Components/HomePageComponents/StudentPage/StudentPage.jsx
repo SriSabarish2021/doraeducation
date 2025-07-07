@@ -69,7 +69,7 @@ const StudentPage = () => {
             <div className="student-page-image-container">
                  <Image
                     urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                    src="stupage-img-one.webp"
+                    src="/stupage-img-one.webp"
                     
                     alt="Student Image"
                     className='student-page-image-one scale-img-one-stud ' 
@@ -77,7 +77,7 @@ const StudentPage = () => {
                     />
                     <Image
                     urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                    src="stu-img-two.webp"
+                    src="/stu-img-two.webp"
                     
                     alt="Student Image"
                    className='student-page-image-two scale-img-two-stud' 
@@ -118,7 +118,7 @@ const StudentPage = () => {
                         <div className='analysis-student-container'>
                             <div className='tot-stu-analysis'>
                                 <div className='tot-stu-analysis-image'>
-                                    <img className='img-for-main-analysis-one' src="./StydentPage/group.png" alt="stud-page-img" />
+                                    <img className='img-for-main-analysis-one' src="/StydentPage/group.png" alt="stud-page-img" />
                                 </div>
                                 <div className='tot-stu-analysis-content'>
                                     <p  className='tot-stu-analysis-para-one'>20K</p>
@@ -129,7 +129,7 @@ const StudentPage = () => {
                                 <div className='stu-thinking-one'>
                                     <div className='stu-thinking-image'>
                                         <div className='stu-thinking-img img-one-stud-think'>
-                                            <img className='img-for-main-analysis-two' src="./StydentPage/light-bulb.png" alt="stud-page-img" />
+                                            <img className='img-for-main-analysis-two' src="/StydentPage/light-bulb.png" alt="stud-page-img" />
                                         </div>
                                     </div>
                                     <div className='stu-thinking-content'>
@@ -140,7 +140,7 @@ const StudentPage = () => {
                                 <div className='stu-thinking-two'>
                                     <div className='stu-thinking-image'>
                                         <div className='stu-thinking-img img-two-stud-think'>
-                                            <img className='img-for-main-analysis-two' src="./StydentPage/diploma.png" alt="stud-page-img" />
+                                            <img className='img-for-main-analysis-two' src="/StydentPage/diploma.png" alt="stud-page-img" />
                                         </div>
                                     </div>
                                     <div className='stu-thinking-content'>

@@ -280,7 +280,7 @@
                 }
 
                 .search-book-image{
-                     @include side-image-steps('./Process/dictionary (1).png');
+                     @include side-image-steps('/Process/dictionary (1).png');
                     left: 60%;
                     transform: rotate(-30deg);
                     
@@ -322,7 +322,7 @@
                     }
                 }
                 .test-image{
-                    @include side-image-steps('./Process/search (1).png');
+                    @include side-image-steps('/Process/search (1).png');
                     right:60%;
                     transform: rotate(-20deg);
 
@@ -370,7 +370,7 @@
 
                 
                 .enroll-image{
-                    @include side-image-steps('./Process/enroll.png');
+                    @include side-image-steps('/Process/enroll.png');
                     left:60%;
                     transform: rotate(20deg);
                     
@@ -428,7 +428,7 @@
 
                 
                 .computer-image{
-                    @include side-image-steps('./Process/online-test.png');
+                    @include side-image-steps('/Process/online-test.png');
                     right:60%;
                     transform: rotate(-0deg);
 

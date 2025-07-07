@@ -125,7 +125,7 @@ const TopShortCourse = ({sethashget}) => {
           <div className='top-short-cont-design'></div>
           <div className='top-short-cont-stud-img-design'>
             <div className='top-course-scroll-info-img'>
-              <img className='img-for-small-cont-short-course' src="./HomeImg/online-learning.png" alt="" />
+              <img className='img-for-small-cont-short-course' src="/HomeImg/online-learning.png" alt="" />
             </div>
             <div className='top-course-scroll-info-cont'>
                <p className='p-one-small-cont-short-course'>20+</p>

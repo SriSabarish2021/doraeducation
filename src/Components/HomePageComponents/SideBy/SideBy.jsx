@@ -14,7 +14,7 @@ const SideBy = ({onedisp,twodisp}) => {
                      
                      <Video 
                         urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                        src="./7192325-uhd_3840_2160_25fps.mp4"
+                        src="/7192325-uhd_3840_2160_25fps.mp4"
                         autoPlay
                         muted 
                         loop
@@ -42,7 +42,7 @@ const SideBy = ({onedisp,twodisp}) => {
                 <div className='side-by-one-img-tag'>
                      <Video 
                         urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                        src="./5183279-hd_1920_1080_30fps.mp4"
+                        src="/5183279-hd_1920_1080_30fps.mp4"
                          autoPlay
                         muted 
                         loop
@@ -73,7 +73,7 @@ const SideBy = ({onedisp,twodisp}) => {
                 <div className='side-by-one-img-tag'>
                      <Video 
                         urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                        src="./5183279-hd_1920_1080_30fps.mp4"
+                        src="/5183279-hd_1920_1080_30fps.mp4"
                          autoPlay
                         muted 
                         loop
@@ -104,7 +104,7 @@ const SideBy = ({onedisp,twodisp}) => {
                      
                      <Video 
                         urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                        src="./7192325-uhd_3840_2160_25fps.mp4"
+                        src="/7192325-uhd_3840_2160_25fps.mp4"
                         autoPlay
                         muted 
                         loop

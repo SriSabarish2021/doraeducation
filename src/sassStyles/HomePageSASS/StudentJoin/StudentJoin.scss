@@ -102,7 +102,7 @@
                 width: 100%;
                 flex: 1 1 calc(60%);
                 
-                @include bg-imgae-for-stud-join('./StudentJoin/img-side-one-stud-join.avif');
+                @include bg-imgae-for-stud-join('/StudentJoin/img-side-one-stud-join.avif');
                 border-radius: 15px;
                 transform: translateY(-280px);
                 transition-duration: 0.5s;
@@ -117,7 +117,7 @@
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(40%);
-                @include bg-imgae-for-stud-join('./StudentJoin/img-side-two-stud-join.avif');
+                @include bg-imgae-for-stud-join('/StudentJoin/img-side-two-stud-join.avif');
 
                 border-radius: 15px;
                 clip-path: inset(90% 90% 0% 0%);
@@ -142,7 +142,7 @@
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(40%);
-                @include bg-imgae-for-stud-join('./StudentJoin/img-side-three-stud-join.avif');
+                @include bg-imgae-for-stud-join('/StudentJoin/img-side-three-stud-join.avif');
                 border-radius: 15px;
                 clip-path: inset(0% 0% 90% 90%);
                 transition-duration: 0.5s;
@@ -156,7 +156,7 @@
                 height: 100%;
                 width: 100%;
                 flex: 1 1 calc(60%);
-                @include bg-imgae-for-stud-join('./StudentJoin/img-side-four-stud-join.avif');
+                @include bg-imgae-for-stud-join('/StudentJoin/img-side-four-stud-join.avif');
                
                 border-radius: 15px;
                 transform: translateX(300px);
@@ -204,7 +204,7 @@
             width: 120px;
             right: 0%;
             bottom: 10%;
-            background-image: url('./StudentJoin/hand-2.png');
+            background-image: url('/StudentJoin/hand-2.png');
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -371,7 +371,7 @@
                     width: 50px;
                     top: -25px;
                     right: -25px;
-                    background-image: url('./StudentJoin/break-cirlce.png');
+                    background-image: url('/StudentJoin/break-cirlce.png');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
@@ -389,7 +389,7 @@
                     width: 50px;
                     top: -25px;
                     right: -25px;
-                     background-image: url('./StudentJoin/break-cirlce.png');
+                     background-image: url('/StudentJoin/break-cirlce.png');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;

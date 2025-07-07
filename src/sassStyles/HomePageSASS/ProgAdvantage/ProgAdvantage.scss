@@ -28,7 +28,7 @@
         height: 400px;
         width: 400px; 
         left: 0px;
-        @include prog-advantage-img('./ProgAdvan/dot-advantage.png');
+        @include prog-advantage-img('/ProgAdvan/dot-advantage.png');
         
         z-index: -1;
     }
@@ -44,7 +44,7 @@
             width: 400px;
             border-radius: 15px;
             position: relative;
-            @include prog-advantage-img('./ProgAdvan/service-filler-img-6.jpg');
+            @include prog-advantage-img('/ProgAdvan/service-filler-img-6.jpg');
             
             
 
@@ -99,7 +99,7 @@
             .prog-advantage-tit-image{
                 height: 20px;
                 width: 100px;
-                background-image: url('./ProgAdvan/tit-line.png');
+                background-image: url('/ProgAdvan/tit-line.png');
                  background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
