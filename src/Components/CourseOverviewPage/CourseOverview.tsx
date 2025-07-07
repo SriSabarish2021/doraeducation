@@ -34,7 +34,7 @@ import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
 import {useLocation } from 'react-router-dom';
 
-const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
+const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,course,LikeCourse,setcourse,setcartpage}) => {
 
 
 

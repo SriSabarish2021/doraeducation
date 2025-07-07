@@ -2,10 +2,8 @@
 import '/src/Styles/Nav.css'
 import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
-import { ImLocation } from "react-icons/im";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoPersonOutline } from "react-icons/io5";
-import { IoSearchOutline } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { Image } from '@imagekit/react';
@@ -17,7 +15,7 @@ import { IoLocation } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 
 
-const Nav = ({mobilenav,setmobilenav,setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,setsidesharepage}) => {
+const Nav = ({setmobilenav,setnavheight,sethashget,course,setlogin,setcartpage,setlikepage,setsidesharepage}) => {
 
   let locationhashnav=useLocation()
 
