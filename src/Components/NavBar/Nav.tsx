@@ -170,14 +170,14 @@ const Nav = ({mobilenav,setmobilenav,setnavheight,sethashget,course,setlogin,set
            <NavLink style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"}>
               {({isActive})=>(
               <>
-                <p className={` p-for-nav-item p-for-nav-item-for-course ${isActive?'active-in-nav':''}`}>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
+                <p className={` p-for-nav-item p-for-nav-item-for-course ${isActive?'active-in-nav':''}`}>Courses<IoIosArrowForward className='arrow-icon-in-nav' style={{display:window.innerWidth<800?'none':''}}/></p>
                 <p className={`line-in-hover-nav line-in-hover-nav-for-course  ${isActive?'active-line-in-nav-for-course':''}`}></p>
               </>
 
             )}
             </NavLink> 
 
-            <div className='courses-showing-nav-bar'>
+            <div className='courses-showing-nav-bar' style={{display:window.innerWidth<800?'none':''}}>
               <div className='course-more-arrow'></div>
               {Array.from(course).slice(-4).map((indifornav)=>
               <Link key={indifornav.id} onClick={()=>sethashget(indifornav.courseName)} to={`/mindspire-course#${indifornav.courseName}`} className='course-filter-para' style={{color:String(locationhashnav.hash).slice(1).includes(String(indifornav.courseName))?'rgba(255, 89, 100, 1)':''}}>{indifornav.courseName}</Link>
@@ -271,14 +271,14 @@ const Nav = ({mobilenav,setmobilenav,setnavheight,sethashget,course,setlogin,set
            <NavLink style={{textDecoration:'none'}} to={"Providing-Education's-in-Mindspire-Institute"}>
               {({isActive})=>(
               <>
-                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>Courses<IoIosArrowForward className='arrow-icon-in-nav'/></p>
+                <p className={`p-for-nav-item ${isActive?'active-in-nav':''}`}>Courses<IoIosArrowForward className='arrow-icon-in-nav' style={{display:window.innerWidth<800?'none':''}}/></p>
                 <p className={`line-in-hover-nav  ${isActive?'active-line-in-nav':''}`}></p>
               </>
 
             )}
             </NavLink> 
 
-            <div className='courses-showing-nav-bar'>
+            <div className='courses-showing-nav-bar' style={{display:window.innerWidth<800?'none':''}}>
               <div className='course-more-arrow'></div>
               {Array.from(course).slice(-4).map((indifornav)=>
               <Link key={indifornav.id} onClick={()=>sethashget(indifornav.courseName)} to={`/mindspire-course#${indifornav.courseName}`} className='course-filter-para' style={{color:String(locationhashnav.hash).slice(1).includes(String(indifornav.courseName))?'rgba(255, 89, 100, 1)':''}}>{indifornav.courseName}</Link>

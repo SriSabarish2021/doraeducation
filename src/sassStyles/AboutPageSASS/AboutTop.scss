@@ -27,7 +27,7 @@
         height: 140dvh;
         width: 100%;
         @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/hero-6.1.webp');
-        background-size: calc(140%);
+        background-size: cover;
         @include Column-center.column-center;
         z-index: 9;
         background-color: #630115;

@@ -87,7 +87,7 @@ const AboutPageCourse = ({course}) => {
             <div className='prog-list-mobile-item'>
           
               {Array.from(course).slice(-3).map((indicourseabtpage,index)=>
-                <div className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==1?'prog-item-mobile':Number(index)==2?'prog-two-ani-abt-page':''}`}>
+                <div key={index} className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==1?'prog-item-mobile':Number(index)==2?'prog-two-ani-abt-page':''}`}>
                   <div className='about-page-prog-img' style={{backgroundImage:`url(${indicourseabtpage.courseIMG})`}}></div>
                   <div className='about-page-prog-cont'>
                     <div className='level-in-prog-ab-list'>{indicourseabtpage.studyLevel}</div>
@@ -119,7 +119,7 @@ const AboutPageCourse = ({course}) => {
           </div>
         
             {Array.from(course).slice(-3).map((indicourseabtpage,index)=>
-              <div className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==2?'prog-two-ani-abt-page':''}`}>
+              <div key={indicourseabtpage.id} className={`about-page-prog-one ${Number(index)==0?'prog-one-ani-abt-page':Number(index)==2?'prog-two-ani-abt-page':''}`}>
                 <div className='about-page-prog-img' style={{backgroundImage:`url(${indicourseabtpage.courseIMG})`}}></div>
                 <div className='about-page-prog-cont'>
                   <div className='level-in-prog-ab-list'>{indicourseabtpage.studyLevel}</div>
@@ -148,7 +148,7 @@ const AboutPageCourse = ({course}) => {
           <div className='about-page-analysis-content-showing'>
             <div className='about-page-analysis-head'>
               <p className='about-analysis-head-para-one'>University is the <span className='span-title-for-head-para'>Best Time</span></p>
-              <p className='about-analysis-head-para-two'>of <span className='best-time-tit'>Your Life <div className='design-div-for-best-time-tit'></div></span>.</p>
+              <p className='about-analysis-head-para-two'>of <span className='best-time-tit'>Your Life <span className='design-div-for-best-time-tit'></span></span>.</p>
             </div>
             <p className='about-analysis-sub-head-para'>Explore university’s 20+ courses across various specialisations that
               provoke intellectual and intuitive learning among students.</p>

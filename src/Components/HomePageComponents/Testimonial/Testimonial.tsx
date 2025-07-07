@@ -91,7 +91,7 @@ const Testimonial = ({course}) => {
           <div className='testimonial-image-bar'>
             <div className='image-border-line'>
                {Array.from(course).slice(-3).map((indireviewforquote,index)=>
-                <div className={`${index==0?'testimonial-border-image-one':index==1?'testimonial-border-image-two':'testimonial-border-image-three'}`} style={{backgroundImage:`url(${indireviewforquote.CourseReview[0].ReviewerIMG})`}}></div>
+                <div key={index} className={`${index==0?'testimonial-border-image-one':index==1?'testimonial-border-image-two':'testimonial-border-image-three'}`} style={{backgroundImage:`url(${indireviewforquote.CourseReview[0].ReviewerIMG})`}}></div>
               )}
               <div className='quote-image-bar'></div>
             </div>
@@ -100,7 +100,7 @@ const Testimonial = ({course}) => {
             <div className='testimonial-inner-content-bar' ref={scrollRef}>
 
               {Array.from(course).map((indireview)=>
-                  <div className='student-testimonial-one'>
+                  <div key={indireview.id} className='student-testimonial-one'>
                     {indireview.CourseReview[0].RaatingNUM==5?
                       <div className='student-star-rating'>
                         <FaStar/><FaStar/><FaStar/><FaStar/><FaStar/>

@@ -117,7 +117,7 @@ const AboutTop = ({course}) => {
                 </div>
                 <div className='student-testimonial-in-about-page'  ref={scrollRefAbout}>
                     {Array.from(course).map((indicoursereview)=>
-                     <div className='testi-for-about-page'>
+                     <div key={indicoursereview.id} className='testi-for-about-page'>
                         <p className='testi-for-about-para'>{String(indicoursereview.CourseReview[0].ReviewerContent).slice(0,200)+'......'}</p>
                         <div className='testimonial-person'>
                             <div className='person-image-testi' style={{backgroundImage:`url(${indicoursereview.CourseReview[0].ReviewerIMG})`}}></div>
