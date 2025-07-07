@@ -1,7 +1,7 @@
 import '../../../Styles/HomePageCSS/WhyChoose/WhyChoose.css'
 import { MdDone } from "react-icons/md";
 import { IoIosStar } from "react-icons/io";
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const WhyChoose = () => {
@@ -97,8 +97,14 @@ const WhyChoose = () => {
             
           },[])
 
-      const [getoffsetXwhy,setoffsetXwhy]=useState(0)
-      const [getoffsetYwhy,setoffsetYwhy]=useState(0)
+
+
+      const getoffsetXwhy=useRef(0)
+      const getoffsetYwhy=useRef(0)
+
+      const getoffsetwhycomponent=useRef(null)
+const getoffsetwhycomponenttwo=useRef(null)
+const getoffsetwhycomponentthree=useRef(null)
     const MouseMoveEvent=(event:unknown)=>{
     
     
@@ -110,8 +116,18 @@ const WhyChoose = () => {
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setoffsetXwhy(-offsetX/5)
-    setoffsetYwhy(-offsetY/5)
+    getoffsetXwhy.current=-offsetX/5
+    getoffsetYwhy.current=-offsetY/5
+
+    if (getoffsetwhycomponent.current) {
+        getoffsetwhycomponent.current.style.transform=`translateX(${-getoffsetXwhy.current}px) translateY(${-getoffsetYwhy.current}px)`
+    }
+     if (getoffsetwhycomponenttwo.current) {
+        getoffsetwhycomponenttwo.current.style.transform=`translateX(${getoffsetXwhy.current}px) translateY(${getoffsetYwhy.current}px)`
+    }
+     if (getoffsetwhycomponentthree.current) {
+        getoffsetwhycomponentthree.current.style.transform=`translateX(${-getoffsetXwhy.current}px) translateY(${-getoffsetYwhy.current}px)`
+    }
 
    }
   return (
@@ -151,7 +167,7 @@ const WhyChoose = () => {
                 </div>
         <div className='why-choose-cont'>
              
-            <div className='rounded-desing' style={{transform:`translateX(${-getoffsetXwhy}px) translateY(${-getoffsetYwhy}px)`,transitionDuration:'0.2s'}}></div>
+            <div className='rounded-desing' ref={getoffsetwhycomponent} style={{transitionDuration:'0.2s'}}></div>
             <div className='why-choose-main-title'>
                 <p className='why-choose'>Why Mindspire ?</p>
                 <div className='Why-choose-title'>
@@ -208,8 +224,8 @@ const WhyChoose = () => {
                 
             </div>
 
-            <div className='why-choose-img-style' style={{transform:`translateX(${-getoffsetXwhy}px) translateY(${-getoffsetYwhy}px)`,transitionDuration:'0.2s'}}></div>  
-            <div className='why-choose-img-style-two' style={{transform:`translateX(${getoffsetXwhy}px) translateY(${getoffsetYwhy}px)`,transitionDuration:'0.2s'}}></div>
+            <div className='why-choose-img-style' ref={getoffsetwhycomponenttwo} style={{transitionDuration:'0.2s'}}></div>  
+            <div className='why-choose-img-style-two' ref={getoffsetwhycomponentthree} style={{transitionDuration:'0.2s'}}></div>
         </div>
 
     </div>

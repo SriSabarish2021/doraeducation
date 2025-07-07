@@ -47,6 +47,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:['Understand the core concepts of JavaScript like variables, data types, and operators.','Write dynamic programs using conditional statements and loops.','Work with arrays and objects to store and manipulate data.','Manipulate the DOM to dynamically update web pages.','Handle user interactions through event listeners and form inputs.','Build reusable code with functions and manage scope effectively.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -176,6 +177,7 @@ function App() {
       Audio:['Tamil','English'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:15,
+      CourseStatus:false,
       WhatLearn:['Understand the Structure of an HTML Document.','Use Headings, Paragraphs, and Text Formatting Tags.','Build Lists: Ordered, Unordered, and Nested Lists.','Design Forms with Inputs, Labels, Buttons, and More.','Organize Content Using Divs and Semantic Elements.','Build a Complete Web Page Using Only HTML.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -304,6 +306,7 @@ function App() {
       Audio:['English','Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:['Understanding CSS Syntax and Selectors.','Applying Colors, Fonts, and Text Styles.','Working with Margins, Padding, and Borders.','Building Responsive Layouts with Flexbox and Grid.','Styling Links, Buttons, and Forms.','Organizing Code with External, Internal, and Inline CSS.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -432,6 +435,7 @@ function App() {
       Audio:['Tamil','English'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:['Introduction to SASS and How It Enhances CSS.','Installing and Setting Up SASS in Your Projects.','Nesting Selectors for Cleaner Styles.','Using Variables to Manage Colors, Fonts, and Spacing.','Creating and Using Mixins for Reusable Styles.','Organizing Code with Partials and the @use / @import Rules.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -560,6 +564,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:['Understand the Fundamentals of React and JSX Syntax.','Build Reusable Components and Manage Props.','Use State and Lifecycle Methods for Dynamic UI.','Handle User Events and Form Inputs Efficiently.','Manage Complex State with React Hooks (useState, useEffect, etc.).','Optimize Performance with Memoization and Lazy Loading.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -688,6 +693,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:["Understanding what TypeScript is, why it's used, and how it enhances JavaScript.",'Installing TypeScript, configuring tsconfig.json, and integrating with build tools.','Defining typed functions, default parameters, return types, and function overloads.','Creating reusable shapes for objects and defining contracts for code structures.','Writing flexible, type-safe code using generic types for functions, interfaces, and classes.','Organizing code using ES modules, importing/exporting types and functions.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -816,6 +822,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:['Learn what makes Next.js powerful — SSR, SSG, file-based routing, and performance optimization.','Understand the folder structure (pages/, app/, components/) and how routing works automatically in Next.js.','Explore how to build dynamic pages, custom layouts, and manage nested routes with app/ directory.','Learn how to create serverless functions in /api and connect to databases or external APIs.','Use the <Image /> and <Font /> components for optimized media and typography loading.','Implement user authentication (e.g. with NextAuth.js) and protect routes using middleware.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -939,6 +946,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:10,
+      CourseStatus:false,
       WhatLearn:['Get familiar with the interface, tools, panels, and workspace customization.','Learn how to use layers, masks, adjustment layers, and blending modes effectively.','Explore cropping, resizing, retouching, and correcting images with tools like Spot Healing and Clone Stamp.','Master selection tools such as Lasso, Quick Selection, and the Pen Tool for precise editing.','Add and style text, apply text effects, and integrate type with imagery.','Use Levels, Curves, Hue/Saturation, and more for color grading and enhancing images.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -1068,6 +1076,7 @@ function App() {
       Audio:['Tamil'],
       DownloadResourses:['2','3','23'],
       SubtitlesNUM:8,
+      CourseStatus:false,
       WhatLearn:['Introduction to UI/UX design tools, interface overview, and setup.','Learn how to organize designs using frames in Figma and artboards in Adobe tools.','Design custom shapes, icons, and paths using vector editing tools.','Create buttons, cards, navbars, and reusable components using auto layout and variants.',' Learn responsive design techniques to adapt UI to different screens.','Apply color theory practically, using Figma styles and Adobe’s asset libraries.'],
       Tutor:{
         TutorIMG:'https://images.unsplash.com/photo-1649705433263-5c80d699b5f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fFBST0ZFU1NPUiUyMGltQUdFfGVufDB8fDB8fHww',
@@ -1172,14 +1181,7 @@ function App() {
     }
   ])
 
- 
 
-  useEffect(() => {
-    
-    console.log(course);
-    
-  
-  }, [])
 
   const LikeCourse=(courseID)=>{
     const getIDcourse=Array.from(course).map((indicourse)=>
@@ -1252,7 +1254,7 @@ function App() {
           </Route>
         </Routes>
       </div>
-      <CartPage cartpage={cartpage} course={course} setcartpage={setcartpage}/>
+      <CartPage setcourse={setcourse} cartpage={cartpage} course={course} setcartpage={setcartpage}/>
       <LikePage sethashget={sethashget} starcalc={starcalc} setcartpage={setcartpage} removelike={removelike} course={course}  setlikepage={setlikepage} likepage={likepage}/>
       <NavShareSide sidesharepage={sidesharepage} setsidesharepage={setsidesharepage}/>
      <LoginPage login={login} setlogin={setlogin}/>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import '../../../Styles/HomePageCSS/StudentJoin/StudentJoin.css'
 
 import { FaArrowRight } from "react-icons/fa6";
@@ -53,8 +53,13 @@ const StudentJoin = () => {
     }
   }, [])
   
-  const [handX,setHandX]=useState(0)
-  const [handY,setHandY]=useState(0)
+  
+  const handX=useRef(0)
+    const handY=useRef(0)
+
+    const handmoveelement=useRef(null)
+    const handmoveelementtwo=useRef(null)
+
     const MouseMoveEvent=(event:unknown)=>{
 
     
@@ -66,9 +71,16 @@ const StudentJoin = () => {
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setHandX(-offsetX/5)
-    setHandY(-offsetY/5)
+    handX.current=-offsetX/5
+    handY.current=-offsetY/5
 
+    if (handmoveelement.current) {
+      handmoveelement.current.style.transform=`translateX(${-handX.current}px) translateY(${-handY.current}px)`
+    }
+
+     if (handmoveelementtwo.current) {
+      handmoveelementtwo.current.style.transform=`translateX(${handX.current}px) translateY(${handY.current}px)`
+    }
   }
 
   return (
@@ -98,9 +110,9 @@ const StudentJoin = () => {
       </div>
       
       <div className='student-join-content-container'>
-        <div className="hand-shake-animation" style={{transform:`translateX(${handX}px) translateY(${handY}px)`,transitionDuration:'0.2s'}}></div>
+        <div className="hand-shake-animation" ref={handmoveelement} style={{transitionDuration:'0.2s'}}></div>
         <div className="box-animation" > 
-          <span className='inner-box-animation' style={{transform:`translateX(${-handX}px) translateY(${-handY}px)`,transitionDuration:'0.2s'}}></span>
+          <span className='inner-box-animation' ref={handmoveelementtwo} style={{transitionDuration:'0.2s'}}></span>
 
         </div>
         <div className='main-title-in-student-join'>

@@ -11,7 +11,7 @@ import { BiMenuAltLeft } from "react-icons/bi";
 import { Image } from '@imagekit/react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { IoHeartOutline } from "react-icons/io5";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
@@ -29,7 +29,7 @@ const Nav = ({mobilenav,setmobilenav,setnavheight,sethashget,course,setlogin,set
     if (getnavbar) {
 
       setnavheight(getnavbar.getBoundingClientRect().height)
-      console.log(getnavbar.getBoundingClientRect().height);
+   
       
     }
 
@@ -37,7 +37,7 @@ const Nav = ({mobilenav,setmobilenav,setnavheight,sethashget,course,setlogin,set
     if (getnavbarmob) {
       
       setnavheight(getnavbarmob.getBoundingClientRect().height)
-      console.log(getnavbarmob.getBoundingClientRect().height);
+     
     }
   
     return () => {

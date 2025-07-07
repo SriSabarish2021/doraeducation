@@ -2,7 +2,6 @@ import '../../Styles/LikePageCSS/LikePage.css'
 import { FaStar } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
 import { IoCloseCircleOutline } from "react-icons/io5";
-import { MdCloseFullscreen } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 

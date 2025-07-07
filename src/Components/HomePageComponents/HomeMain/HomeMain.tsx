@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 import '../../../Styles/HomePageCSS/HomeMain/HomeMain.css'
 
@@ -108,11 +108,21 @@ const HomeMain = () => {
     
     
   },[])
-  const [getoffsetX,setoffsetX]=useState(0)
-  const [getoffsetY,setoffsetY]=useState(0)
+
+
+  const getoffsetX=useRef(0)
+  const getoffsetY=useRef(0)
+
+  const gethomemovelementone=useRef(null)
+const gethomemovelementtwo=useRef(null)
+
+const gethomemovelementthree=useRef(null)
+const gethomemovelementfour=useRef(null)
+const gethomemovelementfive=useRef(null)
 
    const MouseMoveEvent=(event:unknown)=>{
 
+    
     
     const elementtargeting=event.currentTarget
     const viewelement=elementtargeting.getBoundingClientRect()
@@ -122,8 +132,26 @@ const HomeMain = () => {
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setoffsetX(-offsetX/10)
-    setoffsetY(-offsetY/10)
+    getoffsetX.current=-offsetX/8
+    getoffsetY.current=-offsetY/8
+
+    if (gethomemovelementone.current) {
+      gethomemovelementone.current.style.transform=`translateX(${-getoffsetX.current}px) translateY(${-getoffsetY.current}px)`
+    }
+    if (gethomemovelementtwo.current) {
+      gethomemovelementtwo.current.style.transform=`translateX(${getoffsetX.current}px) translateY(${getoffsetY.current}px)`
+    }
+
+     if (gethomemovelementthree.current) {
+      gethomemovelementthree.current.style.transform=`translateX(${getoffsetX.current}px) translateY(${getoffsetY.current}px)`
+    }
+    if (gethomemovelementfour.current) {
+      gethomemovelementfour.current.style.transform=`translateX(${getoffsetX.current}px) translateY(${getoffsetY.current}px)`
+    }
+     if (gethomemovelementfive.current) {
+      gethomemovelementfive.current.style.transform=`translateX(${-getoffsetX.current}px) translateY(${-getoffsetY.current}px)`
+    }
+   
 
   }
   
@@ -149,9 +177,9 @@ const HomeMain = () => {
                 className='man-image-in-home-img'
                 
               />
-              <div className='smalldesign-two-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.3s'}}></div>
-              <div className='smalldesign-four-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}></div>
-              <div className='smalldesign-five-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`}}></div>
+              <div className='smalldesign-two-home' ref={gethomemovelementthree} style={{transitionDuration:'0.3s'}}></div>
+              <div className='smalldesign-four-home' ref={gethomemovelementfour} ></div>
+              <div className='smalldesign-five-home' ref={gethomemovelementfive} ></div>
 
               <div className='smallcontent-one-home' >
                 <div className='smallcontent-img'>
@@ -217,8 +245,8 @@ const HomeMain = () => {
                 </div>
               </div>
 
-              <div className='smalldesign-one-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.2s'}}></div>
-              <div className='smalldesign-three-home' style={{transform:`translateX(${getoffsetX}px) translateY(${getoffsetY}px)`,transitionDuration:'0.5s'}}></div>
+              <div className='smalldesign-one-home' ref={gethomemovelementone} style={{transitionDuration:'0.2s'}}></div>
+              <div className='smalldesign-three-home' ref={gethomemovelementtwo} style={{transitionDuration:'0.5s'}}></div>
             </div>
             <p className='learn-p-in-bottom'>LEARN FUNDAMENTALS</p>
             <div className='light-design-one'></div>

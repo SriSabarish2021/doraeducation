@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import '../../Styles/CoursePageCSS/TopShortCourse.css'
 import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
@@ -7,27 +7,8 @@ import { Link, useLocation } from 'react-router-dom';
 const TopShortCourse = ({sethashget}) => {
 
 
-  const [coursewidth,setcoursewidth]=useState(0)
-      useEffect(() => {
-    
-    
-        setcoursewidth(window.innerWidth)
-       
-        
-         return () => {
-          setcoursewidth(0)
-        }
-      
-      
-      }, [])
-
     const getlocation=useLocation()
-
-
-
         useEffect(() => {
-          console.log(getlocation.pathname);
-
           const mobilescreen=document.querySelector('.for-mobile-short-course-page')
           
     const cards = document.querySelectorAll(".course-box");
@@ -46,7 +27,7 @@ const TopShortCourse = ({sethashget}) => {
           }
            else {
             card.style.transform = `rotate(${angle}deg)`;
-            angle = angle - Number(coursewidth<400?'6':'10');
+            angle = angle - Number(window.innerWidth<400?'6':'10');
             card.style.zIndex = cards.length - index;
           }
         });
@@ -124,7 +105,7 @@ const TopShortCourse = ({sethashget}) => {
               <p><span className='course-page-title-span-two'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'Talking':'Choosing'}</span> {getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'About':'For'}</p>
               <p><span className='course-page-title-line-span'>—</span> Only at <span className='course-page-title-span-name'>Mindspire <span className='course-page-title-design'></span></span></p>
           </div>
-          <p className='para-in-course-page'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&coursewidth<1000?'At Mindspire Institute, our courses blend expert instruction, real-world content, and hands-on learning. With flexible schedules and personalized support':'At Mindspire Institute, our courses blend expert instruction, real-world content, and hands-on learning. With flexible schedules and personalized support, we help students build the skills and confidence to achieve their goals.'}</p>
+          <p className='para-in-course-page'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")&&window.innerWidth<1000?'At Mindspire Institute, our courses blend expert instruction, real-world content, and hands-on learning. With flexible schedules and personalized support':'At Mindspire Institute, our courses blend expert instruction, real-world content, and hands-on learning. With flexible schedules and personalized support, we help students build the skills and confidence to achieve their goals.'}</p>
           <Link to={'/About-Mindspire-Institute'} style={{textDecoration:'none'}} className='btn-in-course-page-title'>{getlocation.pathname.includes("Providing-Education's-in-Mindspire-Institute")?'To Know Why ?':'Learn More'}
             <div className='btn-in-course-page-design-one'></div>
             <div className='btn-in-course-page-design-two'></div>

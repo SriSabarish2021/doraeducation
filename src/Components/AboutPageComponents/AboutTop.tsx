@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import '../../Styles/AboutPageCSS/AboutTop.css'
 import { FaAnglesRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
@@ -6,18 +6,6 @@ import { Image } from '@imagekit/react';
 
 const AboutTop = ({course}) => {
     const scrollRefAbout = useRef<HTMLDivElement>(null);
-
-
-    const [abouttopwidth,setabouttopwidth]=useState(0)
-
-    useEffect(() => {
-      setabouttopwidth(window.innerWidth)
-    
-      return () => {
-        setabouttopwidth(0)
-      }
-    }, [])
-    
 
     useEffect(() => {
         
@@ -73,10 +61,17 @@ const AboutTop = ({course}) => {
       }, [])
 
 
-       const [offsetforaboutX,setoffsetforaboutX]=useState(0)
-        const [offsetforaboutY,setoffsetforaboutY]=useState(0)
+
+
+        const minusdesignref=useRef<HTMLDivElement>(null)
+        const plusdesignref=useRef<HTMLDivElement>(null)
+        const minusdesignreftwo=useRef<HTMLDivElement>(null)
+        const plusdesignreftwo=useRef<HTMLDivElement>(null)
+
+        const offsetforaboutX=useRef(0)
+        const offsetforaboutY=useRef(0)
       
-         const MouseMoveEvent=(event:unknown)=>{
+         const MouseMoveEvent=(event:unknown,targetone,targettwo)=>{
       
           
           const elementtargeting=event.currentTarget
@@ -87,8 +82,18 @@ const AboutTop = ({course}) => {
       
           const offsetX:number=(totwidht/viewelement.width)*100
           const offsetY:number=(totheight/viewelement.height)*100
-          setoffsetforaboutX(-offsetX/2)
-          setoffsetforaboutY(-offsetY/2)
+
+          offsetforaboutX.current=-offsetX/2
+          
+          offsetforaboutY.current=-offsetY/2
+
+          if (targetone.current) {
+           targetone.current.style.transform=`translateX(${-offsetforaboutX.current}px) translateY(${-offsetforaboutY.current}px)`;
+          }
+          if (targettwo.current) {
+           targettwo.current.style.transform=`translateX(${offsetforaboutX.current}px) translateY(${offsetforaboutY.current}px)`;
+          }
+
       
         }
         
@@ -147,10 +152,10 @@ const AboutTop = ({course}) => {
                      
             </div>
         </div> 
-          <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+          <div className='about-top-side-bar-container' onMouseMove={(e)=>MouseMoveEvent(e,minusdesignreftwo,plusdesignreftwo)}>
             <div className='about-special-design'></div>
-            <div className='about-special-design-one' style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
-            <div className='about-special-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
+            <div className='about-special-design-one' ref={minusdesignreftwo} style={{transitionDuration:'0.3s'}}></div>
+            <div className='about-special-design-two'  ref={plusdesignreftwo} style={{transitionDuration:'0.3s'}}></div>
             <div className='about-side-bar about-side-by-one'>
                 <div className='about-side-bar-img'>
                     <div className='about-side-img about-side-img-one'>
@@ -166,7 +171,7 @@ const AboutTop = ({course}) => {
                 </div>
                 <div className='about-side-bar-cont'>
                     <p className='about-side-para-one'>Gurenteed Certified</p>
-                    <p className='about-side-para-two'>{abouttopwidth<460?'Complete your course and earn a professional certificate recognized across industries.Showcase your skills and stand out with Mindspire’s.':abouttopwidth<620?'Complete your course and earn a professional certificate recognized across industries.Showcase your skills, boost your resume, and stand out with Mindspire’s trusted validation.':abouttopwidth<900?'Complete your course and earn a professional certificate recognized across industries.Showcase your skills and stand out with Mindspire’s.':'Complete your course and earn a professional certificate recognized across industries.Showcase your skills, boost your resume, and stand out with Mindspire’s trusted validation.'}</p>
+                    <p className='about-side-para-two'>{window.innerWidth<460?'Complete your course and earn a professional certificate recognized across industries.Showcase your skills and stand out with Mindspire’s.':window.innerWidth<620?'Complete your course and earn a professional certificate recognized across industries.Showcase your skills, boost your resume, and stand out with Mindspire’s trusted validation.':window.innerWidth<900?'Complete your course and earn a professional certificate recognized across industries.Showcase your skills and stand out with Mindspire’s.':'Complete your course and earn a professional certificate recognized across industries.Showcase your skills, boost your resume, and stand out with Mindspire’s trusted validation.'}</p>
                 </div>
             </div>
             <div className='about-side-bar  about-side-by-two'>
@@ -179,7 +184,7 @@ const AboutTop = ({course}) => {
                 </div>
                 <div className='about-side-bar-cont  '>
                     <p className='about-side-para-one'>Global Standards</p>
-                    <p className='about-side-para-two'>{abouttopwidth<460?"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready .":abouttopwidth<620?"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready, competitive, and globally competent.":abouttopwidth<900?"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready .":"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready, competitive, and globally competent."}</p>
+                    <p className='about-side-para-two'>{window.innerWidth<460?"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready .":window.innerWidth<620?"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready, competitive, and globally competent.":window.innerWidth<900?"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready .":"Mindspire delivers courses aligned with internationally recognized education frameworks.Our curriculum ensures you're industry-ready, competitive, and globally competent."}</p>
                 </div>
             </div>
             <div className='about-side-bar about-side-by-three'>
@@ -192,15 +197,15 @@ const AboutTop = ({course}) => {
                 </div>
                 <div className='about-side-bar-cont'>
                     <p className='about-side-para-one'>Job-Ready Training</p>
-                    <p className='about-side-para-two'>{abouttopwidth<460?"Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio.":abouttopwidth<620?'Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio, and the ability to land your dream job.':abouttopwidth<900?'Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio.':'Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio, and the ability to land your dream job.'}</p>
+                    <p className='about-side-para-two'>{window.innerWidth<460?"Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio.":window.innerWidth<620?'Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio, and the ability to land your dream job.':window.innerWidth<900?'Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio.':'Gain real-world skills with hands-on projects, industry tools, and expert mentorship.Walk out with confidence, a strong portfolio, and the ability to land your dream job.'}</p>
                 </div>
             </div>
         </div> 
-    <div className='about-top-information-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+    <div className='about-top-information-container' onMouseMove={(e)=>MouseMoveEvent(e,minusdesignref,plusdesignref)}>
             <div className='about-top-information-design' ></div>
             <div className='about-top-information-design-three' ></div>
-            <div className='div-for-design'><div className='div-for-inner-design'  style={{transform:`translateX(${-offsetforaboutX}px) translateY(${-offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div></div>
-            <div className='about-top-information-design-two' style={{transform:`translateX(${offsetforaboutX}px) translateY(${offsetforaboutY}px)`,transitionDuration:'0.3s'}}></div>
+            <div className='div-for-design'><div className='div-for-inner-design' ref={minusdesignref}  style={{transitionDuration:'0.3s'}}></div></div>
+            <div className='about-top-information-design-two' ref={plusdesignref} style={{transitionDuration:'0.3s'}}></div>
             <div className='about-information-image-div'>
                 
                   <Image
@@ -224,7 +229,7 @@ const AboutTop = ({course}) => {
                 </div>
                 <div className='about-information-main-content'>
                     <div className='about-information-cont-div-one'>
-                        <p>{abouttopwidth<600?String('Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.').slice(0,200)+'...':'Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.'}</p>
+                        <p>{window.innerWidth<600?String('Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.').slice(0,200)+'...':'Mindspire Institute stands as a beacon of academic excellence, innovation, and student success.With a legacy of empowering learners, we have cultivated a reputation for delivering world-class education.Our carefully crafted curriculum blends theory with real-world application, preparing students for modern careers.'}</p>
                     </div>
                     <div className='student-image-and-number'>
                         <div className='student-image-bar'>

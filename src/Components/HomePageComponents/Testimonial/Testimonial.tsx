@@ -1,4 +1,4 @@
-import { useEffect,useRef, useState } from 'react';
+import { useEffect,useRef } from 'react';
 import '../../../Styles/HomePageCSS/Testimonial/Testimonial.css'
 import { FaStar } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -8,13 +8,6 @@ import { FaRegStar } from "react-icons/fa";
 const Testimonial = ({course}) => {
 
     const scrollRef = useRef<HTMLDivElement>(null);
-
-useEffect(() => {
-
-  
-
-  
-}, [])
 
     
 
@@ -67,20 +60,7 @@ useEffect(() => {
     }
   })
   
-  const [parawidth,setparawidth]=useState(0)
-  useEffect(() => {
 
-
-    
-    setparawidth(window.innerWidth)
-   
-    
-     return () => {
-      setparawidth(0)
-    }
-  
-  
-  }, [])
 
   
   
@@ -105,7 +85,7 @@ useEffect(() => {
             <p className='tistimonail-title'>Testimonial</p>
             <p className='testimonial-main-title-para'>What Our Student's <span className='stud-think'>Think About <span className='stud-think-design'></span></span></p>
           </div>
-          <p className='quote-para-testimonial'>{parawidth<610?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,80)+'...':parawidth<830?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,100)+'...':parawidth<1100?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,140)+'...':'Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures'}</p>
+          <p className='quote-para-testimonial'>{window.innerWidth<610?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,80)+'...':window.innerWidth<830?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,100)+'...':window.innerWidth<1100?String('Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures').slice(0,140)+'...':'Every student’s story is a reflection of hard work, transformation, and success. These real experiences show how the right guidance and learning environment can shape brighter futures'}</p>
         </div>
         <div className='testimonial-content-bar'>
           <div className='testimonial-image-bar'>
@@ -147,7 +127,7 @@ useEffect(() => {
                     }
                     
                     <div className='student-comment'>
-                      <p className='comment-student'>{parawidth<450?String(indireview.CourseReview[0].ReviewerContent).slice(0,200)+'...':parawidth<830?String(indireview.CourseReview[0].ReviewerContent).slice(0):String(indireview.CourseReview[0].ReviewerContent).slice(0,300)+'......'}</p>
+                      <p className='comment-student'>{window.innerWidth<450?String(indireview.CourseReview[0].ReviewerContent).slice(0,200)+'...':window.innerWidth<830?String(indireview.CourseReview[0].ReviewerContent).slice(0):String(indireview.CourseReview[0].ReviewerContent).slice(0,300)+'......'}</p>
                     </div>
                     <div className='student-info'>
                       <div className='student-image-tag' style={{backgroundImage:`url(${indireview.CourseReview[0].ReviewerIMG})`}}></div>

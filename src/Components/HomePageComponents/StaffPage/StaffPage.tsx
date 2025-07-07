@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import { useRef } from 'react'
 import '../../../Styles/HomePageCSS/StaffPage/StaffPage.css'
-import { Image } from '@imagekit/react';
 import { Video } from '@imagekit/react';
 import { Link } from 'react-router-dom';
 
 const StaffPage = () => {
   
-  const [getoffsetXstaff,setoffsetXstaff]=useState(0)
-  const [getoffsetYstaff,setoffsetYstaff]=useState(0)
+
+  const getoffsetYstaffElement=useRef(null)
+
+  const getoffsetXstaff=useRef(0)
+    const getoffsetYstaff=useRef(0)
+
    const MouseMoveEvent=(event:unknown)=>{
     
     
@@ -19,8 +22,12 @@ const StaffPage = () => {
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setoffsetXstaff(-offsetX/10)
-    setoffsetYstaff(-offsetY/10)
+    getoffsetXstaff.current=-offsetX/10
+    getoffsetYstaff.current=-offsetY/10
+
+    if (getoffsetYstaffElement.current) {
+      getoffsetYstaffElement.current.style.transform=`translateX(${-getoffsetXstaff.current}px) translateY(${-getoffsetYstaff.current}px)`
+    }
 
    }
    
@@ -117,7 +124,7 @@ const StaffPage = () => {
         <div className='tutor-title-content'>
             <div className='heading-tutor'>
               <p className='heading-tutor-p-one'>Expertise Across <span   className='span-in-analysis' >All</span> </p>
-              <p className='heading-tutor-p-two'  style={{transform:`translateX(${getoffsetXstaff}px) translateY(${getoffsetYstaff}px)`,transitionDuration:'0.2s'}} >Disciplines</p>
+              <p className='heading-tutor-p-two' ref={getoffsetYstaffElement}  style={{transitionDuration:'0.2s'}} >Disciplines</p>
             </div>
             <div className='sub-heading-tutor'>
                 <p className='sub-heading-tutor-p-one'> At MindSpire, our teachers are more than educators — they are mentors who ignite curiosity and inspire achievement. Their unwavering dedication shapes confident, lifelong learners ready for tomorrow.</p>

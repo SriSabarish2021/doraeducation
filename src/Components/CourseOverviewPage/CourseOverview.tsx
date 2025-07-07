@@ -5,7 +5,6 @@ import { IoIosRemoveCircleOutline } from "react-icons/io";
 import ReactFileReader from 'react-file-reader';
 import { IoSettings } from "react-icons/io5";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-
 import { AiOutlineSound } from "react-icons/ai";
 import { PiSubtitles } from "react-icons/pi";
 import { SlCalender } from "react-icons/sl";
@@ -17,7 +16,6 @@ import { useEffect, useRef, useState } from 'react';
 import { IoIosVideocam } from "react-icons/io";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaPaintBrush } from "react-icons/fa";
-import { MdOutlinePersonOutline } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -30,12 +28,11 @@ import { IoEarthOutline } from "react-icons/io5";
 import { IoMdBowtie } from "react-icons/io";
 import { TbCertificate } from "react-icons/tb";
 import { IoDocumentText } from "react-icons/io5";
-import { MdOutlineDone } from "react-icons/md";
 import { FaMale } from "react-icons/fa";
 import { VscEyeClosed } from "react-icons/vsc";
 import { FaRegStar } from "react-icons/fa";
 import { IoRemoveCircleOutline } from "react-icons/io5";
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
 
 const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,likepage,course,LikeCourse,setcourse,setcartpage,cartpage}) => {
 
@@ -62,21 +59,12 @@ const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,likepage,c
 
 
     useEffect(() => {
-      
      window.scrollTo(0,0)
-
-
-
-     
-      
     }, [])
 
     useEffect(() => {
-      
       const reviewwrittenbox=document.querySelector('.review-input-main-container')
-
     reviewwrittenbox?.scrollTo(0,0)
-      
     }, [reviewwrite])
     
     
@@ -188,7 +176,7 @@ const CourseOverview = ({reviewwrite,setreviewwrite,navheight,hashget,likepage,c
   let reviewNameref=useRef('')
   let reviewDegreeref=useRef('')
   let reviewEmailref=useRef('')
-    let reviewCommentref=useRef('')
+  let reviewCommentref=useRef('')
 
   
 
@@ -481,7 +469,9 @@ const removeredborder=()=>{
     const [review,setreview]=useState(false)
 
 
-    const [activeId, setActiveId] = useState("");
+
+    const [activeId,setactiveId]=useState('')
+
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
@@ -491,7 +481,7 @@ const removeredborder=()=>{
         
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveId(entry.target.className);
+            setactiveId(entry.target.className);
             setsummary(false)
             setcontent(false)
             setlearn(false)
@@ -597,13 +587,17 @@ const removeredborder=()=>{
 
 
   const courseenrolled=(enrollid)=>{
-     const enrollcourse=Array.from(course).map((indicourse)=>
+      setcartpage(true)
+    setTimeout(() => {
+       const enrollcourse=Array.from(course).map((indicourse)=>
       Number(indicourse.id)==Number(enrollid)?{...indicourse,Enroll:true}:{...indicourse}
     )
     
      setcourse(enrollcourse)
+    }, 0);
+    
 
-    setcartpage(true)
+    
   }
   
 
@@ -752,7 +746,7 @@ const removeredborder=()=>{
           <div className='course-overview-content-div'>
               <div className='course-overview-content-main'>
                 
-                  <div  className='course-overview-nav-bar'>
+                  <div  style={{top:Number(navheight)+Number(window.innerWidth<800?10:20)}}  className='course-overview-nav-bar'>
                     <a href="#" style={{textDecoration:'none'}}
                         onClick={(e) => {
                           setsummary(true)
@@ -1218,7 +1212,7 @@ const removeredborder=()=>{
                   </div>
                   {commentimg.length?
                   <div className="comment-img-showing-box">
-                    {commentimg.map((indiimgforcomment,index)=>
+                    {commentimg.slice(-1).map((indiimgforcomment,index)=>
                       <div key={index} className="user-putted-image-for-review">
                         <img src={indiimgforcomment} className="img-of-review" />
                         <p className='comment-img-remove' onClick={()=>removeimgincomment(indiimgforcomment)}><IoIosRemoveCircleOutline style={{cursor:'pointer'}}/></p>

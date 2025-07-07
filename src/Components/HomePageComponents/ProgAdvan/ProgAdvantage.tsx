@@ -1,12 +1,17 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import '../../../Styles/HomePageCSS/ProgAdvantage/ProgAdvantage.css'
 import { FaArrowRight } from "react-icons/fa6";
 import { Image } from '@imagekit/react';
 
 const ProgAdvantage = () => {
     
-      const [AdvanX,setAdvanX]=useState(0)
-      const [AdvanY,setAdvanY]=useState(0)
+    
+
+        const AdvanX=useRef(0)
+        const AdvanY=useRef(0)
+
+        const Advanelement=useRef(null)
+
         const MouseMoveEvent=(event:unknown)=>{
     
         
@@ -18,13 +23,17 @@ const ProgAdvantage = () => {
     
         const offsetX:number=(totwidht/viewelement.width)*100
         const offsetY:number=(totheight/viewelement.height)*100
-        setAdvanX(-offsetX/5)
-        setAdvanY(-offsetY/5)
+        AdvanX.current=-offsetX/5
+        AdvanY.current=-offsetY/5
+
+        if (Advanelement.current) {
+            Advanelement.current.style.transform=`translateX(${AdvanX.current}px) translateY(${AdvanY.current}px)`
+        }
     
       }
   return (
-    <div className='prog-advantage-main-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
-        <div className='dotted-animation' style={{transform:`translateX(${AdvanX}px) translateY(${AdvanY}px)`,transitionDuration:'0.2s'}}></div>
+    <div className='prog-advantage-main-container' ref={Advanelement} onMouseMove={(e)=>MouseMoveEvent(e)}>
+        <div className='dotted-animation' style={{transitionDuration:'0.2s'}}></div>
         <div className='prog-advantage-image-container'>
             <div className='image-tag-prog-advantage'>
                 <Image

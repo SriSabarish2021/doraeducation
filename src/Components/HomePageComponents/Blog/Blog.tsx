@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import '../../../Styles/HomePageCSS/Blog/Blog.css'
 
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -6,9 +6,12 @@ import { Image } from '@imagekit/react';
 
 const Blog = () => {
 
-  const [blogmoveX,setblogmoveX]=useState(0)
-  const [blogmoveY,setblogmoveY]=useState(0)
-  
+ 
+
+  const blogmoveelement=useRef(null)
+  const blogmoveX=useRef(0)
+  const blogmoveY=useRef(0)
+
    const MouseMoveEvent=(event:unknown)=>{
 
     
@@ -20,15 +23,20 @@ const Blog = () => {
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setblogmoveX(-offsetX/10)
-    setblogmoveY(-offsetY/10)
+
+    blogmoveX.current=-offsetX/10
+    blogmoveY.current=-offsetY/10
+
+    if (blogmoveelement.current) {
+      blogmoveelement.current.style.transform=`translateX(${blogmoveX.current}px) translateY(${blogmoveY.current}px)`
+    }
 
   }
   
   return (
     <div className='blog-main-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
       <div className='blog-container-title-div'>
-        <p className='blog-site-name' style={{transform:`translateX(${blogmoveX}px) translateY(${blogmoveY}px)`,transitionDuration:'0.2s'}}>MindSpires's</p>
+        <p className='blog-site-name' ref={blogmoveelement} style={{transitionDuration:'0.2s'}}>MindSpires's</p>
         <p className='blog-site-sub-name'>Blog, News & Updates</p>
       </div>
       <div className='blog-container-main-content-div'>

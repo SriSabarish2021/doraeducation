@@ -6,8 +6,13 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import { Image } from '@imagekit/react';
 
 const ContactTouch = () => {
-      const [getoffsetXcontact,setoffsetXcontact]=useState(0)
-      const [getoffsetYcontact,setoffsetYcontact]=useState(0)
+    
+
+     const moveXcontactRef = useRef(0);
+const moveYcontactRef = useRef(0);
+const circleRef = useRef(null);
+
+
 const MouseMoveEvent=(event:unknown)=>{
 
     
@@ -19,10 +24,18 @@ const MouseMoveEvent=(event:unknown)=>{
 
     const offsetX:number=(totwidht/viewelement.width)*100
     const offsetY:number=(totheight/viewelement.height)*100
-    setoffsetXcontact(-offsetX/1)
-    setoffsetYcontact(-offsetY/1)
+  
+    moveXcontactRef.current = -offsetX/1;
+    moveYcontactRef.current = -offsetY/1;
+
+     const circle = circleRef.current;
+    if (circle) {
+        circle.style.transform = `translateX(${moveXcontactRef.current}px) translateY(${moveYcontactRef.current}px)`;
+    }
 
   }
+
+
     useEffect(() => {
         const contactpagemain=document.querySelector('.contact-get-in-touch-img')
 
@@ -53,21 +66,20 @@ const MouseMoveEvent=(event:unknown)=>{
       }
     }, [])
 
-    let userName=useRef('')
-    let userEmail=useRef('')
-    let userPhone=useRef('')
-    let userCity=useRef('')
-    let userState=useRef('')
-    let userCountry=useRef('')
-    let userIdeas=useRef('')
+    const userName=useRef('')
+    const userEmail=useRef('')
+    const userPhone=useRef('')
+    const userCity=useRef('')
+    const userState=useRef('')
+    const userCountry=useRef('')
+    const userIdeas=useRef('')
 
     const [proceedingbtn,setproceedingbtn]=useState(false)
     const [proceeded,setproceeded]=useState(false)
 
     const[alert,setalert]=useState(false)
     useEffect(() => {
-      
-        console.log('sdsdsdsd');
+
         let proceedtimer;
         if (proceedingbtn) {
             proceedtimer=setTimeout(() => {
@@ -109,25 +121,12 @@ const MouseMoveEvent=(event:unknown)=>{
         if (String(userName.current.value).length!==0&&String(userEmail.current.value).length!==0&&String(userPhone.current.value).length!==0&&String(userCity.current.value).length!==0&&String(userState.current.value).length!==0&&String(userCountry.current.value).length!==0&&String(userIdeas.current.value).length!==0) {
             setproceedingbtn(true)
         }else{
-            console.log('hello');
             setproceeded(false)
             setalert(true)
         }
 }
 
-const [contacttouchwidth,setcontacttouchwidth]=useState(0)
-    useEffect(() => {
-  
-  
-      setcontacttouchwidth(window.innerWidth)
-     
-      
-       return () => {
-        setcontacttouchwidth(0)
-      }
-    
-    
-    }, [])
+
   return (
     <div className='contact-touch-container' >
         <div className={`contact-submitted-alert-div ${alert?'submittedalert':'nosubmittedalert'}` }>
@@ -149,11 +148,11 @@ const [contacttouchwidth,setcontacttouchwidth]=useState(0)
            <div className='contact-page-circle-design'></div>
            
            <div className='contact-page-circle-design-two'></div>
-            <div className='contact-page-circle-design-three' style={{transform:`translateX(${getoffsetXcontact}px) translateY(${getoffsetYcontact}px)`,transitionDuration:'0.3s'}}></div>
+            <div className='contact-page-circle-design-three' ref={circleRef} style={{transitionDuration:'0.3s'}}></div>
             <div className='contact-get-title-container'>
                 <div className='contact-get-in-touch-title'>
                     <p className='contact-get-para-one'><span className='apply-for-contact'>Apply</span> For Admission</p>
-                    <p  className='contact-get-para-two'>{contacttouchwidth<610?'Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.':contacttouchwidth<930?'Follow this comprehensive guide to navigate the application':'Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.'}</p>
+                    <p  className='contact-get-para-two'>{window.innerWidth<610?'Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.':window.innerWidth<930?'Follow this comprehensive guide to navigate the application':'Follow this comprehensive guide to navigate the application process for Universite, ensuring you complete every step accurately and on time.'}</p>
                 </div>
                 <div className='contact-get-in-touch-input-container'>
                     <div className='input-container-basic-info'>

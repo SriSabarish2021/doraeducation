@@ -1,7 +1,6 @@
 import '../../Styles/ChatBotCSS/ChatBOT.css'
 import { Image } from '@imagekit/react';
 import { IoClose } from "react-icons/io5";
-import { RiRobot3Fill } from "react-icons/ri";
 import { FiSend } from "react-icons/fi";
 import { useRef } from 'react';
 
@@ -24,7 +23,7 @@ const ChatBOT = ({setchatbot,chatbot}) => {
   }
 
   const Chatfunction=()=>{
-     let getorderlist=document.querySelector('.chat-order-list')
+     const getorderlist=document.querySelector('.chat-order-list')
      if (chatref.current.value=='') {
       return
       
@@ -36,20 +35,11 @@ const ChatBOT = ({setchatbot,chatbot}) => {
       setTimeout(() => {
         
        
-        let getlistelement=chatsender('Thinking...','from-dora')
+        const getlistelement=chatsender('Thinking...','from-dora')
         getorderlist?.appendChild(getlistelement)
           getreplyfromdora(getlistelement)
            getorderlist.scrollTop = getorderlist.scrollHeight
-      }, 600);
-
-
-      
-              
-      
-               
-  
-      
-      
+      }, 600);    
     }
   }
 
@@ -79,9 +69,9 @@ const ChatBOT = ({setchatbot,chatbot}) => {
       if (!fetchingmessage.ok) throw new Error('There is an error');
 
       const json = await fetchingmessage.json();
-      console.log(json);
       
-      console.log(String(json.choices[0].message.content).slice(19));
+      
+     
       
        replyuser.textContent=String(json.choices[0].message.content).slice(19)
     } catch (err) {
@@ -98,10 +88,10 @@ const ChatBOT = ({setchatbot,chatbot}) => {
 
   const chatsender=(Value,classname)=>{
 
-      let userchat=document.createElement('li')
+      const userchat=document.createElement('li')
       userchat.classList.add('chat',`${String(classname)=='from-user'?classname:'from-dora'}`)
     
-      let datacolectioninlist=String(classname)=='from-user'?`<p  class='chat-para-from-user'>${Value}</p>`:`<span class='dora-chat-icon'>  <svg
+      const datacolectioninlist=String(classname)=='from-user'?`<p  class='chat-para-from-user'>${Value}</p>`:`<span class='dora-chat-icon'>  <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
                           >

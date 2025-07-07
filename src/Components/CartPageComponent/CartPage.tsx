@@ -4,16 +4,38 @@ import { FaPlay } from "react-icons/fa";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
-const CartPage = ({cartpage,setcartpage,course}) => {
-    const[coursestatus,setcoursestatus]=useState(false)
+const CartPage = ({cartpage,setcartpage,course,setcourse}) => {
+   
     
       
-        let enrollelement=Array.from(course).filter((enrollindi)=>
-            enrollindi.Enroll===true
-            
-    )
 
-    const [scrollheight,setscrollheight]=useState(0)
+    const [enrollelementarray,setenrollelement]=useState([])
+
+    
+
+    useEffect(() => {
+       const enrollelement=Array.from(course).filter((enrollindi)=>
+            enrollindi.Enroll===true)
+       setenrollelement(enrollelement)
+      
+       return () => {
+         setenrollelement([])
+     
+      }
+
+    }, [course])
+
+
+    
+
+    const setcoursestatus=(idofitem)=>{
+
+        const updatecourse=Array.from(course).map((indiitem)=>indiitem.id==idofitem?{...indiitem,CourseStatus:!indiitem.CourseStatus}:{...indiitem})
+
+        setcourse(updatecourse)
+        
+    }
+
 
 
      useEffect(() => {
@@ -45,7 +67,7 @@ const CartPage = ({cartpage,setcartpage,course}) => {
             <div className='cart-page-intro-bar'>
                 <div className='cart-page-title-bar'>
                     <p className='cart-page-title'>Your <span className='cart-name-title'>Cart</span> <span className='cart-page-underline'>Page <span className='underline-cart-page'></span></span></p>
-                    <p className='cart-page-course-num'>Enrolled {enrollelement.length==1?'Course':'Courses'} : <span className='course-enroll-num'>{enrollelement.length}</span></p>
+                    <p className='cart-page-course-num'>Enrolled {enrollelementarray.length==1?'Course':'Courses'} : <span className='course-enroll-num'>{enrollelementarray.length}</span></p>
                 </div>
                 
             </div>
@@ -65,8 +87,8 @@ const CartPage = ({cartpage,setcartpage,course}) => {
                     <div className='cart-page-main-bar'>
                         
                         <div   className='cart-page-course-box'>
-                        {enrollelement&&enrollelement.length?
-                            enrollelement.map((itemforcart)=>
+                        {enrollelementarray&&enrollelementarray.length?
+                            enrollelementarray.map((itemforcart)=>
                             <div className='course-box-for-cart-page'>
                                 <div className='course-video-div'>
                                     <div className='course-video-container'>
@@ -89,9 +111,9 @@ const CartPage = ({cartpage,setcartpage,course}) => {
                                 <div className='course-items-div'>
                                     <p className='para-in-cart-list para-cart-list'>{itemforcart.CourseDuration}</p>
                                     <button className='para-in-cart-list resourse-download-btn' >Download <span className='resourse-download-btn-design'></span></button>
-                                    <button onClick={()=>setcoursestatus(!coursestatus)} className={`para-in-cart-list resourse-progress-btn ${coursestatus?'done-bg':'not-done-bg'}`}>{coursestatus?'Completed':'Hunting'}
+                                    <button onClick={()=>setcoursestatus(itemforcart.id)} className={`para-in-cart-list resourse-progress-btn ${itemforcart.CourseStatus?'done-bg':'not-done-bg'}`}>{itemforcart.CourseStatus?'Completed':'Hunting'}
                                         <span className='course-complete-show'>
-                                            {coursestatus?'Start Hunting':'Complete'}
+                                            {itemforcart.CourseStatus?'Start Hunting':'Complete'}
                                             <span className='arrow-course-complete-show'></span>
                                         </span>
                                     </button>

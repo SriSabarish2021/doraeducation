@@ -1,28 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import '../../Styles/ContactPageCSS/ContactSider.css'
 
 const ContactSider = () => {
  
-  const [contactwidth,setcontactwidth]=useState(0)
-    useEffect(() => {
-  
-  
-      setcontactwidth(window.innerWidth)
-     
-      
-       return () => {
-        setcontactwidth(0)
-      }
     
-    
-    }, [])
   
   useEffect(() => {
-
-
-
-    
-
     const mainelement=document.querySelector('.contact-side-bar-conatainer')
 
     const itemone=document.querySelector('.contact-logo-one')
@@ -74,7 +57,7 @@ const ContactSider = () => {
     }
     
     }
-  }, [contactwidth])
+  }, [])
   
 
   

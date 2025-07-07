@@ -1,27 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import '../../Styles/AboutPageCSS/AboutPageCourse.css'
 import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
-import { PiStudent } from "react-icons/pi";
-import { IoStar } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa"; 
 import { FaArrowRight } from "react-icons/fa6";
 import { Image } from '@imagekit/react';
 import { Link } from 'react-router-dom';
 
 const AboutPageCourse = ({course}) => {
 
-const [gettitheight,setgettitheight]=useState(0)
-  useEffect(() => {
-    
-    const getheight=document.querySelector('.abt-prog-list-tit-div-mob')
-  setgettitheight(Number(getheight?.getBoundingClientRect().height)+0)
-    return () => {
-      setgettitheight(0)
-    }
-  }, [])
-  
-  
+ 
   useEffect(() => {
 
     const observingelement=document.querySelector('.about-page-analysis-box')
@@ -31,14 +18,14 @@ const [gettitheight,setgettitheight]=useState(0)
     const targetelementfour=document.querySelector('.analysis-design-three-about-page')
     const observer=new IntersectionObserver(([entry])=>{
       if (entry.intersectionRatio<0.4) {
-        console.log('no');
+  
         targetelementone?.classList.remove('about-page-analysis-imgae-design-no-move')
         targetelementtwo?.classList.remove('about-analysis-cont-no-move')
         targetelementthree?.classList.remove('about-analysis-cont-no-move')
         targetelementfour?.classList.remove('about-analysis-cont-no-move-for-three')
         
       }else if(entry.intersectionRatio>0.4){
-       console.log('sdsd');
+
         targetelementtwo?.classList.add('about-analysis-cont-no-move')
         targetelementthree?.classList.add('about-analysis-cont-no-move')
         targetelementfour?.classList.add('about-analysis-cont-no-move-for-three')
