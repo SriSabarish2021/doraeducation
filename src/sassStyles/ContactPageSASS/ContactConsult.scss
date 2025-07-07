@@ -21,7 +21,7 @@
         overflow: hidden;
         @include Row-center.row-center;
         background-color:main-color.$main-color-for-app-little-lighter;
-        @include bg-img-center.bg-img-center('./ContactPageImage/cta-bg-2.webp');
+        @include bg-img-center.bg-img-center('/ContactPageImage/cta-bg-2.webp');
         .contact-consult-cont{
             height: 100%;
             width: 100%;

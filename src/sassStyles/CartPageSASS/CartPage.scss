@@ -95,7 +95,7 @@
                                 left: 0px;
                                 position: absolute;
                                 
-                                @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/Vector 11.png');
+                                @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/Vector 11.png');
                                 background-size: contain;
                             }
                         }

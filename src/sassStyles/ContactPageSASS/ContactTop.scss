@@ -20,7 +20,7 @@
             width: 180px;
             top: 90%;
             left: 30px;
-            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/Vector 11.png');
+            @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/Vector 11.png');
             background-size: contain;
         }
     }

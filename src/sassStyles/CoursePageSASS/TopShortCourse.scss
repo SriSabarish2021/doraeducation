@@ -38,7 +38,7 @@
             width: 130px;
             right:20%;
             bottom: 10%;
-            @include bg-img-center.bg-img-center('./HomeImg/Untitled (5).png')
+            @include bg-img-center.bg-img-center('/HomeImg/Untitled (5).png')
         }
         .top-short-title-design-two{
              position: absolute;
@@ -48,7 +48,7 @@
             top:10%;
             left: -10%;
             opacity: 0.8;
-            @include bg-img-center.bg-img-center('./Testimonial/dot-testi.png');
+            @include bg-img-center.bg-img-center('/Testimonial/dot-testi.png');
             z-index: -1;
         }
         
@@ -83,7 +83,7 @@
                     width: 160px;
                     left: 0px;
                     bottom: -20px;
-                    @include bg-img-center.bg-img-center('./underline.png');
+                    @include bg-img-center.bg-img-center('/underline.png');
                     background-position: 0%;
                     background-size: auto;
                     animation:underlinemove-about-us 6s linear infinite forwards ;
@@ -293,7 +293,7 @@
             width: 490px;
             left: 0px;
             opacity: 0.5;
-            @include bg-img-center.bg-img-center('./Aboutus/circle.png');
+            @include bg-img-center.bg-img-center('/Aboutus/circle.png');
            
         }
 
@@ -361,7 +361,7 @@
             position: absolute;
             height: 70px;
             width: 70px;
-             @include bg-img-center.bg-img-center('./AboutPageImage/Ellipse 1.png');
+             @include bg-img-center.bg-img-center('/AboutPageImage/Ellipse 1.png');
              top:10%;
              right: 10%;
                @include Column-center.column-center;
@@ -369,7 +369,7 @@
              .top-short-title-design-three-inner{
                  height: 30px;
                 width: 30px;
-             @include bg-img-center.bg-img-center('./AboutPageImage/Star 1.png');
+             @include bg-img-center.bg-img-center('/AboutPageImage/Star 1.png');
              animation: inner-rotate 4s linear infinite forwards;
              @keyframes inner-rotate {
                 0%{
@@ -713,7 +713,7 @@ transition-duration: 0.4s;
             width: 130px;
             right:20%;
             bottom: 10%;
-            @include bg-img-center.bg-img-center('./HomeImg/Untitled (5).png')
+            @include bg-img-center.bg-img-center('/HomeImg/Untitled (5).png')
         }
         .top-short-title-design-two{
              position: absolute;
@@ -723,7 +723,7 @@ transition-duration: 0.4s;
             top:10%;
             left: -10%;
             opacity: 0.8;
-            @include bg-img-center.bg-img-center('./Testimonial/dot-testi.png');
+            @include bg-img-center.bg-img-center('/Testimonial/dot-testi.png');
             z-index: -1;
         }
         
@@ -758,7 +758,7 @@ transition-duration: 0.4s;
                     width: 160px;
                     left: 0px;
                     bottom: -20px;
-                    @include bg-img-center.bg-img-center('./underline.png');
+                    @include bg-img-center.bg-img-center('/underline.png');
                     background-position: 0%;
                     background-size: auto;
                     animation:underlinemove-about-us 6s linear infinite forwards ;

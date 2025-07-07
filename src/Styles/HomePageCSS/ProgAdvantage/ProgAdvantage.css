@@ -101,7 +101,7 @@
 .prog-advantage-main-container .prog-advantage-content-container .prog-advantage-title-bar .prog-advantage-tit-image {
   height: 20px;
   width: 100px;
-  background-image: url("./ProgAdvan/tit-line.png");
+  background-image: url("/ProgAdvan/tit-line.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

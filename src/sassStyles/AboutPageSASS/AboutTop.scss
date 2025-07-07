@@ -26,7 +26,7 @@
       top: -620px; 
         height: 140dvh;
         width: 100%;
-        @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/hero-6.1.webp');
+        @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/hero-6.1.webp');
         background-size: cover;
         @include Column-center.column-center;
         z-index: 9;
@@ -235,7 +235,7 @@
             height:200px;
             width: 90%;
             position: absolute;
-            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/guarantee (1).png');
+            @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/guarantee (1).png');
         }
         .about-special-design-one{
             height:300px;
@@ -244,7 +244,7 @@
             left: -250px;
             top: 0px;
             rotate:30deg;
-            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/scribble (2).png');
+            @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/scribble (2).png');
             background-size: contain;
         }
         .about-special-design-two{
@@ -254,7 +254,7 @@
             right: -250px;
             bottom: 0px;
             rotate:-40deg;
-            @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/scribble (2).png');
+            @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/scribble (2).png');
             background-size: contain;
         }
         .about-side-bar-img{
@@ -451,7 +451,7 @@
             position: absolute;
             height: 250px;
             width: 250px;
-           @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/book3.webp');
+           @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/book3.webp');
            top: 0px;
            left: 0px;
            transform: translateY(-60px);
@@ -476,7 +476,7 @@
             display: none;
             height: 250px;
             width: 250px;
-           @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/book3.webp');
+           @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/book3.webp');
            top: 0px;
            left: 0px;
           
@@ -486,7 +486,7 @@
             position: absolute;
             height: 200px;
             width: 200px;
-           @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/pen3.webp');
+           @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/pen3.webp');
            top: 20px;
            right: 20px;
            transform: translateY(550px);
@@ -627,7 +627,7 @@
                         width: 200px;
                         left: 0px;
                         bottom: -20px;
-                        @include bg-img-center.bg-img-center('./AboutPageImage/ABOUT-TOP/Vector 11.png');
+                        @include bg-img-center.bg-img-center('/AboutPageImage/ABOUT-TOP/Vector 11.png');
                         background-size: contain;
                     }
                 }

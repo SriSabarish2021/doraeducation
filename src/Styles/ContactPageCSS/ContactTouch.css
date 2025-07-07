@@ -128,7 +128,7 @@
   width: 180px;
   bottom: -30px;
   left: -20px;
-  background-image: url("./ContactPageImage/circle-contact.png");
+  background-image: url("/ContactPageImage/circle-contact.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,7 +139,7 @@
   width: 220px;
   top: -40px;
   right: 0px;
-  background-image: url("./ContactPageImage/arrow-contact.png");
+  background-image: url("/ContactPageImage/arrow-contact.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,7 +149,7 @@
   height: 350px;
   width: 350px;
   z-index: -1;
-  background-image: url("./ContactPageImage/sakura.png");
+  background-image: url("/ContactPageImage/sakura.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -410,7 +410,7 @@
   width: 100%;
   flex: 1 1 45%;
   position: relative;
-  background-image: url("./ContactPageImage/brownconcretebuildingnea... (1).webp");
+  background-image: url("/ContactPageImage/brownconcretebuildingnea... (1).webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

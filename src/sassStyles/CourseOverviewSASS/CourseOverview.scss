@@ -1453,7 +1453,7 @@
                         width: 100px;
                         left: 40px;
                         bottom: -10px;
-                        @include bg-img-center.bg-img-center('./WhyChoose/underline-why-choose.png')
+                        @include bg-img-center.bg-img-center('/WhyChoose/underline-why-choose.png')
                     }
                 }
 

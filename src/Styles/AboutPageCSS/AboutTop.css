@@ -24,7 +24,7 @@
   top: -620px;
   height: 140dvh;
   width: 100%;
-  background-image: url("./AboutPageImage/ABOUT-TOP/hero-6.1.webp");
+  background-image: url("/AboutPageImage/ABOUT-TOP/hero-6.1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +251,7 @@
   height: 200px;
   width: 90%;
   position: absolute;
-  background-image: url("./AboutPageImage/ABOUT-TOP/guarantee (1).png");
+  background-image: url("/AboutPageImage/ABOUT-TOP/guarantee (1).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,7 +263,7 @@
   left: -250px;
   top: 0px;
   rotate: 30deg;
-  background-image: url("./AboutPageImage/ABOUT-TOP/scribble (2).png");
+  background-image: url("/AboutPageImage/ABOUT-TOP/scribble (2).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,7 +276,7 @@
   right: -250px;
   bottom: 0px;
   rotate: -40deg;
-  background-image: url("./AboutPageImage/ABOUT-TOP/scribble (2).png");
+  background-image: url("/AboutPageImage/ABOUT-TOP/scribble (2).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -483,7 +483,7 @@
   position: absolute;
   height: 250px;
   width: 250px;
-  background-image: url("./AboutPageImage/ABOUT-TOP/book3.webp");
+  background-image: url("/AboutPageImage/ABOUT-TOP/book3.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -509,7 +509,7 @@
   display: none;
   height: 250px;
   width: 250px;
-  background-image: url("./AboutPageImage/ABOUT-TOP/book3.webp");
+  background-image: url("/AboutPageImage/ABOUT-TOP/book3.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -520,7 +520,7 @@
   position: absolute;
   height: 200px;
   width: 200px;
-  background-image: url("./AboutPageImage/ABOUT-TOP/pen3.webp");
+  background-image: url("/AboutPageImage/ABOUT-TOP/pen3.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -671,7 +671,7 @@
   width: 200px;
   left: 0px;
   bottom: -20px;
-  background-image: url("./AboutPageImage/ABOUT-TOP/Vector 11.png");
+  background-image: url("/AboutPageImage/ABOUT-TOP/Vector 11.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

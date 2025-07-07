@@ -37,7 +37,7 @@
   width: 130px;
   right: 20%;
   bottom: 10%;
-  background-image: url("./HomeImg/Untitled (5).png");
+  background-image: url("/HomeImg/Untitled (5).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,7 @@
   top: 10%;
   left: -10%;
   opacity: 0.8;
-  background-image: url("./Testimonial/dot-testi.png");
+  background-image: url("/Testimonial/dot-testi.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +93,7 @@
   width: 160px;
   left: 0px;
   bottom: -20px;
-  background-image: url("./underline.png");
+  background-image: url("/underline.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,7 +292,7 @@
   width: 490px;
   left: 0px;
   opacity: 0.5;
-  background-image: url("./Aboutus/circle.png");
+  background-image: url("/Aboutus/circle.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,7 +357,7 @@
   position: absolute;
   height: 70px;
   width: 70px;
-  background-image: url("./AboutPageImage/Ellipse 1.png");
+  background-image: url("/AboutPageImage/Ellipse 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -372,7 +372,7 @@
 .top-short-course-page-container .top-short-course-content-container .top-short-title-design-three .top-short-title-design-three-inner {
   height: 30px;
   width: 30px;
-  background-image: url("./AboutPageImage/Star 1.png");
+  background-image: url("/AboutPageImage/Star 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -718,7 +718,7 @@
   width: 130px;
   right: 20%;
   bottom: 10%;
-  background-image: url("./HomeImg/Untitled (5).png");
+  background-image: url("/HomeImg/Untitled (5).png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -731,7 +731,7 @@
   top: 10%;
   left: -10%;
   opacity: 0.8;
-  background-image: url("./Testimonial/dot-testi.png");
+  background-image: url("/Testimonial/dot-testi.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -774,7 +774,7 @@
   width: 160px;
   left: 0px;
   bottom: -20px;
-  background-image: url("./underline.png");
+  background-image: url("/underline.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

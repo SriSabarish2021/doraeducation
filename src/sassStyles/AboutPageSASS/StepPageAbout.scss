@@ -52,7 +52,7 @@
                     left: 0px;
                     top: 0px;
                     
-                    @include bg-img-center.bg-img-center('./Aboutus/underline-two.png');
+                    @include bg-img-center.bg-img-center('/Aboutus/underline-two.png');
                      background-size: contain;
                 }
             }
@@ -84,7 +84,7 @@
         .book-move-design-step-abt-page-two{
              position: absolute;
       
-         @include bg-img-center.bg-img-center('./AboutPageImage/milestones.png');
+         @include bg-img-center.bg-img-center('/AboutPageImage/milestones.png');
         opacity: 0.9;
       
         height: 150px;
@@ -111,7 +111,7 @@
 
     .book-move-design-step-abt-page{
         position: absolute;
-                 @include bg-img-center.bg-img-center('./AboutPageImage/book (3).png');
+                 @include bg-img-center.bg-img-center('/AboutPageImage/book (3).png');
         height: 150px;
         width: 150px;
         bottom: 15%;
@@ -159,7 +159,7 @@
                 bottom:30%;
 
               
-                @include bg-img-center.bg-img-center('./AboutPageImage/border-line.png');
+                @include bg-img-center.bg-img-center('/AboutPageImage/border-line.png');
                   background-size: contain;
             }
            
@@ -305,7 +305,7 @@
         .book-move-design-step-abt-page-two{
              position: absolute;
       
-         @include bg-img-center.bg-img-center('./AboutPageImage/milestones.png');
+         @include bg-img-center.bg-img-center('/AboutPageImage/milestones.png');
         opacity: 0.9;
       
         height: 150px;
@@ -332,7 +332,7 @@
 
     .book-move-design-step-abt-page{
         position: absolute;
-                 @include bg-img-center.bg-img-center('./AboutPageImage/book (3).png');
+                 @include bg-img-center.bg-img-center('/AboutPageImage/book (3).png');
         height: 150px;
         width: 150px;
         bottom: 15%;
@@ -380,7 +380,7 @@
                 transform: rotate(-450deg);
 
               
-                @include bg-img-center.bg-img-center('./AboutPageImage/border-line.png');
+                @include bg-img-center.bg-img-center('/AboutPageImage/border-line.png');
                   background-size: contain;
             }
              .rotate-for-step-four{
@@ -397,7 +397,7 @@
                 bottom:30%;
                 transform: rotate(180deg);
               
-                @include bg-img-center.bg-img-center('./AboutPageImage/Untitled (11).png');
+                @include bg-img-center.bg-img-center('/AboutPageImage/Untitled (11).png');
                   background-size: contain;
             }
                .rotate-for-step-one{
@@ -414,7 +414,7 @@
                 bottom:30%;
                
               
-                @include bg-img-center.bg-img-center('./AboutPageImage/Untitled (11).png');
+                @include bg-img-center.bg-img-center('/AboutPageImage/Untitled (11).png');
                   background-size: contain;
             }
             .step-line-abt-page-bg{
