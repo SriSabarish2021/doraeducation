@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🎓 DORA Education
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**DORA Education** is a modern, responsive web application designed to deliver an engaging and interactive educational experience. Built using **TypeScript** and **SASS**, the platform is scalable, maintainable, and developer-friendly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- ⚛️ **React** (with TypeScript)
+- 🎨 **SASS** for modular and scoped styling
+- ⚡ **Vite** (or your build tool, e.g., Webpack, CRA)
+- 📦 Additional Libraries: (List any additional libraries if used)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🌟 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 📚 Course Listings with filtering
+- 🔍 Interactive UI with animations
+- 🧑‍🎓 Enroll and Manage Courses
+- 📱 Fully Responsive Design
+- 💡 Smooth UX with transitions and effects
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+📁 Folder Structure
+bash
+Copy
+Edit
+src/
+├── assets/        # Images, icons
+├── components/    # Reusable components
+├── pages/         # Page components
+├── styles/        # SASS files
+├── types/         # TypeScript interfaces & types
+├── App.tsx
+└── main.tsx
+
+
+💡 Future Improvements
+🧭 Add routing for detailed course pages
+
+
+📊 Admin dashboard for course management
+
+
+📄 License
+This project is open-source and available under the MIT License.
+
+🙋‍♂️ Author
+Developed Sri Sabarish N
+Feel free to reach out or connect!
+
+
+Let me know if you'd like to add deployment steps (e.g., for Vercel or Netlify), animations/screenshots, or badges (like version, license, etc.) to make it even more attractive!
