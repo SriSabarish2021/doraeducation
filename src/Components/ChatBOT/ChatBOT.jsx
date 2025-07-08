@@ -10,9 +10,6 @@ const ChatBOT = ({setchatbot,chatbot}) => {
   const chatref=useRef('')
 
 
-  window.addEventListener('scroll',()=>{
-    setchatbot(false)
-  })
   
 
   const enterclick=(e)=>{
@@ -104,7 +101,7 @@ const ChatBOT = ({setchatbot,chatbot}) => {
       return userchat
   }
   return (
-    <div  className={`chat-bot-main-container ${chatbot?'chatbotshow':'chatbotnotshow'}`}>
+    <div className={`chat-bot-main-container ${chatbot?'chatbotshow':'chatbotnotshow'}`}>
       <div className='chat-bot-header'>
       
              <Image
